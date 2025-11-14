@@ -1,0 +1,20 @@
+views:
+  - type: list
+    name: Table
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.links
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 249
+      file.links: 550
+    imageAspectRatio: 2.5
+    cardSize: 240
+    imageFit: contain
+    markers: bullet
+    indentProperties: true

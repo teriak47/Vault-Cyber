@@ -1,0 +1,29 @@
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - title
+    sort:
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      file.name: 571
+  - type: table
+    name: RIB
+    filters:
+      and:
+        - file.folder == "10_COURS_ET_INGESTION/11_Cours/RIB"
+    order:
+      - file.name
+      - title
+      - module
+    sort:
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      file.name: 303
+      note.title: 812
