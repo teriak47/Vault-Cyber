@@ -1,5 +1,11 @@
 # Vault de Cours – Réseau & Cybersécurité
 
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![Obsidian](https://img.shields.io/badge/Made%20with-Obsidian-7C3AED?logo=obsidian&logoColor=white)
+![Markdown](https://img.shields.io/badge/Content-Markdown-informational)
+![Cybersecurity](https://img.shields.io/badge/Domain-Cybersecurity-0A66C2)
+![Education](https://img.shields.io/badge/Type-Education-2ECC71)
+
 _(Obsidian – Notes structurées pour apprentissage et révision)_
 
 Bienvenue dans mon vault Obsidian consacré à mes cours en **réseau** et **cybersécurité**.
