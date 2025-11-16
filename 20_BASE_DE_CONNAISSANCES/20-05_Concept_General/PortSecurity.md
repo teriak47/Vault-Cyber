@@ -38,5 +38,5 @@ cssclasses:
 *   [[VirtualLocalAreaNetwork|VLAN]]
 *   [[PhysicalSecurity|Sécurité Physique]]
 *   [[NetworkAccessControl|Contrôle d'Accès Réseau]]
-*   [[IEEE8021X|802.1X]]
+*   [[IEEE8021x|802.1X]]
 *   [[SwitchSecurity|Sécurité des Commutateurs]]
