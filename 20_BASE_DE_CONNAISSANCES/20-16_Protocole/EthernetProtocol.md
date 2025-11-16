@@ -34,7 +34,7 @@ cssclasses:
     *   **Utilisation de [[NetworkSwitch|commutateurs réseau]]** : Préférer les [[NetworkSwitch|commutateurs]] aux [[Hub|concentrateurs]] pour la [[NetworkSegmentation|segmentation du trafic]] et la réduction du [[BroadcastDomain|domaine de diffusion]].
     *   **[[VirtualLocalAreaNetwork|VLANs]]** : Implémentation de [[VirtualLocalAreaNetwork|réseaux locaux virtuels]] pour isoler logiquement le [[NetworkTrafficAnalysis|trafic]] et appliquer des [[AccessControl|contrôles d'accès]] granulaires.
     *   **[[PortSecurity|Sécurité des Ports]]** : Configurer la [[PortSecurity|sécurité des ports]] sur les [[NetworkSwitch|commutateurs]] pour limiter les [[MediaAccessControlAddress|adresses MAC]] autorisées à se connecter à un port spécifique.
-    *   [[IEEE8021X|Authentification 802.1X]] : Protocole de [[Authentication|contrôle d'accès au réseau]] basé sur les ports, permettant d'[[Authentication|authentifier]] les [[User|utilisateurs]] et les [[NetworkDevice|appareils]] avant qu'ils n'accèdent au [[Network|réseau]].
+    *   [[IEEE8021x|Authentification 802.1X]] : Protocole de [[Authentication|contrôle d'accès au réseau]] basé sur les ports, permettant d'[[Authentication|authentifier]] les [[User|utilisateurs]] et les [[NetworkDevice|appareils]] avant qu'ils n'accèdent au [[Network|réseau]].
 
 ## 🔗 Notes Connexes
 *   [[OpenSystemsInterconnectionModel|Modèle OSI]]
