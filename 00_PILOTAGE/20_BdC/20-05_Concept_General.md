@@ -82,7 +82,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/FrameFormat.md|FrameFormat]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Frame.md|Frame]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/FrameCheckSequence.md|FrameCheckSequence]]
-- [[AccessLayer|AccessLayer]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Collision.md|Collision]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/MacAddressTable.md|MacAddressTable]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/DestinationMacAddress.md|DestinationMacAddress]]
