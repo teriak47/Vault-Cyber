@@ -371,5 +371,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/RewardProgram.md|RewardProgram]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/SecurityResearcher.md|SecurityResearcher]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/EthicalHacking.md|EthicalHacking]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/NetworkTraffic.md|NetworkTraffic]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/NetworkTrafficTypes.md|NetworkTrafficTypes]]
 
 %% DATAVIEW_PUBLISHER: end %%
