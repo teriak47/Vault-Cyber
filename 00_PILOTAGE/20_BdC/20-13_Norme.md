@@ -11,6 +11,7 @@ SORT file.ctime ASC
 %%
 
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/NationalCommissionForDataProtectionAndLiberties.md|NationalCommissionForDataProtectionAndLiberties]]
+- [[20_BASE_DE_CONNAISSANCES/20-13_Norme/Ethernet.md|Ethernet]]
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/IEEE80211.md|IEEE80211]]
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/InternationalOrganizationForStandardization.md|InternationalOrganizationForStandardization]]
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/InternetStandard.md|InternetStandard]]
@@ -23,5 +24,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/SecurityPolicy.md|SecurityPolicy]]
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/WiFiAlliance.md|WiFiAlliance]]
 - [[20_BASE_DE_CONNAISSANCES/20-13_Norme/StrongPasswordPolicy.md|StrongPasswordPolicy]]
+- [[20_BASE_DE_CONNAISSANCES/20-13_Norme/IEEE8021x.md|IEEE8021x]]
 
 %% DATAVIEW_PUBLISHER: end %%
