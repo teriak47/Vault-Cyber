@@ -46,5 +46,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/TelephoneLines.md|TelephoneLines]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Tablet.md|Tablet]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Smartphone.md|Smartphone]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/TwistedPairCable.md|TwistedPairCable]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/ShieldedTwistedPair.md|ShieldedTwistedPair]]
 
 %% DATAVIEW_PUBLISHER: end %%
