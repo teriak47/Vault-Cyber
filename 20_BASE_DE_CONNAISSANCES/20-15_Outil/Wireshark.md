@@ -1,0 +1,51 @@
+---
+aliases:
+  - Wireshark
+  - Logiciel d'analyse de protocole
+  - Packet Analyzer
+  - Network Protocol Analyzer
+archetype: outil
+site_web: www.wireshark.org
+cssclasses:
+  - max
+---
+
+# Wireshark
+
+## 🎯 Objectif Principal
+> [[Wireshark|Wireshark]] est un [[OpenSource|logiciel libre]] d'[[NetworkTrafficAnalysis|analyse du trafic réseau]] qui permet de capturer et d'inspecter les paquets de [[Data|données]] transitant sur une [[Network|réseau]]. Il est largement utilisé par les professionnels de la [[Cybersecurity|cybersécurité]], les administrateurs [[Network|réseau]] et les développeurs pour le dépannage, l'analyse, le développement de [[Protocol|protocoles]] et la [[NetworkSecurity|sécurité réseau]].
+
+## ⚙️ Cas d'usage / Commandes Utiles
+
+### Cas 1: Capturer le trafic sur une interface réseau spécifique
+Pour capturer le trafic sur une [[NetworkInterfaceCard|carte d'interface réseau]] (NIC) spécifique (par exemple, `eth0` ou `en0`), on peut utiliser `tshark`, la version en ligne de commande de [[Wireshark|Wireshark]].
+```bash
+tshark -i eth0
+```
+Cela lancera une capture en direct et affichera les paquets dans le terminal. Pour écrire les paquets dans un fichier pour une analyse ultérieure:
+```bash
+tshark -i eth0 -w /tmp/capture.pcap
+```
+
+### Cas 2: Filtrer les paquets capturés par protocole
+[[Wireshark|Wireshark]] permet d'appliquer des [[PacketFilter|filtres de paquets]] puissants pour n'afficher que le trafic pertinent. Par exemple, pour voir uniquement le trafic [[HypertextTransferProtocol|HTTP]]:
+```bash
+tshark -i eth0 -f "tcp port 80"
+```
+Ou dans l'interface graphique de [[Wireshark|Wireshark]], le filtre d'affichage est `http`. Pour filtrer par [[InternetProtocol|adresse IP]] source et destination:
+```bash
+tshark -i eth0 -f "src host 192.168.1.10 and dst host 192.168.1.1"
+```
+Dans l'interface graphique: `ip.src == 192.168.1.10 and ip.dst == 192.168.1.1`.
+
+### Cas 3: Analyse de protocoles à différentes couches du [[InternetProtocolSuite|Modèle TCP/IP]]
+[[Wireshark|Wireshark]] décode des milliers de [[NetworkProtocol|protocoles réseau]] à travers toutes les [[InternetProtocolSuite|couches du modèle TCP/IP]], de la [[DataLinkLayer|couche liaison de données]] à la [[ApplicationLayer|couche application]]. Il permet d'inspecter les en-têtes et les charges utiles des paquets, facilitant la compréhension de la communication entre les [[System|systèmes]].
+
+## ⚠️ Points d'attention
+*   **[[Privacy|Confidentialité]] et Légalité:** La [[PacketSniffing|capture de paquets]] peut être considérée comme une [[Eavesdropping|écoute clandestine]] et peut enfreindre la [[PrivacyInvasion|violation de la vie privée]] ou la [[LegalCompliance|conformité légale]] si elle est effectuée sans autorisation explicite sur des [[CorporateNetwork|réseaux d'entreprise]] ou des [[PublicNetwork|réseaux publics]]. Il est crucial de respecter les lois et les politiques en vigueur.
+*   **Performance:** Capturer et analyser un grand volume de trafic peut entraîner une [[PerformanceDegradation|dégradation des performances]] du [[Computer|système]] sur lequel [[Wireshark|Wireshark]] s'exécute, ainsi qu'une consommation significative d'espace disque.
+*   **Compétences requises:** L'interprétation des données capturées par [[Wireshark|Wireshark]] nécessite une bonne compréhension des [[NetworkProtocol|protocoles réseau]] et du fonctionnement des [[Network|réseaux]].
+
+## 🔗 Alternatives et Notes Connexes
+*   Alternatives: [[Tcpdump|tcpdump]], [[Nmap|Nmap]]
+*   Contexte: [[PacketSniffing|Capture de Paquets]], [[NetworkMonitoring|Surveillance réseau]], [[NetworkTrafficAnalysis|Analyse du trafic réseau]], [[NetworkProtocol|Protocoles Réseau]]

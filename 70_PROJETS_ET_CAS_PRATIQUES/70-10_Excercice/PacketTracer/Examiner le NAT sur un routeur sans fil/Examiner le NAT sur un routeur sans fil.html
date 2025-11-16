@@ -1,0 +1,783 @@
+<!DOCTYPE html><html><head>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 1rem;
+      }
+      ol,
+      ul {
+        margin-bottom: 0in;
+      }
+      table {
+        margin-top: 1rem;
+        border: 1px solid gray;
+        width: 7in;
+        border-collapse: collapse;
+      }
+
+      table > thead > tr > .openTableTextBox__table-header-data {
+        text-align: center;
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        margin-left: 0in;
+        text-align: center;
+        line-height: 115%;
+        page-break-after: avoid;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        background: #dbe5f1;
+        padding: 0.5rem;
+      }
+      .openTableTextBox__answerText
+        table
+        > thead
+        > tr
+        > .openTableTextBox__table-header-data {
+        background: #f2dbdb !important;
+      }
+      .openTextBox__textArea-container {
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        width: 50%;
+      }
+      .openTableTextBox__fieldset {
+        padding: 5px;
+      }
+      td {
+        margin-top: 3pt;
+        margin-right: 0in;
+        margin-bottom: 3pt;
+        margin-left: 0in;
+        font-size: 10pt;
+        font-family: "Arial", sans-serif;
+        width: 98.85pt;
+        border: solid windowtext 1pt;
+        border-top: none;
+        padding: 0.7pt 5.75pt 0.7pt 5.75pt;
+      }
+      textarea {
+        width: 100%;
+      }
+      .answergray {
+        padding: 0.2rem;
+      }
+
+      .openTableTextBox__widget {
+        margin-top: 6pt;
+        margin-right: 0in;
+        margin-bottom: 6pt;
+        margin-left: 0.25in;
+      }
+
+      .show-answer,
+      .hide-answer {
+        padding: 0.5rem 1rem;
+        background-color: #3d692b;
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .openTextBoxController__button-container {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .openTextBoxController__button-container .btn-text {
+        margin: 10px;
+      }
+
+      .btn-text {
+        border: 0px;
+        padding: 0.5rem 1rem;
+        background-color: #3d692b;
+        color: #fff;
+        border-radius: 0;
+        cursor: pointer;
+      }
+
+      .u-display-none {
+        display: none;
+      }
+      .openTextBox__postText, openTableTextBox__postText {
+        margin-top: 0.5rem;
+      }
+      .edit-comment {
+        display: none;
+      }
+      .js-heading-inner {
+        display: none;
+      }
+      .block__title-inner,
+      .article__title-inner {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.25em;
+      }
+      h3{
+        font-size: 1.125em;
+      }
+      .table
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > th {
+        border: solid windowtext 1pt;
+      }
+      table tbody tr th, table thead tr th{
+        border: solid windowtext 1pt;
+        background-color: #d6d8dc;
+      }
+      .openTableTextBox__answerText
+        table
+        > thead
+        > tr
+        > .openTableTextBox__table-header-data {
+        background: #f2dbdb !important;
+      }
+      .command-output > .table-inner > .table-wrapper > .table-widget > table,
+      .command-output
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > td,
+      .command-output
+        > .table-inner
+        > .table-wrapper
+        > .table-widget
+        > table
+        > tbody
+        > tr
+        > th {
+        border: none !important;
+        text-align: right !important;
+      }
+      .simple-table > .table-inner > .table-wrapper{
+        margin-left: 1.5rem;
+      }
+      .openTextBox__widget {
+        margin-left: 1.5rem;
+      }
+      img {
+        width: 30%;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 3rem;
+      }
+      .answergray {
+        background-color: #ccc;
+      }
+      .openTableTextBox__widget > .answergray {
+        background-color: #fff !important;
+      }
+      li > ul,ol > li{
+        margin-left: 0px !important;
+      }
+      img {
+        width: 30%;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 3rem;
+      }
+      
+      .component__title{
+        font-family: inherit;
+        font-size: 1.65em;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+
+      .component__body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .accessibility-completion-indicator{
+        display: none;
+      }
+
+      .check__hidden {
+        display: none;
+      }
+
+      .check__button {
+        border: none;
+        border-radius: 6px !important;
+        background-color: #6abf4b;
+        color: #fff;
+        min-width: 100px;
+        margin: 0.625rem 0;
+        padding: 0.7rem;
+      }
+
+      .check__widget .check__solution .DevConfigGray {
+        background-color: rgb(214,216,220);
+        font-weight: bold;
+      }
+
+      .check-inner .check__widget .check__solution .DevConfigs {
+        margin: 0px;
+        line-height: 115%;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .check__solution  {
+        line-height: 1.5;
+      }
+      .mcq__inner .mcq__widget .mcq__widget-inner {
+        margin-block: 1rem;
+      }
+      .mcq__inner .mcq__widget .mcq__item {
+        display: flex;
+        gap: 0.2rem;
+      }
+      .mcq__inner .mcq__widget .mcq__item .mcq__item-label .mcq__item-text .screenReader-position-text{
+        display: none;
+      }
+      .opentabletextbox-inner .opentabletextBox__widget .openTableTextBox__answerText.answergray {
+        background-color: transparent;
+      }
+      .openTextBox__inner .openTextBox__widget .answergray.is-graphic-in-openTextBox{
+        background-color: transparent;
+      }
+      .openTextBox__inner .openTextBox__widget .answergray.is-graphic-in-openTextBox img{
+        margin-block: 1rem;
+        margin-left: initial;
+      }
+      .component__content .component__body-inner .pageTracer-h4-title-hide {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        font-size: 0px;
+        color: rgb(var(--neutral-2));
+        font-weight: normal;
+      }
+      .table-inner .table__widget table tr.TableHeading th, .table-inner .table__widget table tr.TableHeading td, .table-inner .table__widget table tr td.TableHeading, .opentabletextbox-table thead tr.TableHeading th, .opentabletextbox-table tbody tr.TableHeading td, .opentabletextbox-table tbody tr td.TableHeading {
+        background-color: #d6d8dc;
+        text-align: center;
+        font-weight: bold;
+      }
+      .component__content .component__body-inner .CMD, .component__content .component__body-inner .CMDOutput, .component__content .component__body-inner .CMDOutput__table{
+        margin-top: 4px;
+        margin-inline-end: 0px;
+        margin-bottom: 4px;
+        margin-inline-start: 30px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      [dir="rtl"] .component__content .component__body-inner .CMDOutput__table span {
+        direction: ltr;
+        display: inline-block;
+      }
+      .openTextBox__inner .openTextBox__widget .CMD, .openTextBox__inner .openTextBox__widget .CMDOutput{
+        margin-top: 4px;
+        margin-inline-end: 0px;
+        margin-bottom: 4px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .openTextBox__inner .openTextBox__widget .DnTbold, .openTextBox__inner .openTextBox__widget .BodyTextL25Bold, .component__content .component__body-inner .BodyTextL25Bold, .component__content .component__body-inner .DnTbold, .table-inner .table__widget table tr .DnTbold {
+        font-weight: bold;
+      }
+      .component__content .component__body-inner .SubStepNum {
+        text-indent: -25.5px;
+        margin-inline-start: 50px;
+      }
+      .component__content .component__body-inner .BodyTextL50 {
+        margin-inline-start: 30px;
+      }
+      .component__content .component__body-inner .Bulletlevel1 {
+        text-indent: -19px;
+        margin-inline-start: 48px;
+      }
+      .component__content .component__body-inner .Bulletlevel2 {
+          text-indent: -19px;
+          margin-inline-start: 72px;
+      }
+      .openTextBox__inner .openTextBox__widget .ReflectionQ, .component__content .component__body-inner .SubStepAlpha {
+          text-indent: -25.5px;
+          margin-inline-start: 30px;
+      }
+    </style>
+
+</head><body><!---->
+            <div class="article 13502bcd-94e8-4aa9-97f6-5cd482c4b8f0 remove-padding-top remove-padding-bottom ">
+                <div class="article__inner">
+                <div class=" no-adaptive-scroll">
+                    <!--?lit$2037279712$-->
+                        <div class=""> 
+                            <base-view type="article" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="article__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="article__header ">
+              <div class="article__header-inner ">
+                  
+                    <!--?lit$2037279712$--> <div class=" article__title ">
+                      <!--?lit$2037279712$--><heading-view aria-hidden="true" id="13502bcd-94e8-4aa9-97f6-5cd482c4b8f0-heading-view" headingtitle="Packet Tracer – Examiner le NAT sur un routeur sans fil" modelid="13502bcd-94e8-4aa9-97f6-5cd482c4b8f0" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="js-heading is-incomplete">
+        <div class="js-heading-inner" role="heading" id="article-heading" aria-level="2">
+        <span class="aria-label"> <!--?lit$2037279712$-->Incomplet &nbsp;<!--?lit$2037279712$-->Packet Tracer – Examiner le NAT sur un routeur sans fil</span>
+        </div>
+      </div>
+    </heading-view>
+                        <div tabindex="0" role="heading" class="article__title-inner " aria-level="2">
+                        <span class="accessibility-completion-indicator"><!--?lit$2037279712$-->Incomplet </span>
+                        <!--?lit$2037279712$-->Packet Tracer – Examiner le NAT sur un routeur sans fil</div>
+                      </div>
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                            <div class="block__container " style="">
+                                <!--?lit$2037279712$--><!---->
+                                    <block-view modelid="39e2e2d1-c5f9-404c-a6f8-7ea7c6c7a264" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="block" style="width: 20%;"><!---->
+                
+                <div data-socialgoodpulse-id="39e2e2d1-c5f9-404c-a6f8-7ea7c6c7a264" class="39e2e2d1-c5f9-404c-a6f8-7ea7c6c7a264 block remove-padding-top remove-padding-bottom ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="39e2e2d1-c5f9-404c-a6f8-7ea7c6c7a264" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$2037279712$--><!----><text-view modelid="320944e0-1208-4cde-9621-b52879dbcd06" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="text-inner component__inner">
+            <div class="component__header-container">
+                <div data-socialgoodpulse-id="320944e0-1208-4cde-9621-b52879dbcd06" class="component text 320944e0-1208-4cde-9621-b52879dbcd06  is-full   ">
+                    <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$2037279712$--><h2><span lang="FR">Objectifs</span></h2> <p></p><ul><li>Examiner la configuration NAT sur un routeur sans fil</li><li>Installer 4&nbsp;ordinateurs pour se connecter à un routeur sans fil via DHCP</li><li>Analyser le trafic réseau à l'aide de la fonction NAT</li></ul><p></p><h2><span lang="FR">Instructions</span></h2> <h2><span lang="FR">Partie&nbsp;1: </span><span lang="FR">Examinez la configuration permettant d'accéder au réseau externe.</span></h2> <p class="SubStepAlpha"><span lang="FR">1.<span>&nbsp;&nbsp;</span></span><span lang="FR">Ajoutez 1 PC et connectez-le au routeur sans fil avec un câble droit. Avant de passer à l'étape suivante, attendez que tous les voyants de liaison passent au vert ou cliquez sur Fast Forward (Avance rapide).</span></p> <p class="SubStepAlpha"><span lang="FR">2.<span>&nbsp;&nbsp;</span></span><span lang="FR">Sur le PC, cliquez sur Desktop (Bureau). Sélectionnez Configuration IP. Cliquez sur DHCP pour permettre à chaque appareil de recevoir une adresse&nbsp;IP via DHCP sur le routeur sans fil.</span></p> <p class="SubStepAlpha"><span lang="FR">3.<span>&nbsp;&nbsp;</span></span><span lang="FR">Notez l'adresse IP de la passerelle par défaut. Fermez la Configuration IP lorsque vous avez terminé.</span></p> <p class="SubStepAlpha"><span lang="FR">4.<span>&nbsp;&nbsp;</span></span><span lang="FR">Naviguez vers le navigateur Web et entrez l'adresse IP de la passerelle par défaut dans le champ URL. Saisissez le nom d'utilisateur admin et le mot de passe admin lorsque vous y êtes invité.</span></p> <p class="SubStepAlpha"><span lang="FR">5.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur l'option de menu Status (Statut) dans le coin supérieur droit. Ceci ouvre la page de sous-menu du routeur.</span></p> <p class="SubStepAlpha"><span lang="FR">6.<span>&nbsp;&nbsp;</span></span><span lang="FR">Faites-la défiler vers le bas jusqu'à l'option Connexion Internet. L'adresse&nbsp;IP attribuée ici est l'adresse attribuée par le Fournisseur d'accès à Internet (FAI). Si aucune adresse IP ne s'affiche (0.0.0.0 apparaît), fermez la fenêtre, patientez quelques secondes et réessayez. Le routeur sans fil est en train d'obtenir une adresse IP auprès du serveur DHCP du FAI.</span></p> <p class="BodyTextL50"><span lang="FR">L'adresse affichée ici correspond à l'adresse attribuée au port Internet du routeur sans fil.</span></p> <h4 class="pageTracer-h4-title-hide"><span lang="FR">Question&nbsp;:</span></h4></div>
+                      </div>
+                    </div>
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                </div>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="71969e51-bd56-48cd-8ece-b9ce3bcea135" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="block" style="width: 20%;"><!---->
+                
+                <div data-socialgoodpulse-id="71969e51-bd56-48cd-8ece-b9ce3bcea135" class="71969e51-bd56-48cd-8ece-b9ce3bcea135 block remove-padding-top remove-padding-bottom ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="71969e51-bd56-48cd-8ece-b9ce3bcea135" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$2037279712$--><!----><opentextbox-view modelid="529d16a4-06e4-4b07-88c2-712c2bf6d830" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component">
+          <div class="component__inner openTextBox__inner">
+            <div data-socialgoodpulse-id="529d16a4-06e4-4b07-88c2-712c2bf6d830" class="component opentextbox 529d16a4-06e4-4b07-88c2-712c2bf6d830  is-undefined   ">
+              <div class="component__header-container">
+                <div data-socialgoodpulse-id="529d16a4-06e4-4b07-88c2-712c2bf6d830" class="opentabletextbox ">
+                  <base-view type="component" lowercase_component="openTextBox" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header openTextBox__header">
+              <div class="component__header-inner openTextBox__header-inner">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                </div>
+              </div>
+                  <div class="component__widget openTextBox__widget question-container">
+                      <!--?lit$2037279712$--> <div class="openTextBox__preText"><!--?lit$2037279712$--><p class="BodyTextL50"><span lang="FR">S'agit-il d'une adresse privée ou publique?</span></p></div>                         
+      
+                      <div class="openTextBox__textArea-container">
+                          <fieldset class="openTextBox__fieldset" tabindex="0">
+                          <legend class="openTextBox__legend">
+                            <!--?lit$2037279712$--><!--?lit$2037279712$-->Zone de réponse<!--?-->
+                          </legend>
+                          <textarea class="openTextBox__textArea" rows="3" name="answerArea" placeholder="Tapez votre réponse ici." aria-label="Tapez votre réponse ici.">&lt;!----&gt;&lt;!----&gt;</textarea>
+                          </fieldset>
+                      </div>
+                      <div tabindex="0" class="openTextBox__answerText answergray  hide">
+                        <!--?lit$2037279712$-->
+                      <!--?lit$2037279712$--><p class="BodyTextL50Answer"><span class="AnswerGray"><span style="border:none"><span style="border:none">C'est une adresse&nbsp;IP publique</span></span></span></p>
+                    </div>
+
+                      <div class="btn__container">                        
+                        <button class="btn-text openTextBox__showButton show-answer show"><!--?lit$2037279712$-->Montrer la réponse</button>     
+                        <button class="btn-text openTextBox__hideButton hide-answer hide"><!--?lit$2037279712$-->Masquer la réponse</button>                    
+                      </div>
+                      <!--?lit$2037279712$--><!--?-->
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+      </opentextbox-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="e5b4d574-ace0-4281-936b-aceba9ba93e7" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="block" style="width: 20%;"><!---->
+                
+                <div data-socialgoodpulse-id="e5b4d574-ace0-4281-936b-aceba9ba93e7" class="e5b4d574-ace0-4281-936b-aceba9ba93e7 block remove-padding-top remove-padding-bottom ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="e5b4d574-ace0-4281-936b-aceba9ba93e7" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$2037279712$--><!----><text-view modelid="5b5fe06f-4332-4e6d-971b-2bf0c5842505" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="text-inner component__inner">
+            <div class="component__header-container">
+                <div data-socialgoodpulse-id="5b5fe06f-4332-4e6d-971b-2bf0c5842505" class="component text 5b5fe06f-4332-4e6d-971b-2bf0c5842505  is-full   ">
+                    <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$2037279712$--><h2><span lang="FR">Partie&nbsp;2: </span><span lang="FR">Examinez les paramètres permettant d'accéder au réseau interne.</span></h2> <p class="SubStepAlpha"><span lang="FR">1.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur Local Network (Réseau local) dans la barre de sous-menu de la fenêtre État.</span></p> <p class="SubStepAlpha"><span lang="FR">2.<span>&nbsp;&nbsp;</span></span><span lang="FR">Faites défiler la page vers le bas jusqu'aux informations sur le réseau local. Il s'agit de l'adresse attribuée au réseau interne.</span></p> <p class="SubStepAlpha"><span lang="FR">3.<span>&nbsp;&nbsp;</span></span><span lang="FR">Faites défiler encore la page vers le bas jusqu'aux informations sur le serveur DHCP et la plage d'adresses IP qui peuvent être attribuées aux hôtes connectés.</span></p> <h4 class="pageTracer-h4-title-hide"><span lang="FR">Question&nbsp;:</span></h4></div>
+                      </div>
+                    </div>
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                </div>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="fab151eb-91eb-40a4-b53c-c12ef7a7c4c3" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="block" style="width: 20%;"><!---->
+                
+                <div data-socialgoodpulse-id="fab151eb-91eb-40a4-b53c-c12ef7a7c4c3" class="fab151eb-91eb-40a4-b53c-c12ef7a7c4c3 block remove-padding-top remove-padding-bottom ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="fab151eb-91eb-40a4-b53c-c12ef7a7c4c3" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$2037279712$--><!----><opentextbox-view modelid="48dd5f78-ac98-4ce9-aba7-d2f0ac799f89" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="component">
+          <div class="component__inner openTextBox__inner">
+            <div data-socialgoodpulse-id="48dd5f78-ac98-4ce9-aba7-d2f0ac799f89" class="component opentextbox 48dd5f78-ac98-4ce9-aba7-d2f0ac799f89  is-undefined   ">
+              <div class="component__header-container">
+                <div data-socialgoodpulse-id="48dd5f78-ac98-4ce9-aba7-d2f0ac799f89" class="opentabletextbox ">
+                  <base-view type="component" lowercase_component="openTextBox" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header openTextBox__header">
+              <div class="component__header-inner openTextBox__header-inner">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                </div>
+              </div>
+                  <div class="component__widget openTextBox__widget question-container">
+                      <!--?lit$2037279712$--> <div class="openTextBox__preText"><!--?lit$2037279712$--><p class="BodyTextL50"><span lang="FR">S'agit-il d'adresses privées ou publiques?</span></p></div>                         
+      
+                      <div class="openTextBox__textArea-container">
+                          <fieldset class="openTextBox__fieldset" tabindex="0">
+                          <legend class="openTextBox__legend">
+                            <!--?lit$2037279712$--><!--?lit$2037279712$-->Zone de réponse<!--?-->
+                          </legend>
+                          <textarea class="openTextBox__textArea" rows="3" name="answerArea" placeholder="Tapez votre réponse ici." aria-label="Tapez votre réponse ici.">&lt;!----&gt;&lt;!----&gt;</textarea>
+                          </fieldset>
+                      </div>
+                      <div tabindex="0" class="openTextBox__answerText answergray  hide">
+                        <!--?lit$2037279712$-->
+                      <!--?lit$2037279712$--><p class="BodyTextL50Answer"><span class="AnswerGray"><span style="border:none"><span style="border:none">Ce sont des adresses IP privées</span></span></span></p>
+                    </div>
+
+                      <div class="btn__container">                        
+                        <button class="btn-text openTextBox__showButton show-answer show"><!--?lit$2037279712$-->Montrer la réponse</button>     
+                        <button class="btn-text openTextBox__hideButton hide-answer hide"><!--?lit$2037279712$-->Masquer la réponse</button>                    
+                      </div>
+                      <!--?lit$2037279712$--><!--?-->
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+      </opentextbox-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!----><!---->
+                                    <block-view modelid="5233bd71-5cc5-4232-8d80-47a5dcf6965d" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="block" style="width: 20%;"><!---->
+                
+                <div data-socialgoodpulse-id="5233bd71-5cc5-4232-8d80-47a5dcf6965d" class="5233bd71-5cc5-4232-8d80-47a5dcf6965d block remove-padding-top remove-padding-bottom ">
+                    <div class="block__inner">    
+                    <base-view type="block" modelid="5233bd71-5cc5-4232-8d80-47a5dcf6965d" model="[object Object]" customclass="" lowercase_component="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="block__header-wrapper remove-padding-top remove-padding-bottom ">
+        <div class="block__header ">
+              <div class="block__header-inner ">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                        <div class="component__container">                            
+                                <!--?lit$2037279712$--><!----><text-view modelid="6dc1fb97-6384-4524-969a-7907fa433e5a" class="is-full" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme" sgpulse-type="component"><!---->
+        <div class="text-inner component__inner">
+            <div class="component__header-container">
+                <div data-socialgoodpulse-id="6dc1fb97-6384-4524-969a-7907fa433e5a" class="component text 6dc1fb97-6384-4524-969a-7907fa433e5a  is-full   ">
+                    <base-view type="component" lowercase_component="text" model="[object Object]" customclass="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+      <div class="component__header-wrapper  ">
+        <div class="component__header text__header">
+              <div class="component__header-inner text__header-inner">
+                  
+                    <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$--> <div class="component__content">
+                      <div tabindex="0" class="component__body text__body">
+                        <div class="component__body-inner text__body-inner"><!--?lit$2037279712$--><p class="SubStepAlpha"><span lang="FR">4.<span>&nbsp;&nbsp;</span></span><span lang="FR">Fermez la fenêtre de configuration du routeur sans fil.</span></p> <h2><span lang="FR">Partie&nbsp;3: </span><span lang="FR">Connectez 3&nbsp;ordinateurs au routeur sans fil.</span></h2> <p class="SubStepAlpha"><span lang="FR">1.<span>&nbsp;&nbsp;</span></span><span lang="FR">Ajoutez 3 autres PC et connectez-les au routeur sans fil avec des câbles droits. Avant de passer à l'étape suivante, attendez que tous les voyants de liaison passent au vert ou cliquez sur Fast Forward (Avance rapide).</span></p> <p class="SubStepAlpha"><span lang="FR">2.<span>&nbsp;&nbsp;</span></span><span lang="FR">Sur chaque ordinateur, cliquez sur Desktop (Bureau). Sélectionnez Configuration IP. Cliquez sur DHCP pour permettre à chaque appareil de recevoir une adresse&nbsp;IP via DHCP sur le routeur sans fil. Fermez la Configuration IP lorsque vous avez terminé.</span></p> <p class="SubStepAlpha"><span lang="FR">3.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur Command Prompt (Invite de commande) pour vérifier la configuration IP de chaque périphérique à l'aide de la commande ipconfig /all.</span></p> <p class="BodyTextL50"><span lang="FR">Remarque</span><span lang="FR">: Ces périphériques recevront une adresse privée. Les adresses privées ne pouvant pas parcourir Internet, une traduction NAT est requise.</span></p> <h2><span lang="FR">Partie&nbsp;4: </span><span lang="FR">Affichez la traduction NAT sur le routeur sans fil.</span></h2> <p class="SubStepAlpha"><span lang="FR">a.<span>&nbsp;&nbsp;</span></span><span lang="FR">Passez en mode Simulation en cliquant sur l'onglet Simulation, situé dans l'angle inférieur droit. L'onglet Simulation est situé à côté de l'onglet Temps réel et comporte un symbole de chronomètre.</span></p> <p class="SubStepAlpha"><span lang="FR">b.<span>&nbsp;&nbsp;</span></span><span lang="FR">Visualisez le trafic en créant un PDU complexe en mode Simulation:</span></p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Dans le panneau de simulation, cliquez sur Show All/None (Afficher tout/aucun) pour supprimer tous les événements visibles. Cliquez ensuite sur Edit Filters (Modifier les filtres), puis, sous l'onglet Misc (Divers), cochez les cases TCP et HTTP. Fermez la fenêtre lorsque vous avez terminé.</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Ajoutez un PDU complexe en cliquant sur l'enveloppe ouverte située dans le menu supérieur.</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Cliquez sur l'un des PC pour le spécifier comme source.</p> <p class="SubStepAlpha"><span lang="FR">c.<span>&nbsp;&nbsp;</span></span><span lang="FR">Spécifiez les paramètres de la PDU complexe en modifiant les éléments suivants dans la fenêtre: </span></p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Sous PDU Settings (Paramètres PDU) &gt; Sélectionnez l'application doit être réglé sur: HTTP.</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Cliquez sur le serveur ciscolearn.nat.com pour le spécifier comme périphérique de destination.&nbsp;</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Pour le Port source, entrez 1000.</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Dans la section Paramètres de simulation, sélectionnez Periodic (Périodique). Saisissez 120&nbsp;secondes dans le champ Intervalle.</p> <p class="Bulletlevel1"><span style="font-family:Symbol">·</span><span>&nbsp;&nbsp;</span>Cliquez Create PDU (Créer un PDU) dans la fenêtre Créer un PDU complexe.</p> <p class="SubStepAlpha"><span lang="FR">d.<span>&nbsp;&nbsp;</span></span><span lang="FR">Double-cliquez sur le volet de simulation pour le déverrouiller à partir de la fenêtre PT. Vous pouvez ainsi déplacer le volet de simulation et afficher l'ensemble de la topologie du réseau.</span></p> <p class="SubStepAlpha"><span lang="FR">e.<span>&nbsp;&nbsp;</span></span><span lang="FR">Observez le flux de trafic en cliquant sur Play (Lecture) dans le panneau de simulation. Accélérez l'animation en déplaçant le curseur de lecture vers la droite. </span></p> <p class="BodyTextL50"><span lang="FR">Remarque</span><span lang="FR">: Cliquez sur View Previous Events (Afficher les événements précédents) quand le message entier du buffer s'affiche.</span></p> <h2><span lang="FR">Partie&nbsp;5: </span><span lang="FR">Affichez les informations d'en-tête des paquets ayant circulé sur le réseau.</span></h2> <p class="SubStepAlpha"><span lang="FR">a.<span>&nbsp;&nbsp;</span></span><span lang="FR">Analysez les en-têtes des paquets envoyés entre l'ordinateur et le serveur web. </span></p> <p class="SubStepNum"><span lang="FR">1.<span>&nbsp;&nbsp;</span></span><span lang="FR">Dans le Simulation Panel (volet de simulation), cliquez deux fois sur la troisième ligne de la liste des événements. Une enveloppe représentant cette ligne s'affiche alors dans la zone de travail. </span></p> <p class="SubStepNum"><span lang="FR">2.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur l'enveloppe dans la fenêtre de la zone de travail pour afficher le paquet et les informations d'en-tête. </span></p> <p class="SubStepAlpha"><span lang="FR">b.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur l'onglet Entrée de l'unité de données de protocole. Observez les informations sur le paquet pour l'adresse&nbsp;IP source (SRC) et de destination.</span></p> <p class="SubStepAlpha"><span lang="FR">c.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur l'onglet Sortie de l'unité de données de protocole. Observez les informations sur le paquet pour l'adresse&nbsp;IP source (SRC) et de destination. </span></p> <p class="BodyTextL50"><span lang="FR">Remarquez le changement de l'adresse IP SRC.</span></p> <p class="SubStepAlpha"><span lang="FR">d.<span>&nbsp;&nbsp;</span></span><span lang="FR">Cliquez sur d'autres lignes d'événements pour afficher ces en-têtes lors de la procédure.</span></p> <p class="SubStepAlpha"><span lang="FR">e.<span>&nbsp;&nbsp;</span></span><span lang="FR">Lorsque vous avez terminé, cliquez sur Vérifier les résultats pour vérifier votre travail.</span></p></div>
+                      </div>
+                    </div>
+                  <!--?lit$2037279712$-->
+                  <!--?lit$2037279712$-->
+              </div>
+          </div>
+        </div>
+      
+    </base-view>
+                </div>
+            </div>
+        </div>
+
+        <!-- div><div class="component__inner"></div></div -->
+        </text-view><!---->
+                            </div>                     
+                    </div>
+                </div>
+            </block-view>
+                                <!---->
+                            </div>
+                        </div>
+                        <!--?lit$2037279712$-->
+                    </div>
+                </div>
+            </div>
+        <sgpluse-opentextboxcontroller-view modelid="" is-touch="false" fullscreen="true" device="large" browser="Chrome" os="windows" dir="ltr" location="page" theme="dark" orientation="landscape" themetype="block-base-theme"><!---->
+            <div class="openTextBoxController__button-container">
+                <button tabindex="0" class="btn-text showhidebtn openTextBoxController__showButton show-answer show"><!--?lit$2037279712$-->Afficher toutes les réponses</button>    
+                <button tabindex="0" class="btn-text showhidebtn openTextBoxController__hideButton hide-answer hide"><!--?lit$2037279712$-->Masquer toutes les réponses</button>    
+                <button class="btn-text resetbtn openTextBoxController__resetButton"><!--?lit$2037279712$-->Effacer mes réponses</button>         
+            </div>
+            <!--?lit$2037279712$--><hr>
+            <!--?lit$2037279712$-->
+                <div class="post-text" tabindex="0">
+                    <!--?lit$2037279712$--><span> <span style="padding-right:5px;float:left;font-family:arial;font-size:12px;">© 2017 - 2022 Cisco and/or its affiliates. All rights reserved. Cisco Public</span> </span>
+                </div>
+                   
+        </sgpluse-opentextboxcontroller-view><script></script></body>
+<script>
+    window.addEventListener("load", function () {
+      console.log("loaded");
+      document.querySelectorAll(".answergray").forEach(function (ele) {
+        ele.classList.add("u-display-none");
+      });
+      document.querySelectorAll(".hide-answer").forEach(function (ele) {
+        ele.classList.add("u-display-none");
+      });
+      document.querySelectorAll(".show-answer").forEach(function (ele) {
+        ele.addEventListener("click", function (e) {
+          e.currentTarget.nextElementSibling.classList.remove("u-display-none");
+          e.currentTarget
+            .closest(".question-container")
+            .querySelectorAll(".answergray")
+            .forEach(function (ele) {
+              ele.classList.remove("u-display-none");
+            });
+          ele.classList.add("u-display-none");
+        });
+      });
+      document.querySelectorAll(".hide-answer").forEach(function (ele) {
+        ele.addEventListener("click", function (e) {
+          e.currentTarget.previousElementSibling.classList.remove("u-display-none");
+          e.currentTarget
+            .closest(".question-container")
+            .querySelectorAll(".answergray")
+            .forEach(function (ele) {
+              ele.classList.add("u-display-none");
+            });
+          ele.classList.add("u-display-none");
+        });
+      });
+      var event = new Event("click", {
+        bubbles: true,
+        cancelable: true,
+      });
+      document
+        .querySelectorAll(".openTextBoxController__showButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            e.currentTarget.nextElementSibling.classList.remove("u-display-none");
+            ele.classList.add("u-display-none");
+            document.querySelectorAll(".show-answer").forEach(function (ele) {
+              ele.dispatchEvent(event);
+            });
+          });
+        });
+
+      document
+        .querySelectorAll(".openTextBoxController__hideButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            e.currentTarget.previousElementSibling.classList.remove("u-display-none");
+            ele.classList.add("u-display-none");
+            document.querySelectorAll(".hide-answer").forEach(function (ele) {
+              ele.dispatchEvent(event);
+            });
+          });
+        });
+
+      document
+        .querySelectorAll(".openTextBoxController__resetButton")
+        .forEach(function (ele) {
+          ele.addEventListener("click", function (e) {
+            document.querySelectorAll("textArea").forEach(function (ele) {
+              ele.value = "";
+            });
+          });
+        });
+
+      document
+      .querySelectorAll('textarea')
+      .forEach(function (ele){
+        ele.defaultValue = ele.defaultValue.replace(/<!--.*?-->/g, '');
+      })
+        let checkButtonLabel = "check_button_label_placeHolder";
+        let hideButtonLabel = "hide_button_label_placeHolder";
+        document.querySelectorAll(".check__button").forEach(function (ele) {
+        let answerBox = document.querySelector(".check__solution")
+        if (!answerBox.classList.contains("check__hidden")) {
+          answerBox.classList.add("check__hidden");
+          ele.innerText = checkButtonLabel;
+        }
+          ele.addEventListener("click", function (e) {
+            if (answerBox.classList.contains("check__hidden")) {
+              answerBox.classList.remove("check__hidden")
+              ele.innerText = hideButtonLabel;
+            } else {
+              answerBox.classList.add("check__hidden")
+              ele.innerText = checkButtonLabel;
+            }
+          })
+        })
+    });
+  </script>
+  </html>
