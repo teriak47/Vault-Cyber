@@ -40,22 +40,37 @@ La [[AccessLayer|Couche d'Accès]] est la base d'une [[HierarchicalNetworkDesign
 
 ```mermaid
 graph TD
-    subgraph "Niveau 3: Cœur"
-        A[(CoreLayer) Couche Cœur]
-    end
+    %% Styles
+    classDef coeur fill:#ffe0e0,stroke:#c0392b,stroke-width:2px;
+    classDef distribution fill:#e0f0ff,stroke:#2980b9,stroke-width:2px;
+    classDef acces fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+    classDef device fill:#fdf5e6,stroke:#b37b00,stroke-width:2px;
 
-    subgraph "Niveau 2: Distribution"
-        B[(DistributionLayer) Couche de Distribution]
-    end
+    %% Cœur
+    A((🔴 CoreLayer — Couche Cœur))
+    class A coeur;
 
-    subgraph "Niveau 1: Accès"
-        C[(AccessLayer) Couche d'Accès]
-    end
+    %% Distribution
+    B(🟦 DistributionLayer — Couche de Distribution)
+    class B distribution;
 
-    A -- "Connecte les couches de distribution" --> B
-    B -- "Connecte les couches d'accès" --> C
-    C -- "Connecte les terminaux" --> D[(EndDevices) Dispositifs Terminaux]
-    C -- "Fournit accès filaire/sans fil" --> E[(WirelessDevices) Appareils Sans Fil / (Computer) Ordinateurs]
+    %% Accès
+    C["🟩 AccessLayer — Couche d'Accès"]
+    class C acces;
+
+    %% Terminaux
+    D["🖥️ EndDevices — Dispositifs Terminaux"]
+    E["📡 WirelessDevices — Appareils Sans Fil / Ordinateurs"]
+    class D,E device;
+
+    %% Hiérarchie forcée
+    A --> B
+    B --> C
+
+    %% Terminaux
+    C --> D
+    C --> E
+
 ```
 
 ## ✅ Avantages et Limites
