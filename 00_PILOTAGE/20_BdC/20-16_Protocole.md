@@ -22,7 +22,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/AddressResolutionProtocol.md|AddressResolutionProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/HypertextTransferProtocol.md|HypertextTransferProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/EthernetProtocol.md|EthernetProtocol]]
-- [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/Ethernet.md|Ethernet]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/EthernetFrame.md|EthernetFrame]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/InternetworkPacketExchange.md|InternetworkPacketExchange]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/DynamicHostConfigurationProtocol.md|DynamicHostConfigurationProtocol]]
