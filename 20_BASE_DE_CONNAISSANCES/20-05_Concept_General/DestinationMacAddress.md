@@ -33,7 +33,7 @@ cssclasses:
 ## 💎 Mesures de Protection / Bonnes Pratiques
 *   [[PortSecurity|Sécurité des ports]] : Configurer les [[NetworkSwitch|commutateurs]] pour limiter le nombre d'[[MediaAccessControlAddress|adresses MAC]] apprises par port ou pour autoriser uniquement des [[MediaAccessControlAddress|adresses MAC]] spécifiques.
 *   Détection d'[[AddressResolutionProtocolPoisoning|empoisonnement ARP]] : Utiliser des [[NetworkMonitoring|outils de surveillance réseau]] ou des [[SecurityControl|fonctionnalités de sécurité]] des [[NetworkSwitch|commutateurs]] qui peuvent détecter et bloquer les réponses [[AddressResolutionProtocol|ARP]] malveillantes.
-*   [[NetworkAccessControl|Contrôle d'Accès Réseau (NAC)]] : Implémenter des [[SecurityControl|solutions]] comme [[IEEE8021X|802.1X]] pour [[Authentication|authentifier]] les [[NetworkDevice|périphériques]] avant qu'ils ne puissent communiquer sur le [[Network|réseau]].
+*   [[NetworkAccessControl|Contrôle d'Accès Réseau (NAC)]] : Implémenter des [[SecurityControl|solutions]] comme [[IEEE8021x|802.1X]] pour [[Authentication|authentifier]] les [[NetworkDevice|périphériques]] avant qu'ils ne puissent communiquer sur le [[Network|réseau]].
 *   Filtrage [[MediaAccessControlAddress|MAC]] statique : Configurer manuellement les [[MediaAccessControlAddress|adresses MAC]] autorisées sur des ports spécifiques pour les [[NetworkDevice|appareils]] critiques.
 
 ## 🔗 Notes Connexes
@@ -46,5 +46,5 @@ cssclasses:
 *   [[DataLinkLayer|Couche Liaison de Données]]
 *   [[NetworkSwitch|Commutateur Réseau]]
 *   [[MACFlooding|Inondation MAC]]
-*   [[IEEE8021X|802.1X]]
+*   [[IEEE8021x|802.1X]]
 *   [[NetworkAccessControl|Contrôle d'Accès Réseau (NAC)]]
