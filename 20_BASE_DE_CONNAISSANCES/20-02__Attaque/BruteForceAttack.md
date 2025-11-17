@@ -19,7 +19,7 @@ cssclasses:
 
 ## 🎯 Vecteurs d'Attaque
 *   **Interfaces d'Authentification** : Formulaires de connexion web, services [[SecureShell|SSH]], [[RemoteDesktopProtocol|RDP]] ou [[FileTransferProtocol|FTP]].
-*   **[[NetworkProtocol|Protocoles réseau]]** : Tentatives de connexion sur des services exposés (bases de données, [[Application|applications]] [[WebBrowsers|web]]).
+*   **[[NetworkProtocol|Protocoles réseau]]** : Tentatives de connexion sur des services exposés (bases de données, [[SoftwareApplication|applications]] [[WebBrowsers|web]]).
 *   **[[Cryptography|Cryptographie]]** : Essais pour déchiffrer des données en testant toutes les clés possibles.
 
 ## 💥 Impacts Potentiels

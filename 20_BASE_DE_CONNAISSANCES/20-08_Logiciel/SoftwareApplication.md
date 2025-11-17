@@ -1,4 +1,17 @@
 ---
+tags:
+  - logiciel
+  - application
+  - securite/logiciel
+  - ingenierie/logiciel
+  - architecture/logiciel
+  - vulnerabilite
+  - logiciel/bug
+  - test/securite
+  - developpement-securise
+  - api
+  - application/web
+  - application/mobile
 aliases:
   - Application logicielle
   - Logiciel applicatif
@@ -7,40 +20,46 @@ archetype: logiciel
 version:
 cssclasses:
   - max
+source:
 ---
 
-# Application Logicielle
+# Application logicielle
 
 ## 🎯 Rôle et Fonction
-> Une [[SoftwareApplication|application logicielle]] est un [[Software|programme]] ou un ensemble de [[Software|programmes]] conçus pour effectuer une tâche spécifique ou un ensemble de tâches pour l'utilisateur final. Elle s'exécute généralement sur un [[OperatingSystem|système d'exploitation]] et interagit avec les [[Hardware|composants matériels]] et d'autres [[Software|logiciels]].
+
+> Une [[SoftwareApplication|application logicielle]] est un type de [[Software|logiciel]] conçu pour exécuter des fonctions ou des tâches spécifiques au bénéfice d'un [[User|utilisateur]]. Elle opère au-dessus du [[OperatingSystem|système d'exploitation]] et interagit avec le [[Hardware|matériel]] ainsi que d'autres [[Software|logiciels]] pour accomplir ses objectifs. Les applications peuvent varier des utilitaires simples aux [[System|systèmes]] d'entreprise complexes, offrant des interfaces et des fonctionnalités directes aux utilisateurs.
 
 ## ⚙️ Configuration
-*   **Aspects de configuration clés**:
-    *   **Paramètres utilisateur**: Personnalisation de l'[[SoftwareApplication|application]] par l'[[Account|utilisateur]].
-    *   **[[System|Paramètres système]]**: Configuration de l'[[SoftwareApplication|application]] pour interagir avec le [[OperatingSystem|système d'exploitation]] et le [[Network|réseau]].
-    *   **Dépendances**: Peut nécessiter l'installation de bibliothèques, de frameworks ou de [[Database|bases de données]] spécifiques.
-*   **Modules et Plugins**: De nombreuses [[SoftwareApplication|applications]] permettent l'extension de leurs fonctionnalités via des modules ou des plugins, qui doivent être gérés et sécurisés.
-*   **Dépendances typiques**: [[OperatingSystem|Systèmes d'exploitation]], [[Database|Bases de données]], [[Network|Réseaux]], [[RuntimeEnvironment|Environnements d'exécution]].
+
+La configuration des applications est cruciale pour leur fonctionnalité et leur sécurité. Elle varie considérablement en fonction du type d'application, du langage de programmation et de l'environnement d'exécution.
+
+- **Paramètres applicatifs**: Définition des règles métier, des logiques de flux et des comportements spécifiques de l'application (ex: `.env`, `appsettings.json`, `web.config`).
+- **Paramètres d'environnement**: Variables d'environnement, chemins d'accès aux ressources ([[Database|bases de données]], [[FileServer|serveurs de fichiers]]) et services externes.
+- **Gestion des [[Dependency|dépendances]]**: S'assurer que toutes les bibliothèques, frameworks et autres composants tiers sont correctement configurés et mis à jour.
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-*   **[[SecurityByDesign|Sécurité dès la conception]]**: Intégrer les [[SecurityControl|contrôles de sécurité]] et les meilleures pratiques dès le début du [[SoftwareDevelopmentLifecycle|cycle de vie du développement logiciel]].
-*   **Validation des entrées**: Mettre en œuvre une [[InputValidation|validation stricte de toutes les entrées]] (utilisateur, [[Data|données]] externes) pour prévenir les [[Vulnerability|vulnérabilités]] telles que l'[[SqlInjection|injection SQL]], le [[CrossSiteScripting|XSS]] ou le [[BufferOverflow|dépassement de tampon]].
-*   **[[PatchManagement|Gestion des patchs]] et [[VulnerabilityManagement|gestion des vulnérabilités]]**: Appliquer rapidement les [[SoftwareVulnerability|mises à jour de sécurité]] et les correctifs pour les [[SoftwareBugs|défauts logiciels]] et les [[ZeroDay|vulnérabilités Zero-Day]] découvertes.
-*   **[[LeastPrivilege|Principe du moindre privilège]]**: Exécuter l'[[SoftwareApplication|application]] et ses services avec les droits minimaux nécessaires sur le [[System|système]] et le [[Network|réseau]].
-*   **[[DataEncryption|Chiffrement des données]]**: Utiliser le [[Encryption|chiffrement]] pour protéger les [[SensitiveData|données sensibles]] au repos (stockage) et en transit ([[NetworkCommunication|communication réseau]]) via des [[SecureRoutingProtocols|protocoles sécurisés]] comme [[TransportLayerSecurity|TLS]].
-*   **[[Authentication|Authentification]] et [[AccessControl|contrôle d'accès]]**: Implémenter des mécanismes robustes pour vérifier l'identité des [[Account|utilisateurs]] et limiter leurs actions en fonction de leurs [[RoleBasedAccessControl|rôles]].
-*   **Gestion des erreurs et des exceptions**: Gérer les erreurs de manière sécurisée pour éviter de divulguer des informations sensibles à un [[ThreatActor|attaquant]].
+
+La sécurisation d'une application est un processus continu qui doit être intégré tout au long de son cycle de vie.
+
+- **[[SecurityByDesign|Sécurité dès la conception]]**: Intégrer les considérations de sécurité dès les premières phases du [[SoftwareDesign|design]] et du [[Programming|développement]].
+- **[[VulnerabilityManagement|Gestion des vulnérabilités]]**: Appliquer une stratégie de [[PatchManagement|gestion des correctifs]] et de mises à jour régulière pour adresser les [[SoftwareVulnerability|vulnérabilités logicielles]] connues.
+- **[[AccessControl|Contrôle d'accès]]**: Mettre en œuvre le [[PrincipleOfLeastPrivilege|principe du moindre privilège]] pour les [[Account|comptes]] de service et les [[User|utilisateurs]], avec des mécanismes d'[[Authentication|authentification]] et d'[[Authorization|autorisation]] robustes (ex: [[MultiFactorAuthentication|MFA]]).
+- **Validation des entrées**: Mettre en place une validation rigoureuse pour prévenir les [[UnvalidatedInput|entrées non validées]] qui pourraient mener à des [[CodeInjection|attaques par injection de code]] (comme [[SqlInjection|injection SQL]] ou [[CrossSiteScripting|XSS]]).
+- **Protection des [[SensitiveData|données sensibles]]**: Utiliser le [[DataEncryption|chiffrement des données]] au repos et en transit pour assurer la [[Confidentiality|confidentialité]] et l'[[Integrity|intégrité]].
 
 ## 🔍 Audit et Surveillance
-*   **[[Log|Journaux]] d'[[EventMonitoring|événements]]**: Collecter, analyser et surveiller les [[Log|journaux]] d'[[SoftwareApplication|application]] pour détecter les activités suspectes, les erreurs et les tentatives d'[[UnauthorizedAccess|accès non autorisé]]. Utiliser un [[SecurityInformationAndEventManagement|SIEM]] pour la corrélation.
-*   **[[CodeReview|Revue de code]]**: Effectuer des examens réguliers du code source pour identifier les [[SoftwareVulnerability|vulnérabilités logicielles]] et les mauvaises pratiques de [[Programming|programmation]].
-*   **[[PenetrationTesting|Tests d'intrusion]] et [[Fuzzing|fuzzing]]**: Réaliser des [[PenetrationTesting|tests d'intrusion]] pour identifier les [[SecurityVulnerabilities|failles de sécurité]] et utiliser le [[Fuzzing|fuzzing]] pour découvrir les [[SoftwareBugs|bugs]] et les [[Vulnerability|vulnérabilités]] de manière automatisée.
-*   **[[SecurityAudit|Audits de sécurité]]**: Réaliser des [[SecurityAudit|audits]] réguliers pour évaluer la conformité de l'[[SoftwareApplication|application]] aux [[SecurityPolicy|politiques de sécurité]] et aux normes industrielles.
+
+Un audit et une surveillance efficaces sont essentiels pour maintenir la posture de sécurité d'une application.
+
+- **[[Log|Journaux]] d'activité**: Collecter, centraliser et analyser les [[Log|journaux]] d'application pour détecter les [[AnomalyDetection|activités suspectes]], les [[SoftwareBugs|erreurs logicielles]] et les tentatives d'[[Attack|attaque]].
+- **[[SecurityMonitoring|Surveillance de sécurité]]**: Intégrer les [[Log|journaux]] d'application dans des [[SecurityInformationAndEventManagement|SIEM]] ou d'autres plateformes de [[NetworkMonitoring|surveillance réseau]] pour une vue d'ensemble.
+- **Évaluation de sécurité régulière**: Effectuer des [[PenetrationTesting|tests d'intrusion]], des [[CodeReview|revues de code]] et des [[SecurityAudit|audits de sécurité]] périodiques.
 
 ## 🔗 Notes Connexes
-*   [[CommonVulnerabilitiesAndExposures|Vulnérabilités et Expositions Communes (CVEs)]]
-*   [[NetworkProtocol|Protocoles réseau]] (par exemple, [[HypertextTransferProtocol|HTTP]], [[TransmissionControlProtocol|TCP]])
-*   [[ApplicationSecurity|Sécurité des applications]]
-*   [[OperatingSystem|Système d'exploitation]]
-*   [[ClientServerArchitecture|Architecture Client-Serveur]]
-*   [[SoftwareSupplyChainSecurity|Sécurité de la chaîne d'approvisionnement logicielle]]
+
+- **Principe fondamental**: [[CIATriad|Triade CIA]]
+- **Concept de sécurité**: [[InformationSecurity|Sécurité de l'Information]]
+- **Méthode de défense**: [[DefenseInDepth|Défense en Profondeur]]
+- **Type de vulnérabilité**: [[ZeroDay|Zero-Day]]
+- **Processus associé**: [[RiskManagement|Gestion des Risques]]
+

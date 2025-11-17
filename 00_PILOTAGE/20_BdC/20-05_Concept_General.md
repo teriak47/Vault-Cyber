@@ -388,5 +388,12 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Decapsulation.md|Decapsulation]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Encapsulation.md|Encapsulation]]
 - [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Frame.md|Frame]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Virtualization.md|Virtualization]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/VirtualMachine.md|VirtualMachine]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/DirectoryService.md|DirectoryService]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Service.md|Service]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/ThreatDetection.md|ThreatDetection]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Storage.md|Storage]]
+- [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/Labo.md|Labo]]
 
 %% DATAVIEW_PUBLISHER: end %%
