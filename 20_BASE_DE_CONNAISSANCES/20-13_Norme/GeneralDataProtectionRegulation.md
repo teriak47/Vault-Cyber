@@ -2,14 +2,23 @@
 tags:
   - norme
   - regulation
+  - rgpd
+  - reglementation
+  - cadre-legal
+  - juridique
+  - protection/donnees
+  - donnee/personnel
+  - confidentialite
+  - conformite
+  - donnee/privé
 aliases:
   - Règlement Général sur la Protection des Données
   - RGPD
   - GDPR
   - General Data Protection Regulation
+  - Protection des Données Personnelles
 archetype: norme
 source:
-  - 
 cssclasses:
   - max
 ---
@@ -17,43 +26,30 @@ cssclasses:
 # Règlement Général sur la Protection des Données (RGPD)
 
 ## 🎯 Objectif et Périmètre
-> Le [[GeneralDataProtectionRegulation|RGPD]] est un règlement de l'[[EuropeanUnion|Union Européenne]] qui vise à renforcer et unifier la [[DataProtection|protection des données]] pour tous les individus au sein de l'UE et de l'Espace Économique Européen. Il s'applique à toute entité qui collecte, stocke ou [[DataProcessing|traite des données]] [[PersonalData|personnelles]] de résidents de l'UE, quel que soit l'endroit où l'entité est basée. Son objectif est de donner aux citoyens un plus grand contrôle sur leurs [[PersonalData|données personnelles]] et d'établir un cadre juridique harmonisé pour le [[DataProcessing|traitement des données]] à travers l'Europe.
+Le [[GeneralDataProtectionRegulation|Règlement Général sur la Protection des Données]] (RGPD ou GDPR) est une réglementation de l'Union Européenne (UE) et de l'Espace Économique Européen (EEE) qui vise à renforcer et unifier la [[DataProtection|protection des données]] pour toutes les personnes au sein de l'UE et l'EEE. Il s'applique à toute [[Enterprise|organisation]], qu'elle soit basée dans l'UE ou non, qui traite les [[PersonalData|données personnelles]] de résidents de l'UE. Son objectif est de donner aux individus plus de contrôle sur leurs données et de simplifier l'environnement réglementaire pour les entreprises internationales en unifiant la réglementation au sein de l'UE.
 
 ## 🔑 Principales Exigences / Sections
-*   **Consentement et Bases Légales**: Le [[GeneralDataProtectionRegulation|RGPD]] exige que le [[DataProcessing|traitement des données]] soit basé sur une base légale, la plus courante étant le [[Consent|consentement]] explicite et non ambigu des personnes concernées.
-*   **[[DataSubjectRights|Droits des personnes concernées]]**: Accorde aux individus des droits renforcés, notamment le droit d'accès, de rectification, d'effacement ([[Privacy|droit à l'oubli]]), de limitation du [[DataProcessing|traitement]], de portabilité des données et d'opposition au [[DataProcessing|traitement]].
-*   **[[Accountability|Responsabilité]] et Gouvernance**: Introduit des exigences en matière d'[[Accountability|responsabilité]], telles que la désignation d'un [[DataProtectionOfficer|DPO]] (délégué à la [[DataProtection|protection des données]]), la réalisation d'analyses d'impact relatives à la [[DataProtection|protection des données]] ([[DataProtectionImpactAssessment|DPIA]]), et l'intégration de la [[PrivacyByDesign|confidentialité dès la conception]] et par défaut.
-*   **Notification des [[DataBreach|Violations de Données]]**: Oblige les organisations à notifier les [[DataBreach|violations de données]] à l'autorité de contrôle compétente (comme la [[NationalCommissionForDataProtectionAndLiberties|CNIL]] en France) dans les 72 heures et, dans certains cas, aux personnes concernées.
-*   **Transferts Internationaux**: Établit des règles strictes pour le transfert de [[PersonalData|données personnelles]] en dehors de l'UE/EEE, exigeant des garanties adéquates pour la [[DataProtection|protection des données]].
+Le [[GeneralDataProtectionRegulation|RGPD]] s'articule autour de plusieurs principes et exigences clés :
+*   **Principes de traitement des données**: Les données doivent être traitées de manière licite, loyale et transparente. Elles doivent être collectées pour des finalités déterminées, explicites et légitimes (principe de la [[PurposeLimitation|limitation des finalités]]), adéquates, pertinentes et limitées à ce qui est nécessaire (principe de la [[DataMinimization|minimisation des données]]), exactes et tenues à jour. Leur conservation doit être limitée (principe de la [[StorageLimitation|limitation de la conservation]]) et traitées de manière à garantir une sécurité appropriée, y compris la [[Confidentiality|confidentialité]] et l'[[Integrity|intégrité]] des données. Les responsables du traitement doivent être en mesure de démontrer leur conformité (principe de la [[Accountability|responsabilité]]).
+*   **Droits des personnes concernées**: Le RGPD confère aux individus un ensemble de droits étendus sur leurs données, incluant le droit d'accès, de rectification, d'effacement ("droit à l'oubli"), à la limitation du traitement, à la portabilité des données et d'opposition.
+*   **Consentement**: Le traitement des données personnelles nécessite un consentement libre, spécifique, éclairé et univoque de la personne concernée, ou une autre base légale valide.
+*   **Notification des violations de données**: En cas de [[DataBreach|violation de données]] présentant un risque pour les droits et libertés des personnes physiques, le responsable du traitement doit en notifier l'autorité de contrôle compétente dans les 72 heures et, dans certains cas, les personnes concernées.
+*   **Délégué à la protection des données (DPO)**: Certaines organisations sont tenues de désigner un DPO, expert en droit de la [[DataProtection|protection des données]], pour veiller à la conformité au RGPD.
+*   **Évaluation d'impact sur la [[Privacy|vie privée]] (PIA)**: Pour les traitements de données présentant un risque élevé pour les droits et libertés des personnes, une évaluation d'impact est obligatoire.
 
 ## 📈 Bénéfices de la Conformité
-*   [[LegalCompliance|Conformité légale]] et réduction du risque d'amendes sévères en cas de non-conformité.
-*   Renforcement de la [[DataProtection|protection des données]] et de la [[Privacy|vie privée]] pour les individus.
-*   Amélioration de la [[Cybersecurity|cybersécurité]] et de l'[[InformationSecurity|sécurité de l'information]] grâce à des exigences de mesures techniques et organisationnelles.
-*   Accroissement de la confiance des clients, partenaires et utilisateurs.
-*   Amélioration de l'image de marque et avantage [[CompetitiveSituation|concurrentiel]].
+La conformité au [[GeneralDataProtectionRegulation|RGPD]] offre plusieurs avantages :
+*   **Amélioration de la [[DataProtection|protection des données]]**: Renforce les pratiques de sécurité et de [[Privacy|confidentialité]] au sein de l'organisation.
+*   **Confiance des clients/partenaires**: Démontre un engagement envers la [[Privacy|vie privée]] et la [[PersonalData|protection des données personnelles]], ce qui peut améliorer la [[Reputation|réputation]] et la loyauté des clients.
+*   **Avantage concurrentiel**: Les entreprises conformes peuvent se distinguer sur le marché et attirer des partenaires soucieux de la [[LegalCompliance|conformité]].
+*   **Obligation légale**: Évite les sanctions administratives lourdes, y compris des amendes pouvant atteindre 20 millions d'euros ou 4 % du chiffre d'affaires mondial annuel total.
 
 ## 📜 Certifications Associées
-*   Il n'existe pas de certification unique "[[GeneralDataProtectionRegulation|RGPD]]", mais des autorités de contrôle nationales peuvent émettre des certifications ou des labels spécifiques pour des produits, services et processus de [[DataProcessing|traitement de données]].
-*   Des cadres comme la [[InternationalOrganizationForStandardization|norme ISO 27001]] sur la [[InformationSecurity|sécurité de l'information]] peuvent aider les organisations à démontrer leur conformité technique et organisationnelle avec certains principes du [[GeneralDataProtectionRegulation|RGPD]].
-*   Des organismes comme la [[NationalCommissionForDataProtectionAndLiberties|CNIL]] supervisent l'application du [[GeneralDataProtectionRegulation|RGPD]] en France et peuvent effectuer des audits.
+Le [[GeneralDataProtectionRegulation|RGPD]] ne propose pas de certification unique "RGPD" à proprement parler, mais il encourage l'établissement de mécanismes de certification, de labels et de codes de conduite. Les autorités de contrôle nationales, comme la [[NationalCommissionForDataProtectionAndLiberties|CNIL]] en France, sont chargées de délivrer des agréments pour ces mécanismes. Des certifications spécifiques peuvent exister pour des produits ou services qui démontrent leur conformité à des aspects particuliers du règlement. Les processus d'audit et de certification peuvent varier mais visent à évaluer la mise en œuvre effective des exigences du RGPD.
 
 ## 🔗 Notes Connexes
-*   [[DataProtection|Protection des Données]]
-*   [[Privacy|Vie Privée]]
-*   [[LegalCompliance|Conformité Légale]]
-*   [[PrivacyByDesign|Confidentialité dès la Conception]]
-*   [[SecurityByDesign|Sécurité dès la conception]]
-*   [[NationalCommissionForDataProtectionAndLiberties|CNIL]]
-*   [[DataBreach|Fuite de données]]
-*   [[InformationSecurity|Sécurité de l'Information]]
-*   [[RiskManagement|Gestion des risques]]
-*   [[SecurityControl|Contrôles de sécurité]]
-*   [[DataProtectionOfficer|Data Protection Officer (DPO)]]
-*   [[DataProcessing|Traitement des Données]]
-*   [[DataSubjectRights|Droits des Personnes Concernées]]
-*   [[Accountability|Responsabilité]]
-*   [[EuropeanUnion|Union Européenne]]
-*   [[DataProtectionImpactAssessment|Analyse d'Impact relative à la Protection des Données (DPIA)]]
-*   [[Consent|Consentement]]
----
+*   **Concept juridique fondamental**: [[Privacy|Vie Privée]]
+*   **Autorité de contrôle**: [[NationalCommissionForDataProtectionAndLiberties|CNIL]]
+*   **Méthodologie de conception**: [[PrivacyByDesign|Confidentialité dès la Conception]]
+*   **Objectif de sécurité**: [[DataProtection|Protection des Données]]
+*   **Cadre réglementaire connexe**: [[NetworkAndInformationSystemsDirectiveTwo|NIS2]]
