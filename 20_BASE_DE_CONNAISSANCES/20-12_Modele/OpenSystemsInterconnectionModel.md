@@ -45,6 +45,48 @@ Le [[OpenSystemsInterconnectionModel|Modèle OSI]] est composé de sept [[Protoc
 *   **Communication de couche à couche**: Chaque couche ne communique qu'avec la couche directement supérieure ou inférieure, et logiquement, avec la couche homologue sur le [[RemoteNetwork|système distant]].
 *   **Indépendance des couches**: Les couches sont conçues pour être indépendantes les unes des autres, permettant à une couche d'être modifiée sans affecter les autres, tant que son interface avec les couches adjacentes reste inchangée.
 
+## 📊 Diagramme Conceptuel
+
+```mermaid
+graph TD
+    classDef layer fill:#e8f8ff,stroke:#2980b9,stroke-width:2px;
+    classDef odd fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+    classDef even fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+
+    L7["🟦 Couche 7<br/>Application"]:::layer
+    L6["🟨 Couche 6<br/>Présentation"]:::odd
+    L5["🟩 Couche 5<br/>Session"]:::even
+    L4["🟦 Couche 4<br/>Transport"]:::layer
+    L3["🟨 Couche 3<br/>Réseau"]:::odd
+    L2["🟩 Couche 2<br/>Liaison de Données"]:::even
+    L1["🟦 Couche 1<br/>Physique"]:::layer
+
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+
+```
+---
+
+
+```mermaid
+graph TD
+    classDef layer1 fill:#e8f8ff,stroke:#2980b9,stroke-width:2px;
+    classDef layer2 fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+    classDef layer3 fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+
+    L7["🟦 Couche 7 : Application<br/>HTTP, DNS, SMTP"]:::layer1
+    L6["🟨 Couche 6 : Présentation<br/>Encodage, Compression, TLS"]:::layer2
+    L5["🟩 Couche 5 : Session<br/>Handshake, Sync, Dialogue"]:::layer3
+    L4["🟦 Couche 4 : Transport<br/>TCP, UDP, Ports"]:::layer1
+    L3["🟨 Couche 3 : Réseau<br/>IP, Routage, IPv4/6"]:::layer2
+    L2["🟩 Couche 2 : Liaison<br/>MAC, ARP, Trame Ethernet"]:::layer3
+    L1["🟦 Couche 1 : Physique<br/>Bits, Signaux, Médium"]:::layer1
+
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+
+```
+
+---
+
 ## 💡 Applications Pratiques
 
 *   **Enseignement et Compréhension**: Largement utilisé comme outil pédagogique pour expliquer le fonctionnement des [[Network|réseaux informatiques]] et des [[NetworkCommunication|communications de données]].

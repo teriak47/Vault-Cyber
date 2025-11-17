@@ -49,5 +49,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/Spam.md|Spam]]
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/SmurfAttack.md|SmurfAttack]]
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/Smishing.md|Smishing]]
+- [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/IdentityTheft.md|IdentityTheft]]
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -11,5 +11,7 @@ SORT file.ctime ASC
 %%
 
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/CoordinatedVulnerabilityDisclosure.md|CoordinatedVulnerabilityDisclosure]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/Troubleshooting.md|Troubleshooting]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/CyberKillChain.md|CyberKillChain]]
 
 %% DATAVIEW_PUBLISHER: end %%

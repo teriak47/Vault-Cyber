@@ -1,44 +1,37 @@
 ---
 tags:
   - ethernet
-  - couche/physique
+  - trame/ethernet
+  - couche/liaison/donnees
+  - synchronisation
+  - signalisation
 aliases:
   - Préambule
   - Ethernet Preamble
   - Preamble
+  - Préambule Ethernet
 archetype: concept-general
 source:
-  - Ethernet Standard
+  - 
 cssclasses:
   - max
 ---
 
 # Préambule Ethernet
 
-## 🎯 Rôle et Localisation
-> Le préambule Ethernet est une séquence de [[BinaryDigit|bits]] au début d'une [[EthernetFrame|trame Ethernet]] utilisée pour la [[SignalSynchronization|synchronisation du signal]] entre les [[NetworkDevice|périphériques réseau]] d'émission et de réception. Il opère au niveau de la [[PhysicalLayer|couche physique]] du [[OpenSystemsInterconnectionModel|modèle OSI]], essentielle pour l'établissement d'une [[DataTransmission|transmission de données]] fiable.
+## 📥 Définition en une phrase
+> Le Préambule Ethernet est une séquence binaire de 7 octets (56 bits) précédant chaque [[EthernetFrame|trame Ethernet]], utilisée pour la synchronisation des horloges entre les [[NetworkDevice|périphériques réseau]] émetteur et récepteur.
 
-## ⚙️ Fonctionnement
-1.  **Structure**: Le préambule se compose de 7 [[Byte|octets]] (56 [[Bit|bits]]) d'un motif répétitif de `10101010`, immédiatement suivis par le [[StartFrameDelimiter|délimiteur de début de trame (SFD)]] d'un [[Byte|octet]] (`10101011`).
-2.  **Synchronisation**: Il est généré par la [[NetworkInterfaceCard|carte d'interface réseau (NIC)]] émettrice. Sa fonction première est de permettre à la [[NetworkInterfaceCard|NIC]] réceptrice de synchroniser son horloge interne avec le flux de [[BinaryDigit|bits]] entrants, préparant ainsi la réception des données utiles de la [[EthernetFrame|trame]].
-3.  **Traitement**: Ni le préambule ni le [[StartFrameDelimiter|SFD]] ne sont considérés comme faisant partie des données réelles de la [[EthernetFrame|trame]] et ne sont pas inclus dans le calcul de sa taille. La [[NetworkInterfaceCard|NIC]] réceptrice les retire avant de transmettre la [[EthernetFrame|trame]] aux [[OpenSystemsInterconnectionModel|couches OSI]] supérieures pour un traitement ultérieur.
-4.  **Compatibilité**: Crucial pour la synchronisation bit par [[Bit|bit]] sur les réseaux [[EthernetProtocol|Ethernet]] plus anciens (ex: 10 [[MegabitsPerSecond|Mbps]]), le préambule est maintenu pour des raisons de compatibilité sur les réseaux plus rapides, où la [[SignalSynchronization|synchronisation]] peut être gérée par des mécanismes plus sophistiqués au niveau de la [[PhysicalLayer|couche physique]].
+## 🧠 Concepts Clés / Piliers
+*   **Synchronisation d'Horloge**: Le but principal du Préambule est de permettre aux [[NetworkDevice|périphériques réseau]] destinataires de synchroniser leurs horloges avec le signal entrant. Il s'agit d'une séquence alternée de zéros et de uns (10101010), facilitant la détection du début de la [[EthernetFrame|trame]] et l'ajustement du timing.
+*   **[[StartFrameDelimiter|Délimiteur de Début de Trame (SFD)]]**: Le 8ème octet suivant le Préambule est le [[StartFrameDelimiter|SFD]]. C'est une séquence binaire de 10101011 qui signale le début réel des données de la trame. Le Préambule et le [[StartFrameDelimiter|SFD]] forment ensemble le début de l'[[EthernetFrame|trame Ethernet]].
+*   **[[PhysicalLayer|Couche Physique]]**: Le Préambule est une fonction de la [[PhysicalLayer|couche physique]] du [[OpenSystemsInterconnectionModel|modèle OSI]], essentielle pour la [[DataTransmission|transmission de données]] via le [[NetworkMedia|support réseau]]. Il assure que les bits sont correctement interprétés au niveau du récepteur.
 
-## 🛡️ Sécurité et Risques
-*   **Risques associés**:
-    *   [[Desynchronization|Désynchronisation]] : Des problèmes au niveau du [[NetworkMedia|support de transmission réseau]] ou du [[NetworkHardware|matériel réseau]] peuvent entraver la [[SignalSynchronization|synchronisation du signal]], menant à la perte ou à la [[DataCorruption|corruption de données]] de la [[EthernetFrame|trame]].
-    *   [[DataCorruption|Corruption de Données]] : Une [[SignalSynchronization|synchronisation]] incorrecte ou absente peut entraîner une mauvaise interprétation des [[BinaryDigit|bits]] de la [[EthernetFrame|trame]] par la [[NetworkInterfaceCard|carte réseau]] réceptrice, compromettant l'[[Integrity|intégrité]] des [[Data|données]].
-*   **Bonnes pratiques/Mesures**:
-    *   [[NetworkCabling|Câblage réseau]] de qualité : L'utilisation de [[EthernetPatchCable|câbles Ethernet]] conformes aux normes (ex: [[Category5eCable|Catégorie 5e]]) est essentielle pour minimiser les [[ElectromagneticInterference|interférences électromagnétiques]] et les pertes de signal, garantissant une meilleure [[SignalTransmission|transmission de signal]].
-    *   [[NetworkHardware|Matériel réseau]] approprié : S'assurer que les [[NetworkInterfaceCard|cartes réseau]] et les [[IntermediateDevice|dispositifs intermédiaires]] (tels que les [[NetworkSwitch|commutateurs]]) sont conformes aux [[NetworkStandard|normes réseau]] et correctement configurés pour garantir une [[DataTransmission|transmission de données]] fiable et une [[SignalSynchronization|synchronisation]] efficace.
+## 💡 Importance en Cybersécurité
+> Bien que le Préambule Ethernet ne soit pas une cible directe d'attaques en cybersécurité, son intégrité est cruciale pour la [[Reliability|fiabilité]] de la [[NetworkCommunication|communication réseau]]. Toute [[Tampering|altération]] ou erreur dans cette séquence pourrait entraîner une désynchronisation des [[NetworkDevice|périphériques]], menant à la [[DataLoss|perte de données]] ou à une [[ServiceDisruption|interruption de service]]. La capacité d'un [[System|système]] à traiter correctement le préambule est fondamentale pour une cybersécurité robuste au niveau de la [[PhysicalLayer|couche physique]].
 
 ## 🔗 Notes Connexes
-*   [[EthernetFrame|Trame Ethernet]]
-*   [[StartFrameDelimiter|Start Frame Delimiter (SFD)]]
-*   [[PhysicalLayer|Couche Physique]]
-*   [[NetworkInterfaceCard|Carte Réseau (NIC)]]
-*   [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   [[EthernetProtocol|Protocole Ethernet]]
-*   [[SignalSynchronization|Synchronisation du signal]]
-*   [[NetworkMedia|Support de transmission réseau]]
-*   [[NetworkDevice|Périphérique Réseau]]
+*   **Composant de**: [[EthernetFrame|Trame Ethernet]]
+*   **Mécanisme de**: [[SignalTransmission|Transmission de Signal]]
+*   **Couche OSI associée**: [[PhysicalLayer|Couche Physique]]
+*   **Protocole de base**: [[EthernetProtocol|Protocole Ethernet]]

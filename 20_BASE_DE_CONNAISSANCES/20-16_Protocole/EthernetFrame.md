@@ -1,11 +1,19 @@
 ---
 tags:
   - protocole
+  - trame
+  - trame/ethernet
+  - ethernet
+  - protocole/ethernet
+  - reseau
+  - couche/liaison/donnees
+  - format-donnees
 aliases:
   - Trame Ethernet
   - Ethernet Frame
+  - Structure de trame Ethernet
 archetype: protocole
-rfc: 
+rfc: IEEE 802.3
 cssclasses:
   - max
 ---
@@ -13,51 +21,63 @@ cssclasses:
 # Trame Ethernet
 
 ## 🎯 Rôle et Couche OSI
-> Une [[EthernetFrame|trame Ethernet]] est l'unité de données fondamentale encapsulée et transmise sur un réseau [[Ethernet|Ethernet]]. Elle opère au niveau de la [[DataLinkLayer|couche liaison de données]] (couche 2 du [[OpenSystemsInterconnectionModel|modèle OSI]]) et permet l'échange d'informations entre les [[NetworkDevice|dispositifs réseau]] sur un même [[BroadcastDomain|domaine de diffusion]].
 
-## ⚙️ Fonctionnement : Structure et Champs
-La [[EthernetFrame|trame Ethernet]] est structurée pour assurer la livraison et l'intégrité des [[Data|données]] sur un réseau local. Voici ses principaux composants :
+La [[EthernetFrame|trame Ethernet]] est l'unité de transmission de base dans un réseau [[Ethernet|Ethernet]]. 
+Elle encapsule les données de la couche supérieure (par exemple, un [[Packet|paquet]] [[InternetProtocol|IP]]) pour leur transport sur le support physique. 
+Son rôle principal est d'assurer la livraison fiable des données entre les [[Host|hôtes]] d'un même [[LocalAreaNetwork|LAN]].
 
-1.  **[[Preamble|Préambule]] (7 octets) et [[StartFrameDelimiter|SFD]] (1 octet)**
-    *   Utilisés pour la [[SignalTransmission|synchronisation]] des horloges entre les [[NetworkDevice|équipements]] émetteurs et récepteurs. Le [[StartFrameDelimiter|SFD]] marque le début réel de la trame.
-2.  **[[DestinationMacAddress|Adresse MAC de destination]] (6 octets)**
-    *   Identifie l'[[NetworkInterfaceCard|interface réseau]] spécifique à laquelle la trame est destinée. Peut être une [[Unicast|adresse unicast]], [[Multicast|multicast]] ou [[BroadcastAddress|broadcast]].
-3.  **[[SourceMacAddress|Adresse MAC source]] (6 octets)**
-    *   Identifie l'[[NetworkInterfaceCard|interface réseau]] qui a émis la trame.
-4.  **Champ Type/Longueur (EtherType) (2 octets)**
-    *   Indique soit la longueur du champ de [[Payload|données]], soit le [[NetworkProtocol|protocole]] de [[ApplicationLayer|couche supérieure]] encapsulé dans la [[EthernetFrame|trame]] (ex: [[InternetProtocol|IP]], [[AddressResolutionProtocol|ARP]]).
-5.  **Champ de [[Payload|Données]] (46 à 1500 octets)**
-    *   Contient les [[Data|données]] réelles des [[NetworkProtocol|protocoles]] de [[ApplicationLayer|couche supérieure]], comme un [[Packet|paquet]] [[InternetProtocol|IP]] ou un [[TransmissionControlProtocol|segment TCP]].
-6.  **[[FrameCheckSequence|Séquence de Vérification de Trame (FCS)]] (4 octets)**
-    *   Contient une valeur de [[CyclicRedundancyCheck|CRC]] (Cyclic Redundancy Check) de 32 bits, utilisée par le récepteur pour détecter les erreurs de transmission dans la trame, assurant ainsi l'[[Integrity|intégrité des données]].
+Elle opère principalement à la [[DataLinkLayer|couche Liaison de Données]] (couche 2) du [[OpenSystemsInterconnectionModel|modèle OSI]], où elle gère l'accès au support et l'adressage physique via les [[MediaAccessControlAddress|adresses MAC]].
 
-*   **Taille de la Trame**: La taille totale d'une [[EthernetFrame|trame Ethernet]] (des [[DestinationMacAddress|adresses MAC]] au [[FrameCheckSequence|FCS]]) varie entre 64 octets (minimum) et 1518 octets (maximum) pour Ethernet II.
-*   **Pas de ports par défaut** : La [[EthernetFrame|trame Ethernet]] opère à la [[DataLinkLayer|couche Liaison de Données]] et n'utilise pas de [[PortNumber|numéros de port]] comme les [[NetworkProtocol|protocoles]] des couches supérieures ([[TransportLayer|couche transport]]).
+## ⚙️ Fonctionnement
 
-## 🛡️ Sécurité de la Trame Ethernet
-La [[EthernetFrame|trame Ethernet]] en elle-même n'intègre pas de [[SecurityControl|mécanismes de sécurité]] intrinsèques, ce qui la rend vulnérable à plusieurs [[Attack|attaques]].
+Une trame Ethernet est un bloc de données structuré qui contient les informations nécessaires pour la communication au niveau de la [[DataLinkLayer|couche Liaison de Données]]. 
 
-*   **Vulnérabilités et Attaques connues**:
-    *   [[PacketSniffing|Reniflage de paquets]] : Les [[EthernetFrame|trames]] peuvent être interceptées et analysées sur le [[NetworkSegment|segment réseau]], exposant des [[Cleartext|données en texte clair]].
-    *   [[MACSpoofing|Usurpation d'adresse MAC]] : Un [[ThreatActor|attaquant]] peut modifier l'[[MediaAccessControlAddress|adresse MAC]] de sa [[NetworkInterfaceCard|carte réseau]] pour se faire passer pour un autre [[Host|hôte]], potentiellement pour contourner les [[AccessControl|contrôles d'accès]].
-    *   [[ManInTheMiddle|Attaques de l'Homme du Milieu (MITM)]] : Des techniques comme l'[[AddressResolutionProtocolPoisoning|empoisonnement ARP]] manipulent les [[MediaAccessControlAddress|adresses MAC]] pour rediriger le [[NetworkTrafficAnalysis|trafic]] via la machine de l'[[ThreatActor|attaquant]], permettant l'écoute et la modification des [[Data|données]].
-    *   [[NetworkCongestion|Congestion Réseau]] / [[DenialOfService|Déni de Service]] : Un [[ThreatActor|attaquant]] peut inonder un [[Network|réseau]] de [[EthernetFrame|trames]] excessives, comme lors d'une [[SmurfAttack|attaque Smurf]] (qui exploite le [[Broadcast|broadcast]]), pour provoquer une [[ServiceDisruption|interruption de service]].
+Sa structure standard, définie par l'[[InstituteOfElectricalAndElectronicsEngineers|IEEE]] 802.3, est la suivante :
 
-*   **Mesures de Protection Spécifiques**:
-    *   [[NetworkSegmentation|Segmentation réseau]] (ex: [[VirtualLocalAreaNetwork|VLAN]]) : Limite la portée de la [[Broadcast|diffusion]] des [[EthernetFrame|trames]] et des [[Attack|attaques]] potentielles, isolant les [[NetworkSegment|segments réseau]].
-    *   [[PortSecurity|Sécurité des ports]] : Configure les [[NetworkSwitch|commutateurs réseau]] pour restreindre les [[MediaAccessControlAddress|adresses MAC]] autorisées sur chaque [[NetworkSwitch|port]], empêchant ainsi l'[[MACSpoofing|usurpation d'adresse MAC]].
-    *   [[DataEncryption|Chiffrement des données]] : Utilisation de [[NetworkProtocol|protocoles de chiffrement]] aux [[ApplicationLayer|couches supérieures]] (ex: [[HypertextTransferProtocolSecure|HTTPS]], [[VirtualPrivateNetwork|VPN]]) pour protéger le [[Payload|contenu de la charge utile]] de la [[EthernetFrame|trame]], même si la trame elle-même est interceptée.
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] et [[IntrusionPreventionSystem|IPS]] : Surveillent le [[NetworkTrafficAnalysis|trafic de trames]] pour détecter les [[AnomalyDetection|anomalies]] ou les [[Malware|activités malveillantes]], et peuvent prendre des mesures préventives.
-    *   [[MACAddressFiltering|Filtrage d'adresses MAC]] : Contrôle les [[MediaAccessControlAddress|adresses MAC]] autorisées à communiquer sur un [[NetworkSegment|segment réseau]], mais est facilement contournable.
+1.  **[[Preamble|Préambule]]** (7 octets) : Une séquence de 56 bits alternés (10101010...) utilisée pour la [[SignalTransmission|synchronisation]] du signal entre les [[NetworkDevice|dispositifs réseau]].
+2.  **[[StartFrameDelimiter|Délimiteur de Début de Trame (SFD)]]** (1 octet) : Une séquence de 8 bits (10101011) qui signale la fin du [[Preamble|préambule]] et le début réel de la trame.
+3.  **[[DestinationMacAddress|Adresse MAC de Destination]]** (6 octets) : L'[[MediaAccessControlAddress|adresse MAC]] du [[NetworkDevice|dispositif]] récepteur prévu pour cette trame.
+4.  **[[SourceMacAddress|Adresse MAC Source]]** (6 octets) : L'[[MediaAccessControlAddress|adresse MAC]] du [[NetworkDevice|dispositif]] émetteur de la trame.
+5.  **Type/Longueur** (2 octets) :
+    *   Si la valeur est supérieure à 1536 (0x0600), elle indique le type du [[Protocol|protocole]] encapsulé dans la section des données (ex: [[InternetProtocolVersion4|IPv4]], [[InternetProtocolVersion6|IPv6]], [[InternetworkPacketExchange|IPX]]).
+    *   Si la valeur est inférieure ou égale à 1500, elle indique la longueur de la section de données dans la trame, suivant la norme IEEE 802.3 originale.
+6.  **Données ([[Payload]])** (46 à 1500 octets) : Contient les données réelles du [[Protocol|protocole]] de couche supérieure, telles que les [[InternetProtocol|paquets IP]], les segments [[TransmissionControlProtocol|TCP]] ou les datagrammes [[UserDatagramProtocol|UDP]]. Une taille minimale de 46 octets est requise ; des octets de remplissage (padding) sont ajoutés si la charge utile est plus petite.
+7.  **[[FrameCheckSequence|Séquence de Vérification de Trame (FCS)]]** (4 octets) : Une valeur de 32 bits générée par l'expéditeur via un algorithme de [[Checksum|somme de contrôle]] (CRC-32), utilisée par le récepteur pour la [[ErrorDetectionAndCorrection|détection d'erreurs]] pendant la [[DataTransmission|transmission]]. Si le FCS calculé par le récepteur ne correspond pas à celui de la trame, la trame est considérée comme corrompue et généralement rejetée.
+
+```mermaid
+graph TD
+    classDef eth fill:#fce5cd,stroke:#d35400,stroke-width:2px;
+
+    ETH["🟧 Ethernet Frame (Structure complète)"]:::eth
+
+    PRE["Préambule (7 octets)"]:::eth
+    SFD["Start Frame Delimiter (1 octet)"]:::eth
+    DMAC["Adresse MAC Destination (6 octets)"]:::eth
+    SMAC["Adresse MAC Source (6 octets)"]:::eth
+    TYPE["Type / Longueur (2 octets)"]:::eth
+    DATA["Payload (46 à 1500 octets)"]:::eth
+    FCS["FCS — Frame Check Sequence (4 octets)"]:::eth
+
+    ETH --> PRE --> SFD --> DMAC --> SMAC --> TYPE --> DATA --> FCS
+
+```
+
+## 🛡️ Sécurité du Protocole
+Le [[EthernetProtocol|protocole Ethernet]] en lui-même n'intègre pas de mécanismes de [[Security|sécurité]] robustes au niveau de la trame, ce qui rend les réseaux Ethernet vulnérables à certaines [[Attack|attaques]] :
+
+*   **[[MACSpoofing|Usurpation d'adresse MAC]]** : Un [[ThreatActor|attaquant]] peut modifier l'[[MediaAccessControlAddress|adresse MAC]] de son [[NetworkDevice|périphérique]] pour se faire passer pour un autre, potentiellement contourner les contrôles d'[[AccessControl|accès]] basés sur l'[[MediaAccessControlAddress|adresse MAC]] (ex: [[MacAddressFiltering|filtrage MAC]]).
+*   **[[AddressResolutionProtocolPoisoning|Empoisonnement ARP]]** : Affecte les tables [[AddressResolutionProtocol|ARP]] des [[Host|hôtes]] et [[NetworkSwitch|commutateurs]], permettant à un [[ThreatActor|attaquant]] d'intercepter le trafic destiné à d'autres [[Host|hôtes]] sur le même [[NetworkSegment|segment réseau]].
+*   **[[PacketSniffing|Capture de paquets]]** : Sans [[Encryption|chiffrement]] ou mesures de [[NetworkSecurity|sécurité]] supplémentaires (comme les [[VirtualLocalAreaNetwork|VLAN]]), le trafic sur un [[NetworkSegment|segment Ethernet]] partagé peut être facilement intercepté par un [[ThreatActor|acteur de menace]] à l'aide d'outils comme [[Wireshark]].
+*   **[[ManInTheMiddle|Attaques de l'homme du milieu]]** : Peuvent être facilitées par les vulnérabilités de la [[DataLinkLayer|couche liaison de données]], permettant à l'[[ThreatActor|attaquant]] de relayer et potentiellement modifier les trames entre deux parties communicantes.
+
+Pour renforcer la [[NetworkSecurity|sécurité]] des réseaux Ethernet, des contrôles supplémentaires sont nécessaires :
+*   **[[IEEE8021X]]** : Permet l'[[Authentication|authentification]] des [[User|utilisateurs]] et des [[NetworkDevice|appareils]] avant qu'ils n'obtiennent l'[[AccessControl|accès]] au [[Network|réseau]].
+*   **[[VirtualLocalAreaNetwork|VLANs]]** : Utilisés pour la [[NetworkSegmentation|segmentation du réseau]], limitant ainsi le domaine de [[Broadcast|diffusion]] et le champ d'action d'éventuelles [[Attack|attaques]] au niveau de la [[DataLinkLayer|couche liaison de données]].
+*   **[[PortSecurity|Sécurité des ports]]** sur les [[NetworkSwitch|commutateurs réseau]] : Permet de limiter le nombre d'[[MediaAccessControlAddress|adresses MAC]] autorisées par port, ou de lier des [[MediaAccessControlAddress|adresses MAC]] spécifiques à des ports, afin d'atténuer les [[MACSpoofing|usurpations MAC]].
 
 ## 🔗 Notes Connexes
-*   [[Ethernet|Ethernet]]
-*   [[MediaAccessControlAddress|Adresse MAC]]
-*   [[DataLinkLayer|Couche Liaison de Données]]
-*   [[AddressResolutionProtocol|ARP]]
-*   [[InternetProtocol|IP]]
-*   [[TransmissionControlProtocol|TCP]]
-*   [[Wireshark|Wireshark]] (Outil d'analyse de trames)
-*   [[NetworkInterfaceCard|Carte d'Interface Réseau (NIC)]]
-*   [[NetworkSwitch|Commutateur Réseau]]
-*   [[CyclicRedundancyCheck|CRC]]
+*   **Couche OSI**: [[DataLinkLayer|Couche Liaison de Données]]
+*   **Protocole associé**: [[EthernetProtocol|Protocole Ethernet]]
+*   **Composant clé**: [[MediaAccessControlAddress|Adresse MAC]]
+*   **Unité de données encapsulée**: [[Packet|Paquet]]
+*   **Outil d'analyse**: [[Wireshark]]

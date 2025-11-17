@@ -31,5 +31,5 @@ Bash
 
 ## 🔗 Alternatives et Notes Connexes
 
-- Alternatives: `[[Zmap]]`, `[[Masscan]]`
-- Contexte: `[[Reconnaissance (Pentest)]]`
+- Alternatives: [[Zmap]], [[Masscan]]
+- Contexte: [[Reconnaissance (Pentest)]]

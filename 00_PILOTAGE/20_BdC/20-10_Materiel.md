@@ -11,7 +11,6 @@ SORT file.ctime ASC
 %%
 
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/InputDevices.md|InputDevices]]
-- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Hub.md|Hub]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Computer.md|Computer]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/CopperWire.md|CopperWire]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/EthernetPorts.md|EthernetPorts]]
@@ -19,7 +18,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/EndDevices.md|EndDevices]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/CoaxialCable.md|CoaxialCable]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/IntermediateDevice.md|IntermediateDevice]]
-- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Hardware.md|Hardware]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/EthernetPatchCable.md|EthernetPatchCable]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Category5eCable.md|Category5eCable]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/LANPort.md|LANPort]]
@@ -48,5 +46,8 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Smartphone.md|Smartphone]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/TwistedPairCable.md|TwistedPairCable]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/ShieldedTwistedPair.md|ShieldedTwistedPair]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/ManagedSwitch.md|ManagedSwitch]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/UnmanagedSwitch.md|UnmanagedSwitch]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Hub.md|Hub]]
 
 %% DATAVIEW_PUBLISHER: end %%

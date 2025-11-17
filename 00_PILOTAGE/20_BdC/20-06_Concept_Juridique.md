@@ -16,5 +16,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/NonDisclosureAgreement.md|NonDisclosureAgreement]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/NonDisclosure.md|NonDisclosure]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Deontology.md|Deontology]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Accountability.md|Accountability]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/PurposeLimitation.md|PurposeLimitation]]
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -1,5 +1,12 @@
 ---
 tags:
+  - encapsulation
+  - reseau
+  - modele/osi
+  - modele/tcp-ip
+  - protocole
+  - couche
+  - data/transmission
 aliases:
   - Encapsulation
   - Encapsulation de données
@@ -11,26 +18,41 @@ cssclasses:
   - max
 ---
 
-# Encapsulation
+# Encapsulation de Données
 
 ## 📥 Définition en une phrase
-> L'encapsulation est le processus fondamental par lequel les [[Data|données]] d'une [[ApplicationLayer|couche d'application]] supérieure sont intégrées comme [[Payload|charge utile]] dans une unité de [[Data|données]] d'une [[PhysicalLayer|couche]] inférieure, chaque [[Protocol|protocole]] ajoutant ses propres [[Header|informations d'en-tête]] (et parfois de pied de page).
+> L'[[Encapsulation|encapsulation]] est le processus par lequel les [[Data|données]] d'un [[Protocol|protocole]] de [[Layer|couche]] supérieure sont insérées dans la [[Payload|charge utile]] d'un [[Protocol|protocole]] de couche inférieure à des fins de [[DataTransmission|transmission]].
 
 ## 🧠 Concepts Clés / Piliers
-*   **Modèles en Couches**: L'encapsulation est un principe central des [[OpenSystemsInterconnectionModel|modèles de référence]] réseau tels que le [[OpenSystemsInterconnectionModel|Modèle OSI]] et le [[InternetProtocolSuite|Modèle TCP/IP]], qui organisent les fonctions de [[NetworkCommunication|communication réseau]] en couches distinctes.
-*   **Processus d'Envoi**: Lors de l'envoi, les [[Data|données]] d'[[SoftwareApplication|application]] traversent les couches, de la plus élevée à la plus basse. À chaque [[Layer|couche]], les [[Data|données]] de la [[Layer|couche]] précédente sont traitées comme une [[Payload|charge utile]] et sont enveloppées par une nouvelle [[Header|en-tête]] (et potentiellement un pied de page) spécifique au [[NetworkProtocol|protocole]] de cette [[Layer|couche]].
-*   **Processus de Réception (Décapsulation)**: À la réception, le processus inverse, appelé [[Decapsulation|désencapsulation]], se produit. Chaque [[Layer|couche]] retire son [[Header|en-tête]] et/ou son pied de page pour révéler les [[Data|données]] de la [[Layer|couche]] supérieure, jusqu'à ce que les [[Data|données]] originales de l'[[SoftwareApplication|application]] soient reconstruites et livrées.
-*   **Exemple Concret**: Les [[Data|données]] d'une [[SoftwareApplication|application]] web sont encapsulées dans un [[TransmissionControlProtocol|segment TCP]], qui est à son tour encapsulé dans un [[InternetProtocol|paquet IP]], et enfin encapsulé dans une [[EthernetFrame|trame Ethernet]] pour la [[PhysicalLayer|transmission physique]] sur le [[NetworkMedia|support réseau]].
+*   **Processus par Couches**: L'[[Encapsulation|encapsulation]] se produit séquentiellement à travers les différentes [[Layer|couches]] d'un [[ProtocolStack|modèle de protocoles]] (comme le [[OpenSystemsInterconnectionModel|modèle OSI]] ou la [[InternetProtocolSuite|suite TCP/IP]]). Chaque couche ajoute ses propres informations de contrôle avant de passer les données à la couche suivante.
+*   **Ajout d'En-têtes et Pieds de Trame**: À chaque couche, des [[Header|en-têtes]] spécifiques au [[NetworkProtocol|protocole]] de la couche sont ajoutés au début du [[Message|message]]. Certaines couches (notamment la [[DataLinkLayer|couche liaison de données]]) peuvent également ajouter un pied de trame (trailer) à la fin, contenant des informations comme le [[FrameCheckSequence|FCS]] pour la [[ErrorDetectionAndCorrection|détection et correction d'erreurs]].
+*   **Unités de Données de Protocole (PDU)**: Les [[Data|données]] encapsulées à chaque [[Layer|couche]] sont appelées Unités de Données de Protocole (PDU) ou [[Packet|paquet]] (terme générique). Leur nom varie selon la couche : segment ([[TransportLayer|couche transport]]), paquet ([[NetworkLayer|couche réseau]]), [[Frame|trame]] ([[DataLinkLayer|couche liaison de données]]) ou bits ([[PhysicalLayer|couche physique]]).
+*   **[[Decapsulation|Décapsulation]]**: C'est le processus inverse de l'[[Encapsulation|encapsulation]], où chaque couche du destinataire retire l'[[Header|en-tête]] (et le pied de trame) de sa couche respective pour accéder aux [[Data|données]] de la couche supérieure, jusqu'à atteindre les [[Data|données]] originales de l'[[ApplicationLayer|application]].
 
 ## 💡 Importance en Cybersécurité
-> L'encapsulation est fondamentale en [[Cybersecurity|cybersécurité]] car elle permet la structuration et la standardisation des [[NetworkCommunication|communications réseau]], mais expose également des points de [[Vulnerability|vulnérabilité]]. Une compréhension approfondie de l'encapsulation est essentielle pour l'[[NetworkMonitoring|analyse du trafic réseau]], la [[SignatureBasedDetection|détection d'anomalies]] et la mise en œuvre de [[SecurityControl|contrôles de sécurité]] efficaces. Les [[ThreatActor|acteurs de menaces]] peuvent cibler les faiblesses d'encapsulation (ex: [[ProtocolMalformation|malformation de protocole]] ou [[Header|en-têtes]] incorrects) ou utiliser des [[ManInTheMiddle|attaques de l'homme du milieu]] pour intercepter et manipuler les [[Data|données]] encapsulées. Inversement, des [[SecurityPolicy|politiques de sécurité]] robustes s'appuient sur la protection de l'encapsulation à différentes couches, notamment via l'[[Encryption|utilisation du chiffrement]] (ex: [[TransportLayerSecurity|TLS]] pour les [[ApplicationLayer|couches applicative]]/[[TransportLayer|transport]] ou [[InternetProtocolSecurity|IPsec]] pour la [[NetworkLayer|couche réseau]]) et la [[NetworkSegmentation|segmentation réseau]] pour limiter l'[[AttackSurface|surface d'attaque]]. Les [[IntrusionDetectionSystem|Systèmes de Détection d'Intrusion (IDS)]] et [[IntrusionPreventionSystem|IPS]] exploitent aussi l'encapsulation en analysant les [[Header|en-têtes]] et [[Payload|charges utiles]] des [[Packet|paquets]] pour détecter des activités malveillantes.
+> L'[[Encapsulation|encapsulation]] est fondamentale pour la [[NetworkCommunication|communication réseau]] et a des implications directes en [[NetworkSecurity|cybersécurité]]. Elle permet une [[Modularity|modularité]] qui simplifie la conception et le [[Maintenance|développement des protocoles]]. Cependant, elle peut aussi être exploitée : l'analyse des en-têtes (lors du [[PacketSniffing|sniffing de paquets]]) est cruciale pour la [[SecurityMonitoring|surveillance de sécurité]] et la [[NetworkTrafficAnalysis|détection d'anomalies]]. Des informations malveillantes peuvent être cachées dans les champs d'[[Header|en-tête]] ou de [[Payload|charge utile]] pour contourner les [[Firewall|pare-feux]] et autres [[SecurityControl|contrôles de sécurité]], rendant la [[Decapsulation|décapsulation]] et l'inspection profonde des paquets essentielles pour identifier les [[Threat|menaces]].
 
 ## 🔗 Notes Connexes
-*   [[Decapsulation|Décapsulation]]
-*   [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   [[InternetProtocolSuite|Modèle TCP/IP]]
-*   [[NetworkProtocol|Protocole Réseau]]
-*   [[Packet|Paquet]]
-*   [[Header|En-tête]]
-*   [[Payload|Charge utile]]
-*   [[NetworkSecurity|Sécurité Réseau]]
+*   **Modèle de référence**: [[OpenSystemsInterconnectionModel|Modèle OSI]]
+*   **Modèle de référence**: [[InternetProtocolSuite|Suite de Protocoles Internet (TCP/IP)]]
+*   **Processus inverse**: [[Decapsulation|Décapsulation]]
+*   **Composante**: [[Header|En-tête]]
+*   **Concept de structure**: [[ProtocolStack|Pile de Protocoles]]
+
+```mermaid
+graph TD
+    classDef app fill:#e8f8ff,stroke:#2980b9,stroke-width:2px;
+    classDef trans fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+    classDef net fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+    classDef link fill:#ffeecf,stroke:#d68910,stroke-width:2px;
+    classDef phys fill:#ffd6d6,stroke:#c0392b,stroke-width:2px;
+
+    A["🟦 Donnée applicative<br/>Message"]:::app
+    B["🟨 Segment TCP / Datagramme UDP<br/>(Ajout : en-tête Transport)"]:::trans
+    C["🟩 Paquet IP<br/>(Ajout : en-tête IP)"]:::net
+    D["🟧 Trame Ethernet<br/>(Ajout : MAC Source / Destination + FCS)"]:::link
+    E["🟥 Signal physique<br/>Bits sur le support"]:::phys
+
+    A --> B --> C --> D --> E
+
+```

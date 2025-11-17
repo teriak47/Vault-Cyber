@@ -22,11 +22,9 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/AddressResolutionProtocol.md|AddressResolutionProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/HypertextTransferProtocol.md|HypertextTransferProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/EthernetProtocol.md|EthernetProtocol]]
-- [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/EthernetFrame.md|EthernetFrame]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/InternetworkPacketExchange.md|InternetworkPacketExchange]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/DynamicHostConfigurationProtocol.md|DynamicHostConfigurationProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/NearFieldCommunication.md|NearFieldCommunication]]
-- [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/InternetProtocolSuite.md|InternetProtocolSuite]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/NetFlow.md|NetFlow]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/DomainNameSystem.md|DomainNameSystem]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/DynamicHostConfigurationProtocolClient.md|DynamicHostConfigurationProtocolClient]]
@@ -40,7 +38,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/SecureRoutingProtocols.md|SecureRoutingProtocols]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/SecureSocketLayer.md|SecureSocketLayer]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/ServiceSetIdentifier.md|ServiceSetIdentifier]]
-- [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/SessionLayer.md|SessionLayer]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/WirelessProtectedAccessTwo.md|WirelessProtectedAccessTwo]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/WirelessProtectedAccessThree.md|WirelessProtectedAccessThree]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/WiFiProtectedAccess.md|WiFiProtectedAccess]]
@@ -48,5 +45,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/TransportLayerSecurity.md|TransportLayerSecurity]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/TransmissionControlProtocol.md|TransmissionControlProtocol]]
 - [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/StartFrameDelimiter.md|StartFrameDelimiter]]
+- [[20_BASE_DE_CONNAISSANCES/20-16_Protocole/EthernetFrame.md|EthernetFrame]]
 
 %% DATAVIEW_PUBLISHER: end %%

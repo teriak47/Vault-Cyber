@@ -1,53 +1,41 @@
 ---
 tags:
+  - trame
+  - trame/ethernet
   - reseau
-  - unite-de-donnees
+  - couche/liaison/donnees
+  - modele/osi
+  - encapsulation
+  - protocole
+  - communication/reseau
 aliases:
   - Trame
   - Cadre de données
   - Frame
 archetype: concept-general
-rfc:
+source:
+  - 
 cssclasses:
   - max
 ---
 
 # Trame (Frame)
 
-## 🎯 Rôle et Couche OSI
-> Une [[Frame|trame]] est l'unité de [[DataTransmission|données]] de base au niveau de la [[DataLinkLayer|couche liaison de données]] ([[DataLinkLayer|couche 2]]) du [[OpenSystemsInterconnectionModel|modèle OSI]]. Son rôle principal est d'[[Encapsulation|encapsuler]] les [[Packet|paquets IP]] ou autres [[Protocol|protocoles]] de [[NetworkLayer|couche réseau]] pour leur [[SignalTransmission|transmission]] fiable sur un [[NetworkMedia|support physique]] au sein d'un [[NetworkSegment|segment de réseau]] local.
+## 📥 Définition en une phrase
+> Une trame est une unité de données de protocole (PDU) de la [[DataLinkLayer|couche Liaison de Données]] du [[OpenSystemsInterconnectionModel|modèle OSI]] qui encapsule les données des couches supérieures pour la transmission sur un support physique.
 
-## ⚙️ Fonctionnement
-1.  **[[Encapsulation]]**: Une [[Frame|trame]] prend les [[Data|données]] (généralement un [[Packet|paquet]]) de la [[NetworkLayer|couche réseau]] et y ajoute un [[Header|en-tête]] et une [[Trailer|remorque]] spécifiques à la [[DataLinkLayer|couche de liaison de données]].
-2.  **Adressage Physique**: L'[[Header|en-tête]] contient les [[MediaAccessControlAddress|adresses MAC]] source et destination, essentielles pour l'[[Unicast|acheminement local]] de la [[Frame|trame]] entre [[NetworkDevice|dispositifs]] sur le même [[BroadcastDomain|domaine de diffusion]].
-3.  **Structure**: La [[Frame|trame]] typique inclut :
-    *   Un [[Preamble|préambule]] (pour la synchronisation).
-    *   Un [[Header|en-tête]] (contenant les [[SourceMacAddress|adresses MAC source]] et [[DestinationMacAddress|destination]], le type de [[Protocol|protocole]] encapsulé).
-    *   La [[Payload|charge utile]] (les [[Data|données]] de la [[NetworkLayer|couche supérieure]]).
-    *   Une [[FrameCheckSequence|séquence de vérification de trame]] (FCS), souvent un [[CyclicRedundancyCheck|CRC]], pour détecter les [[DataCorruption|erreurs de transmission]].
-4.  **Délimitation et [[Protocol|Protocoles]]**: Des séquences de [[Bit|bits]] spécifiques ([[StartFrameDelimiter|délimiteurs]]) marquent le début et la fin de la [[Frame|trame]], permettant aux [[NetworkDevice|dispositifs]] de la reconnaître. Des [[NetworkProtocol|protocoles]] comme [[Ethernet]] et [[WirelessFidelity|Wi-Fi]] définissent la [[FrameFormat|structure]] et les règles de [[DataTransmission|transmission]] des [[Frame|trames]].
+## 🧠 Concepts Clés / Piliers
+* **Structure Standardisée**: Chaque trame possède un format précis incluant un en-tête (contenant des informations de contrôle et des [[SourceMacAddress|adresses MAC]] source et [[DestinationMacAddress|destination]]), une charge utile (les données proprement dites), et un "trailer" (généralement une [[FrameCheckSequence|séquence de vérification de trame]]) pour la détection d'erreurs.
+* **[[Encapsulation|Encapsulation]]**: Les données provenant des couches supérieures (comme les [[InternetProtocol|paquets IP]] de la [[NetworkLayer|couche Réseau]]) sont encapsulées à l'intérieur de la charge utile de la trame, à laquelle sont ajoutés l'en-tête et le "trailer".
+* **Adressage Physique**: Contrairement aux adresses logiques ([[InternetProtocolVersion4|IPv4]] ou [[InternetProtocolVersion6|IPv6]]) utilisées à la [[NetworkLayer|couche Réseau]], les trames utilisent des [[MediaAccessControlAddress|adresses MAC]] pour identifier les dispositifs sources et destinations au sein d'un même [[LocalAreaNetwork|réseau local]].
+* **Détection d'Erreurs**: La [[FrameCheckSequence|séquence de vérification de trame]] (FCS) est un mécanisme intégré dans le "trailer" de la trame, permettant aux dispositifs récepteurs de détecter si des erreurs se sont produites pendant la transmission des données et de rejeter les trames corrompues.
 
-## 🛡️ Sécurité liée aux Trames
-* **Vulnérabilités connues**:
-  *   [[ManInTheMiddle|Attaques de l'homme du milieu]] : Interception, modification ou retransmission de [[Frame|trames]] sur le [[NetworkSegment|segment réseau]].
-  *   [[DenialOfService|Attaques par déni de service]] : Inondation du [[Network|réseau]] avec un grand nombre de [[Frame|trames]] pour saturer les [[NetworkDevice|équipements]] (ex: [[NetworkSwitch|commutateurs]]) ou la [[Bandwidth|bande passante]].
-  *   [[MACSpoofing|Usurpation d'adresse MAC]] : Un [[ThreatActor|attaquant]] modifie l'[[MediaAccessControlAddress|adresse MAC source]] de ses [[Frame|trames]] pour se faire passer pour un autre [[Host|hôte]] légitime, contournant les [[AccessControl|contrôles d'accès]].
-  *   [[VLANHopping|Saut de VLAN]] : Manipulation de [[Frame|trames]] pour accéder à des [[VirtualLocalAreaNetwork|VLANs]] non autorisés.
-  *   [[AddressResolutionProtocolPoisoning|Usurpation d'ARP]] : Envoi de fausses [[AddressResolutionProtocolRequest|requêtes ARP]] pour associer l'[[InternetProtocol|adresse IP]] d'un [[Host|hôte]] légitime à l'[[MediaAccessControlAddress|adresse MAC]] de l'[[ThreatActor|attaquant]].
-* **Mesures de Protection**: Pour atténuer les [[SecurityVulnerabilities|vulnérabilités]] au niveau des [[Frame|trames]] et de la [[DataLinkLayer|couche liaison de données]], les stratégies suivantes sont recommandées :
-  *   [[PortSecurity|Sécurité des ports]] : Configuration des [[NetworkSwitch|commutateurs]] pour limiter le nombre d'[[MediaAccessControlAddress|adresses MAC]] autorisées par [[LANPort|port]] et prévenir l'[[MACSpoofing|usurpation d'adresse MAC]].
-  *   [[NetworkSegmentation|Segmentation réseau]] avec des [[VirtualLocalAreaNetwork|VLANs]] : Isolation logique des [[NetworkSegment|segments réseau]] pour réduire le [[AttackSurface|domaine de diffusion]] et limiter la propagation des [[Attack|attaques]].
-  *   [[DynamicARPInspection|DAI]] (Dynamic [[AddressResolutionProtocol|ARP]] Inspection) : Protection contre l'[[AddressResolutionProtocolPoisoning|usurpation d'ARP]] en validant les [[AddressResolutionProtocol|paquets ARP]] par rapport aux informations DHCP.
-  *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion]] ([[IntrusionDetectionSystem|IDS]]) et [[IntrusionPreventionSystem|systèmes de prévention d'intrusion]] ([[IntrusionPreventionSystem|IPS]]) : Surveillance du [[NetworkTrafficAnalysis|trafic]] de [[DataLinkLayer|couche 2]] pour détecter et bloquer les [[Attack|attaques]] basées sur les [[Frame|trames]].
-  *   [[WirelessSecurity|Sécurité sans fil]] robuste : Utilisation de [[WirelessProtectedAccessThree|WPA3]] ou [[WirelessProtectedAccessTwo|WPA2]] avec [[Encryption|chiffrement]] fort pour protéger les [[WirelessSignals|trames radio]] contre l'[[Eavesdropping|interception]] et la manipulation.
+## 💡 Importance en Cybersécurité
+> La compréhension des trames est fondamentale en [[Cybersecurity|cybersécurité]] car elles représentent la première couche d'interaction directe avec le réseau physique. L'analyse des trames via des outils de [[PacketSniffing|capture de paquets]] (comme [[Wireshark]]) est essentielle pour la [[NetworkMonitoring|surveillance réseau]], la détection d'[[Attack|attaques]] telles que le [[MACSpoofing|MAC Spoofing]] ou l'[[AddressResolutionProtocolPoisoning|empoisonnement ARP]], et le [[Troubleshooting|dépannage]] des problèmes de [[NetworkCommunication|communication réseau]]. Une manipulation ou une falsification des informations contenues dans les trames peut mener à des [[UnauthorizedAccess|accès non autorisés]] ou des [[DenialOfService|dénis de service]].
 
 ## 🔗 Notes Connexes
-* [[OpenSystemsInterconnectionModel|Modèle OSI]]
-* [[DataLinkLayer|Couche Liaison de Données]]
-* [[Ethernet]]
-* [[Packet|Paquet]]
-* [[MediaAccessControlAddress|Adresse MAC]]
-* [[VirtualLocalAreaNetwork|VLAN]]
-* [[AddressResolutionProtocol|ARP]]
-* [[WirelessFidelity|Wi-Fi]]
-* [[Wireshark]]
+* **Couche d'Opération**: [[DataLinkLayer|Couche Liaison de Données]]
+* **Concept d'Emballage**: [[Encapsulation|Encapsulation]]
+* **Exemple Spécifique**: [[EthernetFrame|Trame Ethernet]]
+* **Identification d'Appareil**: [[MediaAccessControlAddress|Adresse MAC]]
+* **Mécanisme de Contrôle**: [[FrameCheckSequence|Séquence de Vérification de Trame]]

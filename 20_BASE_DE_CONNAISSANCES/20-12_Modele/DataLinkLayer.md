@@ -35,6 +35,51 @@ cssclasses:
 *   **Détection d'erreurs**: Utilise des mécanismes, comme la [[FrameCheckSequence|FCS]], pour détecter les erreurs survenues pendant la [[SignalTransmission|transmission du signal]] sur le support physique. En cas d'erreur, une [[Retransmission|retransmission]] de la [[Frame|trame]] peut être demandée.
 *   **Contrôle de flux**: S'assure que l'émetteur ne submerge pas le récepteur avec des données, gérant ainsi la vitesse à laquelle les [[Frame|trames]] sont envoyées.
 
+## 📊 Diagramme Conceptuel
+
+```mermaid
+graph TD
+    classDef trans fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+    classDef net fill:#d6f5ff,stroke:#0b79c1,stroke-width:2px;
+    classDef link fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+    classDef feat fill:#fdebd0,stroke:#d35400,stroke-width:2px;
+
+    A["🟩 Couche Transport<br/>TCP / UDP"]:::trans
+    B["🔷 Couche Réseau<br/>IP / Routage"]:::net
+    C["🟨 Couche Liaison de Données<br/>MAC / ARP / Trame"]:::link
+
+    F1["📍 Adressage MAC"]:::feat
+    F2["📡 Résolution ARP<br/>IP vers MAC"]:::feat
+    F3["📦 Encapsulation en trame"]:::feat
+    F4["🔀 Commutation par switch"]:::feat
+    F5["🛡 Contrôle d'erreurs (FCS)"]:::feat
+
+    A --> B --> C
+    C --> F1 --> F2 --> F3 --> F4 --> F5
+
+```
+---
+
+
+```mermaid
+graph TD
+    classDef eth fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+
+    E["🟨 Trame Ethernet"]:::eth
+    PRE["Préambule"]:::eth
+    SD["Start Frame Delimiter"]:::eth
+    DMAC["Adresse MAC Destination"]:::eth
+    SMAC["Adresse MAC Source"]:::eth
+    TYPE["Type (IPv4, IPv6, ARP...)"]:::eth
+    PAY["Payload<br/>(Données venant de la couche 3)"]:::eth
+    FCS["FCS<br/>Frame Check Sequence"]:::eth
+
+    E --> PRE --> SD --> DMAC --> SMAC --> TYPE --> PAY --> FCS
+
+```
+
+---
+
 ## 💡 Applications Pratiques
 *   **[[Ethernet|Réseaux Ethernet]]**: Le protocole le plus couramment utilisé pour les [[LocalAreaNetwork|réseaux locaux (LAN)]], définissant le format des [[EthernetFrame|trames Ethernet]] et les mécanismes d'accès au média.
 *   **[[WirelessFidelity|Wi-Fi]] (IEEE 802.11)**: Définit les normes pour les [[WirelessLocalAreaNetwork|réseaux locaux sans fil (WLAN)]], incluant l'adressage physique et le contrôle d'accès au support radio.

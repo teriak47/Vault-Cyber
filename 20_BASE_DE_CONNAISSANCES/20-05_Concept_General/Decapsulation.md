@@ -1,12 +1,19 @@
 ---
 tags:
   - reseau
+  - donnees
+  - modele/osi
+  - modele/tcp-ip
   - protocole
+  - encapsulation
+  - couche
+  - communication/reseau
 aliases:
   - Décapsulation
   - Decapsulation
 archetype: concept-general
 source:
+  - 
 cssclasses:
   - max
 ---
@@ -14,24 +21,38 @@ cssclasses:
 # Décapsulation
 
 ## 📥 Définition en une phrase
-> La décapsulation est le processus par lequel un [[NetworkDevice|périphérique réseau]] retire successivement les [[Header|en-têtes]] et les [[Trailer|pieds de page]] ajoutés par les couches inférieures du [[OpenSystemsInterconnectionModel|modèle OSI]] ou [[InternetProtocolSuite|TCP/IP]], afin de reconstituer l'[[ProtocolDataUnit|unité de données de protocole (PDU)]] de la couche supérieure.
+> La décapsulation est le processus par lequel un [[Computer|ordinateur]] ou un [[NetworkDevice|périphérique réseau]] retire les [[Header|en-têtes]] (et éventuellement les [[Payload|pieds de page]]) des [[Packet|paquets]] de [[Data|données]] à mesure qu'ils remontent la [[ProtocolStack|pile de protocoles]], révélant la [[Payload|charge utile]] de la couche inférieure pour la couche supérieure.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Inverse de l'[[Encapsulation]]**: Tandis que l'[[Encapsulation|encapsulation]] ajoute des informations de contrôle à chaque [[NetworkLayer|couche]] lors de l'envoi, la décapsulation retire ces informations lors de la réception.
-*   **Opération par couche**: Chaque [[NetworkLayer|couche]] du [[OpenSystemsInterconnectionModel|modèle OSI]] ou [[InternetProtocolSuite|TCP/IP]] est spécifiquement conçue pour traiter et décapsuler les [[Data|données]] qui lui sont destinées.
-*   **Retrait des métadonnées**: Un [[Header|en-tête]] (et parfois un [[Trailer|pied de page]]) est supprimé à chaque étape du processus, révélant ainsi les [[Data|données]] brutes ou l'[[ProtocolDataUnit|unité de données de protocole]] de la couche supérieure.
-*   **Exemple Concret**: Un [[Router|routeur]] reçoit une [[EthernetFrame|trame Ethernet]] (au [[DataLinkLayer|niveau de la couche Liaison de Données]]), retire l'[[Header|en-tête Ethernet]] et l'[[EthernetTrailer|pied de page Ethernet]] pour en extraire le [[InternetProtocol|paquet IP]]. Il transmet ensuite ce [[Packet|paquet IP]] à la [[NetworkLayer|couche Réseau]] pour un [[Routing|routage]] approprié.
+*   **[[Layer|Architecture en Couches]]**: Les [[NetworkProtocol|protocoles réseau]] fonctionnent selon une [[Layer|architecture en couches]], comme illustré par le [[OpenSystemsInterconnectionModel|modèle OSI]] ou la [[InternetProtocolSuite|suite de protocoles TCP/IP]]. Chaque couche est responsable d'une fonction spécifique et ajoute ses propres informations de contrôle (en-têtes/pieds de page) aux [[Data|données]].
+*   **Processus Inverse de l'[[Encapsulation|Encapsulation]]**: La décapsulation est l'exact opposé de l'[[Encapsulation|encapsulation]]. Alors que l'encapsulation ajoute des informations de contrôle à chaque couche lors de la transmission, la décapsulation les retire dans l'ordre inverse à la réception.
+*   **Extraction de [[Data|Données]] et Interprétation**: À chaque couche de la pile de protocoles, le [[System|système]] récepteur examine l'[[Header|en-tête]] de sa couche, interprète les informations qu'il contient (par exemple, adresses de destination, contrôle de [[FlowControl|flux]], détection d'[[ErrorDetectionAndCorrection|erreurs]]), puis retire cet [[Header|en-tête]] avant de transmettre la [[Payload|charge utile]] (les [[Data|données]] de la couche supérieure) à la couche suivante.
+*   **Vérification de l'[[Integrity|Intégrité]]**: Souvent, lors de la décapsulation, une [[Checksum|somme de contrôle]] ou une [[FrameCheckSequence|séquence de vérification de trame]] est utilisée pour vérifier l'[[Integrity|intégrité]] des [[Data|données]] et s'assurer qu'aucune [[DataCorruption|corruption de données]] n'est survenue pendant la [[DataTransmission|transmission]].
 
 ## 💡 Importance en Cybersécurité
-> La décapsulation est fondamentale en [[Cybersecurity|cybersécurité]] car c'est le point où l'[[Integrity|intégrité]], la [[Confidentiality|confidentialité]] et l'[[Authentication|authenticité]] des [[Data|données]] peuvent être validées à chaque [[NetworkLayer|couche]]. Une décapsulation correcte assure que les [[Data|données]] sont traitées comme prévu par le [[Protocol|protocole]]. À l'inverse, des [[Vulnerability|vulnérabilités]] dans le processus de décapsulation, comme une mauvaise gestion des [[MalformedPackets|paquets malformés]] ou des [[ProtocolMisinterpretation|erreurs d'interprétation de protocole]], peuvent être exploitées par des [[ThreatActor|acteurs de menace]] pour des [[DenialOfService|attaques par déni de service]], de la [[PacketTampering|manipulation de paquets]] ou l'[[ExecutionOfMaliciousCode|exécution de code malveillant]]. La [[Vigilance|surveillance]] de ce processus est donc essentielle pour la [[NetworkSecurity|sécurité réseau]].
+> La compréhension de la décapsulation est fondamentale en [[Cybersecurity|cybersécurité]] pour plusieurs raisons cruciales. Elle permet aux [[SecurityResearcher|chercheurs en sécurité]] et aux [[BlueTeam|équipes bleues]] d'analyser le [[NetworkTraffic|trafic réseau]] en profondeur, en utilisant des [[Tool|outils]] comme [[Wireshark]], pour identifier les [[Malware|logiciels malveillants]], les [[Attack|attaques]] et les [[Vulnerability|vulnérabilités]]. Les [[Firewall|pare-feu]] et les [[IntrusionDetectionSystem|IDS]]/[[IntrusionPreventionSystem|IPS]] s'appuient sur la décapsulation pour inspecter le contenu des [[Packet|paquets]] à différents niveaux de la [[ProtocolStack|pile de protocoles]], ce qui est essentiel pour détecter les [[Threat|menaces]] et appliquer les [[SecurityPolicy|politiques de sécurité]]. Sans une connaissance approfondie de ce processus, l'identification et la mitigation efficaces des [[DigitalAttack|attaques numériques]] seraient considérablement entravées, rendant la [[NetworkSecurity|sécurité réseau]] beaucoup plus difficile à maintenir.
 
 ## 🔗 Notes Connexes
-*   [[Encapsulation]]
-*   [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   [[InternetProtocolSuite|Modèle TCP/IP]]
-*   [[ProtocolStack|Pile de protocoles]]
-*   [[DataIntegrity|Intégrité des données]]
-*   [[NetworkSecurity|Sécurité Réseau]]
-*   [[Firewall|Pare-feu]]
-*   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion]]
-*   [[IntrusionPreventionSystem|IPS]]
+*   **Concept opposé**: [[Encapsulation]]
+*   **Modèle de référence**: [[OpenSystemsInterconnectionModel|Modèle OSI]]
+*   **Outil d'analyse**: [[Wireshark]]
+*   **Composant de données**: [[Header]]
+*   **Domaine d'application**: [[NetworkTrafficAnalysis|Analyse du trafic réseau]]
+
+```mermaid
+graph TD
+    classDef phys fill:#ffd6d6,stroke:#c0392b,stroke-width:2px;
+    classDef link fill:#ffeecf,stroke:#d68910,stroke-width:2px;
+    classDef net fill:#e9ffe0,stroke:#27ae60,stroke-width:2px;
+    classDef trans fill:#fff2cc,stroke:#b8860b,stroke-width:2px;
+    classDef app fill:#e8f8ff,stroke:#2980b9,stroke-width:2px;
+
+    A["🟥 Signal physique<br/>Bits reçus"]:::phys
+    B["🟧 Trame Ethernet<br/>Suppression : MAC + FCS"]:::link
+    C["🟩 Paquet IP<br/>Suppression : en-tête IP"]:::net
+    D["🟨 Segment TCP / Datagramme UDP<br/>Suppression : en-tête Transport"]:::trans
+    E["🟦 Donnée applicative<br/>Message final"]:::app
+
+    A --> B --> C --> D --> E
+
+```
