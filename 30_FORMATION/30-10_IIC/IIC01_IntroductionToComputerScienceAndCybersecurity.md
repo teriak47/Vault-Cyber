@@ -7,6 +7,7 @@ tags:
 aliases:
   - Introduction à l'informatique et à la cybersécurité
   - IIC
+  - 01 | Introduction à l'Informatique et Cybersécurité (IIC)
 archetype: cour
 module: IIC (Introduction à l'informatique et cybersécurité)
 cssclasses:

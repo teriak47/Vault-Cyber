@@ -12,8 +12,7 @@ tags:
   - gestion/consentement
 aliases:
   - Comprendre Les Liens Et Les Cookies Sur Le Web
-  - Web Links and Cookies
-  - Gestion des Cookies
+  - 01-03 | Comprendre Les Liens et les Cookies sur le Web
 archetype: cour
 module: IIC (Introduction à l'informatique et cybersécurité)
 cssclasses:
@@ -134,6 +133,7 @@ La plupart des sites web vous autorisent à consulter leurs pages sans accepter 
 > Ce cours explore les fondements de la navigation [[WorldWideWeb|Web]], en détaillant le rôle des liens hypertexte comme outils de navigation. Il introduit ensuite les [[HttpCookies|cookies]], expliquant leur nature de petits fichiers de données et leur importance pour la personnalisation de l'expérience utilisateur, le [[OnlineServices|commerce en ligne]] et la publicité ciblée. Une attention particulière est portée aux préoccupations de [[Confidentiality|confidentialité]] que les cookies soulèvent en raison de leur capacité de suivi, et aux moyens dont disposent les utilisateurs pour contrôler ces [[PersonalData|données personnelles]] via les [[WebBrowsers|navigateurs Web]] et les [[LegalCompliance|réglementations]] en vigueur.
 
 ## 🔗 Notes Connexes
+* **Cour**: [[IIC01_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
 * **Contexte général**: [[WorldWideWeb|Web]]
 * **Concept parent**: [[Privacy|Vie privée]]
 * **Outil d'interaction**: [[WebBrowsers|Navigateurs Web]]
