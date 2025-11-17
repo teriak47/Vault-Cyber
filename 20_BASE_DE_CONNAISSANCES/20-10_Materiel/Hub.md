@@ -38,7 +38,7 @@ cssclasses:
 
 ## 🔒 Considérations de Sécurité Physique
 *   [[PhysicalSecurity|Protection contre l'accès non autorisé]] pour empêcher le vol ou l'altération physique du dispositif et des connexions.
-*   [[EnvironmentalControls|Contrôles environnementaux (température, humidité)]] adéquats pour assurer la fiabilité et la longévité du [[Hardware|matériel]].
+*   Contrôles environnementaux (température, humidité) adéquats pour assurer la fiabilité et la longévité du matériel.
 
 ## 🔗 Notes Connexes
 *   [[NetworkSwitch|Switch réseau]] (l'alternative moderne aux hubs)
