@@ -1,9 +1,22 @@
 ---
 tags:
+  - confidentialite
+  - donnee/privé
+  - protection/donnees
+  - rgpd
+  - droit-a-la-vie-privee
+  - gestion/donnees
+  - principe/protection-donnees
+  - ethique
+  - conformite
+  - minimisation-des-donnees
+  - consentement
+  - donnee/personnel
 aliases:
   - Confidentialité
   - Vie Privée
   - Privacy
+  - Intimité
 archetype: concept-general
 source:
   - 
@@ -11,25 +24,22 @@ cssclasses:
   - max
 ---
 
-# Confidentialité (Privacy)
+# Vie Privée (Privacy)
 
 ## 📥 Définition en une phrase
-> La [[Privacy|confidentialité]] est la capacité d'un [[User|individu]] ou d'un groupe à contrôler l'[[AccessControl|accès]] et l'[[DataTheft|utilisation]] de ses [[PersonalData|informations personnelles]], lui permettant de définir les limites de leur partage et de leur visibilité.
+> La [[Privacy|vie privée]] est le droit d'un individu de contrôler ses [[PersonalData|données personnelles]] et d'être à l'abri de toute [[PrivacyInvasion|ingérence]] dans sa vie personnelle, lui permettant de décider quelles informations sont partagées, avec qui et dans quelles circonstances.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Contrôle Individuel**: L'[[User|individu]] a le droit de décider qui peut [[AccessControl|accéder]] à ses [[PersonalData|données personnelles]], quand et comment, définissant les limites de leur partage et de leur visibilité.
-*   **[[Anonymity|Anonymat]] et [[Pseudonymity|Pseudonymat]]**: La capacité de s'exprimer ou d'agir sans être identifié ([[Anonymity|Anonymat]]) ou d'être identifié par un pseudonyme ([[Pseudonymity|Pseudonymat]]), protégeant l'[[UserIdentity|identité de l'utilisateur]].
-*   **[[InformedConsent|Consentement Éclairé]]**: Nécessité pour les [[User|individus]] de donner leur accord explicite et conscient pour la collecte et le [[Process|traitement]] de leurs [[Data|données]], après avoir été informés de manière transparente.
-*   **[[DataMinimization|Minimisation des Données]]**: Principe clé de la [[DataProtection|protection des données]] selon lequel seules les [[Data|données]] strictement nécessaires à une finalité spécifique doivent être collectées, [[Process|traitées]] et conservées.
-*   **[[DataProtection|Protection des Données]]**: Ensemble de [[SecurityControl|mesures techniques et organisationnelles]] visant à garantir la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[PersonalData|informations personnelles]] contre l'[[UnauthorizedAccess|accès non autorisé]], l'[[DataTheft|utilisation abusive]] ou la [[DataExfiltration|divulgation]].
+*   **Contrôle des Données Personnelles**: Le pouvoir des individus de décider comment leurs informations sont collectées, utilisées, stockées et partagées, en accord avec des principes comme le [[PurposeLimitation|principe de limitation de la finalité]] et la [[DataMinimization|minimisation des données]].
+*   **[[Confidentiality|Confidentialité]]**: Bien que distincte de la [[Privacy|vie privée]], la [[Confidentiality|confidentialité]] en est un pilier essentiel, garantissant que les informations privées sont protégées contre tout accès ou divulgation non autorisé.
+*   **[[Anonymity|Anonymat]]**: La capacité d'un individu à participer à des activités sans que son identité puisse être associée à ses actions ou à ses [[Data|données]], offrant une couche de protection de la [[Privacy|vie privée]].
 
 ## 💡 Importance en Cybersécurité
-> La [[Privacy|confidentialité]] est fondamentale en [[Cybersecurity|cybersécurité]] car elle protège les droits et les libertés des [[User|individus]] en leur permettant de contrôler leurs [[PersonalData|informations personnelles]]. Elle est un pilier de l'[[InformationSecurity|sécurité de l'information]], visant à prévenir le [[DataTheft|vol de données]], l'[[IdentityTheft|usurpation d'identité]] et la [[PrivacyInvasion|violation de la vie privée]]. Une gestion efficace de la [[Privacy|confidentialité]] renforce la [[Trust|confiance]] des [[User|utilisateurs]] et assure la [[LegalCompliance|conformité légale]] avec des cadres réglementaires tels que le [[GeneralDataProtectionRegulation|RGPD]] ou le [[CaliforniaConsumerPrivacyAct|CCPA]].
+> La [[Privacy|vie privée]] est fondamentale en [[Cybersecurity|cybersécurité]] car elle protège les individus contre les abus et les exploitations de leurs informations. Une bonne gestion de la [[Privacy|vie privée]] et des [[PersonalData|données personnelles]] renforce la [[Security|sécurité]] globale des systèmes et des [[User|utilisateurs]]. Elle est au cœur de la [[LegalCompliance|conformité légale]] avec des réglementations majeures comme le [[GeneralDataProtectionRegulation|RGPD]], et sa non-observance peut entraîner des sanctions financières, une perte de [[Reputation|réputation]] et une érosion de la [[Trust|confiance]] des clients. Protéger la [[Privacy|vie privée]] aide à prévenir le [[DataTheft|vol de données]], la [[IdentityTheft|fraude identitaire]] (bien que ce dernier ne soit pas une note existante, il est une conséquence directe), et d'autres [[DigitalAttack|attaques numériques]] qui exploitent les informations sensibles.
 
 ## 🔗 Notes Connexes
-*   [[CIATriad|Triade CIA]]
-*   [[DataProtection|Protection des Données]]
-*   [[PrivacyByDesign|Privacy by Design]]
-*   [[GeneralDataProtectionRegulation|RGPD]]
-*   [[InformationSecurity|Sécurité de l'Information]]
-*   [[PersonalData|Données Personnelles]]
+*   **Cadre légal**: [[GeneralDataProtectionRegulation|RGPD]]
+*   **Principe fondamental**: [[DataProtection|Protection des Données]]
+*   **Aspect technique clé**: [[Confidentiality|Confidentialité]]
+*   **Méthodologie**: [[PrivacyByDesign|Confidentialité dès la Conception]]
+*   **Concept ciblé**: [[PersonalData|Données Personnelles]]
