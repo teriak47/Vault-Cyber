@@ -23,7 +23,6 @@ cssclasses:
 > **Niveau de sophistication**: Variable (de faible à élevé)
 > **Objectifs principaux**: [[DataTheft|Vol de données]], [[FinancialGain|Gain financier]], [[Espionage|Espionnage]], [[Sabotage|Sabotage]], [[ReputationalDamage|Atteinte à la réputation]], [[ServiceDisruption|Interruption de service]]
 
-
 ## 🔗 Notes Connexes
 *   [[WhiteHat|White Hat]]
 *   [[ThreatActor|Acteur de Menace]]
