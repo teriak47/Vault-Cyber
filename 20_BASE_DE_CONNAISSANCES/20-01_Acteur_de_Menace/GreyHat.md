@@ -26,6 +26,7 @@ cssclasses:
 ## 🎯 Cibles et Industries Visées
 *   **Secteurs**: Généralement tout secteur ou [[System|système]] présentant des [[Vulnerability|vulnérabilités]] intéressantes. Pas de ciblage spécifique par industrie, mais plutôt par exposition ou intérêt technologique.
 *   **Régions géographiques**: Monde entier, en fonction des cibles trouvées en ligne.
+
 ## 🔗 Notes Connexes
 *   [[WhiteHat|Hacker White Hat]]
 *   [[BlackHat|Hacker Black Hat]]
