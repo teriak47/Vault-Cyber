@@ -28,7 +28,7 @@ cssclasses:
 > La [[SecurityAwareness|sensibilisation à la sécurité]] est fondamentale car elle adresse le [[HumanFactor|facteur humain]], souvent la première et la plus exploitée des [[Vulnerability|vulnérabilités]] dans une [[Enterprise|organisation]]. En éduquant les [[User|utilisateurs]], elle renforce la [[DefenseInDepth|défense en profondeur]], réduit le [[RiskManagement|risque]] de [[DataBreach|violation de données]], d'[[AccountTakeover|prise de contrôle de compte]] et d'[[Malware|infections par logiciels malveillants]], et contribue à une culture de [[Security|sécurité]] proactive. Elle est essentielle pour protéger la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et la [[Availability|disponibilité]] des [[InformationSecurity|informations]].
 
 ## 🔗 Notes Connexes
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   [[HumanError|Erreur humaine]]
 *   [[SocialEngineering|Ingénierie Sociale]]
 *   [[Phishing|Hameçonnage]]

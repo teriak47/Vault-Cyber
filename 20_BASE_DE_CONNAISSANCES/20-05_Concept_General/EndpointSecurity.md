@@ -32,7 +32,7 @@ cssclasses:
 *   [[ExtendedDetectionAndResponse|Détection et Réponse Étendues (XDR)]]
 *   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
 *   [[PatchManagement|Gestion des Patchs]]
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   [[SecurityOperationsCenter|Centre d'Opérations de Sécurité (SOC)]]
 *   [[AdvancedPersistentThreat|Menaces Persistantes Avancées (APT)]]
 *   [[DataLossPrevention|Prévention des Pertes de Données (DLP)]]

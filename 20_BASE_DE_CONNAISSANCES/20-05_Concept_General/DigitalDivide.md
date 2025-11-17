@@ -26,7 +26,7 @@ cssclasses:
 
 ## 🧠 Concepts Clés / Piliers
 *   **Accès Physique**: La disponibilité et l'abordabilité de l'accès à l'[[Internet]] et aux appareils numériques (ordinateurs, [[Smartphone|smartphones]], [[Tablet|tablettes]]). Cela inclut des facteurs comme l'accès à une infrastructure haut débit (ex: [[FiberOpticCable|fibre optique]], [[CableInternet|câble]]), souvent limitée dans les zones rurales ou défavorisées.
-*   **Compétences Numériques**: Les capacités des [[User|utilisateurs]] à trouver, évaluer, utiliser et créer des informations numériques, ainsi qu'à comprendre les implications des technologies. Un manque de [[UserAwarenessTraining|compétences numériques]] peut empêcher une utilisation efficace et sécurisée.
+*   **Compétences Numériques**: Les capacités des [[User|utilisateurs]] à trouver, évaluer, utiliser et créer des informations numériques, ainsi qu'à comprendre les implications des technologies. Un manque de [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|compétences numériques]] peut empêcher une utilisation efficace et sécurisée.
 *   **Qualité d'Usage et Pertinence**: Au-delà de l'accès et des compétences, il s'agit de la capacité à utiliser la [[DigitalTechnology|technologie]] de manière significative et bénéfique, en fonction des besoins et du contexte de vie. Cela inclut la qualité de la connexion, le coût et la pertinence du contenu ou des services accessibles.
 
 ## 💡 Importance en Cybersécurité
@@ -35,5 +35,5 @@ Le [[DigitalDivide|fossé numérique]] crée des [[SecurityVulnerabilities|vuln�
 ## 🔗 Notes Connexes
 *   **Contexte fondamental**: [[IIC01-01_IntroductionAuMondeNumeriqueEtSesDefis|Introduction au Monde Numérique et ses Défis]]
 *   **Facteur d'atténuation**: [[Accessibility|Accessibilité]]
-*   **Stratégie de réduction des risques**: [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   **Stratégie de réduction des risques**: [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   **Risque accru**: [[SocialEngineering|Attaques d'Ingénierie Sociale]]

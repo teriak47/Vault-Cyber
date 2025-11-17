@@ -28,7 +28,7 @@ cssclasses:
     *   [[CorrectiveControl|Contrôles Correctifs]]: Permettent de restaurer les [[System|systèmes]] à un état normal après un [[IncidentResponse|incident]] et de minimiser les [[FinancialLoss|dommages]] (ex: [[Backup|sauvegardes]], [[DisasterRecoveryPlanning|plans de reprise après sinistre]], [[PatchManagement|mises à jour]]).
 *   **Catégories d'Implémentation**:
     *   **Techniques**: Intégrés dans le [[Hardware|matériel]] ou le [[Software|logiciel]] (ex: [[Antivirus|logiciels antivirus]], [[Firewall|pare-feu]], [[MultiFactorAuthentication|MFA]]).
-    *   **Administratives**: Basées sur des [[SecurityPolicy|politiques]], des [[Process|procédures]] et la [[UserAwarenessTraining|formation]] du [[User|personnel]] (ex: [[StrongPasswordPolicy|politique de mots de passe forts]], [[SecurityAwareness|sensibilisation à la sécurité]]).
+    *   **Administratives**: Basées sur des [[SecurityPolicy|politiques]], des [[Process|procédures]] et la [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|formation]] du [[User|personnel]] (ex: [[StrongPasswordPolicy|politique de mots de passe forts]], [[SecurityAwareness|sensibilisation à la sécurité]]).
     *   **Physiques**: Mesures de [[PhysicalSecurity|sécurité physique]] pour protéger les [[Resource|actifs]] et les [[Computer|équipements]] (ex: serrures, [[Biometric|biométrie]], caméras de surveillance).
 
 ## 💡 Importance en Cybersécurité

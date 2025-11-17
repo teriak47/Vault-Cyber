@@ -25,7 +25,7 @@ cssclasses:
 *   **Protocoles de Communication**: Les [[Client|clients]] s'appuient sur des [[NetworkProtocol|protocoles réseau]] spécifiques (ex: [[HypertextTransferProtocol|HTTP]], [[SecureShell|SSH]], [[FileTransferProtocol|FTP]]) pour communiquer avec les [[Server|serveurs]], chacun étant adapté à un type de [[FileTransfer|transfert de données]] ou de [[NetworkCommunication|communication]] particulier.
 
 ## 💡 Importance en Cybersécurité
-> Le [[Client|client]] représente une [[AttackSurface|surface d'attaque]] cruciale en [[Cybersecurity|cybersécurité]], étant souvent le premier point d'interaction pour les [[User|utilisateurs]] et, par conséquent, une cible privilégiée pour les [[ThreatActor|acteurs de menaces]]. La [[Security|sécurité]] du [[Client|client]] est essentielle pour prévenir des [[Attack|attaques]] telles que le [[CrossSiteScripting|XSS]], les [[Malware|malwares]] ou l'[[SocialEngineering|ingénierie sociale]], et nécessite une [[DefenseInDepth|défense en profondeur]] incluant la [[InputValidation|validation des entrées]], les [[SoftwareUpdate|mises à jour logicielles]] régulières et la [[UserAwarenessTraining|sensibilisation des utilisateurs]].
+> Le [[Client|client]] représente une [[AttackSurface|surface d'attaque]] cruciale en [[Cybersecurity|cybersécurité]], étant souvent le premier point d'interaction pour les [[User|utilisateurs]] et, par conséquent, une cible privilégiée pour les [[ThreatActor|acteurs de menaces]]. La [[Security|sécurité]] du [[Client|client]] est essentielle pour prévenir des [[Attack|attaques]] telles que le [[CrossSiteScripting|XSS]], les [[Malware|malwares]] ou l'[[SocialEngineering|ingénierie sociale]], et nécessite une [[DefenseInDepth|défense en profondeur]] incluant la [[InputValidation|validation des entrées]], les [[SoftwareUpdate|mises à jour logicielles]] régulières et la [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|sensibilisation des utilisateurs]].
 
 ## 🔗 Notes Connexes
 *   [[Server|Serveur]]
@@ -40,4 +40,4 @@ cssclasses:
 *   [[InputValidation|Validation des Entrées]]
 *   [[SoftwareUpdate|Mises à Jour Logicielles]]
 *   [[PrincipleOfLeastPrivilege|Principe du Moindre Privilège]]
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]

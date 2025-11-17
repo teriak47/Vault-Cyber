@@ -37,7 +37,7 @@ cssclasses:
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[UserAwarenessTraining|Sensibilisation et formation des utilisateurs]] pour reconnaître les signaux d'alerte du [[Phishing|phishing]].
+    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation et formation des utilisateurs]] pour reconnaître les signaux d'alerte du [[Phishing|phishing]].
     *   [[EmailFiltering|Filtrage d'emails]] avancé et solutions anti-[[Spam|spam]].
     *   Vérification systématique des adresses [[Email|e-mail]] de l'expéditeur et des [[HypertextTransferProtocol|URLs]] avant de cliquer sur des liens.
     *   Utilisation de [[Antivirus|logiciels antivirus]] et de [[Firewall|pare-feu]] à jour.
@@ -57,7 +57,7 @@ cssclasses:
 *   [[Vishing|Vishing]]
 *   [[BusinessEmailCompromise|Compromission de Messagerie d'Entreprise]]
 *   [[CredentialTheft|Vol d'Identifiants]]
-*   [[UserAwarenessTraining|Formation à la Sensibilisation à la Sécurité]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Formation à la Sensibilisation à la Sécurité]]
 *   [[Vulnerability|Vulnérabilité exploitée]]
 *   [[ThreatActor|Acteur de menace associé]]
 *   [[Malware|Logiciel malveillant]]

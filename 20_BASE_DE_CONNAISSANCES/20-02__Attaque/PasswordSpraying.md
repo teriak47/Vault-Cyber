@@ -38,7 +38,7 @@ cssclasses:
     *   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]: Rend l'[[Attack|attaque]] inefficace même si un [[Password|mot de passe]] est découvert.
     *   [[StrongPasswordPolicy|Politiques de Mots de Passe Forts]]: Exiger des mots de passe longs, complexes et uniques pour rendre les [[PasswordAttacks|attaques par dictionnaire]] et le spraying moins efficaces.
     *   [[AccountLockoutPolicy|Politiques de Verrouillage de Compte]]: Bien que ciblées par le spraying, des seuils de verrouillage bien configurés restent une [[SecurityControl|mesure de sécurité]] essentielle.
-    *   [[UserAwarenessTraining|Sensibilisation des utilisateurs]]: Éduquer sur les dangers des [[PasswordReuse|réutilisations de mot de passe]] et l'importance des [[StrongPassword|mots de passe forts]].
+    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]: Éduquer sur les dangers des [[PasswordReuse|réutilisations de mot de passe]] et l'importance des [[StrongPassword|mots de passe forts]].
 *   **Détection** :
     *   [[SecurityInformationAndEventManagement|SIEM]]: Permet d'agréger et d'analyser les [[Log|journaux]] d'authentification pour identifier les modèles anormaux (ex: une même [[Password|tentative de mot de passe]] sur de multiples comptes).
     *   [[AnomalyDetection|Détection d'anomalies]]: Surveiller les tentatives de [[Login|connexion]] pour des schémas inhabituels de volume, de source [[InternetProtocolAddressBlocks|IP]] ou de [[LocationData|localisation géographique]].

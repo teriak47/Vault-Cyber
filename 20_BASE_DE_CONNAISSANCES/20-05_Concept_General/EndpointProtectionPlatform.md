@@ -43,7 +43,7 @@ cssclasses:
 *   [[ZeroDay|Vulnérabilité Zero-Day]]
 *   [[VulnerabilityManagement|Gestion des Vulnérabilités]]
 *   [[PatchManagement|Gestion des Patchs]]
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   [[SecurityPolicy|Politique de Sécurité]]
 *   [[AdvancedPersistentThreat|Menaces Persistantes Avancées (APT)]]
 *   [[DeviceControl|Contrôle des Périphériques]]

@@ -34,7 +34,7 @@ cssclasses:
 *   [[QuidProQuo|Quid Pro Quo]]
 *   [[HumanError|Erreur humaine]]
 *   [[CognitiveBias|Biais cognitif]]
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   [[AttackVector|Vecteur d'attaque]]
 *   [[SocialEngineering|Attaque par Ingénierie Sociale]]
 *   [[Confidentiality|Confidentialité]]

@@ -39,7 +39,7 @@ cssclasses:
     *   [[DataLossPrevention|Prévention de la Perte de Données (DLP)]] pour surveiller et bloquer les transferts de [[SensitiveData|données]].
     *   [[Encryption|Chiffrement]] des [[Data|données]] au repos et en transit.
     *   [[AccessControl|Contrôles d'accès]] stricts et application du [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
-    *   [[UserAwarenessTraining|Sensibilisation des utilisateurs]] aux risques de [[Phishing|phishing]] et d'[[SocialEngineering|ingénierie sociale]].
+    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]] aux risques de [[Phishing|phishing]] et d'[[SocialEngineering|ingénierie sociale]].
 *   **Détection** :
     *   [[NetworkMonitoring|Surveillance réseau]] et [[NetworkTrafficAnalysis|analyse du trafic réseau]] sortant pour identifier les activités suspectes ou les volumes de [[Data|données]] anormaux.
     *   [[EndpointDetectionAndResponse|Endpoint Detection and Response (EDR)]] pour surveiller l'activité des [[EndDevices|terminaux]].

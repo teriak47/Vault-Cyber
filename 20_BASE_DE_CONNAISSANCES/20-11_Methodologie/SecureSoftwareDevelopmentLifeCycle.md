@@ -26,7 +26,7 @@ Le [[SecureSoftwareDevelopmentLifeCycle|SSDLC]] est une approche systématique v
 ## 🔢 Phases / Étapes Clés
 1.  **Formation et Sensibilisation à la Sécurité**:
     *   **Objectif**: S'assurer que toutes les équipes (développement, QA, opérations) comprennent les [[SecurityGoals|objectifs de sécurité]], les [[SecureCoding|bonnes pratiques de codage sécurisé]] et les [[SoftwareVulnerability|vulnérabilités]] courantes.
-    *   **Techniques associées**: [[UserAwarenessTraining|Formations régulières]], diffusion de ressources sur le [[SecureCoding|codage sécurisé]], ateliers sur les [[Threat|menaces]] et les [[AttackVector|vecteurs d'attaque]].
+    *   **Techniques associées**: [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Formations régulières]], diffusion de ressources sur le [[SecureCoding|codage sécurisé]], ateliers sur les [[Threat|menaces]] et les [[AttackVector|vecteurs d'attaque]].
 
 2.  **Définition des Exigences de Sécurité**:
     *   **Objectif**: Intégrer les exigences de sécurité dès le début de la phase de planification, en définissant clairement les critères de [[Confidentiality|confidentialité]], d'[[Integrity|intégrité]] et de [[Availability|disponibilité]] des données et des [[System|systèmes]].

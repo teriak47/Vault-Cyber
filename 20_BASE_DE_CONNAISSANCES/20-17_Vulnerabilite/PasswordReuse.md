@@ -26,7 +26,7 @@ cssclasses:
 *   **[[PasswordManager|Gestionnaire de mots de passe]]**: Encourager l'utilisation d'un [[PasswordManager|gestionnaire de mots de passe]] pour générer et stocker des [[StrongPassword|mots de passe forts]] et uniques pour chaque service.
 *   **[[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]**: Activer la [[MultiFactorAuthentication|MFA]] sur tous les services qui le permettent. Cela ajoute une couche de [[Security|sécurité]] même si un [[Password|mot de passe]] est compromis.
 *   **[[StrongPasswordPolicy|Politique de mots de passe forts]]**: Implémenter et appliquer des [[StrongPasswordPolicy|politiques de mots de passe forts]] exigeant une complexité minimale, une longueur suffisante et interdisant la réutilisation des anciens [[Password|mots de passe]].
-*   **[[UserAwarenessTraining|Sensibilisation des utilisateurs]]**: Organiser des sessions de [[UserAwarenessTraining|sensibilisation des utilisateurs]] pour éduquer sur les risques liés à la réutilisation des [[Password|mots de passe]].
+*   **[[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]**: Organiser des sessions de [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|sensibilisation des utilisateurs]] pour éduquer sur les risques liés à la réutilisation des [[Password|mots de passe]].
 
 ## 🔍 Comment la détecter ?
 La réutilisation de [[Password|mots de passe]] n'est pas directement "détectable" en soi, mais ses conséquences peuvent être identifiées:

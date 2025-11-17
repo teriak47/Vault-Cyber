@@ -34,7 +34,7 @@ Dans le domaine de la [[Cybersecurity|cybersécurité]], une base de connaissanc
 *   **[[IncidentResponse|Réponse aux Incidents]]**: Fournit des procédures détaillées et des listes de contrôle pour gérer efficacement les incidents de sécurité.
 *   **[[VulnerabilityManagement|Gestion des Vulnérabilités]]**: Documente les vulnérabilités connues, leurs impacts et les mesures de mitigation associées.
 *   **[[ThreatIntelligence|Renseignement sur les menaces]]**: Centralise les informations sur les [[ThreatActor|acteurs de menaces]], les [[AttackVector|vecteurs d'attaque]] et les [[Malware|logiciels malveillants]].
-*   **[[SecurityAwareness|Sensibilisation à la Sécurité]]**: Sert de ressource pour la [[UserAwarenessTraining|formation et la sensibilisation]] des utilisateurs aux meilleures pratiques de sécurité.
+*   **[[SecurityAwareness|Sensibilisation à la Sécurité]]**: Sert de ressource pour la [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|formation et la sensibilisation]] des utilisateurs aux meilleures pratiques de sécurité.
 *   **Conformité**: Aide à documenter les [[SecurityPolicy|politiques de sécurité]] et les exigences de [[LegalCompliance|conformité légale]].
 *   **Partage d'Expertise**: Permet aux experts de partager leur savoir-faire, réduisant la dépendance vis-à-vis d'individus clés et assurant la continuité des opérations.
 

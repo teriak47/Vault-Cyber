@@ -24,7 +24,7 @@ cssclasses:
 *   **Types de Fuzzing**: Le fuzzing peut être basé sur des mutations (modifiant des entrées existantes), des générateurs (créant des entrées à partir de zéro selon un modèle) ou être intelligent (guidé par la couverture de code via des outils comme [[CodeCoverage|Code Coverage]]).
 
 ## 💡 Importance en Cybersécurité
-> Le fuzzing est fondamental en [[Cybersecurity|cybersécurité]] car il permet de découvrir de manière proactive des [[Vulnerability|vulnérabilités]] inconnues, y compris des potentielles [[ZeroDay|vulnérabilités Zero-Day]], avant qu'elles ne soient exploitées par des [[ThreatActor|acteurs de menace]]. En identifiant et en corrigeant ces failles tôt dans le [[SoftwareDevelopmentLifecycle|cycle de vie de développement sécurisé (SDLC)]], il contribue significativement à la robustesse et à la [[Security|sécurité]] des [[Software|logiciels]] et des [[System|systèmes]], réduisant ainsi la [[AttackSurface|surface d'attaque]] et le [[RiskManagement|risque]] de [[DigitalAttack|cyberattaques]] telles que les [[DataBreach|fuites de données]] ou les [[SystemCompromise|compromissions de système]].
+> Le fuzzing est fondamental en [[Cybersecurity|cybersécurité]] car il permet de découvrir de manière proactive des [[Vulnerability|vulnérabilités]] inconnues, y compris des potentielles [[ZeroDay|vulnérabilités Zero-Day]], avant qu'elles ne soient exploitées par des [[ThreatActor|acteurs de menace]]. En identifiant et en corrigeant ces failles tôt dans le [[SoftwareDevelopmentLifeCycle|cycle de vie de développement sécurisé (SDLC)]], il contribue significativement à la robustesse et à la [[Security|sécurité]] des [[Software|logiciels]] et des [[System|systèmes]], réduisant ainsi la [[AttackSurface|surface d'attaque]] et le [[RiskManagement|risque]] de [[DigitalAttack|cyberattaques]] telles que les [[DataBreach|fuites de données]] ou les [[SystemCompromise|compromissions de système]].
 
 ## 🔗 Notes Connexes
 *   [[PenetrationTesting|Tests d'intrusion]]
@@ -34,4 +34,4 @@ cssclasses:
 *   [[SoftwareTesting|Tests logiciels]]
 *   [[StaticApplicationSecurityTesting|SAST]]
 *   [[DynamicApplicationSecurityTesting|DAST]]
-*   [[SoftwareDevelopmentLifecycle|Cycle de Vie de Développement Sécurisé]]
+*   [[SoftwareDevelopmentLifeCycle|Cycle de Vie de Développement Sécurisé]]

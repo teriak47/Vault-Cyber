@@ -45,7 +45,7 @@ cssclasses:
 *   [[EndpointSecurity|Sécurité des Endpoints]]
 *   [[PhysicalSecurity|Sécurité Physique]]
 *   [[Malware|Malware]]
-*   [[UserAwarenessTraining|Sensibilisation des utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]
 *   [[SecureConfiguration|Configuration Sécurisée]]
 *   [[Keylogger|Keylogger]]
 *   [[SupplyChainAttack|Attaque de la chaîne d'approvisionnement]]

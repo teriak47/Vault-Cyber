@@ -28,5 +28,8 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Algorithm.md|Algorithm]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Segmentation.md|Segmentation]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Segment.md|Segment]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Device.md|Device]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Web20.md|Web20]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Metadata.md|Metadata]]
 
 %% DATAVIEW_PUBLISHER: end %%

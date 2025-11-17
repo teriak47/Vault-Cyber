@@ -36,6 +36,7 @@ aliases:
 archetype: cour
 module: IIC (Introduction à l'informatique et cybersécurité)
 source:
+  - https://ifapme.itslearning.com/
 cssclasses:
   - max
 ---
@@ -122,20 +123,20 @@ Cette catégorie englobe les [[ECommercePlatforms|plateformes d'e-commerce]], le
 
 ### [[CommunityOnlineServices|Services Communautaires]]
 
-Ils incluent les [[SocialMediaPlatform|réseaux sociaux]] et les [[InformationRepositories|référentiels d'informations]].
+Ils incluent les [[SocialMediaPlatform|réseaux sociaux]] et les [[InformationRepository|référentiels d'informations]].
 *   **[[SocialMediaPlatform|Plateformes de Réseaux Sociaux]] :** Des sites comme Facebook ou TikTok facilitent les échanges sociaux et le partage d'informations.
-*   **[[InformationRepositories|Référentiels d'Informations]] :** Des plateformes comme Wikipédia, où les [[User|utilisateurs]] collaborent pour créer et modifier du contenu, ou le projet Gutenberg, une vaste bibliothèque de livres gratuits.
+*   **[[InformationRepository|Référentiels d'Informations]] :** Des plateformes comme Wikipédia, où les [[User|utilisateurs]] collaborent pour créer et modifier du contenu, ou le projet Gutenberg, une vaste bibliothèque de livres gratuits.
 
 ## [[BusinessModels|Modèles Économiques]] des [[OnlineServices|Services en Ligne]]
 
 Les [[BusinessModels|modèles économiques]] varient selon le type de service :
 
-*   **[[InformationRepositories|Référentiels d'Informations]] :** Généralement gratuits, ils dépendent des dons pour fonctionner.
+*   **[[InformationRepository|Référentiels d'Informations]] :** Généralement gratuits, ils dépendent des dons pour fonctionner.
 *   **[[SocialMediaPlatform|Réseaux Sociaux]] :** Génèrent des revenus principalement via la publicité insérée dans le contenu. Certains proposent des abonnements payants pour supprimer les publicités.
 
 ## Conclusion
 
-Les [[OnlineServices|plateformes en ligne]] offrent une multitude d'options, gratuites ou payantes. Quelle que soit votre utilisation, il est primordial de vous familiariser avec leur fonctionnement pour garantir une expérience numérique agréable et surtout [[Security|sécurisée]]. La [[SensibilisationUtilisateur|sensibilisation des utilisateurs]] est clé pour naviguer dans ce monde en constante évolution.
+Les [[OnlineServices|plateformes en ligne]] offrent une multitude d'options, gratuites ou payantes. Quelle que soit votre utilisation, il est primordial de vous familiariser avec leur fonctionnement pour garantir une expérience numérique agréable et surtout [[Security|sécurisée]]. La [[UserAwarenessTraining|sensibilisation des utilisateurs]] est clé pour naviguer dans ce monde en constante évolution.
 
 ## 🎯 Objectif
 > Comprendre les avantages et les inconvénients de la [[DigitalTechnology|technologie numérique]], identifier les principaux [[DigitalEnvironment|environnements numériques]], et classer les [[OnlineServices|services en ligne]] en fonction de leur type et de leurs [[BusinessModels|modèles économiques]].
@@ -155,13 +156,14 @@ Les [[OnlineServices|plateformes en ligne]] offrent une multitude d'options, gra
 5.  Les trois principales catégories de [[OnlineServices|services en ligne]] sont :
     *   **[[PublicOnlineServices|Services Publics]]** : Ex. Sites web gouvernementaux pour les démarches administratives.
     *   **[[PrivateOnlineServices|Services Privés]]** : Ex. [[ECommercePlatforms|Plateformes d'e-commerce]] comme Amazon.
-    *   **[[CommunityOnlineServices|Services Communautaires]]** : Ex. [[SocialMediaPlatform|Réseaux sociaux]] comme Facebook ou [[InformationRepositories|référentiels d'informations]] comme Wikipédia.
+    *   **[[CommunityOnlineServices|Services Communautaires]]** : Ex. [[SocialMediaPlatform|Réseaux sociaux]] comme Facebook ou [[InformationRepository|référentiels d'informations]] comme Wikipédia.
 
 ## 📝 Résumé
-> Cette leçon introduit le monde de la [[DigitalTechnology|technologie numérique]], en soulignant ses avantages transformateurs et ses défis, notamment l'impact sur la santé, les risques de [[Confidentiality|confidentialité]] et de [[DataProtection|sécurité des données]], et le [[DigitalDivide|fossé numérique]]. Elle explore les environnements numériques fondamentaux tels que les [[OperatingSystem|systèmes d'exploitation]], les [[WebBrowsers|navigateurs web]] et les [[SoftwareApplication|applications]]. La leçon retrace également l'évolution de l'[[Internet]] depuis les débuts du [[WorldWideWeb|World Wide Web]], en passant par le [[Web20|Web 2.0]] interactif, jusqu'à l'ère de l'[[InternetofThings|IoT]]. Enfin, elle catégorise les [[OnlineServices|services en ligne]] en types publics, privés et communautaires, en examinant leurs [[BusinessModels|modèles économiques]] respectifs et l'importance de la [[SensibilisationUtilisateur|sensibilisation des utilisateurs]] pour une expérience numérique sécurisée.
+> Cette leçon introduit le monde de la [[DigitalTechnology|technologie numérique]], en soulignant ses avantages transformateurs et ses défis, notamment l'impact sur la santé, les risques de [[Confidentiality|confidentialité]] et de [[DataProtection|sécurité des données]], et le [[DigitalDivide|fossé numérique]]. Elle explore les environnements numériques fondamentaux tels que les [[OperatingSystem|systèmes d'exploitation]], les [[WebBrowsers|navigateurs web]] et les [[SoftwareApplication|applications]]. La leçon retrace également l'évolution de l'[[Internet]] depuis les débuts du [[WorldWideWeb|World Wide Web]], en passant par le [[Web20|Web 2.0]] interactif, jusqu'à l'ère de l'[[InternetofThings|IoT]]. Enfin, elle catégorise les [[OnlineServices|services en ligne]] en types publics, privés et communautaires, en examinant leurs [[BusinessModels|modèles économiques]] respectifs et l'importance de la [[UserAwarenessTraining|sensibilisation des utilisateurs]] pour une expérience numérique sécurisée.
 
 ## 🔗 Notes Connexes
 * **Module parent**: [[IIC01_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+* **Cours suivant**: [[IIC01-02_TechnologiesModernesEtConnectiviteInternet|Technologies Modernes et Connectivité Internet]]
 * **Concept clé**: [[Confidentiality|Confidentialité]]
 * **Technologie connexe**: [[InternetofThings|Internet des Objets]]
 * **Application fondamentale**: [[WebBrowsers|Navigateurs Web]]

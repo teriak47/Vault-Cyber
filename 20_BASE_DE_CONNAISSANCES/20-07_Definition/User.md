@@ -46,7 +46,7 @@ cssclasses:
 * [[SecurityAwareness|Sensibilisation à la Sécurité]]
 * [[SoftwareApplication|Application logicielle]]
 * [[System|Système]]
-* [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+* [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 * [[UserExperience|Expérience Utilisateur]]
 * [[UserIdentity|Identité Utilisateur]]
 * [[Username|Nom d'utilisateur]]

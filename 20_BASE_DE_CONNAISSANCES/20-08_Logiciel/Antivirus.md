@@ -27,7 +27,7 @@ cssclasses:
 *   **Mises à jour régulières**: Maintenir le [[Antivirus|logiciel antivirus]] et sa base de données de [[Signature|signatures]] constamment à jour pour une protection optimale contre les dernières [[Threat|menaces]].
 *   **Analyses complètes et planifiées**: Configurer des analyses régulières du [[System|système]] pour détecter les [[Malware|menaces]] potentiellement passées inaperçues ou les infections latentes.
 *   **Combiner avec d'autres [[SecurityControl|contrôles de sécurité]]**: Utiliser l'[[Antivirus|antivirus]] en conjonction avec un [[Firewall|pare-feu]], un [[IntrusionDetectionSystem|système de détection d'intrusion (IDS)]] et des solutions de [[EndpointProtectionPlatform|protection des endpoints (EPP)]] ou [[EndpointDetectionAndResponse|EDR]].
-*   **[[UserAwarenessTraining|Sensibilisation des utilisateurs]]**: Former les utilisateurs aux bonnes pratiques de [[Security|sécurité]] et à la reconnaissance des tentatives de [[Phishing|hameçonnage]] ou de téléchargements malveillants.
+*   **[[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]**: Former les utilisateurs aux bonnes pratiques de [[Security|sécurité]] et à la reconnaissance des tentatives de [[Phishing|hameçonnage]] ou de téléchargements malveillants.
 
 ## 🔍 Audit et Surveillance
 *   **Journaux d'événements de l'antivirus**:

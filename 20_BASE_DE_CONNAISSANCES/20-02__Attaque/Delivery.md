@@ -38,7 +38,7 @@ cssclasses:
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[SecurityAwareness|Sensibilisation des utilisateurs]] et [[UserAwarenessTraining|formation]] aux risques de [[Phishing|hameçonnage]] et à la prudence vis-à-vis des médias physiques inconnus.
+    *   [[SecurityAwareness|Sensibilisation des utilisateurs]] et [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|formation]] aux risques de [[Phishing|hameçonnage]] et à la prudence vis-à-vis des médias physiques inconnus.
     *   [[EmailSecurityGateway|Passerelles de sécurité email]] avec des [[EmailFiltering|filtres avancés]] anti-[[Spam|spam]] et anti-[[Phishing|hameçonnage]].
     *   [[WebApplicationFirewall|Pare-feu applicatifs web (WAF)]] et [[SecureWebGateway|passerelles web sécurisées]].
     *   [[PatchManagement|Gestion rigoureuse des correctifs]] pour maintenir les [[OperatingSystem|systèmes d'exploitation]] et [[SoftwareApplication|applications]] à jour.

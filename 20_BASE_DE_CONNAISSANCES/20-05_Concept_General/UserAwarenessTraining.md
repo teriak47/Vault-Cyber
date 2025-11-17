@@ -1,18 +1,20 @@
 ---
 tags:
-  - concept/general
   - sensibilisation/utilisateur
-  - gestion/risques
-  - ingenierie-sociale
-  - risque/humain
   - securite/culture
-  - securite
+  - risque-humain
+  - prevention/vulnerabilite
+  - gestion/risques
+  - formation
+  - cybersecurite
+  - utilisateur
 aliases:
   - Sensibilisation des Utilisateurs
+  - Formation à la sécurité des utilisateurs
   - User Awareness Training
+  - Security Awareness Training
 archetype: concept-general
 source:
-  - 
 cssclasses:
   - max
 ---
@@ -20,23 +22,20 @@ cssclasses:
 # Sensibilisation des Utilisateurs
 
 ## 📥 Définition en une phrase
-> La sensibilisation des utilisateurs est un programme continu visant à éduquer les [[User|employés]] sur les meilleures pratiques de [[NetworkSecurity|sécurité informatique]] afin de réduire le [[Risque Humain|risque]] d'[[IncidentResponse|incidents]] liés à l'[[HumanError|erreur humaine]].
+> La sensibilisation des utilisateurs est un programme continu visant à éduquer les [[User|utilisateurs]] sur les menaces de [[Cybersecurity|cybersécurité]], les politiques de [[Security|sécurité]] de l'[[Organisation]] et les meilleures pratiques pour protéger les [[System|systèmes]] et les [[Data|données]].
 
 ## 🧠 Concepts Clés / Piliers
-*   **Éducation Continue** : Les programmes de [[UserAwarenessTraining|sensibilisation des utilisateurs]] ne sont pas des événements uniques, mais des initiatives régulières et continues, adaptées aux nouvelles [[Threat|menaces]] et aux évolutions technologiques.
-*   **Réduction du [[Risque Humain|Risque Humain]]** : L'objectif principal est de transformer les [[User|utilisateurs]] en première ligne de [[DefenseInDepth|défense]] contre les [[DigitalAttack|cybermenaces]] en leur fournissant les connaissances et les compétences nécessaires pour identifier et éviter les [[Attack|attaques]].
-*   **Thèmes Abordés** : Couvre des sujets variés comme le [[Phishing|hameçonnage]], le [[Malware|logiciel malveillant]], l'[[SocialEngineering|ingénierie sociale]], la [[StrongPasswordPolicy|gestion des mots de passe]], la [[PhysicalSecurity|sécurité physique]] et la [[DataProtection|protection des données sensibles]].
-*   **Méthodes Pédagogiques** : Peut inclure des formations interactives, des simulations de [[Phishing|phishing]], des campagnes d'information régulières, des quiz, et des communications internes pour renforcer les messages de [[Security|sécurité]].
-*   **[[SecurityCulture|Culture de Sécurité]]** : Contribue activement à l'établissement et au maintien d'une [[SecurityCulture|culture de sécurité]] robuste au sein de l'[[Enterprise|organisation]], où chaque [[User|employé]] se sent responsable de la [[Cybersecurity|cybersécurité]].
+*   **Identification des Menaces**: Enseigner aux [[User|utilisateurs]] à reconnaître et à comprendre les différents types d'[[Attack|attaques]] et de [[Threat|menaces]], notamment le [[Phishing|hameçonnage]], l'[[SocialEngineering|ingénierie sociale]], les [[Malware|logiciels malveillants]] (comme les [[Ransomware|rançongiciels]] et les [[Virus|virus]]), et les [[ZeroDay|vulnérabilités Zero-Day]]. Il s'agit de les rendre capables de distinguer les communications légitimes des tentatives frauduleuses.
+*   **Bonnes Pratiques de Sécurité**: Promouvoir l'adoption de comportements [[SecurityControl|sécurisés]], tels que l'utilisation de [[StrongPassword|mots de passe forts]] et uniques pour chaque [[Account|compte]], la mise en œuvre de l'[[MultiFactorAuthentication|authentification multi-facteurs (MFA)]], la gestion des [[HttpCookies|cookies]], la reconnaissance des risques liés aux réseaux [[PublicNetwork|publics]] ou [[WirelessFidelity|Wi-Fi]] non sécurisés, et la prudence lors du partage d'informations sur les [[SocialMediaPlatform|plateformes de médias sociaux]].
+*   **Politiques et Procédures de l'Organisation**: Familiariser les [[User|utilisateurs]] avec les [[SecurityPolicy|politiques de sécurité]] internes, les procédures de gestion des [[Credential|identifiants]], les protocoles de [[DataProtection|protection des données]] (y compris la [[Confidentiality|confidentialité]] et la [[Integrity|intégrité]]), et les mécanismes de [[IncidentResponse|signalement des incidents]]. L'objectif est de s'assurer que chaque individu comprend son rôle et ses [[Accountability|responsabilités]] dans le maintien de la posture de [[NetworkSecurity|sécurité réseau]] de l'[[Organisation]].
+*   **Comprendre les Données Sensibles**: Éduquer sur la classification des [[SensitiveData|données sensibles]], les risques associés à l'[[InadvertentExposure|exposition involontaire]] ou au [[DataExfiltration|vol de données]], et les obligations de [[LegalCompliance|conformité légale]] comme le [[GeneralDataProtectionRegulation|RGPD]] ou la [[NationalCommissionForDataProtectionAndLiberties|CNIL]], en soulignant l'importance de la [[Privacy|confidentialité]] et de la [[DataMinimization|minimisation des données]].
 
 ## 💡 Importance en Cybersécurité
-> La [[UserAwarenessTraining|sensibilisation des utilisateurs]] est un [[SecurityControl|contrôle de sécurité]] fondamental car un grand nombre de [[DigitalAttack|cyberattaques]] réussies exploitent la [[HumanError|faiblesse humaine]] plutôt que des [[SoftwareVulnerability|vulnérabilités logicielles]] ou [[HardwareFailure|matérielles]]. En formant les [[User|utilisateurs]] à reconnaître et à réagir correctement aux [[Threat|menaces]] (comme le [[Phishing|hameçonnage]] ou l'[[SocialEngineering|ingénierie sociale]]), les [[Enterprise|organisations]] peuvent significativement réduire leur [[AttackSurface|surface d'attaque]] et améliorer leur posture globale de [[Security|sécurité]]. Elle permet de créer une [[DefenseInDepth|défense en profondeur]] plus résiliente.
+> La sensibilisation des [[User|utilisateurs]] est un pilier fondamental de la [[Cybersecurity|cybersécurité]], car l'[[HumanError|erreur humaine]] est un [[AttackVector|vecteur d'attaque]] prédominant pour les [[ThreatActor|acteurs de menace]]. En formant les [[User|utilisateurs]], une [[Organisation]] peut considérablement réduire sa [[AttackSurface|surface d'attaque]] et renforcer sa [[DefenseInDepth|défense en profondeur]]. Des [[User|utilisateurs]] bien informés deviennent une ligne de [[SecurityControl|défense]] active, capables de détecter et de signaler les [[Threat|menaces]] potentielles, prévenant ainsi les [[DataBreach|violations de données]], les [[SystemCompromise|compromissions de systèmes]] et les [[FinancialLoss|pertes financières]]. C'est un investissement essentiel pour établir une véritable [[SecurityAwareness|culture de sécurité]] au sein de l'[[Organisation]], complétant les [[EndpointProtectionPlatform|solutions technologiques]] et contribuant à une [[RiskManagement|gestion des risques]] efficace.
 
 ## 🔗 Notes Connexes
-*   [[HumanError|Erreur humaine]]
-*   [[SocialEngineering|Ingénierie Sociale]]
-*   [[Phishing|Phishing]]
-*   [[Malware|Malware]]
-*   [[SecurityCulture|Culture de Sécurité]]
-*   [[RiskManagement|Gestion des Risques]]
-*   [[SecurityAwareness|Sensibilisation à la Sécurité]]
+*   **Facteur de risque principal**: [[HumanError|Erreur humaine]]
+*   **Vulnérabilité exploitée**: [[SocialEngineering|Ingénierie Sociale]]
+*   **Type d'attaque courant**: [[Phishing|Hameçonnage]]
+*   **Cadre de gouvernance**: [[SecurityPolicy|Politique de sécurité]]
+*   **Processus de gestion**: [[RiskManagement|Gestion des Risques]]

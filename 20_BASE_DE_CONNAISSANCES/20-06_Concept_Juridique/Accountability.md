@@ -29,7 +29,7 @@ cssclasses:
     *   Mettre en œuvre et documenter des [[SecurityControl|contrôles de sécurité]] appropriés, en adoptant des approches comme la [[DefenseInDepth|défense en profondeur]].
     *   Assurer une [[Documentation|documentation]] complète des [[SecurityPolicy|politiques de sécurité]], des procédures et des actions de [[RiskManagement|gestion des risques]].
     *   Mener des [[SecurityAudit|audits de sécurité]] réguliers et des [[PenetrationTesting|tests d'intrusion]] pour évaluer l'efficacité des contrôles.
-    *   Fournir une [[UserAwarenessTraining|sensibilisation des utilisateurs]] continue et une éducation sur les bonnes pratiques de cybersécurité.
+    *   Fournir une [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|sensibilisation des utilisateurs]] continue et une éducation sur les bonnes pratiques de cybersécurité.
 *   **Ce qu'il faut éviter**:
     *   L'absence de définition claire des responsabilités, créant des lacunes de sécurité.
     *   Le manque de documentation des décisions et des incidents, rendant difficile la démonstration de la [[LegalCompliance|conformité]].

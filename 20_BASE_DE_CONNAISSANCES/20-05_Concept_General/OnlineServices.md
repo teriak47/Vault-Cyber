@@ -36,7 +36,7 @@ Les [[OnlineServices|services en ligne]] sont devenus des piliers de l'[[Enterpr
 *   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
 *   [[PrincipleOfLeastPrivilege|Principe du Moindre Privilège]]
 *   [[DataEncryption|Chiffrement des Données]]
-*   [[UserAwarenessTraining|Sensibilisation des Utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des Utilisateurs]]
 *   [[Backup|Sauvegarde]]
 *   [[Cybersecurity|Cybersécurité]]
 *   [[CloudSecurity|Sécurité du Cloud]]

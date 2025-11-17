@@ -31,7 +31,7 @@ cssclasses:
 *   [[StrongPasswordPolicy|Politique de mots de passe forts]]
 *   [[Vulnerability|Vulnérabilité]]
 *   [[InsiderThreat|Menace interne]]
-*   [[UserAwarenessTraining|Formation des utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Formation des utilisateurs]]
 *   [[ConfigurationDrift|Dérive de Configuration]]
 *   [[CognitiveBias|Biais cognitif]]
 *   [[SecurityCulture|Culture de sécurité]]

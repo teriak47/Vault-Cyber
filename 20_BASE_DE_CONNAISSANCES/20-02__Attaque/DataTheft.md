@@ -40,7 +40,7 @@ cssclasses:
     *   [[Encryption|Chiffrement]] des [[Data|données]] au repos et en transit.
     *   Mise en œuvre de [[AccessControl|contrôles d'accès]] stricts et du [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
     *   Déploiement de solutions de [[DataLossPrevention|Prévention des Pertes de Données (DLP)]].
-    *   [[UserAwarenessTraining|Sensibilisation des utilisateurs]] aux [[SocialEngineering|attaques d'ingénierie sociale]] et à la [[SecurityAwareness|sécurité]].
+    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]] aux [[SocialEngineering|attaques d'ingénierie sociale]] et à la [[SecurityAwareness|sécurité]].
     *   [[VulnerabilityManagement|Gestion proactive des vulnérabilités]] et [[PatchManagement|gestion des correctifs]].
     *   Utilisation de la [[MultiFactorAuthentication|MFA]] pour renforcer l'[[Authentication|authentification]].
 *   **Détection** :

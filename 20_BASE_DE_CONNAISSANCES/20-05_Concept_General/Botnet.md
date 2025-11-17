@@ -37,4 +37,4 @@ cssclasses:
 *   [[EndpointSecurity|Sécurité des endpoints]]
 *   [[NetworkSegmentation|Segmentation réseau]]
 *   [[Firewall|Pare-feu]]
-*   [[UserAwarenessTraining|Sensibilisation des utilisateurs]]
+*   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]

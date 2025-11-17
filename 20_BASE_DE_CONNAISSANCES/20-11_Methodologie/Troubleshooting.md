@@ -41,7 +41,7 @@ cssclasses:
 5.  **Vérification de la Fonctionnalité et Mesures Préventives**:
     *   **Description**: S'assurer que le système ou le service fonctionne correctement après l'implémentation de la solution et que des mesures sont mises en place pour éviter la récurrence du problème.
     *   **Objectif**: Confirmer la résolution complète et améliorer la [[Scalability|résilience]] du [[System|système]].
-    *   **Techniques associées**: [[SecurityAudit|Audits de sécurité]], [[SecurityMonitoring|Surveillance continue]], [[UserAwarenessTraining|Sensibilisation des utilisateurs]].
+    *   **Techniques associées**: [[SecurityAudit|Audits de sécurité]], [[SecurityMonitoring|Surveillance continue]], [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]].
 6.  **Documentation des Résultats**:
     *   **Description**: Enregistrer toutes les étapes suivies, la cause racine identifiée, la solution implémentée, et les mesures préventives mises en place.
     *   **Objectif**: Créer une [[KnowledgeBase|base de connaissances]] pour référence future, faciliter la résolution de problèmes similaires et améliorer les [[Process|processus]] internes.

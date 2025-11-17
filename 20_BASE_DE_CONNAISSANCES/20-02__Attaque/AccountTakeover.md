@@ -35,7 +35,7 @@ cssclasses:
 *   **Prévention** :
     *   Implémentation de l'[[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]] pour ajouter une couche de [[Security|sécurité]].
     *   Application de [[StrongPasswordPolicy|politiques de mots de passe forts]] et uniques, éventuellement via un [[PasswordManager|gestionnaire de mots de passe]].
-    *   [[UserAwarenessTraining|Sensibilisation des utilisateurs]] aux risques de [[SocialEngineering|l'ingénierie sociale]], de [[Phishing|hameçonnage]] et à l'importance de ne pas réutiliser les [[Password|mots de passe]].
+    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]] aux risques de [[SocialEngineering|l'ingénierie sociale]], de [[Phishing|hameçonnage]] et à l'importance de ne pas réutiliser les [[Password|mots de passe]].
     *   Mise en œuvre de [[BotDetection|systèmes de détection des bots]] pour contrer le [[CredentialStuffing|bourrage d'identifiants]].
 *   **Détection** :
     *   [[AccountLockout|Verrouillage de compte]] après un nombre défini de tentatives de connexion infructueuses.
