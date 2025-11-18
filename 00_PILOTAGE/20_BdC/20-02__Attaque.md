@@ -52,5 +52,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/IdentityTheft.md|IdentityTheft]]
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/LateralMovement.md|LateralMovement]]
 - [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/CodeInjection.md|CodeInjection]]
+- [[20_BASE_DE_CONNAISSANCES/20-02__Attaque/PromptInjection.md|PromptInjection]]
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -24,7 +24,5 @@ cssclasses:
 > Le terme "segmentation" dérive du mot latin "segmentum", qui signifie "un morceau coupé", lui-même issu de "secare", "couper". Il décrit l'idée fondamentale de diviser ou de sectionner.
 
 ## 🔗 Notes Connexes
-* **Application en cybersécurité**: [[NetworkSegmentation|Segmentation réseau]]
-* **Objectif clé**: [[DataProtection|Protection des données]]
-* **Concept associé**: [[Isolation]]
-* **Bénéfice de sécurité**: [[AttackSurface|Réduction de la surface d'attaque]]
+* **Application en cybersécurité**: Segmentation réseau
+

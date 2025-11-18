@@ -1,9 +1,6 @@
 ---
 tags:
-  - definition
-  - architecture-reseau
-  - couche/liaison
-  - commutateur
+  - a-revoir
 aliases:
   - Domaine de Collision
   - Collision Domain

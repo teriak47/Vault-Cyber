@@ -34,5 +34,11 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/SoftwareApplication.md|SoftwareApplication]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Ubuntu.md|Ubuntu]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/ECommercePlatforms.md|ECommercePlatforms]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/NanoEditor.md|NanoEditor]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Debian.md|Debian]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/PackageManagement.md|PackageManagement]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/GNUCompilerCollection.md|GNUCompilerCollection]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Oracle.md|Oracle]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Systemd.md|Systemd]]
 
 %% DATAVIEW_PUBLISHER: end %%

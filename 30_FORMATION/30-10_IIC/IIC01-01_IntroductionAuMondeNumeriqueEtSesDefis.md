@@ -162,10 +162,6 @@ Les [[OnlineServices|plateformes en ligne]] offrent une multitude d'options, gra
 > Cette leçon introduit le monde de la [[DigitalTechnology|technologie numérique]], en soulignant ses avantages transformateurs et ses défis, notamment l'impact sur la santé, les risques de [[Confidentiality|confidentialité]] et de [[DataProtection|sécurité des données]], et le [[DigitalDivide|fossé numérique]]. Elle explore les environnements numériques fondamentaux tels que les [[OperatingSystem|systèmes d'exploitation]], les [[WebBrowsers|navigateurs web]] et les [[SoftwareApplication|applications]]. La leçon retrace également l'évolution de l'[[Internet]] depuis les débuts du [[WorldWideWeb|World Wide Web]], en passant par le [[Web20|Web 2.0]] interactif, jusqu'à l'ère de l'[[InternetofThings|IoT]]. Enfin, elle catégorise les [[OnlineServices|services en ligne]] en types publics, privés et communautaires, en examinant leurs [[BusinessModels|modèles économiques]] respectifs et l'importance de la [[UserAwarenessTraining|sensibilisation des utilisateurs]] pour une expérience numérique sécurisée.
 
 ## 🔗 Notes Connexes
-* **Module parent**: [[IIC01_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+* **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
 * **Cours suivant**: [[IIC01-02_TechnologiesModernesEtConnectiviteInternet|Technologies Modernes et Connectivité Internet]]
-* **Concept clé**: [[Confidentiality|Confidentialité]]
-* **Technologie connexe**: [[InternetofThings|Internet des Objets]]
-* **Application fondamentale**: [[WebBrowsers|Navigateurs Web]]
-* **Impact sociétal**: [[DigitalDivide|Fossé Numérique]]
 ---

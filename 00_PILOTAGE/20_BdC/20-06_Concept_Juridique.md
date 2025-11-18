@@ -18,5 +18,12 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Deontology.md|Deontology]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Accountability.md|Accountability]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/PurposeLimitation.md|PurposeLimitation]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/GNUGeneralPublicLicense.md|GNUGeneralPublicLicense]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/DigitalIntellectualProperty.md|DigitalIntellectualProperty]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Copyright.md|Copyright]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Piracy.md|Piracy]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Licensing.md|Licensing]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/IntellectualProperty.md|IntellectualProperty]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/DigitalRightsManagement.md|DigitalRightsManagement]]
 
 %% DATAVIEW_PUBLISHER: end %%

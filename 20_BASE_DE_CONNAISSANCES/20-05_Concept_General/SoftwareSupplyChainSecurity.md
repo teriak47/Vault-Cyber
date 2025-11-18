@@ -39,4 +39,4 @@ La [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement lo
 ## 🤔 Pistes d'Amélioration (Auto-Évaluation IA)
 *   La note pourrait être complétée par des exemples concrets de [[SupplyChainAttack|attaques de la chaîne d'approvisionnement]] célèbres.
 *   Des sections sur les défis spécifiques à la [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement logicielle]] et les stratégies de [[Mitigation|mitigation]] (ex: SBOM, sigstore) seraient bénéfiques.
-*   Il serait utile d'ajouter des informations sur les [[Tool|outils]] et [[Standard|normes]] spécifiques à la [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement logicielle]].
+*   Il serait utile d'ajouter des informations sur les [[Tool|outils]] et normes spécifiques à la [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement logicielle]].

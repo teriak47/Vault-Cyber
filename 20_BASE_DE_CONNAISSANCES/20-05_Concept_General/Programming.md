@@ -20,7 +20,7 @@ cssclasses:
 *   **[[ProgrammingLanguage|Langages de Programmation]]**: L'utilisation de langages formels (comme [[Python|Python]], Java, C++) pour écrire des [[Instruction|instructions]] compréhensibles par la [[MachineLanguage|machine]].
 *   **[[Algorithm|Algorithmes]]**: Des séquences d'étapes logiques bien définies pour résoudre un [[ProblemSolving|problème]] ou effectuer un [[Computation|calcul]].
 *   **[[DataStructure|Structures de Données]]**: Des manières d'organiser et de stocker les [[Data|données]] afin de pouvoir y accéder et les manipuler efficacement (ex: tableaux, listes, arbres).
-*   **[[CompilationAndInterpretation|Compilation et Interprétation]]**: La traduction du [[SourceCode|code source]] écrit par un [[Human|humain]] en un format [[Executable|exécutable]] par la [[Machine|machine]], soit avant l'[[Execution|exécution]] ([[Compilation|compilation]]), soit ligne par ligne pendant l'exécution ([[Interpretation|interprétation]]).
+*   **[[CompilationAndInterpretation|Compilation et Interprétation]]**: La traduction du [[SourceCode|code source]] écrit par un [[Human|humain]] en un format [[Executable|exécutable]] par la [[Computer|machine]], soit avant l'[[Execution|exécution]] ([[Compilation|compilation]]), soit ligne par ligne pendant l'exécution ([[Interpretation|interprétation]]).
 *   **[[ControlFlow|Logique et Contrôle de Flux]]**: L'utilisation de conditions (si/alors), de boucles (pour/tant que) et de fonctions pour diriger l'[[SoftwareExecution|exécution du logiciel]].
 
 ## 💡 Importance en Cybersécurité

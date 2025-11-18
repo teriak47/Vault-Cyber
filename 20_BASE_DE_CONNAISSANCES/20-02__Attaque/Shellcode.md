@@ -31,7 +31,7 @@ cssclasses:
 *   [[RemoteCodeExecution|Exécution de Code à Distance]] arbitraire
 
 ## 💡 Exemple concret
-> Suite à un [[BufferOverflow|dépassement de tampon]] dans une [[SoftwareApplication|application]] mal configurée, un [[ThreatActor|attaquant]] parvient à injecter un [[Shellcode|shellcode]] malveillant. Ce code, conçu pour être indépendant de la [[Memory|position]] en mémoire, est exécuté à la place du code légitime de l'application. Le [[Shellcode|shellcode]] ouvre un [[ReverseShell|shell inversé]] (par exemple, via [[Netcat|nc]]) vers la [[Machine|machine]] de l'attaquant, lui accordant un [[CommandLineInterface|accès en ligne de commande]] direct et persistant au [[System|système]] compromis, souvent avec les privilèges de l'application exploitée.
+> Suite à un [[BufferOverflow|dépassement de tampon]] dans une [[SoftwareApplication|application]] mal configurée, un [[ThreatActor|attaquant]] parvient à injecter un [[Shellcode|shellcode]] malveillant. Ce code, conçu pour être indépendant de la [[Memory|position]] en mémoire, est exécuté à la place du code légitime de l'application. Le [[Shellcode|shellcode]] ouvre un [[ReverseShell|shell inversé]] (par exemple, via [[Netcat|nc]]) vers la [[Computer|machine]] de l'attaquant, lui accordant un [[CommandLineInterface|accès en ligne de commande]] direct et persistant au [[System|système]] compromis, souvent avec les privilèges de l'application exploitée.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :

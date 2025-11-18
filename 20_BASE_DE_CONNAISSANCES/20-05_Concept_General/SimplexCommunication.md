@@ -1,9 +1,7 @@
 ---
 tags:
-  - concept-general
   - communication/simplex
   - mode-de-transmission
-  - definition
   - reseau
 aliases:
   - Communication Simplex

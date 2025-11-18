@@ -20,5 +20,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/SecurityInformationAndEventManagement.md|SecurityInformationAndEventManagement]]
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/Netcat.md|Netcat]]
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/WirelessIntrusionPreventionSystem.md|WirelessIntrusionPreventionSystem]]
+- [[20_BASE_DE_CONNAISSANCES/20-15_Outil/GNUDebugger.md|GNUDebugger]]
+- [[20_BASE_DE_CONNAISSANCES/20-15_Outil/GNUCoreUtilities.md|GNUCoreUtilities]]
 
 %% DATAVIEW_PUBLISHER: end %%

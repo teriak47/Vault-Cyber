@@ -10,7 +10,7 @@ aliases:
   - Accountability
 archetype: concept-juridique
 source:
-  -
+  - 
 cssclasses:
   - max
 ---

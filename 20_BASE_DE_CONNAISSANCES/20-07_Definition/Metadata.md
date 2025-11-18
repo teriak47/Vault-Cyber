@@ -2,17 +2,14 @@
 tags:
   - definition
   - donnees
-  - donnees/privees
   - collecte/donnees
-  - gestion/donnees
-  - confidentialite
   - information
 aliases:
   - Métadonnées
   - Meta Data
 archetype: definition
 source:
-  -
+  - 
 cssclasses:
   - max
 ---
@@ -27,10 +24,3 @@ cssclasses:
 
 ## 📜 Origine / Étymologie
 > Le terme "métadonnées" provient du préfixe grec "méta-" signifiant "au-delà" ou "concernant", et du mot "données". Il fait référence à l'information "à propos des données".
-
-## 🔗 Notes Connexes
-*   **Concept lié**: [[PersonalData|Données Personnelles]]
-*   **Implication majeure**: [[Privacy|Vie Privée]]
-*   **Mesure associée**: [[DataProtection|Protection des Données]]
-*   **Menace associée**: [[DataExfiltration|Exfiltration de données]]
-*   **Domaine d'application**: [[InformationSecurity|Sécurité de l'Information]]

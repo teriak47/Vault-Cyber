@@ -12,5 +12,7 @@ SORT file.ctime ASC
 
 - [[20_BASE_DE_CONNAISSANCES/20-14_Organisation/Microsoft.md|Microsoft]]
 - [[20_BASE_DE_CONNAISSANCES/20-14_Organisation/Organisation.md|Organisation]]
+- [[20_BASE_DE_CONNAISSANCES/20-14_Organisation/GNU.md|GNU]]
+- [[20_BASE_DE_CONNAISSANCES/20-14_Organisation/GNUProject.md|GNUProject]]
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -1,11 +1,15 @@
+---
+archetype: index
+---
+
 # Home
 
-## 10_Module
+## FORMATION
 
-- [[ICC]]
-- [[RIB]]
+- [[Les cours - Index]]
 
-## 20_BdC
+
+## BASE DE CONNAISSANCES
 
 - [[20-01_Acteur_de_Menace]]
 - [[20-02__Attaque]]
