@@ -24,5 +24,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/VulnerabilityScanning.md|VulnerabilityScanning]]
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/ProfessionalNetworking.md|ProfessionalNetworking]]
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/SoftwarePatching.md|SoftwarePatching]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/Analysis.md|Analysis]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/RootCauseAnalysis.md|RootCauseAnalysis]]
 
 %% DATAVIEW_PUBLISHER: end %%

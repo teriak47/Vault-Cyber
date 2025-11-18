@@ -241,4 +241,4 @@ Ne terminez pas par "1" ou "?", et évitez les substitutions courantes (comme "@
 ## 🔗 Notes Connexes
 *   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
 *   **Cours précédent**: [[IIC01-01_IntroductionAuMondeNumeriqueEtSesDefis|Introduction au Monde Numérique et ses Défis]]
-*   **Cours suivant**: [[IIC01-03_00_MaitriserLaRechercheSurInternet|Maîtriser la Recherche sur Internet]]
+*   **Cours suivant**: [[IIC01-03_MaitriserLaRechercheSurInternet|Maîtriser la Recherche sur Internet]]

@@ -40,5 +40,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/GNUCompilerCollection.md|GNUCompilerCollection]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Oracle.md|Oracle]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Systemd.md|Systemd]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Office2024ProductKeyAnalysis.md|Office2024ProductKeyAnalysis]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/WindowsProductKeyDifferences.md|WindowsProductKeyDifferences]]
 
 %% DATAVIEW_PUBLISHER: end %%

@@ -49,7 +49,7 @@ cssclasses:
 *   [[Consent|Consentement]]
 *   [[Discrimination|Discrimination]]
 *   [[Misinformation|Désinformation]]
-*   [[Dataset|Jeu de Données]]
+*   [[DataSet|Jeu de Données]]
 *   [[UserBehaviorAnalysis|Analyse du Comportement Utilisateur]]
 *   [[RiskAssessment|Évaluation des Risques]]
 *   [[TargetedMarketing|Marketing Ciblé]]

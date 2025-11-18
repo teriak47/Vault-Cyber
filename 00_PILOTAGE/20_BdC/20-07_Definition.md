@@ -42,5 +42,8 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Carriere.md|Carriere]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/norme.md|norme]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Productivity.md|Productivity]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Prevention.md|Prevention]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/DataSet.md|DataSet]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/BinaryCode.md|BinaryCode]]
 
 %% DATAVIEW_PUBLISHER: end %%

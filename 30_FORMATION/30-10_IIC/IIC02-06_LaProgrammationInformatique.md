@@ -91,4 +91,4 @@ D'autre part, les [[OpenSource|logiciels open source]], tels que le [[Linux|syst
 ## 🔗 Notes Connexes
 *   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-05_LeMondeDesApplicationsLogicielles|02-05 | Le Monde des Applications Logicielles]]
-*   **Cours suivant**: 
+*   **Cours suivant**: [[IIC02-07_LesReseauxInformatiques|Les Réseaux Informatiques]]

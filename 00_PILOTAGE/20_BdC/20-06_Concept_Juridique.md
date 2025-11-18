@@ -25,5 +25,9 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Licensing.md|Licensing]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/IntellectualProperty.md|IntellectualProperty]]
 - [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/DigitalRightsManagement.md|DigitalRightsManagement]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/Consent.md|Consent]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/CreativeCommonsLicenses.md|CreativeCommonsLicenses]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/PublicDomain.md|PublicDomain]]
+- [[20_BASE_DE_CONNAISSANCES/20-06_Concept_Juridique/FairUse.md|FairUse]]
 
 %% DATAVIEW_PUBLISHER: end %%

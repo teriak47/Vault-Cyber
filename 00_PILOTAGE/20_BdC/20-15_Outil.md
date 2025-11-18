@@ -22,5 +22,6 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/WirelessIntrusionPreventionSystem.md|WirelessIntrusionPreventionSystem]]
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/GNUDebugger.md|GNUDebugger]]
 - [[20_BASE_DE_CONNAISSANCES/20-15_Outil/GNUCoreUtilities.md|GNUCoreUtilities]]
+- [[20_BASE_DE_CONNAISSANCES/20-15_Outil/Vim.md|Vim]]
 
 %% DATAVIEW_PUBLISHER: end %%
