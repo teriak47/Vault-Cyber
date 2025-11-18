@@ -1,5 +1,14 @@
 ---
 tags:
+  - blue-team
+  - cybersecurite
+  - securite/defensive
+  - role/cybersecurite
+  - detection-menaces
+  - prevention
+  - gestion/incidents
+  - surveillance
+  - analyse/menaces
 aliases:
   - Équipe Bleue
   - Blue Team
@@ -10,28 +19,24 @@ cssclasses:
   - max
 ---
 
-# Équipe Bleue (Blue Team)
+# Blue Team (Équipe Bleue)
 
 ## 📥 Définition en une phrase
-> L'[[BlueTeam|Équipe Bleue]] est un groupe d'individus ou une fonction au sein d'une organisation responsable de la protection des [[System|systèmes]], des [[Data|données]] et des [[Resource|ressources]] contre les [[Attack|attaques]] [[Cybersecurity|cybersécurité]].
+> La [[BlueTeam|Blue Team]] est l'équipe de [[Cybersecurity|cybersécurité]] interne d'une [[Organisation|organisation]] chargée de défendre les [[System|systèmes]] et [[Data|données]] contre les [[ThreatActor|acteurs de menaces]] externes et internes.
 
-## 🧠 Concepts Clés / Piliers
-*   **Prévention et Défense**: Mise en œuvre et maintenance des [[SecurityControl|contrôles de sécurité]] pour empêcher les [[Threat|menaces]] et les [[Vulnerability|vulnérabilités]] d'être exploitées, incluant la [[NetworkSecurity|sécurité réseau]], la [[EndpointSecurity|sécurité des endpoints]] et la [[DataProtection|protection des données]].
-*   **Détection d'Incidents**: Surveillance continue des [[System|systèmes]] et des [[Network|réseaux]] pour identifier les activités suspectes ou les signes de [[SystemCompromise|compromission du système]], souvent à l'aide d'outils de [[SecurityInformationAndEventManagement|SIEM]] et de [[NetworkMonitoring|surveillance réseau]].
-*   **[[IncidentResponse|Réponse aux Incidents]]**: Réagir rapidement et efficacement lorsqu'un [[SecurityIncident|incident de sécurité]] est détecté, en contenant la [[Attack|menace]], en éradiquant l'attaquant et en récupérant les [[System|systèmes]] affectés.
-*   **Analyse et Renseignement sur les Menaces**: Utilisation de la [[ThreatIntelligence|veille sur les menaces]] pour comprendre les tactiques, techniques et procédures (TTP) des [[ThreatActor|acteurs de menaces]] afin de renforcer les [[DefenseInDepth|défenses]] et de prédire les futures [[Attack|attaques]].
-*   **Amélioration Continue**: Évaluation régulière de l'efficacité des [[SecurityControl|contrôles de sécurité]], réalisation d'[[SecurityAudit|audits de sécurité]] et intégration des leçons tirées des [[IncidentResponse|incidents]] pour renforcer la posture de [[Security|sécurité]] globale de l'[[Enterprise|organisation]].
+## 🛡️ Rôles et Responsabilités Clés
+*   **[[Prevention|Prévention]] et [[SecurityControl|Contrôles de Sécurité]]**: La [[BlueTeam|Blue Team]] met en œuvre et maintient des mesures de [[Prevention|prévention]] pour réduire la [[AttackSurface|surface d'attaque]]. Cela inclut la configuration des [[Firewall|pare-feu]], le déploiement de [[Antivirus|logiciels antivirus]] et d'[[IntrusionPreventionSystem|IPS]], et l'application de [[StrongPasswordPolicy|politiques de mots de passe forts]]. L'objectif est de renforcer la [[Security|sécurité]] globale des [[System|systèmes]].
+*   **[[ThreatDetection|Détection des Menaces]]**: L'équipe effectue une [[SecurityMonitoring|surveillance de sécurité]] continue en analysant les [[Log|journaux d'événements]] et le [[NetworkTraffic|trafic réseau]] pour identifier les [[AnomalyDetection|anomalies]] ou les signes d'[[Attack|attaques]]. Des outils tels que les [[IntrusionDetectionSystem|IDS]] et les [[SecurityInformationAndEventManagement|SIEM]] sont essentiels pour cette tâche, permettant une [[SignatureBasedDetection|détection basée sur les signatures]] et une [[HeuristicAnalysis|analyse heuristique]].
+*   **[[IncidentResponse|Réponse aux Incidents]]**: En cas d'[[Attack|attaque]] ou d'[[IncidentResponse|incident de sécurité]], la [[BlueTeam|Blue Team]] est responsable de la [[IncidentResponse|réponse rapide]]. Cela implique l'isolement des [[System|systèmes]] compromis, l'éradication des [[Malware|logiciels malveillants]], la récupération des [[Data|données]] et la restauration des [[Service|services]] pour assurer la [[BusinessContinuity|continuité des activités]].
+*   **[[VulnerabilityManagement|Gestion des Vulnérabilités]]**: L'équipe identifie et évalue les [[Vulnerability|vulnérabilités]] au sein des [[System|systèmes]] et [[Software|logiciels]] de l'[[Organisation|organisation]] via des [[VulnerabilityScanning|scans de vulnérabilités]]. Elle travaille ensuite à prioriser et à appliquer des [[PatchManagement|correctifs]] ou des [[SecurityControl|contrôles]] pour atténuer ces [[Vulnerability|vulnérabilités]].
+*   **[[ThreatIntelligence|Renseignement sur les Menaces]]**: Utiliser les [[ThreatIntelligence|renseignements sur les menaces]] pour comprendre les tactiques, techniques et procédures (TTP) des [[ThreatActor|acteurs de menaces]]. Cela aide à anticiper les [[Threat|menaces]] et à adapter les [[SecurityControl|contrôles de sécurité]] de manière proactive.
 
 ## 💡 Importance en Cybersécurité
-> La [[BlueTeam|Blue Team]] est fondamentale pour maintenir la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[System|systèmes]] et des [[Data|données]] d'une [[Enterprise|entreprise]]. Elle agit comme la première ligne de [[DefenseInDepth|défense]] et la principale force de [[IncidentResponse|réponse]], garantissant la [[BusinessContinuity|continuité des activités]] face à un paysage de [[Threat|menaces]] en constante évolution.
+La [[BlueTeam|Blue Team]] est un pilier fondamental de la [[Cybersecurity|cybersécurité]] d'une [[Organisation|organisation]]. En se concentrant sur la [[Prevention|prévention]], la [[ThreatDetection|détection]] et la [[IncidentResponse|réponse aux incidents]], elle assure la [[DataProtection|protection des données]] et la [[Resilience|résilience]] opérationnelle. Elle garantit le maintien des trois piliers de la [[CIATriad|Triade CIA]] (Confidentialité, Intégrité, Disponibilité), minimise l'[[Impact|impact]] des [[DigitalAttack|attaques numériques]] et protège la [[Reputation|réputation]] et les [[FinancialLoss|intérêts financiers]] de l'[[Organisation|organisation]].
 
 ## 🔗 Notes Connexes
-*   [[RedTeam|Red Team]]
-*   [[IncidentResponse|Réponse aux Incidents]]
-*   [[SecurityMonitoring|Surveillance de sécurité]]
-*   [[VulnerabilityManagement|Gestion des Vulnérabilités]]
-*   [[ThreatIntelligence|Renseignement sur les menaces]]
-*   [[SecurityOperationsCenter|Centre d'Opérations de Sécurité]]
-*   [[SecurityControl|Contrôle de Sécurité]]
-*   [[DefenseInDepth|Défense en Profondeur]]
-*   [[Cybersecurity|Cybersécurité]]
+*   **Équipe complémentaire**: [[RedTeam|Red Team]]
+*   **Framework d'opération**: [[CyberKillChain|Cyber Kill Chain]]
+*   **Matrice de menaces**: [[MITREATTACKFramework|MITRE ATT&CK Framework]]
+*   **Modèle de sécurité**: [[ZeroTrust|Zéro Confiance]]
+*   **Stratégie de défense**: [[DefenseInDepth|Défense en Profondeur]]

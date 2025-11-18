@@ -1,10 +1,15 @@
 ---
 tags:
-  - securite
-  - penetration-testing
+  - red-team
+  - securite/offensive
+  - test/securite
+  - simulation-attaque
+  - hacking-ethique
+  - methodologie
 aliases:
   - Red Team
   - Équipe Rouge
+  - Équipe rouge
 archetype: concept-general
 source:
   - 
@@ -15,27 +20,19 @@ cssclasses:
 # Red Team (Équipe Rouge)
 
 ## 📥 Définition en une phrase
-> Une [[RedTeam|Équipe Rouge]] est un groupe d'experts en cybersécurité qui simule des [[Attack|attaques]] réalistes et sophistiquées contre une [[Enterprise|organisation]] pour tester l'efficacité de ses défenses, de ses [[SecurityControl|contrôles de sécurité]] et de sa capacité de [[IncidentResponse|réponse aux incidents]].
+> Une `Red Team` est une équipe de spécialistes de la [[Cybersecurity|cybersécurité]] dont l'objectif est de simuler des [[DigitalAttack|attaques numériques]] réalistes contre une [[Organisation|organisation]] pour tester l'efficacité de ses défenses et de sa [[IncidentResponse|réponse aux incidents]].
 
 ## 🧠 Concepts Clés / Piliers
-*   **Simulation Adversaire**: Les [[RedTeam|équipes rouges]] adoptent la mentalité, les tactiques, les techniques et les procédures ([[TTPs|TTPs]]) des [[ThreatActor|acteurs de menaces]] réels pour identifier les [[Vulnerability|vulnérabilités]] exploitables dans les systèmes, les processus et les personnes d'une [[Enterprise|entreprise]].
-*   **Évaluation de la Résilience**: Au-delà de la simple identification des [[Vulnerability|vulnérabilités]], l'objectif principal est d'évaluer la capacité globale de l'[[Enterprise|organisation]] à détecter, prévenir et répondre efficacement à une [[Cybersecurity|cybersécurité]] attaque.
-*   **Approche Basée sur les Objectifs**: Contrairement à un [[PenetrationTesting|test d'intrusion]] classique qui a une portée définie, une mission de [[RedTeam|Red Team]] est orientée par des objectifs spécifiques (ex: [[DataExfiltration|exfiltration de données]], [[AccountTakeover|prise de contrôle de compte]], [[ServiceDisruption|interruption de service]]) sans connaissance préalable des défenses internes.
-*   **Collaboration avec la [[BlueTeam|Blue Team]]**: Bien qu'adversaires pendant l'exercice, la [[RedTeam|Red Team]] travaille en étroite collaboration avec la [[BlueTeam|Blue Team]] (l'équipe de défense) après l'engagement pour partager les découvertes, les leçons apprises et améliorer les stratégies de [[DefenseInDepth|défense en profondeur]].
+*   **Objectif de Simulation Réaliste**: L'objectif principal est de reproduire le comportement d'un [[ThreatActor|acteur de menace]] réel avec les mêmes tactiques, techniques et procédures (TTPs) afin de découvrir les faiblesses exploitables dans l'[[System|écosystème]] de l'organisation. Cela inclut la [[Reconnaissance|reconnaissance]], la [[Weaponization|création d'outils]], la [[Delivery|livraison]] de [[Payload|charges utiles]], l'[[Exploitation|exploitation]] et la [[Persistence|persistance]].
+*   **Approche Holistique**: Contrairement au [[PenetrationTesting|test d'intrusion]] qui se concentre souvent sur des systèmes ou applications spécifiques, les opérations de `Red Team` adoptent une vue d'ensemble, évaluant la [[PhysicalSecurity|sécurité physique]], la [[NetworkSecurity|sécurité réseau]], la [[SoftwareApplication|sécurité applicative]] et même la [[SocialEngineering|social engineering]].
+*   **Collaboration avec la Blue Team**: Souvent, les opérations de `Red Team` sont menées en collaboration avec une [[BlueTeam|Blue Team]] (équipe bleue) défensive dans le cadre d'un exercice de "Purple Team", visant à améliorer la détection et la réponse des deux côtés par un échange de connaissances.
 
 ## 💡 Importance en Cybersécurité
-> La [[RedTeam|Red Team]] est fondamentale pour la [[Cybersecurity|cybersécurité]] car elle offre une perspective impartiale et réaliste sur la posture de [[Security|sécurité]] d'une [[Enterprise|organisation]]. En mimant les [[ThreatActor|menaces]] du monde réel, elle révèle les lacunes que les [[SecurityAudit|audits de sécurité]] traditionnels ou les [[PenetrationTesting|tests d'intrusion]] plus ciblés pourraient manquer. Cela permet à l'[[Enterprise|organisation]] de renforcer sa [[Security|sécurité]] de manière proactive, d'améliorer ses [[SecurityControl|contrôles de sécurité]], de tester ses capacités de [[IncidentResponse|réponse aux incidents]] et de mieux protéger ses [[Resource|ressources]] critiques face à des [[Attack|attaques]] de plus en plus sophistiquées.
+> La `Red Team` est cruciale pour une [[Security.md|sécurité]] proactive car elle permet aux organisations de passer d'une posture de [[SecurityMonitoring|surveillance]] réactive à une posture de validation offensive. En identifiant les lacunes avant qu'un véritable [[ThreatActor|attaquant]] ne les trouve, les organisations peuvent renforcer leurs défenses, améliorer leurs processus de [[ThreatDetection|détection des menaces]] et affiner leurs plans de [[IncidentResponse|réponse aux incidents]], contribuant ainsi à une meilleure [[Resilience|résilience]] globale. Elle aide à évaluer non seulement les [[SecurityControl|contrôles de sécurité]] technologiques, mais aussi les aspects humains et processuels qui sont souvent des points faibles majeurs.
 
 ## 🔗 Notes Connexes
-*   [[PenetrationTesting|Test d'intrusion]]
-*   [[ThreatActor|Acteur de menace]]
-*   [[Attack|Attaque]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[IncidentResponse|Réponse aux incidents]]
-*   [[BlueTeam|Blue Team]]
-*   [[SecurityAudit|Audit de Sécurité]]
-*   [[Exploitation|Exploitation]]
-*   [[Reconnaissance|Reconnaissance]]
-*   [[PrivilegeEscalation|Escalade de Privilèges]]
-*   [[Persistence|Persistence]]
-*   [[CommandAndControl|Commande et Contrôle]]
+*   **Équipe défensive**: [[BlueTeam]]
+*   **Discipline d'attaque éthique**: [[EthicalHacking]]
+*   **Méthodologie d'évaluation**: [[PenetrationTesting]]
+*   **Modèle d'attaque**: [[CyberKillChain]]
+*   **Technique d'infiltration**: [[SocialEngineering]]
