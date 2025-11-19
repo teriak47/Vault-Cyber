@@ -102,6 +102,6 @@ Ensuite, quitter une application est aussi simple que de fermer sa fenêtre sur 
 ## 📝 Résumé
 > Cette leçon explore le monde des [[SoftwareApplication|applications logicielles]], en mettant l'accent sur les étapes essentielles pour une utilisation sécurisée et efficace. Elle couvre la [[Configuration|vérification]] de la compatibilité en comparant les spécifications du [[Software|logiciel]] aux caractéristiques de l'[[OperatingSystem|appareil]], l'importance du téléchargement sécurisé depuis des sources fiables pour prévenir les logiciels malveillants, et les procédures d'[[Installation|installation]] et de lancement. Enfin, elle explique les fonctionnalités spécifiques d'une application et le concept d'[[InputDevices|entrée et sortie de données]] pour comprendre comment les utilisateurs interagissent avec leurs applications.
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-04_AndroidFileTransferMethods|Méthodes de Transfert de Fichiers sur Android]]
 *   **Cours suivant**: [[IIC02-06_LaProgrammationInformatique|Programmation informatique]]

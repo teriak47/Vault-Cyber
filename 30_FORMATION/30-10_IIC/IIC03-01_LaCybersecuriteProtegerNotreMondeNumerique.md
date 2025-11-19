@@ -198,6 +198,6 @@ La [[Cyberwarfare|guerre cybernétique]] peut déstabiliser un pays et affecter 
 > Ce cours introduit la [[Cybersecurity|cybersécurité]] comme un effort global pour protéger les individus, les [[Organisation|organisations]] et les [[Government|gouvernements]] contre les [[DigitalAttack|attaques numériques]]. Il met en lumière trois niveaux de protection (personnelle, organisationnelle, publique) et distingue l'identité hors ligne de l'[[DigitalIdentity|identité en ligne]]. Une attention particulière est portée aux [[PersonalData|données personnelles]] et [[SensitiveData|sensibles]], expliquant leur voyage et les risques d'[[IdentityTheft|usurpation d'identité]]. Le cours aborde également les entités qui collectent nos données, les [[Asset|actifs]] stratégiques des entreprises, le [[McCumberCube|Cube McCumber]] comme [[ReferenceModel|modèle]] de [[Security|sécurité]], et les trois piliers fondamentaux de la [[CIATriad]] ([[Confidentiality|Confidentialité]], [[Integrity|Intégrité]], [[Availability|Disponibilité]]). Enfin, il classe les différents [[ThreatActor|types d'attaquants]] et explore la [[Cyberwarfare|cyberguerre]] et son [[Impact|impact]] sociétal.
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity]]
+*   **Module parent**: [[IIC00-00_Introduction]]
 *   **Cours précédent**: [[IIC02-08_LesIndicateursDeConnexion]]
 *   **Cours suivant**: 

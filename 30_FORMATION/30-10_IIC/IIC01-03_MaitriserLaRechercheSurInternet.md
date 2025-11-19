@@ -99,7 +99,7 @@ Si vous maîtrisez ces opérateurs de recherche, vous trouverez exactement ce qu
 > Cette leçon explique les bases et les techniques avancées de la recherche sur [[Internet]] à l'aide d'un [[SearchEngine|moteur de recherche]]. Elle couvre l'accès et la configuration des moteurs de recherche, la réalisation de recherches de base, et l'utilisation d'opérateurs clés. Ces opérateurs incluent les guillemets pour les expressions exactes, le signe moins pour exclure des mots, l'opérateur `site:` pour cibler un domaine spécifique, et `filetype:` pour rechercher des types de fichiers précis. La maîtrise de ces techniques permet d'obtenir des résultats de recherche plus rapides et plus pertinents.
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
 *   **Cours précédent**: [[IIC01-02_TechnologiesModernesEtConnectiviteInternet|Technologies Modernes et Connectivité Internet]]
 *   **Cours suivant**: [[IIC01-04_UnderstandWebLinksAndCookies|Comprendre Les Liens Et Les Cookies Sur Le Web]]
 ---

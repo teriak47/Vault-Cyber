@@ -133,6 +133,7 @@ Vim offre une richesse de fonctionnalités qui vont au-delà de l'édition de ba
 *   **Risques d'Erreurs**: Une manipulation incorrecte en mode Normal ou l'exécution accidentelle d'une [[Command|commande]] puissante peut entraîner des modifications non désirées, voire une [[DataCorruption|corruption de données]] sur des fichiers importants ou des [[System|systèmes]] critiques, surtout si l'utilisateur n'est pas pleinement [[SecurityAwareness|sensibilisé]] à ses modes de fonctionnement.
 
 ## 🔗 Notes Connexes
+*   **Guide**: [[GuideVimDuDebutantAuFormateur|Guide Vim]]
 *   **Alternative**: [[NanoEditor|Nano]]
 *   **Environnement clé**: [[Linux]]
 *   **Interaction principale**: [[CommandLineInterface|Interface en ligne de commande]]

@@ -34,7 +34,7 @@ cssclasses:
 *   [[BlueTeam|Équipe Bleue]]
 *   [[AdvancedPersistentThreat|Menaces Persistantes Avancées (APT)]]
 *   [[IndustrialEspionage|Espionnage Industriel]]
-*   [[CyberWarfare|Guerre Cybernétique]]
+*   [[Cyberwarfare|Guerre Cybernétique]]
 *   [[SupplyChainAttack|Attaques sur la Chaîne d'Approvisionnement]]
 *   [[ReputationDamage|Atteinte à la Réputation]]
 *   [[IntellectualPropertyTheft|Vol de Propriété Intellectuelle]]

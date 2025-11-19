@@ -88,6 +88,6 @@ Si vous voyez un message d'**absence d'accès à Internet**, cela signifie que l
 
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-07_LesReseauxInformatiques|Les Réseaux Informatiques]]
 *   **Cours suivant**: [[IIC03-01_LaCybersecuriteProtegerNotreMondeNumerique|03-01 | La Cybersécurité]]

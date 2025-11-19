@@ -147,6 +147,6 @@ Chaque type de réseau répond à des besoins spécifiques selon la portée géo
 > Ce cours explore les fondements des réseaux informatiques, définis comme des ensembles de périphériques interconnectés pour l'échange de données. Il détaille les éléments clés tels que les [[Router|routeurs]], [[NetworkSwitch|commutateurs]], [[Server|serveurs]], et [[Protocol|protocoles]]. Le cours distingue ensuite les différents types de réseaux : le [[LocalAreaNetwork|LAN]] pour de petites zones, le [[WirelessLocalAreaNetwork|WLAN]] pour la mobilité sans fil, le [[MetropolitanAreaNetwork|MAN]] à l'échelle d'une ville, et le [[WideAreaNetwork|WAN]] pour les vastes étendues, avec [[Internet|Internet]] comme exemple majeur. Enfin, le [[VirtualPrivateNetwork|VPN]] est présenté comme une solution essentielle pour la [[Confidentiality|confidentialité]] et la sécurité des communications sur les réseaux publics grâce au [[Encryption|chiffrement]].
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-06_LaProgrammationInformatique|Programmation informatique]]
 *   **Cours suivant**: [[IIC02-08_LesIndicateursDeConnexion|Les Indicateurs De Connexion]]

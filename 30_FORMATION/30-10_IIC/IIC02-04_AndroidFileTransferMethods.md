@@ -89,6 +89,6 @@ Après avoir configuré l'accès hors connexion, vous pourrez afficher et modifi
 > Ce cours explore les diverses méthodes de transfert de fichiers pour les appareils [[Android]], allant des options physiques comme le câble USB et la carte microSD, aux technologies sans fil telles que l'USB OTG et le [[Bluetooth]]. Il aborde également l'utilisation des applications de messagerie pour des transferts simples et met en lumière les avantages du [[Cloud|stockage en nuage]] pour la flexibilité et l'accès hors connexion. Des instructions détaillées sont fournies pour la configuration de Google Drive sur un [[Windows|ordinateur Windows]], permettant une synchronisation efficace et un accès constant aux fichiers, qu'une [[DigitalConnectivity|connexion numérique]] soit présente ou non.
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-03_FileTransferAndCloudSync|Transfert de fichiers et synchronisation cloud]]
 *   **Cours suivant**: [[IIC02-05_LeMondeDesApplicationsLogicielles|Le Monde des Applications Logicielles]]

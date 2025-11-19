@@ -122,6 +122,6 @@ Le matériel répond instantanément en ajustant la luminosité selon les spéci
 ## 📝 Résumé
 > Cette leçon a exploré les piliers de l'informatique en détaillant le rôle crucial du [[Hardware|matériel]] et du [[Software|logiciel]] et leur interaction constante. Nous avons distingué les types de mémoire comme la RAM et la mémoire cache, souligné l'importance des diverses solutions de [[Storage|stockage]] (HDD, SSD, Mémoire Flash, [[Cloud]]) et catégorisé les [[InputDevices|périphériques d'entrée]] et [[OutputDevices|de sortie]]. La compréhension de ces fondamentaux est essentielle pour appréhender le fonctionnement des systèmes informatiques modernes.
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC01-08_ProprieteIntellectuelleNumerique|Propriété Intellectuelle à l'Ère Numérique]]
 *   **Cours suivant**: [[IIC02-02_LesSystemesDExploitation|02-02 | Les Systèmes d'Exploitation]]

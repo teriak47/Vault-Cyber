@@ -134,7 +134,7 @@ La plupart des sites web vous autorisent à consulter leurs pages sans accepter 
 > Ce cours explore les fondements de la navigation [[WorldWideWeb|Web]], en détaillant le rôle des liens hypertexte comme outils de navigation. Il introduit ensuite les [[HttpCookies|cookies]], expliquant leur nature de petits fichiers de données et leur importance pour la personnalisation de l'expérience utilisateur, le [[OnlineServices|commerce en ligne]] et la publicité ciblée. Une attention particulière est portée aux préoccupations de [[Confidentiality|confidentialité]] que les cookies soulèvent en raison de leur capacité de suivi, et aux moyens dont disposent les utilisateurs pour contrôler ces [[PersonalData|données personnelles]] via les [[WebBrowsers|navigateurs Web]] et les [[LegalCompliance|réglementations]] en vigueur.
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
 *   **Cours précédent**: [[IIC01-03_MaitriserLaRechercheSurInternet|Maîtriser la Recherche sur Internet]]
 *   **Cours suivant**: [[IIC01-05_IntroductionToAI|Intelligence Artificielle (IA) : De la Science-Fiction à la Réalité]]
 

@@ -75,6 +75,6 @@ Google Drive fonctionne de manière très similaire à Windows. Ainsi, vous pouv
 > Cette leçon a exploré les méthodes fondamentales de transfert de fichiers sur les [[OperatingSystem|systèmes d'exploitation]] de bureau comme [[Windows]], en distinguant le comportement de "copier-coller" et "couper-coller". Elle a également introduit le concept de [[Cloud|stockage cloud]], en mettant en lumière des services populaires comme Google Drive, et a détaillé comment les fichiers peuvent être gérés et stockés en ligne, soulignant les avantages d'accessibilité et la simplicité d'utilisation pour la synchronisation à travers divers appareils, y compris [[Android]].
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-02_LesSystemesDExploitation|02-02 | Les Systèmes d'Exploitation]]
 *   **Cours suivant**: [[IIC02-04_AndroidFileTransferMethods|Méthodes de Transfert de Fichiers sur Android]]

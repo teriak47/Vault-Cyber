@@ -98,6 +98,6 @@ En remettant en question les notions classiques de propriété et de distributio
 > La Propriété Intellectuelle à l'ère numérique est un domaine complexe où les créations sont protégées par le [[Copyright|droit d'auteur]]. Face aux défis posés par la facilité de copie et de distribution sur [[Internet]], des technologies comme la [[DigitalRightsManagement|DRM]] ont émergé. Parallèlement, des alternatives plus flexibles comme les [[CreativeCommonsLicenses|licences Creative Commons]] permettent un partage contrôlé, tandis que le [[PublicDomain|domaine public]] offre une liberté totale d'utilisation pour les œuvres sans protection. L'[[FairUse|utilisation équitable]] constitue une exception cruciale au [[Copyright|droit d'auteur]] pour certaines fins. Enfin, les [[Software|logiciels]] sont également protégés par le [[Copyright|droit d'auteur]], avec les [[OpenSource|licences Open Source]] favorisant l'innovation collaborative. Le paysage de la Propriété Intellectuelle a dû s'adapter aux réalités du [[DigitalTechnology|numérique]].
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity]]
+*   **Module parent**: [[IIC00-00_Introduction]]
 *   **Cours précédent**: [[IIC01-07_VotrePersonnaliteNumerique]]
 *   **Cours suivant**: [[IIC02-01_LesFondamentauxDeLInformatique]]

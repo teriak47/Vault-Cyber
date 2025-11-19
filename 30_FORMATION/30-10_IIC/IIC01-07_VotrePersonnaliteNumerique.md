@@ -105,6 +105,6 @@ En vérifiant régulièrement ces paramètres, vous vous assurez de ne partager 
 > La [[DigitalPersonality|personnalité numérique]] représente l'ensemble de nos [[PersonalData|informations personnelles]] et comportements en ligne, formant des [[DigitalFootprint|empreintes numériques]] qui définissent notre présence virtuelle. Elle se décline en plusieurs types, comme le [[ProfessionalProfile|profil professionnel]], le [[SocialMediaProfile|profil sur les réseaux sociaux]] et le [[ConsumerProfile|profil de consommateur]], et influence divers aspects de notre vie, des publicités aux opportunités professionnelles. La gestion de cette [[DigitalPersonality|personnalité numérique]] est essentielle, impliquant la prudence dans le partage d'[[PersonalData|informations personnelles]], un engagement positif et l'utilisation des paramètres de [[Privacy|confidentialité]] pour préserver sa [[Privacy|vie privée]].
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
 *   **Cours précédent**: [[IIC01-06_Netiquette|01-06 | La Nétiquette]]
 *   **Cours suivant**: [[IIC01-08_ProprieteIntellectuelleNumerique|Propriété Intellectuelle à l'Ère Numérique]]

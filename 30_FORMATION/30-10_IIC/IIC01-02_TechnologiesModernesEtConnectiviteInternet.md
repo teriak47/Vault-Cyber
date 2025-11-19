@@ -239,6 +239,6 @@ Ne terminez pas par "1" ou "?", et évitez les substitutions courantes (comme "@
 > Cette leçon a introduit les bases des [[DigitalTechnology|technologies numériques]] et de la [[DigitalConnectivity|connectivité]]. Nous avons exploré la nécessité des [[SoftwareApplication|programmes]] et [[SoftwareApplication|applications]], le rôle central des [[OperatingSystem|systèmes d'exploitation]] tels que [[Windows]], [[MacOS]], [[Android]] et [[IPhoneOperatingSystem|iOS]], et l'importance des [[InputDevices|périphériques d'entrée]] et [[OutputDevices|de sortie]]. Les méthodes de connexion, qu'elles soient câblées (USB, HDMI) ou [[WirelessTechnology|sans fil]] ([[Bluetooth]], [[WirelessFidelity|Wi-Fi]]), ont été détaillées. Enfin, un accent particulier a été mis sur la [[Security|sécurité]] des terminaux via la création de [[StrongPassword|mots de passe forts]], en soulignant les meilleures pratiques et les pièges à éviter, tout en mentionnant l'intérêt de la [[Biometric|biométrie]] comme méthode complémentaire.
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'Informatique et à la Cybersécurité (IIC)]]
 *   **Cours précédent**: [[IIC01-01_IntroductionAuMondeNumeriqueEtSesDefis|Introduction au Monde Numérique et ses Défis]]
 *   **Cours suivant**: [[IIC01-03_MaitriserLaRechercheSurInternet|Maîtriser la Recherche sur Internet]]

@@ -89,6 +89,6 @@ D'autre part, les [[OpenSource|logiciels open source]], tels que le [[Linux|syst
 > La [[Programming|programmation]] informatique est le processus qui consiste à donner des [[Command|instructions]] à un [[Computer|ordinateur]] en utilisant des langages spécifiques comme Python ou Java, qui servent d'intermédiaires avec le [[BinaryCode|code binaire]] compris par la machine. Elle est fondamentale pour la [[Automation|résolution de problèmes]] et l'[[Automation|automatisation]]. Les principes de [[SoftwareDesign|clarté]] et de [[ErrorDetectionAndCorrection|gestion des erreurs]] sont essentiels. Les [[Software|logiciels]] se divisent en propriétaires (code fermé, support garanti, coût) et [[OpenSource|open source]] (code ouvert, gratuit, flexible, communautaire).
 
 ## 🔗 Notes Connexes
-*   **Module parent**: [[IIC_IntroductionToComputerScienceAndCybersecurity|Introduction à l'informatique et à la cybersécurité]]
+*   **Module parent**: [[IIC00-00_Introduction|Introduction à l'informatique et à la cybersécurité]]
 *   **Cours précédent**: [[IIC02-05_LeMondeDesApplicationsLogicielles|02-05 | Le Monde des Applications Logicielles]]
 *   **Cours suivant**: [[IIC02-07_LesReseauxInformatiques|Les Réseaux Informatiques]]
