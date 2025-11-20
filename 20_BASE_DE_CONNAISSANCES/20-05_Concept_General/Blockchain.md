@@ -16,26 +16,26 @@ cssclasses:
 # Chaîne de blocs (Blockchain)
 
 ## 📥 Définition en une phrase
-> Une [[DistributedLedgerTechnology|technologie de registre distribué]] qui enregistre les [[Data|transactions]] de manière sécurisée, transparente et [[Immutability|immuable]] à travers un [[Network|réseau]] de [[Computer|ordinateurs]], organisées en [[Block|blocs]] liés [[Cryptography|cryptographiquement]].
+> Une technologie de registre distribué qui enregistre les transactions de manière sécurisée, transparente et immuable à travers un réseau de ordinateurs, organisées en blocs liés cryptographiquement.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Block|Blocs]] et Chaînage**: Les [[Data|transactions]] sont regroupées en [[Block|blocs]], chaque nouveau [[Block|bloc]] étant lié au précédent par des [[Cryptography|fonctions de hachage cryptographique]], formant ainsi une chaîne chronologique et inviolable.
-*   **[[Decentralization|Décentralisation]]**: Le [[Registre Distribué (DLT)|registre]] n'est pas stocké ni géré par une seule autorité centrale, mais est distribué et maintenu par un [[Network|réseau]] de [[Host|nœuds]] indépendants, augmentant la [[Resilience (Security)|résilience]] et la [[Availability|disponibilité]].
-*   **[[Immutability|Immutabilité]]**: Une fois qu'un [[Block|bloc]] est validé et ajouté à la chaîne, il est extrêmement difficile, voire impossible, de le modifier ou de le supprimer sans altérer tous les [[Block|blocs]] suivants, ce qui est immédiatement détecté par le [[Network|réseau]].
-*   **[[ConsensusMechanism|Mécanismes de Consensus]]**: Les [[Host|nœuds]] du [[Network|réseau]] utilisent des protocoles de consensus (tels que Proof of Work ou Proof of Stake) pour s'accorder sur la validité des [[Data|transactions]] et l'ordre des [[Block|blocs]], garantissant l'[[Integrity|intégrité]] et la fiabilité du registre.
-*   **[[Transparency|Transparence]]**: Toutes les [[Data|transactions]] validées sont visibles et vérifiables par tous les [[User|participants]] du [[Network|réseau]], bien que l'identité des participants puisse rester [[Pseudonymity|pseudonyme]].
+*   **Blocs et Chaînage**: Les transactions sont regroupées en blocs, chaque nouveau bloc étant lié au précédent par des fonctions de hachage cryptographique, formant ainsi une chaîne chronologique et inviolable.
+*   **Décentralisation**: Le registre n'est pas stocké ni géré par une seule autorité centrale, mais est distribué et maintenu par un réseau de nœuds indépendants, augmentant la résilience et la disponibilité.
+*   **Immutabilité**: Une fois qu'un bloc est validé et ajouté à la chaîne, il est extrêmement difficile, voire impossible, de le modifier ou de le supprimer sans altérer tous les blocs suivants, ce qui est immédiatement détecté par le réseau.
+*   **Mécanismes de Consensus**: Les nœuds du réseau utilisent des protocoles de consensus (tels que Proof of Work ou Proof of Stake) pour s'accorder sur la validité des transactions et l'ordre des blocs, garantissant l'intégrité et la fiabilité du registre.
+*   **Transparence**: Toutes les transactions validées sont visibles et vérifiables par tous les participants du réseau, bien que l'identité des participants puisse rester pseudonyme.
 
 ## 💡 Importance en Cybersécurité
-> La [[Blockchain]] est fondamentale en [[Cybersecurity|cybersécurité]] car ses propriétés inhérentes, telles que l'[[Immutability|immutabilité]] et la [[Decentralization|décentralisation]], renforcent la [[CIATriad|triade CIA]] pour les [[Data|données]]. Elle offre une [[DataIntegrity|intégrité des données]] inégalée en rendant les altérations quasiment impossibles et traçables, ce qui est crucial pour les [[System|systèmes]] nécessitant une [[AuditTrail|piste d'audit]] fiable. Sa nature [[Decentralization|décentralisée]] garantit la [[Availability|disponibilité]] des [[Data|informations]] même en cas de [[HardwareFailure|défaillance]] ou d'[[Attack|attaque]] de certains [[Host|nœuds]], et sa [[Transparency|transparence]] accrue contribue à la [[Accountability|responsabilité]] des [[User|utilisateurs]] et à la prévention de la [[DataTheft|fraude]].
+> La Blockchain est fondamentale en cybersécurité car ses propriétés inhérentes, telles que l'immutabilité et la décentralisation, renforcent la triade CIA pour les données. Elle offre une intégrité des données inégalée en rendant les altérations quasiment impossibles et traçables, ce qui est crucial pour les systèmes nécessitant une piste d'audit fiable. Sa nature décentralisée garantit la disponibilité des informations même en cas de défaillance ou d'attaque de certains nœuds, et sa transparence accrue contribue à la responsabilité des utilisateurs et à la prévention de la fraude.
 
 ## 🔗 Notes Connexes
-*   [[Cryptography|Cryptographie]]
-*   [[Decentralization|Décentralisation]]
-*   [[DistributedLedgerTechnology|Technologie de Registre Distribué (DLT)]]
-*   [[Cryptocurrency|Cryptomonnaie]]
-*   [[DataIntegrity|Intégrité des Données]]
-*   [[Immutability|Immutabilité]]
-*   [[Transparency|Transparence]]
-*   [[FiftyOnePercentAttack|Attaque des 51%]]
-*   [[SmartContractVulnerability|Vulnérabilités des Contrats Intelligents]]
-*   [[PrivateKey|Clé Privée]]
+*   Cryptographie
+*   Décentralisation
+*   Technologie de Registre Distribué (DLT)
+*   Cryptomonnaie
+*   Intégrité des Données
+*   Immutabilité
+*   Transparence
+*   Attaque des 51%
+*   Vulnérabilités des Contrats Intelligents
+*   Clé Privée

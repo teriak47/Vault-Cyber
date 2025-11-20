@@ -13,25 +13,25 @@ cssclasses:
 # Logiciel : Antivirus
 
 ## 🎯 Rôle et Fonction
-> Logiciel conçu pour détecter, prévenir et supprimer les [[Malware|logiciels malveillants]] (tels que les [[Virus]], [[Worm|vers]], et [[Trojan|chevaux de Troie]]) d'un [[System|système informatique]]. Il protège contre l'infection, la [[DataLoss|perte de données]], la [[DataCorruption|corruption de fichiers]] et la [[SystemCompromise|compromission du système]].
+> Logiciel conçu pour détecter, prévenir et supprimer les logiciels malveillants (tels que les Virus, vers, et chevaux de Troie) d'un système informatique. Il protège contre l'infection, la perte de données, la corruption de fichiers et la compromission du système.
 
 ## ⚙️ Caractéristiques / Mécanismes
-*   **[[SignatureBasedDetection|Détection basée sur les signatures]]**: Compare les fichiers et le code exécutable à une base de données de [[Signature|signatures]] connues de [[Malware|logiciels malveillants]] déjà identifiés.
-*   **[[HeuristicAnalysis|Analyse heuristique]]**: Examine le comportement et la structure des programmes pour identifier des schémas suspects, permettant de détecter de nouvelles [[Threat|menaces]] ou des variantes inconnues de [[Malware|malware]].
-*   **Surveillance comportementale**: Observe les activités des programmes en [[RealTimeProtection|temps réel]] pour détecter des actions typiquement malveillantes (ex: modifications non autorisées de [[SystemFile|fichiers système]], tentatives de [[PrivilegeEscalation|privilèges]]).
-*   **[[RealTimeProtection|Protection en temps réel]]**: Scanne automatiquement les fichiers au fur et à mesure qu'ils sont accédés, téléchargés ou exécutés, bloquant les [[Threat|menaces]] avant qu'elles ne causent des dommages.
-*   **[[Quarantine|Quarantaine]] et suppression**: Isole les fichiers malveillants détectés dans un espace sécurisé pour empêcher leur exécution, ou les supprime définitivement du [[System|système]].
-*   **Mises à jour des définitions**: Télécharge régulièrement les nouvelles [[Signature|signatures]] de [[Malware|malware]] et les mises à jour du moteur d'analyse depuis les serveurs du fournisseur.
+*   **Détection basée sur les signatures**: Compare les fichiers et le code exécutable à une base de données de signatures connues de logiciels malveillants déjà identifiés.
+*   **Analyse heuristique**: Examine le comportement et la structure des programmes pour identifier des schémas suspects, permettant de détecter de nouvelles menaces ou des variantes inconnues de malware.
+*   **Surveillance comportementale**: Observe les activités des programmes en temps réel pour détecter des actions typiquement malveillantes (ex: modifications non autorisées de fichiers système, tentatives de privilèges).
+*   **Protection en temps réel**: Scanne automatiquement les fichiers au fur et à mesure qu'ils sont accédés, téléchargés ou exécutés, bloquant les menaces avant qu'elles ne causent des dommages.
+*   **Quarantaine et suppression**: Isole les fichiers malveillants détectés dans un espace sécurisé pour empêcher leur exécution, ou les supprime définitivement du système.
+*   **Mises à jour des définitions**: Télécharge régulièrement les nouvelles signatures de malware et les mises à jour du moteur d'analyse depuis les serveurs du fournisseur.
 
 ## 🔒 Mesures de Sécurité (Bonnes Pratiques)
-*   **Mises à jour régulières**: Maintenir le [[Antivirus|logiciel antivirus]] et sa base de données de [[Signature|signatures]] constamment à jour pour une protection optimale contre les dernières [[Threat|menaces]].
-*   **Analyses complètes et planifiées**: Configurer des analyses régulières du [[System|système]] pour détecter les [[Malware|menaces]] potentiellement passées inaperçues ou les infections latentes.
-*   **Combiner avec d'autres [[SecurityControl|contrôles de sécurité]]**: Utiliser l'[[Antivirus|antivirus]] en conjonction avec un [[Firewall|pare-feu]], un [[IntrusionDetectionSystem|système de détection d'intrusion (IDS)]] et des solutions de [[EndpointProtectionPlatform|protection des endpoints (EPP)]] ou [[EndpointDetectionAndResponse|EDR]].
-*   **[[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]]**: Former les utilisateurs aux bonnes pratiques de [[Security|sécurité]] et à la reconnaissance des tentatives de [[Phishing|hameçonnage]] ou de téléchargements malveillants.
+*   **Mises à jour régulières**: Maintenir le logiciel antivirus et sa base de données de signatures constamment à jour pour une protection optimale contre les dernières menaces.
+*   **Analyses complètes et planifiées**: Configurer des analyses régulières du système pour détecter les menaces potentiellement passées inaperçues ou les infections latentes.
+*   **Combiner avec d'autres contrôles de sécurité**: Utiliser l'antivirus en conjonction avec un pare-feu, un système de détection d'intrusion (IDS) et des solutions de protection des endpoints (EPP) ou EDR.
+*   **Sensibilisation des utilisateurs**: Former les utilisateurs aux bonnes pratiques de sécurité et à la reconnaissance des tentatives de hameçonnage ou de téléchargements malveillants.
 
 ## 🔍 Audit et Surveillance
 *   **Journaux d'événements de l'antivirus**:
-    *   Les [[Log|journaux]] de l'antivirus enregistrent les détections de [[Malware|malware]], les actions effectuées (quarantaine, suppression), et les mises à jour. Ces [[Log|journaux]] sont cruciaux pour la [[SecurityMonitoring|surveillance de sécurité]] et la [[IncidentResponse|réponse aux incidents]].
+    *   Les journaux de l'antivirus enregistrent les détections de malware, les actions effectuées (quarantaine, suppression), et les mises à jour. Ces journaux sont cruciaux pour la surveillance de sécurité et la réponse aux incidents.
 *   **Commandes d'audit courantes**: (dépendent du fournisseur)
 ```bash
 # Exemple générique pour vérifier le statut d'un service antivirus (Linux)
@@ -42,9 +42,9 @@ systemctl status <nom_service_antivirus>
 ```
 
 ## 🔗 Notes Connexes
-*   [[Malware|Logiciel malveillant]]
-*   [[EndpointProtectionPlatform|Plateforme de Protection des Endpoints (EPP)]]
-*   [[EndpointDetectionAndResponse|Endpoint Detection and Response (EDR)]]
-*   [[SignatureBasedDetection|Détection Basée sur les Signatures]]
-*   [[HeuristicAnalysis|Analyse Heuristique]]
-*   [[CommonVulnerabilitiesAndExposures|Vulnérabilités connues (CVEs)]]
+*   Logiciel malveillant
+*   Plateforme de Protection des Endpoints (EPP)
+*   Endpoint Detection and Response (EDR)
+*   Détection Basée sur les Signatures
+*   Analyse Heuristique
+*   Vulnérabilités connues (CVEs)

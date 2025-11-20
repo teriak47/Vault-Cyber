@@ -21,10 +21,10 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/SessionLayer.md|SessionLayer]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/PresentationLayer.md|PresentationLayer]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/ApplicationLayer.md|ApplicationLayer]]
-- [[20_BASE_DE_CONNAISSANCES/20-12_Modele/InternetProtocolSuite.md|InternetProtocolSuite]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/Layer.md|Layer]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/Microservices.md|Microservices]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/ProtocolStack.md|ProtocolStack]]
 - [[20_BASE_DE_CONNAISSANCES/20-12_Modele/LargeLanguageModel.md|LargeLanguageModel]]
+- [[20_BASE_DE_CONNAISSANCES/20-12_Modele/McCumberCube.md|McCumberCube]]
 
 %% DATAVIEW_PUBLISHER: end %%

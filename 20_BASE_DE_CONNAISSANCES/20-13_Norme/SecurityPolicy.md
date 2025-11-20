@@ -18,26 +18,26 @@ cssclasses:
 # Politique de Sécurité
 
 ## 🎯 Objectif et Périmètre
-> Une [[SecurityPolicy|politique de sécurité]] est un ensemble de règles, de lignes directrices et de procédures formellement documentées qu'une [[Enterprise|entreprise]] établit pour protéger ses [[InformationSecurity|actifs informationnels]] contre les [[Threat|menaces]] et les [[Vulnerability|vulnérabilités]]. Elle a pour but de définir clairement les attentes en matière de [[Security|sécurité]], les rôles, les responsabilités et les comportements acceptables pour tous les [[User|utilisateurs]] et [[System|systèmes]] au sein d'une [[Enterprise|organisation]].
+> Une politique de sécurité est un ensemble de règles, de lignes directrices et de procédures formellement documentées qu'une entreprise établit pour protéger ses actifs informationnels contre les menaces et les vulnérabilités. Elle a pour but de définir clairement les attentes en matière de sécurité, les rôles, les responsabilités et les comportements acceptables pour tous les utilisateurs et systèmes au sein d'une organisation.
 
 ## 🔑 Principales Exigences / Sections
-*   **Fondements et Principes**: Les [[SecurityPolicy|politiques de sécurité]] sont souvent basées sur des cadres de [[LegalCompliance|conformité réglementaire]] (par exemple, le [[GeneralDataProtectionRegulation|RGPD]], la [[NetworkAndInformationSystemsDirectiveTwo|Directive NIS2]]) et des [[NetworkStandard|normes industrielles]] (par exemple, [[ISO27001|ISO 27001]]). Elles visent à garantir la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] (la [[CIATriad|Triade CIA]]) des [[Data|données]] et des [[System|systèmes]].
-*   **Domaines Couverts**: Elles peuvent couvrir divers domaines, incluant l'[[AccessControl|accès]], la [[StrongPasswordPolicy|politique de mots de passe forts]], le [[DataEncryption|chiffrement des données]], la [[PhysicalSecurity|sécurité physique]], la [[IncidentResponse|réponse aux incidents]], la [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|formation et sensibilisation des utilisateurs]], et l'[[AcceptableUsePolicy|utilisation acceptable des ressources]].
-*   **Mise à Jour Continue**: Une [[SecurityPolicy|politique de sécurité]] doit être régulièrement examinée et mise à jour pour s'adapter à l'évolution des [[Threat|menaces]], des [[WirelessTechnology|technologies]] et des exigences [[LegalCompliance|réglementaires]].
+*   **Fondements et Principes**: Les politiques de sécurité sont souvent basées sur des cadres de conformité réglementaire (par exemple, le RGPD, la Directive NIS2) et des normes industrielles (par exemple, ISO 27001). Elles visent à garantir la confidentialité, l'intégrité et l'disponibilité (la Triade CIA) des données et des systèmes.
+*   **Domaines Couverts**: Elles peuvent couvrir divers domaines, incluant l'accès, la politique de mots de passe forts, le chiffrement des données, la sécurité physique, la réponse aux incidents, la formation et sensibilisation des utilisateurs, et l'utilisation acceptable des ressources.
+*   **Mise à Jour Continue**: Une politique de sécurité doit être régulièrement examinée et mise à jour pour s'adapter à l'évolution des menaces, des technologies et des exigences réglementaires.
 
 ## 📈 Bénéfices de la Conformité
-*   Amélioration significative de la [[Security|posture de sécurité]] globale de l'[[Enterprise|entreprise]].
-*   Assure la [[LegalCompliance|conformité légale et réglementaire]], réduisant les [[FinancialLoss|risques financiers]] et les [[ReputationalDamage|dommages à la réputation]].
-*   Établit un cadre clair et cohérent pour la [[Security|sécurité]], définissant les [[SecurityGoals|objectifs de sécurité]] et les [[User|responsabilités des utilisateurs]].
-*   Renforce la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[InformationSecurity|actifs informationnels]].
+*   Amélioration significative de la posture de sécurité globale de l'entreprise.
+*   Assure la conformité légale et réglementaire, réduisant les risques financiers et les dommages à la réputation.
+*   Établit un cadre clair et cohérent pour la sécurité, définissant les objectifs de sécurité et les responsabilités des utilisateurs.
+*   Renforce la confidentialité, l'intégrité et l'disponibilité des actifs informationnels.
 
 ## 📜 Certifications Associées
-*   Bien qu'une [[SecurityPolicy|politique de sécurité]] ne soit pas directement certifiée, elle est un pilier fondamental pour l'obtention de certifications de [[InformationSecurityManagementSystem|système de management de la sécurité de l'information]] comme [[ISO27001|ISO 27001]].
+*   Bien qu'une politique de sécurité ne soit pas directement certifiée, elle est un pilier fondamental pour l'obtention de certifications de système de management de la sécurité de l'information comme ISO 27001.
 
 ## 🔗 Notes Connexes
-*   [[SecurityControl|Contrôles de sécurité]]
-*   [[RiskManagement|Gestion des risques]]
-*   [[GeneralDataProtectionRegulation|RGPD]]
-*   [[CIATriad|Triade CIA]]
-*   [[LegalCompliance|Conformité légale]]
-*   [[SecurityAwareness|Sensibilisation à la sécurité]]
+*   Contrôles de sécurité
+*   Gestion des risques
+*   RGPD
+*   Triade CIA
+*   Conformité légale
+*   Sensibilisation à la sécurité

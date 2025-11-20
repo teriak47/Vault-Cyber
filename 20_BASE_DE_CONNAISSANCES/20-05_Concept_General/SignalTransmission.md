@@ -14,23 +14,23 @@ cssclasses:
 # Transmission de Signal
 
 ## 📥 Définition en une phrase
-> La transmission de signal est le [[Process|processus]] par lequel des [[Data|informations]] ou des [[Data|données]] sont envoyées d'une source à une destination via un [[NetworkMedia|support de communication]].
+> La transmission de signal est le processus par lequel des informations ou des données sont envoyées d'une source à une destination via un support de communication.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Médiums de Transmission**: Les [[WirelessSignals|signaux]] peuvent être transmis via des supports physiques comme les [[CopperWire|câbles en cuivre]] ou la [[FiberOpticCable|fibre optique]], ou non-physiques tels que les [[RadioWaves|ondes radio]], les [[InfraredWaves|ondes infrarouges]] et les [[Microwaves|micro-ondes]], qui font partie du [[ElectromagneticSpectrum|spectre électromagnétique]].
-*   **Types de Signaux**: Les informations sont converties en [[DigitalSignals|signaux numériques]] (discrets) ou [[AnalogSignals|signaux analogiques]] (continus) pour la [[SignalTransmission|transmission]].
-*   **Modulation et Démodulation**: La [[Modulation|modulation]] est le processus d'encodage des [[Data|informations]] sur un [[SignalTransmission|signal porteur]] à l'émetteur, tandis que la [[Demodulation|démodulation]] est l'extraction de ces [[Data|informations]] au récepteur.
-*   **[[NetworkProtocol|Protocoles de Communication]]**: Des [[Protocol|protocoles]] standardisés régissent le [[MessageFormatting|formatage]], la [[DataTransmission|transmission]], la réception et le traitement des [[Data|données]], assurant l'[[Interoperability|interopérabilité]] entre les [[NetworkDevice|dispositifs]].
-*   **Performance**: La [[Bandwidth|bande passante]] détermine la capacité maximale d'un [[CommunicationChannel|canal de transmission]], tandis que le [[Throughput|débit]] mesure la quantité réelle de [[Data|données]] transférées par unité de temps, affectant la [[NetworkPerformance|performance réseau]].
+*   **Médiums de Transmission**: Les signaux peuvent être transmis via des supports physiques comme les câbles en cuivre ou la fibre optique, ou non-physiques tels que les ondes radio, les ondes infrarouges et les micro-ondes, qui font partie du spectre électromagnétique.
+*   **Types de Signaux**: Les informations sont converties en signaux numériques (discrets) ou signaux analogiques (continus) pour la transmission.
+*   **Modulation et Démodulation**: La modulation est le processus d'encodage des informations sur un signal porteur à l'émetteur, tandis que la démodulation est l'extraction de ces informations au récepteur.
+*   **Protocoles de Communication**: Des protocoles standardisés régissent le formatage, la transmission, la réception et le traitement des données, assurant l'interopérabilité entre les dispositifs.
+*   **Performance**: La bande passante détermine la capacité maximale d'un canal de transmission, tandis que le débit mesure la quantité réelle de données transférées par unité de temps, affectant la performance réseau.
 
 ## 💡 Importance en Cybersécurité
-> La [[SignalTransmission|transmission de signal]] est la fondation de toute [[NetworkCommunication|communication réseau]]. Une [[SignalTransmission|transmission]] [[Security|sécurisée]] est essentielle pour la [[CIATriad|confidentialité]], l'[[Integrity|intégrité]] et la [[Availability|disponibilité]] des [[Data|données]]. Les [[Vulnerability|vulnérabilités]] dans ce [[Process|processus]] peuvent être exploitées par des [[ThreatActor|acteurs de menaces]] pour l'[[Eavesdropping|écoute clandestine]], l'[[Tampering|altération de données]] ou le [[DenialOfService|déni de service]], menaçant directement la [[Cybersecurity|cybersécurité]] des [[System|systèmes]] et des [[Enterprise|organisations]].
+> La transmission de signal est la fondation de toute communication réseau. Une transmission sécurisée est essentielle pour la confidentialité, l'intégrité et la disponibilité des données. Les vulnérabilités dans ce processus peuvent être exploitées par des acteurs de menaces pour l'écoute clandestine, l'altération de données ou le déni de service, menaçant directement la cybersécurité des systèmes et des organisations.
 
 ## 🔗 Notes Connexes
-*   [[PhysicalLayer|Couche Physique]]
-*   [[NetworkMedia|Supports de communication réseau]]
-*   [[DataTransmission|Transmission de Données]]
-*   [[WirelessTransmission|Transmission sans fil]]
-*   [[ElectromagneticSpectrum|Spectre Électromagnétique]]
-*   [[NetworkCommunication|Communication réseau]]
-*   [[Protocol|Protocole]]
+*   Couche Physique
+*   Supports de communication réseau
+*   Transmission de Données
+*   Transmission sans fil
+*   Spectre Électromagnétique
+*   Communication réseau
+*   Protocole

@@ -16,34 +16,34 @@ cssclasses:
 # Gestion de la Mémoire
 
 ## 📥 Définition en une phrase
-> La [[MemoryManagement|gestion de la mémoire]] est un [[Process|processus]] fondamental dans les [[Computer|systèmes informatiques]] et les [[SoftwareApplication|applications]], chargé d'allouer et de libérer efficacement la [[RAM|mémoire vive]] pour les [[Process|programmes]] en cours d'exécution.
+> La gestion de la mémoire est un processus fondamental dans les systèmes informatiques et les applications, chargé d'allouer et de libérer efficacement la mémoire vive pour les programmes en cours d'exécution.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[MemoryAllocation|Allocation de Mémoire]]**: Processus par lequel le [[OperatingSystem|système d'exploitation]] ou un [[Process|programme]] réserve un bloc de [[Buffer|mémoire]] pour une [[Task|tâche]] spécifique.
-*   **[[MemoryDeallocation|Désallocation de Mémoire]]**: Processus de libération d'un bloc de [[Buffer|mémoire]] qui n'est plus utilisé, le rendant disponible pour d'autres [[Process|programmes]].
-*   **[[VirtualMemory|Mémoire Virtuelle]]**: Technique permettant aux [[Process|programmes]] d'accéder à plus de [[Buffer|mémoire]] qu'il n'y en a de physiquement disponible, en utilisant un [[SecondaryStorage|espace de stockage secondaire]] (ex: [[HardDrive|disque dur]]) comme extension de la [[RAM|RAM]].
-*   **[[Paging|Pagination]]**: Méthode de [[VirtualMemory|gestion de la mémoire virtuelle]] où la [[PhysicalMemory|mémoire physique]] et [[VirtualMemory|virtuelle]] est divisée en blocs de taille fixe appelés pages.
-*   **[[Segmentation|Segmentation (mémoire)]]**: Autre méthode où la [[Buffer|mémoire]] est divisée en segments logiques de taille variable, correspondant aux sections de [[Programming|code]], [[Data|données]], ou [[Stack|pile]] d'un [[Process|programme]].
-*   **[[GarbageCollection|Garbage Collection (Récupération de Place)]]**: Mécanisme automatique dans certains [[Programming|langages de programmation]] (Java, Python) qui identifie et libère la [[Buffer|mémoire]] qui n'est plus référencée.
+*   **Allocation de Mémoire**: Processus par lequel le système d'exploitation ou un programme réserve un bloc de mémoire pour une tâche spécifique.
+*   **Désallocation de Mémoire**: Processus de libération d'un bloc de mémoire qui n'est plus utilisé, le rendant disponible pour d'autres programmes.
+*   **Mémoire Virtuelle**: Technique permettant aux programmes d'accéder à plus de mémoire qu'il n'y en a de physiquement disponible, en utilisant un espace de stockage secondaire (ex: disque dur) comme extension de la RAM.
+*   **Pagination**: Méthode de gestion de la mémoire virtuelle où la mémoire physique et virtuelle est divisée en blocs de taille fixe appelés pages.
+*   **Segmentation (mémoire)**: Autre méthode où la mémoire est divisée en segments logiques de taille variable, correspondant aux sections de code, données, ou pile d'un programme.
+*   **Garbage Collection (Récupération de Place)**: Mécanisme automatique dans certains langages de programmation (Java, Python) qui identifie et libère la mémoire qui n'est plus référencée.
 
 ## 💡 Importance en Cybersécurité
-> La [[MemoryManagement|gestion de la mémoire]] est un aspect critique de la [[Cybersecurity|cybersécurité]] car de nombreuses [[Vulnerability|vulnérabilités]] majeures proviennent d'une manipulation incorrecte de la [[Buffer|mémoire]]. Une [[MemoryManagement|gestion de la mémoire]] efficace et sécurisée est essentielle pour prévenir les [[Exploitation|exploitations]] qui pourraient entraîner une [[DataCorruption|corruption de données]], un [[SystemCompromise|compromission de système]] ou une [[PrivilegeEscalation|escalade de privilèges]].
+> La gestion de la mémoire est un aspect critique de la cybersécurité car de nombreuses vulnérabilités majeures proviennent d'une manipulation incorrecte de la mémoire. Une gestion de la mémoire efficace et sécurisée est essentielle pour prévenir les exploitations qui pourraient entraîner une corruption de données, un compromission de système ou une escalade de privilèges.
 
 ## 🛡️ Risques de Sécurité
-*   [[BufferOverflow|Dépassement de Tampon]]: Une [[SoftwareVulnerability|vulnérabilité logicielle]] où un [[Process|programme]] écrit des [[Data|données]] au-delà des limites d'un [[Buffer|tampon mémoire]], écrasant les [[AdjacentData|données adjacentes]].
-*   [[MemoryLeak|Fuite de Mémoire]]: Une situation où un [[Process|programme]] ne libère pas la [[Buffer|mémoire]] qu'il a allouée mais n'utilise plus, entraînant une consommation excessive et potentiellement un [[Crash|crash système]].
-*   [[UseAfterFree|Utilisation Après Libération]]: Une [[Vulnerability|vulnérabilité]] critique où un [[Process|programme]] tente d'accéder à une portion de [[Buffer|mémoire]] qui a déjà été libérée, pouvant mener à une [[DataCorruption|corruption de données]] ou à l'[[RemoteCodeExecution|exécution de code arbitraire]].
-*   [[DoubleFree|Double Libération]]: Une [[Vulnerability|vulnérabilité]] où un [[Process|programme]] tente de libérer deux fois la même portion de [[Buffer|mémoire]], pouvant corrompre le [[Heap|tas]] et entraîner des [[Exploitation|exploitations]].
+*   Dépassement de Tampon: Une vulnérabilité logicielle où un programme écrit des données au-delà des limites d'un tampon mémoire, écrasant les données adjacentes.
+*   Fuite de Mémoire: Une situation où un programme ne libère pas la mémoire qu'il a allouée mais n'utilise plus, entraînant une consommation excessive et potentiellement un crash système.
+*   Utilisation Après Libération: Une vulnérabilité critique où un programme tente d'accéder à une portion de mémoire qui a déjà été libérée, pouvant mener à une corruption de données ou à l'exécution de code arbitraire.
+*   Double Libération: Une vulnérabilité où un programme tente de libérer deux fois la même portion de mémoire, pouvant corrompre le tas et entraîner des exploitations.
 
 ## 💎 Mesures de Protection
-*   [[SecureCoding|Développement Sécurisé]]: Appliquer des [[BestPractices|bonnes pratiques de codage]] pour prévenir les [[Vulnerability|vulnérabilités]] liées à la [[Buffer|mémoire]] (ex: vérification des limites, initialisation des pointeurs).
-*   [[MemorySafety|Sécurité Mémoire]]: Utiliser des [[ProgrammingLanguage|langages de programmation]] (ex: Rust) qui imposent des règles strictes sur la [[MemoryManagement|gestion de la mémoire]], réduisant les erreurs courantes.
-*   [[AddressSpaceLayoutRandomization|ASLR]]: Une [[SecurityControl|technique de sécurité]] qui randomise l'emplacement des zones de [[Buffer|mémoire]] clés pour rendre les [[Exploit|exploits]] plus difficiles.
-*   [[DataExecutionPrevention|DEP]]: Une [[SecurityControl|fonctionnalité de sécurité]] qui marque certaines zones de [[Buffer|mémoire]] comme non exécutables pour empêcher l'[[RemoteCodeExecution|exécution de code malveillant]] à partir de ces zones.
+*   Développement Sécurisé: Appliquer des bonnes pratiques de codage pour prévenir les vulnérabilités liées à la mémoire (ex: vérification des limites, initialisation des pointeurs).
+*   Sécurité Mémoire: Utiliser des langages de programmation (ex: Rust) qui imposent des règles strictes sur la gestion de la mémoire, réduisant les erreurs courantes.
+*   ASLR: Une technique de sécurité qui randomise l'emplacement des zones de mémoire clés pour rendre les exploits plus difficiles.
+*   DEP: Une fonctionnalité de sécurité qui marque certaines zones de mémoire comme non exécutables pour empêcher l'exécution de code malveillant à partir de ces zones.
 
 ## 🔗 Notes Connexes
-*   [[OperatingSystem|Système d'Exploitation]]
-*   [[Programming|Programmation]]
-*   [[ProcessManagement|Gestion des Processus]]
-*   [[Virtualization|Virtualisation]]
+*   Système d'Exploitation
+*   Programmation
+*   Gestion des Processus
+*   Virtualisation
 ---

@@ -17,33 +17,33 @@ cssclasses:
 # Protocole Internet (IP)
 
 ## 🎯 Rôle et Couche OSI
-> Le [[InternetProtocol|Protocole Internet]] ([[InternetProtocol|IP]]) est le principal [[Protocol|protocole]] de la [[NetworkLayer|couche réseau]] ([[OpenSystemsInterconnectionModel|couche 3 du modèle OSI]] et [[InternetProtocolSuite|couche Internet du modèle TCP/IP]]) au sein de la [[InternetProtocolSuite|suite de protocoles Internet]]. Il est responsable de l'[[IPAddressing|adressage]] logique et du [[Routing|routage]] des [[Packet|paquets de données]] entre les [[Host|hôtes]] et les [[Network|réseaux]] interconnectés.
+> Le Protocole Internet (IP) est le principal protocole de la couche réseau (couche 3 du modèle OSI et couche Internet du modèle TCP/IP) au sein de la suite de protocoles Internet. Il est responsable de l'adressage logique et du routage des paquets de données entre les hôtes et les réseaux interconnectés.
 
 ## ⚙️ Fonctionnement
-1.  **[[IPAddressing|Adressage IP]]**: Chaque [[EndDevices|appareil]] connecté à un [[Network|réseau IP]] se voit attribuer une [[[InternetProtocol|adresse IP]]unique ([[InternetProtocolVersion4|IPv4]] ou [[InternetProtocolVersion6|IPv6]]). Cette [[[InternetProtocol|adresse IP]]sert d'identifiant logique pour la [[NetworkCommunication|communication]] au sein du [[Network|réseau]] et au-delà.
-2.  **[[Routing|Routage]]**: Les [[Packet|paquets de données]] sont acheminés à travers le [[Network|réseau]] grâce à des [[Router|routeurs]]. Les [[Router|routeurs]] examinent l'[[DestinationInternetProtocolVersion4Address|adresse IP de destination]] contenue dans l'[[Header|en-tête IP]] du [[Packet|paquet]] et utilisent leurs [[RoutingTable|tables de routage]] pour déterminer le chemin le plus efficace vers la destination.
-3.  **[[Encapsulation|Encapsulation]]**: Les [[Data|données]] des couches supérieures sont [[Encapsulation|encapsulées]] dans des [[Packet|paquets IP]]. Chaque [[Packet|paquet IP]] comprend un [[Header|en-tête]] qui contient des informations essentielles telles que les [[SourceInternetProtocolVersion4Address|adresses IP source et destination]], la [[Protocol|version du protocole]] ([[InternetProtocolVersion4|IPv4]] ou [[InternetProtocolVersion6|IPv6]]), le temps de vie (TTL) et le type de service.
-4.  **Sans connexion (Stateless)**: [[InternetProtocol|IP]] est un [[Protocol|protocole]] "sans connexion" ([[StatelessProtocol|stateless]]). Cela signifie qu'il ne maintient pas d'état ni de connexion continue entre l'émetteur et le récepteur. Chaque [[Packet|paquet]] est traité indépendamment, ce qui rend le [[Network|réseau]] flexible mais nécessite des [[Protocol|protocoles]] de couches supérieures (comme [[TransmissionControlProtocol|TCP]]) pour la fiabilité.
-5.  **[[Packet|Fragmentation]]**: Si un [[Packet|paquet IP]] est trop grand pour être transmis sur un [[NetworkSegment|segment de réseau]] spécifique (dépassant le MTU - Maximum Transmission Unit), il peut être fragmenté en unités plus petites. Ces fragments sont ensuite réassemblés à la destination.
-* **Ports par défaut**: Le [[InternetProtocol|Protocole Internet]] ([[InternetProtocol|IP]]) n'utilise pas de [[PortNumber|ports]] dans le sens des [[TransportLayer|protocoles de transport]] comme [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]]. Son rôle est de fournir l'[[IPAddressing|adressage]] logique et le [[Routing|routage]] entre les [[Host|hôtes]].
+1.  **Adressage IP**: Chaque appareil connecté à un réseau IP se voit attribuer une adresse IPunique (IPv4 ou IPv6). Cette adresse IPsert d'identifiant logique pour la communication au sein du réseau et au-delà.
+2.  **Routage**: Les paquets de données sont acheminés à travers le réseau grâce à des routeurs. Les routeurs examinent l'adresse IP de destination contenue dans l'en-tête IP du paquet et utilisent leurs tables de routage pour déterminer le chemin le plus efficace vers la destination.
+3.  **Encapsulation**: Les données des couches supérieures sont encapsulées dans des paquets IP. Chaque paquet IP comprend un en-tête qui contient des informations essentielles telles que les adresses IP source et destination, la version du protocole (IPv4 ou IPv6), le temps de vie (TTL) et le type de service.
+4.  **Sans connexion (Stateless)**: IP est un protocole "sans connexion" (stateless). Cela signifie qu'il ne maintient pas d'état ni de connexion continue entre l'émetteur et le récepteur. Chaque paquet est traité indépendamment, ce qui rend le réseau flexible mais nécessite des protocoles de couches supérieures (comme TCP) pour la fiabilité.
+5.  **Fragmentation**: Si un paquet IP est trop grand pour être transmis sur un segment de réseau spécifique (dépassant le MTU - Maximum Transmission Unit), il peut être fragmenté en unités plus petites. Ces fragments sont ensuite réassemblés à la destination.
+* **Ports par défaut**: Le Protocole Internet (IP) n'utilise pas de ports dans le sens des protocoles de transport comme TCP ou UDP. Son rôle est de fournir l'adressage logique et le routage entre les hôtes.
 
 ## 🛡️ Sécurité du Protocole
 * **Vulnérabilités connues**:
-  * [[IPSpoofing|Usurpation d'IP]]: Un [[ThreatActor|attaquant]] falsifie l'[[SourceInternetProtocolVersion4Address|adresse IP source]] d'un [[Packet|paquet]] pour masquer son [[UserIdentity|identité]] ou se faire passer pour un autre [[Host|hôte]].
-  * [[DenialOfService|Attaques par déni de service (DoS)]] / [[DistributedDenialOfService|DDoS]]: Utilisation abusive de [[Packet|paquets IP]] pour submerger une [[Resource|cible]], rendant ses [[OnlineServices|services]] inaccessibles.
-  * [[ManInTheMiddle|Attaques de l'homme du milieu (MitM)]]: Bien que non directement une vulnérabilité [[InternetProtocol|IP]], de nombreuses [[ManInTheMiddle|attaques MitM]] manipulent le [[Routing|routage]] ou l'[[IPAddressing|adressage IP]] (ex: [[AddressResolutionProtocolPoisoning|ARP Poisoning]]) pour intercepter et potentiellement modifier les [[Packet|paquets IP]] en transit.
-  * [[InadvertentExposure|Fuite d'informations]]: Les [[Header|en-têtes IP]] peuvent révéler des informations sur la [[NetworkTopology|topologie du réseau]] ou les [[OperatingSystem|systèmes d'exploitation]] utilisés.
+  * Usurpation d'IP: Un attaquant falsifie l'adresse IP source d'un paquet pour masquer son identité ou se faire passer pour un autre hôte.
+  * Attaques par déni de service (DoS) / DDoS: Utilisation abusive de paquets IP pour submerger une cible, rendant ses services inaccessibles.
+  * Attaques de l'homme du milieu (MitM): Bien que non directement une vulnérabilité IP, de nombreuses attaques MitM manipulent le routage ou l'adressage IP (ex: ARP Poisoning) pour intercepter et potentiellement modifier les paquets IP en transit.
+  * Fuite d'informations: Les en-têtes IP peuvent révéler des informations sur la topologie du réseau ou les systèmes d'exploitation utilisés.
 * **Mesures de protection**:
-  * [[Firewall|Filtrage par pare-feu]]: Configuration de [[Firewall|pare-feu]] pour contrôler le [[NetworkTrafficAnalysis|trafic IP]] en fonction des [[[InternetProtocol|adresses IP]]source/destination, des [[PortNumber|ports]] et des [[Protocol|protocoles]] de couche supérieure.
-  * [[NetworkSegmentation|Segmentation réseau]]: Isolation des différentes parties d'un [[Network|réseau]] pour limiter la propagation d'[[Attack|attaques]] et réduire la [[AttackSurface|surface d'attaque]].
-  * [[InternetProtocolSecurity|IPsec]]: Une [[InternetProtocolSecurity|suite de protocoles]] qui offre l'[[Authentication|authentification]] et le [[Encryption|chiffrement]] des [[Packet|paquets IP]], protégeant l'[[Integrity|intégrité]] et la [[Confidentiality|confidentialité]] des [[NetworkCommunication|communications]].
-  * [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] / [[IntrusionPreventionSystem|Prévention d'intrusion (IPS)]]: [[SecurityMonitoring|Surveillance]] continue du [[NetworkTrafficAnalysis|trafic IP]] pour détecter et potentiellement bloquer les activités [[Malware|malveillantes]] ou suspectes.
-  * **Validation des [[Packet|paquets]]**: Implémentation de mécanismes pour vérifier la validité des [[SourceInternetProtocolVersion4Address|adresses IP source]] des [[Packet|paquets]] entrants, afin de contrer l'[[IPSpoofing|usurpation d'IP]].
+  * Filtrage par pare-feu: Configuration de pare-feu pour contrôler le trafic IP en fonction des adresses IPsource/destination, des ports et des protocoles de couche supérieure.
+  * Segmentation réseau: Isolation des différentes parties d'un réseau pour limiter la propagation d'attaques et réduire la surface d'attaque.
+  * IPsec: Une suite de protocoles qui offre l'authentification et le chiffrement des paquets IP, protégeant l'intégrité et la confidentialité des communications.
+  * Systèmes de détection d'intrusion (IDS) / Prévention d'intrusion (IPS): Surveillance continue du trafic IP pour détecter et potentiellement bloquer les activités malveillantes ou suspectes.
+  * **Validation des paquets**: Implémentation de mécanismes pour vérifier la validité des adresses IP source des paquets entrants, afin de contrer l'usurpation d'IP.
 
 ## 🔗 Notes Connexes
-* [[TransmissionControlProtocol|TCP]]
-* [[UserDatagramProtocol|UDP]]
-* [[InternetProtocolVersion4|IPv4]]
-* [[InternetProtocolVersion6|IPv6]]
-* [[NetworkLayer|Couche Réseau]]
-* [[Wireshark|Outil d'analyse de protocoles comme Wireshark]]
+* TCP
+* UDP
+* IPv4
+* IPv6
+* Couche Réseau
+* Outil d'analyse de protocoles comme Wireshark

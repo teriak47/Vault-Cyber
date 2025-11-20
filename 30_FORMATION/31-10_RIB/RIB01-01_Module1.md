@@ -32,7 +32,7 @@ cssclasses:
 [[Internet]] est un ensemble mondial de [[InterconnectedNetworks|réseaux interconnectés]] qui coopèrent pour échanger des [[Data|informations]] en utilisant des normes communes. Il n'est la propriété d'aucun individu ou groupe. La [[DataTransmission|transmission des données]] sur [[Internet]] s'appuie sur diverses méthodes et supports :
 *   **[[ElectricalSignals|Signaux électriques]]** : Utilisés par les [[CopperWire|fils téléphoniques]] (câbles cuivre) pour les connexions traditionnelles, notamment pour les [[LocalAreaNetwork|réseaux locaux]].
 *   **[[OpticalSignals|Signaux optiques]]** : Transmis par les [[FiberOpticCable|câbles à fibre optique]] sous forme d'[[LightPulses|impulsions lumineuses]], offrant une [[DigitalBandwidth|transmission]] à haute vitesse sur de longues distances.
-*   **[[RadioWaves|Signaux sans fil]]** : Incluent les [[InfraredWaves|ondes infrarouges]], les [[Microwaves|micro-ondes]] et les [[RadioWaves|ondes radio]] (comme le [[WiFi|Wi-Fi]] et [[Bluetooth|Bluetooth]]), permettant une grande flexibilité de connexion à travers l'air.
+*   **[[RadioWaves|Signaux sans fil]]** : Incluent les [[InfraredWaves|ondes infrarouges]], les [[Microwaves|micro-ondes]] et les [[RadioWaves|ondes radio]] (comme le [[WirelessFidelity|Wi-Fi]] et [[Bluetooth|Bluetooth]]), permettant une grande flexibilité de connexion à travers l'air.
 *   **[[SatelliteLinks|Liaisons satellites]]** : Essentielles pour les [[NetworkCommunication|communications]] couvrant les zones isolées où les infrastructures terrestres sont limitées.
 
 > [!NOTE] Définition Clé
@@ -49,7 +49,7 @@ Les [[Network|réseaux]] peuvent varier considérablement en taille et complexit
 Les [[EnterpriseNetwork|réseaux d'entreprise]] offrent des avantages significatifs :
 *   **Vente et Marketing** : Permettent d'annoncer et de vendre des produits efficacement via les [[DigitalContent|plateformes numériques]].
 *   **Approvisionnement** : Facilitent la [[CentralizedAdministration|gestion]] et l'exécution des achats auprès des fournisseurs de manière rationalisée.
-*   **[[NetworkCommunication|Communication Client]]** : Maintiennent des relations client robustes via [[Email|emails]] et [[InstantMessaging|messagerie instantanée]].
+*   **[[NetworkCommunication|Communication Client]]** : Maintiennent des relations client robustes via [[Email|emails]] et messagerie instantanée.
 *   **[[DataManagement|Gestion des Données]]** : Assurent la [[Data|consolidation]] et l'[[AccessControlModel|accès]] sécurisé aux [[Data|informations]] stockées sur des [[FileServer|serveurs réseau]].
 
 ### 4. Dispositifs Connectés et l'Internet des Objets (IoT)
@@ -58,21 +58,21 @@ L'[[Internet]] connecte bien plus que les ordinateurs traditionnels. Une multitu
 
 *   **[[MobileDevice|Appareils Mobiles Connectés]]** :
     *   **Smartphone** : Combine téléphone, appareil photo, [[LocationData|GPS]], lecteur multimédia et ordinateur tactile, offrant une [[Internet|connexion Internet]] presque partout.
-    *   **Tablette** : Parfaite pour le divertissement (vidéos, lecture) et les tâches informatiques de base grâce à des [[VirtualKeyboard|claviers virtuels]].
+    *   **Tablette** : Parfaite pour le divertissement (vidéos, lecture) et les tâches informatiques de base grâce à des claviers virtuels.
     *   **[[Smartwatch|Montre connectée]]** : Fournit des alertes et messages, surveille le pouls et compte les pas pour contrôler la santé.
     *   **Lunettes connectées** : Représentent un ordinateur portable avec écran miniature et pavé tactile pour une navigation mains libres.
 
-*   **[[InternetofThings|La Maison Connectée]] ([[IoT]])** : De nombreux éléments domestiques peuvent être connectés à [[Internet]] pour [[SecurityMonitoring|surveillance]] et configuration à distance, transformant nos habitations en environnements intelligents.
-    *   **[[SmartHome|Gestion Domestique]]** : [[SecuritySystem|Systèmes de sécurité]], [[SmartLighting|éclairage intelligent]], [[AutomatedClimateControl|climatisation automatisée]].
-    *   **[[Entertainment|Divertissement]]** : [[SmartTV|Télévisions intelligentes]], [[OnlineGaming|consoles de jeux en ligne]], [[ConnectedAudioSystems|systèmes audio connectés]].
-    *   **[[SmartAppliances|Électroménager]]** : [[ConnectedRefrigerators|Réfrigérateurs connectés]], fours programmables, [[SmartDishwashers|lave-vaisselle intelligents]].
-    *   **[[MobileControl|Contrôle Mobile]]** : Surveillance et configuration via smartphone ou tablette, avec alertes automatiques.
+*   **[[InternetofThings|La Maison Connectée]] ([[InternetofThings]])** : De nombreux éléments domestiques peuvent être connectés à [[Internet]] pour [[SecurityMonitoring|surveillance]] et configuration à distance, transformant nos habitations en environnements intelligents.
+    *   **Gestion Domestique** : Systèmes de sécurité, éclairage intelligent, climatisation automatisée.
+    *   **Divertissement** : Télévisions intelligentes, consoles de jeux en ligne, systèmes audio connectés.
+    *   **Électroménager** : Réfrigérateurs connectés, fours programmables, lave-vaisselle intelligents.
+    *   **Contrôle Mobile** : Surveillance et configuration via smartphone ou tablette, avec alertes automatiques.
 
 *   **[[InternetofThings|Autres Dispositifs Connectés]]** : Au-delà du domicile, de nombreux [[EndDevices|appareils connectés]] fournissent des [[Data|informations]] utiles, voire vitales.
-    *   **[[SmartCar|Voitures intelligentes]]** : Accès aux cartes, contenu multimédia, alertes de vol et appels d'urgence automatiques.
-    *   **[[RFIDTag|Étiquettes RFID]]** : [[Identification|Identification]] par radiofréquence pour suivre et surveiller des objets dans diverses conditions.
-    *   **[[SensorsAndActuators|Capteurs et Actionneurs]]** : [[SecurityMonitoring|Surveillance automatique]] de température, humidité, pression et déclenchement d'actions (ex: arrosage).
-    *   **[[MedicalDevices|Appareillages médicaux]]** : Pacemakers, pompes à insuline et systèmes hospitaliers alertent patients et personnel médical.
+    *   **Voitures intelligentes** : Accès aux cartes, contenu multimédia, alertes de vol et appels d'urgence automatiques.
+    *   **Étiquettes RFID** : Identification par radiofréquence pour suivre et surveiller des objets dans diverses conditions.
+    *   **Capteurs et Actionneurs** : Surveillance automatique de température, humidité, pression et déclenchement d'actions (ex: arrosage).
+    *   **Appareillages médicaux** : Pacemakers, pompes à insuline et systèmes hospitaliers alertent patients et personnel médical.
 
 ### 5. Le Langage des Ordinateurs : Binaire et ASCII
 
@@ -82,7 +82,7 @@ Les ordinateurs et les [[Network|réseaux]] n'utilisent que des chiffres [[Binar
 *   **[[PhysicalStates|États Physiques]]** : Les 0 et 1 sont représentés physiquement par des directions magnétiques, des tensions électriques, des intensités lumineuses ou des positions d'interrupteur.
 *   **[[DataTranslation|Traduction des Données]]** :
     *   Chaque [[InputDevices|périphérique d'entrée]] (souris, clavier, commande vocale) traduit l'interaction humaine en [[BinaryDigit|code binaire]].
-    *   Le [[Processing|CPU]] traite ces [[Data|données]] en [[BinaryDigit|binaire]].
+    *   Le CPU traite ces [[Data|données]] en [[BinaryDigit|binaire]].
     *   Les [[Data|données]] sont stockées en [[BinaryDigit|binaire]].
     *   Les [[OutputDevices|périphériques de sortie]] (écrans, imprimantes, haut-parleurs) reconvertissent les [[BinaryDigit|données binaires]] en un format reconnaissable par l'humain.
 *   **[[ASCII|Le Code ASCII]]** : Le format [[ASCII]] (Code américain normalisé) est l'un des plus utilisés par les ordinateurs pour représenter lettres, nombres et caractères spéciaux en [[BinaryDigit|codes binaires]].
@@ -95,11 +95,11 @@ Les ordinateurs et les [[Network|réseaux]] n'utilisent que des chiffres [[Binar
 ### 6. Bande Passante et Débit Réel
 
 Pour comprendre les performances d'un [[Network|réseau]], il est crucial de distinguer la [[Bandwidth|bande passante]] du [[Throughput|débit réel]].
-*   **[[Bandwidth|Bande Passante]]** : Mesure la capacité théorique d'un support à transporter des [[Data|données]], mesurée en [[BitsPerSecond|bits par seconde]] ([[Kbps|Kbps]] pour milliers, [[MegabitsPerSecond|Mbps]] pour millions, [[GigabitsPerSecond|Gbps]] pour milliards). C'est la capacité maximale.
+*   **[[Bandwidth|Bande Passante]]** : Mesure la capacité théorique d'un support à transporter des [[Data|données]], mesurée en [[BitsPerSecond|bits par seconde]] ([[KilobitsPerSecond|KilobitsPerSecond]] pour milliers, [[MegabitsPerSecond|Mbps]] pour millions, [[GigabitsPerSecond|Gbps]] pour milliards). C'est la capacité maximale.
 
 *   **[[Throughput|Débit Réel]]** : Représente la vitesse réelle de [[FileTransfer|transfert des données]]. Il ne correspond généralement pas à la [[Bandwidth|bande passante théorique]] spécifiée en raison de divers facteurs techniques.
     *   **[[Latency|Latence]]** : Le temps nécessaire aux [[Data|données]] pour voyager d'un point A à un point B, incluant tous les délais de traitement et de [[DataTransmission|transmission]].
-    *   **Facteurs influençant le débit** : La quantité de [[Data|données]] transmises, leurs types, la [[Latency|latence]] des [[NetworkDevice|périphériques réseau]] et la [[Liaison la plus lente du chemin|liaison la plus lente du chemin]] ("bottleneck") affectent directement le [[Throughput|débit réel]].
+    *   **Facteurs influençant le débit** : La quantité de [[Data|données]] transmises, leurs types, la [[Latency|latence]] des [[NetworkDevice|périphériques réseau]] et la [[Bottleneck|liaison la plus lente du chemin]] ("bottleneck") affectent directement le [[Throughput|débit réel]].
 
 > [!NOTE] Définition Clé
 > **[[Bandwidth|Bande Passante]]** : La capacité théorique maximale d'un support à transporter des données, mesurée en [[BitsPerSecond|bits par seconde]].
@@ -109,11 +109,11 @@ Pour comprendre les performances d'un [[Network|réseau]], il est crucial de dis
 ### 7. Internet : Un Réseau Mondial et ses Usages
 
 L'[[Internet]] est l'[[InterconnectedNetworks|interconnexion mondiale]] de milliers de [[LocalAreaNetwork|réseaux locaux]], permettant l'échange d'[[Data|informations]] sous toutes ses formes : texte, images, vidéo, musique et [[Data|données]]. C'est cette [[NetworkInfrastructure|infrastructure globale]] interconnectée qui définit notre ère numérique.
-*   **[[SocialMedia|Médias sociaux]]** : [[Platform|Plateformes]] de partage et [[NetworkCommunication|communication]].
-*   **[[OnlineGaming|Jeux multijoueurs]]** : [[Entertainment|Divertissement]] interactif en ligne.
-*   **[[InstantMessaging|Messagerie]]** : [[NetworkCommunication|Communication]] électronique instantanée.
-*   **[[ECommerce|Commerce électronique]]** : Achats et ventes numériques.
-*   **[[OnlineCourses|Cours en ligne]]** : [[Formation|Formation]] et apprentissage à distance.
+*   **Médias sociaux** : Plateformes de partage et communication.
+*   **Jeux multijoueurs** : Divertissement interactif en ligne.
+*   **Messagerie** : Communication électronique instantanée.
+*   **Commerce électronique** : Achats et ventes numériques.
+*   **Cours en ligne** : Formation et apprentissage à distance.
 
 ## 🧠 Carte Mentale / Schéma
 ```mermaid
@@ -153,29 +153,29 @@ graph TD
 
 ## ❓ Quiz de Révision (Active Recall)
 > [!QUESTION] Question 1
-> Quels sont les quatre principaux types de supports de [[DataTransmission|transmission]] de [[Data|données]] utilisés pour connecter [[Internet]] ?
+> Quels sont les quatre principaux types de supports de transmission de données utilisés pour connecter Internet ?
 > > [!success]- Réponse
-> > Les quatre types sont les [[CopperWire|fils téléphoniques]] (câbles cuivre), les [[FiberOpticCable|câbles à fibre optique]], les [[RadioWaves|transmissions sans fil]] et les [[SatelliteLinks|liaisons satellitaires]].
+> > Les quatre types sont les fils téléphoniques (câbles cuivre), les câbles à fibre optique, les transmissions sans fil et les liaisons satellitaires.
 
 > [!QUESTION] Question 2
-> Expliquez la différence entre la [[Bandwidth|bande passante]] et le [[Throughput|débit réel]].
+> Expliquez la différence entre la bande passante et le débit réel.
 > > [!success]- Réponse
-> > La [[Bandwidth|bande passante]] est la capacité *théorique* maximale d'un support à transporter des [[Data|données]], tandis que le [[Throughput|débit réel]] est la vitesse *effective* de [[FileTransfer|transfert des données]], souvent inférieure à la [[Bandwidth|bande passante]] en raison de facteurs techniques comme la [[Latency|latence]] ou les congestions.
+> > La bande passante est la capacité *théorique* maximale d'un support à transporter des données, tandis que le débit réel est la vitesse *effective* de transfert des données, souvent inférieure à la bande passante en raison de facteurs techniques comme la latence ou les congestions.
 
 > [!QUESTION] Question 3
-> Qu'est-ce qu'un "[[Bit|bit]]" et qu'est-ce qu'un "[[Byte|octet]]" dans le contexte du [[BinaryDigit|langage binaire]] ?
+> Qu'est-ce qu'un "bit" et qu'est-ce qu'un "octet" dans le contexte du langage binaire ?
 > > [!success]- Réponse
-> > Un "[[Bit|bit]]" est la plus petite unité de [[Data|données]] ([[BinaryDigit|binary digit]]), pouvant prendre la valeur 0 ou 1. Un "[[Byte|octet]]" est un groupe de huit [[Bit|bits]], utilisé pour représenter un caractère (selon le [[ASCII|code ASCII]] par exemple).
+> > Un "bit" est la plus petite unité de données (binary digit), pouvant prendre la valeur 0 ou 1. Un "octet" est un groupe de huit bits, utilisé pour représenter un caractère (selon le code ASCII par exemple).
 
 > [!QUESTION] Question 4
-> Citez trois avantages des [[EnterpriseNetwork|réseaux d'entreprise]].
+> Citez trois avantages des réseaux d'entreprise.
 > > [!success]- Réponse
-> > Les avantages incluent la facilitation des ventes et du marketing via les plateformes numériques, la rationalisation des processus d'approvisionnement et l'amélioration de la [[NetworkCommunication|communication client]] par [[Email|emails]] et [[InstantMessaging|messagerie instantanée]]. (La [[DataManagement|gestion des données]] est un quatrième avantage majeur.)
+> > Les avantages incluent la facilitation des ventes et du marketing via les plateformes numériques, la rationalisation des processus d'approvisionnement et l'amélioration de la communication client par emails et messagerie instantanée. (La gestion des données est un quatrième avantage majeur.)
 
 > [!QUESTION] Question 5
-> Donnez trois exemples d'appareils de l'[[InternetofThings|Internet des Objets]] (IoT) dans une [[SmartHome|maison connectée]].
+> Donnez trois exemples d'appareils de l'Internet des Objets (IoT) dans une maison connectée.
 > > [!success]- Réponse
-> > Des exemples incluent un [[SecuritySystem|système de sécurité]] connecté, un [[SmartLighting|éclairage intelligent]], une [[SmartTV|télévision intelligente]], un [[ConnectedRefrigerators|réfrigérateur connecté]] ou une [[Smartwatch|montre connectée]] (utilisée pour le contrôle [[MobileControl|mobile]]).
+> > Des exemples incluent un système de sécurité connecté, un éclairage intelligent, une télévision intelligente, un réfrigérateur connecté ou une montre connectée (utilisée pour le contrôle mobile).
 
 ## 🔗 Liens du Module
 *   **Précédent** : [[RIB00-00_Introduction|Introduction au réseau]]

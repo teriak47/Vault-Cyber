@@ -13,25 +13,25 @@ cssclasses:
 # Surface d'Attaque (Attack Surface)
 
 ## 📥 Définition en une phrase
-> La [[AttackSurface|surface d'attaque]] représente l'ensemble total des points d'entrée et des [[Vulnerability|vulnérabilités]] qu'un [[ThreatActor|acteur de menace]] peut potentiellement exploiter pour compromettre un [[System|système]] ou exfiltrer des [[Data|données]].
+> La surface d'attaque représente l'ensemble total des points d'entrée et des vulnérabilités qu'un acteur de menace peut potentiellement exploiter pour compromettre un système ou exfiltrer des données.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Identification et Composants**: La [[AttackSurface|surface d'attaque]] englobe tous les chemins et points d'entrée qu'un [[ThreatActor|acteur de menace]] peut potentiellement utiliser pour [[Exploit|exploiter]] un [[System|système]] ou ses [[Data|données]]. Cela inclut les [[Software|logiciels]] (applications, [[OperatingSystem|systèmes d'exploitation]], [[Firmware|micrologiciels]]), le [[Hardware|matériel]] (serveurs, [[NetworkDevice|périphériques réseau]], [[EndDevices|terminaux]]), les [[Network|réseaux]] (ports ouverts, [[NetworkProtocol|protocoles non sécurisés]], [[WirelessFidelity|Wi-Fi]]) et l'[[HumanError|élément humain]] (via l'[[SocialEngineering|ingénierie sociale]]).
-*   **Types de Surface d'Attaque**: La [[AttackSurface|surface d'attaque]] peut être classifiée en plusieurs dimensions :
-    *   **Physique**: Points d'accès directs aux équipements (ex: serveurs non sécurisés, [[PhysicalSecurity|sécurité physique]] des centres de données).
-    *   **Logique**: [[Vulnerability|Vulnérabilités]] et points d'entrée accessibles via le [[Network|réseau]] ou les [[Software|logiciels]] (ex: [[WebBrowsers|navigateurs web]], [[PortNumber|ports]] ouverts, [[SoftwareVulnerability|vulnérabilités logicielles]]).
-    *   **Sociale**: L'[[HumanError|élément humain]] comme [[Vulnerability|vulnérabilité]] exploitée par des techniques d'[[SocialEngineering|ingénierie sociale]] (ex: [[Phishing|hameçonnage]]).
-*   **Réduction et Gestion**: Un objectif primordial en [[Cybersecurity|cybersécurité]] est de continuellement identifier, évaluer et réduire la [[AttackSurface|surface d'attaque]]. Cela implique la [[VulnerabilityManagement|gestion des vulnérabilités]], le [[PatchManagement|patch management]], la [[NetworkSegmentation|segmentation réseau]] et l'application du [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
+*   **Identification et Composants**: La surface d'attaque englobe tous les chemins et points d'entrée qu'un acteur de menace peut potentiellement utiliser pour exploiter un système ou ses données. Cela inclut les logiciels (applications, systèmes d'exploitation, micrologiciels), le matériel (serveurs, périphériques réseau, terminaux), les réseaux (ports ouverts, protocoles non sécurisés, Wi-Fi) et l'élément humain (via l'ingénierie sociale).
+*   **Types de Surface d'Attaque**: La surface d'attaque peut être classifiée en plusieurs dimensions :
+    *   **Physique**: Points d'accès directs aux équipements (ex: serveurs non sécurisés, sécurité physique des centres de données).
+    *   **Logique**: Vulnérabilités et points d'entrée accessibles via le réseau ou les logiciels (ex: navigateurs web, ports ouverts, vulnérabilités logicielles).
+    *   **Sociale**: L'élément humain comme vulnérabilité exploitée par des techniques d'ingénierie sociale (ex: hameçonnage).
+*   **Réduction et Gestion**: Un objectif primordial en cybersécurité est de continuellement identifier, évaluer et réduire la surface d'attaque. Cela implique la gestion des vulnérabilités, le patch management, la segmentation réseau et l'application du principe du moindre privilège.
 
 ## 💡 Importance en Cybersécurité
-> La [[AttackSurface|surface d'attaque]] est un concept central car elle quantifie l'exposition d'une [[Enterprise|organisation]] aux [[Threat|menaces]]. Une [[AttackSurface|surface d'attaque]] importante et mal gérée augmente considérablement la probabilité d'une [[Attack|attaque]] réussie, pouvant entraîner un [[UnauthorizedAccess|accès non autorisé]], une [[DataBreach|fuite de données]] ou une [[SystemCompromise|compromission du système]]. Sa réduction est donc une stratégie fondamentale pour renforcer la [[Security|sécurité]] globale, limiter les [[RiskManagement|risques]] et guider l'implémentation de [[SecurityControl|contrôles de sécurité]] efficaces, notamment via la [[ThreatModeling|modélisation des menaces]] et la [[SecurityByDesign|sécurité dès la conception]].
+> La surface d'attaque est un concept central car elle quantifie l'exposition d'une organisation aux menaces. Une surface d'attaque importante et mal gérée augmente considérablement la probabilité d'une attaque réussie, pouvant entraîner un accès non autorisé, une fuite de données ou une compromission du système. Sa réduction est donc une stratégie fondamentale pour renforcer la sécurité globale, limiter les risques et guider l'implémentation de contrôles de sécurité efficaces, notamment via la modélisation des menaces et la sécurité dès la conception.
 
 ## 🔗 Notes Connexes
-*   [[Vulnerability|Vulnérabilité]]
-*   [[AttackVector|Vecteur d'attaque]]
-*   [[DefenseInDepth|Défense en Profondeur]]
-*   [[Cybersecurity|Cybersécurité]]
-*   [[Reconnaissance|Reconnaissance]]
-*   [[RiskManagement|Gestion des Risques]]
-*   [[ThreatModeling|Modélisation des Menaces]]
-*   [[SecurityControl|Contrôle de Sécurité]]
+*   Vulnérabilité
+*   Vecteur d'attaque
+*   Défense en Profondeur
+*   Cybersécurité
+*   Reconnaissance
+*   Gestion des Risques
+*   Modélisation des Menaces
+*   Contrôle de Sécurité

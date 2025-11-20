@@ -15,30 +15,30 @@ cssclasses:
 # Clé Privée
 
 ## 📥 Définition en une phrase
-> Une clé privée est un secret cryptographique, généralement une longue chaîne de caractères alphanumériques, utilisée dans les systèmes de [[AsymmetricCryptography|cryptographie asymétrique]] pour déchiffrer des données, créer des [[DigitalSignature|signatures numériques]] ou authentifier l'identité de son propriétaire.
+> Une clé privée est un secret cryptographique, généralement une longue chaîne de caractères alphanumériques, utilisée dans les systèmes de cryptographie asymétrique pour déchiffrer des données, créer des signatures numériques ou authentifier l'identité de son propriétaire.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Partie d'une [[KeyPair|paire de clés]]**: Elle forme une paire unique avec une [[PublicKey|clé publique]] correspondante. Ce système permet à la [[PublicKey|clé publique]] d'être distribuée largement pour le [[Encryption|chiffrement]] ou la vérification de signatures, tandis que la [[PrivateKey|clé privée]] reste secrète.
-*   **[[Confidentiality|Confidentialité]]**: Permet de déchiffrer des messages ou des [[Data|données]] qui ont été chiffrés à l'aide de la [[PublicKey|clé publique]] associée, garantissant que seul le détenteur légitime peut accéder au contenu.
-*   **[[Authentication|Authentification]] et [[Integrity|Intégrité]]**: Sert à générer des [[DigitalSignature|signatures numériques]] pour des documents ou des messages. Cette [[DigitalSignature|signature]] prouve que les [[Data|données]] proviennent bien du détenteur de la [[PrivateKey|clé privée]] ([[NonRepudiation|non-répudiation]]) et qu'elles n'ont pas été altérées après avoir été signées.
-*   **[[Security|Sécurité]] absolue**: Sa valeur réside dans son secret. Toute [[KeyCompromise|compromission de la clé privée]] rend toutes les [[NetworkCommunication|communications]] chiffrées avec la [[PublicKey|clé publique]] associée vulnérables au déchiffrement, et permet à un [[ThreatActor|attaquant]] d'usurper l'identité du propriétaire pour signer des documents ou authentifier des opérations.
+*   **Partie d'une paire de clés**: Elle forme une paire unique avec une clé publique correspondante. Ce système permet à la clé publique d'être distribuée largement pour le chiffrement ou la vérification de signatures, tandis que la clé privée reste secrète.
+*   **Confidentialité**: Permet de déchiffrer des messages ou des données qui ont été chiffrés à l'aide de la clé publique associée, garantissant que seul le détenteur légitime peut accéder au contenu.
+*   **Authentification et Intégrité**: Sert à générer des signatures numériques pour des documents ou des messages. Cette signature prouve que les données proviennent bien du détenteur de la clé privée (non-répudiation) et qu'elles n'ont pas été altérées après avoir été signées.
+*   **Sécurité absolue**: Sa valeur réside dans son secret. Toute compromission de la clé privée rend toutes les communications chiffrées avec la clé publique associée vulnérables au déchiffrement, et permet à un attaquant d'usurper l'identité du propriétaire pour signer des documents ou authentifier des opérations.
 
 ## 💡 Importance en Cybersécurité
-> La [[PrivateKey|clé privée]] est un pilier fondamental de la [[Cybersecurity|cybersécurité]] moderne, particulièrement dans les domaines de la [[Cryptography|cryptographie]] asymétrique. Elle résout les défis de la [[Confidentiality|confidentialité]], de l'[[Authentication|authentification]] et de l'[[Integrity|intégrité]] des [[Data|données]] en permettant des [[NetworkCommunication|communications]] sécurisées et une vérification fiable de l'identité des parties prenantes, sans nécessiter un échange préalable de clés secrètes. Sa protection est donc primordiale, car sa [[KeyCompromise|compromission]] peut entraîner des [[DataBreach|fuites de données]], une [[AccountTakeover|prise de contrôle de compte]] ou un [[UnauthorizedAccess|accès non autorisé]] à des [[Resource|ressources]] sensibles, impactant gravement la [[Reputation|réputation]] et pouvant causer des [[FinancialLoss|pertes financières]]. Des mesures robustes de [[KeyManagement|gestion des clés]], d'[[AccessControl|accès contrôlé]] et l'utilisation de [[HardwareSecurityModule|modules de sécurité matériels (HSM)]] sont essentielles pour prévenir les [[Attack|attaques]] telles que les [[BruteForceAttack|attaques par force brute]] ou les [[SideChannelAttack|attaques par canal auxiliaire]].
+> La clé privée est un pilier fondamental de la cybersécurité moderne, particulièrement dans les domaines de la cryptographie asymétrique. Elle résout les défis de la confidentialité, de l'authentification et de l'intégrité des données en permettant des communications sécurisées et une vérification fiable de l'identité des parties prenantes, sans nécessiter un échange préalable de clés secrètes. Sa protection est donc primordiale, car sa compromission peut entraîner des fuites de données, une prise de contrôle de compte ou un accès non autorisé à des ressources sensibles, impactant gravement la réputation et pouvant causer des pertes financières. Des mesures robustes de gestion des clés, d'accès contrôlé et l'utilisation de modules de sécurité matériels (HSM) sont essentielles pour prévenir les attaques telles que les attaques par force brute ou les attaques par canal auxiliaire.
 
 ## 🔗 Notes Connexes
-*   [[PublicKey|Clé Publique]]
-*   [[AsymmetricCryptography|Cryptographie Asymétrique]]
-*   [[SymmetricCryptography|Cryptographie Symétrique]]
-*   [[DigitalSignature|Signature Numérique]]
-*   [[KeyPair|Paire de Clés]]
-*   [[Encryption|Chiffrement]]
-*   [[DigitalCertificate|Certificat Numérique]]
-*   [[KeyManagement|Gestion des Clés]]
-*   [[HardwareSecurityModule|Module de Sécurité Matériel (HSM)]]
-*   [[Confidentiality|Confidentialité]]
-*   [[Authentication|Authentification]]
-*   [[Integrity|Intégrité]]
-*   [[NonRepudiation|Non-répudiation]]
-*   [[KeyCompromise|Compromission de Clé]]
-*   [[SideChannelAttack|Attaque par Canal Auxiliaire]]
+*   Clé Publique
+*   Cryptographie Asymétrique
+*   Cryptographie Symétrique
+*   Signature Numérique
+*   Paire de Clés
+*   Chiffrement
+*   Certificat Numérique
+*   Gestion des Clés
+*   Module de Sécurité Matériel (HSM)
+*   Confidentialité
+*   Authentification
+*   Intégrité
+*   Non-répudiation
+*   Compromission de Clé
+*   Attaque par Canal Auxiliaire

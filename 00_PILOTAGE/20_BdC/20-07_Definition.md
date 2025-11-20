@@ -11,6 +11,8 @@ SORT file.ctime ASC
 %%
 
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Host.md|Host]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/ServiceSetIdentifier.md|ServiceSetIdentifier]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Vulnerability.md|Vulnerability]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Software.md|Software]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/SocialEngineering.md|SocialEngineering]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/AccessControl.md|AccessControl]]
@@ -45,5 +47,15 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Prevention.md|Prevention]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/DataSet.md|DataSet]]
 - [[20_BASE_DE_CONNAISSANCES/20-07_Definition/BinaryCode.md|BinaryCode]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Technology.md|Technology]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/ASCII.md|ASCII]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Bottleneck.md|Bottleneck]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Compatibility.md|Compatibility]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/IncompatibleDevice.md|IncompatibleDevice]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Transport.md|Transport]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Efficiency.md|Efficiency]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/CyclicRedundancyCheck.md|CyclicRedundancyCheck]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/DestinationInternetProtocolAddress.md|DestinationInternetProtocolAddress]]
+- [[20_BASE_DE_CONNAISSANCES/20-07_Definition/Wireless.md|Wireless]]
 
 %% DATAVIEW_PUBLISHER: end %%

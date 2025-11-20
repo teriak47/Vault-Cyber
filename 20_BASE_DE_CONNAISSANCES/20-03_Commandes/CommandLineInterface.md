@@ -22,18 +22,18 @@ cssclasses:
 # Commandes de la Ligne de Commande (CLI)
 
 ## 🎯 Objectif
-> La [[CommandLineInterface|Ligne de Commande]] (CLI) est une interface utilisateur basée sur le texte, utilisée pour interagir avec un [[OperatingSystem|système d'exploitation]] ou un [[SoftwareApplication|logiciel]] en tapant des [[Command|commandes]] textuelles. 
-> Son objectif est de permettre une [[Automation|automatisation]] précise, une [[Process|gestion de processus]] et une [[NetworkConfiguration|configuration réseau]] efficace, souvent plus puissantes que les [[GraphicalUserInterface|interfaces graphiques]].
+> La Ligne de Commande (CLI) est une interface utilisateur basée sur le texte, utilisée pour interagir avec un système d'exploitation ou un logiciel en tapant des commandes textuelles. 
+> Son objectif est de permettre une automatisation précise, une gestion de processus et une configuration réseau efficace, souvent plus puissantes que les interfaces graphiques.
 
 ## 📜 Commandes Principales
 
 | Commande | Description |
 |---|---|
-| `cd` | Change de répertoire courant. (ex: `cd /var/log` sous [[Linux|Linux]], `cd C:\Windows` sous [[Windows|Windows]]) |
-| `ls` / `dir` | Liste le contenu d'un répertoire. (`ls` sous [[Linux|Linux]]/[[MacOS|macOS]], `dir` sous [[Windows|Windows]]) |
-| `man` / `help` | Affiche l'aide ou le manuel d'une commande. (`man ls` sous [[Linux|Linux]], `help dir` sous [[Windows|Windows]]) |
-| `ping` | Vérifie la connectivité à un [[Host|hôte]] réseau. (ex: `ping google.com`) |
-| `ipconfig` / `ifconfig` | Affiche la [[InternetProtocolAddress|configuration IP]] des [[NetworkInterfaceCard|cartes réseau]]. (`ipconfig` sous [[Windows|Windows]], `ifconfig` / `ip addr` sous [[Linux|Linux]]/[[MacOS|macOS]]) |
+| `cd` | Change de répertoire courant. (ex: `cd /var/log` sous Linux, `cd C:\Windows` sous Windows) |
+| `ls` / `dir` | Liste le contenu d'un répertoire. (`ls` sous Linux/macOS, `dir` sous Windows) |
+| `man` / `help` | Affiche l'aide ou le manuel d'une commande. (`man ls` sous Linux, `help dir` sous Windows) |
+| `ping` | Vérifie la connectivité à un hôte réseau. (ex: `ping google.com`) |
+| `ipconfig` / `ifconfig` | Affiche la configuration IP des cartes réseau. (`ipconfig` sous Windows, `ifconfig` / `ip addr` sous Linux/macOS) |
 
 ## ⚙️ Options Utiles
 * `-h, --help`: Affiche l'aide de la commande spécifique.
@@ -63,23 +63,23 @@ dir /a
 # Sous Linux
 ip addr show
 ```
-> Affiche toutes les [[InternetProtocol|adresses IP]] et informations des [[NetworkInterface|interfaces réseau]].
+> Affiche toutes les adresses IP et informations des interfaces réseau.
 
 ```bash
 # Sous Windows
 ipconfig /all
 ```
-> Affiche la configuration [[InternetProtocol|IP]] détaillée de toutes les [[NetworkInterfaceCard|cartes réseau]].
+> Affiche la configuration IP détaillée de toutes les cartes réseau.
 
 ## 🔗 Notes Connexes
-* [[OperatingSystem|Système d'exploitation]]
-* [[Automation|Automatisation]]
-* [[Script|Scripting]]
-* [[NetworkConfiguration|Configuration réseau]]
-* [[NetworkMonitoring|Surveillance réseau]]
-* [[SecurityMonitoring|Surveillance de sécurité]]
-* [[Nmap|Nmap]]
-* [[Wireshark|Wireshark]] (pour l'analyse de paquets, avec son outil CLI `tshark`)
-* [[BashShell|Bash]]
-* [[PowerShell|PowerShell]]
-* [[GraphicalUserInterface|Interface utilisateur graphique]]
+* Système d'exploitation
+* Automatisation
+* Scripting
+* Configuration réseau
+* Surveillance réseau
+* Surveillance de sécurité
+* Nmap
+* Wireshark (pour l'analyse de paquets, avec son outil CLI `tshark`)
+* Bash
+* PowerShell
+* Interface utilisateur graphique

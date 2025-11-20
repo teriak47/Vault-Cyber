@@ -15,25 +15,25 @@ cssclasses:
 # Configuration Réseau
 
 ## 📥 Définition en une phrase
-> La [[NetworkConfiguration|configuration réseau]] est le processus d'attribution et de paramétrage des contrôles, fonctions et flux de [[Data|données]] pour les [[NetworkDevice|périphériques réseau]] et les [[Host|hôtes]] afin de permettre la [[NetworkCommunication|communication réseau]].
+> La configuration réseau est le processus d'attribution et de paramétrage des contrôles, fonctions et flux de données pour les périphériques réseau et les hôtes afin de permettre la communication réseau.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[NetworkDevice|Identification des Périphériques]]**: Chaque [[NetworkDevice|périphérique]] sur un [[Network|réseau]] doit être identifié de manière unique, typiquement via une [[InternetProtocol|adresse IP]] et une [[MediaAccessControlAddress|adresse MAC]].
-*   **[[IPAddressing|Gestion des Adresses IP]]**: Implique la configuration des [[InternetProtocol|adresses IP]], des [[SubnetMask|masques de sous-réseau]] et des [[DefaultGateway|passerelles par défaut]] pour que les [[NetworkDevice|appareils]] puissent communiquer.
-*   **Attribution d'Adresses**: Peut être effectuée manuellement via l'[[StaticIPAddressing|adressage IP statique]] ou automatiquement par un [[DynamicHostConfigurationProtocol|serveur DHCP]].
-*   **[[NetworkProtocol|Définition des Protocoles]]**: Spécifie les [[NetworkProtocol|protocoles]] à utiliser pour la [[DataTransmission|transmission de données]] (par exemple, la [[InternetProtocolSuite|suite de protocoles TCP/IP]] est dominante).
-*   **[[SecurityControl|Services et Contrôles]]**: Inclut la configuration des [[NetworkSwitch|commutateurs]], des [[Router|routeurs]], des [[Firewall|pare-feu]], et des [[AccessPoint|points d'accès sans fil]] pour le [[Routing|routage]], la [[NetworkSecurity|sécurité]], la [[QualityOfService|Qualité de Service (QoS)]] et le [[AccessControl|contrôle d'accès]].
+*   **Identification des Périphériques**: Chaque périphérique sur un réseau doit être identifié de manière unique, typiquement via une adresse IP et une adresse MAC.
+*   **Gestion des Adresses IP**: Implique la configuration des adresses IP, des masques de sous-réseau et des passerelles par défaut pour que les appareils puissent communiquer.
+*   **Attribution d'Adresses**: Peut être effectuée manuellement via l'adressage IP statique ou automatiquement par un serveur DHCP.
+*   **Définition des Protocoles**: Spécifie les protocoles à utiliser pour la transmission de données (par exemple, la suite de protocoles TCP/IP est dominante).
+*   **Services et Contrôles**: Inclut la configuration des commutateurs, des routeurs, des pare-feu, et des points d'accès sans fil pour le routage, la sécurité, la Qualité de Service (QoS) et le contrôle d'accès.
 
 ## 💡 Importance en Cybersécurité
-> Une [[NetworkConfiguration|configuration réseau]] appropriée est fondamentale pour la [[NetworkSecurity|sécurité réseau]], car elle permet d'empêcher les [[UnauthorizedAccess|accès non autorisés]], les [[ServiceDisruption|interruptions de service]] et l'[[DataExfiltration|exfiltration de données]]. Elle impacte directement la [[CIATriad|triade CIA]] ([[Confidentiality|confidentialité]], [[Integrity|intégrité]], [[Availability|disponibilité]]) en garantissant que seuls les [[User|utilisateurs]] et [[System|systèmes]] autorisés peuvent accéder à des [[Resource|ressources]] spécifiques, et que les [[Data|données]] circulent de manière correcte et sécurisée. Une [[NetworkConfiguration|configuration réseau]] incorrecte peut introduire des [[Vulnerability|vulnérabilités]] que les [[ThreatActor|acteurs de menace]] peuvent [[Exploit|exploiter]].
+> Une configuration réseau appropriée est fondamentale pour la sécurité réseau, car elle permet d'empêcher les accès non autorisés, les interruptions de service et l'exfiltration de données. Elle impacte directement la triade CIA (confidentialité, intégrité, disponibilité) en garantissant que seuls les utilisateurs et systèmes autorisés peuvent accéder à des ressources spécifiques, et que les données circulent de manière correcte et sécurisée. Une configuration réseau incorrecte peut introduire des vulnérabilités que les acteurs de menace peuvent exploiter.
 
 ## 🔗 Notes Connexes
-*   [[Network|Réseau]]
-*   [[NetworkSecurity|Sécurité Réseau]]
-*   [[NetworkProtocol|Protocole Réseau]]
-*   [[IPAddressing|Adressage IP]]
-*   [[DynamicHostConfigurationProtocol|DHCP]]
-*   [[AccessControl|Contrôle d'accès]]
-*   [[Firewall|Pare-feu]]
-*   [[VulnerabilityManagement|Gestion des Vulnérabilités]]
-*   [[CIATriad|Triade CIA]]
+*   Réseau
+*   Sécurité Réseau
+*   Protocole Réseau
+*   Adressage IP
+*   DHCP
+*   Contrôle d'accès
+*   Pare-feu
+*   Gestion des Vulnérabilités
+*   Triade CIA

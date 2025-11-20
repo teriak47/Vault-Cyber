@@ -15,48 +15,48 @@ cssclasses:
 # Protocole Internet version 6 (IPv6)
 
 ## 🎯 Rôle et Couche OSI
-> [[InternetProtocolVersion6|IPv6]] est la version la plus récente du [[NetworkProtocol|protocole de couche réseau]] fondamental pour l'[[InterconnectedNetworks|interconnexion des réseaux]]. Il opère à la [[NetworkLayer|couche réseau]] (Couche 3) du [[OSIModel|modèle OSI]] et du [[InternetProtocolSuite|modèle TCP/IP]]. Son rôle principal est d'identifier de manière unique les [[EndDevices|dispositifs]] sur un [[Network|réseau]] et de [[Routing|router]] les [[Packet|paquets]] de données entre les réseaux, succédant à [[InternetProtocolVersion4|IPv4]] pour pallier la pénurie d'[[InternetProtocolAddressBlocks|adresses IP]] et offrir des améliorations de performances et de [[Security|sécurité]].
+> IPv6 est la version la plus récente du protocole de couche réseau fondamental pour l'interconnexion des réseaux. Il opère à la couche réseau (Couche 3) du modèle OSI et du modèle TCP/IP. Son rôle principal est d'identifier de manière unique les dispositifs sur un réseau et de router les paquets de données entre les réseaux, succédant à IPv4 pour pallier la pénurie d'adresses IP et offrir des améliorations de performances et de sécurité.
 
 ## ⚙️ Fonctionnement
-1.  **Gestion des [[IPAddressing|adresses IP]]**: [[InternetProtocolVersion6|IPv6]] utilise des adresses de 128 bits, offrant un espace d'adressage considérablement élargi ($2^{128}$ adresses uniques) par rapport aux 32 bits d'[[InternetProtocolVersion4|IPv4]]. Ces adresses sont représentées par huit groupes de quatre [[HexadecimalValues|valeurs hexadécimales]] séparées par des deux-points (par exemple, `2001:0db8:85a3:0000:0000:8a2e:0370:7334`).
-2.  **[[Packet|Encapsulation]] et [[Routing|Routage]]**: Il [[Encapsulation|encapsule]] les données en [[Packet|paquets]] et les [[Routing|route]] d'une [[Host|source]] à une [[Host|destination]] à travers [[InterconnectedNetworks|des réseaux interconnectés]]. L'[[Header|en-tête]] [[InternetProtocolVersion6|IPv6]] est simplifié pour un traitement plus efficace par les [[Router|routeurs]], avec des champs comme la classe de trafic ([[TrafficClass|Traffic Class]]) et l'étiquette de flux ([[FlowLabel|Flow Label]]) pour le [[QualityOfService|QoS]].
-3.  **[[StatelessAddressAutoConfiguration|Auto-configuration sans état (SLAAC)]]**: Permet aux [[Host|hôtes]] de générer automatiquement leurs propres [[LinkLocalAddress|adresses IPv6 link-local]] et [[PublicIPAddress|globales]] sans nécessiter de [[DHCPServer|serveur DHCP]]. Ils peuvent former une [[LinkLocalAddress|adresse link-local]] en combinant un préfixe réseau avec leur [[NetworkInterfaceCard|adresse MAC]] ou un identifiant aléatoire, et peuvent ensuite obtenir une [[PublicIPAddress|adresse globale]] via des messages de [[RouterAdvertisement|publicité de routeur (RA)]].
-4.  **Absence de [[NetworkAddressTranslation|NAT]] pour la pénurie d'adresses**: Grâce à l'énorme espace d'adressage, le [[NetworkAddressTranslation|NAT]] (Traduction d'Adresses Réseau), souvent utilisé en [[InternetProtocolVersion4|IPv4]] pour pallier la pénurie d'adresses, n'est plus nécessaire à cette fin, simplifiant la connectivité de bout en bout et les applications client-serveur.
-5.  **Prise en charge de [[Multicast|Multicast]] et [[Anycast|Anycast]]**: [[InternetProtocolVersion6|IPv6]] remplace les [[Broadcast|diffusions]] d'[[InternetProtocolVersion4|IPv4]] par le [[Multicast|multicast]] (envoi à un groupe spécifique) et l'[[Anycast|anycast]] (envoi à l'hôte le plus proche d'un groupe), permettant une livraison plus efficace des [[Packet|paquets]].
-* **Ports par défaut**: Le [[InternetProtocolVersion6|Protocole Internet version 6]] opère à la [[NetworkLayer|couche réseau]] (couche 3) et n'utilise pas de ports au sens des [[TransportLayer|protocoles de transport]] comme [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]].
+1.  **Gestion des adresses IP**: IPv6 utilise des adresses de 128 bits, offrant un espace d'adressage considérablement élargi ($2^{128}$ adresses uniques) par rapport aux 32 bits d'IPv4. Ces adresses sont représentées par huit groupes de quatre valeurs hexadécimales séparées par des deux-points (par exemple, `2001:0db8:85a3:0000:0000:8a2e:0370:7334`).
+2.  **Encapsulation et Routage**: Il encapsule les données en paquets et les route d'une source à une destination à travers des réseaux interconnectés. L'en-tête IPv6 est simplifié pour un traitement plus efficace par les routeurs, avec des champs comme la classe de trafic (Traffic Class) et l'étiquette de flux (Flow Label) pour le QoS.
+3.  **Auto-configuration sans état (SLAAC)**: Permet aux hôtes de générer automatiquement leurs propres adresses IPv6 link-local et globales sans nécessiter de serveur DHCP. Ils peuvent former une adresse link-local en combinant un préfixe réseau avec leur adresse MAC ou un identifiant aléatoire, et peuvent ensuite obtenir une adresse globale via des messages de publicité de routeur (RA).
+4.  **Absence de NAT pour la pénurie d'adresses**: Grâce à l'énorme espace d'adressage, le NAT (Traduction d'Adresses Réseau), souvent utilisé en IPv4 pour pallier la pénurie d'adresses, n'est plus nécessaire à cette fin, simplifiant la connectivité de bout en bout et les applications client-serveur.
+5.  **Prise en charge de Multicast et Anycast**: IPv6 remplace les diffusions d'IPv4 par le multicast (envoi à un groupe spécifique) et l'anycast (envoi à l'hôte le plus proche d'un groupe), permettant une livraison plus efficace des paquets.
+* **Ports par défaut**: Le Protocole Internet version 6 opère à la couche réseau (couche 3) et n'utilise pas de ports au sens des protocoles de transport comme TCP ou UDP.
 
 ## 🛡️ Sécurité du Protocole
 * **Vulnérabilités connues**:
-  * **[[ShadowIT|Visibilité réduite]] / [[ConfigurationDrift|Dérive de configuration]]**: La complexité de la transition ou la méconnaissance d'[[InternetProtocolVersion6|IPv6]] peut entraîner des services [[InternetProtocolVersion6|IPv6]] actifs mais non sécurisés ou [[NetworkMonitoring|monitorés]], créant des failles de [[Security|sécurité]].
-  * **[[Bypass|Contournement des contrôles]]**: Des [[Firewall|pare-feux]] ou [[IntrusionPreventionSystem|IPS]] mal configurés pour [[InternetProtocolVersion6|IPv6]] peuvent être contournés, permettant à des [[Malware|logiciels malveillants]] ou des [[AdvancedPersistentThreat|APT]] de s'infiltrer.
-  * **[[NeighborDiscoveryProtocol|Attaques NDP]]**: Des vulnérabilités similaires au [[AddressResolutionProtocolPoisoning|spoofing ARP]] d'[[InternetProtocolVersion4|IPv4]] existent pour le [[NeighborDiscoveryProtocol|NDP]] (par exemple, [[CachePoisoning|empoisonnement du cache NDP]]), permettant des [[ManInTheMiddle|attaques de l'homme du milieu]].
-  * **[[RouterAdvertisement|Falsification de RA]]**: Un [[ThreatActor|acteur de menace]] peut annoncer de fausses informations de [[Routing|routage]] pour rediriger le [[NetworkTrafficAnalysis|trafic]].
-  * **[[DenialOfService|Attaques DoS]]**: L'exploitation de fragments [[InternetProtocolVersion6|IPv6]] ou de [[Packet|paquets malformés]] peut être utilisée pour des [[DenialOfService|attaques par déni de service]].
+  * **Visibilité réduite / Dérive de configuration**: La complexité de la transition ou la méconnaissance d'IPv6 peut entraîner des services IPv6 actifs mais non sécurisés ou monitorés, créant des failles de sécurité.
+  * **Contournement des contrôles**: Des pare-feux ou IPS mal configurés pour IPv6 peuvent être contournés, permettant à des logiciels malveillants ou des APT de s'infiltrer.
+  * **Attaques NDP**: Des vulnérabilités similaires au spoofing ARP d'IPv4 existent pour le NDP (par exemple, empoisonnement du cache NDP), permettant des attaques de l'homme du milieu.
+  * **Falsification de RA**: Un acteur de menace peut annoncer de fausses informations de routage pour rediriger le trafic.
+  * **Attaques DoS**: L'exploitation de fragments IPv6 ou de paquets malformés peut être utilisée pour des attaques par déni de service.
 * **Sécurité intégrée**:
-  * [[IPsec|IPsec]] est une exigence fondamentale dans [[InternetProtocolVersion6|IPv6]], facilitant le [[Encryption|chiffrement]] de bout en bout et l'[[Authentication|authentification]] des [[Packet|paquets IP]], offrant une base [[Security|sécurisée]] pour les communications.
-  * **[[VulnerabilityManagement|Gestion des vulnérabilités]]**: Audits réguliers des configurations [[InternetProtocolVersion6|IPv6]] pour identifier et corriger les faiblesses.
-  * **[[AccessControl|Contrôle d'accès]]**: Mettre en œuvre des politiques [[NetworkAccessControl|NAC]] pour contrôler les [[NetworkDevice|périphériques]] connectés via [[InternetProtocolVersion6|IPv6]].
-  * **[[Firewall|Configuration des pare-feux]]**: Assurer que les règles de [[Firewall|pare-feu]] sont correctement appliquées au [[NetworkTrafficAnalysis|trafic IPv6]], idéalement en mode "deny by default".
-  * **[[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] / [[IntrusionPreventionSystem|IPS]]**: Déployer des systèmes capables de surveiller et de bloquer les [[Attack|attaques]] spécifiques à [[InternetProtocolVersion6|IPv6]].
-  * **[[NetworkSegmentation|Segmentation réseau]]**: Isoler les [[System|systèmes]] critiques et limiter la propagation des [[Threat|menaces]].
-  * **[[SecurityAwareness|Sensibilisation]]**: Former les [[Team|équipes techniques]] aux spécificités et aux [[SecurityVulnerabilities|risques de sécurité]] d'[[InternetProtocolVersion6|IPv6]].
+  * IPsec est une exigence fondamentale dans IPv6, facilitant le chiffrement de bout en bout et l'authentification des paquets IP, offrant une base sécurisée pour les communications.
+  * **Gestion des vulnérabilités**: Audits réguliers des configurations IPv6 pour identifier et corriger les faiblesses.
+  * **Contrôle d'accès**: Mettre en œuvre des politiques NAC pour contrôler les périphériques connectés via IPv6.
+  * **Configuration des pare-feux**: Assurer que les règles de pare-feu sont correctement appliquées au trafic IPv6, idéalement en mode "deny by default".
+  * **Systèmes de détection d'intrusion (IDS) / IPS**: Déployer des systèmes capables de surveiller et de bloquer les attaques spécifiques à IPv6.
+  * **Segmentation réseau**: Isoler les systèmes critiques et limiter la propagation des menaces.
+  * **Sensibilisation**: Former les équipes techniques aux spécificités et aux risques de sécurité d'IPv6.
 
 ## 🔗 Notes Connexes
-*   [[InternetProtocolVersion4|IPv4]]
-*   [[NeighborDiscoveryProtocol|Neighbor Discovery Protocol (NDP)]]
-*   [[IPsec|IPsec]]
-*   [[NetworkAddressTranslation|NAT]]
-*   [[DualStack|Dual-Stack]]
-*   [[DynamicHostConfigurationProtocol|DHCPv6]]
-*   [[NetworkLayer|Couche réseau]]
-*   [[InternetProtocolSuite|Modèle TCP/IP]]
-*   [[OSIModel|Modèle OSI]]
-*   [[Packet|Paquet]]
-*   [[Routing|Routage]]
-*   [[InternetEngineeringTaskForce|IETF]]
-*   [[InternetAssignedNumbersAuthority|IANA]]
-*   [[UnicastAddress|Adresses Unicast]]
-*   [[Multicast|Multicast]]
-*   [[Anycast|Anycast]]
-*   [[TransitionMechanism|Mécanismes de transition IPv4 vers IPv6]]
-*   [[Wireshark]]
+*   IPv4
+*   Neighbor Discovery Protocol (NDP)
+*   IPsec
+*   NAT
+*   Dual-Stack
+*   DHCPv6
+*   Couche réseau
+*   Modèle TCP/IP
+*   Modèle OSI
+*   Paquet
+*   Routage
+*   IETF
+*   IANA
+*   Adresses Unicast
+*   Multicast
+*   Anycast
+*   Mécanismes de transition IPv4 vers IPv6
+*   Wireshark

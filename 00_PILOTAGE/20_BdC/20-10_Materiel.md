@@ -49,5 +49,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/ManagedSwitch.md|ManagedSwitch]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/UnmanagedSwitch.md|UnmanagedSwitch]]
 - [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Hub.md|Hub]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/MobileDevice.md|MobileDevice]]
+- [[20_BASE_DE_CONNAISSANCES/20-10_Materiel/Smartwatch.md|Smartwatch]]
 
 %% DATAVIEW_PUBLISHER: end %%

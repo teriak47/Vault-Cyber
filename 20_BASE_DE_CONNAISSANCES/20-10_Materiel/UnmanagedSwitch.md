@@ -16,13 +16,13 @@ cssclasses:
 # Commutateur non géré (Unmanaged Switch)
 
 ## 🎯 Rôle et Fonction
-> Un [[NetworkSwitch|commutateur réseau]] non géré est un [[NetworkDevice|périphérique réseau]] de base qui permet la connexion de plusieurs [[EndDevices|appareils terminaux]] au sein d'un [[LocalAreaNetwork|réseau local]]. Il fonctionne sur le principe du "plug-and-play", sans nécessiter de [[NetworkConfiguration|configuration]] manuelle. Son rôle principal est de transférer les [[EthernetFrame|trames Ethernet]] entre les appareils connectés en utilisant les [[MediaAccessControlAddress|adresses MAC]] pour diriger le trafic de manière efficace à la [[DataLinkLayer|Couche Liaison de Données]] du [[OpenSystemsInterconnectionModel|Modèle OSI]].
+> Un commutateur réseau non géré est un périphérique réseau de base qui permet la connexion de plusieurs appareils terminaux au sein d'un réseau local. Il fonctionne sur le principe du "plug-and-play", sans nécessiter de configuration manuelle. Son rôle principal est de transférer les trames Ethernet entre les appareils connectés en utilisant les adresses MAC pour diriger le trafic de manière efficace à la Couche Liaison de Données du Modèle OSI.
 
 ## 🛠️ Caractéristiques Techniques
-*   **Type / Catégories**: Généralement compact et simple, il est souvent utilisé dans les [[SmallHomeNetworks|petits réseaux domestiques]] ou les [[SOHONetwork|petits bureaux]].
-*   **Connectique**: Dispose de plusieurs [[RJ45Connector|ports RJ45]] pour les [[EthernetPatchCable|câbles Ethernet]] ([[TwistedPairCable|paires torsadées]]).
-*   **Performances**: Prise en charge de diverses vitesses ([[MegabitsPerSecond|Mbps]], [[GigabitsPerSecond|Gbps]]) avec auto-négociation (vitesse et duplex).
-*   **Normes associées**: Conforme au [[EthernetProtocol|protocole Ethernet]] ([[InstituteOfElectricalAndElectronicsEngineers|IEEE]] [[Ethernet|802.3]]).
+*   **Type / Catégories**: Généralement compact et simple, il est souvent utilisé dans les petits réseaux domestiques ou les petits bureaux.
+*   **Connectique**: Dispose de plusieurs ports RJ45 pour les câbles Ethernet (paires torsadées).
+*   **Performances**: Prise en charge de diverses vitesses (Mbps, Gbps) avec auto-négociation (vitesse et duplex).
+*   **Normes associées**: Conforme au protocole Ethernet (IEEE 802.3).
 
 ## ✅ Avantages et Inconvénients
 *   **Avantages**:
@@ -30,17 +30,17 @@ cssclasses:
     *   Faible coût d'acquisition.
     *   Maintenance minimale.
 *   **Inconvénients**:
-    *   Manque de fonctionnalités de [[Security|sécurité]] avancées.
-    *   Pas de [[VirtualLocalAreaNetwork|VLAN]] pour la [[NetworkSegmentation|segmentation du réseau]].
-    *   Pas de [[QualityOfService|gestion de la qualité de service (QoS)]].
-    *   Absence de [[NetworkMonitoring|capacités de surveillance]] ou de [[TrafficManagement|gestion du trafic]].
+    *   Manque de fonctionnalités de sécurité avancées.
+    *   Pas de VLAN pour la segmentation du réseau.
+    *   Pas de gestion de la qualité de service (QoS).
+    *   Absence de capacités de surveillance ou de gestion du trafic.
 
 ## 🔒 Considérations de Sécurité Physique
-*   [[PhysicalSecurity|Protection contre l'accès non autorisé]]
+*   Protection contre l'accès non autorisé
 *   Contrôles environnementaux (température, humidité)
 
 ## 🔗 Notes Connexes
-*   **Alternative plus avancée**: [[ManagedSwitch|Commutateur géré]]
-*   **Concept de sécurité pertinent**: [[PortSecurity|Sécurité des ports]]
-*   **Modèle de référence associé**: [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   **Impact sur la posture de sécurité**: [[AttackSurface|Surface d'attaque]]
+*   **Alternative plus avancée**: Commutateur géré
+*   **Concept de sécurité pertinent**: Sécurité des ports
+*   **Modèle de référence associé**: Modèle OSI
+*   **Impact sur la posture de sécurité**: Surface d'attaque

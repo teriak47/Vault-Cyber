@@ -12,25 +12,25 @@ cssclasses:
 # Identité Utilisateur
 
 ## 📥 Définition en une phrase
-> L'[[UserIdentity|identité utilisateur]] est l'ensemble des attributs et informations qui définissent un [[User|utilisateur]] au sein d'un [[System|système]] ou d'un [[Network|réseau]], permettant son [[Identification|identification]], son [[Authentication|authentification]] et son [[Authorization|autorisation]] à accéder à des [[Resource|ressources]].
+> L'identité utilisateur est l'ensemble des attributs et informations qui définissent un utilisateur au sein d'un système ou d'un réseau, permettant son identification, son authentification et son autorisation à accéder à des ressources.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Identification|Identification]]**: Le processus par lequel un [[User|utilisateur]] déclare qui il est à un [[System|système]]. C'est la première étape pour établir une [[UserIdentity|identité utilisateur]].
-*   **[[Authentication|Authentification]]**: La vérification de la revendication d'[[Identification|identité]] d'un [[User|utilisateur]]. Cela confirme que l'[[User|utilisateur]] est bien celui qu'il prétend être, souvent via un [[Password|mot de passe]], [[Biometric|biométrie]] ou [[MultiFactorAuthentication|MFA]].
-*   **[[Authorization|Autorisation]]**: L'ensemble des permissions et des droits accordés à une [[UserIdentity|identité utilisateur]] [[Authentication|authentifiée]], déterminant quelles [[Resource|ressources]] le [[User|utilisateur]] peut [[AccessControl|accéder]] et quelles [[Task|tâches]] il peut effectuer.
-*   **[[IdentityAndAccessManagement|Gestion des Identités et des Accès (IAM)]]**: Les processus et technologies permettant de gérer le cycle de vie des [[UserIdentity|identités utilisateur]] et leurs droits d'[[AccessControl|accès]] tout au long de leur présence dans l'[[Enterprise|entreprise]].
+*   **Identification**: Le processus par lequel un utilisateur déclare qui il est à un système. C'est la première étape pour établir une identité utilisateur.
+*   **Authentification**: La vérification de la revendication d'identité d'un utilisateur. Cela confirme que l'utilisateur est bien celui qu'il prétend être, souvent via un mot de passe, biométrie ou MFA.
+*   **Autorisation**: L'ensemble des permissions et des droits accordés à une identité utilisateur authentifiée, déterminant quelles ressources le utilisateur peut accéder et quelles tâches il peut effectuer.
+*   **Gestion des Identités et des Accès (IAM)**: Les processus et technologies permettant de gérer le cycle de vie des identités utilisateur et leurs droits d'accès tout au long de leur présence dans l'entreprise.
 
 ## 💡 Importance en Cybersécurité
-> La gestion rigoureuse des [[UserIdentity|identités utilisateur]] est fondamentale pour la [[Cybersecurity|cybersécurité]] car elle constitue la base du [[AccessControl|contrôle d'accès]] et du [[PrincipleOfLeastPrivilege|principe du moindre privilège]]. Une [[UserIdentity|identité utilisateur]] mal gérée ou compromise peut entraîner un [[UnauthorizedAccess|accès non autorisé]], une [[AccountTakeover|prise de contrôle de compte]], la [[DataTheft|fuite de données]] ou la [[SystemCompromise|compromission du système]], représentant une [[Threat|menace]] majeure pour la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[Resource|ressources]].
+> La gestion rigoureuse des identités utilisateur est fondamentale pour la cybersécurité car elle constitue la base du contrôle d'accès et du principe du moindre privilège. Une identité utilisateur mal gérée ou compromise peut entraîner un accès non autorisé, une prise de contrôle de compte, la fuite de données ou la compromission du système, représentant une menace majeure pour la confidentialité, l'intégrité et l'disponibilité des ressources.
 
 ## 🔗 Notes Connexes
-*   [[Account|Compte]]
-*   [[Authentication|Authentification]]
-*   [[Authorization|Autorisation]]
-*   [[AccessControl|Contrôle d'accès]]
-*   [[IdentityAndAccessManagement|Gestion des Identités et des Accès]]
-*   [[PrincipleOfLeastPrivilege|Principe du Moindre Privilège]]
-*   [[ZeroTrust|Zéro Confiance]]
-*   [[Password|Mot de passe]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
-*   [[User|Utilisateur]]
+*   Compte
+*   Authentification
+*   Autorisation
+*   Contrôle d'accès
+*   Gestion des Identités et des Accès
+*   Principe du Moindre Privilège
+*   Zéro Confiance
+*   Mot de passe
+*   Authentification Multi-Facteurs (MFA)
+*   Utilisateur

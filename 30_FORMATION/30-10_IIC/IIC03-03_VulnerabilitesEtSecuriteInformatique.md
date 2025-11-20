@@ -15,23 +15,23 @@ cssclasses:
 
 > [!GOAL] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
-> 1. Comprendre la nature des [[Vulnerability.md|vulnérabilités]] logicielles et matérielles, et la différence entre une [[Vulnerability.md|vulnérabilité]], un [[Exploit.md|exploit]] et une [[DigitalAttack.md|attaque]].
+> 1. Comprendre la nature des [[Vulnerability|vulnérabilités]] logicielles et matérielles, et la différence entre une [[Vulnerability|vulnérabilité]], un [[Exploit.md|exploit]] et une [[DigitalAttack.md|attaque]].
 > 2. Identifier les mesures de protection essentielles pour les [[Device.md|appareils]] et les [[WirelessNetwork.md|réseaux sans fil]].
 > 3. Saisir les principes fondamentaux de la [[Cryptocurrency.md|cryptomonnaie]], de la [[Blockchain.md|blockchain]] et la menace du [[Cryptojacking.md|cryptojacking]].
 
 ## 📝 Synthèse du Cours
 
-### 1. Comprendre les [[Vulnerability.md|Vulnérabilités]] et les [[DigitalAttack.md|Attaques]]
+### 1. Comprendre les [[Vulnerability|Vulnérabilités]] et les [[DigitalAttack.md|Attaques]]
 
-Les [[SecurityVulnerabilities.md|vulnérabilités de sécurité]] sont des faiblesses inhérentes aux systèmes matériels ou logiciels, que les [[ThreatActor.md|cybercriminels]] peuvent exploiter.
+Les [[SecurityVulnerabilities|vulnérabilités de sécurité]] sont des faiblesses inhérentes aux systèmes matériels ou logiciels, que les [[ThreatActor.md|cybercriminels]] peuvent exploiter.
 
 *   **Relation entre Vulnérabilité, Exploit et Attaque :**
-    *   Une [[Vulnerability.md|Vulnérabilité]] est un défaut ou une faille dans un système.
-    *   Un [[Exploit.md|Exploit]] est un programme ou un code conçu pour tirer parti d'une [[Vulnerability.md|vulnérabilité]] spécifique.
+    *   Une [[Vulnerability|Vulnérabilité]] est un défaut ou une faille dans un système.
+    *   Un [[Exploit.md|Exploit]] est un programme ou un code conçu pour tirer parti d'une [[Vulnerability|vulnérabilité]] spécifique.
     *   Une [[DigitalAttack.md|Attaque]] est l'action malveillante utilisant un [[Exploit.md|exploit]] pour accéder illégalement aux [[System.md|systèmes]], aux [[Data.md|données]] ou aux [[Resource.md|ressources]].
 
 > [!NOTE] Définition Clé
-> **[[Exploit.md|Exploit]]** : Code ou programme écrit pour profiter d'une [[Vulnerability.md|vulnérabilité]] connue dans un [[Software.md|logiciel]] ou un [[Hardware.md|matériel]].
+> **[[Exploit.md|Exploit]]** : Code ou programme écrit pour profiter d'une [[Vulnerability|vulnérabilité]] connue dans un [[Software.md|logiciel]] ou un [[Hardware.md|matériel]].
 
 #### 1.1 Types de [[SoftwareVulnerability.md|Vulnérabilités Logicielles]] courantes
 
@@ -42,17 +42,17 @@ Les [[SecurityVulnerabilities.md|vulnérabilités de sécurité]] sont des faibl
     *   Se produit lorsque les [[Data.md|données]] saisies par l'[[User.md|utilisateur]] ne sont pas correctement vérifiées ou filtrées.
     *   Des [[Data.md|données]] malveillantes peuvent alors manipuler le [[SoftwareApplication.md|programme]], par exemple en forçant des allocations [[MemoryManagement.md|mémoire]] incorrectes.
 *   **Situation de Compétition (Race Condition)** :
-    *   [[Vulnerability.md|Vulnérabilité]] où le résultat d'une opération dépend de l'ordre ou du timing des événements, et que ces événements ne se produisent pas comme prévu.
+    *   [[Vulnerability|Vulnérabilité]] où le résultat d'une opération dépend de l'ordre ou du timing des événements, et que ces événements ne se produisent pas comme prévu.
     *   Peut ouvrir une fenêtre d'[[Exploitation.md|exploitation]] si un [[ThreatActor.md|attaquant]] peut influencer l'ordonnancement.
 
-#### 1.2 [[SecurityVulnerabilities.md|Failles de Sécurité]] Critiques
+#### 1.2 [[SecurityVulnerabilities|Failles de Sécurité]] Critiques
 
 *   **Mesures de Sécurité Défaillantes** :
-    *   L'utilisation de bibliothèques de [[Security.md|sécurité]] non testées ou d'algorithmes de [[Encryption.md|chiffrement]] maison peut introduire de nouvelles [[Vulnerability.md|vulnérabilités]].
+    *   L'utilisation de bibliothèques de [[Security.md|sécurité]] non testées ou d'algorithmes de [[Encryption.md|chiffrement]] maison peut introduire de nouvelles [[Vulnerability|vulnérabilités]].
     *   Exemples : [[Authentication.md|Authentification]] faible, [[Authorization.md|Autorisation]] insuffisante, [[DataEncryption.md|Chiffrement inadéquat]].
 *   **[[AccessControl.md|Contrôle d'Accès]] Déficient** :
     *   Le [[AccessControl.md|Contrôle d'Accès]] gère qui peut interagir avec les [[Resource.md|ressources]] et quelles [[Permission.md|permissions]] sont accordées.
-    *   Une mauvaise configuration ou implémentation du [[AccessControl.md|Contrôle d'Accès]] est une source majeure de [[SecurityVulnerabilities.md|vulnérabilités]].
+    *   Une mauvaise configuration ou implémentation du [[AccessControl.md|Contrôle d'Accès]] est une source majeure de [[SecurityVulnerabilities|vulnérabilités]].
     *   L'[[PhysicalSecurity.md|accès physique]] direct à un [[Device.md|appareil]] peut potentiellement contourner les [[SecurityControl.md|contrôles logiciels]]. Le [[DataEncryption.md|chiffrement]] et la [[PhysicalSecurity.md|limitation d'accès physique]] sont donc cruciaux.
 
 ### 2. La [[Cryptocurrency.md|Cryptomonnaie]] et la [[Blockchain.md|Blockchain]]
@@ -89,7 +89,7 @@ La [[Security.md|sécurité]] de vos [[Device.md|appareils]] est primordiale car
 *   **Mesures de [[Prevention.md|Protection]] Essentielles :**
     1.  **Activer le [[Firewall.md|Pare-feu]]** : Utilisez un [[Firewall.md|pare-feu]] logiciel ou matériel, maintenu à jour, pour contrôler le [[NetworkTraffic.md|trafic réseau]] et empêcher les [[UnauthorizedAccess.md|accès non autorisés]].
     2.  **[[Antivirus.md|Antivirus]] et [[Spyware.md|Anti-espion]]** : Installez des [[Antivirus.md|logiciels antivirus]] et anti-[[Spyware.md|espions]] pour détecter et neutraliser les [[Virus.md|virus]], [[Spyware.md|logiciels espions]] et autres [[Malware.md|programmes malveillants]].
-    3.  **[[PatchManagement.md|Mises à Jour Système]]** : Maintenez votre [[OperatingSystem.md|système d'exploitation]] ([[OS.md|OS]]), vos [[WebBrowsers.md|navigateurs web]] et toutes vos [[SoftwareApplication.md|applications]] à jour avec les derniers [[SoftwarePatching.md|correctifs de sécurité]] pour corriger les [[SoftwareVulnerability.md|vulnérabilités connues]].
+    3.  **[[PatchManagement.md|Mises à Jour Système]]** : Maintenez votre [[OperatingSystem.md|système d'exploitation]] ([[OperatingSystem|OS]]), vos [[WebBrowsers.md|navigateurs web]] et toutes vos [[SoftwareApplication.md|applications]] à jour avec les derniers [[SoftwarePatching.md|correctifs de sécurité]] pour corriger les [[SoftwareVulnerability.md|vulnérabilités connues]].
 
 #### 3.1 [[Password.md|Sécurité des Mots de Passe]] et [[DataEncryption.md|Chiffrement]]
 
@@ -104,10 +104,10 @@ La [[Security.md|sécurité]] de vos [[Device.md|appareils]] est primordiale car
 
 #### 3.2 [[WirelessNetworkSecurity.md|Sécurité du Réseau Sans Fil]]
 
-Les [[WirelessFidelity.md|réseaux Wi-Fi]] permettent la [[DigitalConnectivity.md|connectivité]] des [[WirelessDevices.md|appareils]] via le [[ServiceSetIdentifier.md|SSID]]. Une [[NetworkConfiguration.md|configuration]] sécurisée est essentielle.
+Les [[WirelessFidelity.md|réseaux Wi-Fi]] permettent la [[DigitalConnectivity.md|connectivité]] des [[WirelessDevices.md|appareils]] via le [[ServiceSetIdentifier|SSID]]. Une [[NetworkConfiguration.md|configuration]] sécurisée est essentielle.
 
 *   **Bonnes Pratiques de [[WirelessRouterConfiguration.md|Configuration]] :**
-    *   **Modifier les Paramètres par Défaut** : Les [[ThreatActor.md|hackers]] connaissent les [[ServiceSetIdentifier.md|SSID]] et [[Password.md|mots de passe]] par défaut. Changez-les immédiatement pour prévenir les [[Intrusion.md|intrusions]].
+    *   **Modifier les Paramètres par Défaut** : Les [[ThreatActor.md|hackers]] connaissent les [[ServiceSetIdentifier|SSID]] et [[Password.md|mots de passe]] par défaut. Changez-les immédiatement pour prévenir les [[Intrusion|intrusions]].
     *   **Activer le [[WirelessProtectedAccessTwo.md|Chiffrement WPA2]] (ou [[WirelessProtectedAccessThree.md|WPA3]])** : Activez le [[WirelessProtectedAccessTwo.md|WPA2]] (ou idéalement le [[WirelessProtectedAccessThree.md|WPA3]]) sur votre [[WirelessRouter.md|routeur sans fil]] pour [[DataEncryption.md|chiffrer]] les [[NetworkCommunication.md|communications sans fil]].
     *   **[[SecurityMonitoring.md|Surveillance Continue]]** : Vérifiez régulièrement votre [[WirelessNetwork.md|réseau sans fil]] pour détecter toute [[UnauthorizedAccess.md|connexion non autorisée]] et maintenir la [[Security.md|sécurité]].
 
@@ -118,9 +118,9 @@ Les [[WirelessFidelity.md|réseaux Wi-Fi]] permettent la [[DigitalConnectivity.m
 
 ## ❓ Quiz de Révision (Active Recall)
 > [!QUESTION] Question 1
-> Quelle est la distinction fondamentale entre une [[Vulnerability.md|vulnérabilité]] et un [[Exploit.md|exploit]] dans le contexte de la [[Cybersecurity.md|cybersécurité]] ?
+> Quelle est la distinction fondamentale entre une [[Vulnerability|vulnérabilité]] et un [[Exploit.md|exploit]] dans le contexte de la [[Cybersecurity|cybersécurité]] ?
 > > [!success]- Réponse
-> > Une **[[Vulnerability.md|vulnérabilité]]** est une faiblesse ou un défaut dans un [[Software.md|logiciel]], [[Hardware.md|matériel]] ou configuration. Un **[[Exploit.md|exploit]]** est un morceau de [[Script.md|code]] ou une technique spécifiquement conçue pour tirer parti de cette [[Vulnerability.md|vulnérabilité]] et provoquer un comportement non désiré (comme un [[UnauthorizedAccess.md|accès non autorisé]] ou une [[SystemCompromise.md|compromission]]).
+> > Une **[[Vulnerability|vulnérabilité]]** est une faiblesse ou un défaut dans un [[Software.md|logiciel]], [[Hardware.md|matériel]] ou configuration. Un **[[Exploit.md|exploit]]** est un morceau de [[Script.md|code]] ou une technique spécifiquement conçue pour tirer parti de cette [[Vulnerability|vulnérabilité]] et provoquer un comportement non désiré (comme un [[UnauthorizedAccess.md|accès non autorisé]] ou une [[SystemCompromise.md|compromission]]).
 
 > [!QUESTION] Question 2
 > Décrivez le rôle du "minage" dans le processus de [[Blockchain.md|transaction blockchain]].
@@ -136,7 +136,7 @@ Les [[WirelessFidelity.md|réseaux Wi-Fi]] permettent la [[DigitalConnectivity.m
 > > 3.  **Appliquer systématiquement les [[PatchManagement.md|mises à jour système]] et les [[SoftwarePatching.md|correctifs de sécurité]]** pour l'[[OperatingSystem.md|OS]] et les [[SoftwareApplication.md|applications]].
 > > 4.  Utiliser des [[StrongPassword.md|mots de passe forts]] et uniques pour tous les [[Device.md|appareils]] et [[OnlineServices.md|services en ligne]].
 > > 5.  Activer le [[DataEncryption.md|chiffrement des données]] pour les [[SensitiveData.md|informations sensibles]] stockées.
-> > 6.  Modifier les paramètres par défaut de votre [[WirelessRouter.md|routeur sans fil]] ([[ServiceSetIdentifier.md|SSID]], [[Password.md|mot de passe]]).
+> > 6.  Modifier les paramètres par défaut de votre [[WirelessRouter.md|routeur sans fil]] ([[ServiceSetIdentifier|SSID]], [[Password.md|mot de passe]]).
 > > 7.  Activer le [[WirelessProtectedAccessTwo.md|chiffrement WPA2]] (ou [[WirelessProtectedAccessThree.md|WPA3]]) sur votre [[WirelessNetwork.md|réseau sans fil]].
 
 ## 🔗 Notes Connexes

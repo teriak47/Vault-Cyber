@@ -14,31 +14,31 @@ cssclasses:
 # Cryptojacking (Détournement de Cryptomonnaie)
 
 ## 📥 Définition
-> Le cryptojacking est l'utilisation [[UnauthorizedAccess|non autorisée]] des [[Resource|ressources informatiques]] d'une victime (CPU, GPU) pour miner des [[Cryptocurrency|cryptomonnaies]] à son insu et sans son consentement.
+> Le cryptojacking est l'utilisation non autorisée des ressources informatiques d'une victime (CPU, GPU) pour miner des cryptomonnaies à son insu et sans son consentement.
 
 ## 🎯 Vecteurs d'Attaque
-*   **[[MalwareInstallation|Installation de logiciel malveillant]]** : Le [[Malware|logiciel malveillant]] est installé via des techniques comme le [[Phishing|hameçonnage]], le [[DriveByDownload|téléchargement furtif]] ou l'[[VulnerabilityExploitation|exploitation de vulnérabilités]].
-*   **[[WebsitesCompromised|Sites web compromis]] / [[MaliciousAdvertisements|Publicités malveillantes]]** : Injection de [[MaliciousScript|scripts malveillants]] (souvent JavaScript) dans des pages web ou des publicités, qui s'exécutent discrètement dans le [[WebBrowsers|navigateur]] de la victime.
+*   **Installation de logiciel malveillant** : Le logiciel malveillant est installé via des techniques comme le hameçonnage, le téléchargement furtif ou l'exploitation de vulnérabilités.
+*   **Sites web compromis / Publicités malveillantes** : Injection de scripts malveillants (souvent JavaScript) dans des pages web ou des publicités, qui s'exécutent discrètement dans le navigateur de la victime.
 
 ## 💥 Impacts Potentiels
-*   [[SystemPerformanceDegradation|Dégradation des performances du système]]
-*   [[IncreasedEnergyConsumption|Augmentation de la consommation électrique]] et des coûts
-*   [[HardwareDamage|Dommage matériel]] potentiel dû à la surchauffe et à l'usure prématurée
-*   [[SecurityBreach|Violation de sécurité]] (si l'infection mène à d'autres [[Malware|logiciels malveillants]])
-*   [[FinancialLoss|Perte financière]] indirecte pour la victime (coût de l'électricité)
+*   Dégradation des performances du système
+*   Augmentation de la consommation électrique et des coûts
+*   Dommage matériel potentiel dû à la surchauffe et à l'usure prématurée
+*   Violation de sécurité (si l'infection mène à d'autres logiciels malveillants)
+*   Perte financière indirecte pour la victime (coût de l'électricité)
 
 ##  concret
-> Un attaquant compromet un site web populaire et y injecte un [[MaliciousScript|script]] de [[Cryptojacking|cryptominage]]. Lorsqu'une victime visite ce site avec son [[WebBrowsers|navigateur]], le script s'exécute en arrière-plan, utilisant la puissance de calcul de son [[Computer|ordinateur]] (CPU/GPU) pour miner des [[Cryptocurrency|cryptomonnaies]] pour le compte de l'attaquant, sans que la victime ne s'en aperçoive, à part une [[SystemPerformanceDegradation|lenteur]] anormale.
+> Un attaquant compromet un site web populaire et y injecte un script de cryptominage. Lorsqu'une victime visite ce site avec son navigateur, le script s'exécute en arrière-plan, utilisant la puissance de calcul de son ordinateur (CPU/GPU) pour miner des cryptomonnaies pour le compte de l'attaquant, sans que la victime ne s'en aperçoive, à part une lenteur anormale.
 
 ## 🛡️ Mesures de Mitigation
-*   **Prévention** : [[Antivirus|Logiciel antivirus]] et [[EndpointDetectionAndResponse|EDR]] à jour, [[AdBlocker|bloqueurs de publicités]] et [[BrowserSecurityExtensions|extensions de sécurité pour navigateurs]], [[PatchManagement|mises à jour régulières]] des [[OperatingSystem|systèmes d'exploitation]] et [[Software|logiciels]]. Pour les administrateurs web, un [[WebApplicationFirewall|WAF]] est recommandé.
-*   **Détection** : Surveillance des performances du [[System|système]] et de l'activité réseau pour identifier une [[IncreasedEnergyConsumption|consommation anormale de ressources]].
-*   **Réponse** : [[IncidentResponse|Plan de réponse à incident]] pour nettoyer les systèmes infectés et renforcer la [[Security|sécurité]].
+*   **Prévention** : Logiciel antivirus et EDR à jour, bloqueurs de publicités et extensions de sécurité pour navigateurs, mises à jour régulières des systèmes d'exploitation et logiciels. Pour les administrateurs web, un WAF est recommandé.
+*   **Détection** : Surveillance des performances du système et de l'activité réseau pour identifier une consommation anormale de ressources.
+*   **Réponse** : Plan de réponse à incident pour nettoyer les systèmes infectés et renforcer la sécurité.
 
 ## 🔗 Notes Connexes
-*   [[Malware|Logiciel Malveillant]]
-*   [[Phishing|Hameçonnage]]
-*   [[DriveByDownload|Téléchargement Furtif]]
-*   [[Cryptocurrency|Cryptomonnaie]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[Botnet|Botnet]]
+*   Logiciel Malveillant
+*   Hameçonnage
+*   Téléchargement Furtif
+*   Cryptomonnaie
+*   Vulnérabilité
+*   Botnet

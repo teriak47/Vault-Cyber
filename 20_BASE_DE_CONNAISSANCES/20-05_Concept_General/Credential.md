@@ -14,29 +14,29 @@ cssclasses:
 # Identifiant (Credential)
 
 ## 📥 Définition en une phrase
-> Un [[Credential|identifiant]] est un ensemble d'informations ou de preuves utilisées pour vérifier l'[[UserIdentity|identité]] d'un [[User|utilisateur]], d'un [[System|système]] ou d'une [[SoftwareApplication|application]] afin d'accorder ou de refuser l'[[AccessControl|accès]] à une [[Resource|ressource]].
+> Un identifiant est un ensemble d'informations ou de preuves utilisées pour vérifier l'identité d'un utilisateur, d'un système ou d'une application afin d'accorder ou de refuser l'accès à une ressource.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Composition**: Les [[Credential|identifiants]] peuvent inclure un [[Username|nom d'utilisateur]] et un [[Password|mot de passe]], des [[DigitalSignature|signatures numériques]], des [[Biometric|données biométriques]] (empreintes digitales, reconnaissance faciale), des jetons de sécurité ou des [[DigitalCertificate|certificats numériques]].
-*   **[[Authentication|Authentification]]**: Le processus par lequel le [[System|système]] vérifie les [[Credential|identifiants]] pour confirmer l'[[UserIdentity|identité]] déclarée de l'[[User|utilisateur]]. C'est la première étape avant d'accorder l'accès.
-*   **Protection**: La [[Security|sécurité]] des [[Credential|identifiants]] est primordiale et repose sur l'utilisation de [[StrongPassword|mots de passe forts]], la [[MultiFactorAuthentication|MFA]], et des pratiques de [[SecureStorage|stockage sécurisé]] pour prévenir les [[UnauthorizedAccess|accès non autorisés]].
+*   **Composition**: Les identifiants peuvent inclure un nom d'utilisateur et un mot de passe, des signatures numériques, des données biométriques (empreintes digitales, reconnaissance faciale), des jetons de sécurité ou des certificats numériques.
+*   **Authentification**: Le processus par lequel le système vérifie les identifiants pour confirmer l'identité déclarée de l'utilisateur. C'est la première étape avant d'accorder l'accès.
+*   **Protection**: La sécurité des identifiants est primordiale et repose sur l'utilisation de mots de passe forts, la MFA, et des pratiques de stockage sécurisé pour prévenir les accès non autorisés.
 
 ## 💡 Importance en Cybersécurité
-> Les [[Credential|identifiants]] sont la première ligne de [[Security|défense]] pour protéger les [[System|systèmes]] et les [[Data|données]]. Leur compromission est une voie majeure pour les [[Attack|attaques]] telles que le [[CredentialStuffing|bourrage d'identifiants]], l'[[AccountTakeover|prise de contrôle de compte]] et l'[[UnauthorizedAccess|accès non autorisé]], rendant leur gestion et leur protection fondamentales pour la [[Cybersecurity|cybersécurité]] d'une [[Enterprise|entreprise]].
+> Les identifiants sont la première ligne de défense pour protéger les systèmes et les données. Leur compromission est une voie majeure pour les attaques telles que le bourrage d'identifiants, l'prise de contrôle de compte et l'accès non autorisé, rendant leur gestion et leur protection fondamentales pour la cybersécurité d'une entreprise.
 
 ## 🔗 Notes Connexes
-*   [[Authentication]]
-*   [[Authorization]]
-*   [[Password]]
-*   [[Username]]
-*   [[MultiFactorAuthentication|MFA]]
-*   [[StrongPassword|Mots de passe forts]]
-*   [[PasswordManager|Gestionnaire de Mots de Passe]]
-*   [[CredentialStuffing|Bourrage d'identifiants]]
-*   [[AccountTakeover|Prise de contrôle de compte]]
-*   [[IdentityAndAccessManagement|IAM]]
-*   [[Account|Compte]]
-*   [[Login]]
-*   [[Biometric|Biométrie]]
-*   [[SecureStorage|Stockage Sécurisé]]
-*   [[UnauthorizedAccess|Accès Non Autorisé]]
+*   Authentication
+*   Authorization
+*   Password
+*   Username
+*   MFA
+*   Mots de passe forts
+*   Gestionnaire de Mots de Passe
+*   Bourrage d'identifiants
+*   Prise de contrôle de compte
+*   IAM
+*   Compte
+*   Login
+*   Biométrie
+*   Stockage Sécurisé
+*   Accès Non Autorisé

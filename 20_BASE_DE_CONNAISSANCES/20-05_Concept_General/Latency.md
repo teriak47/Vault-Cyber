@@ -15,28 +15,28 @@ cssclasses:
 # Latence (Latency)
 
 ## 📥 Définition en une phrase
-> La latence est le délai temporel mesurable entre l'envoi d'un [[SignalTransmission|signal]] et sa réception, ou entre une instruction et le début de son exécution dans un [[Network|réseau]] ou un [[System|système]] [[Computer|informatique]].
+> La latence est le délai temporel mesurable entre l'envoi d'un signal et sa réception, ou entre une instruction et le début de son exécution dans un réseau ou un système informatique.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Mesure** : Généralement exprimée en [[BitsPerSecond|millisecondes]] (ms), elle quantifie le temps nécessaire à un [[Packet|paquet]] de [[Data|données]] pour traverser un [[CommunicationChannel|canal de communication]]. Le [[RoundTripTime|temps d'aller-retour (RTT)]] est une mesure courante.
-*   **Causes** : Elle peut être due à la [[Distance|distance géographique]], la [[NetworkCongestion|congestion du réseau]], le nombre de sauts (hops) à travers des [[Router|routeurs]], les performances des [[NetworkDevice|équipements réseau]], et les traitements intermédiaires (ex: [[Firewall|pare-feu]], [[Proxy|proxies]]).
-*   **Impact** : Une [[Latency|latence]] élevée dégrade l'[[UserExperience|expérience utilisateur]] pour les [[SoftwareApplication|applications]] interactives telles que les [[OnlineGaming|jeux en ligne]], la [[VoIP|Voix sur IP]] et la [[VideoConferencing|visioconférence]], ainsi que pour les [[Transaction|transactions]] sensibles au temps.
-*   **Variabilité** : La [[Jitter|gigue]] est la variation de la latence au fil du temps, affectant la qualité des [[RealTimeCommunication|communications en temps réel]].
+*   **Mesure** : Généralement exprimée en millisecondes (ms), elle quantifie le temps nécessaire à un paquet de données pour traverser un canal de communication. Le temps d'aller-retour (RTT) est une mesure courante.
+*   **Causes** : Elle peut être due à la distance géographique, la congestion du réseau, le nombre de sauts (hops) à travers des routeurs, les performances des équipements réseau, et les traitements intermédiaires (ex: pare-feu, proxies).
+*   **Impact** : Une latence élevée dégrade l'expérience utilisateur pour les applications interactives telles que les jeux en ligne, la Voix sur IP et la visioconférence, ainsi que pour les transactions sensibles au temps.
+*   **Variabilité** : La gigue est la variation de la latence au fil du temps, affectant la qualité des communications en temps réel.
 
 ## 💡 Importance en Cybersécurité
-> La [[Latency|latence]] est un indicateur crucial de la [[NetworkPerformance|performance réseau]] et de la [[Availability|disponibilité]] des [[System|systèmes]], un pilier fondamental de la [[CIATriad|triade CIA]]. Une augmentation soudaine ou persistante de la [[Latency|latence]] peut signaler des [[Attack|attaques]] comme le [[DenialOfService|déni de service]] ou le [[DistributedDenialOfService|déni de service distribué]], des [[NetworkCongestion|congestions réseau]] dues à des [[Malware|logiciels malveillants]] ([[Botnet|botnets]]) ou des [[ConfigurationDrift|dérives de configuration]]. Sa surveillance est essentielle pour détecter les anomalies et maintenir la [[Security|sécurité]] opérationnelle.
+> La latence est un indicateur crucial de la performance réseau et de la disponibilité des systèmes, un pilier fondamental de la triade CIA. Une augmentation soudaine ou persistante de la latence peut signaler des attaques comme le déni de service ou le déni de service distribué, des congestions réseau dues à des logiciels malveillants (botnets) ou des dérives de configuration. Sa surveillance est essentielle pour détecter les anomalies et maintenir la sécurité opérationnelle.
 
 ## 🔗 Notes Connexes
-*   [[Bandwidth|Bande passante]]
-*   [[Throughput|Débit]]
-*   [[Jitter|Gigue]]
-*   [[NetworkPerformance|Performance Réseau]]
-*   [[RoundTripTime|Temps d'Aller-Retour (RTT)]]
-*   [[NetworkMonitoring|Surveillance réseau]]
-*   [[QualityOfService|Qualité de Service (QoS)]]
-*   [[ContentDeliveryNetwork|Content Delivery Network (CDN)]]
-*   [[BandwidthManagement|Gestion de la bande passante]]
-*   [[DenialOfService|Déni de Service]]
-*   [[DistributedDenialOfService|Déni de Service Distribué]]
-*   [[NetworkCongestion|Congestion Réseau]]
-*   [[EdgeComputing|Edge Computing]]
+*   Bande passante
+*   Débit
+*   Gigue
+*   Performance Réseau
+*   Temps d'Aller-Retour (RTT)
+*   Surveillance réseau
+*   Qualité de Service (QoS)
+*   Content Delivery Network (CDN)
+*   Gestion de la bande passante
+*   Déni de Service
+*   Déni de Service Distribué
+*   Congestion Réseau
+*   Edge Computing

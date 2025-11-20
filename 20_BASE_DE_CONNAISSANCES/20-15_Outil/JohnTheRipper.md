@@ -22,12 +22,12 @@ source:
 # John the Ripper (JTR)
 
 ## 🎯 Objectif Principal
-[[JohnTheRipper|John the Ripper]] (JTR) est un [[OpenSource|logiciel libre]] et un [[Tool|outil]] de [[PasswordCracking|cassage de mots de passe]] largement reconnu dans la communauté de la [[Cybersecurity|cybersécurité]]. Son objectif principal est d'auditer la [[StrongPasswordPolicy|robustesse des mots de passe]] en identifiant ceux qui sont faibles ou vulnérables à des [[PasswordAttacks|attaques]] par [[DictionaryAttack|dictionnaire]] ou [[BruteForceAttack|force brute]]. Il supporte une multitude de [[Hashing|fonctions de hachage]] utilisées pour stocker les [[Password|mots de passe]] sur divers [[OperatingSystem|systèmes d'exploitation]] comme [[Linux]], [[MacOS]], [[Windows]] et [[Unix]]. Utilisé principalement par les [[SecurityResearcher|chercheurs en sécurité]], les [[WhiteHat|hackers éthiques]] et les administrateurs système, [[JohnTheRipper|JTR]] permet de vérifier l'efficacité des [[SecurityControl|politiques de mots de passe]] et de prévenir les [[AccountTakeover|prises de contrôle de compte]] dues à des identifiants faibles.
+John the Ripper (JTR) est un logiciel libre et un outil de cassage de mots de passe largement reconnu dans la communauté de la cybersécurité. Son objectif principal est d'auditer la robustesse des mots de passe en identifiant ceux qui sont faibles ou vulnérables à des attaques par dictionnaire ou force brute. Il supporte une multitude de fonctions de hachage utilisées pour stocker les mots de passe sur divers systèmes d'exploitation comme Linux, MacOS, Windows et Unix. Utilisé principalement par les chercheurs en sécurité, les hackers éthiques et les administrateurs système, JTR permet de vérifier l'efficacité des politiques de mots de passe et de prévenir les prises de contrôle de compte dues à des identifiants faibles.
 
 ## ⚙️ Cas d'usage / Commandes Utiles
 
 ### Cassage de mots de passe simples ou via dictionnaire
-[[JohnTheRipper|JTR]] peut tenter de casser des hachages de mots de passe en les comparant à une liste de mots communs (dictionnaire) ou en utilisant des règles de transformation. Il détecte automatiquement le type de hachage.
+JTR peut tenter de casser des hachages de mots de passe en les comparant à une liste de mots communs (dictionnaire) ou en utilisant des règles de transformation. Il détecte automatiquement le type de hachage.
 
 ```bash
 # Casser des hachages de mots de passe à partir d'un fichier (auto-détection du format)
@@ -44,7 +44,7 @@ john --show hashes.txt
 ```
 
 ### Attaque par force brute (mode incrémental)
-Le mode incrémental de [[JohnTheRipper|JTR]] est une forme d'[[BruteForceAttack|attaque par force brute]] qui tente toutes les combinaisons possibles de caractères, en commençant par les plus courtes et les plus simples, et en augmentant progressivement la complexité. Ce mode peut être très long mais est efficace pour les mots de passe ne figurant pas dans les dictionnaires.
+Le mode incrémental de JTR est une forme d'attaque par force brute qui tente toutes les combinaisons possibles de caractères, en commençant par les plus courtes et les plus simples, et en augmentant progressivement la complexité. Ce mode peut être très long mais est efficace pour les mots de passe ne figurant pas dans les dictionnaires.
 
 ```bash
 # Lancer une attaque par force brute (mode incrémental par défaut)
@@ -55,7 +55,7 @@ john --incremental:alnum hashes.txt
 ```
 
 ### Traitement des fichiers d'ombres Linux (`/etc/shadow`)
-Sur les [[OperatingSystem|systèmes d'exploitation]] basés sur [[Linux]], les mots de passe [[Hashing|hachés]] des [[User|utilisateurs]] sont souvent stockés dans le fichier `/etc/shadow`, tandis que les informations sur les [[UserIdentity|utilisateurs]] sont dans `/etc/passwd`. [[JohnTheRipper|JTR]] peut traiter ces fichiers pour extraire les hachages et tenter de les casser. L'outil `unshadow` est souvent utilisé en combinaison pour préparer le fichier de hachages.
+Sur les systèmes d'exploitation basés sur Linux, les mots de passe hachés des utilisateurs sont souvent stockés dans le fichier `/etc/shadow`, tandis que les informations sur les utilisateurs sont dans `/etc/passwd`. JTR peut traiter ces fichiers pour extraire les hachages et tenter de les casser. L'outil `unshadow` est souvent utilisé en combinaison pour préparer le fichier de hachages.
 
 ```bash
 # Fusionner les fichiers passwd et shadow pour créer un fichier de hachages compatible avec John
@@ -66,7 +66,7 @@ john my_linux_hashes.txt
 ```
 
 ### Personnalisation des règles
-[[JohnTheRipper|JTR]] permet de définir des règles de manipulation de mots qui peuvent être appliquées aux mots d'un dictionnaire. Cela inclut l'ajout de chiffres, la modification de la casse, l'inversion de mots, etc., pour générer des variantes de mots de passe probables.
+JTR permet de définir des règles de manipulation de mots qui peuvent être appliquées aux mots d'un dictionnaire. Cela inclut l'ajout de chiffres, la modification de la casse, l'inversion de mots, etc., pour générer des variantes de mots de passe probables.
 
 ```bash
 # Utiliser un fichier de règles personnalisé
@@ -77,13 +77,13 @@ john --wordlist=chemin/vers/dictionnaire.txt --rules hashes.txt
 ```
 
 ## ⚠️ Points d'attention
-*   **Légalité**: L'utilisation de [[JohnTheRipper|JTR]] pour tester la [[Security|sécurité]] des [[Password|mots de passe]] doit être réalisée uniquement sur des systèmes pour lesquels vous avez une [[Authorization|autorisation]] explicite et dans le cadre d'un [[EthicalHacking|hacking éthique]], d'un [[PenetrationTesting|test d'intrusion]] ou d'un [[SecurityAudit|audit de sécurité]] interne. Une utilisation non autorisée est illégale et peut entraîner de graves conséquences [[LegalCompliance|légales]].
-*   **Fiabilité/Limites**: Bien que puissant, [[JohnTheRipper|JTR]] peut prendre un temps considérable, voire infini, pour casser des [[StrongPassword|mots de passe forts]] avec des [[Hashing|fonctions de hachage]] robustes et un bon [[Salting|salage]]. Sa performance dépend fortement de la qualité des [[DataSet|dictionnaires]] et des règles personnalisées utilisées, ainsi que de la puissance de calcul (CPU/GPU) disponible. Les mots de passe complexes générés aléatoirement sont extrêmement difficiles à casser avec cet [[Tool|outil]].
-*   **Risques Opérationnels**: L'exécution intensive de [[JohnTheRipper|JTR]], surtout en mode [[BruteForceAttack|force brute]], consomme beaucoup de ressources informatiques (CPU, RAM, disque). Cela peut ralentir ou affecter la [[PerformanceEvaluation|performance]] du [[System|système]] sur lequel il est exécuté et potentiellement déclencher des [[IntrusionDetectionSystem|IDS]] ou [[IntrusionPreventionSystem|IPS]] s'il est utilisé sur un [[Network|réseau]] cible, car une activité de [[PasswordCracking|cassage de mots de passe]] peut être perçue comme une [[Attack|attaque]].
+*   **Légalité**: L'utilisation de JTR pour tester la sécurité des mots de passe doit être réalisée uniquement sur des systèmes pour lesquels vous avez une autorisation explicite et dans le cadre d'un hacking éthique, d'un test d'intrusion ou d'un audit de sécurité interne. Une utilisation non autorisée est illégale et peut entraîner de graves conséquences légales.
+*   **Fiabilité/Limites**: Bien que puissant, JTR peut prendre un temps considérable, voire infini, pour casser des mots de passe forts avec des fonctions de hachage robustes et un bon salage. Sa performance dépend fortement de la qualité des dictionnaires et des règles personnalisées utilisées, ainsi que de la puissance de calcul (CPU/GPU) disponible. Les mots de passe complexes générés aléatoirement sont extrêmement difficiles à casser avec cet outil.
+*   **Risques Opérationnels**: L'exécution intensive de JTR, surtout en mode force brute, consomme beaucoup de ressources informatiques (CPU, RAM, disque). Cela peut ralentir ou affecter la performance du système sur lequel il est exécuté et potentiellement déclencher des IDS ou IPS s'il est utilisé sur un réseau cible, car une activité de cassage de mots de passe peut être perçue comme une attaque.
 
 ## 🔗 Notes Connexes
-*   **Concept de base**: [[PasswordCracking|Cassage de mots de passe]]
-*   **Méthode d'attaque**: [[BruteForceAttack|Attaque par force brute]]
-*   **Méthode d'attaque**: [[DictionaryAttack|Attaque par dictionnaire]]
-*   **Mécanisme ciblé**: [[Hashing|Hachage]]
-*   **Contexte d'utilisation**: [[EthicalHacking|Hacking Éthique]]
+*   **Concept de base**: Cassage de mots de passe
+*   **Méthode d'attaque**: Attaque par force brute
+*   **Méthode d'attaque**: Attaque par dictionnaire
+*   **Mécanisme ciblé**: Hachage
+*   **Contexte d'utilisation**: Hacking Éthique

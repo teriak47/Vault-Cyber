@@ -16,23 +16,23 @@ cssclasses:
 # Internet par Câble
 
 ## 📥 Définition en une phrase
-> L'Internet par câble est une [[NetworkTechnology|technologie de connexion]] à [[Internet]] à [[DigitalBandwidth|haut débit]] qui utilise l'[[Infrastructure|infrastructure]] des [[Television|réseaux de télévision]] par [[CoaxialCable|câble coaxial]] existants pour acheminer les [[Data|données]].
+> L'Internet par câble est une technologie de connexion à Internet à haut débit qui utilise l'infrastructure des réseaux de télévision par câble coaxial existants pour acheminer les données.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[SharedNetwork|Infrastructure Partagée]]**: S'appuie sur le même [[Network|réseau]] de [[CoaxialCable|câbles coaxiaux]] que la [[Television|télévision]] par câble, convertissant les [[TelevisionSignals|signaux de télévision]] analogiques en [[DigitalSignals|signaux numériques]] pour le [[NetworkTraffic|trafic Internet]].
-*   **[[CableModem|Modem Câble]]**: Un [[CableModem|modem câble]] est un [[Hardware|équipement]] essentiel qui module et démodule les [[DigitalSignals|signaux numériques]] sur le [[CoaxialCable|réseau câblé]], transformant les [[NetworkData|données réseau]] en [[RadioFrequencySignals|signaux radiofréquence]] et vice-versa.
-*   **Norme [[DOCSIS|DOCSIS]]**: Le [[Protocol|protocole]] [[DOCSIS|Data Over Cable Service Interface Specification]] est la norme internationale qui définit comment les [[Data|données]] sont transmises sur les [[CableSystems|systèmes de câble]], assurant l'[[Interoperability|interopérabilité]] entre les [[Hardware|équipements]].
-*   **[[Bandwidth|Bande Passante]] Asymétrique**: Cette [[NetworkTechnology|technologie]] est optimisée pour la [[ContentConsumption|consommation de contenu]], offrant des [[DownloadSpeeds|vitesses de téléchargement]] (descendantes) nettement supérieures aux [[UploadSpeeds|vitesses d'envoi]] (ascendantes).
-*   **Partage de [[Bandwidth|Bande Passante]]**: La [[Bandwidth|bande passante]] d'un [[NetworkSegment|segment de réseau]] est partagée entre tous les [[User|utilisateurs]] connectés à ce segment, ce qui peut entraîner des [[NetworkPerformance|variations de performance]] et des ralentissements, particulièrement aux [[PeakHours|heures de pointe]].
+*   **Infrastructure Partagée**: S'appuie sur le même réseau de câbles coaxiaux que la télévision par câble, convertissant les signaux de télévision analogiques en signaux numériques pour le trafic Internet.
+*   **Modem Câble**: Un modem câble est un équipement essentiel qui module et démodule les signaux numériques sur le réseau câblé, transformant les données réseau en signaux radiofréquence et vice-versa.
+*   **Norme DOCSIS**: Le protocole Data Over Cable Service Interface Specification est la norme internationale qui définit comment les données sont transmises sur les systèmes de câble, assurant l'interopérabilité entre les équipements.
+*   **Bande Passante Asymétrique**: Cette technologie est optimisée pour la consommation de contenu, offrant des vitesses de téléchargement (descendantes) nettement supérieures aux vitesses d'envoi (ascendantes).
+*   **Partage de Bande Passante**: La bande passante d'un segment de réseau est partagée entre tous les utilisateurs connectés à ce segment, ce qui peut entraîner des variations de performance et des ralentissements, particulièrement aux heures de pointe.
 
 ## 💡 Importance en Cybersécurité
-> L'[[CableInternet|Internet par câble]] représente un point d'accès critique au [[HomeNetwork|réseau domestique]] et à l'[[Internet|Internet]], ce qui en fait une cible potentielle pour les [[ThreatActor|acteurs de menace]]. La [[NetworkTechnology|technologie]] introduit des [[SecurityVulnerabilities|vulnérabilités]] liées à son [[SharedNetwork|infrastructure partagée]], au [[Firmware|micrologiciel]] des [[CableModem|modems câbles]] et à la [[NetworkConfiguration|configuration]] du [[WirelessRouter|routeur domestique]]. Une [[Security|sécurité]] robuste de l'[[CableInternet|Internet par câble]] est essentielle pour prévenir l'[[UnauthorizedAccess|accès non autorisé]], les [[DenialOfService|attaques par déni de service]] et la [[DataTheft|fuite de données]].
+> L'Internet par câble représente un point d'accès critique au réseau domestique et à l'Internet, ce qui en fait une cible potentielle pour les acteurs de menace. La technologie introduit des vulnérabilités liées à son infrastructure partagée, au micrologiciel des modems câbles et à la configuration du routeur domestique. Une sécurité robuste de l'Internet par câble est essentielle pour prévenir l'accès non autorisé, les attaques par déni de service et la fuite de données.
 
 ## 🔗 Notes Connexes
-*   [[DOCSIS|DOCSIS]]
-*   [[CableModem|Modem Câble]]
-*   [[CoaxialCable|Câble Coaxial]]
-*   [[DigitalSubscriberLine|Digital Subscriber Line (DSL)]]
-*   [[FiberOpticInternet|Internet par Fibre Optique]]
-*   [[WirelessFidelity|Wi-Fi]]
-*   [[NetworkSecurity|Sécurité Réseau]]
+*   DOCSIS
+*   Modem Câble
+*   Câble Coaxial
+*   Digital Subscriber Line (DSL)
+*   Internet par Fibre Optique
+*   Wi-Fi
+*   Sécurité Réseau

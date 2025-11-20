@@ -15,28 +15,28 @@ cssclasses:
 # Pair à Pair (P2P)
 
 ## 📥 Définition en une phrase
-> Une [[PeerToPeer|architecture réseau]] [[Decentralization|décentralisée]] où chaque participant (nœud) agit à la fois comme [[Client|client]] et comme [[Server|serveur]], permettant le [[FileTransfer|partage direct de ressources]] sans l'intermédiaire d'un [[Server|serveur central]].
+> Une architecture réseau décentralisée où chaque participant (nœud) agit à la fois comme client et comme serveur, permettant le partage direct de ressources sans l'intermédiaire d'un serveur central.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Decentralization|Architecture Décentralisée]]**: Absence de [[CentralizedAdministration|point de contrôle unique]], chaque [[PeerToPeer|pair]] étant autonome et égal aux autres.
-*   **[[FileTransfer|Partage de Ressources]]**: Les [[PeerToPeer|pairs]] partagent directement des [[FileServer|fichiers]], de la [[Computer|puissance de calcul]], ou de la [[Bandwidth|bande passante]].
-*   **[[NetworkCommunication|Communication Directe]]**: Les [[PeerToPeer|nœuds]] établissent des [[NetworkCommunication|connexions directes]] entre eux pour [[DataTransmission|échanger des données]].
-*   **[[Scalability|Scalabilité]]**: La [[NetworkPerformance|performance du réseau]] peut s'améliorer avec l'ajout de nouveaux [[PeerToPeer|pairs]] et [[Resource|ressources]].
-*   **Mécanismes de Découverte**: Utilisation de [[Server|serveurs]] d'indexation (trackers) ou de [[DistributedLedgerTechnology|tables de hachage distribuées (DHT)]] pour que les [[PeerToPeer|pairs]] se trouvent mutuellement.
+*   **Architecture Décentralisée**: Absence de point de contrôle unique, chaque pair étant autonome et égal aux autres.
+*   **Partage de Ressources**: Les pairs partagent directement des fichiers, de la puissance de calcul, ou de la bande passante.
+*   **Communication Directe**: Les nœuds établissent des connexions directes entre eux pour échanger des données.
+*   **Scalabilité**: La performance du réseau peut s'améliorer avec l'ajout de nouveaux pairs et ressources.
+*   **Mécanismes de Découverte**: Utilisation de serveurs d'indexation (trackers) ou de tables de hachage distribuées (DHT) pour que les pairs se trouvent mutuellement.
 
 ## 💡 Importance en Cybersécurité
-> Les [[PeerToPeer|réseaux pair à pair]] facilitent la [[DataTransmission|transmission directe]] et le [[FileTransfer|partage de ressources]], offrant [[Redundancy|résilience]] et [[Scalability|évolutivité]] grâce à leur nature [[Decentralization|décentralisée]], ce qui réduit les [[SinglePointOfFailure|points de défaillance uniques]]. Cependant, cette [[Decentralization|décentralisation]] même rend le contrôle du contenu partagé difficile, entraînant des [[Threat|menaces]] comme la [[MalwareDistribution|diffusion rapide de logiciels malveillants]] et les [[CopyrightInfringement|violations de droits d'auteur]]. Ils exposent également les [[UserIdentity|identités des utilisateurs]] (via leurs [[IPAddressing|adresses IP]]) et créent des [[Vulnerability|vulnérabilités]] aux [[DenialOfService|attaques par déni de service]]. Leur nature ouverte exige une [[SecurityAwareness|sensibilisation accrue]] et une [[Vigilance|vigilance]] constante en matière de [[Security|sécurité]] et de [[Privacy|confidentialité]].
+> Les réseaux pair à pair facilitent la transmission directe et le partage de ressources, offrant résilience et évolutivité grâce à leur nature décentralisée, ce qui réduit les points de défaillance uniques. Cependant, cette décentralisation même rend le contrôle du contenu partagé difficile, entraînant des menaces comme la diffusion rapide de logiciels malveillants et les violations de droits d'auteur. Ils exposent également les identités des utilisateurs (via leurs adresses IP) et créent des vulnérabilités aux attaques par déni de service. Leur nature ouverte exige une sensibilisation accrue et une vigilance constante en matière de sécurité et de confidentialité.
 
 ## 🔗 Notes Connexes
-*   [[ClientServerArchitecture|Architecture Client-Serveur]]
-*   [[DistributedLedgerTechnology|Technologie de Registre Distribué]]
-*   [[DecentralizedNetwork|Réseau Décentralisé]]
-*   [[MalwareDistribution|Distribution de Logiciels Malveillants]]
-*   [[CopyrightInfringement|Contrefaçon]]
-*   [[PrivacyBreach|Violation de la vie privée]]
-*   [[DenialOfService|Déni de Service]]
-*   [[SecurityAwareness|Sensibilisation à la Sécurité]]
-*   [[Antivirus|Logiciel Antivirus]]
-*   [[Firewall|Pare-feu]]
-*   [[VirtualPrivateNetwork|VPN]]
-*   [[IntrusionDetectionSystem|Système de détection d'intrusion]]
+*   Architecture Client-Serveur
+*   Technologie de Registre Distribué
+*   Réseau Décentralisé
+*   Distribution de Logiciels Malveillants
+*   Contrefaçon
+*   Violation de la vie privée
+*   Déni de Service
+*   Sensibilisation à la Sécurité
+*   Logiciel Antivirus
+*   Pare-feu
+*   VPN
+*   Système de détection d'intrusion

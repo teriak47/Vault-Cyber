@@ -16,47 +16,47 @@ cssclasses:
 # Phase d'Installation (Cyberattaque)
 
 ## 📥 Définition
-> La phase d'[[Installation]] est une étape cruciale d'une [[CyberKillChain|cyberattaque]] où l'[[ThreatActor|attaquant]] établit une présence durable ou déploie des composants malveillants sur le [[System|système]] cible après un [[InitialAccess|accès initial]] réussi. Son objectif principal est d'assurer la [[Persistence|persistance]] et de préparer les actions ultérieures.
+> La phase d'Installation est une étape cruciale d'une cyberattaque où l'attaquant établit une présence durable ou déploie des composants malveillants sur le système cible après un accès initial réussi. Son objectif principal est d'assurer la persistance et de préparer les actions ultérieures.
 
 ## 🚀 Techniques d'Installation
-*   **Déploiement de [[Malware|Logiciels Malveillants]]**: L'[[ThreatActor|attaquant]] installe divers types de logiciels nuisibles, tels que des [[Ransomware|rançongiciels]], des [[Virus|virus]], des [[Worm|vers]], des [[Trojan|chevaux de Troie]] (y compris des [[RemoteAccessTrojan|RAT]]), ou d'autres programmes pour atteindre ses objectifs.
-*   **Mise en place de [[Backdoor|Portes Dérobées]] et [[Rootkit|Rootkits]]**: Création de points d'[[UnauthorizedAccess|accès non autorisé]] cachés ou d'outils pour masquer la présence de l'[[ThreatActor|attaquant]] et maintenir l'accès futur, souvent avec des [[PrivilegeEscalation|privilèges élevés]].
-*   **Modification du [[System|système]]**: Altération de la [[NetworkConfiguration|configuration du système]], des registres, des services ou des fichiers de démarrage pour assurer la [[Persistence|persistance]] des artefacts malveillants même après un redémarrage.
-*   **Staging d'[[Tool|Outils]]**: Téléchargement et préparation d'[[Tool|outils]] supplémentaires nécessaires pour les phases ultérieures de l'[[Attack|attaque]], comme le [[LateralMovement|mouvement latéral]] ou l'[[DataExfiltration|exfiltration de données]].
+*   **Déploiement de Logiciels Malveillants**: L'attaquant installe divers types de logiciels nuisibles, tels que des rançongiciels, des virus, des vers, des chevaux de Troie (y compris des RAT), ou d'autres programmes pour atteindre ses objectifs.
+*   **Mise en place de Portes Dérobées et Rootkits**: Création de points d'accès non autorisé cachés ou d'outils pour masquer la présence de l'attaquant et maintenir l'accès futur, souvent avec des privilèges élevés.
+*   **Modification du système**: Altération de la configuration du système, des registres, des services ou des fichiers de démarrage pour assurer la persistance des artefacts malveillants même après un redémarrage.
+*   **Staging d'Outils**: Téléchargement et préparation d'outils supplémentaires nécessaires pour les phases ultérieures de l'attaque, comme le mouvement latéral ou l'exfiltration de données.
 
 ## 💥 Impacts Potentiels
-*   [[SystemCompromise|Compromission complète du système]]
-*   [[DataBreach|Vol de données]] ou [[DataCorruption|corruption de données]]
-*   [[ServiceDisruption|Interruption de service]] (via [[Ransomware|rançongiciel]] ou destruction)
-*   [[PrivilegeEscalation|Élévation de privilèges]] durable
-*   [[FinancialLoss|Pertes financières]] et [[ReputationalDamage|dommages à la réputation]]
+*   Compromission complète du système
+*   Vol de données ou corruption de données
+*   Interruption de service (via rançongiciel ou destruction)
+*   Élévation de privilèges durable
+*   Pertes financières et dommages à la réputation
 
 ## 📝 Exemple d'Actions d'Installation
-> Après avoir exploité une [[SoftwareVulnerability|vulnérabilité logicielle]] pour obtenir un [[InitialAccess|accès initial]], l'[[ThreatActor|attaquant]] télécharge et exécute un [[Trojan|cheval de Troie]] sur le [[Server|serveur]] compromis. Ce [[Malware|logiciel malveillant]] modifie alors les entrées du registre pour se lancer automatiquement au démarrage du [[System|système]] et ouvre une [[Backdoor|porte dérobée]] pour permettre un [[RemoteAccess|accès à distance]] permanent. Il peut également installer des [[Tool|outils]] de [[PacketSniffing|capture de paquets]] pour préparer l'étape de [[LateralMovement|mouvement latéral]].
+> Après avoir exploité une vulnérabilité logicielle pour obtenir un accès initial, l'attaquant télécharge et exécute un cheval de Troie sur le serveur compromis. Ce logiciel malveillant modifie alors les entrées du registre pour se lancer automatiquement au démarrage du système et ouvre une porte dérobée pour permettre un accès à distance permanent. Il peut également installer des outils de capture de paquets pour préparer l'étape de mouvement latéral.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[PatchManagement|Gestion des patchs]] rigoureuse pour éliminer les [[SoftwareVulnerability|vulnérabilités logicielles]].
-    *   [[PrincipleOfLeastPrivilege|Principe du moindre privilège]] appliqué aux [[User|utilisateurs]] et [[Process|processus]].
-    *   [[ApplicationWhitelisting|Liste blanche d'applications]] pour restreindre l'exécution de programmes non autorisés.
-    *   [[EndpointProtectionPlatform|Plateformes de protection des endpoints (EPP)]] et [[Antivirus|logiciels antivirus]] mis à jour.
+    *   Gestion des patchs rigoureuse pour éliminer les vulnérabilités logicielles.
+    *   Principe du moindre privilège appliqué aux utilisateurs et processus.
+    *   Liste blanche d'applications pour restreindre l'exécution de programmes non autorisés.
+    *   Plateformes de protection des endpoints (EPP) et logiciels antivirus mis à jour.
 *   **Détection** :
-    *   [[EndpointDetectionAndResponse|Solutions EDR]] pour détecter les activités suspectes post-compromission.
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] et [[IntrusionPreventionSystem|IPS]] pour surveiller le [[Network|réseau]] et bloquer les téléchargements de [[Payload|charges utiles]] malveillantes.
-    *   [[SecurityInformationAndEventManagement|SIEM]] pour l'agrégation et l'analyse des [[Log|logs]] et [[Event|événements]].
+    *   Solutions EDR pour détecter les activités suspectes post-compromission.
+    *   Systèmes de détection d'intrusion (IDS) et IPS pour surveiller le réseau et bloquer les téléchargements de charges utiles malveillantes.
+    *   SIEM pour l'agrégation et l'analyse des logs et événements.
 *   **Réponse** :
-    *   [[IncidentResponse|Plans de réponse à incident]] clairs pour contenir et éradiquer rapidement les [[Threat|menaces]].
-    *   [[BackupAndRecovery|Sauvegardes et récupération]] des [[Data|données]] pour restaurer les [[System|systèmes]] affectés.
+    *   Plans de réponse à incident clairs pour contenir et éradiquer rapidement les menaces.
+    *   Sauvegardes et récupération des données pour restaurer les systèmes affectés.
 
 ## 🔗 Notes Connexes
-*   [[CyberKillChain|Cyber Kill Chain]]
-*   [[InitialAccess|Accès Initial]]
-*   [[Persistence|Persistance]]
-*   [[Execution|Exécution]]
-*   [[LateralMovement|Mouvement Latéral]]
-*   [[TacticsTechniquesAndProcedures|Tactiques, Techniques et Procédures (TTPs)]]
-*   [[Malware|Logiciel Malveillant]]
-*   [[Backdoor|Porte Dérobée]]
-*   [[Rootkit|Rootkit]]
-*   [[SupplyChainAttack|Attaque sur la chaîne d'approvisionnement]]
+*   Cyber Kill Chain
+*   Accès Initial
+*   Persistance
+*   Exécution
+*   Mouvement Latéral
+*   Tactiques, Techniques et Procédures (TTPs)
+*   Logiciel Malveillant
+*   Porte Dérobée
+*   Rootkit
+*   Attaque sur la chaîne d'approvisionnement
 ---

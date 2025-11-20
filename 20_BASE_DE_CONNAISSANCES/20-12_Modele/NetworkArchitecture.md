@@ -21,42 +21,42 @@ cssclasses:
 # Architecture Réseau
 
 ## 🎯 Principe Fondamental
-> L'architecture [[Network|réseau]] définit la conception et l'organisation d'un [[Computer|système]] de [[Network|communication]]. 
-> Son objectif principal est de structurer la manière dont les [[NetworkDevice|dispositifs réseau]], les [[System|systèmes]] et les [[CommunicationChannel|canaux de communication]] sont interconnectés et fonctionnent ensemble pour fournir des [[OnlineServices|services réseau]] de manière efficace, [[Scalability|évolutive]] et [[NetworkSecurity|sécurisée]]. Elle assure la [[NetworkCommunication|communication]] fluide et la gestion des [[Resource|ressources]].
+> L'architecture réseau définit la conception et l'organisation d'un système de communication. 
+> Son objectif principal est de structurer la manière dont les dispositifs réseau, les systèmes et les canaux de communication sont interconnectés et fonctionnent ensemble pour fournir des services réseau de manière efficace, évolutive et sécurisée. Elle assure la communication fluide et la gestion des ressources.
 
 ## 🧩 Composants / Éléments Clés
-*   **[[NetworkTopology|Topologie Réseau]]**: Décrit la disposition physique (câblage, emplacement des [[Hardware|équipements]]) ou logique (flux de [[Data|données]]) des [[NetworkDevice|dispositifs]] et des [[CommunicationChannel|liens]] au sein d'un [[Network|réseau]].
-*   **[[NetworkDevice|Dispositifs Réseau]]**: Incluent les [[Router|routeurs]], [[NetworkSwitch|commutateurs]], [[Firewall|pare-feu]], [[AccessPoint|points d'accès sans fil]], [[Server|serveurs]], et [[EndDevices|terminaux]].
-*   **[[NetworkProtocol|Protocoles Réseau]]**: Ensemble de [[Protocol|règles]] et de formats qui régissent la [[NetworkCommunication|communication]] entre les [[NetworkDevice|dispositifs]]. Les plus connus sont ceux de la [[InternetProtocolSuite|suite TCP/IP]] et d'[[Ethernet]].
-*   **[[NetworkMedia|Supports de Transmission]]**: Les moyens physiques ou sans fil par lesquels les [[Data|données]] sont transmises, tels que les [[FiberOpticCable|câbles à fibre optique]], les [[TwistedPairCable|paires torsadées]] ([[UnshieldedTwistedPair|UTP]], [[ShieldedTwistedPair|STP]]) et les [[WirelessSignals|ondes radio]].
-*   **[[NetworkConfiguration|Services et Configuration Réseau]]**: Éléments essentiels tels que le [[DomainNameSystem|DNS]] (résolution de noms) et le [[DynamicHostConfigurationProtocol|DHCP]] (attribution d'adresses [[InternetProtocol|IP]]), ainsi que les configurations [[StaticConfiguration|statiques]] ou [[DynamicHostConfigurationProtocol|dynamiques]] des [[IPAddressing|adresses IP]].
+*   **Topologie Réseau**: Décrit la disposition physique (câblage, emplacement des équipements) ou logique (flux de données) des dispositifs et des liens au sein d'un réseau.
+*   **Dispositifs Réseau**: Incluent les routeurs, commutateurs, pare-feu, points d'accès sans fil, serveurs, et terminaux.
+*   **Protocoles Réseau**: Ensemble de règles et de formats qui régissent la communication entre les dispositifs. Les plus connus sont ceux de la suite TCP/IP et d'Ethernet.
+*   **Supports de Transmission**: Les moyens physiques ou sans fil par lesquels les données sont transmises, tels que les câbles à fibre optique, les paires torsadées (UTP, STP) et les ondes radio.
+*   **Services et Configuration Réseau**: Éléments essentiels tels que le DNS (résolution de noms) et le DHCP (attribution d'adresses IP), ainsi que les configurations statiques ou dynamiques des adresses IP.
 
 ## 📜 Règles de Fonctionnement
-*   **[[ReferenceModel|Modèles de Référence]]**: L'architecture réseau est souvent conceptualisée en s'appuyant sur des modèles comme le [[OpenSystemsInterconnectionModel|modèle OSI]] ou le [[InternetProtocolSuite|modèle TCP/IP]], qui divisent les fonctions de [[NetworkCommunication|communication]] en couches distinctes.
-*   **[[NetworkSegmentation|Segmentation]]**: La pratique de diviser un [[Network|réseau]] en [[NetworkSegment|segments]] plus petits, généralement à l'aide de [[VirtualLocalAreaNetwork|VLAN]] ou de [[Subnetting|sous-réseaux]]. Cela améliore la [[NetworkPerformance|performance]], la [[Security|sécurité]] et la [[TrafficManagement|gestion du trafic]].
-*   **[[Routing|Routage]]**: Le [[Process|processus]] de sélection des meilleurs chemins pour le [[NetworkTraffic|trafic réseau]] entre différents [[Subnet|sous-réseaux]] ou [[Network|réseaux]]. Les [[Router|routeurs]] utilisent des [[RoutingTable|tables de routage]] et des [[SecureRoutingProtocols|protocoles de routage]] pour cette tâche.
-*   **[[SecurityPolicy|Politiques de Sécurité]]**: Intégration de règles et de mesures pour protéger le [[Network|réseau]] contre les [[Threat|menaces]], contrôler l'[[AccessControl|accès]], assurer la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et la [[Availability|disponibilité]] des [[Data|données]].
+*   **Modèles de Référence**: L'architecture réseau est souvent conceptualisée en s'appuyant sur des modèles comme le modèle OSI ou le modèle TCP/IP, qui divisent les fonctions de communication en couches distinctes.
+*   **Segmentation**: La pratique de diviser un réseau en segments plus petits, généralement à l'aide de VLAN ou de sous-réseaux. Cela améliore la performance, la sécurité et la gestion du trafic.
+*   **Routage**: Le processus de sélection des meilleurs chemins pour le trafic réseau entre différents sous-réseaux ou réseaux. Les routeurs utilisent des tables de routage et des protocoles de routage pour cette tâche.
+*   **Politiques de Sécurité**: Intégration de règles et de mesures pour protéger le réseau contre les menaces, contrôler l'accès, assurer la confidentialité, l'intégrité et la disponibilité des données.
 
 ## 💡 Applications Pratiques
-*   **[[EnterpriseNetwork|Réseaux d'entreprise]]**: Conçus pour supporter un grand nombre d'[[User|utilisateurs]], d'[[SoftwareApplication|applications]] et de [[Server|serveurs]], avec des exigences strictes en matière de [[HighAvailability|haute disponibilité]], de [[Scalability|scalabilité]] et de [[NetworkSecurity|sécurité]].
-*   **[[SmallHomeNetworks|Réseaux domestiques]] / [[SOHONetwork|SOHO]]**: Architectures généralement plus simples, axées sur l'accès à l'[[Internet]] via un [[WirelessRouter|routeur sans fil]] ou un [[Gateway|routeur-passerelle]].
-*   **[[Cloud|Environnements Cloud]]**: Architectures souvent définies par [[Software|logiciel]] (Software-Defined Networking - SDN), offrant une grande [[Scalability|flexibilité]], [[Decentralization|décentralisation]] et des capacités de déploiement rapide.
-*   **[[InternetofThings|IoT]]**: Architectures spécifiques pour connecter une multitude de [[WirelessDevices|dispositifs]] intelligents, avec des considérations importantes sur la [[IoTSecurity|sécurité]], la [[Bandwidth|bande passante]] et la consommation d'énergie.
+*   **Réseaux d'entreprise**: Conçus pour supporter un grand nombre d'utilisateurs, d'applications et de serveurs, avec des exigences strictes en matière de haute disponibilité, de scalabilité et de sécurité.
+*   **Réseaux domestiques / SOHO**: Architectures généralement plus simples, axées sur l'accès à l'Internet via un routeur sans fil ou un routeur-passerelle.
+*   **Environnements Cloud**: Architectures souvent définies par logiciel (Software-Defined Networking - SDN), offrant une grande flexibilité, décentralisation et des capacités de déploiement rapide.
+*   **IoT**: Architectures spécifiques pour connecter une multitude de dispositifs intelligents, avec des considérations importantes sur la sécurité, la bande passante et la consommation d'énergie.
 
 ## ✅ Avantages et Limites
 *   **Avantages**:
-    *   Optimisation de la [[NetworkPerformance|performance]] et de la [[Scalability|scalabilité]] en fonction des besoins de l'[[Enterprise|organisation]].
-    *   Amélioration de la [[NetworkSecurity|sécurité]] grâce à une conception [[DefenseInDepth|en profondeur]] et à une [[NetworkSegmentation|segmentation adéquate]].
-    *   Augmentation de la [[Availability|disponibilité]] des [[Resource|ressources]] et des [[OnlineServices|services]].
-    *   Facilitation de la [[NetworkMonitoring|gestion]], du [[Troubleshooting|dépannage]] et de l'intégration de nouvelles [[WirelessTechnology|technologies]].
+    *   Optimisation de la performance et de la scalabilité en fonction des besoins de l'organisation.
+    *   Amélioration de la sécurité grâce à une conception en profondeur et à une segmentation adéquate.
+    *   Augmentation de la disponibilité des ressources et des services.
+    *   Facilitation de la gestion, du dépannage et de l'intégration de nouvelles technologies.
 *   **Limites**:
-    *   Complexité de conception et de mise en œuvre, particulièrement pour les [[EnterpriseNetwork|grands réseaux]].
-    *   Coût initial potentiel élevé en [[Hardware|équipements]], [[Software|logiciels]] et expertise.
-    *   Nécessite une [[Vigilance|surveillance]] continue et des mises à jour régulières pour s'adapter aux nouvelles [[Threat|menaces]] et aux évolutions [[WirelessTechnology|technologiques]].
+    *   Complexité de conception et de mise en œuvre, particulièrement pour les grands réseaux.
+    *   Coût initial potentiel élevé en équipements, logiciels et expertise.
+    *   Nécessite une surveillance continue et des mises à jour régulières pour s'adapter aux nouvelles menaces et aux évolutions technologiques.
 
 ## 🔗 Notes Connexes
-*   **Concept de base**: [[NetworkTopology|Topologie Réseau]]
-*   **Modèle fondamental**: [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   **Mécanisme de sécurité**: [[NetworkSegmentation|Segmentation Réseau]]
-*   **Composant critique**: [[Router|Routeur]]
-*   **Principe de conception**: [[HierarchicalNetworkDesign|Conception de Réseau Hiérarchique]]
+*   **Concept de base**: Topologie Réseau
+*   **Modèle fondamental**: Modèle OSI
+*   **Mécanisme de sécurité**: Segmentation Réseau
+*   **Composant critique**: Routeur
+*   **Principe de conception**: Conception de Réseau Hiérarchique

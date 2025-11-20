@@ -13,26 +13,26 @@ cssclasses:
 # Information d'Adressage
 
 ## 📥 Définition en une phrase
-> L'[[AddressingInformation|information d'adressage]] désigne les identifiants uniques (tels que les [[MediaAccessControlAddress|adresses MAC]] et les [[InternetProtocol|adresses IP]]) utilisés par les [[NetworkDevice|dispositifs réseau]] pour localiser et communiquer entre eux au sein d'un [[Network|réseau]] ou sur [[Internet|Internet]].
+> L'information d'adressage désigne les identifiants uniques (tels que les adresses MAC et les adresses IP) utilisés par les dispositifs réseau pour localiser et communiquer entre eux au sein d'un réseau ou sur Internet.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Identifiants Uniques**: Chaque [[NetworkDevice|dispositif réseau]] requiert des identifiants spécifiques ([[InternetProtocol|adresses IP]], [[MediaAccessControlAddress|adresses MAC]]) pour être localisé et communiquer efficacement dans un [[Network|réseau]].
-*   **Adresses Physiques (MAC)**: Opérant au niveau de la [[DataLinkLayer|couche liaison de données]] du [[OpenSystemsInterconnectionModel|modèle OSI]], les [[MediaAccessControlAddress|adresses MAC]] identifient de manière unique les interfaces réseau au sein d'un [[LocalAreaNetwork|réseau local]] grâce à un identifiant matériel.
-*   **Adresses Logiques (IP)**: Utilisées par la [[NetworkLayer|couche réseau]], les [[InternetProtocol|adresses IP]] (telles que [[InternetProtocolVersion4|IPv4]] et [[InternetProtocolVersion6|IPv6]]) permettent l'[[IPAddressing|adressage]] et le [[Routing|routage]] des [[Packet|paquets]] à travers différents [[Network|réseaux]] et sur [[Internet|Internet]].
-*   **Encapsulation Hiérarchique**: L'[[AddressingInformation|information d'adressage]] est structurée hiérarchiquement et intégrée sous forme d'[[Header|en-têtes]] lors de l'[[Encapsulation|encapsulation]] des [[Data|données]] à travers les [[ProtocolStack|couches de protocoles]] ([[OpenSystemsInterconnectionModel|OSI]] et [[InternetProtocolSuite|TCP/IP]]), indiquant la source et la destination.
+*   **Identifiants Uniques**: Chaque dispositif réseau requiert des identifiants spécifiques (adresses IP, adresses MAC) pour être localisé et communiquer efficacement dans un réseau.
+*   **Adresses Physiques (MAC)**: Opérant au niveau de la couche liaison de données du modèle OSI, les adresses MAC identifient de manière unique les interfaces réseau au sein d'un réseau local grâce à un identifiant matériel.
+*   **Adresses Logiques (IP)**: Utilisées par la couche réseau, les adresses IP (telles que IPv4 et IPv6) permettent l'adressage et le routage des paquets à travers différents réseaux et sur Internet.
+*   **Encapsulation Hiérarchique**: L'information d'adressage est structurée hiérarchiquement et intégrée sous forme d'en-têtes lors de l'encapsulation des données à travers les couches de protocoles (OSI et TCP/IP), indiquant la source et la destination.
 
 ## 💡 Importance en Cybersécurité
-L'[[AddressingInformation|information d'adressage]] est le fondement de toute [[NetworkCommunication|communication réseau]], permettant l'identification et la localisation des [[NetworkDevice|dispositifs]] pour un [[DataTransmission|acheminement précis des données]]. En [[Cybersecurity|cybersécurité]], sa compréhension est cruciale car elle est la cible de nombreuses [[Attack|attaques]] ([[Spoofing|usurpation]], [[ManInTheMiddle|MITM]]) qui exploitent les faiblesses d'[[AddressingInformation|adressage]] pour compromettre la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] ou l'[[Availability|disponibilité]] des [[System|systèmes]].
+L'information d'adressage est le fondement de toute communication réseau, permettant l'identification et la localisation des dispositifs pour un acheminement précis des données. En cybersécurité, sa compréhension est cruciale car elle est la cible de nombreuses attaques (usurpation, MITM) qui exploitent les faiblesses d'adressage pour compromettre la confidentialité, l'intégrité ou l'disponibilité des systèmes.
 
 ## 🔗 Notes Connexes
-*   [[InternetProtocol|Adresse IP]]
-*   [[MediaAccessControlAddress|Adresse MAC]]
-*   [[NetworkLayer|Couche Réseau]]
-*   [[DataLinkLayer|Couche Liaison de Données]]
-*   [[Encapsulation|Encapsulation]]
-*   [[DynamicHostConfigurationProtocol|DHCP]]
-*   [[AddressResolutionProtocol|ARP]]
-*   [[NetworkSegmentation|Segmentation Réseau]]
-*   [[Spoofing|Attaque par usurpation]]
-*   [[ManInTheMiddle|Attaque de l'Homme du Milieu]]
-*   [[Cybersecurity|Cybersécurité]]
+*   Adresse IP
+*   Adresse MAC
+*   Couche Réseau
+*   Couche Liaison de Données
+*   Encapsulation
+*   DHCP
+*   ARP
+*   Segmentation Réseau
+*   Attaque par usurpation
+*   Attaque de l'Homme du Milieu
+*   Cybersécurité

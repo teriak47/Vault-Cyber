@@ -16,40 +16,40 @@ cssclasses:
 # Protocole de Message de Contrôle Internet (ICMP)
 
 ## 🎯 Rôle et Couche OSI
-> L'[[InternetControlMessageProtocol|ICMP]] est un [[Protocol|protocole]] de la [[NetworkLayer|couche réseau]] (couche 3 du [[OpenSystemsInterconnectionModel|modèle OSI]] et du [[InternetProtocolSuite|modèle TCP/IP]]) utilisé par les [[NetworkDevice|périphériques réseau]] (comme les [[Router|routeurs]]) pour envoyer des messages d'erreur et des informations opérationnelles, notamment à des fins de [[NetworkMonitoring|diagnostic]].
+> L'ICMP est un protocole de la couche réseau (couche 3 du modèle OSI et du modèle TCP/IP) utilisé par les périphériques réseau (comme les routeurs) pour envoyer des messages d'erreur et des informations opérationnelles, notamment à des fins de diagnostic.
 
 ## ⚙️ Fonctionnement
-L'[[InternetControlMessageProtocol|ICMP]] fait partie intégrante de la [[InternetProtocolSuite|suite de protocoles IP]]. Il ne transporte pas de [[Data|données]] utilisateur comme [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]], mais des messages de contrôle essentiels au bon fonctionnement du [[Network|réseau]].
+L'ICMP fait partie intégrante de la suite de protocoles IP. Il ne transporte pas de données utilisateur comme TCP ou UDP, mais des messages de contrôle essentiels au bon fonctionnement du réseau.
 
-1.  **Structure des messages**: Les messages [[InternetControlMessageProtocol|ICMP]] sont identifiés par un **Type** et un **Code**, spécifiant la nature du message (erreur, requête, réponse).
+1.  **Structure des messages**: Les messages ICMP sont identifiés par un **Type** et un **Code**, spécifiant la nature du message (erreur, requête, réponse).
 2.  **Requêtes et Réponses Echo**:
-    *   **Type 8 (Echo Request)**: Envoyé pour déterminer si un [[Host|hôte]] de destination est atteignable. C'est la base de l'outil [[Ping]].
+    *   **Type 8 (Echo Request)**: Envoyé pour déterminer si un hôte de destination est atteignable. C'est la base de l'outil Ping.
     *   **Type 0 (Echo Reply)**: Réponse à une requête Echo, confirmant la joignabilité de l'hôte.
 3.  **Messages d'erreur**:
-    *   **Type 3 (Destination Unreachable)**: Informe l'expéditeur qu'une [[DestinationInternetProtocolVersion4Address|destination]] (hôte, [[Network|réseau]] ou [[PortNumber|port]]) est inaccessible. Essentiel pour la [[PathMTUDiscovery|découverte du PMTU]].
-    *   **Type 11 (Time Exceeded)**: Indique que le champ [[Time-to-Live|Time-to-Live (TTL)]] d'un [[Packet|paquet]] a atteint zéro, provoquant sa suppression. Ce [[Message|message]] est fondamental pour l'outil [[Traceroute]].
-* **Ports par défaut**: L'[[InternetControlMessageProtocol|ICMP]] opère directement sur [[InternetProtocol|IP]] et n'utilise pas de [[PortNumber|numéros de port]] comme les protocoles de la [[TransportLayer|couche transport]].
+    *   **Type 3 (Destination Unreachable)**: Informe l'expéditeur qu'une destination (hôte, réseau ou port) est inaccessible. Essentiel pour la découverte du PMTU.
+    *   **Type 11 (Time Exceeded)**: Indique que le champ Time-to-Live (TTL) d'un paquet a atteint zéro, provoquant sa suppression. Ce message est fondamental pour l'outil Traceroute.
+* **Ports par défaut**: L'ICMP opère directement sur IP et n'utilise pas de numéros de port comme les protocoles de la couche transport.
 
 ## 🛡️ Sécurité du Protocole
 * **Vulnérabilités connues**:
-  * [[Reconnaissance|Reconnaissance Réseau]]: L'utilisation des requêtes Echo [[InternetControlMessageProtocol|ICMP]] est la base du [[PingSweep|Balayage Ping]], permettant de découvrir les [[Host|hôtes]] actifs sur un [[Network|réseau]] et de cartographier la [[AttackSurface|surface d'attaque]].
-  * [[DenialOfService|Attaques par Déni de Service (DoS)]]: L'[[InternetControlMessageProtocol|ICMP]] peut être détourné pour des [[DenialOfService|attaques par déni de service]], comme l'[[PingFlood|Inondation Ping]] (saturation de la [[Bandwidth|bande passante]]) ou l'[[SmurfAttack|Attaque Smurf]] (attaque par amplification).
-  * [[DataExfiltration|Exfiltration de Données]] et [[CommandAndControl|Commande et Contrôle (C2)]]: Le [[ICMPTunneling|Tunneling ICMP]] est une [[InfiltrationMethods|méthode]] utilisée par les [[ThreatActor|acteurs de menace]] pour encapsuler d'autres [[Protocol|protocoles]] ou [[Data|données]] au sein de [[Packet|paquets ICMP]], permettant de contourner les [[Firewall|pare-feux]] et d'établir un canal de [[CommandAndControl|C2]] furtif.
+  * Reconnaissance Réseau: L'utilisation des requêtes Echo ICMP est la base du Balayage Ping, permettant de découvrir les hôtes actifs sur un réseau et de cartographier la surface d'attaque.
+  * Attaques par Déni de Service (DoS): L'ICMP peut être détourné pour des attaques par déni de service, comme l'Inondation Ping (saturation de la bande passante) ou l'Attaque Smurf (attaque par amplification).
+  * Exfiltration de Données et Commande et Contrôle (C2): Le Tunneling ICMP est une méthode utilisée par les acteurs de menace pour encapsuler d'autres protocoles ou données au sein de paquets ICMP, permettant de contourner les pare-feux et d'établir un canal de C2 furtif.
 * **Mesures de protection**:
-  * [[Firewall|Filtrage Pare-feu]]: Configurer des règles strictes sur les [[Firewall|pare-feux]] pour filtrer les types [[InternetControlMessageProtocol|ICMP]]. Il est courant de bloquer les requêtes Echo (Type 8) entrantes depuis l'[[Internet|Internet]] pour limiter la [[Reconnaissance|reconnaissance]], tout en autorisant les réponses Echo (Type 0) sortantes.
-  * **Attention au blocage total**: Bloquer tous les types [[InternetControlMessageProtocol|ICMP]] est déconseillé, car cela peut perturber des mécanismes [[Network|réseau]] essentiels, tels que la [[PathMTUDiscovery|découverte du PMTU]] (qui repose sur le Type 3, Code 4 "Fragmentation Needed").
-  * [[SecurityMonitoring|Surveillance Réseau]]: Utiliser des [[IntrusionDetectionSystem|systèmes de détection d'intrusion (IDS)]] ou des solutions de [[NetworkDetectionAndResponse|NDR (Network Detection and Response)]] pour détecter les comportements anormaux liés à l'[[InternetControlMessageProtocol|ICMP]] (scans, tunnels, inondations de paquets) et déclencher des [[IncidentResponse|réponses aux incidents]].
+  * Filtrage Pare-feu: Configurer des règles strictes sur les pare-feux pour filtrer les types ICMP. Il est courant de bloquer les requêtes Echo (Type 8) entrantes depuis l'Internet pour limiter la reconnaissance, tout en autorisant les réponses Echo (Type 0) sortantes.
+  * **Attention au blocage total**: Bloquer tous les types ICMP est déconseillé, car cela peut perturber des mécanismes réseau essentiels, tels que la découverte du PMTU (qui repose sur le Type 3, Code 4 "Fragmentation Needed").
+  * Surveillance Réseau: Utiliser des systèmes de détection d'intrusion (IDS) ou des solutions de NDR (Network Detection and Response) pour détecter les comportements anormaux liés à l'ICMP (scans, tunnels, inondations de paquets) et déclencher des réponses aux incidents.
 
 ## 🔗 Notes Connexes
-* [[Ping]]
-* [[Traceroute]]
-* [[InternetProtocol]]
-* [[InternetProtocolVersion6|ICMPv6]]
-* [[OpenSystemsInterconnectionModel|Modèle OSI]]
-* [[NetworkLayer|Couche Réseau]]
-* [[DenialOfService|Déni de Service]]
-* [[PingSweep|Balayage Ping]]
-* [[SmurfAttack]]
-* [[ICMPTunneling|Tunneling ICMP]]
-* [[Firewall]]
-* [[Wireshark]]
+* Ping
+* Traceroute
+* InternetProtocol
+* ICMPv6
+* Modèle OSI
+* Couche Réseau
+* Déni de Service
+* Balayage Ping
+* SmurfAttack
+* Tunneling ICMP
+* Firewall
+* Wireshark

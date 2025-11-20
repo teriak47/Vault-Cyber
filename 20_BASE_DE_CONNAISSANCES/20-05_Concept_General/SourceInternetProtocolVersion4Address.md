@@ -19,32 +19,32 @@ cssclasses:
 # Adresse IP Source IPv4
 
 ## 📥 Définition en une phrase
-> L'[[SourceInternetProtocolVersion4Address|adresse IP source IPv4]] est l'[[InternetProtocol|adresse IP]] unique d'un [[Host|hôte]] ou d'un [[NetworkDevice|périphérique réseau]] qui initie une [[NetworkCommunication|communication réseau]] en utilisant le [[InternetProtocolVersion4|Protocole Internet version 4]]. Elle indique l'origine d'un [[Packet|paquet]] [[InternetProtocolVersion4|IPv4]] sur un [[Network|réseau]].
+> L'adresse IP source IPv4 est l'adresse IP unique d'un hôte ou d'un périphérique réseau qui initie une communication réseau en utilisant le Protocole Internet version 4. Elle indique l'origine d'un paquet IPv4 sur un réseau.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Identification de l'Émetteur**: Chaque [[Packet|paquet]] [[InternetProtocolVersion4|IPv4]] transmis porte une [[SourceInternetProtocolVersion4Address|adresse IP source]] pour identifier de manière unique l'[[EndDevices|appareil]] qui l'a envoyé. Cette identification est fondamentale pour la [[NetworkCommunication|communication bidirectionnelle]].
-*   **Rôle dans le [[Routing|Routage]]**: Bien que les [[Router|routeurs]] utilisent principalement l'[[DestinationInternetProtocolVersion4Address|adresse IP de destination IPv4]] pour diriger les [[Packet|paquets]], l'[[SourceInternetProtocolVersion4Address|adresse IP source]] est indispensable pour que le destinataire puisse construire une réponse valide.
-*   **Champ d'[[Header|En-tête]] IP**: L'[[SourceInternetProtocolVersion4Address|adresse IP source]] est un champ dédié au sein de l'[[Header|en-tête]] de chaque [[Packet|paquet]] [[InternetProtocol|IP]], crucial pour le bon fonctionnement des [[InternetProtocolSuite|protocoles TCP/IP]].
-*   **[[NetworkCommunication|Communication Bidirectionnelle]]**: La connaissance de l'[[SourceInternetProtocolVersion4Address|adresse IP source]] permet au destinataire non seulement de traiter le [[Message|message]] entrant mais aussi de répondre directement à l'émetteur, établissant ainsi une [[NetworkCommunication|communication]] complète.
+*   **Identification de l'Émetteur**: Chaque paquet IPv4 transmis porte une adresse IP source pour identifier de manière unique l'appareil qui l'a envoyé. Cette identification est fondamentale pour la communication bidirectionnelle.
+*   **Rôle dans le Routage**: Bien que les routeurs utilisent principalement l'adresse IP de destination IPv4 pour diriger les paquets, l'adresse IP source est indispensable pour que le destinataire puisse construire une réponse valide.
+*   **Champ d'En-tête IP**: L'adresse IP source est un champ dédié au sein de l'en-tête de chaque paquet IP, crucial pour le bon fonctionnement des protocoles TCP/IP.
+*   **Communication Bidirectionnelle**: La connaissance de l'adresse IP source permet au destinataire non seulement de traiter le message entrant mais aussi de répondre directement à l'émetteur, établissant ainsi une communication complète.
 
 ## 💡 Importance en Cybersécurité
-> L'[[SourceInternetProtocolVersion4Address|adresse IP source IPv4]] est un élément pivot pour la [[NetworkSecurity|sécurité réseau]] et la [[Cybersecurity|cybersécurité]] car elle permet la [[Reconnaissance|traçabilité]] des activités. Elle est essentielle pour :
-*   **[[SecurityMonitoring|Surveillance de sécurité]]**: Les [[Log|journaux]] de trafic et les [[SecurityInformationAndEventManagement|SIEM]] enregistrent les adresses IP sources pour identifier l'origine des connexions, détecter les [[AnomalyDetection|anomalies]] et les comportements suspects.
-*   **[[Firewall|Règles de Pare-feu]]**: Les [[Firewall|pare-feu]] utilisent l'[[SourceInternetProtocolVersion4Address|adresse IP source]] pour filtrer le trafic, bloquer les [[AttackVector|vecteurs d'attaque]] connus et restreindre l'[[UnauthorizedAccess|accès non autorisé]] à des [[Resource|ressources]] spécifiques.
-*   **[[IncidentResponse|Réponse aux Incidents]]**: Lors d'un [[DigitalAttack|incident de sécurité]], l'analyse de l'[[SourceInternetProtocolVersion4Address|adresse IP source]] aide les [[BlueTeam|équipes bleues]] à identifier les [[ThreatActor|acteurs de menace]], à retracer la chaîne d'[[Attack|attaque]] et à mettre en œuvre des mesures d'[[SecurityControl|atténuation]].
-*   **Prévention des [[Spoofing|Usurpations]]**: La vérification de l'[[SourceInternetProtocolVersion4Address|adresse IP source]] est un mécanisme fondamental, bien que souvent insuffisant à lui seul, pour contrer les [[Spoofing|attaques par usurpation d'adresse IP]] (IP spoofing).
+> L'adresse IP source IPv4 est un élément pivot pour la sécurité réseau et la cybersécurité car elle permet la traçabilité des activités. Elle est essentielle pour :
+*   **Surveillance de sécurité**: Les journaux de trafic et les SIEM enregistrent les adresses IP sources pour identifier l'origine des connexions, détecter les anomalies et les comportements suspects.
+*   **Règles de Pare-feu**: Les pare-feu utilisent l'adresse IP source pour filtrer le trafic, bloquer les vecteurs d'attaque connus et restreindre l'accès non autorisé à des ressources spécifiques.
+*   **Réponse aux Incidents**: Lors d'un incident de sécurité, l'analyse de l'adresse IP source aide les équipes bleues à identifier les acteurs de menace, à retracer la chaîne d'attaque et à mettre en œuvre des mesures d'atténuation.
+*   **Prévention des Usurpations**: La vérification de l'adresse IP source est un mécanisme fondamental, bien que souvent insuffisant à lui seul, pour contrer les attaques par usurpation d'adresse IP (IP spoofing).
 
 ## 🔗 Notes Connexes
-*   [[InternetProtocolVersion4|Internet Protocol version 4 (IPv4)]]
-*   [[DestinationInternetProtocolVersion4Address|Adresse IP de Destination IPv4]]
-*   [[IPAddressing|Adressage IP]]
-*   [[Packet|Paquet IP]]
-*   [[NetworkSecurity|Sécurité Réseau]]
-*   [[Firewall|Pare-feu]]
-*   [[SecurityMonitoring|Surveillance de Sécurité]]
-*   [[Routing|Routage]]
-*   [[Spoofing|Usurpation d'adresse IP]]
+*   Internet Protocol version 4 (IPv4)
+*   Adresse IP de Destination IPv4
+*   Adressage IP
+*   Paquet IP
+*   Sécurité Réseau
+*   Pare-feu
+*   Surveillance de Sécurité
+*   Routage
+*   Usurpation d'adresse IP
 
 ## 🤔 Pistes d'Amélioration (Auto-Évaluation IA)
 *   La section "💡 Importance en Cybersécurité" pourrait être enrichie avec des exemples plus concrets d'utilisation dans des scénarios d'attaque et de défense.
-*   Des liens vers des concepts comme le [[NetworkAddressTranslation|NAT]] ou le [[VirtualPrivateNetwork|VPN]] pourraient illustrer comment l'adresse IP source peut être masquée ou modifiée.
+*   Des liens vers des concepts comme le NAT ou le VPN pourraient illustrer comment l'adresse IP source peut être masquée ou modifiée.

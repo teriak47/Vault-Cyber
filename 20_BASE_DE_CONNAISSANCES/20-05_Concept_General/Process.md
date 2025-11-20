@@ -11,32 +11,32 @@ archetype: concept-general
 # Processus (Process)
 
 ## 📥 Définition en une phrase
-> Un [[Process|processus]] est une instance en cours d'exécution d'un [[Software|programme]] informatique, gérée par le [[OperatingSystem|système d'exploitation]] et possédant son propre ensemble de [[Resource|ressources]] système.
+> Un processus est une instance en cours d'exécution d'un programme informatique, gérée par le système d'exploitation et possédant son propre ensemble de ressources système.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Instance d'exécution**: Un [[Process|processus]] représente une [[Software|application]] ou un [[System|service]] en [[Execution|cours d'exécution]]. Il encapsule l'[[ExecutionContext|état d'exécution]] du [[Software|programme]], y compris son [[MemorySpace|espace mémoire]] dédié, ses [[RegisterValues|valeurs de registre]] et les [[Resource|ressources]] qu'il utilise.
-*   **Gestion par le [[OperatingSystem|Système d'exploitation]]**: Le [[OperatingSystem|système d'exploitation]] est le gestionnaire central des [[Process|processus]]. Il alloue les [[CentralProcessingUnit|ressources CPU]], la [[MemoryManagement|mémoire]], les fichiers et les périphériques d'[[InputOutput|entrée/sortie]], planifie leur [[Execution|exécution]] et les isole les uns des autres pour assurer la [[Security|stabilité]] et la [[Security|sécurité]] du [[System|système]].
-*   **États du Processus**: Un [[Process|processus]] peut transiter par plusieurs états (nouveau, prêt, en cours d'exécution, bloqué/attente, terminé) en fonction de son [[Activity|activité]] et de l'accès aux [[Resource|ressources]] nécessaires.
+*   **Instance d'exécution**: Un processus représente une application ou un service en cours d'exécution. Il encapsule l'état d'exécution du programme, y compris son espace mémoire dédié, ses valeurs de registre et les ressources qu'il utilise.
+*   **Gestion par le Système d'exploitation**: Le système d'exploitation est le gestionnaire central des processus. Il alloue les ressources CPU, la mémoire, les fichiers et les périphériques d'entrée/sortie, planifie leur exécution et les isole les uns des autres pour assurer la stabilité et la sécurité du système.
+*   **États du Processus**: Un processus peut transiter par plusieurs états (nouveau, prêt, en cours d'exécution, bloqué/attente, terminé) en fonction de son activité et de l'accès aux ressources nécessaires.
 
 ## 💡 Importance en Cybersécurité
-> Les [[Process|processus]] sont des cibles primordiales pour les [[ThreatActor|acteurs de menace]], car la compromission d'un [[Process|processus]] peut mener à une [[SystemCompromise|compromission du système]]. Comprendre comment les [[Process|processus]] fonctionnent et sont gérés est essentiel pour la [[Cybersecurity|cybersécurité]], notamment pour la [[Malware|détection de logiciels malveillants]], l'[[Exploitation|analyse des exploits]], l'[[PrivilegeEscalation|escalade de privilèges]] et la [[SecurityMonitoring|surveillance]] des [[System|systèmes]]. Des techniques comme la [[DataExecutionPrevention|Prévention de l'Exécution des Données (DEP)]] et l'[[AddressSpaceLayoutRandomization|ASLR]] sont spécifiquement conçues pour protéger les [[Process|processus]] contre les [[Attack|attaques]] courantes.
+> Les processus sont des cibles primordiales pour les acteurs de menace, car la compromission d'un processus peut mener à une compromission du système. Comprendre comment les processus fonctionnent et sont gérés est essentiel pour la cybersécurité, notamment pour la détection de logiciels malveillants, l'analyse des exploits, l'escalade de privilèges et la surveillance des systèmes. Des techniques comme la Prévention de l'Exécution des Données (DEP) et l'ASLR sont spécifiquement conçues pour protéger les processus contre les attaques courantes.
 
 ## 🔗 Notes Connexes
-*   [[OperatingSystem|Système d'exploitation]]
-*   [[MemoryManagement|Gestion de la mémoire]]
-*   [[Exploitation|Exploitation]]
-*   [[Malware|Logiciel malveillant]]
-*   [[PrivilegeEscalation|Escalade de Privilèges]]
-*   [[System|Système]]
-*   [[Software|Logiciel]]
-*   [[AttackVector|Vecteur d'attaque]]
-*   [[SecurityMonitoring|Surveillance de sécurité]]
-*   [[NoExecuteBit|Bit No-Execute (NX Bit)]]
-*   [[AddressSpaceLayoutRandomization|Address Space Layout Randomization (ASLR)]]
-*   [[CentralProcessingUnit|Processeur]]
-*   [[InputOutput|Entrée/Sortie]]
-*   [[ExecutionContext|Contexte d'exécution]]
-*   [[Execution|Exécution]]
-*   [[Activity|Activité]]
-*   [[MemorySpace|Espace mémoire]]
-*   [[RegisterValues|Valeurs de registre]]
+*   Système d'exploitation
+*   Gestion de la mémoire
+*   Exploitation
+*   Logiciel malveillant
+*   Escalade de Privilèges
+*   Système
+*   Logiciel
+*   Vecteur d'attaque
+*   Surveillance de sécurité
+*   Bit No-Execute (NX Bit)
+*   Address Space Layout Randomization (ASLR)
+*   Processeur
+*   Entrée/Sortie
+*   Contexte d'exécution
+*   Exécution
+*   Activité
+*   Espace mémoire
+*   Valeurs de registre

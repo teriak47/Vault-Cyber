@@ -19,21 +19,21 @@ cssclasses:
 # Réseau Étendu (WAN)
 
 ## 📥 Définition en une phrase
-> Un [[WideAreaNetwork|réseau étendu]] (WAN) est un réseau de télécommunications qui s'étend sur une vaste zone géographique, comme des villes, des pays ou même des continents, pour connecter des [[LocalAreaNetwork|réseaux locaux (LANs)]] et d'autres types de [[Network|réseaux]] entre eux.
+> Un réseau étendu (WAN) est un réseau de télécommunications qui s'étend sur une vaste zone géographique, comme des villes, des pays ou même des continents, pour connecter des réseaux locaux (LANs) et d'autres types de réseaux entre eux.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Connectivité Géographique Étendue**: Les [[WideAreaNetwork|WAN]] relient des [[LocalAreaNetwork|LAN]] ou d'autres [[Network|réseaux]] distants, permettant la [[NetworkCommunication|communication]] et le partage de [[Resource|ressources]] sur de très longues distances.
-*   **Technologies de Transmission Variées**: Ils exploitent diverses [[WirelessTransmission|technologies de transmission]] comme les lignes louées, le [[MultiprotocolLabelSwitching|Multiprotocol Label Switching (MPLS)]], les [[VirtualPrivateNetwork|réseaux privés virtuels (VPN)]], et les architectures de [[SoftwareDefinedWideAreaNetwork|Software-Defined Wide Area Network (SD-WAN)]].
-*   **Infrastructure Gérée par des Fournisseurs**: L'[[NetworkInfrastructure|infrastructure]] des [[WideAreaNetwork|WAN]] est généralement mise en place et gérée par des [[InternetServiceProvider|fournisseurs de services de télécommunications]] qui offrent la connectivité via des [[FiberOpticCable|fibres optiques]], des [[SatelliteLinks|liaisons satellitaires]] ou d'autres [[NetworkMedia|supports]] à large [[Bandwidth|bande passante]].
-*   **Rôle Structurel**: Les [[WideAreaNetwork|WAN]] servent de colonne vertébrale pour relier des sites distants d'une [[Enterprise|entreprise]], des campus universitaires ou des [[User|utilisateurs]] éloignés aux [[Server|serveurs]] et [[SoftwareApplication|applications]] centrales.
+*   **Connectivité Géographique Étendue**: Les WAN relient des LAN ou d'autres réseaux distants, permettant la communication et le partage de ressources sur de très longues distances.
+*   **Technologies de Transmission Variées**: Ils exploitent diverses technologies de transmission comme les lignes louées, le Multiprotocol Label Switching (MPLS), les réseaux privés virtuels (VPN), et les architectures de Software-Defined Wide Area Network (SD-WAN).
+*   **Infrastructure Gérée par des Fournisseurs**: L'infrastructure des WAN est généralement mise en place et gérée par des fournisseurs de services de télécommunications qui offrent la connectivité via des fibres optiques, des liaisons satellitaires ou d'autres supports à large bande passante.
+*   **Rôle Structurel**: Les WAN servent de colonne vertébrale pour relier des sites distants d'une entreprise, des campus universitaires ou des utilisateurs éloignés aux serveurs et applications centrales.
 
 ## 💡 Importance en Cybersécurité
-> Les [[WideAreaNetwork|WAN]] sont cruciaux pour la connectivité globale des organisations, mais ils introduisent des [[SecurityVulnerabilities|vulnérabilités de sécurité]] spécifiques. Leur nature distribuée et la dépendance à des [[InternetServiceProvider|fournisseurs tiers]] nécessitent des [[SecurityControl|contrôles de sécurité]] robustes, incluant le [[DataEncryption|chiffrement des données]] transitant entre les sites, la mise en œuvre de [[VirtualPrivateNetwork|VPN]] pour sécuriser les [[CommunicationChannel|canaux de communication]], et une gestion rigoureuse des [[AccessControl|accès]]. La [[NetworkSecurity|sécurité des WAN]] est essentielle pour la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et la [[Availability|disponibilité]] des [[Data|données]] de l'[[Enterprise|entreprise]].
+> Les WAN sont cruciaux pour la connectivité globale des organisations, mais ils introduisent des vulnérabilités de sécurité spécifiques. Leur nature distribuée et la dépendance à des fournisseurs tiers nécessitent des contrôles de sécurité robustes, incluant le chiffrement des données transitant entre les sites, la mise en œuvre de VPN pour sécuriser les canaux de communication, et une gestion rigoureuse des accès. La sécurité des WAN est essentielle pour la confidentialité, l'intégrité et la disponibilité des données de l'entreprise.
 
 ## 🔗 Notes Connexes
-* [[LocalAreaNetwork|Réseau Local (LAN)]]
-* [[VirtualPrivateNetwork|Réseau Privé Virtuel (VPN)]]
-* [[NetworkSecurity|Sécurité Réseau]]
-* [[Router|Routeur]]
-* [[EnterpriseNetwork|Réseau d'Entreprise]]
-* [[Internet|Internet]]
+* Réseau Local (LAN)
+* Réseau Privé Virtuel (VPN)
+* Sécurité Réseau
+* Routeur
+* Réseau d'Entreprise
+* Internet

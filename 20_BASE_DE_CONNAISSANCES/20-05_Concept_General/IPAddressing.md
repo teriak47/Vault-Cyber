@@ -15,32 +15,32 @@ cssclasses:
 # Adressage IP
 
 ## 📥 Définition en une phrase
-> L'[[IPAddressing|Adressage IP]] est le processus fondamental d'attribution et de gestion des [[InternetProtocol|adresses IP]] aux [[EndDevices|appareils]] connectés à un [[Network|réseau]], leur permettant une [[NetworkCommunication|communication]] unique et [[Routing|routable]].
+> L'Adressage IP est le processus fondamental d'attribution et de gestion des adresses IP aux appareils connectés à un réseau, leur permettant une communication unique et routable.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Identifiants Logiques**: Les [[InternetProtocol|adresses IP]] sont des identifiants numériques logiques qui désignent de manière unique un [[Host|hôte]] ou une [[NetworkInterface|interface réseau]] au sein d'un [[Network|réseau]] [[InternetProtocol|IP]].
-*   **Versions**: Il existe deux versions principales : [[InternetProtocolVersion4|IPv4]] (32 bits, ex: 192.168.1.1) et [[InternetProtocolVersion6|IPv6]] (128 bits, ex: 2001:0db8::1), chacune avec ses propres formats et capacités.
-*   **Segmentation et Sous-réseautage**: Chaque [[InternetProtocol|adresse IP]] est associée à un [[SubnetMask|masque de sous-réseau]] qui délimite la [[NetworkPortion|partie réseau]] et la [[HostPortion|partie hôte]] de l'adresse, une notion essentielle pour le [[Subnetting|sous-réseautage]] et la [[NetworkSegmentation|segmentation réseau]].
-*   **Méthodes d'Attribution**: Les [[InternetProtocol|adresses IP]] peuvent être attribuées de manière [[StaticIPAddressing|statique]] (manuellement) pour une configuration fixe ou [[DynamicHostConfigurationProtocol|dynamiquement]] via un [[DynamicHostConfigurationProtocol|serveur DHCP]] pour une gestion automatisée.
-*   **Routage**: L'[[IPAddressing|adressage IP]] est le pilier du [[Routing|routage]] des [[Packet|paquets de données]] entre différents [[InterconnectedNetworks|réseaux interconnectés]] grâce à des [[Router|routeurs]] et des [[Gateway|passerelles]].
+*   **Identifiants Logiques**: Les adresses IP sont des identifiants numériques logiques qui désignent de manière unique un hôte ou une interface réseau au sein d'un réseau IP.
+*   **Versions**: Il existe deux versions principales : IPv4 (32 bits, ex: 192.168.1.1) et IPv6 (128 bits, ex: 2001:0db8::1), chacune avec ses propres formats et capacités.
+*   **Segmentation et Sous-réseautage**: Chaque adresse IP est associée à un masque de sous-réseau qui délimite la partie réseau et la partie hôte de l'adresse, une notion essentielle pour le sous-réseautage et la segmentation réseau.
+*   **Méthodes d'Attribution**: Les adresses IP peuvent être attribuées de manière statique (manuellement) pour une configuration fixe ou dynamiquement via un serveur DHCP pour une gestion automatisée.
+*   **Routage**: L'adressage IP est le pilier du routage des paquets de données entre différents réseaux interconnectés grâce à des routeurs et des passerelles.
 
 ## 💡 Importance en Cybersécurité
-> L'[[IPAddressing|adressage IP]] est un élément fondamental de la [[NetworkSecurity|sécurité réseau]] car il est la base de toute [[NetworkCommunication|communication]]. Sa gestion appropriée est cruciale pour prévenir et détecter les [[DigitalAttack|attaques numériques]]. Une mauvaise configuration ou une exploitation des vulnérabilités liées à l'adressage IP peut mener à des [[UnauthorizedAccess|accès non autorisés]], à des [[DenialOfService|dénis de service]] et à la [[DataTheft|fuite de données]]. La [[NetworkSegmentation|segmentation réseau]] basée sur l'adressage IP permet d'isoler les [[System|systèmes]] critiques et de contenir les [[Attack|attaques]], tandis que la [[SecurityMonitoring|surveillance]] active des [[Log|journaux]] d'adresses IP est indispensable pour la [[IncidentResponse|réponse aux incidents]].
+> L'adressage IP est un élément fondamental de la sécurité réseau car il est la base de toute communication. Sa gestion appropriée est cruciale pour prévenir et détecter les attaques numériques. Une mauvaise configuration ou une exploitation des vulnérabilités liées à l'adressage IP peut mener à des accès non autorisés, à des dénis de service et à la fuite de données. La segmentation réseau basée sur l'adressage IP permet d'isoler les systèmes critiques et de contenir les attaques, tandis que la surveillance active des journaux d'adresses IP est indispensable pour la réponse aux incidents.
 
 ## 🔗 Notes Connexes
-*   [[InternetProtocol|Protocole Internet]]
-*   [[InternetProtocolVersion4|IPv4]]
-*   [[InternetProtocolVersion6|IPv6]]
-*   [[Subnetting|Sous-réseautage]]
-*   [[DynamicHostConfigurationProtocol|DHCP]]
-*   [[DomainNameSystem|Système de Noms de Domaine]]
-*   [[SubnetMask|Masque de sous-réseau]]
-*   [[NetworkLayer|Couche Réseau]]
-*   [[NetworkAddressTranslation|Traduction d'Adresses Réseau (NAT)]]
-*   [[Router|Routeur]]
-*   [[Firewall|Pare-feu]]
-*   [[Spoofing|Usurpation d'adresse IP]]
-*   [[DenialOfService|Attaque par déni de service]]
-*   [[NetworkMonitoring|Scans de réseau]]
-*   [[AccessControl|Contrôle d'accès]]
-*   [[DHCPSnooping|DHCP Snooping]]
+*   Protocole Internet
+*   IPv4
+*   IPv6
+*   Sous-réseautage
+*   DHCP
+*   Système de Noms de Domaine
+*   Masque de sous-réseau
+*   Couche Réseau
+*   Traduction d'Adresses Réseau (NAT)
+*   Routeur
+*   Pare-feu
+*   Usurpation d'adresse IP
+*   Attaque par déni de service
+*   Scans de réseau
+*   Contrôle d'accès
+*   DHCP Snooping

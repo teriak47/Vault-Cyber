@@ -25,5 +25,5 @@ cssclasses:
 > Le terme "Half-Duplex" dérive des racines latines "duo" (deux) et "plex" (plis), signifiant "double", combiné à "half" (moitié) pour indiquer une capacité de transmission dans les deux sens, mais séquentiellement. Le concept est intrinsèquement lié à l'évolution des réseaux et des supports de transmission de données.
 
 ## 🔗 Notes Connexes
-*   **Concept complémentaire**: [[FullDuplexCommunication|Communication Full-Duplex]]
-*   **Mode de communication parent**: [[NetworkCommunication|Communication réseau]]
+*   **Concept complémentaire**: Communication Full-Duplex
+*   **Mode de communication parent**: Communication réseau

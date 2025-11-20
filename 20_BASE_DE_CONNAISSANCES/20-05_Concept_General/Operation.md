@@ -22,20 +22,20 @@ cssclasses:
 # Opération
 
 ## 📥 Définition en une phrase
-> Une [[Operation|opération]], en [[Cybersecurity|cybersécurité]], désigne un ensemble structuré d'activités ou de [[Methodology|processus]] menés pour atteindre un objectif spécifique, qu'il soit défensif (comme la [[SecurityMonitoring|surveillance de sécurité]]) ou offensif (comme les [[Attack|attaques]] ciblées).
+> Une opération, en cybersécurité, désigne un ensemble structuré d'activités ou de processus menés pour atteindre un objectif spécifique, qu'il soit défensif (comme la surveillance de sécurité) ou offensif (comme les attaques ciblées).
 
 ## 🧠 Concepts Clés / Piliers
-*   **Objectif et Étendue**: Chaque opération est définie par un objectif clair, qu'il s'agisse de [[ThreatDetection|détection de menaces]], de [[VulnerabilityManagement|gestion des vulnérabilités]] ou d'[[Exploitation|exploitation]] de failles. Son étendue est déterminée par les [[Resource|ressources]] et les contraintes.
-*   **Exécution et Automatisation**: Les opérations peuvent être manuelles, basées sur des [[Script|scripts]] ou hautement [[Automation|automatisées]], s'appuyant sur des [[Tool|outils]] et des [[Software|logiciels]] spécialisés pour améliorer l'efficacité et la [[Scalability|évolutivité]].
-*   **Cycle de Vie**: Les opérations suivent souvent un [[Methodology|processus]] itératif qui inclut la [[Planning|planification]], l'[[Execution|exécution]], la [[SecurityMonitoring|surveillance]], l'analyse et l'amélioration continue, s'inscrivant dans une [[Strategy|stratégie]] globale.
-*   **Personnel et Technologie**: La réussite d'une opération dépend de l'expertise du [[Personnel|personnel]] (par exemple, la [[BlueTeam|Blue Team]] ou la [[RedTeam|Red Team]]) et de la mise en œuvre de [[DigitalTechnology|technologies]] appropriées.
+*   **Objectif et Étendue**: Chaque opération est définie par un objectif clair, qu'il s'agisse de détection de menaces, de gestion des vulnérabilités ou d'exploitation de failles. Son étendue est déterminée par les ressources et les contraintes.
+*   **Exécution et Automatisation**: Les opérations peuvent être manuelles, basées sur des scripts ou hautement automatisées, s'appuyant sur des outils et des logiciels spécialisés pour améliorer l'efficacité et la évolutivité.
+*   **Cycle de Vie**: Les opérations suivent souvent un processus itératif qui inclut la planification, l'exécution, la surveillance, l'analyse et l'amélioration continue, s'inscrivant dans une stratégie globale.
+*   **Personnel et Technologie**: La réussite d'une opération dépend de l'expertise du personnel (par exemple, la Blue Team ou la Red Team) et de la mise en œuvre de technologies appropriées.
 
 ## 💡 Importance en Cybersécurité
-Les opérations sont le cœur battant de la [[Cybersecurity|cybersécurité]], structurant les efforts de [[DefenseInDepth|défense]] et d'[[Attack|attaque]] pour garantir la [[Integrity|intégrité]], la [[Confidentiality|confidentialité]] et l'[[Availability|disponibilité]] des systèmes et des données. Elles permettent une [[Planning|planification]], une exécution et une surveillance efficaces des [[SecurityControl|contrôles de sécurité]], essentielles pour la [[RiskManagement|gestion des risques]] et la [[Resilience|résilience]] d'une [[Organisation|organisation]] face aux [[Threat|menaces]] numériques.
+Les opérations sont le cœur battant de la cybersécurité, structurant les efforts de défense et d'attaque pour garantir la intégrité, la confidentialité et l'disponibilité des systèmes et des données. Elles permettent une planification, une exécution et une surveillance efficaces des contrôles de sécurité, essentielles pour la gestion des risques et la résilience d'une organisation face aux menaces numériques.
 
 ## 🔗 Notes Connexes
-*   **Cadre d'attaque**: [[CyberKillChain]]
-*   **Gestion des risques**: [[RiskManagement]]
-*   **Réponse aux incidents**: [[IncidentResponse]]
-*   **Composant d'attaque**: [[CommandAndControl]]
-*   **Activité de surveillance**: [[ThreatDetection]]
+*   **Cadre d'attaque**: CyberKillChain
+*   **Gestion des risques**: RiskManagement
+*   **Réponse aux incidents**: IncidentResponse
+*   **Composant d'attaque**: CommandAndControl
+*   **Activité de surveillance**: ThreatDetection

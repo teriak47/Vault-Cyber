@@ -15,25 +15,25 @@ cssclasses:
 # Taille de Message
 
 ## 📥 Définition en une phrase
-> La [[MessageSize|taille de message]] fait référence à la quantité de [[Data|données]] ou d'[[InformationSecurity|informations]] contenues dans un seul [[Message|message]] transmis via un [[Network|réseau]] ou entre des [[SoftwareApplication|composants logiciels]].
+> La taille de message fait référence à la quantité de données ou d'informations contenues dans un seul message transmis via un réseau ou entre des composants logiciels.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Impact sur la [[NetworkPerformance|performance réseau]]**: Des [[Message|messages]] de grande [[MessageSize|taille]] peuvent réduire le nombre de [[Message|messages]] à traiter mais augmenter la [[Latency|latence]] de [[DataTransmission|transmission]] individuelle. Inversement, des [[Message|messages]] trop petits peuvent entraîner un [[Header|surcoût (overhead)]] de traitement par [[Message|message]] en raison de la répétition des [[Header|en-têtes]] de [[NetworkProtocol|protocole]].
-*   **[[Encapsulation|Encapsulation]] et [[Payload|Charge Utile]]**: La [[MessageSize|taille totale d'un message]] inclut non seulement les [[Payload|données utiles (payload)]] mais aussi les [[Header|en-têtes]] des différents [[NetworkProtocol|protocoles réseau]] à travers les couches du [[OpenSystemsInterconnectionModel|modèle OSI]] ou [[InternetProtocolSuite|TCP/IP]] (par exemple, [[EthernetFrame|trame Ethernet]], [[InternetProtocol|paquet IP]], [[TransmissionControlProtocol|segment TCP]] ou [[UserDatagramProtocol|datagramme UDP]]).
-*   **[[Fragmentation|Segmentation]] et [[MaximumTransmissionUnit|MTU]]**: Si un [[Message|message]] dépasse la [[MaximumTransmissionUnit|Maximum Transmission Unit (MTU)]] d'un [[Network|réseau]], il est automatiquement [[Fragmentation|fragmenté]] en plus petits [[Packet|paquets]] pour être transmis, puis [[Decapsulation|réassemblé]] à [[DestinationInternetProtocolVersion4Address|destination]]. Ce processus affecte la [[NetworkPerformance|performance]] et la [[Security|sécurité]].
-*   **Limites des [[NetworkProtocol|Protocoles Réseau]]**: De nombreux [[NetworkProtocol|protocoles réseau]] définissent des limites minimales et maximales pour la [[MessageSize|taille des messages]] ou des champs spécifiques, influençant la [[Network|conception réseau]] et l'[[SoftwareApplication|implémentation logicielle]].
+*   **Impact sur la performance réseau**: Des messages de grande taille peuvent réduire le nombre de messages à traiter mais augmenter la latence de transmission individuelle. Inversement, des messages trop petits peuvent entraîner un surcoût (overhead) de traitement par message en raison de la répétition des en-têtes de protocole.
+*   **Encapsulation et Charge Utile**: La taille totale d'un message inclut non seulement les données utiles (payload) mais aussi les en-têtes des différents protocoles réseau à travers les couches du modèle OSI ou TCP/IP (par exemple, trame Ethernet, paquet IP, segment TCP ou datagramme UDP).
+*   **Segmentation et MTU**: Si un message dépasse la Maximum Transmission Unit (MTU) d'un réseau, il est automatiquement fragmenté en plus petits paquets pour être transmis, puis réassemblé à destination. Ce processus affecte la performance et la sécurité.
+*   **Limites des Protocoles Réseau**: De nombreux protocoles réseau définissent des limites minimales et maximales pour la taille des messages ou des champs spécifiques, influençant la conception réseau et l'implémentation logicielle.
 
 ## 💡 Importance en Cybersécurité
-> La gestion et le contrôle de la [[MessageSize|taille des messages]] sont fondamentaux en [[Cybersecurity|cybersécurité]]. Une mauvaise gestion peut ouvrir la porte à diverses [[Attack|attaques]], notamment les [[DenialOfService|attaques par déni de service (DoS)]] (comme le fameux [[PingOfDeath|Ping of Death]] qui exploitait des messages ICMP trop grands) par saturation des [[Resource|ressources]] ou par l'envoi d'un grand nombre de petits [[Packet|paquets]] (flood). Des [[SoftwareVulnerability|vulnérabilités]] critiques telles que les [[BufferOverflow|dépassements de tampon]] peuvent survenir si les [[SoftwareApplication|applications]] ne valident pas correctement la [[MessageSize|taille des messages]] entrants, permettant l'[[Exploitation|exploitation]] et potentiellement l'[[RemoteCodeExecution|exécution de code à distance]]. De plus, l'[[DataExfiltration|exfiltration de données]] peut être masquée par la fragmentation de [[SensitiveData|données sensibles]] en [[Message|messages]] de [[MessageSize|taille]] apparemment normale, ou inversement, des [[Message|messages]] de [[MessageSize|taille]] inhabituelle peuvent servir d'indicateur d'activités suspectes, soulignant l'importance de la [[NetworkMonitoring|surveillance réseau]] et de l'[[TrafficManagement|analyse du trafic]].
+> La gestion et le contrôle de la taille des messages sont fondamentaux en cybersécurité. Une mauvaise gestion peut ouvrir la porte à diverses attaques, notamment les attaques par déni de service (DoS) (comme le fameux Ping of Death qui exploitait des messages ICMP trop grands) par saturation des ressources ou par l'envoi d'un grand nombre de petits paquets (flood). Des vulnérabilités critiques telles que les dépassements de tampon peuvent survenir si les applications ne valident pas correctement la taille des messages entrants, permettant l'exploitation et potentiellement l'exécution de code à distance. De plus, l'exfiltration de données peut être masquée par la fragmentation de données sensibles en messages de taille apparemment normale, ou inversement, des messages de taille inhabituelle peuvent servir d'indicateur d'activités suspectes, soulignant l'importance de la surveillance réseau et de l'analyse du trafic.
 
 ## 🔗 Notes Connexes
-*   [[NetworkProtocol|Protocole Réseau]]
-*   [[Packet|Paquet]]
-*   [[MaximumTransmissionUnit|Maximum Transmission Unit (MTU)]]
-*   [[Fragmentation|Fragmentation]]
-*   [[DenialOfService|Déni de Service]]
-*   [[BufferOverflow|Buffer Overflow]]
-*   [[DataExfiltration|Exfiltration de Données]]
-*   [[TrafficShaping|Mise en Forme du Trafic]]
-*   [[PingOfDeath|Ping of Death]]
-*   [[NetworkPerformance|Performance Réseau]]
+*   Protocole Réseau
+*   Paquet
+*   Maximum Transmission Unit (MTU)
+*   Fragmentation
+*   Déni de Service
+*   Buffer Overflow
+*   Exfiltration de Données
+*   Mise en Forme du Trafic
+*   Ping of Death
+*   Performance Réseau

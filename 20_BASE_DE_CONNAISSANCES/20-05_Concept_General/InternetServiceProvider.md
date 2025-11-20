@@ -14,31 +14,31 @@ cssclasses:
 # Fournisseur d'Accès Internet (FAI)
 
 ## 📥 Définition en une phrase
-> Un [[InternetServiceProvider|Fournisseur d'Accès Internet (FAI)]] est une [[Enterprise|organisation]] qui fournit aux [[User|individus]], aux [[Enterprise|entreprises]] et à d'autres [[Enterprise|organisations]] un accès au [[Internet|réseau mondial d'Internet]] ainsi qu'à des [[OnlineServices|services en ligne]] connexes.
+> Un Fournisseur d'Accès Internet (FAI) est une organisation qui fournit aux individus, aux entreprises et à d'autres organisations un accès au réseau mondial d'Internet ainsi qu'à des services en ligne connexes.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Infrastructure et Connectivité**: Les [[InternetServiceProvider|FAI]] possèdent, opèrent ou louent l'[[NetworkInfrastructure|infrastructure réseau]] nécessaire, incluant [[CoaxialCable|câbles]], [[FiberOpticCable|fibres optiques]], [[Router|routeurs]] et [[DomainNameSystem|serveurs DNS]], pour [[Internet|connecter]] leurs [[Client|abonnés]] au [[Internet|reste d'Internet]]. Ils sont le point de connexion entre le [[LocalAreaNetwork|réseau local]] d'un [[User|utilisateur]] et le [[Internet|réseau des réseaux]], assurant le [[DataTransmission|routage du trafic de données]]. Leur rôle est crucial dans la gestion de l'[[InternetBackbone|épine dorsale d'Internet]].
-*   **Services et Attribution d'Identités**: Les services typiques offerts par un [[InternetServiceProvider|FAI]] incluent l'accès à [[Internet]] haut débit (fibre, ADSL, câble, satellite), l'[[IPAddressing|attribution d'adresses IP]], la [[DomainNameSystem|résolution DNS]], des services de [[Email|messagerie]] et, parfois, l'[[WebServer|hébergement web]] ou le [[Cloud|stockage en nuage]]. Ils sont responsables de l'[[Identification|identification]] des [[User|utilisateurs]] et de la gestion de leurs [[CommunicationChannel|canaux de communication]] sur le [[Network|réseau]].
-*   **Enjeux de Sécurité, Vie Privée et Réglementation**: Les [[InternetServiceProvider|FAI]] détiennent une grande quantité de [[PersonalData|données personnelles]] et de [[Log|journaux de connexion]] de leurs [[Client|abonnés]], ce qui en fait des [[AttackSurface|cibles de choix]] pour les [[ThreatActor|acteurs de menace]]. Ils sont soumis à des réglementations strictes (comme le [[GeneralDataProtectionRegulation|RGPD]]) concernant la [[DataProtection|protection des données]] et la [[Privacy|confidentialité]]. La [[Security|sécurité]] robuste, la [[Privacy|confidentialité]] des [[PersonalData|données personnelles]] et la résilience face aux [[DenialOfService|attaques par déni de service]] sont des aspects fondamentaux de leurs opérations.
+*   **Infrastructure et Connectivité**: Les FAI possèdent, opèrent ou louent l'infrastructure réseau nécessaire, incluant câbles, fibres optiques, routeurs et serveurs DNS, pour connecter leurs abonnés au reste d'Internet. Ils sont le point de connexion entre le réseau local d'un utilisateur et le réseau des réseaux, assurant le routage du trafic de données. Leur rôle est crucial dans la gestion de l'épine dorsale d'Internet.
+*   **Services et Attribution d'Identités**: Les services typiques offerts par un FAI incluent l'accès à Internet haut débit (fibre, ADSL, câble, satellite), l'attribution d'adresses IP, la résolution DNS, des services de messagerie et, parfois, l'hébergement web ou le stockage en nuage. Ils sont responsables de l'identification des utilisateurs et de la gestion de leurs canaux de communication sur le réseau.
+*   **Enjeux de Sécurité, Vie Privée et Réglementation**: Les FAI détiennent une grande quantité de données personnelles et de journaux de connexion de leurs abonnés, ce qui en fait des cibles de choix pour les acteurs de menace. Ils sont soumis à des réglementations strictes (comme le RGPD) concernant la protection des données et la confidentialité. La sécurité robuste, la confidentialité des données personnelles et la résilience face aux attaques par déni de service sont des aspects fondamentaux de leurs opérations.
 
 ## 💡 Importance en Cybersécurité
-> Les [[InternetServiceProvider|FAI]] sont une [[NetworkInfrastructure|infrastructure critique]] pour l'accès à l'[[Internet]] et la [[NetworkCommunication|communication numérique]] mondiale. Toute [[SystemCompromise|compromission]] de leurs [[System|systèmes]] peut entraîner des [[DataBreach|fuites de données]] massives, des [[PrivacyInvasion|violations de la vie privée]] à grande échelle, des [[ServiceDisruption|interruptions de service]] généralisées et des [[DigitalAttack|attaques]] ciblées contre leurs [[Client|clients]]. Leur [[Security|sécurité]] est donc un pilier essentiel de la [[Cybersecurity|cybersécurité]] globale, nécessitant une [[Vigilance|vigilance]] constante et des [[SecurityControl|contrôles de sécurité]] rigoureux pour protéger les [[User|utilisateurs]] et les [[Data|données]].
+> Les FAI sont une infrastructure critique pour l'accès à l'Internet et la communication numérique mondiale. Toute compromission de leurs systèmes peut entraîner des fuites de données massives, des violations de la vie privée à grande échelle, des interruptions de service généralisées et des attaques ciblées contre leurs clients. Leur sécurité est donc un pilier essentiel de la cybersécurité globale, nécessitant une vigilance constante et des contrôles de sécurité rigoureux pour protéger les utilisateurs et les données.
 
 ## 🔗 Notes Connexes
-*   [[Internet|Internet]]
-*   [[NetworkInfrastructure|Infrastructure Réseau]]
-*   [[Router|Routeur]]
-*   [[DomainNameSystem|Système de Noms de Domaine]]
-*   [[IPAddressing|Adressage IP]]
-*   [[DataBreach|Fuite de Données]]
-*   [[DenialOfService|Déni de Service]]
-*   [[ManInTheMiddle|Attaque de l'Homme du Milieu]]
-*   [[VirtualPrivateNetwork|Réseau Privé Virtuel]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs]]
-*   [[StrongPassword|Mots de passe forts]]
-*   [[Firewall|Pare-feu]]
-*   [[PrivacyInvasion|Invasion de la vie privée]]
-*   [[SinglePointOfFailure|Point de défaillance unique]]
-*   [[PrivacyPolicy|Politique de confidentialité]]
-*   [[SecurityAdvisory|Avis de sécurité]]
-*   [[NetworkTier|Niveaux de réseau]]
+*   Internet
+*   Infrastructure Réseau
+*   Routeur
+*   Système de Noms de Domaine
+*   Adressage IP
+*   Fuite de Données
+*   Déni de Service
+*   Attaque de l'Homme du Milieu
+*   Réseau Privé Virtuel
+*   Authentification Multi-Facteurs
+*   Mots de passe forts
+*   Pare-feu
+*   Invasion de la vie privée
+*   Point de défaillance unique
+*   Politique de confidentialité
+*   Avis de sécurité
+*   Niveaux de réseau

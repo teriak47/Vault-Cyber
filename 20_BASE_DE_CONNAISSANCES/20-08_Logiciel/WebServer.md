@@ -13,50 +13,50 @@ aliases:
   - Web Server
   - Webserver
 archetype: logiciel
-version: 
+version:
 cssclasses:
   - max
-source: 
+source:
 ---
 
 # Logiciel : Serveur Web
 
 ## 🎯 Rôle et Fonction
 
-> Un [[WebServer|serveur web]] est un programme [[Software|informatique]] ou un [[Hardware|appareil]] dont la fonction principale est de stocker les fichiers de [[Website|sites web]] et de les délivrer aux [[WebBrowsers|navigateurs web]] sur demande. Il utilise majoritairement le [[HypertextTransferProtocol|protocole HTTP]] et constitue une composante essentielle de l'[[ClientServerArchitecture|architecture client-serveur]].
+> Un serveur web est un programme informatique ou un appareil dont la fonction principale est de stocker les fichiers de sites web et de les délivrer aux navigateurs web sur demande. Il utilise majoritairement le protocole HTTP et constitue une composante essentielle de l'architecture client-serveur.
 >
 > Ses fonctions clés incluent :
-*   **Hébergement de Contenu** : Stocke tous les éléments d'un [[Website|site web]] (pages [[HypertextMarkupLanguage|HTML]], feuilles de style [[CascadingStyleSheets|CSS]], images, fichiers [[JavaScript]], etc.).
-*   **Traitement des Requêtes** : Reçoit et traite les [[HypertextTransferProtocol|requêtes HTTP]] émises par les [[Client|navigateurs web]].
-*   **Envoi des Réponses** : Après traitement, renvoie la [[Resource|ressource]] demandée au [[Client|navigateur]] via une [[HypertextTransferProtocol|réponse HTTP]].
-*   **Intégration Client-Serveur** : Agit comme le "[[Server|serveur]]" central qui répond aux sollicitations des "[[Client|clients]]".
+*   **Hébergement de Contenu** : Stocke tous les éléments d'un site web (pages HTML, feuilles de style CSS, images, fichiers JavaScript, etc.).
+*   **Traitement des Requêtes** : Reçoit et traite les requêtes HTTP émises par les navigateurs web.
+*   **Envoi des Réponses** : Après traitement, renvoie la ressource demandée au navigateur via une réponse HTTP.
+*   **Intégration Client-Serveur** : Agit comme le "serveur" central qui répond aux sollicitations des "clients".
 
 ## ⚙️ Configuration
-*   **Fichiers de configuration clés**: La localisation et le nom des fichiers varient selon le [[Software|logiciel]] [[WebServer|serveur web]] spécifique (ex: Apache, Nginx, IIS).
+*   **Fichiers de configuration clés**: La localisation et le nom des fichiers varient selon le logiciel serveur web spécifique (ex: Apache, Nginx, IIS).
     *   Exemple pour Apache: `/etc/httpd/conf/httpd.conf` ou `/etc/apache2/apache2.conf`
     *   Exemple pour Nginx: `/etc/nginx/nginx.conf`
-*   **Modules importants**: Ces modules étendent les fonctionnalités du [[WebServer|serveur web]], comme la gestion de l'[[Authentication|authentification]], le support du [[DataEncryption|chiffrement]] (via [[TransportLayerSecurity|TLS]]), ou la réécriture d'URL.
-    *   Exemple Apache: `mod_ssl` (pour [[HypertextTransferProtocolSecure|HTTPS]]), `mod_rewrite` (pour la réécriture d'URL).
-*   **Dépendances**: Un [[WebServer|serveur web]] dépend souvent de plusieurs autres [[System|systèmes]] et [[Software|logiciels]] :
-    *   [[OperatingSystem|Système d'exploitation]] hôte (ex: [[Linux]], [[Windows]])
-    *   Bibliothèques [[Encryption|cryptographiques]] (ex: [[OpenSSL]])
-    *   Langages de [[Programming|programmation]] côté [[Server|serveur]] (ex: [[PHP]], [[Python]], [[Ruby]])
-    *   [[Database|Bases de données]] pour le contenu dynamique (ex: [[MySQL]], [[PostgreSQL]])
+*   **Modules importants**: Ces modules étendent les fonctionnalités du serveur web, comme la gestion de l'authentification, le support du chiffrement (via TLS), ou la réécriture d'URL.
+    *   Exemple Apache: `mod_ssl` (pour HTTPS), `mod_rewrite` (pour la réécriture d'URL).
+*   **Dépendances**: Un serveur web dépend souvent de plusieurs autres systèmes et logiciels :
+    *   Système d'exploitation hôte (ex: Linux, Windows)
+    *   Bibliothèques cryptographiques (ex: OpenSSL)
+    *   Langages de programmation côté serveur (ex: PHP, Python, Ruby)
+    *   Bases de données pour le contenu dynamique (ex: MySQL, PostgreSQL)
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-*   **Mises à jour régulières**: Appliquer les [[PatchManagement|patchs de sécurité]] et les mises à jour logicielles pour corriger les [[Vulnerability|vulnérabilités]] connues et se protéger contre les [[ZeroDay|attaques Zero-Day]].
-*   **[[PrincipleOfLeastPrivilege|Principe du moindre privilège]]**: Exécuter le [[WebServer|serveur web]] avec un [[Account|compte]] utilisateur et des [[AccessControl|permissions]] minimales requises.
-*   **Désactiver les fonctionnalités inutiles**: Supprimer ou désactiver les modules, les services ou les répertoires non nécessaires pour réduire la [[AttackSurface|surface d'attaque]].
-*   **Configuration des [[HypertextTransferProtocolSecure|en-têtes de sécurité HTTP]]**: Mettre en œuvre des en-têtes tels que HSTS, X-Frame-Options, X-XSS-Protection, Content-Security-Policy pour renforcer la [[Security|sécurité]] du [[WebBrowsers|navigateur]].
-*   **[[AccessControl|Contrôle d'accès]]**: Restreindre l'accès aux fichiers de configuration et aux répertoires sensibles via des [[SecurityPolicy|politiques de sécurité]] strictes.
-*   **[[DataEncryption|Chiffrement]]**: Utiliser [[HypertextTransferProtocolSecure|HTTPS]] avec des [[DigitalCertificate|certificats numériques]] valides pour sécuriser les [[DataTransmission|transmissions de données]] et garantir la [[Confidentiality|confidentialité]].
-*   **Protection contre les [[CommonVulnerabilitiesAndExposures|vulnérabilités courantes]]**: Mettre en œuvre des mesures de défense contre les [[SqlInjection|injections SQL]], [[CrossSiteScripting|XSS]], [[RemoteCodeExecution|RCE]] et autres [[DigitalAttack|attaques web]].
+*   **Mises à jour régulières**: Appliquer les patchs de sécurité et les mises à jour logicielles pour corriger les vulnérabilités connues et se protéger contre les attaques Zero-Day.
+*   **Principe du moindre privilège**: Exécuter le serveur web avec un compte utilisateur et des permissions minimales requises.
+*   **Désactiver les fonctionnalités inutiles**: Supprimer ou désactiver les modules, les services ou les répertoires non nécessaires pour réduire la surface d'attaque.
+*   **Configuration des en-têtes de sécurité HTTP**: Mettre en œuvre des en-têtes tels que HSTS, X-Frame-Options, X-XSS-Protection, Content-Security-Policy pour renforcer la sécurité du navigateur.
+*   **Contrôle d'accès**: Restreindre l'accès aux fichiers de configuration et aux répertoires sensibles via des politiques de sécurité strictes.
+*   **Chiffrement**: Utiliser HTTPS avec des certificats numériques valides pour sécuriser les transmissions de données et garantir la confidentialité.
+*   **Protection contre les vulnérabilités courantes**: Mettre en œuvre des mesures de défense contre les injections SQL, XSS, RCE et autres attaques web.
 
 ## 🔍 Audit et Surveillance
-*   **Logs importants**: Ces journaux sont essentiels pour le [[SecurityMonitoring|monitorage de sécurité]] et la [[IncidentResponse|réponse aux incidents]].
-    *   Logs d'accès (ex: `/var/log/apache2/access.log` pour Apache, `/var/log/nginx/access.log` pour Nginx) : enregistrent toutes les [[HypertextTransferProtocol|requêtes HTTP]] reçues.
-    *   Logs d'erreur (ex: `/var/log/apache2/error.log`, `/var/log/nginx/error.log`) : enregistrent les erreurs du [[Server|serveur]].
-    *   [[OperatingSystem|Logs système]] : pour détecter les activités anormales au niveau du [[System|système]] d'exploitation hôte.
+*   **Logs importants**: Ces journaux sont essentiels pour le monitorage de sécurité et la réponse aux incidents.
+    *   Logs d'accès (ex: `/var/log/apache2/access.log` pour Apache, `/var/log/nginx/access.log` pour Nginx) : enregistrent toutes les requêtes HTTP reçues.
+    *   Logs d'erreur (ex: `/var/log/apache2/error.log`, `/var/log/nginx/error.log`) : enregistrent les erreurs du serveur.
+    *   Logs système : pour détecter les activités anormales au niveau du système d'exploitation hôte.
 *   **Commandes d'audit**:
 ```bash
 # Vérifier la syntaxe de la configuration Apache
@@ -71,16 +71,16 @@ netstat -tulnp | grep ":80\|:443"
 # Examiner les connexions actives au serveur web
 ss -tunap | grep ":80\|:443"
 ```
-*   **[[SecurityMonitoring|Surveillance de sécurité]]**: Intégrer les [[Log|logs]] du [[WebServer|serveur web]] à un [[SecurityInformationAndEventManagement|SIEM]] ou utiliser des outils de [[NetworkMonitoring|surveillance réseau]] pour détecter les [[AnomalyDetection|anomalies]] et les [[Attack|attaques]] en temps réel.
+*   **Surveillance de sécurité**: Intégrer les logs du serveur web à un SIEM ou utiliser des outils de surveillance réseau pour détecter les anomalies et les attaques en temps réel.
 
 ## 🔗 Notes Connexes
-* [[CommonVulnerabilitiesAndExposures|Vulnérabilités connues (CVEs)]]
-* [[Protocol|Protocoles utilisés (ex: [[HypertextTransferProtocol|HTTP]], [[HypertextTransferProtocolSecure|HTTPS]])]]
-* [[WebBrowsers|Navigateurs Web]]
-* [[ClientServerArchitecture|Architecture Client-Serveur]]
-* [[SoftwareApplication|Application logicielle]]
-* [[Server|Serveur]]
+* Vulnérabilités connues (CVEs)
+* Protocoles utilisés (ex: [[HypertextTransferProtocol|HTTP, HTTPS)]]
+* Navigateurs Web
+* Architecture Client-Serveur
+* Application logicielle
+* Serveur
 
 ## 🤔 Pistes d'Amélioration (Auto-Évaluation IA)
-*   La note actuelle se concentre sur le concept général de "Serveur Web". Pour une application plus concrète, elle mériterait des notes dédiées à des implémentations spécifiques (ex: [[ApacheWebServer]], [[NginxWebServer]], [[MicrosoftIISWebServer]]) avec leurs configurations, modules et stratégies de sécurisation détaillées.
+*   La note actuelle se concentre sur le concept général de "Serveur Web". Pour une application plus concrète, elle mériterait des notes dédiées à des implémentations spécifiques (ex: ApacheWebServer, NginxWebServer, MicrosoftIISWebServer) avec leurs configurations, modules et stratégies de sécurisation détaillées.
 *   Les sections "Configuration" et "Audit et Surveillance" sont nécessairement génériques. Elles seraient grandement améliorées par des exemples spécifiques à un ou deux serveurs web populaires.

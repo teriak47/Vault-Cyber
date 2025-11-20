@@ -16,40 +16,40 @@ cssclasses:
 # Attaque par Déni de Service Distribué (DDoS)
 
 ## 📥 Définition
-> Une [[DistributedDenialOfService|attaque par déni de service distribué (DDoS)]] vise à rendre un service ou une [[Resource|ressource]] indisponible en la submergeant d'un flot de [[NetworkTraffic|trafic malveillant]] provenant de multiples [[Host|hôtes]] distribués, souvent orchestrés via un [[Botnet|botnet]]. L'objectif est d'épuiser les ressources de la cible, la rendant inaccessible aux [[User|utilisateurs]] légitimes.
+> Une attaque par déni de service distribué (DDoS) vise à rendre un service ou une ressource indisponible en la submergeant d'un flot de trafic malveillant provenant de multiples hôtes distribués, souvent orchestrés via un botnet. L'objectif est d'épuiser les ressources de la cible, la rendant inaccessible aux utilisateurs légitimes.
 
 ## 🎯 Vecteurs d'Attaque
-*   **[[VolumeBasedAttack|Attaques de volume]]** : Saturant la [[Bandwidth|bande passante]] du réseau ou du [[Server|serveur]] cible. Elles opèrent généralement aux [[NetworkLayer|couches réseau]] et de [[TransportLayer|transport]] du [[OpenSystemsInterconnectionModel|modèle OSI]] (par exemple, [[UserDatagramProtocol|UDP]] ou [[InternetControlMessageProtocol|ICMP]] floods).
-*   **[[ProtocolBasedAttack|Attaques protocolaires]]** : Ciblant des vulnérabilités au niveau des protocoles, épuisant les ressources de connexion du [[Server|serveur]] (par exemple, [[SYNFlood|SYN Flood]]) ou des [[NetworkDevice|équipements réseau]].
-*   **[[ApplicationLayerAttack|Attaques de la couche applicative]]** : Exploitant des vulnérabilités au niveau de la [[ApplicationLayer|couche applicative]] (couche 7 du [[OpenSystemsInterconnectionModel|modèle OSI]]) avec des requêtes complexes et coûteuses en ressources (par exemple, requêtes [[HypertextTransferProtocol|HTTP]] malformées ou excessives).
+*   **Attaques de volume** : Saturant la bande passante du réseau ou du serveur cible. Elles opèrent généralement aux couches réseau et de transport du modèle OSI (par exemple, UDP ou ICMP floods).
+*   **Attaques protocolaires** : Ciblant des vulnérabilités au niveau des protocoles, épuisant les ressources de connexion du serveur (par exemple, SYN Flood) ou des équipements réseau.
+*   **Attaques de la couche applicative** : Exploitant des vulnérabilités au niveau de la couche applicative (couche 7 du modèle OSI) avec des requêtes complexes et coûteuses en ressources (par exemple, requêtes HTTP malformées ou excessives).
 
 ## 💥 Impacts Potentiels
-*   [[ServiceDisruption|Interruption de service]]
-*   [[FinancialLoss|Pertes financières]]
-*   [[ReputationalDamage|Atteinte à la réputation]]
-*   [[DataExfiltration|Exfiltration de données]] (parfois comme diversion pour masquer d'autres [[Attack|attaques]])
+*   Interruption de service
+*   Pertes financières
+*   Atteinte à la réputation
+*   Exfiltration de données (parfois comme diversion pour masquer d'autres attaques)
 
 ##  concret
-> Imaginez un magasin populaire qui reçoit soudainement des milliers de personnes qui bloquent l'entrée et les allées, non pas pour acheter, mais pour empêcher les clients légitimes d'accéder aux produits et services. Le magasin n'est pas physiquement endommagé, mais il est totalement paralysé. Dans le monde numérique, une [[DistributedDenialOfService|attaque DDoS]] est similaire : un site web, une [[OnlineServices|application en ligne]] ou un [[Server|serveur]] est inondé de requêtes inutiles par un [[Botnet|réseau de bots]], le rendant inaccessible pour ses [[User|utilisateurs]] habituels.
+> Imaginez un magasin populaire qui reçoit soudainement des milliers de personnes qui bloquent l'entrée et les allées, non pas pour acheter, mais pour empêcher les clients légitimes d'accéder aux produits et services. Le magasin n'est pas physiquement endommagé, mais il est totalement paralysé. Dans le monde numérique, une attaque DDoS est similaire : un site web, une application en ligne ou un serveur est inondé de requêtes inutiles par un réseau de bots, le rendant inaccessible pour ses utilisateurs habituels.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[SecurityAwareness|Sensibilisation des utilisateurs]] aux risques d'[[Malware|infection]] des [[Computer|ordinateurs]] pour prévenir la formation de [[Botnet|botnets]].
-    *   Implémentation de [[Firewall|pare-feu]] et de [[TrafficFiltering|filtrage de trafic]] en périphérie du [[Network|réseau]].
-    *   Utilisation de [[DDoSMitigationService|services de mitigation DDoS]] spécialisés (CDN, WAF cloud) capables d'absorber et de filtrer le [[NetworkTraffic|trafic malveillant]].
-    *   Mise en place de [[RateLimiting|limitation de débit]] sur les [[Server|serveurs]] et [[NetworkDevice|équipements réseau]].
+    *   Sensibilisation des utilisateurs aux risques d'infection des ordinateurs pour prévenir la formation de botnets.
+    *   Implémentation de pare-feu et de filtrage de trafic en périphérie du réseau.
+    *   Utilisation de services de mitigation DDoS spécialisés (CDN, WAF cloud) capables d'absorber et de filtrer le trafic malveillant.
+    *   Mise en place de limitation de débit sur les serveurs et équipements réseau.
 *   **Détection** :
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] et [[IntrusionPreventionSystem|IPS]] pour identifier et bloquer le [[NetworkTraffic|trafic]] suspect.
-    *   [[NetworkMonitoring|Surveillance réseau]] et [[NetworkTrafficAnalysis|analyse du trafic réseau]] pour détecter les anomalies de comportement.
+    *   Systèmes de détection d'intrusion (IDS) et IPS pour identifier et bloquer le trafic suspect.
+    *   Surveillance réseau et analyse du trafic réseau pour détecter les anomalies de comportement.
 *   **Réponse** :
-    *   [[IncidentResponse|Plan de réponse à incident]] clair pour détecter, contenir et récupérer rapidement d'une [[DistributedDenialOfService|attaque DDoS]].
-    *   Coopération avec les [[InternetServiceProvider|FAI]] et les fournisseurs de [[DDoSMitigationService|services anti-DDoS]].
+    *   Plan de réponse à incident clair pour détecter, contenir et récupérer rapidement d'une attaque DDoS.
+    *   Coopération avec les FAI et les fournisseurs de services anti-DDoS.
 
 ## 🔗 Notes Connexes
-*   [[DenialOfService|Déni de Service (DoS)]]
-*   [[Botnet|Botnet]]
-*   [[Cybersecurity|Cybersécurité]]
-*   [[Availability|Disponibilité]]
-*   [[SYNFlood|SYN Flood]]
-*   [[NetworkCongestion|Congestion Réseau]]
+*   Déni de Service (DoS)
+*   Botnet
+*   Cybersécurité
+*   Disponibilité
+*   SYN Flood
+*   Congestion Réseau
 ---

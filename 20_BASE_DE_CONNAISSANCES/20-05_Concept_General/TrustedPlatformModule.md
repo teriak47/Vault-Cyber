@@ -19,24 +19,24 @@ cssclasses:
 # Module de Plateforme Sécurisée (TPM)
 
 ## 📥 Définition en une phrase
-> Le [[TrustedPlatformModule|Trusted Platform Module]] ([[TrustedPlatformModule|TPM]]) est une puce [[Hardware|matérielle]] sécurisée intégrée à la carte mère d'un [[Computer|ordinateur]], conçue pour fournir des fonctions de [[PhysicalSecurity|sécurité matérielle]] fondamentales via le [[SecureStorage|stockage sécurisé]] de [[Cryptography|clés de chiffrement]] et la [[Integrity|vérification de l'intégrité]] du [[System|système]].
+> Le Trusted Platform Module (TPM) est une puce matérielle sécurisée intégrée à la carte mère d'un ordinateur, conçue pour fournir des fonctions de sécurité matérielle fondamentales via le stockage sécurisé de clés de chiffrement et la vérification de l'intégrité du système.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[PhysicalSecurity|Sécurité matérielle]]**: Le [[TrustedPlatformModule|TPM]] est un [[Hardware|composant physique]] qui agit comme une [[RootOfTrust|racine de confiance]] pour le [[System|système]], le rendant intrinsèquement plus résistant aux [[SoftwareVulnerability|attaques logicielles]] ciblant les fonctions de [[Security|sécurité]].
-*   **[[SecureStorage|Stockage Sécurisé]]**: Il stocke de manière protégée des [[Cryptography|clés de chiffrement]], des informations de [[MeasuredBoot|mesure d'intégrité]] et des [[Hashing|hachages]] de [[NetworkConfiguration|configuration]], assurant leur inaccessibilité même en cas de [[SystemCompromise|compromission du système d'exploitation]].
-*   **[[Integrity|Vérification de l'Intégrité]] ([[MeasuredBoot|Measured Boot]])**: Durant le [[BootProcess|processus de démarrage]], le [[TrustedPlatformModule|TPM]] calcule des [[Hashing|hachages]] des [[Bootloader|composants critiques]] du [[System|système]] (par exemple, [[BIOS|BIOS]]/[[UEFI|UEFI]], [[Bootloader|bootloader]], [[OperatingSystem|OS]]) et stocke ces mesures. Toute divergence par rapport à une ligne de base connue indique une [[Tampering|altération]] potentielle.
-*   **[[AttestationKey|Clés d'Attestation]] et [[StorageKey|de Stockage]]**: Le [[TrustedPlatformModule|TPM]] est capable de générer, stocker et protéger des [[Cryptography|clés cryptographiques]] qui ne peuvent être utilisées que par la puce elle-même, renforçant ainsi l'[[Integrity|intégrité]] et la [[Confidentiality|confidentialité]] des opérations [[Cryptography|cryptographiques]].
-*   **[[SealingAndUnsealing|Scellement et Desscellement]]**: Cette fonction permet de "sceller" des [[Data|données]] de manière à ce qu'elles ne puissent être "desscellées" que si l'[[SystemState|état du système]] correspond précisément à l'état sous lequel elles ont été scellées, offrant une protection supplémentaire contre la [[DataTheft|fuite de données]] en cas de modification non autorisée de la configuration.
+*   **Sécurité matérielle**: Le TPM est un composant physique qui agit comme une racine de confiance pour le système, le rendant intrinsèquement plus résistant aux attaques logicielles ciblant les fonctions de sécurité.
+*   **Stockage Sécurisé**: Il stocke de manière protégée des clés de chiffrement, des informations de mesure d'intégrité et des hachages de configuration, assurant leur inaccessibilité même en cas de compromission du système d'exploitation.
+*   **Vérification de l'Intégrité (Measured Boot)**: Durant le processus de démarrage, le TPM calcule des hachages des composants critiques du système (par exemple, BIOS/UEFI, bootloader, OS) et stocke ces mesures. Toute divergence par rapport à une ligne de base connue indique une altération potentielle.
+*   **Clés d'Attestation et de Stockage**: Le TPM est capable de générer, stocker et protéger des clés cryptographiques qui ne peuvent être utilisées que par la puce elle-même, renforçant ainsi l'intégrité et la confidentialité des opérations cryptographiques.
+*   **Scellement et Desscellement**: Cette fonction permet de "sceller" des données de manière à ce qu'elles ne puissent être "desscellées" que si l'état du système correspond précisément à l'état sous lequel elles ont été scellées, offrant une protection supplémentaire contre la fuite de données en cas de modification non autorisée de la configuration.
 
 ## 💡 Importance en Cybersécurité
-> Le [[TrustedPlatformModule|TPM]] est vital pour la [[Cybersecurity|cybersécurité]] moderne car il établit une [[RootOfTrust|racine de confiance matérielle]], essentielle pour la [[Integrity|vérification de l'intégrité]] du [[System|système]] et la [[DataProtection|protection des données]]. Il offre une protection robuste contre les [[Malware|logiciels malveillants]] qui tentent d'altérer le [[BootProcess|processus de démarrage]] et fournit un environnement sécurisé pour des fonctions critiques comme le [[Encryption|chiffrement]] de [[FullDiskEncryption|disques entiers]] et la [[Authentication|gestion des informations d'identification]]. En garantissant que le [[System|système]] démarre dans un [[TrustedState|état de confiance]], le [[TrustedPlatformModule|TPM]] renforce considérablement la [[Security|sécurité]] globale de l'[[EndpointSecurity|appareil final]].
+> Le TPM est vital pour la cybersécurité moderne car il établit une racine de confiance matérielle, essentielle pour la vérification de l'intégrité du système et la protection des données. Il offre une protection robuste contre les logiciels malveillants qui tentent d'altérer le processus de démarrage et fournit un environnement sécurisé pour des fonctions critiques comme le chiffrement de disques entiers et la gestion des informations d'identification. En garantissant que le système démarre dans un état de confiance, le TPM renforce considérablement la sécurité globale de l'appareil final.
 
 ## 🔗 Notes Connexes
-*   [[PhysicalSecurity|Sécurité Physique]]
-*   [[SecureStorage|Stockage Sécurisé]]
-*   [[Encryption|Chiffrement]]
-*   [[Integrity|Intégrité]]
-*   [[DataProtection|Protection des Données]]
-*   [[EndpointSecurity|Sécurité des Endpoints]]
-*   [[Hardware|Matériel]]
-*   [[RootOfTrust|Racine de Confiance]]
+*   Sécurité Physique
+*   Stockage Sécurisé
+*   Chiffrement
+*   Intégrité
+*   Protection des Données
+*   Sécurité des Endpoints
+*   Matériel
+*   Racine de Confiance

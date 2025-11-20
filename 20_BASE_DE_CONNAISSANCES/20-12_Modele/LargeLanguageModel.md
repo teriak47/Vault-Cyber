@@ -21,7 +21,7 @@ cssclasses:
 # Modèle de Langage Étendu (LLM)
 
 ## 🎯 Principe Fondamental
-Un [[LargeLanguageModel|Modèle de Langage Étendu]] (LLM) est un type de [[MachineLearning|modèle d'apprentissage automatique]] conçu pour comprendre, générer et traiter le [[NaturalLanguageProcessing|langage naturel]]. Il est entraîné sur des quantités massives de [[Data|données]] textuelles provenant d'Internet et d'autres sources, lui permettant d'apprendre des motifs complexes de grammaire, de sémantique et de style. Son objectif principal est de prédire le mot ou le jeton suivant dans une séquence donnée.
+Un Modèle de Langage Étendu (LLM) est un type de modèle d'apprentissage automatique conçu pour comprendre, générer et traiter le langage naturel. Il est entraîné sur des quantités massives de données textuelles provenant d'Internet et d'autres sources, lui permettant d'apprendre des motifs complexes de grammaire, de sémantique et de style. Son objectif principal est de prédire le mot ou le jeton suivant dans une séquence donnée.
 
 ## 🧩 Composants / Éléments Clés
 *   **Architecture Transformer**: La plupart des LLM modernes sont basés sur l'architecture de réseau neuronal "Transformer". Cette architecture utilise des mécanismes d'auto-attention pour pondérer l'importance des différentes parties de l'entrée lors de la génération de la sortie.
@@ -34,11 +34,11 @@ Un [[LargeLanguageModel|Modèle de Langage Étendu]] (LLM) est un type de [[Mach
 *   **Génération Séquentielle**: La génération de texte se fait de manière séquentielle, où le modèle prédit un token à la fois, en tenant compte des tokens précédents générés et de l'invite initiale. Ce processus est souvent contrôlé par des paramètres comme la "température" pour ajuster la créativité ou la cohérence.
 
 ## 💡 Applications Pratiques
-*   **[[NaturalLanguageProcessing|Traitement du Langage Naturel (NLP)]]**: Un domaine vaste incluant la classification de texte, la reconnaissance d'entités nommées, et la détection de sentiments.
-*   **Chatbots et Assistants Virtuels**: Création d'agents conversationnels capables d'interagir de manière fluide et contextuelle avec les [[User|utilisateurs]].
+*   **Traitement du Langage Naturel (NLP)**: Un domaine vaste incluant la classification de texte, la reconnaissance d'entités nommées, et la détection de sentiments.
+*   **Chatbots et Assistants Virtuels**: Création d'agents conversationnels capables d'interagir de manière fluide et contextuelle avec les utilisateurs.
 *   **Traduction Automatique**: Amélioration significative de la qualité des traductions entre différentes langues.
 *   **Génération de Contenu**: Rédaction d'articles, de résumés, de courriels, de code informatique ou de scripts publicitaires.
-*   **[[ThreatIntelligence|Renseignement sur les menaces]]**: Analyse de grands volumes de texte (rapports, articles de presse) pour identifier des tendances et des informations sur les [[ThreatActor|acteurs de menaces]].
+*   **Renseignement sur les menaces**: Analyse de grands volumes de texte (rapports, articles de presse) pour identifier des tendances et des informations sur les acteurs de menaces.
 
 ## ✅ Avantages et Limites
 *   **Avantages**:
@@ -49,11 +49,11 @@ Un [[LargeLanguageModel|Modèle de Langage Étendu]] (LLM) est un type de [[Mach
     *   **Coût Computationnel**: L'entraînement et l'exécution nécessitent des ressources informatiques importantes.
     *   **Biais**: Peuvent reproduire et amplifier les biais présents dans leurs données d'entraînement.
     *   **"Hallucinations"**: Tendance à générer des informations plausibles mais factuellement incorrectes ou inventées.
-    *   **[[SecurityVulnerabilities|Vulnérabilités de sécurité]]**: Risques de [[DataExfiltration|fuite de données]] sensibles (y compris [[PersonalData|données personnelles]]) via des attaques par [[PromptInjection|injection de prompts]], ou de génération de contenu malveillant.
+    *   **Vulnérabilités de sécurité**: Risques de fuite de données sensibles (y compris données personnelles) via des attaques par injection de prompts, ou de génération de contenu malveillant.
 
 ## 🔗 Notes Connexes
-*   **Concept parent**: [[MachineLearning|Apprentissage Automatique]]
-*   **Domaine d'application**: [[NaturalLanguageProcessing|Traitement du Langage Naturel]]
-*   **Concept lié**: [[ArtificialIntelligence|Intelligence Artificielle]]
-*   **Menace spécifique**: [[PromptInjection|Injection de prompt]]
-*   **Technologie sous-jacente**: [[NeuralNetwork|Réseau neuronal]]
+*   **Concept parent**: Apprentissage Automatique
+*   **Domaine d'application**: Traitement du Langage Naturel
+*   **Concept lié**: Intelligence Artificielle
+*   **Menace spécifique**: Injection de prompt
+*   **Technologie sous-jacente**: Réseau neuronal

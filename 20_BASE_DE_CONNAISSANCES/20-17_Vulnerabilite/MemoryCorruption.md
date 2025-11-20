@@ -1,65 +1,64 @@
 ---
 tags:
   - vulnerabilite
+  - vulnerabilite/memoire
 aliases:
   - Corruption de mémoire
   - Memory Corruption
 archetype: vulnerabilite
-cve: 
-cvss_score: 
+cve: CVE-YYYY-NNNNN
+cvss_score: 0.0
 cssclasses:
   - max
 ---
 
-# Vulnérabilité : Corruption de Mémoire (Memory Corruption)
+# Memory Corruption
 
-## 📥 Définition et Impact
-> La corruption de [[Memory|mémoire]] est une [[Vulnerability|vulnérabilité]] où le contenu d'un emplacement mémoire est modifié de manière non intentionnelle, menant à des comportements imprévisibles d'un [[Software|programme]] ou à l'[[Exploitation|exécution de code malveillant]]. Elle peut entraîner des plantages d'application, un comportement incorrect, des fuites d'[[SensitiveData|informations sensibles]], une [[PrivilegeEscalation|élévation de privilèges]], ou permettre l'[[RemoteCodeExecution|exécution de code à distance]] par un [[ThreatActor|attaquant]].
+> [!danger] Score CVSS : 0.0 (Générique)
+> **Vecteur** : `AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`
+> *L'impact est générique, car il peut permettre divers résultats selon le type de [[MemoryCorruption|corruption de mémoire]].*
 
-## 📝 Détails Techniques
-*   **Vecteur d'attaque**: Généralement exploitée en fournissant des [[UnvalidatedInput|entrées non validées]] à un [[Software|programme]], déclenchant des erreurs dans la [[MemoryManagement|gestion de la mémoire]]. Les attaquants cherchent à altérer les données ou les pointeurs pour détourner le flux d'exécution normal vers leur [[Shellcode|code malveillant]].
-*   **Composant affecté**: Générique, affectant souvent les [[Software|logiciels]] et [[OperatingSystem|systèmes d'exploitation]] développés en langages à gestion de mémoire manuelle (ex: C/C++), où les développeurs sont responsables de l'allocation et de la libération des ressources mémoire.
-*   **Type de faille (CWE)**:
-    *   [[CommonWeaknessEnumeration|CWE-119]] - Improper Restriction of Operations within the Bounds of a Memory Buffer (Dépassement de tampon)
-    *   [[CommonWeaknessEnumeration|CWE-416]] - [[UseAfterFree|Use After Free]] (Utilisation après libération)
-    *   [[CommonWeaknessEnumeration|CWE-415]] - Double Free (Double libération)
-    *   [[CommonWeaknessEnumeration|CWE-787]] - Out-of-bounds Write (Écriture hors limites)
-    *   [[CommonWeaknessEnumeration|CWE-824]] - Access of Uninitialized Pointer (Accès à un pointeur non initialisé)
+## 📥 Description Technique
+La [[MemoryCorruption|corruption de mémoire]] est une condition de [[Software|logiciel]] où le contenu d'un emplacement de [[MemoryManagement|mémoire]] est modifié de manière involontaire ou indésirable, généralement en raison d'une [[HumanError|erreur humaine]] dans la [[Programming|programmation]] ou d'un [[Process|processus]] malveillant. Cela peut conduire à un comportement imprévisible du [[OperatingSystem|système d'exploitation]] ou de l'[[Process|application]], à des pannes, ou à des [[PrivilegeEscalation|escalades de privilèges]] et à l'[[RemoteCodeExecution|exécution de code à distance]]. Elle est souvent la cause sous-jacente de nombreuses [[Vulnerability|vulnérabilités]] critiques.
 
-## 🛡️ Correctifs et Contournements
-*   **Versions patchées**: N/A (dépend du [[Software|logiciel]] spécifique et de la [[Vulnerability|vulnérabilité]] exploitée).
-*   **Mesures de contournement (Workarounds)**:
-    *   **Développement sécurisé**: Adopter des pratiques de [[SecureCodingPractices|codage sécurisé]] et utiliser des langages offrant des garanties de [[MemorySafety|sécurité mémoire]] (ex: Rust, Go).
-    *   **[[InputValidation|Validation des entrées]]**: Implémenter des contrôles rigoureux sur toutes les [[InputDevices|entrées]] pour prévenir les [[BufferOverflow|dépassements de tampon]].
-    *   **Atténuations d'exploitation**: Déployer des mécanismes au niveau du [[OperatingSystem|système d'exploitation]] et du compilateur tels que [[AddressSpaceLayoutRandomization|ASLR]], [[DataExecutionPrevention|DEP]] (aussi connu sous [[NoExecuteBit|NX Bit]]), et les [[StackCanary|canaries de pile]].
-    *   **Analyse et tests**: Effectuer des [[CodeReview|revues de code]], des analyses statiques et dynamiques, et des tests de [[Fuzzing|fuzzing]] pour identifier et corriger les [[SoftwareVulnerability|vulnérabilités logicielles]] avant le [[Installation|déploiement]].
+## 💥 Exploitabilité
+*   **POC Public** : Variable
+*   **Facilité d'exploitation** : Moyenne à Difficile (dépend du type et du contexte)
+*   **Prérequis** : L'[[Exploitation|exploitation]] d'une [[MemoryCorruption|corruption de mémoire]] nécessite souvent une connaissance approfondie de l'[[OperatingSystem|architecture du système]] et de la [[MemoryManagement|gestion de la mémoire]]. Des techniques comme le [[BufferOverflow|dépassement de tampon]] et la [[ReturnOrientedProgramming|programmation orientée retour (ROP)]] sont couramment utilisées.
 
-## 🔍 Comment la détecter ?
-*   **Signatures réseau/IDS**: Dépend de la [[Attack|nature de l'attaque]] spécifique. Les [[IntrusionDetectionSystem|IDS]] peuvent détecter des schémas d'[[Exploit|exploit]] connus ou des comportements anormaux liés à l'[[Exploitation|exploitation]] (ex: tentatives de modification de [[Process|processus]], sauts d'exécution inattendus).
-*   **Commandes de détection locale**:
-    ```bash
-    # La détection d'une corruption de mémoire générique sur un système en production est complexe.
-    # Elle implique souvent la surveillance des plantages d'applications, des erreurs de segmentation (segmentation faults)
-    # ou l'utilisation d'outils d'analyse de la mémoire (ex: Valgrind en environnement de développement).
-    # Sur un système compromis, l'analyse forensique de la mémoire (memory forensics) peut révéler des preuves de corruption.
-    ```
+```python
+# Exemple conceptuel d'une vulnérabilité de corruption de mémoire (simulé)
+# L'accès à un index hors limites pourrait corrompre une autre partie de la mémoire
+def process_data(data, buffer_size):
+    buffer = bytearray(buffer_size)
+    # Imaginons que data est plus grande que buffer_size
+    # Une copie non sécurisée causerait une corruption de mémoire
+    for i in range(len(data)):
+        if i < buffer_size:
+            buffer[i] = data[i]
+        # else: cela écrirait en dehors du buffer si non géré
+    return buffer
+```
 
-## 🔗 Notes Connexes
+## 🛡️ Patch & Mitigation
+
+### Correctif Officiel
+> [!success] Bonnes pratiques de développement
+> La meilleure [[Redundancy|atténuation]] est d'implémenter des [[MemorySafety|pratiques de sécurité mémoire]] strictes lors de la [[Programming|programmation]], en utilisant des langages qui offrent une [[MemorySafety|sécurité mémoire]] intrinsèque (comme Rust) ou en adoptant des techniques de [[CodeReview|revue de code]] rigoureuses et des [[Testing|tests]] de [[Fuzzing|fuzzing]].
+
+### Contournement (Workaround)
+Si un [[PatchManagement|patch]] logiciel spécifique n'est pas disponible pour une [[MemoryCorruption|vulnérabilité]] connue :
+*   Appliquer des [[SecurityControl|mesures de sécurité]] au niveau de l'[[OperatingSystem|OS]] telles que la [[DataExecutionPrevention|Prévention de l'Exécution des Données (DEP)]] et l'[[AddressSpaceLayoutRandomization|Aléatorisation de l'Espace d'Adressage (ASLR)]].
+*   Utiliser des [[EndpointProtectionPlatform|plateformes de protection des endpoints (EPP)]] ou des [[EndpointDetectionAndResponse|solutions EDR]] avec [[HeuristicAnalysis|analyse heuristique]] pour détecter les comportements anormaux.
+
+## 🔍 Détection
+Comment savoir si on est vulnérable ?
+La [[AnomalyDetection|détection d'anomalies]] liée à la [[MemoryCorruption|corruption de mémoire]] peut être complexe, mais elle peut être identifiée par :
+*   Des [[Log|journaux]] de [[OperatingSystem|système]] montrant des erreurs de segmentation ou des plantages d'[[Process|applications]].
+*   L'utilisation d'outils d'analyse statique ou dynamique de [[CodeReview|code]] pour identifier les [[Dependency|dépendances]] de [[MemorySafety|sécurité mémoire]].
+*   Les alertes provenant des [[IntrusionDetectionSystem|IDS]]/[[IntrusionPreventionSystem|IPS]] ou des [[EndpointDetectionAndResponse|solutions EDR]] signalant des [[Exploit|exploits]] potentiels.
+
+## 🔗 Références
 *   [[BufferOverflow|Dépassement de Tampon]]
-*   [[UseAfterFree|Utilisation Après Libération]]
-*   [[Exploitation|Exploitation]]
-*   [[MemorySafety|Sécurité Mémoire]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[RemoteCodeExecution|Exécution de Code à Distance]]
-*   [[DenialOfService|Déni de Service]]
-*   [[PrivilegeEscalation|Élévation de Privilèges]]
-*   [[InformationDisclosure|Divulgation d'Informations]]
-*   [[AddressSpaceLayoutRandomization|Address Space Layout Randomization]]
-*   [[DataExecutionPrevention|Data Execution Prevention]]
-*   [[StackCanary|Stack Canary]]
-*   [[NoExecuteBit|No-Execute Bit]]
-*   [[SecureCodingPractices|Pratiques de Codage Sécurisé]]
-*   [[InputValidation|Validation des Entrées]]
-*   [[CommonWeaknessEnumeration|Common Weakness Enumeration]]
-*   [[Fuzzing|Fuzzing]]
-*   [[Memory|Mémoire]]
+*   [[DataExecutionPrevention|Prévention de l'exécution des données]]
+*   [[AddressSpaceLayoutRandomization|Randomisation de l'Espace d'Adressage]]

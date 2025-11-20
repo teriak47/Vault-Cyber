@@ -18,20 +18,20 @@ cssclasses:
 # Fiabilité
 
 ## 📥 Définition en une phrase
-> La fiabilité est la capacité d'un [[System|système]], d'un [[Software|logiciel]] ou d'un [[Hardware|matériel]] à fonctionner de manière constante et prévisible, sans défaillance, sur une période donnée ou dans des conditions spécifiées.
+> La fiabilité est la capacité d'un système, d'un logiciel ou d'un matériel à fonctionner de manière constante et prévisible, sans défaillance, sur une période donnée ou dans des conditions spécifiées.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Cohérence Fonctionnelle**: Le système fournit des résultats identiques et attendus lors d'opérations répétées ou dans des conditions stables, garantissant que les [[Process|processus]] se déroulent sans erreurs inattendues.
-*   **Robustesse aux Défaillances**: La capacité du système à résister et à se remettre de [[HardwareFailure|pannes matérielles]], [[SoftwareBugs|bugs logiciels]] ou d'autres [[Vulnerability|vulnérabilités]], souvent grâce à des mécanismes de [[Redundancy|redondance]] ou de tolérance aux pannes.
+*   **Cohérence Fonctionnelle**: Le système fournit des résultats identiques et attendus lors d'opérations répétées ou dans des conditions stables, garantissant que les processus se déroulent sans erreurs inattendues.
+*   **Robustesse aux Défaillances**: La capacité du système à résister et à se remettre de pannes matérielles, bugs logiciels ou d'autres vulnérabilités, souvent grâce à des mécanismes de redondance ou de tolérance aux pannes.
 *   **Maintenabilité**: La facilité avec laquelle un système peut être réparé, mis à jour ou ajusté pour corriger des erreurs ou améliorer ses performances, contribuant à sa stabilité à long terme.
-*   **Prédictibilité des Performances**: Le système maintient un niveau de [[Throughput|débit]] et de [[Latency|latence]] constant, même sous [[NetworkCongestion|charge]], ce qui est essentiel pour les applications critiques.
+*   **Prédictibilité des Performances**: Le système maintient un niveau de débit et de latence constant, même sous charge, ce qui est essentiel pour les applications critiques.
 
 ## 💡 Importance en Cybersécurité
-> La fiabilité est un pilier fondamental de la [[CIATriad|triade CIA]], directement liée à la [[Availability|disponibilité]]. Un système non fiable est une porte ouverte aux [[DenialOfService|dénis de service]], à la [[DataCorruption|corruption de données]] et aux [[ServiceDisruption|interruptions de service]], qui peuvent entraîner des [[FinancialLoss|pertes financières]] et des [[ReputationalDamage|dommages à la réputation]]. Assurer la fiabilité est crucial pour la [[BusinessContinuity|continuité des activités]] et pour maintenir la [[Integrity|intégrité]] et la [[Confidentiality|confidentialité]] des [[Data|données]] en garantissant que les [[System|systèmes]] fonctionnent comme prévu et résistent aux [[Attack|attaques]] et aux [[HumanError|erreurs humaines]].
+> La fiabilité est un pilier fondamental de la triade CIA, directement liée à la disponibilité. Un système non fiable est une porte ouverte aux dénis de service, à la corruption de données et aux interruptions de service, qui peuvent entraîner des pertes financières et des dommages à la réputation. Assurer la fiabilité est crucial pour la continuité des activités et pour maintenir la intégrité et la confidentialité des données en garantissant que les systèmes fonctionnent comme prévu et résistent aux attaques et aux erreurs humaines.
 
 ## 🔗 Notes Connexes
-*   **Concept frère**: [[Availability]]
-*   **Objectif technique**: [[HighAvailability]]
-*   **Mesure d'ingénierie**: [[Redundancy]]
-*   **Objectif métier**: [[BusinessContinuity]]
-*   **Principe de sécurité**: [[CIATriad|Triade CIA]]
+*   **Concept frère**: Availability
+*   **Objectif technique**: HighAvailability
+*   **Mesure d'ingénierie**: Redundancy
+*   **Objectif métier**: BusinessContinuity
+*   **Principe de sécurité**: Triade CIA

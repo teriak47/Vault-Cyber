@@ -13,23 +13,23 @@ cssclasses:
 # Nom d'Utilisateur (Username)
 
 ## 📥 Définition en une phrase
-> Un nom d'utilisateur est une chaîne de caractères unique utilisée pour [[Identification|identifier]] un [[User|utilisateur]] ou un [[Account|compte]] au sein d'un [[System|système]] [[Computer|informatique]], d'un [[Network|réseau]] ou d'un [[SoftwareApplication|service en ligne]].
+> Un nom d'utilisateur est une chaîne de caractères unique utilisée pour identifier un utilisateur ou un compte au sein d'un système informatique, d'un réseau ou d'un service en ligne.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Identification Unique**: Chaque nom d'utilisateur est censé être unique au sein d'un [[System|système]] ou d'une base de données, permettant ainsi d'associer des [[Data|données]], des droits d'[[AccessControl|accès]] et des [[ConfigurationDrift|configurations]] spécifiques à une [[UserIdentity|identité utilisateur]] distincte.
-*   **Composant d'[[Authentication|Authentification]]**: Le nom d'utilisateur est la première étape du processus d'[[Authentication|authentification]], généralement couplé à un [[Password|mot de passe]] ou à d'autres facteurs d'[[MultiFactorAuthentication|authentification multi-facteurs]] pour vérifier l'identité de l'[[User|utilisateur]].
-*   **Gestion des [[Resource|Ressources]]**: Il sert de point d'ancrage pour l'application des [[AccessControl|contrôles d'accès]] et des [[SecurityPolicy|politiques de sécurité]], déterminant quelles [[Resource|ressources]] un [[User|utilisateur]] peut [[AccessControl|accéder]] et quelles [[Task|tâches]] il peut effectuer.
+*   **Identification Unique**: Chaque nom d'utilisateur est censé être unique au sein d'un système ou d'une base de données, permettant ainsi d'associer des données, des droits d'accès et des configurations spécifiques à une identité utilisateur distincte.
+*   **Composant d'Authentification**: Le nom d'utilisateur est la première étape du processus d'authentification, généralement couplé à un mot de passe ou à d'autres facteurs d'authentification multi-facteurs pour vérifier l'identité de l'utilisateur.
+*   **Gestion des Ressources**: Il sert de point d'ancrage pour l'application des contrôles d'accès et des politiques de sécurité, déterminant quelles ressources un utilisateur peut accéder et quelles tâches il peut effectuer.
 
 ## 💡 Importance en Cybersécurité
-> Les noms d'utilisateur sont fondamentaux en [[Cybersecurity|cybersécurité]] car ils constituent la base de l'[[Identification|identification]] et de l'[[Authentication|authentification]] des [[User|utilisateurs]]. La sécurisation des noms d'utilisateur et de leurs informations d'[[Authentication|authentification]] associées est cruciale pour prévenir l'[[UnauthorizedAccess|accès non autorisé]], les [[AccountTakeover|prises de contrôle de compte]] et les [[DataBreach|fuites de données]]. Des pratiques de gestion des noms d'utilisateur inappropriées peuvent être exploitées par des [[ThreatActor|acteurs de menaces]] via des [[PasswordAttacks|attaques de mots de passe]] comme le [[CredentialStuffing|bourrage d'identifiants]] ou le [[PasswordSpraying|password spraying]].
+> Les noms d'utilisateur sont fondamentaux en cybersécurité car ils constituent la base de l'identification et de l'authentification des utilisateurs. La sécurisation des noms d'utilisateur et de leurs informations d'authentification associées est cruciale pour prévenir l'accès non autorisé, les prises de contrôle de compte et les fuites de données. Des pratiques de gestion des noms d'utilisateur inappropriées peuvent être exploitées par des acteurs de menaces via des attaques de mots de passe comme le bourrage d'identifiants ou le password spraying.
 
 ## 🔗 Notes Connexes
-*   [[UserIdentity|Identité Utilisateur]]
-*   [[Account|Compte]]
-*   [[Authentication|Authentification]]
-*   [[Password|Mot de passe]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
-*   [[IdentityAndAccessManagement|Gestion des Identités et des Accès (IAM)]]
-*   [[CredentialStuffing|Bourrage d'identifiants]]
-*   [[PasswordSpraying|Diffusion de Mot de Passe]]
-*   [[AccountLockout|Verrouillage de compte]]
+*   Identité Utilisateur
+*   Compte
+*   Authentification
+*   Mot de passe
+*   Authentification Multi-Facteurs (MFA)
+*   Gestion des Identités et des Accès (IAM)
+*   Bourrage d'identifiants
+*   Diffusion de Mot de Passe
+*   Verrouillage de compte

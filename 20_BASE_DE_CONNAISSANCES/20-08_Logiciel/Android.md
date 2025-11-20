@@ -12,15 +12,15 @@ cssclasses:
 # Android
 
 ## 🎯 Rôle et Fonction
-> [[OperatingSystem|Système d'exploitation]] [[OpenSource|open-source]] basé sur le [[Linux|noyau Linux]], conçu principalement pour les appareils [[Smartphone|smartphones]] et les [[Tablet|tablettes]] à écran tactile. C'est le [[OperatingSystem|système d'exploitation]] le plus utilisé au monde pour les appareils [[MobileSecurity|mobiles]].
+> Système d'exploitation open-source basé sur le noyau Linux, conçu principalement pour les appareils smartphones et les tablettes à écran tactile. C'est le système d'exploitation le plus utilisé au monde pour les appareils mobiles.
 
 ## ⚙️ Fonctions Clés et Outils
-*   **Gestion des [[AccessControl|permissions]] des [[SoftwareApplication|applications]]**: Permet de visualiser et de contrôler les accès des [[SoftwareApplication|applications]] aux [[Resource|ressources]] sensibles de l'appareil (contacts, [[LocationData|localisation]], appareil photo, etc.), un aspect essentiel pour la [[MobileSecurity|sécurité mobile]].
+*   **Gestion des permissions des applications**: Permet de visualiser et de contrôler les accès des applications aux ressources sensibles de l'appareil (contacts, localisation, appareil photo, etc.), un aspect essentiel pour la sécurité mobile.
     ```bash
     # Vérifier les permissions d'une application spécifique (via ADB)
     adb shell dumpsys package com.example.app | grep permissions
     ```
-*   **[[AndroidDebugBridge|Android Debug Bridge (ADB)]]**: Un [[AndroidDebugBridge|outil]] en ligne de commande qui facilite la communication avec un émulateur ou un appareil [[Android]] connecté. Il est largement utilisé par les [[Developpers|développeurs]], les testeurs de [[Security|sécurité]] et les analystes [[Forensics|forensiques]].
+*   **Android Debug Bridge (ADB)**: Un outil en ligne de commande qui facilite la communication avec un émulateur ou un appareil Android connecté. Il est largement utilisé par les développeurs, les testeurs de sécurité et les analystes forensiques.
     ```bash
     # Lister les appareils connectés
     adb devices
@@ -33,15 +33,15 @@ cssclasses:
     ```
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-*   **Gestion des Mises à Jour et [[Fragmentation]]**: Assurer la [[PatchManagement|mise à jour]] régulière du système et des [[SoftwareApplication|applications]] pour corriger les [[Vulnerability|vulnérabilités]]. La [[Fragmentation|fragmentation]] d'Android exige une [[Vigilance|vigilance]] accrue quant au support des mises à jour par les fabricants.
-*   **Gestion des [[AccessControl|Permissions]] des [[SoftwareApplication|Applications]]**: Mettre en œuvre le [[PrincipleOfLeastPrivilege|principe du moindre privilège]] en examinant et en limitant les [[AccessControl|permissions]] accordées aux [[SoftwareApplication|applications]], réduisant ainsi les risques de [[DataExfiltration|fuite de données]] ou d'abus.
-*   **Protection contre les [[Malware|Logiciels Malveillants]]**: Utiliser des [[Antivirus|solutions anti-malware]] et télécharger des [[SoftwareApplication|applications]] uniquement depuis des sources fiables et officielles afin de prévenir les [[MalwareDistribution|infections par des logiciels malveillants]].
-*   **Sensibilisation aux [[AttackVector|Vecteurs d'Attaque]]**: Former les [[User|utilisateurs]] à reconnaître et à se protéger contre les [[Phishing|attaques par hameçonnage]], le [[Smishing|smishing]] et autres [[SocialEngineering|techniques d'ingénierie sociale]].
+*   **Gestion des Mises à Jour et Fragmentation**: Assurer la mise à jour régulière du système et des applications pour corriger les vulnérabilités. La fragmentation d'Android exige une vigilance accrue quant au support des mises à jour par les fabricants.
+*   **Gestion des Permissions des Applications**: Mettre en œuvre le principe du moindre privilège en examinant et en limitant les permissions accordées aux applications, réduisant ainsi les risques de fuite de données ou d'abus.
+*   **Protection contre les Logiciels Malveillants**: Utiliser des solutions anti-malware et télécharger des applications uniquement depuis des sources fiables et officielles afin de prévenir les infections par des logiciels malveillants.
+*   **Sensibilisation aux Vecteurs d'Attaque**: Former les utilisateurs à reconnaître et à se protéger contre les attaques par hameçonnage, le smishing et autres techniques d'ingénierie sociale.
 
 ## 🔍 Audit et Surveillance
 *   **Logs importants**:
-    *   Journaux système via [[AndroidDebugBridge|ADB]] `logcat` pour le débogage et la [[SecurityMonitoring|surveillance de sécurité]].
-    *   Journaux d'activité des [[SoftwareApplication|applications]] et du système d'exploitation.
+    *   Journaux système via ADB `logcat` pour le débogage et la surveillance de sécurité.
+    *   Journaux d'activité des applications et du système d'exploitation.
 *   **Commandes d'audit**:
     ```bash
     # Extraire tous les journaux système pour une analyse approfondie
@@ -51,14 +51,14 @@ cssclasses:
     ```
 
 ## 🔗 Notes Connexes
-*   [[IPhoneOperatingSystem|iOS]]
-*   [[MobileSecurity|Sécurité Mobile]]
-*   [[OperatingSystem|Système d'exploitation]]
-*   [[MobileDeviceManagement|MDM]]
-*   [[Malware|Malware]]
-*   [[Smartphone|Smartphones]]
-*   [[Tablet|Tablettes]]
-*   [[Linux]]
-*   [[ZeroDay|Vulnérabilités Zero-day]]
-*   [[CommonVulnerabilitiesAndExposures|Vulnérabilités connues (CVEs)]]
-*   [[NetworkProtocol|Protocoles réseau]]
+*   iOS
+*   Sécurité Mobile
+*   Système d'exploitation
+*   MDM
+*   Malware
+*   Smartphones
+*   Tablettes
+*   Linux
+*   Vulnérabilités Zero-day
+*   Vulnérabilités connues (CVEs)
+*   Protocoles réseau

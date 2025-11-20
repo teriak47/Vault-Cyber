@@ -15,44 +15,44 @@ cssclasses:
 # Exécution de Code à Distance (RCE)
 
 ## 📥 Définition
-> L'[[RemoteCodeExecution|Exécution de Code à Distance]] (RCE) est une [[Attack|attaque]] où un [[ThreatActor|attaquant]] peut exécuter du [[CodeDevelopment|code]] arbitraire sur une [[Computer|machine]] ou un [[Server|serveur]] cible. L'objectif est généralement d'obtenir un [[SystemCompromise|contrôle total]] sur le [[System|système]] compromis, de voler des [[Data|données]] ou d'établir une [[Persistence|persistance]].
+> L'Exécution de Code à Distance (RCE) est une attaque où un attaquant peut exécuter du code arbitraire sur une machine ou un serveur cible. L'objectif est généralement d'obtenir un contrôle total sur le système compromis, de voler des données ou d'établir une persistance.
 
 ## 🎯 Vecteurs d'Attaque
-*   **[[SoftwareVulnerability|Vulnérabilités logicielles]]** : Exploitation de failles dans les [[Software|logiciels]] (ex: [[BufferOverflow|dépassements de tampon]], [[SqlInjection|injections SQL]], [[DeserializationVulnerability|vulnérabilités de désérialisation]] [[UnvalidatedInput|ou entrées non validées]]).
-*   **[[WebApplications|Applications web]] vulnérables** : Failles dans les [[WebServer|serveurs web]] ou les applications qui permettent l'injection de commandes via des formulaires, des API ou des URL.
-*   **[[FileTransfer|Téléchargements de fichiers]] malveillants** : Incitation des [[User|utilisateurs]] à exécuter des fichiers contenant du [[Malware|code malveillant]].
-*   **[[RemoteAccessTrojan|Chevaux de Troie d'accès à distance (RAT)]]** : Utilisation de [[Trojan|Trojans]] pour établir un [[CommandAndControl|canal de commande et contrôle]] et exécuter du code à distance.
+*   **Vulnérabilités logicielles** : Exploitation de failles dans les logiciels (ex: dépassements de tampon, injections SQL, vulnérabilités de désérialisation ou entrées non validées).
+*   **Applications web vulnérables** : Failles dans les serveurs web ou les applications qui permettent l'injection de commandes via des formulaires, des API ou des URL.
+*   **Téléchargements de fichiers malveillants** : Incitation des utilisateurs à exécuter des fichiers contenant du code malveillant.
+*   **Chevaux de Troie d'accès à distance (RAT)** : Utilisation de Trojans pour établir un canal de commande et contrôle et exécuter du code à distance.
 
 ## 💥 Impacts Potentiels
-*   [[SystemCompromise|Compromission complète du système]]
-*   [[DataTheft|Vol de données]] ou [[DataExfiltration|exfiltration]]
-*   [[MalwareDistribution|Déploiement de logiciels malveillants]] supplémentaires (ex: [[Ransomware|ransomware]], [[Worm|vers]])
-*   [[DenialOfService|Déni de service]]
-*   [[PrivilegeEscalation|Élévation de privilèges]]
-*   Intégration dans un [[Botnet|botnet]]
+*   Compromission complète du système
+*   Vol de données ou exfiltration
+*   Déploiement de logiciels malveillants supplémentaires (ex: ransomware, vers)
+*   Déni de service
+*   Élévation de privilèges
+*   Intégration dans un botnet
 
 ## 💡 Exemple concret
-> Un [[ThreatActor|attaquant]] découvre une [[SoftwareVulnerability|vulnérabilité]] dans une [[WebApplications|application web]] permettant à un [[User|utilisateur]] de télécharger une image. En manipulant le processus de téléchargement, l'attaquant remplace l'image par un fichier de script malveillant (par exemple, un [[Shellcode|script PHP]]) qui est ensuite exécuté par le [[WebServer|serveur web]]. Ce script lui donne accès à un [[Shell|shell]] sur le [[Server|serveur]], lui permettant d'exécuter des [[Command|commandes]] à distance.
+> Un attaquant découvre une vulnérabilité dans une application web permettant à un utilisateur de télécharger une image. En manipulant le processus de téléchargement, l'attaquant remplace l'image par un fichier de script malveillant (par exemple, un script PHP) qui est ensuite exécuté par le serveur web. Ce script lui donne accès à un shell sur le serveur, lui permettant d'exécuter des commandes à distance.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[PatchManagement|Gestion rigoureuse des patchs]] et des mises à jour logicielles.
-    *   [[CodeReview|Revue de code]] et [[SecureDevelopmentLifeCycle|cycle de développement sécurisé]] [[SecureDevelopmentLifeCycle|pour identifier et corriger les vulnérabilités]].
-    *   [[InputValidation|Validation des entrées]] stricte pour toutes les données fournies par l'[[User|utilisateur]].
-    *   [[WebApplicationFirewall|Pare-feu applicatifs web (WAF)]] pour filtrer le trafic malveillant.
-    *   Application du [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
+    *   Gestion rigoureuse des patchs et des mises à jour logicielles.
+    *   Revue de code et cycle de développement sécurisé pour identifier et corriger les vulnérabilités.
+    *   Validation des entrées stricte pour toutes les données fournies par l'utilisateur.
+    *   Pare-feu applicatifs web (WAF) pour filtrer le trafic malveillant.
+    *   Application du principe du moindre privilège.
 *   **Détection** :
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] et [[IntrusionPreventionSystem|de prévention d'intrusion (IPS)]].
-    *   [[EndpointDetectionAndResponse|Solutions EDR]] et [[EndpointProtectionPlatform|EPP]].
-    *   [[SecurityInformationAndEventManagement|SIEM]] pour la [[SecurityMonitoring|surveillance de sécurité]] et l'[[AnomalyDetection|analyse des anomalies]].
+    *   Systèmes de détection d'intrusion (IDS) et de prévention d'intrusion (IPS).
+    *   Solutions EDR et EPP.
+    *   SIEM pour la surveillance de sécurité et l'analyse des anomalies.
 *   **Réponse** :
-    *   Mise en place et test d'un [[IncidentResponse|plan de réponse aux incidents]] robuste.
+    *   Mise en place et test d'un plan de réponse aux incidents robuste.
     *   Isolation rapide des systèmes compromis.
 
 ## 🔗 Notes Connexes
-*   [[Exploit|Exploit]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[Shellcode|Shellcode]]
-*   [[ZeroDay|Vulnérabilité Zero-Day]]
-*   [[BufferOverflow|Buffer Overflow]]
-*   [[SqlInjection|Injection SQL]]
+*   Exploit
+*   Vulnérabilité
+*   Shellcode
+*   Vulnérabilité Zero-Day
+*   Buffer Overflow
+*   Injection SQL

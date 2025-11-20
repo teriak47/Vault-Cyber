@@ -21,7 +21,7 @@ source:
 # GNU Core Utilities (Coreutils)
 
 ## 🎯 Objectif Principal
-Les [[GNUCoreUtilities|GNU Core Utilities]] (souvent appelés Coreutils) sont un ensemble de [[Software|logiciels]] essentiels qui fournissent les fonctionnalités de base pour les [[OperatingSystem|systèmes d'exploitation]] de type [[GNU|GNU]]/[[Linux|Linux]]. Ils incluent les outils fondamentaux de manipulation de fichiers, d'interprétation de [[Command|commandes]] de la [[Shell|coque]], et de traitement de texte qui sont nécessaires pour l'interaction avec le [[Computer|système]] et le [[Scripting|scriptage]].
+Les GNU Core Utilities (souvent appelés Coreutils) sont un ensemble de logiciels essentiels qui fournissent les fonctionnalités de base pour les systèmes d'exploitation de type GNU/Linux. Ils incluent les outils fondamentaux de manipulation de fichiers, d'interprétation de commandes de la coque, et de traitement de texte qui sont nécessaires pour l'interaction avec le système et le scriptage.
 
 ## ⚙️ Cas d'usage / Commandes Utiles
 
@@ -50,7 +50,7 @@ rm my_old_file.txt
 ```
 
 ### Afficher le contenu d'un fichier
-Affiche le contenu d'un fichier sur la [[CommandLineInterface|sortie standard]].
+Affiche le contenu d'un fichier sur la sortie standard.
 ```bash
 cat /etc/hosts
 ```
@@ -62,7 +62,7 @@ grep "error" /var/log/syslog
 ```
 
 ### Afficher l'espace disque utilisé
-Fournit des informations sur l'utilisation de l'espace disque des [[FileServer|systèmes de fichiers]].
+Fournit des informations sur l'utilisation de l'espace disque des systèmes de fichiers.
 ```bash
 df -h
 ```
@@ -74,13 +74,13 @@ du -sh /var/log
 ```
 
 ## ⚠️ Points d'attention
-*   **Sécurité**: Une utilisation incorrecte de certaines [[Command|commandes]] comme `rm` avec l'option récursive (`-r`) et force (`-f`) peut entraîner une [[DataLoss|perte de données]] irréversible, surtout lorsqu'exécutée avec des privilèges élevés. La [[PrincipleOfLeastPrivilege|prudence]] est de mise.
-*   **Ubiquité**: Les [[GNUCoreUtilities|Coreutils]] sont tellement intégrés aux [[OperatingSystem|systèmes d'exploitation]] [[Linux|Linux]] qu'ils sont souvent tenus pour acquis. Leur stabilité et leur fiabilité sont critiques pour le bon fonctionnement de l'[[System|ensemble du système]].
-*   **Environnement**: L'interopérabilité avec d'autres [[Shell|shells]] que [[BashShell|Bash]] est généralement assurée, mais des comportements subtils peuvent varier.
+*   **Sécurité**: Une utilisation incorrecte de certaines commandes comme `rm` avec l'option récursive (`-r`) et force (`-f`) peut entraîner une perte de données irréversible, surtout lorsqu'exécutée avec des privilèges élevés. La prudence est de mise.
+*   **Ubiquité**: Les Coreutils sont tellement intégrés aux systèmes d'exploitation Linux qu'ils sont souvent tenus pour acquis. Leur stabilité et leur fiabilité sont critiques pour le bon fonctionnement de l'ensemble du système.
+*   **Environnement**: L'interopérabilité avec d'autres shells que Bash est généralement assurée, mais des comportements subtils peuvent varier.
 
 ## 🔗 Notes Connexes
-*   **Concept parent**: [[GNUProject|Projet GNU]]
-*   **Environnement d'exécution**: [[Linux]]
-*   **Interaction utilisateur**: [[CommandLineInterface|Interface en ligne de commande (CLI)]]
-*   **Utilisation avancée**: [[Scripting]]
-*   **Composant similaire**: [[BashShell|Bash Shell]]
+*   **Concept parent**: Projet GNU
+*   **Environnement d'exécution**: Linux
+*   **Interaction utilisateur**: Interface en ligne de commande (CLI)
+*   **Utilisation avancée**: Scripting
+*   **Composant similaire**: Bash Shell

@@ -1,56 +1,49 @@
 ---
 tags:
-  - acteur/menace
-  - cybercriminalite
-  - activisme
+  - acteur-de-menace
+  - acteur-de-menace/hacktiviste
+  - motivation/ideologique
+  - motivation/politique
+  - cyber-activisme
+  - objectif/sensibilisation
 aliases:
   - Hacktiviste
   - Activiste numérique
   - Cyber-activiste
 archetype: acteur-de-menace
-origine_suspectee:
+origine: Divers (individus ou groupes non étatiques)
+motivation:
+  - Idéologique
+  - Politique
+  - Sociale
+  - Éthique
 cssclasses:
   - max
 ---
 
-# Acteur de Menace : Hacktiviste
+# Hacktivist
 
-## 👤 Profil
-> **Type**: [[ThreatActor|Acteur de menace]] motivé par des causes idéologiques ou politiques, souvent pour promouvoir un programme social ou politique.
-> **Niveau de sophistication**: Varie de faible (individus avec des compétences de base) à élevé (groupes organisés avec des capacités avancées).
-> **Objectifs principaux**:
-    *   Sensibilisation à des causes politiques ou sociales.
-    *   Protestation contre des organisations ou gouvernements.
-    *   [[DataBreach|Fuite de données]] pour embarrasser ou exposer.
-    *   [[DenialOfService|Déni de Service]] (DoS) pour perturber des services.
-    *   [[ReputationalDamage|Atteinte à la réputation]] via la défiguration de sites ou la [[Disinformation|désinformation]].
+> [!danger] Profil de la Menace
+> * **Origine** : Individus ou groupes non étatiques, souvent décentralisés.
+> * **Motivation** : Idéologique, politique, sociale, éthique (ex: liberté d'expression, justice sociale, environnement). Les objectifs peuvent inclure la [[SecurityAwareness|sensibilisation]] du public, la protestation ou l'impact politique.
+> * **Cibles** : [[Government|Gouvernements]], grandes [[Enterprise|entreprises]], organisations ou individus perçus comme antagonistes aux idéologies défendues.
 
-## 🎯 Cibles et Industries Visées
-*   **Secteurs**: Gouvernements, grandes entreprises (notamment celles perçues comme éthiquement douteuses ou politiquement opposées), institutions financières, organisations de défense, et toute entité associée à la cause contestée.
-*   **Régions géographiques**: Les cibles peuvent être mondiales, choisies en fonction de la pertinence de l'acteur par rapport à la cause défendue.
+## 🛠️ Arsenal & TTPs (Tactiques, Techniques, Procédures)
 
-## 🛠️ TTPs (Tactiques, Techniques et Procédures) - [[MITREATTACKFramework|MITRE ATT&CK]]
-*   **Accès Initial**:
-    *   [[Phishing|Hameçonnage]] (y compris le spear phishing)
-    *   [[SqlInjection|Injections SQL]]
-    *   [[CrossSiteScripting|Cross-Site Scripting (XSS)]]
-    *   [[WebsiteDefacement|Défiguration de sites web]]
-    *   Exploitation de [[Vulnerability|vulnérabilités]] connues dans les applications web.
-*   **Outils utilisés**:
-    *   Outils de test d'intrusion [[OpenSource|open source]] et scripts personnalisés.
-    *   Logiciels et plateformes pour des attaques par [[DistributedDenialOfService|Déni de Service Distribué (DDoS)]].
-    *   Outils de collecte d'informations (OSINT).
-*   **Techniques notables**:
-    *   [[SocialEngineering|Ingénierie Sociale]] pour manipuler le personnel.
-    *   [[DataExfiltration|Exfiltration de données]] sensibles ou classifiées.
-    *   Publication de [[Cleartext|données en texte clair]] sur des plateformes publiques.
-    *   [[Disinformation|Campagnes de désinformation]] et de propagande en ligne.
+Les hacktivistes emploient diverses [[Attack|attaques]] pour atteindre leurs objectifs, souvent avec une intention de publicité et de perturbation. Les tactiques courantes incluent :
 
-##  Campagnes Notables
-Les campagnes spécifiques varient énormément en fonction des groupes et de leurs motivations. Elles sont souvent de courte durée et ciblent des entités spécifiques. Plutôt qu'une liste exhaustive, il est important de noter que ces groupes mènent des opérations souvent médiatisées pour maximiser l'impact de leur message.
+*   Les [[DistributedDenialOfService|attaques par déni de service distribué (DDoS)]] pour rendre des services inaccessibles.
+*   La [[DataExfiltration|fuite de données]] (doxing) pour exposer des informations sensibles ou compromettantes.
+*   Le [[WebScraping|web scraping]] pour la collecte massive d'informations publiquement disponibles.
+*   Le défaçage de sites web (Website Defacement) pour modifier le contenu visuel d'un site à des fins de message.
+*   Les campagnes de [[Phishing|hameçonnage]] et d'[[SocialEngineering|ingénierie sociale]] pour obtenir un accès non autorisé ou diffuser leur message.
+*   L'utilisation de [[Tool|outils]] et de [[Script|scripts]] souvent disponibles en [[OpenSource|open source]].
+
+Leurs actions visent principalement à générer une sensibilisation médiatique ou à causer un dommage à la réputation pour leurs cibles.
 
 ## 🔗 Notes Connexes
-*   **Concept associé**: [[Cybercrime|Cybercriminalité]]
-*   **Type d'attaque**: [[DenialOfService|Déni de Service]]
-*   **Impact potentiel**: [[ReputationalDamage|Dommage à la réputation]]
-*   **Méthodologie d'analyse**: [[MITREATTACKFramework|MITRE ATT&CK Framework]]
+*   [[ThreatActor|Acteur de menace]]
+*   [[Threat|Menace]]
+*   [[Cybercrime|Cybercriminalité]]
+*   [[DigitalAttack|Attaque numérique]]
+*   [[InformationSecurity|Sécurité de l'information]]

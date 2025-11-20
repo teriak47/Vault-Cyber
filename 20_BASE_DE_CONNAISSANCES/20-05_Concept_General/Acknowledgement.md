@@ -13,30 +13,30 @@ archetype: concept-general
 # Accusé de Réception (Acknowledgement)
 
 ## 📥 Définition en une phrase
-> Un [[Acknowledgement|accusé de réception]] est un signal ou un [[Message|message]] envoyé par un destinataire pour confirmer la bonne réception d'une [[Data|donnée]] ou d'un [[Message|message]], essentiel pour garantir la [[Reliability|fiabilité]] de la [[NetworkCommunication|communication réseau]].
+> Un accusé de réception est un signal ou un message envoyé par un destinataire pour confirmer la bonne réception d'une donnée ou d'un message, essentiel pour garantir la fiabilité de la communication réseau.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Reliability|Fiabilité]] des Communications**: Les [[Acknowledgement|accusés de réception]] sont au cœur des [[NetworkProtocol|protocoles réseau]] orientés connexion, comme le [[TransmissionControlProtocol|TCP]], pour assurer que toutes les [[Packet|paquets]] de [[Data|données]] envoyés ont été reçus par le destinataire. Ils garantissent l'[[Integrity|intégrité]] et la livraison ordonnée des [[Data|données]].
-*   **Mécanisme de [[Retransmission|Retransmission]]**: Si un expéditeur ne reçoit pas d'[[Acknowledgement|accusé de réception]] dans un certain délai après l'envoi d'un [[Packet|paquet]], il suppose que le [[Packet|paquet]] a été perdu et le [[Retransmission|retransmet]]. Ce mécanisme est crucial pour la [[ReliableCommunication|communication fiable]].
-*   **[[TrafficManagement|Contrôle de Flux]]**: Les [[Acknowledgement|accusés de réception]] peuvent également inclure des informations sur la quantité de [[Data|données]] que le destinataire est prêt à recevoir (fenêtre de réception), aidant ainsi à prévenir la [[NetworkCongestion|surcharge du récepteur]] et à optimiser la [[NetworkPerformance|performance réseau]].
-*   **Types d'[[Acknowledgement|Accusés de Réception]]**: On distingue les [[PositiveAcknowledgement|ACK positifs]] (confirmant la réception réussie) et les [[NegativeAcknowledgement|NACK négatifs]] (signalant une erreur, une corruption ou une non-réception d'un [[Packet|paquet]]).
+*   **Fiabilité des Communications**: Les accusés de réception sont au cœur des protocoles réseau orientés connexion, comme le TCP, pour assurer que toutes les paquets de données envoyés ont été reçus par le destinataire. Ils garantissent l'intégrité et la livraison ordonnée des données.
+*   **Mécanisme de Retransmission**: Si un expéditeur ne reçoit pas d'accusé de réception dans un certain délai après l'envoi d'un paquet, il suppose que le paquet a été perdu et le retransmet. Ce mécanisme est crucial pour la communication fiable.
+*   **Contrôle de Flux**: Les accusés de réception peuvent également inclure des informations sur la quantité de données que le destinataire est prêt à recevoir (fenêtre de réception), aidant ainsi à prévenir la surcharge du récepteur et à optimiser la performance réseau.
+*   **Types d'Accusés de Réception**: On distingue les ACK positifs (confirmant la réception réussie) et les NACK négatifs (signalant une erreur, une corruption ou une non-réception d'un paquet).
 
 ## 💡 Importance en Cybersécurité
-> [[Acknowledgement|Les accusés de réception]] sont des mécanismes fondamentaux qui sous-tendent la [[Reliability|fiabilité]] des [[NetworkCommunication|communications réseau]]. En assurant la bonne [[DataTransmission|transmission des données]], ils contribuent directement à l'[[Integrity|intégrité]] et à la [[Availability|disponibilité]] des [[System|systèmes]] d'information. Sans eux, la perte ou la [[DataCorruption|corruption de données]] serait systémique, rendant de nombreux [[NetworkProtocol|protocoles]] inopérants. Leur manipulation par des [[ThreatActor|acteurs de menace]] (par exemple via des [[Spoofing|attaques d'usurpation]] d'[[Acknowledgement|ACK]] ou des [[DenialOfService|dénis de service]]) peut compromettre l'[[Integrity|intégrité]] des [[Data|données]] ou causer une [[ServiceDisruption|interruption de service]], soulignant leur rôle critique dans la [[Cybersecurity|cybersécurité]].
+> Les accusés de réception sont des mécanismes fondamentaux qui sous-tendent la fiabilité des communications réseau. En assurant la bonne transmission des données, ils contribuent directement à l'intégrité et à la disponibilité des systèmes d'information. Sans eux, la perte ou la corruption de données serait systémique, rendant de nombreux protocoles inopérants. Leur manipulation par des acteurs de menace (par exemple via des attaques d'usurpation d'ACK ou des dénis de service) peut compromettre l'intégrité des données ou causer une interruption de service, soulignant leur rôle critique dans la cybersécurité.
 
 ## 🔗 Notes Connexes
-*   [[TransmissionControlProtocol|Protocole de Contrôle de Transmission]]
-*   [[NetworkCommunication|Communication Réseau]]
-*   [[Retransmission|Retransmission]]
-*   [[Integrity|Intégrité]]
-*   [[Availability|Disponibilité]]
-*   [[DenialOfService|Déni de Service]]
-*   [[Spoofing|Usurpation]]
-*   [[Checksum|Somme de contrôle]]
-*   [[NetworkProtocol|Protocole Réseau]]
-*   [[Packet|Paquet]]
-*   [[TrafficManagement|Gestion du Trafic]]
-*   [[Reliability|Fiabilité]]
-*   [[ReliableCommunication|Communication fiable]]
-*   [[PositiveAcknowledgement|Accusé de Réception Positif]]
-*   [[NegativeAcknowledgement|Accusé de Réception Négatif]]
+*   Protocole de Contrôle de Transmission
+*   Communication Réseau
+*   Retransmission
+*   Intégrité
+*   Disponibilité
+*   Déni de Service
+*   Usurpation
+*   Somme de contrôle
+*   Protocole Réseau
+*   Paquet
+*   Gestion du Trafic
+*   Fiabilité
+*   Communication fiable
+*   Accusé de Réception Positif
+*   Accusé de Réception Négatif

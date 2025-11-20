@@ -58,7 +58,7 @@ Les [[Protocol|protocoles réseau]] sont composés de plusieurs éléments essen
 ### 5. Comment les Appareils Voient le Réseau
 
 La manière dont nous, humains, percevons un réseau diffère de celle des appareils :
-*   **Notre [[NetworkTopology|Vision]]** : Nous voyons le réseau via des diagrammes de topologie, identifiant les périphériques (ordinateurs, [[Server|serveurs]], [[Switch|commutateurs]], [[Router|routeurs]]) avec leurs [[MediaAccessControlAddress|adresses MAC]], [[InternetProtocol|IP]], [[DefaultGateway|passerelles]] et [[DomainNameSystem|serveurs DNS]].
+*   **Notre [[NetworkTopology|Vision]]** : Nous voyons le réseau via des diagrammes de topologie, identifiant les périphériques (ordinateurs, [[Server|serveurs]], [[NetworkSwitch|commutateurs]], [[Router|routeurs]]) avec leurs [[MediaAccessControlAddress|adresses MAC]], [[InternetProtocol|IP]], [[DefaultGateway|passerelles]] et [[DomainNameSystem|serveurs DNS]].
 *   **[[AddressingInformation|Vision de l'Appareil]]** : Chaque appareil opère dans sa "propre bulle", connaissant uniquement sa propre [[AddressingInformation|information d'adressage]]. C'est le [[Protocol|protocole]] qui fournit les règles permettant à un appareil de savoir à quel réseau il appartient et où envoyer les informations.
 
 ### 6. Les Protocoles en Action
@@ -99,7 +99,7 @@ L'étude des [[Protocol|protocoles réseau]] est fondamentale pour comprendre le
 
 Une communication réseau réussie implique l'utilisation de plusieurs [[Protocol|protocoles]] organisés en couches, formant la pile de [[InternetProtocol|protocoles TCP/IP]]. Chaque couche a des responsabilités spécifiques :
 1.  **Couche Application** :
-    *   **[[HypertextTransferProtocol|HTTP]]** : Régit l'échange ou le transfert de contenu [[HTML]] entre un navigateur et un [[Server|serveur web]].
+    *   **[[HypertextTransferProtocol|HTTP]]** : Régit l'échange ou le transfert de contenu HTML entre un navigateur et un [[Server|serveur web]].
 2.  **Couche Transport** :
     *   **[[TransmissionControlProtocol|TCP]]** : Assure que les informations arrivent à destination de manière fiable et dans le bon ordre.
 3.  **Couche [[InternetLayer|Internet]]** :
@@ -114,64 +114,40 @@ Une communication réseau réussie implique l'utilisation de plusieurs [[Protoco
 *   **Les [[InternetStandard|Normes]] Garantissent l'[[Interoperability|Interopérabilité]]** : Les organismes comme l'[[InternetEngineeringTaskForce|IETF]] développent et publient des [[RequestForComments|normes (RFC)]] qui permettent à différents types d'appareils de communiquer via [[Internet|Internet]].
 *   **Similitudes Humaines** : Les [[Protocol|protocoles réseau]] reflètent les [[Protocol|protocoles]] de communication humaine, notamment l'utilisation d'un langage commun, de règles de comportement et de la [[Acknowledgement|confirmation de réception]].
 
-## 🧠 Carte Mentale / Schéma
-```mermaid
-graph TD
-    A[Communication Réseau] --> B[Règles de Communication]
-    B --> C[Protocoles Réseau]
-    C --> D[Pourquoi Importants?]
-    C --> E[Éléments des Protocoles]
-    C --> F[Protocoles en Action]
-    F --> F1[Ethernet/Sans Fil]
-    F --> F2[DHCP/ICMPv6]
-    F --> F3[DNS]
-    F --> F4[IP]
-    F --> F5[TCP]
-    C --> G[Normes Internet]
-    G --> G1[RFC - IETF]
-    C --> H[Comparaison Humain/Réseau]
-    C --> I[Pile TCP/IP]
-    I --> I1[Couche Application (HTTP)]
-    I --> I2[Couche Transport (TCP)]
-    I --> I3[Couche Internet (IP)]
-    I --> I4[Couche Accès Réseau (Ethernet)]
-```
-
 ## ❓ Quiz de Révision (Active Recall)
 > [!QUESTION] Question 1
 > Quelles sont les cinq règles fondamentales de la communication qui sont également appliquées aux communications réseau ?
 > > [!success]- Réponse
-> > Les cinq règles fondamentales sont : [[Identification]], [[Méthode]], [[Langage]] (commun), [[Vitesse]] (délais de livraison) et [[Acknowledgement|Confirmation]] (accusé de réception).
+> > Les cinq règles fondamentales sont : Identification, Methodology, Langage (commun), Vitesse (délais de livraison) et Confirmation (accusé de réception).
 
 > [!QUESTION] Question 2
-> Citez et expliquez trois éléments essentiels des [[Protocol|protocoles réseau]].
+> Citez et expliquez trois éléments essentiels des protocoles réseau.
 > > [!success]- Réponse
 > > Trois éléments essentiels sont :
-> > 1.  **[[MessageFormatting|Format du Message]]** : La structure spécifique que le message doit suivre.
-> > 2.  **[[MessageSize|Taille du Message]]** : Des règles qui définissent si le message doit être fragmenté.
-> > 3.  **[[Encoding|Codage]]** : La manière dont les messages sont convertis en [[Bit|bits]] et représentés physiquement (sons, ondes, impulsions).
-> > (Autres possibles : Heure et Date, [[Encapsulation]], [[MessagePattern|Modèle de Message]])
+> > 1.  **Format du Message** : La structure spécifique que le message doit suivre.
+> > 2.  **Taille du Message** : Des règles qui définissent si le message doit être fragmenté.
+> > 3.  **Codage** : La manière dont les messages sont convertis en bits et représentés physiquement (sons, ondes, impulsions).
+> > (Autres possibles : Heure et Date, Encapsulation, Modèle de Message)
 
 > [!QUESTION] Question 3
-> Pourquoi est-il crucial pour les appareils d'un [[LocalAreaNetwork|réseau local]] d'utiliser les mêmes [[Protocol|protocoles]] ?
+> Pourquoi est-il crucial pour les appareils d'un réseau local d'utiliser les mêmes protocoles ?
 > > [!success]- Réponse
-> > Il est crucial qu'ils utilisent les mêmes [[Protocol|protocoles]] car cela leur permet de "parler le même langage" et de comprendre les données échangées. Sans un [[Protocol|protocole]] commun, les appareils ne pourraient pas interpréter les informations de manière cohérente et ne pourraient donc pas communiquer.
+> > Il est crucial qu'ils utilisent les mêmes protocoles car cela leur permet de "parler le même langage" et de comprendre les données échangées. Sans un protocole commun, les appareils ne pourraient pas interpréter les informations de manière cohérente et ne pourraient donc pas communiquer.
 
 > [!QUESTION] Question 4
-> Décrivez la fonction principale de chaque couche de la pile de [[InternetProtocol|protocoles TCP/IP]] (Application, Transport, Internet, Accès Réseau).
+> Décrivez la fonction principale de chaque couche de la pile de protocoles TCP/IP (Application, Transport, Internet, Accès Réseau).
 > > [!success]- Réponse
-> > *   **Couche Application** : Gère l'interaction avec l'utilisateur et les applications, définissant comment les données sont formatées pour les services (ex: [[HypertextTransferProtocol|HTTP]] pour le web).
-> > *   **Couche Transport** : Assure une livraison fiable et ordonnée des données entre les applications sur différents hôtes (ex: [[TransmissionControlProtocol|TCP]]).
-> > *   **Couche [[InternetLayer|Internet]]** : Est responsable de l'[[Routing|adressage]] logique et du routage des [[Packet|paquets]] entre les réseaux (ex: [[InternetProtocol|IP]]).
-> > *   **Couche [[NetworkAccessLayer|Accès Réseau]]** : Gère la livraison physique des données sur le support réseau local (ex: [[EthernetProtocol|Ethernet]] pour la communication [[NetworkInterface|carte à carte]]).
+> > *   **Couche Application** : Gère l'interaction avec l'utilisateur et les applications, définissant comment les données sont formatées pour les services (ex: HTTP pour le web).
+> > *   **Couche Transport** : Assure une livraison fiable et ordonnée des données entre les applications sur différents hôtes (ex: TCP).
+> > *   **Couche Internet** : Est responsable de l'adressage logique et du routage des paquets entre les réseaux (ex: IP).
+> > *   **Couche Accès Réseau** : Gère la livraison physique des données sur le support réseau local (ex: Ethernet pour la communication carte à carte).
 
 > [!QUESTION] Question 5
-> Expliquez ce que sont les [[RequestForComments|RFC]] et quel est le rôle de l'[[InternetEngineeringTaskForce|IETF]] dans l'établissement des [[InternetStandard|normes Internet]].
+> Expliquez ce que sont les RFC et quel est le rôle de l'IETF dans l'établissement des normes Internet.
 > > [!success]- Réponse
-> > Les [[RequestForComments|RFC]] (Request for Comments) sont des documents numérotés qui enregistrent les étapes du développement et de l'approbation des [[InternetStandard|normes Internet]]. L'[[InternetEngineeringTaskForce|IETF]] (Internet Engineering Task Force) est l'organisme qui publie et gère ces [[RequestForComments|RFC]], garantissant que tous les appareils peuvent interagir de manière standardisée et favorisant ainsi l'[[Interoperability|interopérabilité]] et la stabilité d'[[Internet|Internet]].
+> > Les RFC (Request for Comments) sont des documents numérotés qui enregistrent les étapes du développement et de l'approbation des normes Internet. L'IETF (Internet Engineering Task Force) est l'organisme qui publie et gère ces RFC, garantissant que tous les appareils peuvent interagir de manière standardisée et favorisant ainsi l'interopérabilité et la stabilité d'Internet.
 
 ## 🔗 Liens du Module
 *   **Précédent** : [[RIB01-04_Module4|01-04 | Module 4]]
 *   **Suivant** : [[RIB01-05_Module5Partie2|01-05 | Module 5 partie 2]]
-*   **Ressource Externe** : [RFC Editor](https://www.rfc-editor.org/)
 ---

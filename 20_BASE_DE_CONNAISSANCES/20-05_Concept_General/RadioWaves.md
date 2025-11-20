@@ -13,27 +13,27 @@ cssclasses:
 # Ondes Radio
 
 ## 📥 Définition en une phrase
-> Les [[RadioWaves|ondes radio]] sont un type d'[[ElectromagneticWaves|ondes électromagnétiques]], faisant partie du [[ElectromagneticSpectrum|spectre électromagnétique]], utilisées pour la [[WirelessTransmission|transmission sans fil]] d'[[Data|informations]] sur de courtes ou longues distances.
+> Les ondes radio sont un type d'ondes électromagnétiques, faisant partie du spectre électromagnétique, utilisées pour la transmission sans fil d'informations sur de courtes ou longues distances.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Propagation**: Les [[RadioWaves|ondes radio]] peuvent se propager dans le vide et dans l'air, voyageant à la [[LightPulses|vitesse de la lumière]], permettant ainsi des [[WirelessTransmission|transmissions sans fil]] sur de vastes étendues.
-*   **Caractéristiques Fondamentales**: Elles sont caractérisées par leur [[Modulation|fréquence]] (nombre d'oscillations par seconde, mesurée en Hertz) et leur [[ElectromagneticWaves|longueur d'onde]] (distance entre deux crêtes successives). Ces deux propriétés sont inversement proportionnelles, définissant leur comportement et leur utilisation.
-*   **[[Modulation|Modulation]]**: Le processus d'encodage des [[Data|informations]] (audio, vidéo, [[Data|données]]) sur l'onde porteuse via des techniques de [[Modulation|modulation]] (amplitude, fréquence ou phase) pour la [[WirelessTransmission|transmission]].
-*   **Applications Étendues**: Elles constituent le fondement de nombreuses [[WirelessTechnology|technologies sans fil]] modernes telles que la [[RadioCommunication|radiocommunication]], la [[Television|télévision]], les [[MobileCommunication|communications mobiles]] (téléphonie cellulaire), le [[WirelessFidelity|Wi-Fi]], le [[Bluetooth|Bluetooth]], le [[GlobalPositioningSystem|GPS]] et les [[RadarSystem|systèmes radar]].
-*   **Position dans le Spectre**: Les [[RadioWaves|ondes radio]] occupent la partie basse fréquence du [[ElectromagneticSpectrum|spectre électromagnétique]], caractérisée par des longueurs d'onde plus longues.
+*   **Propagation**: Les ondes radio peuvent se propager dans le vide et dans l'air, voyageant à la vitesse de la lumière, permettant ainsi des transmissions sans fil sur de vastes étendues.
+*   **Caractéristiques Fondamentales**: Elles sont caractérisées par leur fréquence (nombre d'oscillations par seconde, mesurée en Hertz) et leur longueur d'onde (distance entre deux crêtes successives). Ces deux propriétés sont inversement proportionnelles, définissant leur comportement et leur utilisation.
+*   **Modulation**: Le processus d'encodage des informations (audio, vidéo, données) sur l'onde porteuse via des techniques de modulation (amplitude, fréquence ou phase) pour la transmission.
+*   **Applications Étendues**: Elles constituent le fondement de nombreuses technologies sans fil modernes telles que la radiocommunication, la télévision, les communications mobiles (téléphonie cellulaire), le Wi-Fi, le Bluetooth, le GPS et les systèmes radar.
+*   **Position dans le Spectre**: Les ondes radio occupent la partie basse fréquence du spectre électromagnétique, caractérisée par des longueurs d'onde plus longues.
 
 ## 💡 Importance en Cybersécurité
-Les [[RadioWaves|ondes radio]] sont fondamentales pour la [[NetworkCommunication|communication réseau]] et mobile moderne, mais elles introduisent des [[SecurityVulnerabilities|vulnérabilités de sécurité]] spécifiques en raison de leur nature diffusée. Les [[Attack|attaques]] courantes exploitant les [[RadioWaves|ondes radio]] incluent l'[[Eavesdropping|écoute clandestine]] (interception des [[WirelessSignals|signaux sans fil]] non chiffrés), les [[DenialOfService|attaques par déni de service]] via le [[SignalJamming|brouillage]] qui perturbe la [[WirelessCommunication|communication légitime]], les [[ReplayAttack|attaques par rejeu]] qui réutilisent des [[WirelessSignals|signaux]] capturés pour des actions non autorisées, et les [[SideChannelAttack|attaques par canaux auxiliaires]] qui exploitent les émissions électromagnétiques parasites pour extraire des [[SensitiveData|informations sensibles]].
+Les ondes radio sont fondamentales pour la communication réseau et mobile moderne, mais elles introduisent des vulnérabilités de sécurité spécifiques en raison de leur nature diffusée. Les attaques courantes exploitant les ondes radio incluent l'écoute clandestine (interception des signaux sans fil non chiffrés), les attaques par déni de service via le brouillage qui perturbe la communication légitime, les attaques par rejeu qui réutilisent des signaux capturés pour des actions non autorisées, et les attaques par canaux auxiliaires qui exploitent les émissions électromagnétiques parasites pour extraire des informations sensibles.
 
-Pour atténuer ces [[Threat|menaces]], des [[SecurityControl|contrôles de sécurité]] robustes sont essentiels. Cela inclut le [[Encryption|chiffrement]] systématique des [[NetworkCommunication|communications sans fil]] (ex: [[WirelessProtectedAccessThree|WPA3]] pour le [[WirelessFidelity|Wi-Fi]], [[TransportLayerSecurity|TLS]] pour les protocoles de [[ApplicationLayer|couche application]]), des mécanismes d'[[Authentication|authentification]] forts pour garantir que seuls les [[User|utilisateurs]] et [[WirelessDevices|appareils autorisés]] peuvent se connecter, ainsi que l'emploi de techniques de [[SignalTransmission|transmission]] avancées telles que le [[FrequencyHoppingSpreadSpectrum|saut de fréquence]] et l'[[SpreadSpectrum|étalement de spectre]] pour renforcer la résilience aux [[ElectromagneticInterference|interférences]] et à l'[[Eavesdropping|interception]]. La gestion de la puissance d'émission permet de limiter la portée des [[WirelessSignals|signaux]] et ainsi réduire la [[AttackSurface|surface d'attaque]]. Enfin, le déploiement de [[WirelessIntrusionPreventionSystem|systèmes de prévention d'intrusion sans fil]] (WIPS) est crucial pour détecter et contrer les activités malveillantes ou les tentatives de [[SignalJamming|brouillage]] dans un [[WirelessNetwork|réseau sans fil]].
+Pour atténuer ces menaces, des contrôles de sécurité robustes sont essentiels. Cela inclut le chiffrement systématique des communications sans fil (ex: WPA3 pour le Wi-Fi, TLS pour les protocoles de couche application), des mécanismes d'authentification forts pour garantir que seuls les utilisateurs et appareils autorisés peuvent se connecter, ainsi que l'emploi de techniques de transmission avancées telles que le saut de fréquence et l'étalement de spectre pour renforcer la résilience aux interférences et à l'interception. La gestion de la puissance d'émission permet de limiter la portée des signaux et ainsi réduire la surface d'attaque. Enfin, le déploiement de systèmes de prévention d'intrusion sans fil (WIPS) est crucial pour détecter et contrer les activités malveillantes ou les tentatives de brouillage dans un réseau sans fil.
 
 ## 🔗 Notes Connexes
-*   [[WirelessNetwork|Réseau sans fil]]
-*   [[ElectromagneticSpectrum|Spectre Électromagnétique]]
-*   [[WirelessTransmission|Transmission sans fil]]
-*   [[WirelessSecurity|Sécurité Sans Fil]]
-*   [[WirelessIntrusionPreventionSystem|WIPS]]
-*   [[Antenna|Antenne]]
-*   [[SignalJamming|Brouillage de Signal]]
-*   [[RadioCommunication|Radiocommunication]]
-*   [[Modulation|Modulation]]
+*   Réseau sans fil
+*   Spectre Électromagnétique
+*   Transmission sans fil
+*   Sécurité Sans Fil
+*   WIPS
+*   Antenne
+*   Brouillage de Signal
+*   Radiocommunication
+*   Modulation

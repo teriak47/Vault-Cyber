@@ -13,12 +13,12 @@ cssclasses:
 # Netcat (nc)
 
 ## 🎯 Objectif Principal
-> [[Netcat]] (souvent abrégé en `nc`) est un [[Tool|outil]] réseau polyvalent en [[CommandLineInterface|ligne de commande]] conçu pour lire et écrire des [[Data|données]] sur les [[Network|réseaux]] en utilisant les [[InternetProtocolSuite|protocoles TCP/IP]] et [[UserDatagramProtocol|UDP]]. Surnommé le "couteau suisse du [[Network|réseau]]", il est largement utilisé pour le [[NetworkTroubleshooting|dépannage réseau]], l'exploration, et la [[NetworkSecurity|sécurité réseau]], notamment en [[PenetrationTesting|tests d'intrusion]].
+> Netcat (souvent abrégé en `nc`) est un outil réseau polyvalent en ligne de commande conçu pour lire et écrire des données sur les réseaux en utilisant les protocoles TCP/IP et UDP. Surnommé le "couteau suisse du réseau", il est largement utilisé pour le dépannage réseau, l'exploration, et la sécurité réseau, notamment en tests d'intrusion.
 
 ## ⚙️ Cas d'usage / Commandes Utiles
 
 ### Cas 1: Écoute sur un port spécifique (serveur simple)
-Utilisé pour configurer un [[NetworkListener|auditeur]] sur un [[PortNumber|port]] donné, en attente de [[NetworkCommunication|connexions entrantes]].
+Utilisé pour configurer un auditeur sur un port donné, en attente de connexions entrantes.
 
 ```bash
 nc -lvp <port>
@@ -29,7 +29,7 @@ nc -lvp <port>
 ```
 
 ### Cas 2: Connexion à un port distant (client simple)
-Permet d'établir une [[NetworkCommunication|connexion]] [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]] à un [[Server|serveur]] distant sur un [[PortNumber|port]] spécifique.
+Permet d'établir une connexion TCP ou UDP à un serveur distant sur un port spécifique.
 
 ```bash
 nc <adresse_IP_ou_nom_hôte> <port>
@@ -41,7 +41,7 @@ nc <adresse_IP_ou_nom_hôte> <port>
 ```
 
 ### Cas 3: Transfert de fichier (serveur et client)
-[[Netcat]] peut être utilisé pour effectuer un [[FileTransfer|transfert de fichiers]] simple entre deux [[Computer|machines]].
+Netcat peut être utilisé pour effectuer un transfert de fichiers simple entre deux machines.
 
 *   **Sur la machine réceptrice (serveur):**
     ```bash
@@ -54,8 +54,8 @@ nc <adresse_IP_ou_nom_hôte> <port>
     # Exemple: nc 192.168.1.100 1234 < document.txt
     ```
 
-### Cas 4: Création d'un [[ReverseShell|Reverse Shell]]
-Un cas d'usage courant en [[PenetrationTesting|tests d'intrusion]] pour obtenir un accès interactif à un [[System|système]] compromis.
+### Cas 4: Création d'un Reverse Shell
+Un cas d'usage courant en tests d'intrusion pour obtenir un accès interactif à un système compromis.
 
 *   **Sur la machine de l'attaquant (écoute):**
     ```bash
@@ -77,8 +77,8 @@ Un cas d'usage courant en [[PenetrationTesting|tests d'intrusion]] pour obtenir 
         ```
     _Note: La commande Windows ci-dessus est complexe et peut nécessiter une exécution via `cmd` ou un encodage Base64 pour éviter les problèmes de caractères spéciaux._
 
-### Cas 5: [[PortScanning|Scan]] de ports basique
-Bien que moins sophistiqué que [[Nmap]], [[Netcat]] peut effectuer un [[PortScanning|scan de ports]] simple.
+### Cas 5: Scan de ports basique
+Bien que moins sophistiqué que Nmap, Netcat peut effectuer un scan de ports simple.
 
 ```bash
 nc -zv <adresse_IP_ou_nom_hôte> <port_début>-<port_fin>
@@ -87,23 +87,23 @@ nc -zv <adresse_IP_ou_nom_hôte> <port_début>-<port_fin>
 ```
 
 ## ⚠️ Points d'attention
-*   **Légalité**: L'utilisation de [[Netcat]] pour des [[PortScanning|scans de ports]], des [[FileTransfer|transferts de fichiers]] non autorisés, ou la création de [[ReverseShell|reverse shells]] sur des [[System|systèmes]] sans [[ExplicitAuthorization|autorisation explicite]] est illégale et éthiquement répréhensible. Il doit être utilisé uniquement dans le cadre de [[PenetrationTesting|tests d'intrusion]] autorisés ou d'activités de [[NetworkTroubleshooting|dépannage réseau]] et de [[SecurityAudit|sécurité]] légitimes.
+*   **Légalité**: L'utilisation de Netcat pour des scans de ports, des transferts de fichiers non autorisés, ou la création de reverse shells sur des systèmes sans autorisation explicite est illégale et éthiquement répréhensible. Il doit être utilisé uniquement dans le cadre de tests d'intrusion autorisés ou d'activités de dépannage réseau et de sécurité légitimes.
 *   **Fiabilité/Limites**:
-    *   [[Netcat]] est un [[Tool|outil]] très simple et ne fournit pas de chiffrement par défaut, ce qui rend les [[NetworkCommunication|communications]] vulnérables à l'[[Eavesdropping|écoute clandestine]].
-    *   Les différentes versions de [[Netcat]] (GNU Netcat, OpenBSD Netcat, Ncat) peuvent avoir des options et des comportements légèrement différents.
-    *   Les [[ReverseShell|reverse shells]] basés sur [[Netcat]] sont souvent instables et rudimentaires par rapport à des alternatives plus robustes.
+    *   Netcat est un outil très simple et ne fournit pas de chiffrement par défaut, ce qui rend les communications vulnérables à l'écoute clandestine.
+    *   Les différentes versions de Netcat (GNU Netcat, OpenBSD Netcat, Ncat) peuvent avoir des options et des comportements légèrement différents.
+    *   Les reverse shells basés sur Netcat sont souvent instables et rudimentaires par rapport à des alternatives plus robustes.
 *   **Risques Opérationnels**:
-    *   Une mauvaise utilisation peut entraîner une [[SystemInstability|instabilité système]] ou des [[ServiceDisruption|interruptions de service]], surtout sur des [[VulnerableSystem|systèmes fragiles]].
-    *   Son utilisation peut être facilement détectée par les [[IntrusionDetectionSystem|IDS]]/[[IntrusionPreventionSystem|IPS]] s'ils sont configurés correctement, en raison de l'absence de chiffrement et de motifs de [[MessagePattern|message]] reconnaissables.
+    *   Une mauvaise utilisation peut entraîner une instabilité système ou des interruptions de service, surtout sur des systèmes fragiles.
+    *   Son utilisation peut être facilement détectée par les IDS/IPS s'ils sont configurés correctement, en raison de l'absence de chiffrement et de motifs de message reconnaissables.
 
 ## 🔗 Alternatives et Notes Connexes
 *   Alternatives:
-    *   [[Nmap]] pour le [[PortScanning|scan de ports]] avancé.
-    *   [[SecureShell|SSH]] pour des [[NetworkCommunication|connexions]] et [[FileTransfer|transferts de fichiers]] sécurisés.
-    *   [[Wireshark]] pour l'[[PacketSniffing|analyse de paquets réseau]].
+    *   Nmap pour le scan de ports avancé.
+    *   SSH pour des connexions et transferts de fichiers sécurisés.
+    *   Wireshark pour l'analyse de paquets réseau.
 *   Contexte:
-    *   [[NetworkCommunication|Communication réseau]]
-    *   [[NetworkSecurity|Sécurité Réseau]]
-    *   [[PenetrationTesting|Tests d'intrusion]]
-    *   [[Reconnaissance|Reconnaissance]]
-    *   [[ReverseShell|Reverse Shell]]
+    *   Communication réseau
+    *   Sécurité Réseau
+    *   Tests d'intrusion
+    *   Reconnaissance
+    *   Reverse Shell

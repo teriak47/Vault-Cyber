@@ -15,43 +15,43 @@ cssclasses:
 # Gestionnaire de Mots de Passe
 
 ## 🎯 Objectif Principal
-> Stocker, générer et organiser de manière sécurisée les informations d'[[Credential|identification]] ([[Password|mots de passe]], [[Username|noms d'utilisateur]], etc.) des [[User|utilisateurs]] via une [[SoftwareApplication|application logicielle]] ou un [[OnlineServices|service en ligne]].
+> Stocker, générer et organiser de manière sécurisée les informations d'identification (mots de passe, noms d'utilisateur, etc.) des utilisateurs via une application logicielle ou un service en ligne.
 
 ## ⚙️ Cas d'usage / Fonctionnalités Clés
 
 ### Base de Données Chiffrée
-Les informations d'[[Credential|identification]] sont stockées dans un "coffre-fort" numérique [[DataEncryption|chiffré]], généralement protégé par un [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]] unique et [[StrongPassword|fort]]. Cette [[Encryption|cryptographie]] assure la [[Confidentiality|confidentialité]] des [[SensitiveData|données sensibles]].
+Les informations d'identification sont stockées dans un "coffre-fort" numérique chiffré, généralement protégé par un Mot de Passe Maître unique et fort. Cette cryptographie assure la confidentialité des données sensibles.
 
 ### Génération de Mots de Passe Forts
-Capacité à générer des [[StrongPassword|mots de passe forts]], complexes et uniques pour chaque service, réduisant considérablement le risque de [[PasswordReuse|réutilisation de mots de passe]].
+Capacité à générer des mots de passe forts, complexes et uniques pour chaque service, réduisant considérablement le risque de réutilisation de mots de passe.
 
 ### Auto-remplissage
-Fonctionnalité permettant de saisir automatiquement les identifiants sur les [[WebBrowsers|sites web]] et [[SoftwareApplication|applications]], améliorant la commodité de l'[[UserExperience|expérience utilisateur]] et réduisant les erreurs de frappe.
+Fonctionnalité permettant de saisir automatiquement les identifiants sur les sites web et applications, améliorant la commodité de l'expérience utilisateur et réduisant les erreurs de frappe.
 
 ### Synchronisation Sécurisée
-La plupart des gestionnaires permettent la [[SecureStorage|synchronisation sécurisée]] des [[Data|données]] sur plusieurs [[EndDevices|appareils]] de l'[[User|utilisateur]], facilitant un accès constant aux identifiants.
+La plupart des gestionnaires permettent la synchronisation sécurisée des données sur plusieurs appareils de l'utilisateur, facilitant un accès constant aux identifiants.
 
 ### Audits de Sécurité
-Certains gestionnaires incluent des fonctionnalités pour vérifier la force des [[Password|mots de passe]] existants, détecter les doublons et signaler les mots de passe potentiellement compromis, contribuant ainsi à la [[SecurityAwareness|sensibilisation à la sécurité]].
+Certains gestionnaires incluent des fonctionnalités pour vérifier la force des mots de passe existants, détecter les doublons et signaler les mots de passe potentiellement compromis, contribuant ainsi à la sensibilisation à la sécurité.
 
 ## 💡 Exemples de Gestionnaires de Mots de Passe Populaires
 
 Plusieurs solutions populaires existent sur le marché, chacune avec ses spécificités en termes de fonctionnalités, de modèle de déploiement (cloud ou local), et de prix :
 
-*   **[[LastPass]]**: Un gestionnaire basé sur le cloud, connu pour sa facilité d'utilisation et ses nombreuses intégrations. Il offre des fonctionnalités de partage et des audits de [[Password|mots de passe]].
-*   **[[Bitwarden]]**: Une solution [[OpenSource|open source]] très appréciée pour sa transparence, sa flexibilité de déploiement (cloud ou auto-hébergé) et son excellent rapport qualité-prix.
-*   **[[1Password]]**: Réputé pour son interface utilisateur élégante et ses fonctionnalités avancées de [[Security|sécurité]], telles que la gestion des [[DigitalCertificate|certificats numériques]] et des [[PrivateKey|clés privées]].
-*   **[[KeePass]]**: Un gestionnaire de [[Password|mots de passe]] [[OpenSource|open source]] de bureau, idéal pour les [[User|utilisateurs]] qui préfèrent une solution locale sans synchronisation cloud automatique. Il offre une grande personnalisation.
+*   **LastPass**: Un gestionnaire basé sur le cloud, connu pour sa facilité d'utilisation et ses nombreuses intégrations. Il offre des fonctionnalités de partage et des audits de mots de passe.
+*   **Bitwarden**: Une solution open source très appréciée pour sa transparence, sa flexibilité de déploiement (cloud ou auto-hébergé) et son excellent rapport qualité-prix.
+*   **1Password**: Réputé pour son interface utilisateur élégante et ses fonctionnalités avancées de sécurité, telles que la gestion des certificats numériques et des clés privées.
+*   **KeePass**: Un gestionnaire de mots de passe open source de bureau, idéal pour les utilisateurs qui préfèrent une solution locale sans synchronisation cloud automatique. Il offre une grande personnalisation.
 
 ## ⚠️ Points d'attention
-*   **Légalité**: L'utilisation d'un gestionnaire de mots de passe est légale et généralement recommandée pour améliorer la [[Cybersecurity|cybersécurité]] personnelle et organisationnelle.
+*   **Légalité**: L'utilisation d'un gestionnaire de mots de passe est légale et généralement recommandée pour améliorer la cybersécurité personnelle et organisationnelle.
 *   **Fiabilité/Limites**:
-    *   **[[SoftwareVulnerability|Vulnérabilités Logiciel]]**: Des failles de [[Security|sécurité]] dans le [[Software|logiciel]] du gestionnaire lui-même pourraient être [[Exploitation|exploitées]] par des [[ThreatActor|attaquants]] pour accéder aux [[Data|données]] stockées. Il est crucial de maintenir le logiciel à jour.
-    *   **Dépendance au [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]]**: L'intégrité de toutes les [[Credential|informations d'identification]] stockées dépend entièrement de la [[Security|sécurité]] du [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]].
+    *   **Vulnérabilités Logiciel**: Des failles de sécurité dans le logiciel du gestionnaire lui-même pourraient être exploitées par des attaquants pour accéder aux données stockées. Il est crucial de maintenir le logiciel à jour.
+    *   **Dépendance au Mot de Passe Maître**: L'intégrité de toutes les informations d'identification stockées dépend entièrement de la sécurité du Mot de Passe Maître.
 *   **Risques Opérationnels**:
-    *   **Compromission du [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]]**: Si le [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]] est [[Weakness|faible]] ou compromis, l'intégralité du coffre-fort peut être accessible, menant à une [[DataBreach|fuite de données]] massive et potentiellement à des [[AccountTakeover|prises de contrôle de compte]].
-    *   **[[DigitalAttack|Attaques externes]]**: Des [[Malware|logiciels malveillants]] tels que les keyloggers peuvent capturer le [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|mot de passe maître]] lors de sa saisie. Les [[Phishing|attaques par hameçonnage]] ou l'[[SocialEngineering|ingénierie sociale]] peuvent tromper les [[User|utilisateurs]] pour révéler leur [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]] sur de faux sites.
+    *   **Compromission du Mot de Passe Maître**: Si le Mot de Passe Maître est faible ou compromis, l'intégralité du coffre-fort peut être accessible, menant à une fuite de données massive et potentiellement à des prises de contrôle de compte.
+    *   **Attaques externes**: Des logiciels malveillants tels que les keyloggers peuvent capturer le mot de passe maître lors de sa saisie. Les attaques par hameçonnage ou l'ingénierie sociale peuvent tromper les utilisateurs pour révéler leur Mot de Passe Maître sur de faux sites.
 
 ## 🔗 Alternatives et Notes Connexes
-*   Alternatives: [[LastPass]], [[Bitwarden]], [[1Password]], [[KeePass]]
-*   Contexte: [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]], [[StrongPasswordPolicy|Politique de mots de passe forts]], [[Cryptography|Cryptographie]], [[10_COURS_ET_INGESTION/12_INGESTION/MasterPassword|Mot de Passe Maître]], [[IdentityAndAccessManagement|Gestion des Identités et des Accès (IAM)]], [[PrincipleOfLeastPrivilege|Principe du Moindre Privilège]], [[DataProtection|Protection des Données]], [[Authentication|Authentification]]
+*   Alternatives: LastPass, Bitwarden, 1Password, KeePass
+*   Contexte: Authentification Multi-Facteurs (MFA), Politique de mots de passe forts, Cryptographie, Mot de Passe Maître, Gestion des Identités et des Accès (IAM), Principe du Moindre Privilège, Protection des Données, Authentification

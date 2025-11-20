@@ -42,5 +42,8 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Systemd.md|Systemd]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Office2024ProductKeyAnalysis.md|Office2024ProductKeyAnalysis]]
 - [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/WindowsProductKeyDifferences.md|WindowsProductKeyDifferences]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Unix.md|Unix]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/Driver.md|Driver]]
+- [[20_BASE_DE_CONNAISSANCES/20-08_Logiciel/EmailServer.md|EmailServer]]
 
 %% DATAVIEW_PUBLISHER: end %%

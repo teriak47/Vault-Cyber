@@ -18,22 +18,22 @@ cssclasses:
 # Signaux Sans Fil
 
 ## 📥 Définition en une phrase
-> Les [[WirelessSignals|signaux sans fil]] sont des [[ElectromagneticWaves|ondes électromagnétiques]] utilisées pour transmettre des [[Data|données]] et des informations à travers l'air, sans nécessiter de [[PhysicalLayer|connexion physique]] par [[CableInternet|câble]].
+> Les signaux sans fil sont des ondes électromagnétiques utilisées pour transmettre des données et des informations à travers l'air, sans nécessiter de connexion physique par câble.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Propagation d'[[ElectromagneticWaves|Ondes Électromagnétiques]]**: Les [[Data|données]] sont modulées sur des [[RadioWaves|ondes radio]] (utilisées par des [[WirelessTechnology|technologies sans fil]] comme le [[WirelessFidelity|Wi-Fi]], [[Bluetooth]], [[LongTermEvolution|LTE]], etc.) qui se propagent à travers l'espace pour permettre la [[SignalTransmission|transmission de signal]].
-*   **[[FrequencyBands|Bandes de Fréquences]]**: L'utilisation de [[FrequencyBands|bandes de fréquences]] spécifiques (par exemple, 2.4 GHz et 5 GHz pour le [[WirelessFidelity|Wi-Fi]]) est cruciale pour éviter les [[ElectromagneticInterference|interférences électromagnétiques]] et gérer la portée et le [[Throughput|débit]] des [[WirelessSignals|communications sans fil]]. Ces fréquences font partie du [[ElectromagneticSpectrum|spectre électromagnétique]].
-*   **[[Modulation|Modulation]]/Dé[[Modulation|modulation]]**: Les [[DigitalSignals|informations numériques]] sont converties en [[OpticalSignals|signaux analogiques]] pour la [[WirelessTransmission|transmission sans fil]] (étape de [[Modulation|modulation]]) puis reconverties en [[DigitalSignals|données numériques]] à la réception (étape de dé[[Modulation|modulation]]).
-*   **[[NetworkProtocol|Protocoles]]**: Divers [[NetworkProtocol|protocoles]] régissent la [[WirelessCommunication|communication sans fil]], tels que [[IEEE80211|IEEE 802.11]] ([[WirelessFidelity|Wi-Fi]]), [[Bluetooth]], ou [[LongTermEvolution|LTE]], chacun possédant ses propres spécifications en termes de [[Security|sécurité]] et de [[NetworkPerformance|performance]].
+*   **Propagation d'Ondes Électromagnétiques**: Les données sont modulées sur des ondes radio (utilisées par des technologies sans fil comme le Wi-Fi, Bluetooth, LTE, etc.) qui se propagent à travers l'espace pour permettre la transmission de signal.
+*   **Bandes de Fréquences**: L'utilisation de bandes de fréquences spécifiques (par exemple, 2.4 GHz et 5 GHz pour le Wi-Fi) est cruciale pour éviter les interférences électromagnétiques et gérer la portée et le débit des communications sans fil. Ces fréquences font partie du spectre électromagnétique.
+*   **Modulation/Démodulation**: Les informations numériques sont converties en signaux analogiques pour la transmission sans fil (étape de modulation) puis reconverties en données numériques à la réception (étape de démodulation).
+*   **Protocoles**: Divers protocoles régissent la communication sans fil, tels que IEEE 802.11 (Wi-Fi), Bluetooth, ou LTE, chacun possédant ses propres spécifications en termes de sécurité et de performance.
 
 ## 💡 Importance en Cybersécurité
-> La nature ouverte des [[WirelessSignals|signaux sans fil]] les rend particulièrement vulnérables aux [[Attack|attaques]] s'ils ne sont pas correctement sécurisés, d'où l'importance cruciale de la [[WirelessSecurity|sécurité sans fil]]. Ils sont des [[AttackVector|vecteurs d'attaque]] potentiels pour l'[[Eavesdropping|écoute clandestine]], l'[[UnauthorizedAccess|accès non autorisé]] aux [[WirelessNetwork|réseaux sans fil]], le [[PacketSniffing|reniflage de paquets]], et les [[DenialOfService|attaques par déni de service]]. Une [[WirelessNetworkSecurity|sécurité de réseau sans fil]] robuste est indispensable pour protéger la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et la [[Availability|disponibilité]] des [[Data|données]] transmises.
+> La nature ouverte des signaux sans fil les rend particulièrement vulnérables aux attaques s'ils ne sont pas correctement sécurisés, d'où l'importance cruciale de la sécurité sans fil. Ils sont des vecteurs d'attaque potentiels pour l'écoute clandestine, l'accès non autorisé aux réseaux sans fil, le reniflage de paquets, et les attaques par déni de service. Une sécurité de réseau sans fil robuste est indispensable pour protéger la confidentialité, l'intégrité et la disponibilité des données transmises.
 
 ## 🔗 Notes Connexes
-*   [[WirelessNetwork|Réseau sans fil]]
-*   [[WirelessSecurity|Sécurité sans fil]]
-*   [[WirelessTechnology|Technologies sans fil]]
-*   [[ElectromagneticWaves|Ondes électromagnétiques]]
-*   [[PhysicalLayer|Couche Physique]]
-*   [[RadioWaves|Ondes radio]]
-*   [[ElectromagneticSpectrum|Spectre Électromagnétique]]
+*   Réseau sans fil
+*   Sécurité sans fil
+*   Technologies sans fil
+*   Ondes électromagnétiques
+*   Couche Physique
+*   Ondes radio
+*   Spectre Électromagnétique

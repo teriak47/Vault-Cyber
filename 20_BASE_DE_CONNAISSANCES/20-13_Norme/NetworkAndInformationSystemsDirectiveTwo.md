@@ -18,42 +18,42 @@ cssclasses:
 # Directive Network and Information Systems 2 (NIS2)
 
 ## 🎯 Objectif et Périmètre
-> La [[NetworkAndInformationSystemsDirectiveTwo|Directive NIS2]] est une législation de l'[[UnionEuropéenne|Union Européenne]] qui a pour objectif de renforcer la [[CollectiveCyberResilience|résilience collective]] et la capacité de [[IncidentResponse|réponse aux incidents de cybersécurité]] des [[CriticalInfrastructure|entités critiques]] et importantes à travers tous les [[StateMembers|États membres]]. Elle s'applique à un large éventail de secteurs jugés [[CriticalInfrastructure|essentiels]] ou importants, tels que l'énergie, les transports, la santé, le numérique, la gestion des déchets, la fabrication de produits chimiques, l'alimentation, et les services postaux.
+> La Directive NIS2 est une législation de l'Union Européenne qui a pour objectif de renforcer la résilience collective et la capacité de réponse aux incidents de cybersécurité des entités critiques et importantes à travers tous les États membres. Elle s'applique à un large éventail de secteurs jugés essentiels ou importants, tels que l'énergie, les transports, la santé, le numérique, la gestion des déchets, la fabrication de produits chimiques, l'alimentation, et les services postaux.
 
 ## 🔑 Principales Exigences / Sections
-*   **Champ d'application élargi**: La [[NetworkAndInformationSystemsDirectiveTwo|Directive NIS2]] étend son application à un plus grand nombre de secteurs et de types d'[[Enterprise|entités]] considérés comme [[CriticalInfrastructure|essentiels]] ou importants, incluant l'[[EnergySector|énergie]], les [[TransportationSector|transports]], la [[HealthSector|santé]], le [[DigitalSector|numérique]], la gestion des [[WasteManagement|déchets]], la fabrication de [[ChemicalProducts|produits chimiques]], l'[[FoodSector|alimentation]], et les [[PostalServices|services postaux]].
-*   **[[Cybersecurity|Exigences de cybersécurité]] renforcées**: Impose des mesures de [[RiskManagement|gestion des risques]] de [[Cybersecurity|cybersécurité]] plus strictes. Celles-ci comprennent l'[[RiskAnalysis|analyse des risques]], la [[IncidentResponse|gestion des incidents]], la [[BusinessContinuity|continuité des opérations]], la [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement]], le [[DataEncryption|chiffrement]], et l'utilisation de l'[[MultiFactorAuthentication|authentification multi-facteurs (MFA)]].
-*   **Obligations de [[Log|déclaration des incidents]]**: Les [[Enterprise|entités]] sont tenues de notifier les [[IncidentResponse|incidents]] significatifs aux [[CompetentAuthorities|autorités compétentes]] (telles que les [[ComputerSecurityIncidentResponseTeam|CSIRTs]] ou les [[NationalAuthorities|autorités nationales]]) dans des délais spécifiques : une [[EarlyWarning|alerte précoce]] sous 24 heures, une notification d'[[Incident|incident]] sous 72 heures, et un [[FinalReport|rapport final]] sous un mois.
-*   **Supervision et application rigoureuses**: Les [[StateMembers|États membres]] doivent veiller à ce que les [[NationalAuthorities|autorités nationales]] disposent des pouvoirs de [[Supervision|supervision]] et de [[LegalCompliance|sanction]] nécessaires, y compris les [[OnSiteInspections|inspections sur site]] et les [[AdministrativeFines|amendes administratives]] en cas de [[NonCompliance|non-conformité]].
-*   **[[Cooperation|Coopération]] accrue**: La directive encourage l'[[InformationExchange|échange d'informations]] et la [[Cooperation|coopération]] entre les [[StateMembers|États membres]] et avec l'[[EuropeanUnionAgencyForCybersecurity|Agence de l'Union Européenne pour la Cybersécurité (ENISA)]] afin d'améliorer la [[CollectiveResponse|réponse collective]] aux [[Threat|menaces cybernétiques]].
+*   **Champ d'application élargi**: La Directive NIS2 étend son application à un plus grand nombre de secteurs et de types d'entités considérés comme essentiels ou importants, incluant l'énergie, les transports, la santé, le numérique, la gestion des déchets, la fabrication de produits chimiques, l'alimentation, et les services postaux.
+*   **Exigences de cybersécurité renforcées**: Impose des mesures de gestion des risques de cybersécurité plus strictes. Celles-ci comprennent l'analyse des risques, la gestion des incidents, la continuité des opérations, la sécurité de la chaîne d'approvisionnement, le chiffrement, et l'utilisation de l'authentification multi-facteurs (MFA).
+*   **Obligations de déclaration des incidents**: Les entités sont tenues de notifier les incidents significatifs aux autorités compétentes (telles que les CSIRTs ou les autorités nationales) dans des délais spécifiques : une alerte précoce sous 24 heures, une notification d'incident sous 72 heures, et un rapport final sous un mois.
+*   **Supervision et application rigoureuses**: Les États membres doivent veiller à ce que les autorités nationales disposent des pouvoirs de supervision et de sanction nécessaires, y compris les inspections sur site et les amendes administratives en cas de non-conformité.
+*   **Coopération accrue**: La directive encourage l'échange d'informations et la coopération entre les États membres et avec l'Agence de l'Union Européenne pour la Cybersécurité (ENISA) afin d'améliorer la réponse collective aux menaces cybernétiques.
 
 ## 📈 Bénéfices de la Conformité
-*   Amélioration de la [[CollectiveCyberResilience|résilience cybernétique collective]] au sein de l'[[UnionEuropéenne|Union Européenne]].
-*   Renforcement de la [[Cybersecurity|posture de cybersécurité]] des [[CriticalInfrastructure|infrastructures critiques]] et des [[EssentialServices|services essentiels]].
-*   [[LegalCompliance|Conformité légale]] et minimisation des [[AdministrativeFines|sanctions administratives]] ou [[FinancialLoss|financières]].
-*   Harmonisation des exigences de [[Security|sécurité]] à l'échelle de l'[[UnionEuropéenne|UE]], favorisant un [[LevelPlayingField|environnement équitable]] pour les [[Enterprise|entreprises]].
-*   [[Reputation|Renforcement de la réputation]] et de la [[Trust|confiance]] des [[Client|clients]] et [[Partner|partenaires]].
+*   Amélioration de la résilience cybernétique collective au sein de l'Union Européenne.
+*   Renforcement de la posture de cybersécurité des infrastructures critiques et des services essentiels.
+*   Conformité légale et minimisation des sanctions administratives ou financières.
+*   Harmonisation des exigences de sécurité à l'échelle de l'UE, favorisant un environnement équitable pour les entreprises.
+*   Renforcement de la réputation et de la confiance des clients et partenaires.
 
 ## 📜 Certifications Associées
-*   **[[NIS2Compliance|Conformité à la Directive NIS2]]**: Non une certification formelle mais une obligation de respecter les exigences légales fixées par la directive.
-*   **[[SecurityAudit|Audits de Sécurité]]**: Des [[SecurityAudit|audits externes]] réguliers sont souvent menés pour démontrer la [[LegalCompliance|conformité]] aux mesures de [[Security|sécurité]] exigées par la directive, et pour évaluer l'efficacité de la [[RiskManagement|gestion des risques]].
+*   **Conformité à la Directive NIS2**: Non une certification formelle mais une obligation de respecter les exigences légales fixées par la directive.
+*   **Audits de Sécurité**: Des audits externes réguliers sont souvent menés pour démontrer la conformité aux mesures de sécurité exigées par la directive, et pour évaluer l'efficacité de la gestion des risques.
 
 ## 🔗 Notes Connexes
-*   [[SecurityControl|Contrôles de sécurité]]
-*   [[RiskManagement|Gestion des risques]]
-*   [[IncidentResponse|Réponse aux incidents]]
-*   [[BusinessContinuity|Continuité des activités]]
-*   [[SoftwareSupplyChainSecurity|Sécurité de la chaîne d'approvisionnement logicielle]]
-*   [[VulnerabilityManagement|Gestion des vulnérabilités]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
-*   [[DataEncryption|Chiffrement des Données]]
-*   [[CyberAttack|Cyberattaques]]
-*   [[DataBreach|Fuite de données]]
-*   [[SystemCompromise|Compromission de Système]]
-*   [[ServiceDisruption|Interruption de Service]]
-*   [[CybersecurityGovernance|Gouvernance de la cybersécurité]]
-*   [[CriticalInfrastructureProtection|Protection des infrastructures critiques]]
-*   [[GeneralDataProtectionRegulation|Règlement Général sur la Protection des Données (RGPD)]]
-*   [[NISDirective|Directive NIS (NIS1)]]
-*   [[EuropeanUnionAgencyForCybersecurity|ENISA]]
-*   [[ComputerSecurityIncidentResponseTeam|CSIRTs]]
+*   Contrôles de sécurité
+*   Gestion des risques
+*   Réponse aux incidents
+*   Continuité des activités
+*   Sécurité de la chaîne d'approvisionnement logicielle
+*   Gestion des vulnérabilités
+*   Authentification Multi-Facteurs (MFA)
+*   Chiffrement des Données
+*   Cyberattaques
+*   Fuite de données
+*   Compromission de Système
+*   Interruption de Service
+*   Gouvernance de la cybersécurité
+*   Protection des infrastructures critiques
+*   Règlement Général sur la Protection des Données (RGPD)
+*   Directive NIS (NIS1)
+*   ENISA
+*   CSIRTs

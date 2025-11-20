@@ -15,23 +15,23 @@ cssclasses:
 # Réseau d'Entreprise (Corporate Network)
 
 ## 📥 Définition en une phrase
-> Un [[EnterpriseNetwork|réseau d'entreprise]] est un [[Network|réseau]] privé et sécurisé, utilisé par une [[Enterprise|organisation]] pour connecter ses [[Computer|ordinateurs]] et autres [[EndDevices|dispositifs terminaux]] afin de faciliter la [[NetworkCommunication|communication]], le partage de [[Data|données]] et l'accès aux [[Resource|ressources]] pour ses employés.
+> Un réseau d'entreprise est un réseau privé et sécurisé, utilisé par une organisation pour connecter ses ordinateurs et autres dispositifs terminaux afin de faciliter la communication, le partage de données et l'accès aux ressources pour ses employés.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[NetworkInfrastructure|Infrastructure Réseau]]**: Les [[EnterpriseNetwork|réseaux d'entreprise]] sont construits sur une [[NetworkInfrastructure|infrastructure]] robuste composée de [[Router|routeurs]], [[NetworkSwitch|commutateurs]], [[Server|serveurs]], [[Firewall|pare-feu]], et [[AccessPoint|points d'accès sans fil]] pour garantir la connectivité et la performance.
-*   **[[NetworkSegmentation|Segmentation Réseau]]**: Pour des raisons de [[Security|sécurité]], de [[NetworkPerformance|performance]] et de gestion, les [[EnterpriseNetwork|réseaux d'entreprise]] sont souvent divisés en plusieurs [[LocalAreaNetwork|LANs]] ou [[Subnet|sous-réseaux]] logiques, permettant un [[AccessControl|contrôle d'accès]] granulaire.
-*   **Connectivité et Partage de [[Resource|Ressources]]**: L'objectif principal est de permettre la [[NetworkCommunication|communication réseau]] et le partage sécurisé de [[Data|données]] et d'applications métier entre les [[EndDevices|dispositifs]] des employés, ainsi qu'un accès contrôlé à l'[[Internet|Internet]].
-*   **[[CentralizedAdministration|Administration Centralisée]] et [[Security|Sécurité]]**: Ils requièrent une [[CentralizedAdministration|administration centralisée]] pour la configuration, la maintenance, la [[SecurityMonitoring|surveillance de sécurité]] et l'application des [[SecurityControl|contrôles de sécurité]] afin de protéger les [[SensitiveData|données sensibles]] et les [[System|systèmes]].
+*   **Infrastructure Réseau**: Les réseaux d'entreprise sont construits sur une infrastructure robuste composée de routeurs, commutateurs, serveurs, pare-feu, et points d'accès sans fil pour garantir la connectivité et la performance.
+*   **Segmentation Réseau**: Pour des raisons de sécurité, de performance et de gestion, les réseaux d'entreprise sont souvent divisés en plusieurs LANs ou sous-réseaux logiques, permettant un contrôle d'accès granulaire.
+*   **Connectivité et Partage de Ressources**: L'objectif principal est de permettre la communication réseau et le partage sécurisé de données et d'applications métier entre les dispositifs des employés, ainsi qu'un accès contrôlé à l'Internet.
+*   **Administration Centralisée et Sécurité**: Ils requièrent une administration centralisée pour la configuration, la maintenance, la surveillance de sécurité et l'application des contrôles de sécurité afin de protéger les données sensibles et les systèmes.
 
 ## 💡 Importance en Cybersécurité
-> Le [[EnterpriseNetwork|réseau d'entreprise]] est la colonne vertébrale des opérations d'une [[Enterprise|organisation]], hébergeant des [[SensitiveData|données sensibles]] et des [[SoftwareApplication|applications]] critiques. Sa [[Security|sécurité]] est fondamentale pour maintenir la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] de l'[[InformationSecurity|information]]. Il représente une [[AttackSurface|surface d'attaque]] majeure pour les [[ThreatActor|acteurs de menaces]], étant une cible privilégiée pour les [[Malware|logiciels malveillants]], les [[DataBreach|fuites de données]] et les [[DenialOfService|attaques par déni de service]]. Une [[NetworkSecurity|sécurité réseau]] robuste, incluant des [[Firewall|pare-feu]], des [[IntrusionDetectionSystem|IDS]]/[[IntrusionPreventionSystem|IPS]], des [[AccessControl|contrôles d'accès]] stricts (comme le [[MultiFactorAuthentication|MFA]] et le [[RoleBasedAccessControl|RBAC]]), la [[PatchManagement|gestion des patchs]] et la [[SecurityAwareness|sensibilisation des utilisateurs]], est donc essentielle pour la [[BusinessContinuity|continuité des activités]] et la [[DataProtection|protection des données]].
+> Le réseau d'entreprise est la colonne vertébrale des opérations d'une organisation, hébergeant des données sensibles et des applications critiques. Sa sécurité est fondamentale pour maintenir la confidentialité, l'intégrité et l'disponibilité de l'information. Il représente une surface d'attaque majeure pour les acteurs de menaces, étant une cible privilégiée pour les logiciels malveillants, les fuites de données et les attaques par déni de service. Une sécurité réseau robuste, incluant des pare-feu, des IDS/IPS, des contrôles d'accès stricts (comme le MFA et le RBAC), la gestion des patchs et la sensibilisation des utilisateurs, est donc essentielle pour la continuité des activités et la protection des données.
 
 ## 🔗 Notes Connexes
-*   [[SmallHomeNetworks|Réseaux Domestiques]]
-*   [[NetworkInfrastructure|Infrastructure Réseau]]
-*   [[NetworkSegmentation|Segmentation Réseau]]
-*   [[NetworkSecurity|Sécurité Réseau]]
-*   [[Enterprise|Entreprise]]
-*   [[RemoteNetwork|Réseau distant]]
-*   [[NetworkAccessControl|Contrôle d'Accès Réseau]]
-*   [[SecurityPolicy|Politique de Sécurité]]
+*   Réseaux Domestiques
+*   Infrastructure Réseau
+*   Segmentation Réseau
+*   Sécurité Réseau
+*   Entreprise
+*   Réseau distant
+*   Contrôle d'Accès Réseau
+*   Politique de Sécurité

@@ -22,10 +22,10 @@ source:
 # Systemd
 
 ## 🎯 Rôle et Fonction
-[[Systemd]] est le système d'initialisation et le gestionnaire de services standard pour les [[Linux|systèmes d'exploitation Linux]]. Il est responsable du démarrage des [[Process|processus]] et des [[Service|services]] au boot, de leur gestion pendant l'exécution du système, et de leur arrêt à l'extinction. Son objectif est d'offrir un démarrage rapide et efficace, une gestion centralisée des services et une journalisation robuste.
+Systemd est le système d'initialisation et le gestionnaire de services standard pour les systèmes d'exploitation Linux. Il est responsable du démarrage des processus et des services au boot, de leur gestion pendant l'exécution du système, et de leur arrêt à l'extinction. Son objectif est d'offrir un démarrage rapide et efficace, une gestion centralisée des services et une journalisation robuste.
 
 ## ⚙️ Configuration
-[[Systemd]] utilise des "unités" (unit files) pour définir et gérer les différentes ressources système, y compris les services, les points de montage, les sockets et les périphériques.
+Systemd utilise des "unités" (unit files) pour définir et gérer les différentes ressources système, y compris les services, les points de montage, les sockets et les périphériques.
 
 *   **Fichiers de configuration clés**:
     *   `/etc/systemd/system/`: Répertoire pour les unités de service définies par l'administrateur ou les paquets.
@@ -35,15 +35,15 @@ source:
     *   `target units`: Groupent plusieurs unités pour définir des états du système (ex: `multi-user.target`, `graphical.target`).
     *   `socket units`: Permettent l'activation de services à la demande via des sockets.
 *   **Dépendances critiques**:
-    *   [[Linux]]: [[Systemd]] est intrinsèquement lié au noyau Linux.
-    *   [[OperatingSystem|Système d'exploitation]] basé sur Linux (ex: [[Ubuntu]], [[Debian]]).
+    *   Linux: Systemd est intrinsèquement lié au noyau Linux.
+    *   Système d'exploitation basé sur Linux (ex: Ubuntu, Debian).
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-Le durcissement des services gérés par [[Systemd]] est crucial pour limiter la surface d'[[Attack|attaque]] en cas de compromission d'un [[Service|service]].
+Le durcissement des services gérés par Systemd est crucial pour limiter la surface d'attaque en cas de compromission d'un service.
 
 *   **Principe du Moindre Privilège**: Configurer les services pour qu'ils s'exécutent avec le moins de privilèges possible (`User=`, `Group=`).
-    *   [[PrincipleOfLeastPrivilege|Principe du Moindre Privilège]]: Appliquer ce principe en spécifiant des utilisateurs et groupes dédiés pour chaque service.
-*   **Isolation et Sandboxing**: Utiliser les directives de [[Systemd]] pour isoler les services.
+    *   Principe du Moindre Privilège: Appliquer ce principe en spécifiant des utilisateurs et groupes dédiés pour chaque service.
+*   **Isolation et Sandboxing**: Utiliser les directives de Systemd pour isoler les services.
     *   `PrivateTmp=yes`: Chaque service obtient son propre répertoire `/tmp` et `/var/tmp`, invisible aux autres services.
     *   `ProtectSystem=full`, `ProtectHome=yes`: Rend les répertoires système et personnels en lecture seule ou inaccessibles.
     *   `NoNewPrivileges=yes`: Empêche un service d'acquérir de nouveaux privilèges.
@@ -51,25 +51,25 @@ Le durcissement des services gérés par [[Systemd]] est crucial pour limiter la
     *   `RestrictAddressFamilies=`, `RestrictRealtime=`, `RestrictSUIDSGID=`: Limite les familles d'adresses réseau, les capacités temps réel, et l'usage des bits SUID/SGID.
 *   **Limitation des ressources**: Empêcher les abus de ressources.
     *   `CPUAffinity=`, `MemoryLimit=`, `IOWeight=`: Contrôle l'utilisation du CPU, de la mémoire et des E/S.
-*   **[[ConfigurationDrift|Prévention de la dérive de configuration]]**: Utiliser des outils de gestion de configuration pour maintenir l'état sécurisé des unités [[Systemd]].
+*   **Prévention de la dérive de configuration**: Utiliser des outils de gestion de configuration pour maintenir l'état sécurisé des unités Systemd.
 
 ## 🔍 Audit et Surveillance
-La surveillance des journaux et de l'état des services [[Systemd]] est essentielle pour la [[ThreatDetection|détection des menaces]] et le [[SecurityMonitoring|monitorage de sécurité]].
+La surveillance des journaux et de l'état des services Systemd est essentielle pour la détection des menaces et le monitorage de sécurité.
 
 *   **Logs importants**:
-    *   `journalctl`: Le journal unifié de [[Systemd]] collecte les messages du noyau, des services et des applications.
+    *   `journalctl`: Le journal unifié de Systemd collecte les messages du noyau, des services et des applications.
         *   `journalctl -u nom_du_service.service`: Affiche les journaux spécifiques à un service.
         *   `journalctl -f`: Suit les journaux en temps réel.
 *   **Commandes d'audit**:
 ```bash
 systemctl status nom_du_service.service
 ```
-> Vérifie l'état actuel d'un service [[Systemd]], y compris s'il est actif, si des erreurs sont présentes et les dernières lignes de journal.
+> Vérifie l'état actuel d'un service Systemd, y compris s'il est actif, si des erreurs sont présentes et les dernières lignes de journal.
 
 ```bash
 systemctl list-units --type=service --all
 ```
-> Liste tous les services chargés par [[Systemd]], qu'ils soient actifs ou non, permettant un aperçu global des services installés et de leur état.
+> Liste tous les services chargés par Systemd, qu'ils soient actifs ou non, permettant un aperçu global des services installés et de leur état.
 
 ```bash
 systemctl cat nom_du_service.service
@@ -77,8 +77,8 @@ systemctl cat nom_du_service.service
 > Affiche le contenu complet du fichier d'unité d'un service, utile pour vérifier sa configuration de sécurité (User, PrivateTmp, etc.).
 
 ## 🔗 Notes Connexes
-*   **Système d'exploitation**: [[Linux]]
-*   **Concept de gestion**: [[OperatingSystem|Système d'exploitation]]
-*   **Principe de sécurité**: [[PrincipleOfLeastPrivilege|Principe du moindre privilège]]
-*   **Mécanisme de surveillance**: [[Log|Journalisation]]
-*   **Dérive de configuration**: [[ConfigurationDrift|Dérive de Configuration]]
+*   **Système d'exploitation**: Linux
+*   **Concept de gestion**: Système d'exploitation
+*   **Principe de sécurité**: Principe du moindre privilège
+*   **Mécanisme de surveillance**: Journalisation
+*   **Dérive de configuration**: Dérive de Configuration

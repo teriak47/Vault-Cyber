@@ -26,5 +26,7 @@ SORT file.ctime ASC
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/SoftwarePatching.md|SoftwarePatching]]
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/Analysis.md|Analysis]]
 - [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/RootCauseAnalysis.md|RootCauseAnalysis]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/Reporting.md|Reporting]]
+- [[20_BASE_DE_CONNAISSANCES/20-11_Methodologie/SecurityAssessment.md|SecurityAssessment]]
 
 %% DATAVIEW_PUBLISHER: end %%

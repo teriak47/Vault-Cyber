@@ -17,28 +17,28 @@ cssclasses:
 # Sécurité Sans Fil
 
 ## 📥 Définition en une phrase
-> La sécurité sans fil est l'ensemble des mesures et [[NetworkProtocol|protocoles]] conçus pour protéger les [[WirelessNetwork|réseaux sans fil]] et les [[WirelessDevices|appareils sans fil]] contre les [[UnauthorizedAccess|accès non autorisés]], les [[DataTheft|vols de données]], les [[Eavesdropping|écoutes clandestines]] et les [[Attack|attaques]] malveillantes.
+> La sécurité sans fil est l'ensemble des mesures et protocoles conçus pour protéger les réseaux sans fil et les appareils sans fil contre les accès non autorisés, les vols de données, les écoutes clandestines et les attaques malveillantes.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Encryption|Chiffrement]]**: Protège la [[Confidentiality|confidentialité]] des [[Data|données]] transmises via les [[WirelessSignals|ondes radio]] en les rendant illisibles pour les [[Eavesdropping|écouteurs clandestins]]. Des normes comme [[WirelessProtectedAccessTwo|WPA2]] et [[WirelessProtectedAccessThree|WPA3]] intègrent des mécanismes de [[Encryption|chiffrement]] robustes.
-*   **[[Authentication|Authentification]]**: Vérifie l'identité des [[User|utilisateurs]] et [[WirelessDevices|appareils sans fil]] tentant de se connecter au [[WirelessNetwork|réseau]], empêchant ainsi l'[[UnauthorizedAccess|accès non autorisé]]. Elle garantit que seuls les [[Client|clients]] légitimes peuvent joindre le [[Network|réseau]].
-*   **[[AccessControl|Contrôle d'accès]]**: Restreint les [[Resource|ressources]] et l'accès au [[WirelessNetwork|réseau]] aux seuls [[WirelessDevices|appareils autorisés]]. Cela peut inclure des techniques comme le [[MacAddressFiltering|filtrage d'adresses MAC]] ou l'utilisation de [[ServiceSetIdentifier|SSID]] masqués, bien que ces derniers ne soient pas des mesures de [[Security|sécurité]] infaillibles.
-*   **[[WirelessIntrusionPreventionSystem|WIPS]]**: Un [[Tool|outil]] dédié à la [[SecurityMonitoring|surveillance]] continue des [[WirelessNetwork|réseaux sans fil]], capable de détecter et de prévenir les [[Threat|menaces]] spécifiques au sans-fil, comme les [[RogueDHCPServer|points d'accès malveillants]] ou les [[MACSpoofing|attaques par usurpation d'adresse MAC]].
-*   **[[NetworkConfiguration|Configuration Sécurisée]]**: Implique la mise en œuvre de bonnes pratiques, telles que l'utilisation de [[StrongPasswords|mots de passe forts]] pour les [[AccessPoint|points d'accès sans fil]], la désactivation des [[GuestAccess|accès invités]] non nécessaires, et la mise à jour régulière du [[Firmware|micrologiciel]].
+*   **Chiffrement**: Protège la confidentialité des données transmises via les ondes radio en les rendant illisibles pour les écouteurs clandestins. Des normes comme WPA2 et WPA3 intègrent des mécanismes de chiffrement robustes.
+*   **Authentification**: Vérifie l'identité des utilisateurs et appareils sans fil tentant de se connecter au réseau, empêchant ainsi l'accès non autorisé. Elle garantit que seuls les clients légitimes peuvent joindre le réseau.
+*   **Contrôle d'accès**: Restreint les ressources et l'accès au réseau aux seuls appareils autorisés. Cela peut inclure des techniques comme le filtrage d'adresses MAC ou l'utilisation de SSID masqués, bien que ces derniers ne soient pas des mesures de sécurité infaillibles.
+*   **WIPS**: Un outil dédié à la surveillance continue des réseaux sans fil, capable de détecter et de prévenir les menaces spécifiques au sans-fil, comme les points d'accès malveillants ou les attaques par usurpation d'adresse MAC.
+*   **Configuration Sécurisée**: Implique la mise en œuvre de bonnes pratiques, telles que l'utilisation de mots de passe forts pour les points d'accès sans fil, la désactivation des accès invités non nécessaires, et la mise à jour régulière du micrologiciel.
 
 ## 💡 Importance en Cybersécurité
-> La [[WirelessNetworkSecurity|sécurité sans fil]] est cruciale car les [[WirelessNetwork|réseaux sans fil]] transmettent les [[Data|données]] via des [[WirelessSignals|signaux radio]] à travers l'[[ElectromagneticSpectrum|air]], ce qui les rend intrinsèquement plus vulnérables aux [[Attack|attaques]] et à l'[[Eavesdropping|écoute clandestine]] que les [[PhysicalNetwork|réseaux câblés]]. Sans une [[WirelessNetworkSecurity|sécurité sans fil]] robuste, les [[ThreatActor|acteurs de menace]] peuvent facilement intercepter le [[NetworkTrafficAnalysis|trafic réseau]], obtenir un [[UnauthorizedAccess|accès non autorisé]] aux [[System|systèmes]], et compromettre la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[Data|données]]. Elle est donc un pilier fondamental de la [[Cybersecurity|cybersécurité]] moderne pour les [[Enterprise|entreprises]] et les [[HomeNetwork|utilisateurs domestiques]], contribuant à protéger les [[PersonalData|données personnelles]] et à maintenir la [[BusinessContinuity|continuité des activités]].
+> La sécurité sans fil est cruciale car les réseaux sans fil transmettent les données via des signaux radio à travers l'air, ce qui les rend intrinsèquement plus vulnérables aux attaques et à l'écoute clandestine que les réseaux câblés. Sans une sécurité sans fil robuste, les acteurs de menace peuvent facilement intercepter le trafic réseau, obtenir un accès non autorisé aux systèmes, et compromettre la confidentialité, l'intégrité et l'disponibilité des données. Elle est donc un pilier fondamental de la cybersécurité moderne pour les entreprises et les utilisateurs domestiques, contribuant à protéger les données personnelles et à maintenir la continuité des activités.
 
 ## 🔗 Notes Connexes
-*   [[WirelessNetwork|Réseau sans fil]]
-*   [[WirelessDevices|Appareils sans fil]]
-*   [[WirelessProtectedAccessTwo|WPA2]]
-*   [[WirelessProtectedAccessThree|WPA3]]
-*   [[AccessPoint|Point d'Accès Sans Fil]]
-*   [[Encryption|Chiffrement]]
-*   [[Authentication|Authentification]]
-*   [[NetworkSecurity|Sécurité Réseau]]
-*   [[WirelessIntrusionPreventionSystem|WIPS]]
-*   [[WirelessRouter|Routeur sans fil]]
-*   [[MacAddressFiltering|Filtrage d'adresses MAC]]
-*   [[ServiceSetIdentifier|SSID]]
+*   Réseau sans fil
+*   Appareils sans fil
+*   WPA2
+*   WPA3
+*   Point d'Accès Sans Fil
+*   Chiffrement
+*   Authentification
+*   Sécurité Réseau
+*   WIPS
+*   Routeur sans fil
+*   Filtrage d'adresses MAC
+*   SSID

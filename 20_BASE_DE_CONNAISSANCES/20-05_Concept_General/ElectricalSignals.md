@@ -14,30 +14,30 @@ cssclasses:
 # Signaux Électriques
 
 ## 📥 Définition en une phrase
-> Les signaux électriques sont des représentations physiques d'[[Data|information]] sous forme de variations de tension ou de courant, qui se propagent à travers des [[NetworkMedia|supports réseau]] ou l'[[ElectromagneticSpectrum|espace]], jouant un rôle fondamental dans la [[DataTransmission|transmission de données]] et le [[NetworkCommunication|fonctionnement des réseaux]].
+> Les signaux électriques sont des représentations physiques d'information sous forme de variations de tension ou de courant, qui se propagent à travers des supports réseau ou l'espace, jouant un rôle fondamental dans la transmission de données et le fonctionnement des réseaux.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Propagation**: Les signaux électriques peuvent être transmis via des [[CopperWire|conducteurs]] (comme des [[TwistedPair|paires torsadées]]) ou sans fil sous forme d'[[ElectromagneticWaves|ondes électromagnétiques]] (telles que les [[RadioWaves|ondes radio]] ou les [[Microwaves|micro-ondes]]).
-*   **Types de Signaux**: Ils se classent principalement en [[AnalogSignal|signaux analogiques]] (représentations continues de phénomènes physiques) et [[DigitalSignal|signaux numériques]] (représentations discrètes de [[BinaryDigit|bits]], généralement 0 et 1, pour les [[Computer|données informatiques]]).
+*   **Propagation**: Les signaux électriques peuvent être transmis via des conducteurs (comme des paires torsadées) ou sans fil sous forme d'ondes électromagnétiques (telles que les ondes radio ou les micro-ondes).
+*   **Types de Signaux**: Ils se classent principalement en signaux analogiques (représentations continues de phénomènes physiques) et signaux numériques (représentations discrètes de bits, généralement 0 et 1, pour les données informatiques).
 *   **Paramètres Clés**: Les propriétés fondamentales d'un signal électrique incluent son amplitude (intensité), sa fréquence (nombre de cycles par seconde) et sa phase (position relative par rapport à une référence).
-*   **Support d'Information**: Ces signaux sont le véhicule essentiel pour transporter des [[Data|données]], des [[NetworkCommunication|communications]] et des commandes dans la quasi-totalité des [[Computer|systèmes]] électroniques et de [[Network|réseau]].
+*   **Support d'Information**: Ces signaux sont le véhicule essentiel pour transporter des données, des communications et des commandes dans la quasi-totalité des systèmes électroniques et de réseau.
 
 ## 💡 Importance en Cybersécurité
-> En [[Cybersecurity|cybersécurité]], les [[ElectricalSignals|signaux électriques]] sont cruciaux car ils sont le support physique de la quasi-totalité de l'[[InformationSecurity|information]] échangée. Leur [[Integrity|intégrité]], leur [[Confidentiality|confidentialité]] et leur [[Availability|disponibilité]] sont vitales. Ils sont des cibles pour des [[Eavesdropping|écoutes clandestines]], des [[ElectromagneticInterference|interférences électromagnétiques]] ou des [[SignalDegradation|dégradations de signal]], ce qui peut entraîner des [[DataCorruption|corruptions de données]], des [[DataTheft|vols de données]] ou des [[ServiceDisruption|interruptions de service]]. La [[Security|sécurisation]] des [[ElectricalSignals|signaux électriques]] est donc un pilier de la [[PhysicalSecurity|sécurité physique]] et logique des [[System|systèmes]].
+> En cybersécurité, les signaux électriques sont cruciaux car ils sont le support physique de la quasi-totalité de l'information échangée. Leur intégrité, leur confidentialité et leur disponibilité sont vitales. Ils sont des cibles pour des écoutes clandestines, des interférences électromagnétiques ou des dégradations de signal, ce qui peut entraîner des corruptions de données, des vols de données ou des interruptions de service. La sécurisation des signaux électriques est donc un pilier de la sécurité physique et logique des systèmes.
 
 ## 🔗 Notes Connexes
-*   [[AnalogSignal|Signal Analogique]]
-*   [[DigitalSignal|Signal Numérique]]
-*   [[DataTransmission|Transmission de Données]]
-*   [[ElectromagneticWaves|Ondes Électromagnétiques]]
-*   [[ElectromagneticInterference|Interférence Électromagnétique]]
-*   [[Eavesdropping|Écoute Clandestine]]
-*   [[Encryption|Chiffrement]]
-*   [[SignalDegradation|Dégradation du Signal]]
-*   [[PowerFluctuation|Fluctuation de Tension]]
-*   [[Shielding|Blindage]]
-*   [[SignalIntegrity|Intégrité du Signal]]
-*   [[ErrorCorrection|Correction d'Erreurs]]
-*   [[Electromagnetism|Électromagnétisme]]
-*   [[Network|Réseau]]
-*   [[CyberPhysicalSystem|Système Cyber-Physique]]
+*   Signal Analogique
+*   Signal Numérique
+*   Transmission de Données
+*   Ondes Électromagnétiques
+*   Interférence Électromagnétique
+*   Écoute Clandestine
+*   Chiffrement
+*   Dégradation du Signal
+*   Fluctuation de Tension
+*   Blindage
+*   Intégrité du Signal
+*   Correction d'Erreurs
+*   Électromagnétisme
+*   Réseau
+*   Système Cyber-Physique

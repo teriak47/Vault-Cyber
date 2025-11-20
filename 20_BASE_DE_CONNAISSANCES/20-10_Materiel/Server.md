@@ -15,36 +15,36 @@ cssclasses:
 # Serveur
 
 ## 🎯 Rôle et Fonction
-> Un [[Server|serveur]] est un [[Software|logiciel]] ou un [[Hardware|appareil]] informatique qui fournit des [[Service|services]] et des [[Resource|ressources]] à d'autres [[Software|programmes]] ou [[Hardware|appareils]] (appelés [[Client|clients]]) via un [[Network|réseau]]. Il est conçu pour écouter les [[Request|requêtes]] des [[Client|clients]] et y répondre, souvent de manière [[CentralizedAdministration|centralisée]], assurant la disponibilité de ces [[Service|services]] et [[Resource|ressources]].
+> Un serveur est un logiciel ou un appareil informatique qui fournit des services et des ressources à d'autres programmes ou appareils (appelés clients) via un réseau. Il est conçu pour écouter les requêtes des clients et y répondre, souvent de manière centralisée, assurant la disponibilité de ces services et ressources.
 
 ## 🛠️ Caractéristiques Techniques
-*   **Type / Catégories**: Les [[Server|serveurs]] peuvent être [[PhysicalServer|physiques]] (matériel dédié) ou [[VirtualServer|virtuels]] (s'exécutant sur un [[Hypervisor|hyperviseur]]). On distingue plusieurs types selon leur fonction : [[WebServer|serveur web]], [[FileServer|serveur de fichiers]], [[Database|serveur de base de données]], [[DHCPServer|serveur DHCP]], [[MailServer|serveur de messagerie]], etc.
-*   **Connectique**: Principalement des [[EthernetPorts|ports Ethernet]] pour la [[NetworkCommunication|communication réseau]] (utilisant des [[RJ45Connector|connecteurs RJ45]] ou [[FiberOpticCable|fibres optiques]]), ainsi que des ports [[UniversalSerialBus|USB]] et d'autres interfaces d'E/S pour la gestion locale ou les périphériques.
-*   **Performances**: Évaluées par la puissance du [[CentralProcessingUnit|CPU]], la capacité de la [[RandomAccessMemory|RAM]], la vitesse et la capacité du [[Storage|stockage]] (disques durs, SSD, NVMe), et le [[Bandwidth|débit]] de la [[NetworkInterfaceCard|carte réseau]].
-*   **Normes associées**: S'appuient sur la [[InternetProtocolSuite|suite de protocoles TCP/IP]] et divers [[NetworkProtocol|protocoles réseau]] selon leur rôle (ex: [[HypertextTransferProtocol|HTTP]], [[FileTransferProtocol|FTP]], [[SecureShell|SSH]], [[DomainNameSystem|DNS]]).
+*   **Type / Catégories**: Les serveurs peuvent être physiques (matériel dédié) ou virtuels (s'exécutant sur un hyperviseur). On distingue plusieurs types selon leur fonction : serveur web, serveur de fichiers, serveur de base de données, serveur DHCP, serveur de messagerie, etc.
+*   **Connectique**: Principalement des ports Ethernet pour la communication réseau (utilisant des connecteurs RJ45 ou fibres optiques), ainsi que des ports USB et d'autres interfaces d'E/S pour la gestion locale ou les périphériques.
+*   **Performances**: Évaluées par la puissance du CPU, la capacité de la RAM, la vitesse et la capacité du stockage (disques durs, SSD, NVMe), et le débit de la carte réseau.
+*   **Normes associées**: S'appuient sur la suite de protocoles TCP/IP et divers protocoles réseau selon leur rôle (ex: HTTP, FTP, SSH, DNS).
 
 ## ✅ Avantages et Inconvénients
 *   **Avantages**:
-    *   [[CentralizedAdministration|Administration centralisée]] des [[Resource|ressources]] et des [[Data|données]], facilitant la [[BackupAndRecovery|sauvegarde et la récupération]].
-    *   [[Scalability|Évolutivité]] pour s'adapter à la charge de travail et aux besoins croissants.
-    *   Partage efficace des [[Resource|ressources]] et des [[Service|services]] entre de nombreux [[Client|clients]].
-    *   Support de la [[HighAvailability|haute disponibilité]] et de la [[Redundancy|redondance]] pour la [[BusinessContinuity|continuité des activités]].
+    *   Administration centralisée des ressources et des données, facilitant la sauvegarde et la récupération.
+    *   Évolutivité pour s'adapter à la charge de travail et aux besoins croissants.
+    *   Partage efficace des ressources et des services entre de nombreux clients.
+    *   Support de la haute disponibilité et de la redondance pour la continuité des activités.
 *   **Inconvénients**:
-    *   [[Cost|Coût]] d'acquisition et de maintenance initial potentiellement élevé.
-    *   Nécessite une [[Expertise|expertise technique]] pour la configuration et la gestion.
-    *   Peut représenter un [[SinglePointOfFailure|point de défaillance unique]] si la [[Redundancy|redondance]] n'est pas mise en œuvre.
-    *   Exposé à diverses [[SecurityVulnerabilities|vulnérabilités de sécurité]] et à un [[AttackSurface|surface d'attaque]] significative.
+    *   Coût d'acquisition et de maintenance initial potentiellement élevé.
+    *   Nécessite une expertise technique pour la configuration et la gestion.
+    *   Peut représenter un point de défaillance unique si la redondance n'est pas mise en œuvre.
+    *   Exposé à diverses vulnérabilités de sécurité et à un surface d'attaque significative.
 
 ## 🔒 Considérations de Sécurité Physique
-*   [[PhysicalSecurity|Protection contre l'accès non autorisé]] via des contrôles d'accès physiques stricts (verrous, caméras, personnel de sécurité).
-*   [[EnvironmentalControls|Contrôles environnementaux]] : Maintien de la température, de l'humidité et d'une alimentation électrique stable pour prévenir la [[HardwareFailure|défaillance matérielle]].
-*   Emplacement sécurisé, souvent dans des [[DataCenter|centres de données]] ou des salles de [[Server|serveurs]] dédiées, pour réduire les [[Threat|menaces]] physiques.
-*   Mise en œuvre de mesures de [[FireSuppression|suppression d'incendie]] et de détection.
+*   Protection contre l'accès non autorisé via des contrôles d'accès physiques stricts (verrous, caméras, personnel de sécurité).
+*   Contrôles environnementaux : Maintien de la température, de l'humidité et d'une alimentation électrique stable pour prévenir la défaillance matérielle.
+*   Emplacement sécurisé, souvent dans des centres de données ou des salles de serveurs dédiées, pour réduire les menaces physiques.
+*   Mise en œuvre de mesures de suppression d'incendie et de détection.
 
 ## 🔗 Notes Connexes
-*   [[Client|Client]] : L'entité qui initie les [[Request|requêtes]] de [[Service|services]] auprès du [[Server|serveur]].
-*   [[Network|Réseau]] : L'infrastructure permettant la [[NetworkCommunication|communication]] entre [[Server|serveurs]] et [[Client|clients]].
-*   [[OperatingSystem|Système d'exploitation]] : Logiciel fondamental gérant les [[Hardware|ressources matérielles]] et les [[Process|processus]] du [[Server|serveur]].
-*   [[Virtualization|Virtualisation]] : Technologie clé pour optimiser l'utilisation des [[PhysicalServer|serveurs physiques]].
-*   [[Cloud|Cloud Computing]] : Modèle de prestation de [[Service|services]] informatiques via [[Internet]], souvent basé sur des [[VirtualServer|serveurs virtuels]].
-*   [[NetworkSecurity|Sécurité Réseau]] : Ensemble des mesures pour protéger les [[Server|serveurs]] et les [[Data|données]] qu'ils hébergent.
+*   Client : L'entité qui initie les requêtes de services auprès du serveur.
+*   Réseau : L'infrastructure permettant la communication entre serveurs et clients.
+*   Système d'exploitation : Logiciel fondamental gérant les ressources matérielles et les processus du serveur.
+*   Virtualisation : Technologie clé pour optimiser l'utilisation des serveurs physiques.
+*   Cloud Computing : Modèle de prestation de services informatiques via Internet, souvent basé sur des serveurs virtuels.
+*   Sécurité Réseau : Ensemble des mesures pour protéger les serveurs et les données qu'ils hébergent.

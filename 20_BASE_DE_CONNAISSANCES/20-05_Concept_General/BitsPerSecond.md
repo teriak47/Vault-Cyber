@@ -20,39 +20,39 @@ cssclasses:
 # Bits par Seconde (bps)
 
 ## 📥 Définition en une phrase
-> Le bit par seconde ([[Bit|bit]]/s ou [[BitsPerSecond|bps]]) est l'unité de mesure standard pour le [[DataTransmission|débit de données]] numériques, quantifiant le nombre de [[Bit|bits]] d'information transférés ou traités par seconde sur un [[Network|réseau]] ou un [[CommunicationChannel|canal de communication]].
+> Le bit par seconde (bit/s ou bps) est l'unité de mesure standard pour le débit de données numériques, quantifiant le nombre de bits d'information transférés ou traités par seconde sur un réseau ou un canal de communication.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Unité Fondamentale**: Le "[[Bit|bit]]" est la plus petite [[BinaryDigit|unité d'information]] en informatique, représentant une valeur binaire (0 ou 1). C'est le fondement de toute [[Data|donnée]] numérique.
-*   **Mesure de Taux**: Le "par seconde" indique que le [[BitsPerSecond|bps]] est un taux, mesurant la quantité de [[Bit|bits]] qui circulent à travers un point donné ou sont traités sur une durée d'une [[Timing|seconde]].
-*   **Multiples et Échelles**: Pour des débits plus élevés, le [[BitsPerSecond|bps]] est exprimé en multiples standards :
-    *   **[[KilobitsPerSecond|Kilobits par seconde (kbps)]]**: 1 000 [[Bit|bits]]/seconde.
-    *   **[[MegabitsPerSecond|Mégabits par seconde (Mbps)]]**: 1 000 000 [[Bit|bits]]/seconde.
-    *   **[[GigabitsPerSecond|Gigabits par seconde (Gbps)]]**: 1 000 000 000 [[Bit|bits]]/seconde.
-*   **Distinction Bit vs. Byte**: Il est essentiel de ne pas confondre le [[BitsPerSecond|bit par seconde]] ([[BitsPerSecond|bps]]) avec l'[[BytesPerSecond|octet par seconde]] ([[BytesPerSecond|Bps]] ou [[BytesPerSecond|octets/s]]). Un [[Byte|octet]] est composé de 8 [[Bit|bits]], ce qui signifie que [[BytesPerSecond|1 Bps]] équivaut à [[BitsPerSecond|8 bps]]. Les [[Internet|débits Internet]] sont généralement annoncés en [[BitsPerSecond|Mbps]] ou [[GigabitsPerSecond|Gbps]].
-*   **Applications Étendues**: Le [[BitsPerSecond|bps]] est l'unité de référence pour mesurer la [[Bandwidth|bande passante]] et le [[Throughput|débit]] des [[Network|réseaux]] ([[LocalAreaNetwork|LAN]], [[WideAreaNetwork|WAN]]), des connexions [[Internet|Internet]], et des [[DataTransferRate|taux de transfert de données]] sur divers [[System|systèmes]] et [[CommunicationChannel|canaux]].
+*   **Unité Fondamentale**: Le "bit" est la plus petite unité d'information en informatique, représentant une valeur binaire (0 ou 1). C'est le fondement de toute donnée numérique.
+*   **Mesure de Taux**: Le "par seconde" indique que le bps est un taux, mesurant la quantité de bits qui circulent à travers un point donné ou sont traités sur une durée d'une seconde.
+*   **Multiples et Échelles**: Pour des débits plus élevés, le bps est exprimé en multiples standards :
+    *   **Kilobits par seconde (kbps)**: 1 000 bits/seconde.
+    *   **Mégabits par seconde (Mbps)**: 1 000 000 bits/seconde.
+    *   **Gigabits par seconde (Gbps)**: 1 000 000 000 bits/seconde.
+*   **Distinction Bit vs. Byte**: Il est essentiel de ne pas confondre le bit par seconde (bps) avec l'octet par seconde (Bps ou octets/s). Un octet est composé de 8 bits, ce qui signifie que 1 Bps équivaut à 8 bps. Les débits Internet sont généralement annoncés en Mbps ou Gbps.
+*   **Applications Étendues**: Le bps est l'unité de référence pour mesurer la bande passante et le débit des réseaux (LAN, WAN), des connexions Internet, et des taux de transfert de données sur divers systèmes et canaux.
 
 ## 💡 Importance en Cybersécurité
-> La mesure et la gestion du [[BitsPerSecond|débit en bits par seconde]] sont fondamentales en [[Cybersecurity|cybersécurité]] car elles impactent directement la [[Availability|disponibilité]], la [[NetworkPerformance|performance réseau]] et la capacité à détecter des activités malveillantes. Un [[BitsPerSecond|débit]] insuffisant ou des fluctuations anormales peuvent indiquer une [[Attack|attaque]], une [[Vulnerability|vulnérabilité]] exploitée, ou des problèmes de [[System|système]] qui menacent la [[CIATriad|triade CIA]].
+> La mesure et la gestion du débit en bits par seconde sont fondamentales en cybersécurité car elles impactent directement la disponibilité, la performance réseau et la capacité à détecter des activités malveillantes. Un débit insuffisant ou des fluctuations anormales peuvent indiquer une attaque, une vulnérabilité exploitée, ou des problèmes de système qui menacent la triade CIA.
 
 ## 🔗 Notes Connexes
-*   [[Bandwidth|Bande Passante]]
-*   [[Bit|Bit]]
-*   [[BytesPerSecond|Octets par Seconde]]
-*   [[CapacityPlanning|Planification de la Capacité]]
-*   [[DataExfiltration|Exfiltration de Données]]
-*   [[DataTransmission|Transmission de Données]]
-*   [[DenialOfService|Déni de Service]]
-*   [[DigitalBandwidth|Bande passante numérique]]
-*   [[GigabitsPerSecond|Gigabits par Seconde]]
-*   [[IntrusionDetectionSystem|Système de Détection d'Intrusion]]
-*   [[IntrusionPreventionSystem|Système de Prévention d'Intrusion]]
-*   [[KilobitsPerSecond|Kilobits par Seconde]]
-*   [[Latency|Latence]]
-*   [[MegabitsPerSecond|Mégabits par Seconde]]
-*   [[NetworkMonitoring|Surveillance Réseau]]
-*   [[NetworkPerformance|Performance Réseau]]
-*   [[QualityOfService|Qualité de Service]]
-*   [[Threat|Menace]]
-*   [[Throughput|Débit]]
-*   [[TrafficManagement|Gestion du trafic]]
+*   Bande Passante
+*   Bit
+*   Octets par Seconde
+*   Planification de la Capacité
+*   Exfiltration de Données
+*   Transmission de Données
+*   Déni de Service
+*   Bande passante numérique
+*   Gigabits par Seconde
+*   Système de Détection d'Intrusion
+*   Système de Prévention d'Intrusion
+*   Kilobits par Seconde
+*   Latence
+*   Mégabits par Seconde
+*   Surveillance Réseau
+*   Performance Réseau
+*   Qualité de Service
+*   Menace
+*   Débit
+*   Gestion du trafic

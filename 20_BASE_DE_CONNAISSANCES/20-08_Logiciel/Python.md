@@ -15,33 +15,33 @@ cssclasses:
 # Logiciel : Python
 
 ## 🎯 Rôle et Fonction
-> [[Python|Python]] est un langage de [[Programming|programmation]] de haut niveau, interprété et polyvalent, connu pour sa syntaxe claire et lisible. Il est largement utilisé dans le développement web, l'[[Automation|automatisation]] de tâches, l'analyse de [[Data|données]], l'[[MachineLearning|apprentissage automatique]], l'[[Cybersecurity|cybersécurité]] (pour le développement d'[[Tool|outils]] et l'[[Exploitation|exploitation]] de [[Vulnerability|vulnérabilités]]), et bien plus encore.
+> Python est un langage de programmation de haut niveau, interprété et polyvalent, connu pour sa syntaxe claire et lisible. Il est largement utilisé dans le développement web, l'automatisation de tâches, l'analyse de données, l'apprentissage automatique, l'cybersécurité (pour le développement d'outils et l'exploitation de vulnérabilités), et bien plus encore.
 
 ## ⚙️ Configuration
 * **Fichiers de configuration clés**:
-  * `pip.ini` (Windows) ou `pip.conf` (Linux/macOS) : pour configurer le gestionnaire de paquets [[Pip|pip]].
-  * `.venv/` ou `env/` : répertoire typique pour les [[VirtualEnvironment|environnements virtuels]] isolant les dépendances de projet.
+  * `pip.ini` (Windows) ou `pip.conf` (Linux/macOS) : pour configurer le gestionnaire de paquets pip.
+  * `.venv/` ou `env/` : répertoire typique pour les environnements virtuels isolant les dépendances de projet.
 * **Modules importants**:
   * **Standard Library**: `os`, `sys`, `subprocess`, `json`, `re`.
   * **Librairies tierces courantes**: `requests` (HTTP), `Django` (web), `Flask` (web), `pandas` (données), `numpy` (calcul numérique), `scikit-learn` (ML).
-* **Dépendances**: Nécessite un [[OperatingSystem|système d'exploitation]] (par exemple, [[Linux]], [[Windows]], [[MacOS]]).
+* **Dépendances**: Nécessite un système d'exploitation (par exemple, Linux, Windows, MacOS).
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-* **[[SecureCodingPractices|Pratiques de codage sécurisé]]**:
-  * Valider et désinfecter toutes les [[UnvalidatedInput|entrées non validées]] pour prévenir les [[SqlInjection|injections SQL]], les [[CrossSiteScripting|XSS]] et autres [[AttackVector|vecteurs d'attaque]].
-  * Éviter l'utilisation de `eval()` avec des entrées utilisateur, qui peut mener à l'[[RemoteCodeExecution|exécution de code à distance]].
-  * Gérer les erreurs de manière sécurisée pour éviter de divulguer des [[SensitiveData|informations sensibles]].
-* **[[VulnerabilityManagement|Gestion des dépendances]]**:
-  * Maintenir les librairies et paquets [[Python|Python]] à jour pour corriger les [[SoftwareVulnerability|vulnérabilités logicielles]] connues.
-  * Utiliser des outils comme `pip-audit` pour vérifier les dépendances par rapport aux bases de données de [[CommonVulnerabilitiesAndExposures|CVE]].
-  * Mettre en œuvre la [[SoftwareSupplyChainSecurity|sécurité de la chaîne d'approvisionnement logicielle]] pour les composants [[OpenSource|open source]].
-* **[[PrincipleOfLeastPrivilege|Principe du moindre privilège]]**: Exécuter les [[Process|processus]] [[Python|Python]] avec les permissions minimales nécessaires sur le [[System|système]].
-* **[[VirtualEnvironment|Environnements virtuels]]**: Isoler les dépendances de chaque projet pour éviter les conflits et limiter la surface d'[[AttackSurface|attaque]].
-* **[[CodeReview|Revue de code]]**: Effectuer des revues de code régulières pour identifier les failles de [[Security|sécurité]] et les [[SoftwareBugs|bugs logiciels]].
+* **Pratiques de codage sécurisé**:
+  * Valider et désinfecter toutes les entrées non validées pour prévenir les injections SQL, les XSS et autres vecteurs d'attaque.
+  * Éviter l'utilisation de `eval()` avec des entrées utilisateur, qui peut mener à l'exécution de code à distance.
+  * Gérer les erreurs de manière sécurisée pour éviter de divulguer des informations sensibles.
+* **Gestion des dépendances**:
+  * Maintenir les librairies et paquets Python à jour pour corriger les vulnérabilités logicielles connues.
+  * Utiliser des outils comme `pip-audit` pour vérifier les dépendances par rapport aux bases de données de CVE.
+  * Mettre en œuvre la sécurité de la chaîne d'approvisionnement logicielle pour les composants open source.
+* **Principe du moindre privilège**: Exécuter les processus Python avec les permissions minimales nécessaires sur le système.
+* **Environnements virtuels**: Isoler les dépendances de chaque projet pour éviter les conflits et limiter la surface d'attaque.
+* **Revue de code**: Effectuer des revues de code régulières pour identifier les failles de sécurité et les bugs logiciels.
 
 ## 🔍 Audit et Surveillance
 * **Logs importants**:
-  * Les logs d'applications [[Python|Python]] configurés (souvent dans `/var/log/` sur [[Linux]] ou des emplacements spécifiques pour les applications web).
+  * Les logs d'applications Python configurés (souvent dans `/var/log/` sur Linux ou des emplacements spécifiques pour les applications web).
   * Les journaux d'erreurs et de sortie standard (`stderr`, `stdout`) de l'application.
 * **Commandes d'audit**:
 ```bash
@@ -60,34 +60,34 @@ pip-audit
 ```
 
 ## 🔗 Notes Connexes
-* [[Programming|Programmation]]
-* [[Script|Script informatique]]
-* [[OperatingSystem|Système d'exploitation]]
-* [[SoftwareVulnerability|Vulnérabilité Logicielle]]
-* [[SoftwareBugs|Bugs Logiciels]]
-* [[SoftwareSupplyChainSecurity|Sécurité de la chaîne d'approvisionnement logicielle]]
-* [[Exploit|Exploit]]
-* [[Malware|Logiciel malveillant]]
-* [[Automation|Automatisation]]
-* [[ThreatActor|Acteur de menace]] (souvent utilise [[Python|Python]] pour ses [[Attack|attaques]])
-* [[SecureCodingPractices|Pratiques de codage sécurisé]] (concept à créer si non existant)
-* [[VirtualEnvironment|Environnement Virtuel]] (concept à créer si non existant)
-* [[Pip|Pip]] (gestionnaire de paquets, concept à créer si non existant)
-* [[OpenSource|Open Source]]
-* [[WebDevelopment|Développement Web]] (concept à créer si non existant)
-* [[DataScience|Science des Données]] (concept à créer si non existant)
-* [[MachineLearning|Apprentissage Automatique]]
-* [[CommonVulnerabilitiesAndExposures|Vulnérabilités connues (CVEs)]]
-* [[PrincipleOfLeastPrivilege|Principe du moindre privilège]]
-* [[CodeReview|Revue de Code]]
-* [[RemoteCodeExecution|Exécution de Code à Distance]]
-* [[SqlInjection|Injection SQL]]
-* [[CrossSiteScripting|Scripting Inter-sites (XSS)]]
-* [[UnvalidatedInput|Entrée Non Validée]]
-* [[VulnerabilityManagement|Gestion des Vulnérabilités]]
-* [[SensitiveData|Données Sensibles]]
-* [[AttackVector|Vecteur d'attaque]]
-* [[AttackSurface|Surface d'attaque]]
-* [[Linux|Linux]]
-* [[Windows|Windows]]
-* [[MacOS|macOS]]
+* Programmation
+* Script informatique
+* Système d'exploitation
+* Vulnérabilité Logicielle
+* Bugs Logiciels
+* Sécurité de la chaîne d'approvisionnement logicielle
+* Exploit
+* Logiciel malveillant
+* Automatisation
+* Acteur de menace (souvent utilise Python pour ses attaques)
+* Pratiques de codage sécurisé (concept à créer si non existant)
+* Environnement Virtuel (concept à créer si non existant)
+* Pip (gestionnaire de paquets, concept à créer si non existant)
+* Open Source
+* Développement Web (concept à créer si non existant)
+* Science des Données (concept à créer si non existant)
+* Apprentissage Automatique
+* Vulnérabilités connues (CVEs)
+* Principe du moindre privilège
+* Revue de Code
+* Exécution de Code à Distance
+* Injection SQL
+* Scripting Inter-sites (XSS)
+* Entrée Non Validée
+* Gestion des Vulnérabilités
+* Données Sensibles
+* Vecteur d'attaque
+* Surface d'attaque
+* Linux
+* Windows
+* macOS

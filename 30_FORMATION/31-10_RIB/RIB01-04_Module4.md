@@ -29,11 +29,11 @@ cssclasses:
 Un [[HomeNetwork|réseau domestique]] moderne intègre une multitude de [[NetworkDevice|périphériques connectés]] qui dépendent de la [[NetworkCommunication|connectivité]] pour leur fonctionnement, le [[ControlAndCommunication|contrôle et la communication]].
 *   **Périphériques connectés courants :**
     *   [[Computer|Ordinateurs]] de bureau (stations de travail).
-    *   [[GamingSystem|Systèmes de jeu]] (consoles nécessitant une [[Internet|connexion Internet]]).
-    *   [[SmartTV|Télévisions intelligentes]] (écrans connectés pour le streaming et les services en ligne).
+    *   Systèmes de jeu (consoles nécessitant une [[Internet|connexion Internet]]).
+    *   Télévisions intelligentes (écrans connectés pour le streaming et les services en ligne).
     *   [[NetworkPrinter|Imprimantes]] et scanners (périphériques d'impression et de numérisation partagés).
-    *   [[SurveillanceCamera|Caméras de surveillance]] (systèmes de [[Security|sécurité]] connectés).
-    *   [[ClimateControl|Contrôle climatique]] (thermostats intelligents et systèmes de climatisation).
+    *   Caméras de surveillance (systèmes de [[Security|sécurité]] connectés).
+    *   Contrôle climatique (thermostats intelligents et systèmes de climatisation).
 
 ### 2. Architecture du [[Router|Routeur Domestique]]
 Les [[Router|routeurs domestiques]] standard comportent deux types de ports principaux qui définissent l'architecture du [[LocalAreaNetwork|réseau local]].
@@ -46,8 +46,8 @@ Les [[Router|routeurs domestiques]] standard comportent deux types de ports prin
 
 ### 3. [[WirelessLocalAreaNetwork|Réseau Local Sans Fil]] ([[WirelessLocalAreaNetwork|WLAN]])
 La plupart des [[Router|routeurs domestiques]] intègrent une antenne sans fil et un [[AccessPoint|point d'accès]].
-*   **Intégration transparente** : Les [[WirelessDevice|périphériques sans fil]] et [[WiredDevice|filaires]] coexistent sur le même [[LocalAreaNetwork|réseau local]], créant un environnement [[Network|réseau]] unifié.
-*   **[[AccessPoint|Point d'accès intégré]]** : Antenne et fonctionnalités [[WiFi|Wi-Fi]] directement dans le [[Router|routeur]].
+*   **Intégration transparente** : Les périphériques sans fil et filaires coexistent sur le même [[LocalAreaNetwork|réseau local]], créant un environnement [[Network|réseau]] unifié.
+*   **[[AccessPoint|Point d'accès intégré]]** : Antenne et fonctionnalités [[WirelessFidelity|Wi-Fi]] directement dans le [[Router|routeur]].
 *   **Configuration par défaut** : Seul le [[InternetPort|port Internet]] ([[WideAreaNetwork|WAN]]) reste sur un [[NetworkSegment|réseau séparé]].
 
 ### 4. Fréquences du [[WirelessLocalAreaNetwork|LAN Sans Fil]]
@@ -57,11 +57,11 @@ Les [[WirelessTechnology|technologies sans fil]] domestiques utilisent principal
     *   Idéal pour souris, claviers, imprimantes et audio.
     *   Permet la connexion simultanée de nombreux [[NetworkDevice|périphériques]].
 *   **[[IEEE80211|IEEE 802.11]] - 2,4 et 5 GHz** :
-    *   [[WiFi|Technologies Wi-Fi]] haute puissance offrant grande portée et débit élevé.
+    *   [[WirelessFidelity|Technologies Wi-Fi]] haute puissance offrant grande portée et débit élevé.
     *   [[NetworkStandard|Normes modernes]] pour [[WirelessLocalAreaNetwork|réseaux locaux sans fil]] performants.
 
-### 5. Technologies [[WiredConnection|Réseau Filaires]]
-Malgré l'essor du sans-fil, les connexions [[WiredConnection|filaires]] restent essentielles pour certaines applications nécessitant une [[Bandwidth|bande passante]] dédiée non partagée.
+### 5. Technologies Réseau Filaires
+Malgré l'essor du sans-fil, les connexions filaires restent essentielles pour certaines applications nécessitant une [[Bandwidth|bande passante]] dédiée non partagée.
 *   **[[Category5eCable|Câblage Catégorie 5e]]** :
     *   [[EthernetPatchCable|Câblage le plus courant]] composé de 4 paires de fils torsadés pour réduire les [[ElectricalInterference|interférences électriques]].
 *   **[[CoaxialCable|Câble Coaxial]]** :
@@ -70,17 +70,17 @@ Malgré l'essor du sans-fil, les connexions [[WiredConnection|filaires]] restent
     *   Câbles en verre ou plastique, diamètre d'un cheveu, transmission très haute vitesse sur longues distances via des [[OpticalSignals|impulsions lumineuses]].
 
 ### 6. [[NetworkStandard|Normes Wi-Fi]] et Certification
-L'[[InstituteOfElectricalAndElectronicsEngineers|IEEE]] (Institute of Electrical and Electronic Engineers) développe les [[WirelessTechnology|normes techniques sans fil]], tandis que la Wi-Fi Alliance certifie la [[Compatibility|compatibilité]] des [[NetworkDevice|périphériques]].
+L'[[InstituteOfElectricalAndElectronicsEngineers|IEEE]] (Institute of Electrical and Electronic Engineers) développe les [[WirelessTechnology|normes techniques sans fil]], tandis que la Wi-Fi Alliance certifie la compatibilité des [[NetworkDevice|périphériques]].
 *   **[[IEEE80211|IEEE 802.11]]** :
     *   [[NetworkStandard|Norme principale]] régissant les [[WirelessLocalAreaNetwork|réseaux locaux sans fil]].
     *   Quatre amendements définissent les caractéristiques des différentes [[WirelessTechnology|technologies de communication sans fil]] utilisant les bandes 2,4 GHz et 5 GHz.
-*   **Certification [[WiFi|Wi-Fi]]** :
-    *   Le logo [[WiFi|Wi-Fi]] garantit la conformité aux [[NetworkStandard|normes]] et l'[[Interoperability|interopérabilité]] avec d'autres [[NetworkDevice|périphériques certifiés]].
+*   **Certification [[WirelessFidelity|Wi-Fi]]** :
+    *   Le logo [[WirelessFidelity|Wi-Fi]] garantit la conformité aux [[NetworkStandard|normes]] et l'[[Interoperability|interopérabilité]] avec d'autres [[NetworkDevice|périphériques certifiés]].
     *   Les fabricants implémentent rapidement les nouvelles [[NetworkStandard|normes]] dans leurs produits.
 
 ### 7. Paramètres Sans Fil Essentiels
 *   **Mode [[Network|Réseau]]** :
-    *   Détermine la [[WirelessTechnology|technologie]] supportée : [[IEEE80211|802.11b]], [[IEEE80211|802.11g]], [[IEEE80211|802.11n]] ou mode mixte pour la [[Compatibility|compatibilité]] avec différents [[NetworkDevice|périphériques]].
+    *   Détermine la [[WirelessTechnology|technologie]] supportée : [[IEEE80211|802.11b]], [[IEEE80211|802.11g]], [[IEEE80211|802.11n]] ou mode mixte pour la compatibilité avec différents [[NetworkDevice|périphériques]].
 *   **[[ServiceSetIdentifier|Nom du Réseau]] ([[ServiceSetIdentifier|SSID]])** :
     *   Identifie le [[WirelessLocalAreaNetwork|réseau local sans fil]].
     *   Tous les [[NetworkDevice|périphériques]] doivent avoir le même [[ServiceSetIdentifier|SSID]] pour appartenir au [[Network|réseau]].
@@ -97,8 +97,8 @@ Le choix du mode [[Network|réseau]] influence directement les [[NetworkPerforma
     *   [[NetworkPerformance|Vitesses maximales]] si tous les [[NetworkDevice|périphériques]] utilisent la même [[IEEE80211|norme 802.11]].
     *   Les appareils [[IncompatibleDevice|incompatibles]] ne peuvent pas se connecter.
 *   **Mode Mixte** :
-    *   Environnement inclusif acceptant toutes les [[WiFi|normes Wi-Fi]] existantes.
-    *   Facilite l'[[Access|accès]] aux [[LegacyDevice|périphériques anciens]] nécessitant une [[WirelessConnection|connexion sans fil]].
+    *   Environnement inclusif acceptant toutes les [[WirelessFidelity|normes Wi-Fi]] existantes.
+    *   Facilite l'[[Access|accès]] aux périphériques anciens nécessitant une connexion sans fil.
 
 ### 9. [[ServiceSetIdentifier|SSID]]: Identification et [[Security|Sécurité]]
 Le [[ServiceSetIdentifier|Service Set Identifier]] ([[ServiceSetIdentifier|SSID]]) est crucial pour l'identification du [[Network|réseau]] et la [[NetworkSecurity|sécurité]] de base.
@@ -106,7 +106,7 @@ Le [[ServiceSetIdentifier|Service Set Identifier]] ([[ServiceSetIdentifier|SSID]
     *   Chaîne alphanumérique sensible à la casse, jusqu'à 32 caractères.
     *   Transmis dans l'[[Header|en-tête]] de toutes les [[DataFrames|trames]] du [[WirelessLocalAreaNetwork|réseau local sans fil]].
 *   **Fonction d'Identification** :
-    *   Indique aux stations sans fil ([[WirelessStation|STA]]) leur appartenance [[Network|réseau]] et définit les [[NetworkDevice|périphériques]] avec lesquels elles peuvent communiquer.
+    *   Indique aux stations sans fil (STA) leur appartenance [[Network|réseau]] et définit les [[NetworkDevice|périphériques]] avec lesquels elles peuvent communiquer.
 *   **Diffusion et [[Security|Sécurité]]** :
     *   La diffusion [[ServiceSetIdentifier|SSID]] facilite la découverte automatique.
     *   Sa désactivation complique l'[[Access|accès]] légitime sans empêcher les [[Intrusion|intrusions]].
@@ -115,92 +115,37 @@ Le [[ServiceSetIdentifier|Service Set Identifier]] ([[ServiceSetIdentifier|SSID]
 > [!IMPORTANT]
 > **Important** : La désactivation de la diffusion [[ServiceSetIdentifier|SSID]] ne constitue pas une mesure de [[Security|sécurité]] suffisante. Tous les [[WirelessLocalAreaNetwork|réseaux sans fil]] doivent utiliser le [[Encryption|chiffrement]] le plus fort disponible pour limiter l'[[UnauthorizedAccess|accès non autorisé]].
 
-## 🧠 Carte Mentale / Schéma
-```mermaid
-graph TD
-    A[Réseau Domestique] --> R[Routeur Domestique]
-
-    R --> LAN[Ports LAN (Câblé)]
-    R --> WLAN[WLAN (Sans Fil)]
-    R --> WAN[Port Internet (WAN)]
-
-    LAN --> P1[Ordinateurs de bureau]
-    LAN --> P2[Imprimantes réseau]
-
-    WLAN --> P3[Télévisions intelligentes]
-    WLAN --> P4[Systèmes de jeu]
-    WLAN --> P5[Caméras de surveillance]
-    WLAN --> P6[Thermostats intelligents]
-
-    WAN --> I[Internet]
-
-    subgraph Technologies Sans Fil
-        WLAN_Freq[Fréquences WLAN] --> B[Bluetooth 2.4 GHz]
-        WLAN_Freq --> W[IEEE 802.11 (Wi-Fi)]
-        W --> W_24[2.4 GHz]
-        W --> W_5[5 GHz]
-    end
-
-    subgraph Technologies Filaires
-        LAN_Tech[Supports Câblés] --> Cat5e[Câblage Catégorie 5e]
-        LAN_Tech --> Coax[Câble Coaxial]
-        LAN_Tech --> Fibre[Fibre Optique]
-    end
-
-    subgraph Normes et Sécurité Wi-Fi
-        WiFi_Std[Normes Wi-Fi] --> IEEE_Std[IEEE 802.11]
-        WiFi_Std --> WiFi_Cert[Certification Wi-Fi]
-
-        WLAN_Settings[Paramètres Sans Fil] --> Mode[Mode Réseau]
-        WLAN_Settings --> SSID_Name[Nom du Réseau (SSID)]
-        WLAN_Settings --> Channel[Canal Standard]
-        WLAN_Settings --> SSID_Broadcast[Diffusion SSID]
-
-        SSID_Security[SSID Identification & Sécurité]
-        SSID_Security -- "Facilite Découverte" --> SSID_Broadcast
-        SSID_Security -- "Identification Réseau" --> SSID_Name
-        SSID_Security -- "Désactivation NON SUFFISANTE" --> Crypto[Chiffrement Fort indispensable]
-    end
-
-    R --> WLAN_Settings
-    WLAN_Settings --> SSID_Security
-
-    R -- "Coexistence" --> LAN
-    R -- "Coexistence" --> WLAN
-```
-
 ## ❓ Quiz de Révision (Active Recall)
 > [!QUESTION] Question 1
-> Quels sont les deux types de ports principaux trouvés sur un [[Router|routeur]] domestique standard et quelle est la fonction de chacun ?
+> Quels sont les deux types de ports principaux trouvés sur un routeur domestique standard et quelle est la fonction de chacun ?
 > > [!success]- Réponse
-> > Les deux types sont les [[EthernetPorts|Ports Ethernet]] ([[LANPort|LAN]]) qui connectent les [[NetworkDevice|périphériques]] au [[LocalAreaNetwork|réseau local]], et le [[InternetPort|Port Internet]] ([[WideAreaNetwork|WAN]]) qui connecte le [[Router|routeur]] au [[RemoteNetwork|réseau externe]] (par exemple, [[Internet|Internet]]).
+> > Les deux types sont les Ports Ethernet (LAN) qui connectent les périphériques au réseau local, et le Port Internet (WAN) qui connecte le routeur au réseau externe (par exemple, Internet).
 
 > [!QUESTION] Question 2
-> Citez trois exemples de [[NetworkDevice|périphériques connectés]] couramment trouvés dans un [[HomeNetwork|réseau domestique]] moderne.
+> Citez trois exemples de périphériques connectés couramment trouvés dans un réseau domestique moderne.
 > > [!success]- Réponse
-> > Ordinateurs de bureau, [[GamingSystem|systèmes de jeu]], [[SmartTV|télévisions intelligentes]], [[NetworkPrinter|imprimantes]] et scanners, [[SurveillanceCamera|caméras de surveillance]], [[ClimateControl|contrôle climatique]]. (Toute combinaison de trois est correcte).
+> > Ordinateurs de bureau, systèmes de jeu, télévisions intelligentes, imprimantes et scanners, caméras de surveillance, contrôle climatique. (Toute combinaison de trois est correcte).
 
 > [!QUESTION] Question 3
-> Quelle est la différence principale entre les bandes de fréquence 2,4 GHz et 5 GHz utilisées par le [[WiFi|Wi-Fi]] en termes de portée et de débit ?
+> Quelle est la différence principale entre les bandes de fréquence 2,4 GHz et 5 GHz utilisées par le Wi-Fi en termes de portée et de débit ?
 > > [!success]- Réponse
 > > La bande 2,4 GHz offre une plus grande portée mais un débit plus faible, tandis que la bande 5 GHz offre une portée plus courte mais un débit plus élevé.
 
 > [!QUESTION] Question 4
-> Pourquoi la désactivation de la diffusion [[ServiceSetIdentifier|SSID]] n'est-elle pas une mesure de [[Security|sécurité]] suffisante pour un [[WirelessLocalAreaNetwork|réseau sans fil]] ?
+> Pourquoi la désactivation de la diffusion SSID n'est-elle pas une mesure de sécurité suffisante pour un réseau sans fil ?
 > > [!success]- Réponse
-> > La désactivation de la diffusion [[ServiceSetIdentifier|SSID]] rend le [[Network|réseau]] moins visible, mais ne l'empêche pas d'être détecté par des outils spécialisés. Le [[Encryption|chiffrement]] fort est indispensable pour empêcher les [[UnauthorizedAccess|accès non autorisés]].
+> > La désactivation de la diffusion SSID rend le réseau moins visible, mais ne l'empêche pas d'être détecté par des outils spécialisés. Le chiffrement fort est indispensable pour empêcher les accès non autorisés.
 
 > [!QUESTION] Question 5
-> Nommez deux [[NetworkStandard|normes]] de [[Cabling|câblage filaire]] mentionnées dans le cours et décrivez brièvement l'avantage de l'une d'entre elles.
+> Nommez deux normes de câblage filaire mentionnées dans le cours et décrivez brièvement l'avantage de l'une d'entre elles.
 > > [!success]- Réponse
-> > [[Category5eCable|Câblage Catégorie 5e]], [[CoaxialCable|Câble Coaxial]], [[FiberOpticCable|Fibre Optique]]. L'avantage du [[Category5eCable|câblage Catégorie 5e]] est qu'il utilise des fils torsadés pour réduire les [[ElectricalInterference|interférences électriques]]. L'avantage de la [[FiberOpticCable|Fibre Optique]] est sa capacité à transmettre des données à très haute vitesse sur de longues distances.
+> > Câblage Catégorie 5e, Câble Coaxial, Fibre Optique. L'avantage du câblage Catégorie 5e est qu'il utilise des fils torsadés pour réduire les interférences électriques. L'avantage de la Fibre Optique est sa capacité à transmettre des données à très haute vitesse sur de longues distances.
 
 > [!QUESTION] Question 6
-> Quel est le rôle de l'[[InstituteOfElectricalAndElectronicsEngineers|IEEE]] et de la Wi-Fi Alliance concernant les [[NetworkStandard|normes Wi-Fi]] ?
+> Quel est le rôle de l'IEEE et de la Wi-Fi Alliance concernant les normes Wi-Fi ?
 > > [!success]- Réponse
-> > L'[[InstituteOfElectricalAndElectronicsEngineers|IEEE]] développe les [[NetworkStandard|normes techniques sans fil]] ([[IEEE80211|802.11]]), tandis que la Wi-Fi Alliance certifie la [[Compatibility|compatibilité]] et l'[[Interoperability|interopérabilité]] des [[NetworkDevice|périphériques]] avec ces [[NetworkStandard|normes]].
+> > L'IEEE développe les normes techniques sans fil (802.11), tandis que la Wi-Fi Alliance certifie la compatibilité et l'interopérabilité des périphériques avec ces normes.
 
 ## 🔗 Liens du Module
 *   **Précédent** : [[RIB01-03_Module3|01-03 | Module 3]]
-*   **Suivant** : (Module 5 à venir)
-*   **Ressource Externe** : [Cisco Networking Academy - Introduction to Networks](https://www.netacad.com/courses/networking/introduction-networks) (Exemple générique)
+*   **Suivant** : [[RIB01-05_Module5Partie1]]

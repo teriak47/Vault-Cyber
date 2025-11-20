@@ -16,47 +16,47 @@ cssclasses:
 # Support de Transmission Réseau
 
 ## 🎯 Rôle et Fonction
-> Les [[NetworkMedia|supports de transmission réseau]] désignent les voies physiques ou sans fil, constituant la [[PhysicalLayer|couche physique]] du [[OpenSystemsInterconnectionModel|modèle OSI]], utilisées pour acheminer les [[DigitalSignals|signaux de données]] (électriques, optiques ou [[ElectromagneticWaves|ondes électromagnétiques]]) entre les [[NetworkDevice|périphériques réseau]]. Ils sont essentiels à la [[NetworkCommunication|communication réseau]] et influencent directement sa [[NetworkPerformance|performance]].
+> Les supports de transmission réseau désignent les voies physiques ou sans fil, constituant la couche physique du modèle OSI, utilisées pour acheminer les signaux de données (électriques, optiques ou ondes électromagnétiques) entre les périphériques réseau. Ils sont essentiels à la communication réseau et influencent directement sa performance.
 
 ## 🛠️ Caractéristiques Techniques
 *   **Type / Catégories**:
     *   **Filaires**:
-        *   [[CopperWire|Câbles en cuivre]] ([[TwistedPair|Paire torsadée]], [[CoaxialCable|Câble coaxial]]): Transmettent des [[ElectricalPulses|impulsions électriques]].
-        *   [[FiberOpticCable|Câbles à fibre optique]]: Transmettent des [[LightPulses|impulsions lumineuses]].
+        *   Câbles en cuivre (Paire torsadée, Câble coaxial): Transmettent des impulsions électriques.
+        *   Câbles à fibre optique: Transmettent des impulsions lumineuses.
     *   **Sans fil**:
-        *   [[WirelessMedia|Supports sans fil]] ([[RadioWaves|Ondes radio]], [[Microwaves|Micro-ondes]], [[InfraredWaves|Ondes infrarouges]]): Transmettent des [[WirelessSignals|signaux sans fil]] à travers l'[[ElectromagneticSpectrum|spectre électromagnétique]].
-*   **Connectique**: Varie selon le type (ex: [[RJ45Connector|RJ45]] pour [[UnshieldedTwistedPair|UTP]], connecteurs optiques pour la fibre).
+        *   Supports sans fil (Ondes radio, Micro-ondes, Ondes infrarouges): Transmettent des signaux sans fil à travers l'spectre électromagnétique.
+*   **Connectique**: Varie selon le type (ex: RJ45 pour UTP, connecteurs optiques pour la fibre).
 *   **Performances**:
-    *   [[Bandwidth|Bande passante]] ([[BitsPerSecond|bps]], [[MegabitsPerSecond|Mbps]], [[GigabitsPerSecond|Gbps]]): Capacité de transfert de données.
-    *   [[Latency|Latence]]: Temps de propagation des signaux.
+    *   Bande passante (bps, Mbps, Gbps): Capacité de transfert de données.
+    *   Latence: Temps de propagation des signaux.
     *   Portée: Distance maximale de transmission fiable.
 *   **Normes associées**:
-    *   [[Ethernet|IEEE 802.3]] pour les technologies câblées.
-    *   [[WirelessFidelity|IEEE 802.11]] pour les technologies sans fil.
+    *   IEEE 802.3 pour les technologies câblées.
+    *   IEEE 802.11 pour les technologies sans fil.
 
 ## ✅ Avantages et Inconvénients
 *   **Avantages**:
-    *   Fournit la fondation indispensable pour toute [[Network|infrastructure réseau]].
+    *   Fournit la fondation indispensable pour toute infrastructure réseau.
     *   Diversité des options pour s'adapter à différents environnements et besoins (coût, performance, distance).
-    *   Faible [[Latency|latence]] et haute [[Bandwidth|bande passante]] avec la [[FiberOpticCable|fibre optique]].
-    *   Flexibilité et mobilité accrues avec les [[WirelessMedia|supports sans fil]].
+    *   Faible latence et haute bande passante avec la fibre optique.
+    *   Flexibilité et mobilité accrues avec les supports sans fil.
 *   **Inconvénients**:
-    *   Vulnérabilité à l'[[Eavesdropping|écoute clandestine]] (notamment sans fil) et à la [[DataCorruption|corruption de données]] (interférences pour le cuivre, atténuation pour le sans fil).
-    *   Sensibilité aux [[HardwareFailure|dommages physiques]] (coupures, usure) et aux [[EnvironmentalFactors|facteurs environnementaux]].
+    *   Vulnérabilité à l'écoute clandestine (notamment sans fil) et à la corruption de données (interférences pour le cuivre, atténuation pour le sans fil).
+    *   Sensibilité aux dommages physiques (coupures, usure) et aux facteurs environnementaux.
     *   Coût d'installation et de maintenance potentiellement élevé pour certaines technologies (fibre optique).
-    *   Risques d'[[NetworkCongestion|congestion réseau]] et d'[[Interference|interférences]] pour les [[WirelessNetwork|réseaux sans fil]].
+    *   Risques d'congestion réseau et d'interférences pour les réseaux sans fil.
 
 ## 🔒 Considérations de Sécurité Physique
-*   [[PhysicalSecurity|Protection contre l'accès non autorisé]] et le [[Tampering|sabotage]] des câbles et des [[AccessPoint|points d'accès sans fil]].
-*   Utilisation de [[ShieldedCabling|câbles blindés]] pour atténuer l'[[ElectromagneticInterference|interférence électromagnétique]] et réduire les risques d'[[Eavesdropping|écoute clandestine]].
-*   Mise en œuvre de protocoles de [[WirelessSecurity|sécurité sans fil]] robustes comme [[WirelessProtectedAccessThree|WPA3]] pour les [[WirelessNetwork|réseaux sans fil]].
-*   [[SecurityMonitoring|Surveillance]] régulière des infrastructures physiques pour détecter toute anomalie.
-*   [[EnvironmentalControls|Contrôles environnementaux]] (température, humidité) dans les centres de données et les locaux techniques pour préserver l'intégrité des équipements.
+*   Protection contre l'accès non autorisé et le sabotage des câbles et des points d'accès sans fil.
+*   Utilisation de câbles blindés pour atténuer l'interférence électromagnétique et réduire les risques d'écoute clandestine.
+*   Mise en œuvre de protocoles de sécurité sans fil robustes comme WPA3 pour les réseaux sans fil.
+*   Surveillance régulière des infrastructures physiques pour détecter toute anomalie.
+*   Contrôles environnementaux (température, humidité) dans les centres de données et les locaux techniques pour préserver l'intégrité des équipements.
 
 ## 🔗 Notes Connexes
-*   [[PhysicalLayer|Couche Physique]] (Couche OSI correspondante)
-*   [[Ethernet|Ethernet]] (Protocole utilisant ce matériel)
-*   [[WirelessFidelity|Wi-Fi]] (Protocole utilisant ce matériel)
-*   [[CopperWire|Fil de Cuivre]] (Type de support)
-*   [[FiberOpticCable|Câble à Fibre Optique]] (Type de support)
-*   [[WirelessMedia|Supports sans fil]] (Type de support)
+*   Couche Physique (Couche OSI correspondante)
+*   Ethernet (Protocole utilisant ce matériel)
+*   Wi-Fi (Protocole utilisant ce matériel)
+*   Fil de Cuivre (Type de support)
+*   Câble à Fibre Optique (Type de support)
+*   Supports sans fil (Type de support)

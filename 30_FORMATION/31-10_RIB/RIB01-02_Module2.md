@@ -58,9 +58,9 @@ cssclasses:
 ### 3. Infrastructure de Réseau
 - L'[[NetworkInfrastructure|infrastructure réseau]] est la plateforme physique et logique qui supporte le [[Network|réseau]], fournissant des canaux stables et fiables pour les [[NetworkCommunication|communications]].
 - **Composants clés :**
-    - **[[EndDevices|Périphériques Finaux]]** : Les points de départ et d'arrivée des [[Message|messages]] (ex: [[Computers|ordinateurs]], smartphones, [[NetworkPrinter|imprimantes]]). Les [[AddressingInformation|adresses]] sont utilisées pour les identifier de manière unique.
-    - **[[IntermediateDevice|Périphériques Intermédiaires]]** : Les dispositifs qui connectent les [[EndDevices|hôtes]] et assurent le chemin des [[Message|messages]] (ex: [[Router|routeurs]], commutateurs, [[AccessPoint|points d'accès]]).
-    - **[[NetworkMedia|Supports Réseau]]** : Les canaux physiques de [[DataTransmission|transmission des données]] (ex: [[FiberOpticCable|câbles]] en cuivre ou fibre optique, [[RadioWaves|connexions sans fil]]).
+    - **[[EndDevices|Périphériques Finaux]]** : Les points de départ et d'arrivée des messages (ex: ordinateurs, smartphones, imprimantes). Les adresses sont utilisées pour les identifier de manière unique.
+    - **[[IntermediateDevice|Périphériques Intermédiaires]]** : Les dispositifs qui connectent les hôtes et assurent le chemin des messages (ex: routeurs, commutateurs, points d'accès).
+    - **[[NetworkMedia|Supports Réseau]]** : Les canaux physiques de transmission des données (ex: câbles en cuivre ou fibre optique, connexions sans fil).
 
 ### 4. Fournisseurs d'Accès Internet (FAI) et Types de Connexions
 - Un [[InternetServiceProvider|FAI]] assure la liaison entre un [[HomeNetwork|réseau domestique]] (ou d'[[Enterprise|entreprise]]) et l'[[Internet|Internet]].
@@ -122,34 +122,34 @@ graph TD
 
 ## ❓ Quiz de Révision (Active Recall)
 > [!QUESTION] Question 1
-> Quelle est la principale différence entre un rôle de [[Client|client]] et un rôle de [[Server|serveur]] dans un [[Network|réseau moderne]], et qu'est-ce qui détermine ce rôle ?
+> Quelle est la principale différence entre un rôle de client et un rôle de serveur dans un réseau moderne, et qu'est-ce qui détermine ce rôle ?
 > > [!success]- Réponse
-> > Un [[Client|client]] demande des informations ou des [[Network|services]], tandis qu'un [[Server|serveur]] les fournit. Le rôle d'un ordinateur est déterminé par le [[OperatingSystem|logiciel]] installé.
+> > Un client demande des informations ou des services, tandis qu'un serveur les fournit. Le rôle d'un ordinateur est déterminé par le logiciel installé.
 
 > [!QUESTION] Question 2
-> Citez trois types de [[Server|serveurs]] courants et décrivez brièvement leur fonction.
+> Citez trois types de serveurs courants et décrivez brièvement leur fonction.
 > > [!success]- Réponse
-> > 1. **[[WebServer|Serveur Web]]** : Fournit des pages web aux navigateurs clients.
-> > 2. **[[EmailServer|Serveur Email]]** : Gère l'envoi et la réception de [[Email|courriels]].
-> > 3. **[[FileServer|Serveur de Fichiers]]** : Stocke et partage des fichiers centralisés.
+> > 1. **Serveur Web** : Fournit des pages web aux navigateurs clients.
+> > 2. **Serveur Email** : Gère l'envoi et la réception de courriels.
+> > 3. **Serveur de Fichiers** : Stocke et partage des fichiers centralisés.
 
 > [!QUESTION] Question 3
-> Quels sont deux avantages et deux inconvénients majeurs d'un [[PeerToPeer|réseau Peer-to-Peer]] ?
+> Quels sont deux avantages et deux inconvénients majeurs d'un réseau Peer-to-Peer ?
 > > [!success]- Réponse
 > > **Avantages** : Facile à configurer, moins complexe, coût réduit, idéal pour les tâches simples.
-> > **Inconvénients** : Pas d'[[CentralizedAdministration|administration centralisée]], [[SecurityVulnerabilities|moins sécurisé]], [[Scalability|non évolutif]], [[NetworkPerformance|performances potentiellement ralenties]] (si l'hôte joue les deux rôles intensivement).
+> > **Inconvénients** : Pas d'administration centralisée, moins sécurisé, non évolutif, performances potentiellement ralenties (si l'hôte joue les deux rôles intensivement).
 
 > [!QUESTION] Question 4
-> Nommez les trois catégories principales de composants de l'[[NetworkInfrastructure|infrastructure réseau]] et donnez un exemple pour chaque.
+> Nommez les trois catégories principales de composants de l'infrastructure réseau et donnez un exemple pour chaque.
 > > [!success]- Réponse
-> > 4. **[[EndDevices|Périphériques Finaux]]** : Ex: [[Computers|ordinateurs]], smartphones, [[NetworkPrinter|imprimantes]].
-> > 5. **[[IntermediateDevice|Périphériques Intermédiaires]]** : Ex: [[Router|routeurs]], commutateurs, [[AccessPoint|points d'accès]].
-> > 6. **[[NetworkMedia|Supports Réseau]]** : Ex: [[FiberOpticCable|câbles]] (fibre optique, cuivre), [[RadioWaves|connexions sans fil]].
+> > 4. **Périphériques Finaux** : Ex: ordinateurs, smartphones, imprimantes.
+> > 5. **Périphériques Intermédiaires** : Ex: routeurs, commutateurs, points d'accès.
+> > 6. **Supports Réseau** : Ex: câbles (fibre optique, cuivre), connexions sans fil.
 
 > [!QUESTION] Question 5
-> Quel est le rôle principal d'un [[InternetServiceProvider|FAI]] et quel type de média physique est le principal support du [[InternetBackbone|réseau fédérateur Internet]] ?
+> Quel est le rôle principal d'un FAI et quel type de média physique est le principal support du réseau fédérateur Internet ?
 > > [!success]- Réponse
-> > Le rôle principal d'un [[InternetServiceProvider|FAI]] est d'assurer la liaison entre le [[HomeNetwork|réseau domestique]] (ou d'[[Enterprise|entreprise]]) et l'[[Internet|Internet]]. Le principal support physique du [[InternetBackbone|réseau fédérateur Internet]] est le [[FiberOpticCable|câble en fibre optique]].
+> > Le rôle principal d'un FAI est d'assurer la liaison entre le réseau domestique (ou d'entreprise) et l'Internet. Le principal support physique du réseau fédérateur Internet est le câble en fibre optique.
 
 ## 🔗 Liens du Module
 * **Précédent** : [[RIB01-01_Module1]]

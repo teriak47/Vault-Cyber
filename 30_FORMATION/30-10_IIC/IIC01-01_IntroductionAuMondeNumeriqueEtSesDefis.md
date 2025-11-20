@@ -1,41 +1,13 @@
 ---
 tags:
   - cour
-  - technologie/numerique
-  - environnement-numerique
-  - systeme/exploitation
-  - application
-  - navigateur-web
-  - confidentialite/donnees
-  - securite/donnees
-  - protection/vie-privee
-  - fosse-numerique
-  - sensibilisation/utilisateur
   - introduction
-  - technologie
-  - internet
-  - web
-  - internet-des-objets
-  - connectivite
-  - confidentialite
-  - service/en-ligne
-  - service/e-commerce
-  - service/bancaire
-  - service/reseau-social
-  - service/abonnement
-  - service/education
-  - fossé-numerique
-  - impact-societal
-  - modeles-economiques
-  - culture-numerique
 aliases:
   - Introduction au Monde Numérique
   - IIC01-01 Introduction
   - 01-01 | Introduction au Monde Numérique et ses Défis
 archetype: cour
 module: IIC (Introduction à l'informatique et cybersécurité)
-source:
-  - https://ifapme.itslearning.com/
 cssclasses:
   - max
 ---

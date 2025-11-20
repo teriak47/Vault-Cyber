@@ -23,8 +23,8 @@ cssclasses:
 > Une analogie simple est une conversation téléphonique classique où deux personnes peuvent parler et s'entendre simultanément sans avoir besoin d'attendre que l'autre ait fini de parler. Un autre exemple courant est le fonctionnement d'un commutateur réseau moderne, où les appareils terminaux connectés peuvent envoyer et recevoir des paquets de données en même temps.
 
 ## 📜 Origine / Étymologie
-> Le terme "full-duplex" est une combinaison des concepts techniques de "full" (complet, simultané) et de "duplex" (bidirectionnel), décrivant une capacité de communication qui permet les deux directions en même temps. Ce concept s'est développé avec l'évolution des [[Network|réseaux]] informatiques pour améliorer la [[NetworkPerformance|performance réseau]].
+> Le terme "full-duplex" est une combinaison des concepts techniques de "full" (complet, simultané) et de "duplex" (bidirectionnel), décrivant une capacité de communication qui permet les deux directions en même temps. Ce concept s'est développé avec l'évolution des réseaux informatiques pour améliorer la performance réseau.
 
 ## 🔗 Notes Connexes
-* **Mode opposé**: [[HalfDuplexCommunication|Communication half-duplex]]
-* **Mode simplifié**: [[SimplexCommunication|Communication simplex]]
+* **Mode opposé**: Communication half-duplex
+* **Mode simplifié**: Communication simplex

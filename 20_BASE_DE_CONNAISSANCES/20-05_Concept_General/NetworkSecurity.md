@@ -14,30 +14,30 @@ cssclasses:
 # Sécurité Réseau
 
 ## 📥 Définition en une phrase
-> La sécurité réseau est l'ensemble des mesures [[SecurityControl|de contrôle]], [[SecurityPolicy|politiques]] et [[Technology|technologies]] conçues pour protéger l'[[Integrity|intégrité]], la [[Confidentiality|confidentialité]] et l'[[Availability|disponibilité]] des [[Network|réseaux informatiques]] et des [[Data|données]] qui y transitent contre les [[UnauthorizedAccess|accès non autorisés]], les [[Abuse|abus]], les modifications ou la [[DataLoss|destruction]].
+> La sécurité réseau est l'ensemble des mesures de contrôle, politiques et technologies conçues pour protéger l'intégrité, la confidentialité et l'disponibilité des réseaux informatiques et des données qui y transitent contre les accès non autorisés, les abus, les modifications ou la destruction.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Contrôle d'Accès et [[Authentication|Authentification]]**: S'assurer que seuls les [[User|utilisateurs]] et [[NetworkDevice|appareils autorisés]] peuvent accéder à des [[Resource|ressources réseau]] spécifiques, via des mécanismes comme l'[[MultiFactorAuthentication|authentification multi-facteurs]] et les [[AccessControl|politiques de contrôle d'accès]].
-*   **Défense Périmétrique**: Utilisation de [[Firewall|pare-feu]], de [[IntrusionDetectionSystem|systèmes de détection d'intrusion]] ([[IntrusionDetectionSystem|IDS]]) et de [[IntrusionPreventionSystem|systèmes de prévention d'intrusion]] ([[IntrusionPreventionSystem|IPS]]) pour surveiller et contrôler le [[NetworkTraffic|trafic]] entre le [[InternalNetwork|réseau interne]] et les [[Internet|réseaux externes]].
-*   **Sécurité des [[EndpointSecurity|Endpoints]]**: Protection de tous les [[EndDevices|dispositifs terminaux]] connectés au réseau, incluant les [[MobileDeviceManagement|appareils mobiles]], les équipements [[InternetofThings|IoT]] et les postes de travail, via des solutions telles que le [[NetworkAccessControl|Network Access Control (NAC)]].
-*   **Confidentialité des [[DataCommunication|Communications]]**: Utilisation de protocoles de [[Encryption|chiffrement]] comme les [[VirtualPrivateNetwork|VPN]], [[SecureSocketLayer|SSL]] et [[TransportLayerSecurity|TLS]] pour protéger la [[Confidentiality|confidentialité]] des [[Data|données]] en transit.
-*   **Surveillance et Gestion des [[Log|Journaux]]**: Collecte et [[NetworkTrafficAnalysis|analyse]] des [[Log|journaux]] d'événements de [[Security|sécurité]] via des systèmes [[SecurityInformationAndEventManagement|SIEM]] pour détecter les [[AnomalyDetection|activités suspectes]] et faciliter la [[IncidentResponse|réponse aux incidents]].
-*   **[[NetworkSegmentation|Segmentation Réseau]]**: Division du [[Network|réseau]] en [[Subnet|sous-réseaux]] isolés ([[VirtualLocalAreaNetwork|VLAN]], [[Microsegmentation|micro-segmentation]]) pour limiter la portée des [[SystemCompromise|compromissions]] et mieux contrôler le [[NetworkTraffic|flux de trafic]].
+*   **Contrôle d'Accès et Authentification**: S'assurer que seuls les utilisateurs et appareils autorisés peuvent accéder à des ressources réseau spécifiques, via des mécanismes comme l'authentification multi-facteurs et les politiques de contrôle d'accès.
+*   **Défense Périmétrique**: Utilisation de pare-feu, de systèmes de détection d'intrusion (IDS) et de systèmes de prévention d'intrusion (IPS) pour surveiller et contrôler le trafic entre le réseau interne et les réseaux externes.
+*   **Sécurité des Endpoints**: Protection de tous les dispositifs terminaux connectés au réseau, incluant les appareils mobiles, les équipements IoT et les postes de travail, via des solutions telles que le Network Access Control (NAC).
+*   **Confidentialité des Communications**: Utilisation de protocoles de chiffrement comme les VPN, SSL et TLS pour protéger la confidentialité des données en transit.
+*   **Surveillance et Gestion des Journaux**: Collecte et analyse des journaux d'événements de sécurité via des systèmes SIEM pour détecter les activités suspectes et faciliter la réponse aux incidents.
+*   **Segmentation Réseau**: Division du réseau en sous-réseaux isolés (VLAN, micro-segmentation) pour limiter la portée des compromissions et mieux contrôler le flux de trafic.
 
 ## 💡 Importance en Cybersécurité
-> La [[NetworkSecurity|sécurité réseau]] est fondamentale pour maintenir la [[CIATriad|triade CIA]] ([[Confidentiality|confidentialité]], [[Integrity|intégrité]], [[Availability|disponibilité]]) des [[InformationSecurity|informations]] et des [[System|systèmes]] d'une [[Enterprise|organisation]]. Elle vise à protéger contre un large éventail de [[Threat|menaces]], telles que les [[Malware|logiciels malveillants]] ([[Virus|virus]], [[Ransomware|ransomwares]], [[Trojan|chevaux de Troie]]), les [[DenialOfService|attaques par déni de service]] (y compris les [[DistributedDenialOfService|DDoS]]), les [[DataBreach|fuites de données]] et les [[InsiderThreat|menaces internes]]. Une [[NetworkSecurity|sécurité réseau]] robuste est essentielle pour prévenir les [[FinancialLoss|pertes financières]], les [[ReputationalDamage|dommages à la réputation]] et assurer la [[BusinessContinuity|continuité des activités]], faisant d'elle une pierre angulaire de toute [[Cybersecurity|stratégie de cybersécurité]] efficace et de la [[DataProtection|protection des données]].
+> La sécurité réseau est fondamentale pour maintenir la triade CIA (confidentialité, intégrité, disponibilité) des informations et des systèmes d'une organisation. Elle vise à protéger contre un large éventail de menaces, telles que les logiciels malveillants (virus, ransomwares, chevaux de Troie), les attaques par déni de service (y compris les DDoS), les fuites de données et les menaces internes. Une sécurité réseau robuste est essentielle pour prévenir les pertes financières, les dommages à la réputation et assurer la continuité des activités, faisant d'elle une pierre angulaire de toute stratégie de cybersécurité efficace et de la protection des données.
 
 ## 🔗 Notes Connexes
-*   [[Cybersecurity|Cybersécurité]]
-*   [[InformationSecurity|Sécurité de l'Information]]
-*   [[CIATriad|Triade CIA]]
-*   [[Network|Réseau]]
-*   [[SecurityPolicy|Politique de sécurité]]
-*   [[VulnerabilityManagement|Gestion des Vulnérabilités]]
-*   [[IncidentResponse|Réponse aux incidents]]
-*   [[DefenseInDepth|Défense en Profondeur]]
-*   [[ThreatActor|Acteur de Menace]]
-*   [[SecurityOperationsCenter|Centre d'Opérations de Sécurité (SOC)]]
-*   [[NetworkAccessControl|Network Access Control]]
-*   [[Microsegmentation|Micro-segmentation]]
-*   [[WirelessNetworkSecurity|Sécurité des réseaux sans fil]]
+*   Cybersécurité
+*   Sécurité de l'Information
+*   Triade CIA
+*   Réseau
+*   Politique de sécurité
+*   Gestion des Vulnérabilités
+*   Réponse aux incidents
+*   Défense en Profondeur
+*   Acteur de Menace
+*   Centre d'Opérations de Sécurité (SOC)
+*   Network Access Control
+*   Micro-segmentation
+*   Sécurité des réseaux sans fil

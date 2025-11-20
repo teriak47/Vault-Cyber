@@ -15,7 +15,7 @@ cssclasses:
 # IIC : Introduction à l'informatique et cybersécurité
 
 > [!ABSTRACT] Présentation du Module
-> Ce module d'introduction vise à fournir une compréhension fondamentale du monde numérique, des principes de l'informatique et des concepts clés de la [[InformationSecurity|sécurité de l'information]] et de la [[Cybercrime|cybersécurité]]. Il couvre les bases nécessaires pour appréhender les enjeux et les défis du paysage technologique actuel, en posant les jalons pour des études plus approfondies.
+> Ce module d'introduction vise à fournir une compréhension fondamentale du monde numérique, des principes de l'informatique et des concepts clés de la [[InformationSecurity|sécurité de l'information]] et de la [[Cybersecurity|Cybersécurité]]. Il couvre les bases nécessaires pour appréhender les enjeux et les défis du paysage technologique actuel, en posant les jalons pour des études plus approfondies.
 ## 📋 Programme & Index des Leçons
 
 - [[IIC01-01_IntroductionAuMondeNumeriqueEtSesDefis|01-01 | Introduction au Monde Numérique et ses Défis]]

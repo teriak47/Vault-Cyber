@@ -14,39 +14,39 @@ cssclasses:
 # Protocole de Message de Contrôle Internet version 6 (ICMPv6)
 
 ## 🎯 Rôle et Couche OSI
-> L'[[ICMPv6|ICMPv6]] est un [[Protocol|protocole]] fondamental pour [[InternetProtocolVersion6|IPv6]], opérant à la [[InternetLayer|couche Internet]] ([[NetworkLayer|Couche Réseau]]) du [[InternetProtocolSuite|modèle TCP/IP]]. Son rôle principal est de signaler les erreurs de traitement des [[Packet|paquets]], de fournir des fonctions de [[Testing|diagnostic]] et d'offrir des fonctionnalités essentielles à la gestion du réseau [[InternetProtocolVersion6|IPv6]], telles que la [[NeighborDiscoveryProtocol|découverte de voisins]] et de [[Router|routeurs]].
+> L'ICMPv6 est un protocole fondamental pour IPv6, opérant à la couche Internet (Couche Réseau) du modèle TCP/IP. Son rôle principal est de signaler les erreurs de traitement des paquets, de fournir des fonctions de diagnostic et d'offrir des fonctionnalités essentielles à la gestion du réseau IPv6, telles que la découverte de voisins et de routeurs.
 
 ## ⚙️ Fonctionnement
-1.  **Signalement d'erreurs**: [[ICMPv6|ICMPv6]] informe les [[Host|hôtes]] et les [[Router|routeurs]] des problèmes rencontrés lors de la [[DataTransmission|transmission de données]]. Les types de messages d'erreur incluent "Destination Unreachable" (destination inaccessible), "Packet Too Big" (paquet trop grand, lié à la [[PathMTUDiscovery|découverte du MTU de chemin]]), "Time Exceeded" (temps dépassé, pour les boucles ou les paquets expirés) et "Parameter Problem" (problème de paramètre dans l'en-tête [[InternetProtocolVersion6|IPv6]]).
-2.  **Fonctions de diagnostic**: Il permet de vérifier la [[NetworkCommunication|connectivité réseau]] entre les [[Host|hôtes]] via les messages "Echo Request" et "Echo Reply", similaires à la commande `ping` d'[[InternetControlMessageProtocol|ICMP pour IPv4]].
-3.  **[[NeighborDiscoveryProtocol|Découverte de Voisins (NDP)]]**: Un ensemble crucial de messages [[ICMPv6|ICMPv6]] utilisé pour diverses fonctions locales au [[NetworkSegment|segment réseau]], notamment la [[AddressResolutionProtocol|résolution d'adresses MAC]], la [[DuplicateAddressDetection|détection d'adresses en double]] et la [[RouterDiscovery|découverte de routeurs]]. Les messages [[NeighborDiscoveryProtocol|NDP]] comprennent:
-    *   **[[RouterSolicitation|Router Solicitation (RS)]]**: Envoyé par un [[Host|hôte]] pour demander aux [[Router|routeurs]] d'envoyer un [[RouterAdvertisement|Router Advertisement]] immédiatement.
-    *   **[[RouterAdvertisement|Router Advertisement (RA)]]**: Envoyé par un [[Router|routeur]] en réponse à un [[RouterSolicitation|RS]] ou périodiquement pour annoncer sa présence, les [[NetworkPrefix|préfixes réseau]] disponibles et d'autres informations de [[NetworkConfiguration|configuration]].
-    *   **[[NeighborSolicitation|Neighbor Solicitation (NS)]]**: Utilisé par un [[Host|hôte]] pour déterminer l'[[MediaAccessControlAddress|adresse MAC]] d'un [[Neighbor|voisin]] ou pour détecter une [[DuplicateAddressDetection|adresse en double]].
-    *   **[[NeighborAdvertisement|Neighbor Advertisement (NA)]]**: Réponse à un [[NeighborSolicitation|NS]], annonçant l'[[MediaAccessControlAddress|adresse MAC]] de l'[[Host|hôte]] ou du [[Router|routeur]] ciblé.
-    *   **[[ICMPv6RedirectMessage|Redirection]]**: Envoyé par un [[Router|routeur]] pour informer un [[Host|hôte]] d'une meilleure route vers une destination spécifique sur le même [[NetworkSegment|segment réseau]].
-4.  **[[MulticastListenerDiscovery|Multicast Listener Discovery (MLD)]]**: Gère l'adhésion et le départ des [[Host|hôtes]] aux groupes de [[Multicast|diffusion multilatérale]] sur un [[LocalAreaNetwork|LAN]].
-* **Ports par défaut**: [[ICMPv6|ICMPv6]] n'utilise pas de [[PortNumber|numéros de port]] au sens [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]], car il opère à la [[InternetLayer|couche Internet]].
+1.  **Signalement d'erreurs**: ICMPv6 informe les hôtes et les routeurs des problèmes rencontrés lors de la transmission de données. Les types de messages d'erreur incluent "Destination Unreachable" (destination inaccessible), "Packet Too Big" (paquet trop grand, lié à la découverte du MTU de chemin), "Time Exceeded" (temps dépassé, pour les boucles ou les paquets expirés) et "Parameter Problem" (problème de paramètre dans l'en-tête IPv6).
+2.  **Fonctions de diagnostic**: Il permet de vérifier la connectivité réseau entre les hôtes via les messages "Echo Request" et "Echo Reply", similaires à la commande `ping` d'ICMP pour IPv4.
+3.  **Découverte de Voisins (NDP)**: Un ensemble crucial de messages ICMPv6 utilisé pour diverses fonctions locales au segment réseau, notamment la résolution d'adresses MAC, la détection d'adresses en double et la découverte de routeurs. Les messages NDP comprennent:
+    *   **Router Solicitation (RS)**: Envoyé par un hôte pour demander aux routeurs d'envoyer un Router Advertisement immédiatement.
+    *   **Router Advertisement (RA)**: Envoyé par un routeur en réponse à un RS ou périodiquement pour annoncer sa présence, les préfixes réseau disponibles et d'autres informations de configuration.
+    *   **Neighbor Solicitation (NS)**: Utilisé par un hôte pour déterminer l'adresse MAC d'un voisin ou pour détecter une adresse en double.
+    *   **Neighbor Advertisement (NA)**: Réponse à un NS, annonçant l'adresse MAC de l'hôte ou du routeur ciblé.
+    *   **Redirection**: Envoyé par un routeur pour informer un hôte d'une meilleure route vers une destination spécifique sur le même segment réseau.
+4.  **Multicast Listener Discovery (MLD)**: Gère l'adhésion et le départ des hôtes aux groupes de diffusion multilatérale sur un LAN.
+* **Ports par défaut**: ICMPv6 n'utilise pas de numéros de port au sens TCP ou UDP, car il opère à la couche Internet.
 
 ## 🛡️ Sécurité du Protocole
 * **Vulnérabilités connues**:
-  * [[DenialOfService|Attaques par déni de service (DoS)]]: Une inondation de requêtes [[ICMPv6|ICMPv6]] (ex: Echo Request) peut saturer les ressources d'un [[Host|hôte]] ou d'un [[Network|réseau]].
-  * [[Reconnaissance|Reconnaissance]]: Les messages Echo peuvent être utilisés par les [[ThreatActor|acteurs de menace]] pour scanner un [[Network|réseau]] et identifier les [[Host|hôtes]] actifs.
-  * [[ManInTheMiddle|Attaques de l'homme du milieu (MitM)]]: Le [[NeighborDiscoveryProtocol|NDP]] est vulnérable au [[Spoofing|spoofing]], où un attaquant peut envoyer de fausses [[RouterAdvertisement|RA]] ou [[NeighborAdvertisement|NA]] pour rediriger le [[NetworkTraffic|trafic]].
-  * [[AddressSpoofing|Usurpation d'adresse]]: Des messages [[ICMPv6|ICMPv6]] malveillants peuvent tenter de faire passer une [[InternetProtocol|adresse IPv6]] pour une autre.
+  * Attaques par déni de service (DoS): Une inondation de requêtes ICMPv6 (ex: Echo Request) peut saturer les ressources d'un hôte ou d'un réseau.
+  * Reconnaissance: Les messages Echo peuvent être utilisés par les acteurs de menace pour scanner un réseau et identifier les hôtes actifs.
+  * Attaques de l'homme du milieu (MitM): Le NDP est vulnérable au spoofing, où un attaquant peut envoyer de fausses RA ou NA pour rediriger le trafic.
+  * Usurpation d'adresse: Des messages ICMPv6 malveillants peuvent tenter de faire passer une adresse IPv6 pour une autre.
 * **Versions sécurisées**:
-  * [[SecureNeighborDiscovery|Secure Neighbor Discovery (SEND)]]: Une extension de sécurité qui utilise la [[Cryptography|cryptographie]] pour protéger le [[NeighborDiscoveryProtocol|NDP]] contre le [[Spoofing|spoofing]] et les [[ManInTheMiddle|attaques MitM]], en assurant l'[[Authentication|authentification]] des messages.
+  * Secure Neighbor Discovery (SEND): Une extension de sécurité qui utilise la cryptographie pour protéger le NDP contre le spoofing et les attaques MitM, en assurant l'authentification des messages.
 
 ## 🔗 Notes Connexes
-* [[InternetProtocolVersion6|Protocole Internet version 6 (IPv6)]]
-* [[InternetControlMessageProtocol|Protocole de Message de Contrôle Internet (ICMP) pour IPv4]]
-* [[NeighborDiscoveryProtocol|Neighbor Discovery Protocol (NDP)]]
-* [[MulticastListenerDiscovery|Multicast Listener Discovery (MLD)]]
-* [[RouterSolicitation|Router Solicitation (RS)]]
-* [[RouterAdvertisement|Router Advertisement (RA)]]
-* [[NeighborSolicitation|Neighbor Solicitation (NS)]]
-* [[NeighborAdvertisement|Neighbor Advertisement (NA)]]
-* [[ICMPv6RedirectMessage|Redirection (ICMPv6)]]
-* [[SecureNeighborDiscovery|Secure Neighbor Discovery (SEND)]]
-* [[NetworkAccessControl|Contrôle d'Accès Réseau (NAC)]]
-* [[Wireshark|Wireshark]] (pour l'analyse du trafic [[ICMPv6|ICMPv6]])
+* Protocole Internet version 6 (IPv6)
+* Protocole de Message de Contrôle Internet (ICMP) pour IPv4
+* Neighbor Discovery Protocol (NDP)
+* Multicast Listener Discovery (MLD)
+* Router Solicitation (RS)
+* Router Advertisement (RA)
+* Neighbor Solicitation (NS)
+* Neighbor Advertisement (NA)
+* Redirection (ICMPv6)
+* Secure Neighbor Discovery (SEND)
+* Contrôle d'Accès Réseau (NAC)
+* Wireshark (pour l'analyse du trafic ICMPv6)

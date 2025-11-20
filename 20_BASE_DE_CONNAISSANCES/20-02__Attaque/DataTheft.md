@@ -14,47 +14,47 @@ cssclasses:
 # Vol de Données
 
 ## 📥 Définition
-> Le [[DataTheft|Vol de Données]] est l'action non autorisée d'accéder, de copier, de transférer ou de prendre possession de [[SensitiveData|données sensibles]] ou confidentielles sans le consentement du propriétaire légitime, entraînant généralement une [[Confidentiality|violation de la confidentialité]].
+> Le Vol de Données est l'action non autorisée d'accéder, de copier, de transférer ou de prendre possession de données sensibles ou confidentielles sans le consentement du propriétaire légitime, entraînant généralement une violation de la confidentialité.
 
 ## 🎯 Vecteurs d'Attaque
-*   **[[UnauthorizedAccess|Accès Non Autorisé]]** : Souvent par des failles de sécurité, des [[Misconfiguration|erreurs de configuration]], ou des [[StolenCredentials|identifiants volés]].
-*   **[[SocialEngineering|Ingénierie Sociale]]** : Techniques visant à manipuler les individus, comme le [[Phishing|hameçonnage]] ou le [[Smishing|smishing]], pour obtenir des accès ou des informations.
-*   **[[Malware|Logiciels Malveillants]]** : Utilisation de [[Spyware|logiciels espions]], [[Keylogger|enregistreurs de frappe]], ou [[RemoteAccessTrojan|chevaux de Troie d'accès à distance (RAT)]] pour collecter et exfiltrer des données.
-*   **[[VulnerabilityExploitation|Exploits de Vulnérabilités]]** : Exploitation de [[SoftwareVulnerability|vulnérabilités logicielles]] (ex: [[SqlInjection|injection SQL]], [[CrossSiteScripting|XSS]]) pour accéder aux systèmes et aux données.
-*   **[[InsiderThreat|Menaces Internes]]** : Le vol de données peut être perpétré par des employés actuels ou anciens ayant un accès légitime aux systèmes.
-*   **[[AdvancedPersistentThreat|Menaces Persistantes Avancées (APT)]]** : Des groupes d'[[ThreatActor|attaquants]] sophistiqués menant des campagnes de longue durée pour exfiltrer des données.
+*   **Accès Non Autorisé** : Souvent par des failles de sécurité, des erreurs de configuration, ou des identifiants volés.
+*   **Ingénierie Sociale** : Techniques visant à manipuler les individus, comme le hameçonnage ou le smishing, pour obtenir des accès ou des informations.
+*   **Logiciels Malveillants** : Utilisation de logiciels espions, enregistreurs de frappe, ou chevaux de Troie d'accès à distance (RAT) pour collecter et exfiltrer des données.
+*   **Exploits de Vulnérabilités** : Exploitation de vulnérabilités logicielles (ex: injection SQL, XSS) pour accéder aux systèmes et aux données.
+*   **Menaces Internes** : Le vol de données peut être perpétré par des employés actuels ou anciens ayant un accès légitime aux systèmes.
+*   **Menaces Persistantes Avancées (APT)** : Des groupes d'attaquants sophistiqués menant des campagnes de longue durée pour exfiltrer des données.
 
 ## 💥 Impacts Potentiels
-*   [[DataBreach|Fuite de données]] massive et non désirée.
-*   [[ReputationalDamage|Atteinte à la réputation]] de l'[[Enterprise|entreprise]] ou de l'organisation.
-*   [[FinancialLoss|Pertes financières]] directes (amendes, litiges, coûts de remédiation).
-*   Problèmes de [[LegalCompliance|conformité légale]] et réglementaire (ex: [[GeneralDataProtectionRegulation|RGPD]]).
+*   Fuite de données massive et non désirée.
+*   Atteinte à la réputation de l'entreprise ou de l'organisation.
+*   Pertes financières directes (amendes, litiges, coûts de remédiation).
+*   Problèmes de conformité légale et réglementaire (ex: RGPD).
 *   Perte de confiance des clients et partenaires.
-*   Compromission de la [[Confidentiality|confidentialité]] des [[PersonalData|données personnelles]] (PII).
+*   Compromission de la confidentialité des données personnelles (PII).
 
 ##  concret
-> Un [[ThreatActor|attaquant]] cible une [[SoftwareApplication|application logicielle]] via une [[SqlInjection|injection SQL]] pour obtenir un [[UnauthorizedAccess|accès non autorisé]] à la [[Database|base de données]] d'un [[WebServer|serveur web]]. Une fois à l'intérieur, il exfiltre des millions d'enregistrements contenant des [[PersonallyIdentifiableInformation|informations personnellement identifiables (PII)]] qu'il revend ensuite sur le [[DarkWeb|dark web]].
+> Un attaquant cible une application logicielle via une injection SQL pour obtenir un accès non autorisé à la base de données d'un serveur web. Une fois à l'intérieur, il exfiltre des millions d'enregistrements contenant des informations personnellement identifiables (PII) qu'il revend ensuite sur le dark web.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[Encryption|Chiffrement]] des [[Data|données]] au repos et en transit.
-    *   Mise en œuvre de [[AccessControl|contrôles d'accès]] stricts et du [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
-    *   Déploiement de solutions de [[DataLossPrevention|Prévention des Pertes de Données (DLP)]].
-    *   [[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|Sensibilisation des utilisateurs]] aux [[SocialEngineering|attaques d'ingénierie sociale]] et à la [[SecurityAwareness|sécurité]].
-    *   [[VulnerabilityManagement|Gestion proactive des vulnérabilités]] et [[PatchManagement|gestion des correctifs]].
-    *   Utilisation de la [[MultiFactorAuthentication|MFA]] pour renforcer l'[[Authentication|authentification]].
+    *   Chiffrement des données au repos et en transit.
+    *   Mise en œuvre de contrôles d'accès stricts et du principe du moindre privilège.
+    *   Déploiement de solutions de Prévention des Pertes de Données (DLP).
+    *   Sensibilisation des utilisateurs aux attaques d'ingénierie sociale et à la sécurité.
+    *   Gestion proactive des vulnérabilités et gestion des correctifs.
+    *   Utilisation de la MFA pour renforcer l'authentification.
 *   **Détection** :
-    *   [[SecurityInformationAndEventManagement|Systèmes SIEM]] pour la [[SecurityMonitoring|surveillance de sécurité]] et l'[[AnomalyDetection|analyse des anomalies]].
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] pour identifier les activités suspectes.
-    *   [[NetworkMonitoring|Surveillance réseau]] et [[NetworkTrafficAnalysis|analyse du trafic réseau]] pour détecter l'exfiltration de données.
+    *   Systèmes SIEM pour la surveillance de sécurité et l'analyse des anomalies.
+    *   Systèmes de détection d'intrusion (IDS) pour identifier les activités suspectes.
+    *   Surveillance réseau et analyse du trafic réseau pour détecter l'exfiltration de données.
 *   **Réponse** :
-    *   Établissement et test d'un [[IncidentResponse|plan de réponse à incident]] robuste pour minimiser les dommages.
-    *   Procédures de [[BackupAndRecovery|sauvegarde et récupération]] pour restaurer les données affectées.
+    *   Établissement et test d'un plan de réponse à incident robuste pour minimiser les dommages.
+    *   Procédures de sauvegarde et récupération pour restaurer les données affectées.
 
 ## 🔗 Notes Connexes
-*   [[DataBreach|Fuite de Données]]
-*   [[DataProtection|Protection des Données]]
-*   [[Confidentiality|Confidentialité]]
-*   [[Cybercrime|Cybercriminalité]]
-*   [[InformationSecurity|Sécurité de l'Information]]
-*   [[ThreatActor|Acteur de Menace]]
+*   Fuite de Données
+*   Protection des Données
+*   Confidentialité
+*   Cybercriminalité
+*   Sécurité de l'Information
+*   Acteur de Menace

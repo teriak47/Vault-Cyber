@@ -25,7 +25,7 @@ cssclasses:
 # Vim (Vi IMproved)
 
 ## 🎯 Objectif Principal
-Vim, abréviation de "Vi IMproved", est un puissant éditeur de texte modale et un [[OpenSource|logiciel libre]] hautement configurable. Conçu pour la vitesse et la productivité, il permet une manipulation efficace des fichiers texte et du [[SourceCode|code source]] en utilisant principalement des commandes clavier, le rendant indispensable pour le [[Scripting|scripting]], la [[Programming|programmation]] et l'administration système dans les [[CommandLineInterface|environnements en ligne de commande]].
+Vim, abréviation de "Vi IMproved", est un puissant éditeur de texte modale et un logiciel libre hautement configurable. Conçu pour la vitesse et la productivité, il permet une manipulation efficace des fichiers texte et du code source en utilisant principalement des commandes clavier, le rendant indispensable pour le scripting, la programmation et l'administration système dans les environnements en ligne de commande.
 
 ## 💡 Concepts et Fonctionnalités Clés
 
@@ -38,10 +38,10 @@ La caractéristique la plus distinctive de Vim est son système d'édition modal
 
 ### Fonctionnalités Avancées
 Vim offre une richesse de fonctionnalités qui vont au-delà de l'édition de base :
-*   **Plugins**: L'écosystème de plugins de Vim est vaste, permettant d'étendre ses capacités avec des fonctionnalités pour l'[[Programming|édition]] de code spécifique (syntaxe, linter, auto-complétion), l'intégration de systèmes de contrôle de version comme Git, ou l'amélioration de la navigation. Des gestionnaires de [[DependencyManagement|plugins]] comme `Vim-plug` ou `Vundle` facilitent leur installation et gestion.
-*   **Macros**: Les utilisateurs peuvent enregistrer des séquences de frappes clavier pour [[Automation|automatiser]] des tâches répétitives, une fonctionnalité extrêmement puissante pour des modifications de texte complexes ou des refactorisations de [[SourceCode|code]] à grande échelle.
+*   **Plugins**: L'écosystème de plugins de Vim est vaste, permettant d'étendre ses capacités avec des fonctionnalités pour l'édition de code spécifique (syntaxe, linter, auto-complétion), l'intégration de systèmes de contrôle de version comme Git, ou l'amélioration de la navigation. Des gestionnaires de plugins comme `Vim-plug` ou `Vundle` facilitent leur installation et gestion.
+*   **Macros**: Les utilisateurs peuvent enregistrer des séquences de frappes clavier pour automatiser des tâches répétitives, une fonctionnalité extrêmement puissante pour des modifications de texte complexes ou des refactorisations de code à grande échelle.
 *   **Fenêtres et Onglets**: Vim gère plusieurs fichiers ou sections du même fichier à travers des "fenêtres" (splits horizontaux ou verticaux) et des "onglets", améliorant la productivité lors de la consultation ou l'édition de plusieurs documents simultanément.
-*   **Intégration Shell**: Il est possible d'exécuter des [[Command|commandes]] [[Shell|shell]] directement depuis Vim (`:!commande`), ou de capturer la sortie de ces [[Command|commandes]] pour l'insérer dans le fichier courant (`:read !commande`).
+*   **Intégration Shell**: Il est possible d'exécuter des commandes shell directement depuis Vim (`:!commande`), ou de capturer la sortie de ces commandes pour l'insérer dans le fichier courant (`:read !commande`).
 
 ## ⚙️ Cas d'usage / Commandes Utiles
 
@@ -121,21 +121,21 @@ Vim offre une richesse de fonctionnalités qui vont au-delà de l'édition de ba
 
 ## 🛡️ Avantages en Cybersécurité
 
-*   **Ubiquité et Portabilité**: Préinstallé sur la plupart des systèmes [[Linux]] et Unix, Vim est un outil universel pour les administrateurs système, les développeurs et les professionnels de la [[Cybersecurity|cybersécurité]] travaillant sur des serveurs distants via [[SecureShell|SSH]] où les [[GraphicalUserInterface|interfaces graphiques]] sont souvent absentes.
-*   **Efficacité et Rapidité**: Sa conception textuelle et l'optimisation pour le clavier permettent une édition et une [[Analysis|analyse]] de [[Log|journaux]], la manipulation de [[NetworkConfiguration|fichiers de configuration]], la rédaction de [[Script|scripts]] ou l'examen de [[SourceCode|code source]] à une vitesse inégalée, cruciale lors d'une [[IncidentResponse|réponse aux incidents]] ou de tâches d'[[PenetrationTesting|audit]].
-*   **Capacités d'Automation et de Scripting**: Grâce aux macros et au langage de [[Scripting|scripting]] intégré (Vimscript), les opérations répétitives peuvent être [[Automation|automatisées]], ce qui est inestimable pour le traitement de grandes quantités de [[Data|données]] ou la modification en masse de fichiers.
-*   **Sécurité Minimale**: En tant qu'outil purement en [[CommandLineInterface|ligne de commande]], Vim a une [[AttackSurface|surface d'attaque]] réduite comparée aux éditeurs graphiques plus complexes qui peuvent avoir davantage de dépendances et de vulnérabilités potentielles. Il ne nécessite pas de ressources [[Hardware|matérielles]] importantes, ce qui est utile dans des environnements contraints.
+*   **Ubiquité et Portabilité**: Préinstallé sur la plupart des systèmes Linux et Unix, Vim est un outil universel pour les administrateurs système, les développeurs et les professionnels de la cybersécurité travaillant sur des serveurs distants via SSH où les interfaces graphiques sont souvent absentes.
+*   **Efficacité et Rapidité**: Sa conception textuelle et l'optimisation pour le clavier permettent une édition et une analyse de journaux, la manipulation de fichiers de configuration, la rédaction de scripts ou l'examen de code source à une vitesse inégalée, cruciale lors d'une réponse aux incidents ou de tâches d'audit.
+*   **Capacités d'Automation et de Scripting**: Grâce aux macros et au langage de scripting intégré (Vimscript), les opérations répétitives peuvent être automatisées, ce qui est inestimable pour le traitement de grandes quantités de données ou la modification en masse de fichiers.
+*   **Sécurité Minimale**: En tant qu'outil purement en ligne de commande, Vim a une surface d'attaque réduite comparée aux éditeurs graphiques plus complexes qui peuvent avoir davantage de dépendances et de vulnérabilités potentielles. Il ne nécessite pas de ressources matérielles importantes, ce qui est utile dans des environnements contraints.
 
 ## ⚠️ Points d'attention
 
-*   **Courbe d'Apprentissage Rigoureuse**: La nature modale de Vim et sa dépendance aux [[Command|commandes]] clavier imposent une [[Formation|courbe d'apprentissage]] abrupte. Maîtriser Vim demande un investissement significatif en temps et en pratique, ce qui peut être un frein pour les débutants.
-*   **[[Configuration|Configuration]] Initiale**: Pour exploiter pleinement le potentiel de Vim, une [[Configuration|configuration]] personnalisée via le fichier `.vimrc` est quasi indispensable. Ce processus, bien que puissant, peut être intimidant et chronophage pour les nouveaux utilisateurs.
-*   **Risques d'Erreurs**: Une manipulation incorrecte en mode Normal ou l'exécution accidentelle d'une [[Command|commande]] puissante peut entraîner des modifications non désirées, voire une [[DataCorruption|corruption de données]] sur des fichiers importants ou des [[System|systèmes]] critiques, surtout si l'utilisateur n'est pas pleinement [[SecurityAwareness|sensibilisé]] à ses modes de fonctionnement.
+*   **Courbe d'Apprentissage Rigoureuse**: La nature modale de Vim et sa dépendance aux commandes clavier imposent une courbe d'apprentissage abrupte. Maîtriser Vim demande un investissement significatif en temps et en pratique, ce qui peut être un frein pour les débutants.
+*   **Configuration Initiale**: Pour exploiter pleinement le potentiel de Vim, une configuration personnalisée via le fichier `.vimrc` est quasi indispensable. Ce processus, bien que puissant, peut être intimidant et chronophage pour les nouveaux utilisateurs.
+*   **Risques d'Erreurs**: Une manipulation incorrecte en mode Normal ou l'exécution accidentelle d'une commande puissante peut entraîner des modifications non désirées, voire une corruption de données sur des fichiers importants ou des systèmes critiques, surtout si l'utilisateur n'est pas pleinement sensibilisé à ses modes de fonctionnement.
 
 ## 🔗 Notes Connexes
-*   **Guide**: [[GuideVimDuDebutantAuFormateur|Guide Vim]]
-*   **Alternative**: [[NanoEditor|Nano]]
-*   **Environnement clé**: [[Linux]]
-*   **Interaction principale**: [[CommandLineInterface|Interface en ligne de commande]]
-*   **Type de fichier géré**: [[SourceCode|Code Source]]
-*   **Processus associé**: [[Scripting|Scripting]]
+*   **Guide**: Guide Vim
+*   **Alternative**: Nano
+*   **Environnement clé**: Linux
+*   **Interaction principale**: Interface en ligne de commande
+*   **Type de fichier géré**: Code Source
+*   **Processus associé**: Scripting

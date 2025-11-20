@@ -15,38 +15,38 @@ cssclasses:
 # Internetwork Packet Exchange (IPX)
 
 ## 🎯 Rôle et Couche OSI
-> Le protocole [[InternetworkPacketExchange|Internetwork Packet Exchange]] (IPX) est un [[Protocol|protocole]] de [[NetworkLayer|couche réseau]] (Couche 3 du [[OpenSystemsInterconnectionModel|modèle OSI]]) obsolète, développé par Novell. Il était principalement utilisé dans les réseaux Novell NetWare des années 1980 et 1990 pour acheminer des [[Packet|paquets]] de [[Data|données]] entre [[Host|hôtes]] sur des [[LocalAreaNetwork|réseaux locaux]] et [[WideAreaNetwork|étendus]].
+> Le protocole Internetwork Packet Exchange (IPX) est un protocole de couche réseau (Couche 3 du modèle OSI) obsolète, développé par Novell. Il était principalement utilisé dans les réseaux Novell NetWare des années 1980 et 1990 pour acheminer des paquets de données entre hôtes sur des réseaux locaux et étendus.
 
 ## ⚙️ Fonctionnement
-1.  **Protocole sans connexion**: Similaire à [[UserDatagramProtocol|UDP]], [[InternetworkPacketExchange|IPX]] est un [[Protocol|protocole]] de type datagramme, ce qui signifie qu'il n'établit pas de connexion préalable et ne garantit ni la livraison, ni l'ordre des [[Packet|paquets]].
-2.  **Adressage IPX**: Utilise une [[NetworkAddress|adresse réseau]] de 32 bits pour identifier le [[NetworkSegment|segment réseau]] et une [[HostAddress|adresse de nœud]] de 48 bits (généralement l'[[MediaAccessControlAddress|adresse MAC]] du [[NetworkInterfaceCard|NIC]]) pour identifier le [[Host|hôte]] spécifique.
-3.  **Routage**: Incluait des capacités de [[Routing|routage]] pour acheminer les [[Packet|paquets]] à travers des [[Router|routeurs]] vers des [[RemoteNetwork|réseaux distants]].
-4.  **Association avec SPX**: Souvent associé au [[SequencedPacketExchange|Sequenced Packet Exchange]] (SPX), un [[Protocol|protocole]] de [[TransportLayer|couche de transport]] qui fournissait un service fiable et orienté connexion par-dessus [[InternetworkPacketExchange|IPX]], de manière analogue au rôle du [[TransmissionControlProtocol|TCP]] pour l'[[InternetProtocol|IP]].
-*   **Ports par défaut**: Non pertinent pour [[InternetworkPacketExchange|IPX]] car il ne fonctionne pas avec le concept de ports comme dans [[TransmissionControlProtocol|TCP/IP]].
+1.  **Protocole sans connexion**: Similaire à UDP, IPX est un protocole de type datagramme, ce qui signifie qu'il n'établit pas de connexion préalable et ne garantit ni la livraison, ni l'ordre des paquets.
+2.  **Adressage IPX**: Utilise une adresse réseau de 32 bits pour identifier le segment réseau et une adresse de nœud de 48 bits (généralement l'adresse MAC du NIC) pour identifier le hôte spécifique.
+3.  **Routage**: Incluait des capacités de routage pour acheminer les paquets à travers des routeurs vers des réseaux distants.
+4.  **Association avec SPX**: Souvent associé au Sequenced Packet Exchange (SPX), un protocole de couche de transport qui fournissait un service fiable et orienté connexion par-dessus IPX, de manière analogue au rôle du TCP pour l'IP.
+*   **Ports par défaut**: Non pertinent pour IPX car il ne fonctionne pas avec le concept de ports comme dans TCP/IP.
 
 ## 🛡️ Sécurité du Protocole
 *   **Vulnérabilités connues**:
-    *   [[ObsoleteTechnology|Technologie Obsolète]] : Les systèmes basés sur [[InternetworkPacketExchange|IPX]] sont considérés comme des [[System|systèmes]] [[ObsoleteTechnology|hérités]], présentant des [[SecurityVulnerabilities|vulnérabilités de sécurité]] importantes dues à l'absence de [[PatchManagement|mises à jour]] et de support.
-    *   [[LackOfSupport|Manque de Support]] : L'absence de [[Software|logiciels]] et de [[Hardware|matériels]] modernes prenant en charge [[InternetworkPacketExchange|IPX]] signifie qu'aucune nouvelle faille de [[Security|sécurité]] ne sera corrigée.
-    *   [[CompatibilityIssue|Problèmes de compatibilité]] : L'intégration de [[System|systèmes]] [[InternetworkPacketExchange|IPX]] dans un [[CorporateNetwork|réseau d'entreprise]] moderne est complexe et peut introduire des [[AttackSurface|surfaces d'attaque]] inattendues.
+    *   Technologie Obsolète : Les systèmes basés sur IPX sont considérés comme des systèmes hérités, présentant des vulnérabilités de sécurité importantes dues à l'absence de mises à jour et de support.
+    *   Manque de Support : L'absence de logiciels et de matériels modernes prenant en charge IPX signifie qu'aucune nouvelle faille de sécurité ne sera corrigée.
+    *   Problèmes de compatibilité : L'intégration de systèmes IPX dans un réseau d'entreprise moderne est complexe et peut introduire des surfaces d'attaque inattendues.
 *   **Alternatives ou Mesures de Protection (migration recommandée)**:
-    *   [[Migration|Migration]] : La stratégie principale est la [[Migration|migration]] de tous les [[System|systèmes]] et [[OnlineServices|services]] utilisant [[InternetworkPacketExchange|IPX]] vers la [[TransmissionControlProtocol|suite de protocoles TCP/IP]].
-    *   [[NetworkSegmentation|Segmentation Réseau]] : Pour les [[System|systèmes]] [[ObsoleteTechnology|hérités]] qui ne peuvent pas être migrés immédiatement, une [[NetworkSegmentation|segmentation réseau]] rigoureuse est essentielle, les isolant dans des [[VirtualLocalAreaNetwork|VLAN]] dédiés et appliquant des [[Firewall|règles de pare-feu]] strictes.
-    *   [[Decommissioning|Mise hors service]] : Planifier le [[Decommissioning|retrait]] progressif et définitif de tous les composants [[InternetworkPacketExchange|IPX]] dès que possible.
-    *   [[SecurityAudit|Audit de Sécurité]] : Réaliser des [[SecurityAudit|audits de sécurité]] réguliers pour détecter toute présence ou [[NetworkCommunication|communication]] [[InternetworkPacketExchange|IPX]] non autorisée.
+    *   Migration : La stratégie principale est la migration de tous les systèmes et services utilisant IPX vers la suite de protocoles TCP/IP.
+    *   Segmentation Réseau : Pour les systèmes hérités qui ne peuvent pas être migrés immédiatement, une segmentation réseau rigoureuse est essentielle, les isolant dans des VLAN dédiés et appliquant des règles de pare-feu strictes.
+    *   Mise hors service : Planifier le retrait progressif et définitif de tous les composants IPX dès que possible.
+    *   Audit de Sécurité : Réaliser des audits de sécurité réguliers pour détecter toute présence ou communication IPX non autorisée.
 
 ## 🔗 Notes Connexes
-*   [[SequencedPacketExchange|SPX]]
-*   [[TransmissionControlProtocol|TCP/IP]]
-*   [[InternetProtocol|IP]]
-*   [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   [[UserDatagramProtocol|UDP]]
-*   [[ObsoleteTechnology|Technologie Obsolète]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[LackOfSupport|Manque de Support]]
-*   [[CompatibilityIssue|Problème de compatibilité]]
-*   [[Migration|Migration]]
-*   [[NetworkSegmentation|Segmentation Réseau]]
-*   [[Firewall|Pare-feu]]
-*   [[Decommissioning|Mise hors service]]
-*   [[SecurityAudit|Audit de Sécurité]]
+*   SPX
+*   TCP/IP
+*   IP
+*   Modèle OSI
+*   UDP
+*   Technologie Obsolète
+*   Vulnérabilité
+*   Manque de Support
+*   Problème de compatibilité
+*   Migration
+*   Segmentation Réseau
+*   Pare-feu
+*   Mise hors service
+*   Audit de Sécurité

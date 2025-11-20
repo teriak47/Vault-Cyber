@@ -18,21 +18,21 @@ cssclasses:
 # Débit (Throughput)
 
 ## 📥 Définition en une phrase
-> Le débit représente la quantité de [[Data|données]] effectivement et avec succès transférées sur un [[CommunicationChannel|canal de communication]] ou à travers un [[System|système]] sur une période de temps donnée.
+> Le débit représente la quantité de données effectivement et avec succès transférées sur un canal de communication ou à travers un système sur une période de temps donnée.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Performance réelle**: Mesure la [[NetworkPerformance|performance réelle]] d'un [[Network|réseau]] ou d'un [[System|système]], par opposition à sa [[Bandwidth|capacité théorique maximale (bande passante)]].
-*   **Unités de mesure**: Exprimé généralement en [[BitsPerSecond|bits par seconde (bps)]], [[KilobitsPerSecond|kilobits par seconde (Kbps)]], [[MegabitsPerSecond|mégabits par seconde (Mbps)]] ou [[GigabitsPerSecond|gigabits par seconde (Gbps)]].
-*   **Facteurs influençant**: Le débit est directement influencé par des facteurs tels que la [[Bandwidth|bande passante disponible]], la [[Latency|latence]], la [[PacketLoss|perte de paquets]], la [[NetworkCongestion|congestion réseau]], les capacités des équipements [[Hardware|matériels]] et le [[Protocol|protocole]] de [[NetworkCommunication|communication]] utilisé.
+*   **Performance réelle**: Mesure la performance réelle d'un réseau ou d'un système, par opposition à sa capacité théorique maximale (bande passante).
+*   **Unités de mesure**: Exprimé généralement en bits par seconde (bps), kilobits par seconde (Kbps), mégabits par seconde (Mbps) ou gigabits par seconde (Gbps).
+*   **Facteurs influençant**: Le débit est directement influencé par des facteurs tels que la bande passante disponible, la latence, la perte de paquets, la congestion réseau, les capacités des équipements matériels et le protocole de communication utilisé.
 
 ## 💡 Importance en Cybersécurité
-> Le débit est crucial pour évaluer l'efficacité et l'[[UserExperience|expérience utilisateur]] des [[SoftwareApplication|applications]] et [[OnlineServices|services en ligne]]. En cybersécurité, il permet de mesurer la capacité d'un [[Network|réseau]] ou d'un [[System|système]] à gérer le [[NetworkTrafficAnalysis|trafic]] et l'impact de [[DigitalAttack|cyberattaques]]. Une baisse soudaine du débit peut indiquer une [[DenialOfService|attaque par déni de service (DoS)]] ou une [[DistributedDenialOfService|attaque par déni de service distribué (DDoS)]] compromettant la [[Availability|disponibilité]] des [[Resource|ressources]], tandis qu'un débit anormalement élevé peut signaler une [[DataExfiltration|exfiltration de données]] ou une activité malveillante. Le contrôle du débit est également essentiel pour la [[QualityOfService|Qualité de service (QoS)]] et l'application de [[SecurityControl|contrôles de sécurité]] efficaces.
+> Le débit est crucial pour évaluer l'efficacité et l'expérience utilisateur des applications et services en ligne. En cybersécurité, il permet de mesurer la capacité d'un réseau ou d'un système à gérer le trafic et l'impact de cyberattaques. Une baisse soudaine du débit peut indiquer une attaque par déni de service (DoS) ou une attaque par déni de service distribué (DDoS) compromettant la disponibilité des ressources, tandis qu'un débit anormalement élevé peut signaler une exfiltration de données ou une activité malveillante. Le contrôle du débit est également essentiel pour la Qualité de service (QoS) et l'application de contrôles de sécurité efficaces.
 
 ## 🔗 Notes Connexes
-*   [[Bandwidth|Bande passante]]
-*   [[Latency|Latence]]
-*   [[NetworkCongestion|Congestion réseau]]
-*   [[QualityOfService|Qualité de service (QoS)]]
-*   [[NetworkPerformance|Performance réseau]]
-*   [[DataTransmission|Transmission de données]]
-*   [[PacketLoss|Perte de paquets]]
+*   Bande passante
+*   Latence
+*   Congestion réseau
+*   Qualité de service (QoS)
+*   Performance réseau
+*   Transmission de données
+*   Perte de paquets

@@ -18,32 +18,32 @@ cssclasses:
 # Logiciel : Microsoft Windows
 
 ## 🎯 Rôle et Fonction
-> [[Windows|Microsoft Windows]] est une famille de [[OperatingSystem|systèmes d'exploitation]] propriétaires développés par [[MicrosoftCorporation|Microsoft]], largement dominante sur le marché des [[Computer|ordinateurs]] personnels et des [[Server|serveurs]], réputée pour son [[GraphicalUserInterface|interface utilisateur graphique]] ([[GraphicalUserInterface|GUI]]). Il fournit une plateforme fondamentale pour l'exécution d'[[SoftwareApplication|applications logicielles]] et la gestion des [[Hardware|ressources matérielles]].
+> Microsoft Windows est une famille de systèmes d'exploitation propriétaires développés par Microsoft, largement dominante sur le marché des ordinateurs personnels et des serveurs, réputée pour son interface utilisateur graphique (GUI). Il fournit une plateforme fondamentale pour l'exécution d'applications logicielles et la gestion des ressources matérielles.
 
 ## ⚙️ Configuration
 *   **Fichiers et composants de configuration clés**:
-    *   [[WindowsRegistry|Registre Windows]] (base de données de configuration du système et des applications)
-    *   [[GroupPolicyObjects|Objets de Stratégie de Groupe]] (GPOs) pour la gestion centralisée
+    *   Registre Windows (base de données de configuration du système et des applications)
+    *   Objets de Stratégie de Groupe (GPOs) pour la gestion centralisée
     *   Fichiers système critiques (ex: `boot.ini`, `win.ini`, `system.ini` - pour la compatibilité, bien que moins utilisés)
 *   **Modules importants**:
-    *   [[WindowsServices|Services Windows]] (gestion des applications et fonctions système en arrière-plan)
-    *   [[Process|Processus]] et tâches planifiées
-    *   [[DeviceDriver|Pilotes de périphériques]] pour la communication avec le [[Hardware|matériel]]
-*   **Dépendances**: [[Hardware|Matériel]] compatible, [[Firmware|micrologiciel]] du BIOS/UEFI, [[Network|réseau]] pour les communications.
+    *   Services Windows (gestion des applications et fonctions système en arrière-plan)
+    *   Processus et tâches planifiées
+    *   Pilotes de périphériques pour la communication avec le matériel
+*   **Dépendances**: Matériel compatible, micrologiciel du BIOS/UEFI, réseau pour les communications.
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-*   **Gestion des [[Account|comptes]] et [[Credential|identifiants]]**: Implémenter des [[StrongPasswordPolicy|politiques de mots de passe forts]], utiliser la [[MultiFactorAuthentication|MFA]] et le [[PrincipleOfLeastPrivilege|principe du moindre privilège]].
-*   **Mises à jour régulières**: Appliquer systématiquement les [[PatchManagement|patchs de sécurité]] via Windows Update pour corriger les [[Vulnerability|vulnérabilités]].
-*   **Configuration du [[Firewall|pare-feu]]**: Activer et configurer le pare-feu Windows pour contrôler le [[NetworkCommunication|trafic réseau]] entrant et sortant.
-*   **[[EndpointSecurity|Protection des endpoints]]**: Déployer un [[Antivirus|logiciel antivirus]] et une solution [[EndpointDetectionAndResponse|EDR]] pour détecter et prévenir les [[Malware|logiciels malveillants]].
-*   **[[AccessControl|Contrôle d'accès]]**: Utiliser le [[RoleBasedAccessControl|contrôle d'accès basé sur les rôles]] et les listes de contrôle d'accès (ACL) NTFS pour restreindre l'accès aux [[Resource|ressources]].
-*   **[[DataEncryption|Chiffrement des données]]**: Utiliser des fonctionnalités comme [[BitLocker|BitLocker]] pour chiffrer les lecteurs de disque et protéger les [[SensitiveData|données sensibles]].
-*   **Sécurisation du [[Network|réseau]]**: Configurer les [[WirelessSecurity|paramètres de sécurité sans fil]] et utiliser un [[VirtualPrivateNetwork|VPN]] pour l'accès à distance sécurisé.
+*   **Gestion des comptes et identifiants**: Implémenter des politiques de mots de passe forts, utiliser la MFA et le principe du moindre privilège.
+*   **Mises à jour régulières**: Appliquer systématiquement les patchs de sécurité via Windows Update pour corriger les vulnérabilités.
+*   **Configuration du pare-feu**: Activer et configurer le pare-feu Windows pour contrôler le trafic réseau entrant et sortant.
+*   **Protection des endpoints**: Déployer un logiciel antivirus et une solution EDR pour détecter et prévenir les logiciels malveillants.
+*   **Contrôle d'accès**: Utiliser le contrôle d'accès basé sur les rôles et les listes de contrôle d'accès (ACL) NTFS pour restreindre l'accès aux ressources.
+*   **Chiffrement des données**: Utiliser des fonctionnalités comme BitLocker pour chiffrer les lecteurs de disque et protéger les données sensibles.
+*   **Sécurisation du réseau**: Configurer les paramètres de sécurité sans fil et utiliser un VPN pour l'accès à distance sécurisé.
 
 ## 🔍 Audit et Surveillance
 *   **Logs importants**:
-    *   [[WindowsEventLog|Journal des événements Windows]] (Sécurité, Système, Application) pour la [[SecurityMonitoring|surveillance]] et l'[[IncidentResponse|analyse des incidents]].
-    *   Journaux IIS pour les [[WebServer|serveurs Web]] tournant sous Windows.
+    *   Journal des événements Windows (Sécurité, Système, Application) pour la surveillance et l'analyse des incidents.
+    *   Journaux IIS pour les serveurs Web tournant sous Windows.
 *   **Commandes d'audit et outils de gestion**:
 ```powershell
 # Vérifier l'état du pare-feu Windows et les règles actives
@@ -60,12 +60,12 @@ Get-LocalGroupMember Administrators
 # Vérifier la configuration réseau
 ipconfig /all
 ```
-*   **Outils d'audit**: [[SecurityInformationAndEventManagement|SIEM]] pour la corrélation des événements, outils de [[VulnerabilityManagement|gestion des vulnérabilités]] et de [[SecurityAudit|scanner de sécurité]].
+*   **Outils d'audit**: SIEM pour la corrélation des événements, outils de gestion des vulnérabilités et de scanner de sécurité.
 
 ## 🔗 Notes Connexes
-*   [[CommonVulnerabilitiesAndExposures|Vulnérabilités connues (CVEs)]]
-*   [[ActiveDirectory|Active Directory]]
-*   [[WindowsServer|Windows Server]]
-*   [[OperatingSystem|Système d'exploitation]]
-*   [[Cybersecurity|Cybersécurité]]
-*   [[RegistryEditor|Éditeur du Registre]]
+*   Vulnérabilités connues (CVEs)
+*   Active Directory
+*   Windows Server
+*   Système d'exploitation
+*   Cybersécurité
+*   Éditeur du Registre

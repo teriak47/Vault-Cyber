@@ -18,39 +18,39 @@ cssclasses:
 # Non-Divulgation (Secret)
 
 ## 📥 Définition
-> La non-divulgation, dans le contexte de la [[Cybersecurity|cybersécurité]], fait référence à l'acte ou à la politique de ne pas rendre publiques ou accessibles certaines [[Data|informations]], en particulier les [[Vulnerability|vulnérabilités]] de [[System|système]] ou les détails d'[[Attack|attaques]]. 
+> La non-divulgation, dans le contexte de la cybersécurité, fait référence à l'acte ou à la politique de ne pas rendre publiques ou accessibles certaines informations, en particulier les vulnérabilités de système ou les détails d'attaques. 
 > 
-> Elle se distingue de la [[ResponsibleDisclosure|Divulgation Responsable]] (qui implique une divulgation contrôlée et coordonnée) et s'oppose à la [[FullDisclosure|Full Disclosure]] (divulgation immédiate et complète).
+> Elle se distingue de la Divulgation Responsable (qui implique une divulgation contrôlée et coordonnée) et s'oppose à la Full Disclosure (divulgation immédiate et complète).
 
 ## ⚖️ Contexte et Importance
-> La non-divulgation est un concept critique en [[Cybersecurity|cybersécurité]], car elle peut avoir des implications positives et négatives. 
-> Elle est souvent appliquée pour protéger la [[Confidentiality|confidentialité]] des [[Data|informations sensibles]], des [[TradeSecret|secrets commerciaux]] ou pour éviter d'exposer des [[Vulnerability|vulnérabilités]] avant qu'elles ne puissent être corrigées. 
-> Cependant, une non-divulgation excessive ou non justifiée peut entraver la [[Security|sécurité]] collective en empêchant la diffusion d'informations vitales sur les [[Threat|menaces]], ce qui peut exposer davantage d'[[Enterprise|organisations]] et d'[[User|utilisateurs]] à des [[DigitalAttack|attaques]].
+> La non-divulgation est un concept critique en cybersécurité, car elle peut avoir des implications positives et négatives. 
+> Elle est souvent appliquée pour protéger la confidentialité des informations sensibles, des secrets commerciaux ou pour éviter d'exposer des vulnérabilités avant qu'elles ne puissent être corrigées. 
+> Cependant, une non-divulgation excessive ou non justifiée peut entraver la sécurité collective en empêchant la diffusion d'informations vitales sur les menaces, ce qui peut exposer davantage d'organisations et d'utilisateurs à des attaques.
 
 ## ✅ Obligations et Bonnes Pratiques
 * **Ce qu'il faut faire**:
-  * Établir des [[SecurityPolicy|politiques de sécurité]] claires concernant la gestion et la divulgation des [[Vulnerability|vulnérabilités]].
-  * Assurer la [[Confidentiality|confidentialité]] des [[SensitiveData|données sensibles]] par des [[SecurityControl|contrôles de sécurité]] adéquats.
-  * Utiliser des [[NonDisclosureAgreement|accords de non-divulgation (NDA)]] pour protéger les [[Confidentiality|informations confidentielles]] dans des contextes spécifiques (ex: partenariats, audits).
-  * Respecter les exigences de [[LegalCompliance|conformité légale]] en matière de divulgation de [[DataBreach|violations de données]] ou de [[Vulnerability|vulnérabilités]].
+  * Établir des politiques de sécurité claires concernant la gestion et la divulgation des vulnérabilités.
+  * Assurer la confidentialité des données sensibles par des contrôles de sécurité adéquats.
+  * Utiliser des accords de non-divulgation (NDA) pour protéger les informations confidentielles dans des contextes spécifiques (ex: partenariats, audits).
+  * Respecter les exigences de conformité légale en matière de divulgation de violations de données ou de vulnérabilités.
 * **Ce qu'il faut éviter**:
-  * Cacher délibérément des [[Vulnerability|vulnérabilités]] qui pourraient être exploitées et causer des [[FinancialLoss|pertes financières]] ou des [[ReputationalDamage|dommages à la réputation]].
-  * S'appuyer sur la "sécurité par l'obscurité" (Security by Obscurity) plutôt que sur une [[SecurityByDesign|sécurité par conception]] robuste.
-  * Ne pas divulguer les [[DataBreach|fuites de données]] lorsque la loi l'exige (ex: selon le [[GeneralDataProtectionRegulation|RGPD]]).
+  * Cacher délibérément des vulnérabilités qui pourraient être exploitées et causer des pertes financières ou des dommages à la réputation.
+  * S'appuyer sur la "sécurité par l'obscurité" (Security by Obscurity) plutôt que sur une sécurité par conception robuste.
+  * Ne pas divulguer les fuites de données lorsque la loi l'exige (ex: selon le RGPD).
 
 ## 🌍 Exemples d'Application
-* **Programmes de [[BugBounty|Bug Bounty]]**: Les [[SecurityResearcher|chercheurs en sécurité]] s'engagent souvent dans une période de non-divulgation (stipulée par un [[NonDisclosureAgreement|NDA]] ou la [[VulnerabilityDisclosurePolicy|politique de divulgation]]) pendant que l'entreprise corrige la [[Vulnerability|vulnérabilité]].
-* **Gestion d'[[IncidentResponse|incidents]]**: Une [[Enterprise|organisation]] peut choisir de ne pas divulguer immédiatement les détails d'un [[IncidentResponse|incident]] ou d'une [[Attack|attaque]] pour limiter l'[[ReputationalDamage|atteinte à sa réputation]], contenir la [[Threat|menace]] ou éviter d'alerter les [[ThreatActor|attaquants]] sur les mesures de réponse en cours.
-* **[[InsiderThreat|Menaces internes]]**: Un [[InsiderThreat|acteur interne]] malveillant pourrait délibérément pratiquer la non-divulgation d'une [[Vulnerability|vulnérabilité]] qu'il a découverte ou créée, dans le but de l'exploiter ultérieurement.
+* **Programmes de Bug Bounty**: Les chercheurs en sécurité s'engagent souvent dans une période de non-divulgation (stipulée par un NDA ou la politique de divulgation) pendant que l'entreprise corrige la vulnérabilité.
+* **Gestion d'incidents**: Une organisation peut choisir de ne pas divulguer immédiatement les détails d'un incident ou d'une attaque pour limiter l'atteinte à sa réputation, contenir la menace ou éviter d'alerter les attaquants sur les mesures de réponse en cours.
+* **Menaces internes**: Un acteur interne malveillant pourrait délibérément pratiquer la non-divulgation d'une vulnérabilité qu'il a découverte ou créée, dans le but de l'exploiter ultérieurement.
 
 ## 🔗 Notes Connexes
-* [[ResponsibleDisclosure|Divulgation Responsable]]
-* [[FullDisclosure|Full Disclosure]]
-* [[NonDisclosureAgreement|Accord de Non-Divulgation]]
-* [[Confidentiality|Confidentialité]]
-* [[Privacy|Vie Privée]]
-* [[Vulnerability|Vulnérabilité]]
-* [[RiskManagement|Gestion des Risques]]
-* [[ReputationalDamage|Dommage à la réputation]]
-* [[GeneralDataProtectionRegulation|RGPD]]
-* [[VulnerabilityDisclosurePolicy|Politique de Divulgation des Vulnérabilités]]
+* Divulgation Responsable
+* Full Disclosure
+* Accord de Non-Divulgation
+* Confidentialité
+* Vie Privée
+* Vulnérabilité
+* Gestion des Risques
+* Dommage à la réputation
+* RGPD
+* Politique de Divulgation des Vulnérabilités

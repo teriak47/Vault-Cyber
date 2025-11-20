@@ -17,25 +17,25 @@ cssclasses:
 # Diffusion (Broadcast)
 
 ## 📥 Définition en une phrase
-> La [[Broadcast|diffusion]] est une méthode de [[NetworkCommunication|communication réseau]] où un unique [[Message|message]] est envoyé à tous les [[Host|hôtes]] ou [[NetworkDevice|périphériques réseau]] situés au sein d'un même [[BroadcastDomain|domaine de diffusion]].
+> La diffusion est une méthode de communication réseau où un unique message est envoyé à tous les hôtes ou périphériques réseau situés au sein d'un même domaine de diffusion.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Mécanisme de Transmission**: Un [[Packet|paquet]] est expédié avec une [[DestinationMacAddress|adresse MAC de destination]] spéciale (généralement `FF:FF:FF:FF:FF:FF`) ou une [[BroadcastAddress|adresse IP de diffusion]], assurant que chaque [[Host|hôte]] du [[BroadcastDomain|domaine de diffusion]] le reçoive.
-*   **Portée et Limites**: Le [[Broadcast|trafic de diffusion]] est intrinsèquement limité à son [[BroadcastDomain|domaine de diffusion]]. Les [[Router|routeurs]] agissent comme des frontières par défaut, empêchant la propagation des diffusions entre différents [[Network|réseaux]], tandis que les [[NetworkSwitch|commutateurs réseau]] transmettent le [[Broadcast|trafic de diffusion]] au sein du [[LocalAreaNetwork|LAN]] ou du [[VirtualLocalAreaNetwork|VLAN]] auquel ils appartiennent.
-*   **Utilisation Typique**: Essentielle pour des [[NetworkProtocol|protocoles réseau]] fondamentaux tels que l'[[AddressResolutionProtocol|ARP]] (résolution d'[[InternetProtocol|adresses IP]] en [[MediaAccessControlAddress|adresses MAC]]) et le [[DynamicHostConfigurationProtocol|DHCP]] (attribution dynamique d'[[InternetProtocol|adresses IP]]).
-*   **Contraste avec d'autres Communications**: La [[Broadcast|diffusion]] se distingue de l'[[Unicast|unidiffusion]] (communication un-à-un) et de la [[Multicast|multidiffusion]] (communication un-à-un-groupe).
+*   **Mécanisme de Transmission**: Un paquet est expédié avec une adresse MAC de destination spéciale (généralement `FF:FF:FF:FF:FF:FF`) ou une adresse IP de diffusion, assurant que chaque hôte du domaine de diffusion le reçoive.
+*   **Portée et Limites**: Le trafic de diffusion est intrinsèquement limité à son domaine de diffusion. Les routeurs agissent comme des frontières par défaut, empêchant la propagation des diffusions entre différents réseaux, tandis que les commutateurs réseau transmettent le trafic de diffusion au sein du LAN ou du VLAN auquel ils appartiennent.
+*   **Utilisation Typique**: Essentielle pour des protocoles réseau fondamentaux tels que l'ARP (résolution d'adresses IP en adresses MAC) et le DHCP (attribution dynamique d'adresses IP).
+*   **Contraste avec d'autres Communications**: La diffusion se distingue de l'unidiffusion (communication un-à-un) et de la multidiffusion (communication un-à-un-groupe).
 
 ## 💡 Importance en Cybersécurité
-> La [[Broadcast|diffusion]] est un pilier fondamental du fonctionnement des [[LocalAreaNetwork|réseaux locaux]], facilitant la découverte et l'allocation des [[NetworkResource|ressources]]. Cependant, sa nature "à tous" la rend intrinsèquement vulnérable. Un excès de [[Broadcast|trafic de diffusion]] peut entraîner une [[NetworkCongestion|congestion réseau]] (potentiellement une [[BroadcastStorm|tempête de diffusion]]) et des [[ServiceDisruption|interruptions de service]]. De plus, l'interception des paquets de [[Broadcast|diffusion]] est triviale pour un [[ThreatActor|attaquant]] au sein du même [[NetworkSegment|segment réseau]], posant des risques d'[[Eavesdropping|écoute clandestine]] et d'[[Spoofing|attaques d'usurpation]] (comme l'[[AddressResolutionProtocolPoisoning|empoisonnement ARP]]), particulièrement dans des [[FlatNetwork|réseaux plats]]. Une [[NetworkSegmentation|segmentation réseau]] adéquate, la [[PortSecurity|sécurité des ports]] et des mécanismes de [[StormControl|contrôle des tempêtes]] sont cruciaux pour atténuer ces risques.
+> La diffusion est un pilier fondamental du fonctionnement des réseaux locaux, facilitant la découverte et l'allocation des ressources. Cependant, sa nature "à tous" la rend intrinsèquement vulnérable. Un excès de trafic de diffusion peut entraîner une congestion réseau (potentiellement une tempête de diffusion) et des interruptions de service. De plus, l'interception des paquets de diffusion est triviale pour un attaquant au sein du même segment réseau, posant des risques d'écoute clandestine et d'attaques d'usurpation (comme l'empoisonnement ARP), particulièrement dans des réseaux plats. Une segmentation réseau adéquate, la sécurité des ports et des mécanismes de contrôle des tempêtes sont cruciaux pour atténuer ces risques.
 
 ## 🔗 Notes Connexes
-*   [[BroadcastDomain|Domaine de Diffusion]]
-*   [[NetworkCommunication|Communication réseau]]
-*   [[AddressResolutionProtocol|Protocole de Résolution d'Adresses (ARP)]]
-*   [[DynamicHostConfigurationProtocol|Protocole de Configuration d'Hôte Dynamique (DHCP)]]
-*   [[Multicast|Multidiffusion]]
-*   [[Unicast|Unidiffusion]]
-*   [[NetworkSegmentation|Segmentation Réseau]]
-*   [[VirtualLocalAreaNetwork|Réseau Local Virtuel (VLAN)]]
-*   [[BroadcastStorm|Tempête de Diffusion]]
-*   [[StormControl|Contrôle des Tempêtes]]
+*   Domaine de Diffusion
+*   Communication réseau
+*   Protocole de Résolution d'Adresses (ARP)
+*   Protocole de Configuration d'Hôte Dynamique (DHCP)
+*   Multidiffusion
+*   Unidiffusion
+*   Segmentation Réseau
+*   Réseau Local Virtuel (VLAN)
+*   Tempête de Diffusion
+*   Contrôle des Tempêtes

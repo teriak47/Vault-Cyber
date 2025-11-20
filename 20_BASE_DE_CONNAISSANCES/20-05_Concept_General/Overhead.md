@@ -21,19 +21,19 @@ cssclasses:
 # Overhead (Charge Supplémentaire)
 
 ## 📥 Définition en une phrase
-> L'[[Overhead|overhead]] représente la [[Resource|ressource]] ou l'[[Task|effort]] additionnel, au-delà du strict nécessaire, requis pour l'exécution d'une tâche, d'une fonction ou la mise en œuvre d'un [[System|système]], souvent en échange d'avantages tels que la [[Security|sécurité]], la [[Reliability|fiabilité]] ou des fonctionnalités avancées.
+> L'overhead représente la ressource ou l'effort additionnel, au-delà du strict nécessaire, requis pour l'exécution d'une tâche, d'une fonction ou la mise en œuvre d'un système, souvent en échange d'avantages tels que la sécurité, la fiabilité ou des fonctionnalités avancées.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Consommation de Ressources**: L'[[Overhead|overhead]] se manifeste par une consommation accrue de [[Resource|ressources]] (CPU, [[MemoryManagement|mémoire]], [[Bandwidth|bande passante]], etc.) par rapport à un scénario où la fonctionnalité ou la mesure de sécurité ne serait pas appliquée.
-*   **Impact sur la [[NetworkPerformance|Performance réseau]]**: Toute activité non directement liée à la fonction principale d'un [[System|système]], comme le [[Cryptography|chiffrement]] ou le [[SecurityMonitoring|monitorage de sécurité]], peut introduire un délai ou une réduction du [[Throughput|débit]], affectant ainsi la performance globale.
-*   **Compromis (Trade-off)**: L'intégration de [[SecurityControl|contrôles de sécurité]] robustes, de mécanismes de [[Redundancy|redondance]] ou de fonctionnalités avancées s'accompagne souvent d'un [[Overhead|overhead]] inévitable, nécessitant un [[RiskManagement|compromis]] entre sécurité/fonctionnalité et [[NetworkPerformance|performance réseau]]/coût.
+*   **Consommation de Ressources**: L'overhead se manifeste par une consommation accrue de ressources (CPU, mémoire, bande passante, etc.) par rapport à un scénario où la fonctionnalité ou la mesure de sécurité ne serait pas appliquée.
+*   **Impact sur la Performance réseau**: Toute activité non directement liée à la fonction principale d'un système, comme le chiffrement ou le monitorage de sécurité, peut introduire un délai ou une réduction du débit, affectant ainsi la performance globale.
+*   **Compromis (Trade-off)**: L'intégration de contrôles de sécurité robustes, de mécanismes de redondance ou de fonctionnalités avancées s'accompagne souvent d'un overhead inévitable, nécessitant un compromis entre sécurité/fonctionnalité et performance réseau/coût.
 
-## 💡 Importance en [[Cybersecurity|Cybersécurité]]
-> En [[Cybersecurity|cybersécurité]], comprendre et gérer l'[[Overhead|overhead]] est fondamental. Les [[SecurityControl|contrôles de sécurité]], tels que le [[Encryption|chiffrement]] des [[Data|données]], l'[[Authentication|authentification]] [[MultiFactorAuthentication|MFA]], la [[SecurityMonitoring|surveillance]] continue ou les [[Antivirus|logiciels antivirus]], introduisent tous une forme de charge supplémentaire. Une mauvaise gestion ou une sous-estimation de cet [[Overhead|overhead]] peut entraîner des dégradations de [[NetworkPerformance|performance réseau]] inacceptables, une [[UserExperience|mauvaise expérience utilisateur]] ou des coûts d'exploitation excessifs, poussant parfois à désactiver des mesures de sécurité vitales. À l'inverse, l'[[Overhead|overhead]] bien compris et maîtrisé permet d'implémenter une [[DefenseInDepth|défense en profondeur]] efficace sans paralyser les [[System|systèmes]] ou les [[Process|processus]] métier.
+## 💡 Importance en Cybersécurité
+> En cybersécurité, comprendre et gérer l'overhead est fondamental. Les contrôles de sécurité, tels que le chiffrement des données, l'authentification MFA, la surveillance continue ou les logiciels antivirus, introduisent tous une forme de charge supplémentaire. Une mauvaise gestion ou une sous-estimation de cet overhead peut entraîner des dégradations de performance réseau inacceptables, une mauvaise expérience utilisateur ou des coûts d'exploitation excessifs, poussant parfois à désactiver des mesures de sécurité vitales. À l'inverse, l'overhead bien compris et maîtrisé permet d'implémenter une défense en profondeur efficace sans paralyser les systèmes ou les processus métier.
 
 ## 🔗 Notes Connexes
-*   **Impact direct**: [[NetworkPerformance|Performance réseau]]
-*   **Consommation**: [[Resource|Ressource]]
-*   **Source courante**: [[SecurityControl|Contrôle de Sécurité]]
-*   **Exemple technique**: [[Cryptography|Cryptographie]]
-*   **Stratégie associée**: [[Redundancy|Redondance]]
+*   **Impact direct**: Performance réseau
+*   **Consommation**: Ressource
+*   **Source courante**: Contrôle de Sécurité
+*   **Exemple technique**: Cryptographie
+*   **Stratégie associée**: Redondance

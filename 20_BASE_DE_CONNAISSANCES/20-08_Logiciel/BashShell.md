@@ -17,7 +17,7 @@ cssclasses:
 # Bash Shell (GNU Bash)
 
 ## 🎯 Rôle et Fonction
-> Bash (Bourne-Again SHell) est un [[Shell|interpréteur de commandes]] et un langage de [[Scripting|scriptage]] [[OpenSource|open-source]] largement utilisé sur les systèmes d'exploitation [[Linux|Linux]] et [[MacOS|macOS]]. Il permet aux utilisateurs d'interagir avec le [[OperatingSystem|système d'exploitation]] via une [[CommandLineInterface|interface en ligne de commande]], d'exécuter des [[Command|commandes]], et d'automatiser des [[Task|tâches]] via des [[Script|scripts]].
+> Bash (Bourne-Again SHell) est un interpréteur de commandes et un langage de scriptage open-source largement utilisé sur les systèmes d'exploitation Linux et macOS. Il permet aux utilisateurs d'interagir avec le système d'exploitation via une interface en ligne de commande, d'exécuter des commandes, et d'automatiser des tâches via des scripts.
 
 ## ⚙️ Configuration
 *   **Fichiers de configuration clés**:
@@ -26,19 +26,19 @@ cssclasses:
     *   `/etc/bash.bashrc` : Configuration globale de Bash.
     *   `/etc/profile` : Configuration globale pour les shells de connexion.
 *   **Fonctionnalités importantes**: Complétion automatique (tab-completion), historique des commandes, gestion des alias et des fonctions.
-*   **Dépendances**: Principalement le [[Kernel|noyau]] du [[OperatingSystem|système d'exploitation]] et les [[GNUCoreUtilities|utilitaires GNU Core]].
+*   **Dépendances**: Principalement le noyau du système d'exploitation et les utilitaires GNU Core.
 
 ## 🔒 Sécurisation (Durcissement / Hardening)
-*   **Mise à jour régulière**: Maintenir Bash à jour pour corriger les [[Vulnerability|vulnérabilités]] connues, y compris les [[ZeroDay|zero-day]].
-*   **[[PrincipleOfLeastPrivilege|Moindre privilège]]**: Exécuter les [[Script|scripts]] et les [[Command|commandes]] Bash avec le minimum de droits nécessaires.
-*   **Validation des entrées**: S'assurer que toutes les entrées utilisateur utilisées dans les [[Script|scripts]] Bash sont correctement validées et nettoyées pour prévenir les [[CommandInjection|injections de commandes]].
-*   **Configuration sécurisée**: Restreindre l'accès aux fichiers de configuration Bash et aux [[Script|scripts]] exécutables.
+*   **Mise à jour régulière**: Maintenir Bash à jour pour corriger les vulnérabilités connues, y compris les zero-day.
+*   **Moindre privilège**: Exécuter les scripts et les commandes Bash avec le minimum de droits nécessaires.
+*   **Validation des entrées**: S'assurer que toutes les entrées utilisateur utilisées dans les scripts Bash sont correctement validées et nettoyées pour prévenir les injections de commandes.
+*   **Configuration sécurisée**: Restreindre l'accès aux fichiers de configuration Bash et aux scripts exécutables.
 *   **Gestion des variables d'environnement**: Vérifier et nettoyer la variable `PATH` pour éviter l'exécution de programmes malveillants.
 
 ## 🔍 Audit et Surveillance
 *   **Logs importants**:
-    *   `~/.bash_history` : Fichier qui enregistre l'historique des [[Command|commandes]] exécutées par l'[[User|utilisateur]].
-    *   [[Log|Journaux]] du [[OperatingSystem|système d'exploitation]] (par exemple, `/var/log/auth.log` sur [[Linux]]) peuvent contenir des informations sur les activités des [[Shell|shells]].
+    *   `~/.bash_history` : Fichier qui enregistre l'historique des commandes exécutées par l'utilisateur.
+    *   Journaux du système d'exploitation (par exemple, `/var/log/auth.log` sur Linux) peuvent contenir des informations sur les activités des shells.
 *   **Commandes d'audit**:
 ```bash
 # Afficher l'historique des commandes de l'utilisateur actuel
@@ -55,9 +55,9 @@ alias
 ```
 
 ## 🔗 Notes Connexes
-*   [[Shell|Shell]]
-*   [[Linux|Linux]]
-*   [[MacOS|macOS]]
-*   [[CommandLineInterface|Ligne de Commande]]
-*   [[Scripting|Scripting]]
-*   [[VulnerabilityManagement|Gestion des Vulnérabilités]]
+*   Shell
+*   Linux
+*   macOS
+*   Ligne de Commande
+*   Scripting
+*   Gestion des Vulnérabilités

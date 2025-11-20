@@ -13,25 +13,25 @@ cssclasses:
 # Isolation
 
 ## 📥 Définition en une phrase
-> L'isolation est une stratégie de [[Security|sécurité]] consistant à séparer les composants d'un [[System|système]], les [[Network|réseaux]], les [[SoftwareApplication|applications]] ou les [[Data|données]] afin de limiter l'étendue d'une [[Attack|attaque]] ou la [[MalwareDistribution|propagation de logiciels malveillants]].
+> L'isolation est une stratégie de sécurité consistant à séparer les composants d'un système, les réseaux, les applications ou les données afin de limiter l'étendue d'une attaque ou la propagation de logiciels malveillants.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Isolation Réseau**: Séparation des segments de [[Network|réseau]] pour restreindre le [[NetworkCommunication|trafic]] et contenir la [[MalwareDistribution|propagation de logiciels malveillants]]. Ceci est souvent réalisé via la [[NetworkSegmentation|segmentation réseau]], les [[VirtualLocalAreaNetwork|VLAN]] ou les [[Firewall|pare-feu]].
-*   **Isolation de Processus/Application**: Limiter les interactions entre les [[Process|processus]] ou [[SoftwareApplication|applications]] d'un [[OperatingSystem|système d'exploitation]] pour empêcher une [[Exploitation|exploitation]] de s'étendre à d'autres composants.
-*   **Isolation de Données**: Séparer les [[SensitiveData|données sensibles]] des autres [[Data|données]] ou [[System|systèmes]] pour protéger la [[Confidentiality|confidentialité]] et l'[[Integrity|intégrité]] en cas de [[DataBreach|violation]]. Cela peut inclure le [[SecureStorage|stockage sécurisé]] ou la [[DataEncryption|cryptographie]].
-*   **Isolation par Virtualisation/Conteneurisation**: Utilisation de [[VirtualEnvironment|machines virtuelles]] ou de conteneurs pour encapsuler des [[SoftwareApplication|applications]] et leurs dépendances, fournissant ainsi un environnement isolé et portable.
+*   **Isolation Réseau**: Séparation des segments de réseau pour restreindre le trafic et contenir la propagation de logiciels malveillants. Ceci est souvent réalisé via la segmentation réseau, les VLAN ou les pare-feu.
+*   **Isolation de Processus/Application**: Limiter les interactions entre les processus ou applications d'un système d'exploitation pour empêcher une exploitation de s'étendre à d'autres composants.
+*   **Isolation de Données**: Séparer les données sensibles des autres données ou systèmes pour protéger la confidentialité et l'intégrité en cas de violation. Cela peut inclure le stockage sécurisé ou la cryptographie.
+*   **Isolation par Virtualisation/Conteneurisation**: Utilisation de machines virtuelles ou de conteneurs pour encapsuler des applications et leurs dépendances, fournissant ainsi un environnement isolé et portable.
 
 ## 💡 Importance en Cybersécurité
-> L'isolation est fondamentale pour la [[DefenseInDepth|défense en profondeur]] car elle permet de réduire l'[[AttackSurface|surface d'attaque]] et de minimiser l'impact d'une [[SystemCompromise|compromission]]. En créant des limites de [[Security|sécurité]] claires, elle empêche les [[ThreatActor|acteurs de menaces]] de se déplacer latéralement et de compromettre l'ensemble d'une [[Enterprise|entreprise]] ou d'un [[System|système]]. Elle est cruciale pour maintenir la [[Confidentiality|confidentialité]] et l'[[Availability|disponibilité]] des [[Resource|ressources]].
+> L'isolation est fondamentale pour la défense en profondeur car elle permet de réduire l'surface d'attaque et de minimiser l'impact d'une compromission. En créant des limites de sécurité claires, elle empêche les acteurs de menaces de se déplacer latéralement et de compromettre l'ensemble d'une entreprise ou d'un système. Elle est cruciale pour maintenir la confidentialité et l'disponibilité des ressources.
 
 ## 🔗 Notes Connexes
-*   [[NetworkSegmentation|Segmentation Réseau]]
-*   [[VirtualLocalAreaNetwork|Réseau Local Virtuel (VLAN)]]
-*   [[Firewall|Pare-feu]]
-*   [[DefenseInDepth|Défense en Profondeur]]
-*   [[VirtualEnvironment|Environnement Virtuel]]
-*   [[ZeroTrust|Zéro Confiance]]
-*   [[AttackSurface|Surface d'attaque]]
-*   [[Confidentiality|Confidentialité]]
-*   [[Integrity|Intégrité]]
-*   [[PrivilegeEscalation|Escalade de Privilèges]]
+*   Segmentation Réseau
+*   Réseau Local Virtuel (VLAN)
+*   Pare-feu
+*   Défense en Profondeur
+*   Environnement Virtuel
+*   Zéro Confiance
+*   Surface d'attaque
+*   Confidentialité
+*   Intégrité
+*   Escalade de Privilèges

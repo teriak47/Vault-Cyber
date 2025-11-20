@@ -22,21 +22,21 @@ cssclasses:
 # Personnalité Numérique (Digital Personality)
 
 ## 📥 Définition en une phrase
-> La [[DigitalPersonality|personnalité numérique]] représente l'ensemble des informations, des comportements et des interactions d'un [[User|utilisateur]] ou d'une [[Organisation|organisation]] dans l'[[DigitalEnvironment|environnement numérique]], façonnant sa réputation et son [[DigitalIdentity|identité numérique]].
+> La personnalité numérique représente l'ensemble des informations, des comportements et des interactions d'un utilisateur ou d'une organisation dans l'environnement numérique, façonnant sa réputation et son identité numérique.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[DigitalIdentity|Identité Numérique]]**: C'est la somme de toutes les informations sur une personne ou une entité disponible en ligne, qu'elles soient vérifiées ou non. Elle comprend des éléments comme les [[Username|noms d'utilisateur]], les [[Profile|profils]], les [[DigitalCertificate|certificats numériques]] et les attributs associés aux [[Account|comptes]] en ligne.
-*   **[[VolunteeredData|Données Volontaires]]**: Ce sont les informations que les utilisateurs partagent consciemment, par exemple, les publications sur les [[SocialMediaPlatform|plateformes de médias sociaux]], les informations de [[ProfessionalProfile|profil professionnel]], les photos, ou les données saisies dans les formulaires en ligne.
-*   **[[ObservedData|Données Observées]]**: Elles sont collectées par des systèmes et des services en ligne sans intervention directe de l'utilisateur, comme l'[[LocationData|emplacement géographique]], l'historique de navigation, les requêtes de [[SearchEngine|moteur de recherche]], ou les interactions avec des [[SoftwareApplication|applications logicielles]]. Les [[HttpCookies|cookies HTTP]] en sont un exemple courant.
-*   **[[InferredData|Données Inférees]]**: Ces données sont dérivées ou déduites à partir de l'analyse des données volontaires et observées, souvent à l'aide d'[[ArtificialIntelligence|IA]] et de l'[[MachineLearning|apprentissage automatique]]. Elles peuvent inclure des préférences, des centres d'intérêt, des [[CreditScore|scores de crédit]] ou même des prédictions de comportement.
-*   **[[Privacy|Vie Privée]] et [[DataProtection|Protection des Données]]**: La gestion de la [[DigitalPersonality|personnalité numérique]] est intrinsèquement liée à la [[Privacy|vie privée]] et à la protection des [[PersonalData|données personnelles]], impliquant des notions de [[Consent|consentement]], de [[PurposeLimitation|limitation de la finalité]] et de [[DataMinimization|minimisation des données]].
+*   **Identité Numérique**: C'est la somme de toutes les informations sur une personne ou une entité disponible en ligne, qu'elles soient vérifiées ou non. Elle comprend des éléments comme les noms d'utilisateur, les profils, les certificats numériques et les attributs associés aux comptes en ligne.
+*   **Données Volontaires**: Ce sont les informations que les utilisateurs partagent consciemment, par exemple, les publications sur les plateformes de médias sociaux, les informations de profil professionnel, les photos, ou les données saisies dans les formulaires en ligne.
+*   **Données Observées**: Elles sont collectées par des systèmes et des services en ligne sans intervention directe de l'utilisateur, comme l'emplacement géographique, l'historique de navigation, les requêtes de moteur de recherche, ou les interactions avec des applications logicielles. Les cookies HTTP en sont un exemple courant.
+*   **Données Inférees**: Ces données sont dérivées ou déduites à partir de l'analyse des données volontaires et observées, souvent à l'aide d'IA et de l'apprentissage automatique. Elles peuvent inclure des préférences, des centres d'intérêt, des scores de crédit ou même des prédictions de comportement.
+*   **Vie Privée et Protection des Données**: La gestion de la personnalité numérique est intrinsèquement liée à la vie privée et à la protection des données personnelles, impliquant des notions de consentement, de limitation de la finalité et de minimisation des données.
 
 ## 💡 Importance en Cybersécurité
-La compréhension de la [[DigitalPersonality|personnalité numérique]] est essentielle en [[Cybersecurity|cybersécurité]] car elle constitue une partie significative de la [[AttackSurface|surface d'attaque]] d'un [[User|utilisateur]] ou d'une [[Organisation|organisation]]. Des informations divulguées, volontairement ou non, peuvent être exploitées par des [[ThreatActor|acteurs de menaces]] pour des [[SocialEngineering|attaques d'ingénierie sociale]] telles que le [[Phishing|hameçonnage]], le [[CredentialStuffing|bourrage d'identifiants]] ou le [[AccountTakeover|vol de compte]]. Une [[ReputationalDamage|réputation]] numérique compromise peut entraîner des [[FinancialLoss|pertes financières]] et nuire à la [[Trust|confiance]]. La gestion proactive de la [[DigitalPersonality|personnalité numérique]] est une mesure préventive cruciale pour renforcer la [[Security|sécurité]] individuelle et organisationnelle et minimiser les [[Risk|risques]]. Elle nécessite une [[UserAwarenessTraining|sensibilisation des utilisateurs]] et une [[Vigilance|vigilance]] constante.
+La compréhension de la personnalité numérique est essentielle en cybersécurité car elle constitue une partie significative de la surface d'attaque d'un utilisateur ou d'une organisation. Des informations divulguées, volontairement ou non, peuvent être exploitées par des acteurs de menaces pour des attaques d'ingénierie sociale telles que le hameçonnage, le bourrage d'identifiants ou le vol de compte. Une réputation numérique compromise peut entraîner des pertes financières et nuire à la confiance. La gestion proactive de la personnalité numérique est une mesure préventive cruciale pour renforcer la sécurité individuelle et organisationnelle et minimiser les risques. Elle nécessite une sensibilisation des utilisateurs et une vigilance constante.
 
 ## 🔗 Notes Connexes
-*   **Concept central**: [[DigitalIdentity]]
-*   **Règlementation associée**: [[GeneralDataProtectionRegulation|RGPD]]
-*   **Vulnérabilité exploitée**: [[SocialEngineering]]
-*   **Sujet connexe**: [[IIC01-07_VotrePersonnaliteNumerique]]
-*   **Mesure de mitigation**: [[UserAwarenessTraining]]
+*   **Concept central**: DigitalIdentity
+*   **Règlementation associée**: RGPD
+*   **Vulnérabilité exploitée**: SocialEngineering
+*   **Sujet connexe**: IIC01-07_VotrePersonnaliteNumerique
+*   **Mesure de mitigation**: UserAwarenessTraining

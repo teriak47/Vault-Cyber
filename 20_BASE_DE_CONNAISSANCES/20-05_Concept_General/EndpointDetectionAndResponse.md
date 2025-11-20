@@ -14,24 +14,24 @@ cssclasses:
 # Détection et Réponse des Endpoints (EDR)
 
 ## 📥 Définition en une phrase
-> L'[[EndpointDetectionAndResponse|Endpoint Detection and Response]] (EDR) est une solution de [[Cybersecurity|cybersécurité]] qui surveille en continu les activités des [[EndDevices|endpoints]] (ordinateurs, serveurs, appareils mobiles) afin de détecter et de répondre rapidement aux [[Threat|menaces]] de [[Security|sécurité]] avancées.
+> L'Endpoint Detection and Response (EDR) est une solution de cybersécurité qui surveille en continu les activités des endpoints (ordinateurs, serveurs, appareils mobiles) afin de détecter et de répondre rapidement aux menaces de sécurité avancées.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Visibilité Complète des Endpoints**: Collecte et agrégation continues de [[Data|données]] détaillées sur l'activité des [[EndDevices|endpoints]] (ex: [[Process|processus]], [[NetworkCommunication|connexions réseau]], [[FileTransfer|accès aux fichiers]], [[System|modifications système]]), offrant une [[Visibility|visibilité]] sans précédent.
-*   **Détection Avancée des Menaces**: Utilisation d'[[Algorithm|algorithmes]] d'[[BehavioralAnalysis|analyse comportementale]] et de [[ThreatIntelligence|renseignement sur les menaces]] pour identifier les [[Threat|menaces sophistiquées]], y compris les [[FilelessMalware|logiciels malveillants sans fichier]], les [[AdvancedPersistentThreat|APT]], les [[Ransomware|rançongiciels]] et les [[ZeroDay|vulnérabilités zero-day]], allant au-delà de la [[SignatureBasedDetection|détection par signature]].
-*   **Capacités de Réponse et de Contention**: Fournit des [[Tool|outils]] pour réagir rapidement aux [[ThreatDetection|menaces détectées]], incluant la [[Containment|mise en quarantaine]] des [[EndpointDetectionAndResponse|endpoints]], l'[[ProcessTermination|arrêt des processus malveillants]] et l'[[Isolation|isolation]] des [[System|systèmes]] compromis afin de stopper la progression d'une [[Attack|attaque]].
-*   **Investigation et Analyse Post-Incident**: Permet une [[DigitalForensics|investigation]] approfondie des [[SecurityIncident|incidents de sécurité]] grâce à la [[EventTimeline|chronologie des événements]] et à la conservation des [[Data|données]], facilitant la compréhension des [[AttackVector|vecteurs d'attaque]] et des [[SystemCompromise|compromissions]].
+*   **Visibilité Complète des Endpoints**: Collecte et agrégation continues de données détaillées sur l'activité des endpoints (ex: processus, connexions réseau, accès aux fichiers, modifications système), offrant une visibilité sans précédent.
+*   **Détection Avancée des Menaces**: Utilisation d'algorithmes d'analyse comportementale et de renseignement sur les menaces pour identifier les menaces sophistiquées, y compris les logiciels malveillants sans fichier, les APT, les rançongiciels et les vulnérabilités zero-day, allant au-delà de la détection par signature.
+*   **Capacités de Réponse et de Contention**: Fournit des outils pour réagir rapidement aux menaces détectées, incluant la mise en quarantaine des endpoints, l'arrêt des processus malveillants et l'isolation des systèmes compromis afin de stopper la progression d'une attaque.
+*   **Investigation et Analyse Post-Incident**: Permet une investigation approfondie des incidents de sécurité grâce à la chronologie des événements et à la conservation des données, facilitant la compréhension des vecteurs d'attaque et des compromissions.
 
 ## 💡 Importance en Cybersécurité
-> L'[[EndpointDetectionAndResponse|EDR]] est fondamental car il comble les lacunes des [[Antivirus|antivirus]] traditionnels en offrant une [[SecurityMonitoring|surveillance continue]] et une [[ThreatDetection|détection proactive]] contre les [[Threat|menaces sophistiquées]] qui échappent aux défenses périmétriques. En fournissant une [[Visibility|visibilité]] granulaire et des capacités de [[IncidentResponse|réponse rapide]] au niveau de l'[[EndDevices|endpoint]], l'EDR permet de réduire considérablement le temps de séjour des [[ThreatActor|attaquants]] dans un [[System|système]] et de minimiser l'[[FinancialLoss|impact financier]] ainsi que les [[ReputationalDamage|dommages réputationnels]] associés à une [[DataBreach|violation de données]]. C'est une composante clé d'une stratégie de [[DefenseInDepth|défense en profondeur]] moderne, souvent intégrée à une [[EndpointProtectionPlatform|EPP]] pour une [[Security|sécurité]] complète.
+> L'EDR est fondamental car il comble les lacunes des antivirus traditionnels en offrant une surveillance continue et une détection proactive contre les menaces sophistiquées qui échappent aux défenses périmétriques. En fournissant une visibilité granulaire et des capacités de réponse rapide au niveau de l'endpoint, l'EDR permet de réduire considérablement le temps de séjour des attaquants dans un système et de minimiser l'impact financier ainsi que les dommages réputationnels associés à une violation de données. C'est une composante clé d'une stratégie de défense en profondeur moderne, souvent intégrée à une EPP pour une sécurité complète.
 
 ## 🔗 Notes Connexes
-*   [[Antivirus|Antivirus]]
-*   [[EndpointProtectionPlatform|EPP]]
-*   [[SecurityInformationAndEventManagement|SIEM]]
-*   [[ExtendedDetectionAndResponse|XDR]]
-*   [[ManagedDetectionAndResponse|MDR]]
-*   [[ThreatHunting|Chasse aux Menaces]]
-*   [[IncidentResponse|Réponse aux Incidents]]
-*   [[Cybersecurity|Cybersécurité]]
-*   [[NetworkSecurity|Sécurité Réseau]]
+*   Antivirus
+*   EPP
+*   SIEM
+*   XDR
+*   MDR
+*   Chasse aux Menaces
+*   Réponse aux Incidents
+*   Cybersécurité
+*   Sécurité Réseau

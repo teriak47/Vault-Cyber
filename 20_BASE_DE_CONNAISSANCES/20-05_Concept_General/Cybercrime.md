@@ -13,24 +13,24 @@ cssclasses:
 # Cybercriminalité (Cybercrime)
 
 ## 📥 Définition en une phrase
-> La [[Cybercrime|cybercriminalité]] désigne toute [[Attack|activité illégale]] perpétrée à l'aide de [[Computer|systèmes informatiques]] ou de [[Network|réseaux]], visant à compromettre la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] ou la [[Availability|disponibilité]] des [[Data|données]] et des [[System|systèmes]].
+> La cybercriminalité désigne toute activité illégale perpétrée à l'aide de systèmes informatiques ou de réseaux, visant à compromettre la confidentialité, l'intégrité ou la disponibilité des données et des systèmes.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Typologie des [[DigitalAttack|attaques numériques]]**: La [[Cybercrime|cybercriminalité]] englobe une vaste gamme d'activités, incluant le [[DataTheft|vol de données]], les [[Ransomware|rançongiciels]], le [[Phishing|hameçonnage]], les [[DistributedDenialOfService|attaques par déni de service distribué (DDoS)]], l'[[AccountTakeover|prise de contrôle de compte]], et le [[Cryptojacking|détournement de cryptomonnaie]].
-*   **Méthodologies d'[[Attack|attaque]]**: Les [[ThreatActor|cybercriminels]] exploitent diverses techniques et [[AttackVector|vecteurs d'attaque]], tels que l'utilisation de [[Malware|logiciels malveillants]] (par exemple, [[Virus|virus]], [[Worm|vers]], [[Trojan|chevaux de Troie]]), l'[[SocialEngineering|ingénierie sociale]], l'[[Exploitation|exploitation]] de [[Vulnerability|vulnérabilités logicielles]] et l'[[UnauthorizedAccess|accès non autorisé]] via des [[PasswordAttack|attaques de mots de passe]].
-*   **Impacts et Conséquences**: Les répercussions de la [[Cybercrime|cybercriminalité]] sont souvent sévères, entraînant des [[FinancialLoss|pertes financières]] importantes, des [[ReputationalDamage|dommages à la réputation]] des [[Enterprise|organisations]], des [[ServiceDisruption|interruptions de service]], la [[DataCorruption|corruption ou la perte de données]], et des atteintes à la [[Privacy|vie privée]] des [[User|utilisateurs]].
-*   **[[Government|Réponse et Conformité]]**: La lutte contre la [[Cybercrime|cybercriminalité]] implique la [[SecurityPolicy|mise en œuvre de politiques de sécurité]], le [[LegalCompliance|respect des réglementations]] (comme le [[GeneralDataProtectionRegulation|RGPD]] ou [[NetworkAndInformationSystemsDirectiveTwo|NIS2]]), des [[IncidentResponse|plans de réponse aux incidents]], et une collaboration internationale pour la [[LawEnforcement|répression des infractions]].
+*   **Typologie des attaques numériques**: La cybercriminalité englobe une vaste gamme d'activités, incluant le vol de données, les rançongiciels, le hameçonnage, les attaques par déni de service distribué (DDoS), l'prise de contrôle de compte, et le détournement de cryptomonnaie.
+*   **Méthodologies d'attaque**: Les cybercriminels exploitent diverses techniques et vecteurs d'attaque, tels que l'utilisation de logiciels malveillants (par exemple, virus, vers, chevaux de Troie), l'ingénierie sociale, l'exploitation de vulnérabilités logicielles et l'accès non autorisé via des attaques de mots de passe.
+*   **Impacts et Conséquences**: Les répercussions de la cybercriminalité sont souvent sévères, entraînant des pertes financières importantes, des dommages à la réputation des organisations, des interruptions de service, la corruption ou la perte de données, et des atteintes à la vie privée des utilisateurs.
+*   **Réponse et Conformité**: La lutte contre la cybercriminalité implique la mise en œuvre de politiques de sécurité, le respect des réglementations (comme le RGPD ou NIS2), des plans de réponse aux incidents, et une collaboration internationale pour la répression des infractions.
 
 ## 💡 Importance en Cybersécurité
-> La [[Cybercrime|cybercriminalité]] est la menace fondamentale à laquelle la [[Cybersecurity|cybersécurité]] cherche à faire face. Sa compréhension est cruciale pour élaborer des [[SecurityControl|contrôles de sécurité]] efficaces, développer des stratégies de [[DefenseInDepth|défense en profondeur]], et protéger les [[Resource|ressources numériques]] contre les [[ThreatActor|acteurs malveillants]]. Elle met en évidence la nécessité constante de [[Vigilance|vigilance]], de [[RiskManagement|gestion des risques]] proactive et d'une amélioration continue des [[SecurityGoals|objectifs de sécurité]] ([[CIATriad|confidentialité, intégrité, disponibilité]]).
+> La cybercriminalité est la menace fondamentale à laquelle la cybersécurité cherche à faire face. Sa compréhension est cruciale pour élaborer des contrôles de sécurité efficaces, développer des stratégies de défense en profondeur, et protéger les ressources numériques contre les acteurs malveillants. Elle met en évidence la nécessité constante de vigilance, de gestion des risques proactive et d'une amélioration continue des objectifs de sécurité (confidentialité, intégrité, disponibilité).
 
 ## 🔗 Notes Connexes
-*   [[Cybersecurity|Cybersécurité]]
-*   [[ThreatActor|Acteur de menace]]
-*   [[Attack|Attaque]]
-*   [[Ransomware|Ransomware]]
-*   [[Phishing|Phishing]]
-*   [[SocialEngineering|Ingénierie Sociale]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[DataTheft|Vol de Données]]
-*   [[RiskManagement|Gestion des Risques]]
+*   Cybersécurité
+*   Acteur de menace
+*   Attaque
+*   Ransomware
+*   Phishing
+*   Ingénierie Sociale
+*   Vulnérabilité
+*   Vol de Données
+*   Gestion des Risques

@@ -1,60 +1,54 @@
 ---
 tags:
   - acteur-de-menace
-  - black-hat
   - cybercriminalite
   - securite/offensive
+  - acteur-de-menace/black-hat
+  - motivation/financiere
 aliases:
   - Black hat
   - Hacker Black Hat
   - Hacker malveillant
   - Black Hat Hacker
 archetype: acteur-de-menace
-origine_suspectee:
+motivation:
+  - "[[DataTheft]]"
+  - "[[Espionage]]"
+  - "[[FinancialLoss]]"
 cssclasses:
   - max
 ---
+# BlackHat
 
-# Black Hat (Hacker Malveillant)
-
-## 👤 Profil
-Un [[BlackHat|Black Hat]] est un type d'[[ThreatActor|acteur de menace]] qui utilise ses compétences en [[Cybersecurity|cybersécurité]] à des fins malveillantes ou illégales. Contrairement aux [[WhiteHat|White Hat]] (hackers éthiques) ou aux [[GreyHat|Grey Hat]], les actions des Black Hats sont motivées par le [[FinancialLoss|gain financier]], l'[[Espionage|espionnage]], la destruction, le vol ou d'autres motifs illicites, sans autorisation préalable des propriétaires des systèmes.
-
-> **Type**: Motivé financièrement, Espionnage, Destructeur
-> **Niveau de sophistication**: Varie de faible (pour les [[ScriptKiddie|Script Kiddies]]) à très élevé (pour les groupes organisés ou étatiques)
-> **Objectifs principaux**: [[FinancialLoss|Gain financier]], [[DataTheft|Vol de données]], [[ReputationalDamage|Atteinte à la réputation]], [[SystemCompromise|Compromission de système]], [[ServiceDisruption|Interruption de service]], [[IntellectualProperty|Vol de propriété intellectuelle]]
+> [!danger] Profil du Black Hat (Hacker Malveillant)
+> Les [[BlackHat|Black Hats]] sont des [[ThreatActor|acteurs de menace]] qui utilisent leurs compétences en [[Cybersecurity|cybersécurité]] à des fins malveillantes ou illégales.
+> *   **Motivations principales** : [[FinancialLoss|Gain financier]], [[Espionage|espionnage]], [[DataTheft|vol de données]], destruction, [[ReputationalDamage|atteinte à la réputation]].
+> *   **Niveau de sophistication** : Varie de faible ([[ScriptKiddie|Script Kiddies]]) à très élevé (groupes organisés ou étatiques).
+> *   **Différence** : Contrairement aux [[WhiteHat|White Hat]] (hackers éthiques) ou aux [[GreyHat|Grey Hat]]), leurs actions sont sans autorisation et illégales.
 
 ## 😈 Motivations et Éthique
-Les motivations des [[BlackHat|Black Hats]] sont principalement opportunistes et destructrices. Ils ne respectent pas les principes d'[[EthicalHacking|éthique]] et de [[ResponsibleDisclosure|divulgation responsable]]. Leurs actions sont illégales et entraînent des conséquences graves pour les victimes.
+
+Les motivations des Black Hats sont principalement opportunistes, destructrices ou à des fins de cybercriminalité. Ils ne respectent pas les principes d'[[Ethics|éthique]] et de [[ResponsibleDisclosure|divulgation responsable]]. Leurs actions sont illégales et entraînent des conséquences graves pour les victimes.
 
 ## 🛠️ Méthodes et Techniques Courantes
-Les [[BlackHat|Black Hats]] emploient un large éventail d'[[AttackVector|vecteurs d'attaque]] et de techniques, incluant mais sans s'y limiter :
 
-*   **[[Malware|Logiciels malveillants]]**: Création et distribution de [[Ransomware|ransomwares]], [[Virus|virus]], [[Worm|vers informatiques]], [[Trojan|chevaux de Troie]] et [[Spyware|logiciels espions]].
-*   **[[SocialEngineering|Ingénierie Sociale]]**: Utilisation de techniques comme le [[Phishing|hameçonnage]], le [[Smishing|smishing]], le [[Vishing]] (non dans le vault, mais pertinent) pour manipuler les [[User|utilisateurs]] et obtenir des [[Credential|informations d'identification]] ou un [[UnauthorizedAccess|accès non autorisé]].
-*   **Exploitation de [[SoftwareVulnerability|vulnérabilités logicielles]]**: Recherche et exploitation de [[ZeroDay|vulnérabilités Zero-Day]] ou de failles connues dans les [[OperatingSystem|systèmes d'exploitation]], les [[SoftwareApplication|applications logicielles]] et les [[NetworkDevice|périphériques réseau]].
-*   **[[PasswordAttacks|Attaques de mots de passe]]**: [[BruteForceAttack|Attaques par force brute]], [[DictionaryAttack|attaques par dictionnaire]], [[RainbowTableAttack|attaques par table arc-en-ciel]] ou [[CredentialStuffing|bourrage d'identifiants]].
-*   **[[DenialOfService|Déni de service]] (DoS/[[DistributedDenialOfService|DDoS]])**: Inondation de systèmes ou de [[Server|serveurs]] avec du [[NetworkTraffic|trafic réseau]] pour les rendre inaccessibles.
+Les Black Hats emploient un large éventail d'[[AttackVector|vecteurs d'attaque]] et de techniques :
+
+*   **[[Malware|Logiciels malveillants]]** : Création et distribution de [[Ransomware|ransomwares]], [[Virus|virus]], [[Worm|vers informatiques]], [[Trojan|chevaux de Troie]] et [[Spyware|logiciels espions]].
+*   **[[SocialEngineering|Ingénierie Sociale]]** : Utilisation de techniques comme le [[Phishing|hameçonnage]], le [[Smishing|smishing]], le [[Vishing|vishing]] pour manipuler les utilisateurs et obtenir des [[Credential|informations d'identification]] ou un [[UnauthorizedAccess|accès non autorisé]].
+*   **Exploitation de [[SecurityVulnerabilities|vulnérabilités logicielles]]** : Recherche et exploitation de [[ZeroDay|vulnérabilités Zero-Day]] ou de failles connues dans les [[OperatingSystem|systèmes d'exploitation]], les [[SoftwareApplication|applications logicielles]] et les [[NetworkDevice|périphériques réseau]].
+*   **[[PasswordAttacks|Attaques de mots de passe]]** : [[BruteForceAttack|Attaques par force brute]], [[DictionaryAttack|attaques par dictionnaire]], [[RainbowTableAttack|attaques par table arc-en-ciel]] ou [[CredentialStuffing|bourrage d'identifiants]].
+*   **[[DenialOfService|Déni de service]] (DoS/[[DistributedDenialOfService|DDoS]])** : Inondation de systèmes ou de [[Server|serveurs]] avec du [[NetworkTraffic|trafic réseau]] pour les rendre inaccessibles.
 
 ## 💥 Impacts et Conséquences
-Les activités des [[BlackHat|Black Hats]] peuvent avoir des impacts dévastateurs, notamment :
 
-*   **[[DataBreach|Fuites de données]]**: Exposition de [[SensitiveData|données sensibles]] et de [[PersonalData|données personnelles]].
-*   **[[FinancialLoss|Pertes financières]]**: Coûts liés à la réponse aux [[IncidentResponse|incidents]], aux amendes réglementaires et à la perte de chiffre d'affaires.
-*   **[[ReputationalDamage|Dommages à la réputation]]**: Atteinte à la [[Reputation|réputation]] d'une [[Organisation|organisation]] et perte de la [[Trust|confiance]] des [[Client|clients]].
-*   **[[ServiceDisruption|Interruptions de service]]**: Perturbation des opérations critiques et des [[OnlineServices|services en ligne]].
+Les activités des Black Hats peuvent avoir des impacts dévastateurs :
 
-## ⚖️ Distinction des autres types de Hackers
-| Type de Hacker | Consentement |       Intentions        |                    Divulgation                    |
-| :------------- | :----------: | :---------------------: | :-----------------------------------------------: |
-| White Hat      |     Oui      |       Bénéfiques        |                    Responsable                    |
-| Grey Hat       |     Non      | Généralement Bénéfiques | Responsable, puis publique si non prise en compte |
-| Black Hat      |     Non      |      Malveillantes      |            Aucune, pour l'exploitation            |
-
+*   **[[DataBreach|Fuites de données]]** : Exposition de [[SensitiveData|données sensibles]] et de [[PersonalData|données personnelles]].
+*   **[[FinancialLoss|Pertes financières]]** : Coûts liés à la [[IncidentResponse|réponse aux incidents]], aux amendes réglementaires et à la perte de chiffre d'affaires.
+*   **[[ReputationalDamage|Dommages à la réputation]]** : Atteinte à la [[Reputation|réputation]] d'une [[Organisation|organisation]] et perte de la [[Trust|confiance]] des [[Client|clients]].
+*   **[[ServiceDisruption|Interruptions de service]]** : Perturbation des opérations critiques et des [[OnlineServices|services en ligne]].
+*   **[[SystemCompromise|Compromission de système]]** : Prise de contrôle ou accès non autorisé à des systèmes informatiques.
 
 ## 🔗 Notes Connexes
-*   **Concept parent**: [[ThreatActor|Acteur de menace]]
-*   **Type opposé**: [[WhiteHat|White Hat]]
-*   **Type intermédiaire**: [[GreyHat|Grey Hat]]
-*   **Motivation clé**: [[Cybercrime|Cybercriminalité]]
-*   **Technique courante**: [[Malware|Logiciel malveillant]]
+*   [[Cybercrime|Cybercriminalité]]

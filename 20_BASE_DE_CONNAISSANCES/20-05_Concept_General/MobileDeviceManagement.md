@@ -14,24 +14,24 @@ cssclasses:
 # Gestion des Appareils Mobiles (MDM)
 
 ## 📥 Définition en une phrase
-> La [[MobileDeviceManagement|Gestion des Appareils Mobiles (MDM)]] est une solution de [[Security|sécurité]] et de [[CentralizedAdministration|gestion centralisée]] utilisée pour surveiller, configurer et [[Security|sécuriser]] les [[WirelessDevices|appareils mobiles]] d'une [[Enterprise|organisation]] (comme les [[Smartphone|smartphones]], [[Tablet|tablettes]] et [[Computer|ordinateurs]] portables).
+> La Gestion des Appareils Mobiles (MDM) est une solution de sécurité et de gestion centralisée utilisée pour surveiller, configurer et sécuriser les appareils mobiles d'une organisation (comme les smartphones, tablettes et ordinateurs portables).
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[DeviceEnrollment|Enrôlement des Appareils]]**: Processus d'enregistrement des [[WirelessDevices|appareils]] dans le [[MobileDeviceManagement|système MDM]], permettant leur [[CentralizedAdministration|gestion centralisée]].
-*   **[[SecurityPolicyManagement|Gestion des Politiques de Sécurité]]**: Application et maintien de [[SecurityPolicy|politiques de sécurité]] strictes, incluant la [[StrongPassword|complexité des mots de passe]], le [[DataEncryption|chiffrement des données]], les délais de verrouillage de l'[[OperatingSystem|écran]] et les [[AccessControl|restrictions d'accès]].
-*   **[[MobileApplicationManagement|Gestion des Applications Mobiles (MAM)]]**: Contrôle du déploiement, des [[PatchManagement|mises à jour]] et de la suppression des [[SoftwareApplication|applications]] sur les [[WirelessDevices|appareils]] gérés, souvent via un catalogue d'[[SoftwareApplication|applications]] d'[[Enterprise|entreprise]].
-*   **[[RemoteConfiguration|Configuration et Contrôle à Distance]]**: Possibilité de configurer à distance les paramètres [[Network|réseau]] ([[WirelessFidelity|Wi-Fi]], [[VirtualPrivateNetwork|VPN]]), les profils de messagerie et d'autres paramètres [[System|système]]. Cela inclut également l'[[RemoteWipeAndLock|effacement et le verrouillage à distance]] des [[WirelessDevices|appareils]] en cas de [[DeviceLoss|perte ou vol]].
-*   **[[MonitoringAndReporting|Surveillance et Rapports]]**: [[SecurityMonitoring|Suivi]] de l'état de [[LegalCompliance|conformité]] des [[WirelessDevices|appareils]], [[AnomalyDetection|détection des appareils non conformes]] et génération de [[Reporting|rapports]] d'[[ActivityLog|activité]].
+*   **Enrôlement des Appareils**: Processus d'enregistrement des appareils dans le système MDM, permettant leur gestion centralisée.
+*   **Gestion des Politiques de Sécurité**: Application et maintien de politiques de sécurité strictes, incluant la complexité des mots de passe, le chiffrement des données, les délais de verrouillage de l'écran et les restrictions d'accès.
+*   **Gestion des Applications Mobiles (MAM)**: Contrôle du déploiement, des mises à jour et de la suppression des applications sur les appareils gérés, souvent via un catalogue d'applications d'entreprise.
+*   **Configuration et Contrôle à Distance**: Possibilité de configurer à distance les paramètres réseau (Wi-Fi, VPN), les profils de messagerie et d'autres paramètres système. Cela inclut également l'effacement et le verrouillage à distance des appareils en cas de perte ou vol.
+*   **Surveillance et Rapports**: Suivi de l'état de conformité des appareils, détection des appareils non conformes et génération de rapports d'activité.
 
 ## 💡 Importance en Cybersécurité
-> La [[MobileDeviceManagement|Gestion des Appareils Mobiles]] est fondamentale pour la [[Cybersecurity|cybersécurité]] des [[Enterprise|organisations]] modernes. Elle permet de sécuriser l'accès aux [[Resource|ressources]] de l'[[Enterprise|entreprise]] depuis des [[WirelessDevices|appareils mobiles]] potentiellement vulnérables, agissant comme une ligne de défense essentielle. En imposant des [[SecurityPolicy|politiques de sécurité]] strictes, le [[MobileDeviceManagement|MDM]] aide à prévenir les [[DataBreach|fuites de données]], les [[UnauthorizedAccess|accès non autorisés]] et la propagation de [[Malware|logiciels malveillants]], tout en assurant la [[Confidentiality|confidentialité]], l'[[Integrity|intégrité]] et l'[[Availability|disponibilité]] des [[SensitiveData|données sensibles]]. C'est un pilier stratégique de l'[[EndpointSecurity|Endpoint Security]].
+> La Gestion des Appareils Mobiles est fondamentale pour la cybersécurité des organisations modernes. Elle permet de sécuriser l'accès aux ressources de l'entreprise depuis des appareils mobiles potentiellement vulnérables, agissant comme une ligne de défense essentielle. En imposant des politiques de sécurité strictes, le MDM aide à prévenir les fuites de données, les accès non autorisés et la propagation de logiciels malveillants, tout en assurant la confidentialité, l'intégrité et l'disponibilité des données sensibles. C'est un pilier stratégique de l'Endpoint Security.
 
 ## 🔗 Notes Connexes
-*   [[EnterpriseMobilityManagement|EMM]]
-*   [[UnifiedEndpointManagement|UEM]]
-*   [[BringYourOwnDevice|BYOD]]
-*   [[EndpointSecurity|Sécurité des Endpoints]]
-*   [[MobileSecurity|Sécurité Mobile]]
-*   [[WirelessDevices|Appareils Sans Fil]]
-*   [[DataEncryption|Chiffrement des Données]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
+*   EMM
+*   UEM
+*   BYOD
+*   Sécurité des Endpoints
+*   Sécurité Mobile
+*   Appareils Sans Fil
+*   Chiffrement des Données
+*   Authentification Multi-Facteurs (MFA)

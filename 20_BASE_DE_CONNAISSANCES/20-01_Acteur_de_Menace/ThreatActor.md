@@ -1,9 +1,6 @@
 ---
 tags:
   - acteur-de-menace
-  - motivation/malveillante
-  - cybercriminel
-  - hacktiviste
 aliases:
   - Acteur de menace
   - Attaquant
@@ -12,22 +9,17 @@ aliases:
   - Threat actor
   - ThreatActor
 archetype: acteur-de-menace
-origine_suspectee:
 cssclasses:
   - max
 ---
 
-# Acteur de Menace
+# Acteur de menace
 
-## 👤 Profil
-> **Type**: Diversifié (individu, groupe organisé, ou entité étatique)
-> **Niveau de sophistication**: Diversifié (de faible, comme les [[ScriptKiddie|script-kiddies]], à élevé, comme les groupes [[AdvancedPersistentThreat|Advanced Persistent Threat]])
-> **Objectifs principaux**: [[Espionage|Espionnage]], [[FinancialGain|Gain financier]], [[Sabotage|Sabotage]], [[PoliticalInfluence|Influence politique]], [[Protest|Protestation]], [[ServiceDisruption|Interruption de service]], [[DataTheft|Vol de données]]
+Un [[ThreatActor|acteur de menace]] (souvent appelé attaquant ou adversaire) est une entité, individuelle ou groupée, responsable d'une [[Attack|attaque]] sur un système, un [[Network|réseau]] ou des [[Data|données]]. Ces entités peuvent être motivées par la [[Cybercrime|cybercriminalité]], l'[[Espionage|espionnage]], le [[Tampering|sabotage]], ou des motivations [[Government|politiques]].
 
-## 🤝 Typologies d'Acteurs de Menace
-Les [[ThreatActor|acteurs de menace]] peuvent être classifiés selon divers critères, tels que leurs motivations, leurs ressources et leur [[NiveauDeSophistication|niveau de sophistication]]. Comprendre ces distinctions est crucial pour anticiper leurs actions. [[BlackHat]]
-*   **[[StateSponsoredActor|Acteurs étatiques]] / [[AdvancedPersistentThreat|Groupes APT]]**: Financés et soutenus par des gouvernements, leurs objectifs sont souvent l'espionnage, le sabotage d'infrastructures critiques, ou l'acquisition de renseignements stratégiques. Ils disposent de ressources importantes et d'un niveau de sophistication élevé.
-*   **[[CybercriminalGroup|Groupes cybercriminels]]**: Motivés principalement par le gain financier. Ils déploient des rançongiciels, effectuent des vols de données pour revente, ou s'engagent dans la fraude en ligne. Leurs niveaux de sophistication peuvent varier, allant des opérations opportunistes à des organisations complexes.
-*   **[[Hacktivist|Hacktivistes]]**: Mènent des attaques pour des raisons idéologiques, politiques ou sociales. Leurs actions visent souvent la protestation, la perturbation de service ou la détérioration de la réputation de leurs cibles.
-*   **[[InsiderThreat|Menaces internes]]**: Proviennent d'individus ayant un accès légitime à un système ou organisation, motivés par la vengeance, le gain financier, ou l'espionnage.
-
+> [!info] Types et Motivations
+> Les acteurs de menace se distinguent par leurs motivations, leurs ressources et leurs méthodes d'exploitation.
+> *   **Cybercriminels** : Principalement motivés par le gain financier, ils ciblent des données personnelles, des identifiants ou des rançons.
+> *   **Espionnage (parrainé par un État)** : Visent l'obtention d'informations sensibles (secrets d'État, propriété intellectuelle) pour le compte d'un gouvernement.
+> *   **Hacktivistes** : Mènent des attaques pour promouvoir des causes politiques ou sociales, souvent pour des dommages à la réputation.
+> *   **Menaces internes** : Employés actuels ou anciens, ou partenaires ayant un accès privilégié, agissant par malveillance, négligence ou erreur.

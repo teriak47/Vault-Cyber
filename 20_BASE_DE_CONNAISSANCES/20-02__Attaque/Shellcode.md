@@ -16,42 +16,42 @@ cssclasses:
 # Shellcode (Code d'exploitation)
 
 ## 📥 Définition
-> Un [[Shellcode|shellcode]] est un petit bloc de code exécutable, souvent écrit en assembleur, qui agit comme la [[Payload|charge utile]] d'une [[Exploit|exploitation de vulnérabilité]]. Son objectif principal est de prendre le contrôle d'un [[System|système]] compromis, généralement en ouvrant un [[Shell|shell]] interactif pour l'[[ThreatActor|attaquant]].
+> Un shellcode est un petit bloc de code exécutable, souvent écrit en assembleur, qui agit comme la charge utile d'une exploitation de vulnérabilité. Son objectif principal est de prendre le contrôle d'un système compromis, généralement en ouvrant un shell interactif pour l'attaquant.
 
 ## 🎯 Vecteurs d'Attaque
-*   **[[BufferOverflow|Dépassement de Tampon]]**: Injection de [[Shellcode|shellcode]] dans des zones mémoire allouées au-delà des limites prévues, écrasant le code légitime.
-*   **[[CommandInjection|Injection de commandes]]**: Intégration du [[Shellcode|shellcode]] via des entrées utilisateur non validées qui sont ensuite exécutées comme des commandes du [[OperatingSystem|système d'exploitation]].
-*   **[[FormatStringVulnerability|Failles de format string]]**: Exploitation de vulnérabilités dans des fonctions de formatage de chaînes pour lire ou écrire en [[Memory|mémoire]] arbitrairement et injecter du [[Shellcode|shellcode]].
+*   **Dépassement de Tampon**: Injection de shellcode dans des zones mémoire allouées au-delà des limites prévues, écrasant le code légitime.
+*   **Injection de commandes**: Intégration du shellcode via des entrées utilisateur non validées qui sont ensuite exécutées comme des commandes du système d'exploitation.
+*   **Failles de format string**: Exploitation de vulnérabilités dans des fonctions de formatage de chaînes pour lire ou écrire en mémoire arbitrairement et injecter du shellcode.
 
 ## 💥 Impacts Potentiels
-*   [[SystemCompromise|Compromission de Système]] complète
-*   [[UnauthorizedAccess|Accès Non Autorisé]] aux [[Resource|ressources]] système
-*   [[PrivilegeEscalation|Élévation de privilèges]] au niveau root ou administrateur
-*   [[DataExfiltration|Exfiltration de données]] sensibles
-*   [[RemoteCodeExecution|Exécution de Code à Distance]] arbitraire
+*   Compromission de Système complète
+*   Accès Non Autorisé aux ressources système
+*   Élévation de privilèges au niveau root ou administrateur
+*   Exfiltration de données sensibles
+*   Exécution de Code à Distance arbitraire
 
 ## 💡 Exemple concret
-> Suite à un [[BufferOverflow|dépassement de tampon]] dans une [[SoftwareApplication|application]] mal configurée, un [[ThreatActor|attaquant]] parvient à injecter un [[Shellcode|shellcode]] malveillant. Ce code, conçu pour être indépendant de la [[Memory|position]] en mémoire, est exécuté à la place du code légitime de l'application. Le [[Shellcode|shellcode]] ouvre un [[ReverseShell|shell inversé]] (par exemple, via [[Netcat|nc]]) vers la [[Computer|machine]] de l'attaquant, lui accordant un [[CommandLineInterface|accès en ligne de commande]] direct et persistant au [[System|système]] compromis, souvent avec les privilèges de l'application exploitée.
+> Suite à un dépassement de tampon dans une application mal configurée, un attaquant parvient à injecter un shellcode malveillant. Ce code, conçu pour être indépendant de la position en mémoire, est exécuté à la place du code légitime de l'application. Le shellcode ouvre un shell inversé (par exemple, via nc) vers la machine de l'attaquant, lui accordant un accès en ligne de commande direct et persistant au système compromis, souvent avec les privilèges de l'application exploitée.
 
 ## 🛡️ Mesures de Mitigation
 *   **Prévention** :
-    *   [[SecureCodingPractices|Pratiques de codage sécurisé]] pour éviter les vulnérabilités courantes (ex: [[BufferOverflow|dépassement de tampon]], [[CommandInjection|injection de commandes]]).
-    *   Utilisation de mécanismes de [[MemorySafety|sécurité mémoire]] tels que [[DataExecutionPrevention|DEP]] (Prévention de l'exécution des données) et [[AddressSpaceLayoutRandomization|ASLR]] (Randomisation de l'espace d'adressage).
-    *   Implémentation de [[StackCanary|Stack Canary]] et du [[NoExecuteBit|bit No-Execute]] pour protéger la [[Stack|pile]] et le [[Heap|tas]].
-    *   Réalisation de [[CodeReview|revues de code]] et de [[PenetrationTesting|tests d'intrusion]] réguliers.
-    *   [[PatchManagement|Gestion des Patchs]] proactive pour corriger les [[Vulnerability|vulnérabilités]] connues.
+    *   Pratiques de codage sécurisé pour éviter les vulnérabilités courantes (ex: dépassement de tampon, injection de commandes).
+    *   Utilisation de mécanismes de sécurité mémoire tels que DEP (Prévention de l'exécution des données) et ASLR (Randomisation de l'espace d'adressage).
+    *   Implémentation de Stack Canary et du bit No-Execute pour protéger la pile et le tas.
+    *   Réalisation de revues de code et de tests d'intrusion réguliers.
+    *   Gestion des Patchs proactive pour corriger les vulnérabilités connues.
 *   **Détection** :
-    *   [[IntrusionDetectionSystem|Systèmes de détection d'intrusion (IDS)]] et [[IntrusionPreventionSystem|IPS]] pour identifier les [[MessagePattern|motifs de messages]] ou les comportements anormaux liés aux [[Exploit|exploits]] et au [[Shellcode|shellcode]].
-    *   [[EndpointDetectionAndResponse|EDR]] et [[EndpointProtectionPlatform|EPP]] pour la surveillance des [[EndDevices|terminaux]].
-    *   [[SecurityInformationAndEventManagement|SIEM]] pour l'analyse des [[Log|logs]] et la corrélation d'événements.
+    *   Systèmes de détection d'intrusion (IDS) et IPS pour identifier les motifs de messages ou les comportements anormaux liés aux exploits et au shellcode.
+    *   EDR et EPP pour la surveillance des terminaux.
+    *   SIEM pour l'analyse des logs et la corrélation d'événements.
 *   **Réponse** :
-    *   Mise en place d'un [[IncidentResponse|Plan de réponse à incident]] pour contenir, éradiquer et récupérer après une [[Attack|attaque]] impliquant un [[Shellcode|shellcode]].
+    *   Mise en place d'un Plan de réponse à incident pour contenir, éradiquer et récupérer après une attaque impliquant un shellcode.
 
 ## 🔗 Notes Connexes
-*   [[Exploit|Exploit]]
-*   [[Payload|Charge utile]]
-*   [[RemoteCodeExecution|Exécution de Code à Distance]]
-*   [[BufferOverflow|Buffer Overflow]]
-*   [[ReverseShell|Reverse Shell]]
-*   [[Vulnerability|Vulnérabilité]]
-*   [[Attack|Attaque]]
+*   Exploit
+*   Charge utile
+*   Exécution de Code à Distance
+*   Buffer Overflow
+*   Reverse Shell
+*   Vulnérabilité
+*   Attaque

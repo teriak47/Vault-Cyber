@@ -23,7 +23,7 @@ cssclasses:
 
 ## 🎯 Rôle et Fonction
 
-[[NanoEditor|Nano]] est un [[Software|logiciel]] d'édition de texte simple, rapide, et léger, fonctionnant entièrement en [[CommandLineInterface|terminal]]. Il est couramment préinstallé sur des distributions [[Linux]] telles que [[Ubuntu]], [[Debian]] et Mint. Son objectif principal est de permettre l'édition, la correction et la création de fichiers texte ou de [[NetworkConfiguration|configuration système]], même dans des environnements limités comme le mode de récupération.
+Nano est un logiciel d'édition de texte simple, rapide, et léger, fonctionnant entièrement en terminal. Il est couramment préinstallé sur des distributions Linux telles que Ubuntu, Debian et Mint. Son objectif principal est de permettre l'édition, la correction et la création de fichiers texte ou de configuration système, même dans des environnements limités comme le mode de récupération.
 
 ## 🚀 Utilisation de Base (Ouvrir, Quitter, Déplacement)
 
@@ -38,7 +38,7 @@ cssclasses:
     ```
 
 ### Quitter Nano
-*   Appuyez sur `Ctrl + X`. Si des modifications ont été apportées, [[NanoEditor|Nano]] demandera de les [[Backup|sauvegarder]].
+*   Appuyez sur `Ctrl + X`. Si des modifications ont été apportées, Nano demandera de les sauvegarder.
     *   `Y` pour sauvegarder.
     *   `N` pour quitter sans sauvegarder.
     *   `Enter` pour confirmer le nom du fichier.
@@ -64,7 +64,7 @@ cssclasses:
 ### Recherche de Texte
 *   **Lancer la recherche**: `Ctrl + W`, puis entrez le mot à rechercher et `Enter`.
 *   **Rechercher l'occurrence suivante**: `Alt + W`
-*   **Recherche avec [[Algorithm|expressions régulières]]**: `Ctrl + \` puis activez les expressions régulières. [[NanoEditor|Nano]] supporte un sous-ensemble d'expressions régulières POSIX.
+*   **Recherche avec expressions régulières**: `Ctrl + \` puis activez les expressions régulières. Nano supporte un sous-ensemble d'expressions régulières POSIX.
 
 ### Remplacement de Texte
 *   **Lancer le remplacement**: `Ctrl + \`
@@ -95,15 +95,15 @@ cssclasses:
 *   **Sauvegarder sous un autre nom**: `Ctrl + O`, tapez un nouveau nom de fichier, puis `Enter`.
 
 ## 💡 Options en Ligne de Commande
-Ces [[Command|commandes]] permettent de personnaliser le comportement de [[NanoEditor|Nano]] au lancement.
+Ces commandes permettent de personnaliser le comportement de Nano au lancement.
 
 | Option             | Description                                                                 |
 | :----------------- | :-------------------------------------------------------------------------- |
-| `-B <fichier>`     | Crée une [[Backup|sauvegarde]] du fichier original (ex: `fichier.~`).     |
+| `-B <fichier>`     | Crée une sauvegarde du fichier original (ex: `fichier.~`).     |
 | `-m <fichier>`     | Active le support de la souris.                                             |
 | `-i <fichier>`     | Active l'indentation intelligente.                                          |
 | `-l <fichier>`     | Active le curseur "lisse" (run-smooth).                                     |
-| `-R <fichier>`     | Ouvre le fichier en [[ReadOnlyMode|lecture seule]] (mode "view").             |
+| `-R <fichier>`     | Ouvre le fichier en lecture seule (mode "view").             |
 | `-v <fichier>`     | Mode visualiser (identique à `-R`, pas de modification possible).           |
 | `-c`               | Affiche la position du curseur en bas de l'écran.                           |
 | `+<num> <fichier>` | Ouvre le fichier directement à la ligne spécifiée par `<num>`.               |
@@ -121,27 +121,27 @@ nano +120 /etc/fstab          # Ouvre /etc/fstab et positionne le curseur à la 
 
 ## 🛡️ Utilisation Sécurisée & Bonnes Pratiques
 
-### Édition des Fichiers [[System|Système]] (avec `root`)
-Pour modifier des fichiers [[System|système]] importants nécessitant des privilèges [[Authorization|root]], utilisez la [[Command|commande]] `sudo` :
+### Édition des Fichiers Système (avec `root`)
+Pour modifier des fichiers système importants nécessitant des privilèges root, utilisez la commande `sudo` :
 ```bash
 sudo nano /etc/fstab
 sudo nano /etc/hosts
 ```
-Pour des [[Backup|sauvegardes]] automatiques lors de l'édition de fichiers critiques :
+Pour des sauvegardes automatiques lors de l'édition de fichiers critiques :
 ```bash
 sudo nano -B /etc/ssh/sshd_config # Crée une sauvegarde comme /etc/ssh/sshd_config.~
 ```
 
 ### Mode Lecture Seule
-Pour éviter les modifications accidentelles sur des fichiers importants, utilisez les options de [[ReadOnlyMode|lecture seule]] (`-R` ou `-v`) :
+Pour éviter les modifications accidentelles sur des fichiers importants, utilisez les options de lecture seule (`-R` ou `-v`) :
 ```bash
 nano -v /etc/fstab
 ```
 
 ## ⚙️ Configuration Avancée (.nanorc)
-[[NanoEditor|Nano]] peut être configuré de manière permanente via des fichiers `.nanorc` :
-*   **[[System|Fichier global]]**: `/etc/nanorc` (affecte tous les [[User|utilisateurs]])
-*   **[[User|Fichier utilisateur]]**: `~/.nanorc` (affecte l'utilisateur courant)
+Nano peut être configuré de manière permanente via des fichiers `.nanorc` :
+*   **Fichier global**: `/etc/nanorc` (affecte tous les utilisateurs)
+*   **Fichier utilisateur**: `~/.nanorc` (affecte l'utilisateur courant)
 
 ### Exemple de Fichier `.nanorc`
 ```
@@ -163,34 +163,34 @@ include "/usr/share/nano/*.nanorc"
 *   `set softwrap`: Active le retour à la ligne visuel.
 *   `set autoindent`: Active l'indentation automatique.
 *   `set tabsize 4`: Définit la taille des tabulations à 4 espaces.
-*   `set backup`: Active la [[Backup|sauvegarde]] des fichiers avec `.~`.
-*   `include "/usr/share/nano/*.nanorc"`: Active la coloration syntaxique pour divers types de [[Script|scripts]] et langages de [[Programming|programmation]].
+*   `set backup`: Active la sauvegarde des fichiers avec `.~`.
+*   `include "/usr/share/nano/*.nanorc"`: Active la coloration syntaxique pour divers types de scripts et langages de programmation.
 
 ## 🔍 Vérification et Automatisation
 
 ### Méthodes de Vérification
-Pour s'assurer d'une utilisation correcte de [[NanoEditor|Nano]] et de sa [[NetworkConfiguration|configuration]] :
+Pour s'assurer d'une utilisation correcte de Nano et de sa configuration :
 1.  **Vérifier la version installée**:
     ```bash
     nano --version
     ```
-2.  **Consulter le manuel (man page)**: Pour vérifier la cohérence des [[Command|options]] et la référence canonique.
+2.  **Consulter le manuel (man page)**: Pour vérifier la cohérence des options et la référence canonique.
     ```bash
     man nano
     ```
-3.  **Confirmer la [[NetworkConfiguration|configuration]] utilisateur**:
+3.  **Confirmer la configuration utilisateur**:
     ```bash
     cat ~/.nanorc
     ```
-4.  **Tester les [[Command|commandes]]**: Sur un fichier de test pour automatiser l'utilisation.
+4.  **Tester les commandes**: Sur un fichier de test pour automatiser l'utilisation.
     ```bash
     nano test.txt
     ```
 
 ## 🔗 Notes Connexes
-*   **Environnement d'exécution**: [[CommandLineInterface|Interface en Ligne de Commande]]
-*   **[[OperatingSystem|Système d'exploitation]] associé**: [[Linux]]
-*   **Interaction**: [[Shell|Interpréteur de commandes]]
-*   **Utilisation fréquente**: [[Scripting|Écriture de scripts]]
-*   **Concepts fondamentaux**: [[Command|Commande]]
+*   **Environnement d'exécution**: Interface en Ligne de Commande
+*   **Système d'exploitation associé**: Linux
+*   **Interaction**: Interpréteur de commandes
+*   **Utilisation fréquente**: Écriture de scripts
+*   **Concepts fondamentaux**: Commande
 ---

@@ -13,25 +13,25 @@ cssclasses:
 # Connexion (Login)
 
 ## 📥 Définition en une phrase
-> La connexion, ou "login", est le processus par lequel un [[User|utilisateur]] accède à un [[System|système]], un [[SoftwareApplication|logiciel]] ou un [[OnlineServices|service en ligne]] en prouvant son [[UserIdentity|identité]].
+> La connexion, ou "login", est le processus par lequel un utilisateur accède à un système, un logiciel ou un service en ligne en prouvant son identité.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Authentication|Authentification]]**: Le processus de vérification de l'[[UserIdentity|identité]] d'un [[User|utilisateur]], souvent via des [[Credential|identifiants]] comme un [[Username|nom d'utilisateur]] et un [[Password|mot de passe]].
-*   **[[Authorization|Autorisation]]**: La détermination des droits et des permissions qu'un [[User|utilisateur]] authentifié possède sur des [[Resource|ressources]] ou des [[Data|données]] spécifiques au sein du [[System|système]].
-*   **[[Credential|Gestion des Identifiants]]**: L'ensemble des pratiques et des mécanismes pour stocker, gérer et protéger les [[Credential|informations d'identification]] des [[User|utilisateurs]], notamment les [[Password|mots de passe]] et autres facteurs d'[[Authentication|authentification]].
+*   **Authentification**: Le processus de vérification de l'identité d'un utilisateur, souvent via des identifiants comme un nom d'utilisateur et un mot de passe.
+*   **Autorisation**: La détermination des droits et des permissions qu'un utilisateur authentifié possède sur des ressources ou des données spécifiques au sein du système.
+*   **Gestion des Identifiants**: L'ensemble des pratiques et des mécanismes pour stocker, gérer et protéger les informations d'identification des utilisateurs, notamment les mots de passe et autres facteurs d'authentification.
 
 ## 💡 Importance en Cybersécurité
-> La [[Login|connexion]] est le premier [[SecurityControl|contrôle de sécurité]] et le principal point d'entrée pour la plupart des [[System|systèmes]] et des [[SoftwareApplication|applications]]. Une [[Login|connexion]] sécurisée est fondamentale pour prévenir l'[[UnauthorizedAccess|accès non autorisé]], protéger les [[PersonalData|données personnelles]] et maintenir l'[[Confidentiality|intégrité]] et la [[Availability|disponibilité]] des [[Resource|ressources]]. Des failles dans le processus de [[Login|connexion]] peuvent mener à des [[AccountTakeover|prises de contrôle de compte]], des [[DataBreach|fuites de données]] et d'autres [[Attack|attaques]] graves.
+> La connexion est le premier contrôle de sécurité et le principal point d'entrée pour la plupart des systèmes et des applications. Une connexion sécurisée est fondamentale pour prévenir l'accès non autorisé, protéger les données personnelles et maintenir l'intégrité et la disponibilité des ressources. Des failles dans le processus de connexion peuvent mener à des prises de contrôle de compte, des fuites de données et d'autres attaques graves.
 
 ## 🔗 Notes Connexes
-*   [[Authentication|Authentification]]
-*   [[Authorization|Autorisation]]
-*   [[Credential|Identifiant]]
-*   [[Username|Nom d'utilisateur]]
-*   [[Password|Mot de passe]]
-*   [[Account|Compte]]
-*   [[MultiFactorAuthentication|Authentification Multi-Facteurs (MFA)]]
-*   [[SecurityControl|Contrôle de Sécurité]]
-*   [[ZeroTrust|Zéro Confiance]]
-*   [[SingleSignOn|Single Sign-On (SSO)]]
-*   [[IdentityAndAccessManagement|Gestion des Identités et des Accès (IAM)]]
+*   Authentification
+*   Autorisation
+*   Identifiant
+*   Nom d'utilisateur
+*   Mot de passe
+*   Compte
+*   Authentification Multi-Facteurs (MFA)
+*   Contrôle de Sécurité
+*   Zéro Confiance
+*   Single Sign-On (SSO)
+*   Gestion des Identités et des Accès (IAM)

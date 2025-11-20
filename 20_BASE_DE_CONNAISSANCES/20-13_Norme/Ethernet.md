@@ -24,15 +24,15 @@ cssclasses:
 
 ## 🎯 Objectif et Périmètre
 
-> L'[[Ethernet]] est une famille de technologies standardisées, principalement utilisée pour les [[LocalAreaNetwork|réseaux locaux]] ([[LocalAreaNetwork|LAN]]), qui définit les [[NetworkProtocol|protocoles]] et les spécifications physiques pour la [[DataTransmission|transmission de données]]. Son objectif est de permettre une communication de données rapide, fiable et efficace au sein d'un environnement local. Elle est définie par la norme [[InstituteOfElectricalAndElectronicsEngineers|IEEE]] 802.3.
+> L'Ethernet est une famille de technologies standardisées, principalement utilisée pour les réseaux locaux (LAN), qui définit les protocoles et les spécifications physiques pour la transmission de données. Son objectif est de permettre une communication de données rapide, fiable et efficace au sein d'un environnement local. Elle est définie par la norme IEEE 802.3.
 
 ## 🔑 Principales Exigences / Sections
 
-*   **Format de Trame**: L'Ethernet spécifie la structure de la [[EthernetFrame|trame Ethernet]], qui encapsule les données à transmettre, incluant les adresses MAC source et destination, un champ de type/longueur, la charge utile et une séquence de vérification de trame pour l'intégrité des données.
+*   **Format de Trame**: L'Ethernet spécifie la structure de la trame Ethernet, qui encapsule les données à transmettre, incluant les adresses MAC source et destination, un champ de type/longueur, la charge utile et une séquence de vérification de trame pour l'intégrité des données.
 *   **Méthode d'Accès au Média (CSMA/CD)**: Pour les réseaux Ethernet traditionnels (partagés), la norme utilise le protocole *Carrier Sense Multiple Access with Collision Detection* (CSMA/CD). Ce mécanisme permet à plusieurs appareils de partager le même support de transmission et de détecter/gérer les collisions de données.
-*   **Support Physique**: Les spécifications Ethernet couvrent divers supports physiques. Historiquement, cela incluait les câbles coaxiaux, mais aujourd'hui, elle est majoritairement déployée sur des [[TwistedPairCable|câbles à paires torsadées]]  et des [[FiberOpticCable|câbles à fibre optique]] pour des débits plus élevés et de plus longues distances.
+*   **Support Physique**: Les spécifications Ethernet couvrent divers supports physiques. Historiquement, cela incluait les câbles coaxiaux, mais aujourd'hui, elle est majoritairement déployée sur des câbles à paires torsadées  et des câbles à fibre optique pour des débits plus élevés et de plus longues distances.
 *   **Débits**: La norme Ethernet a évolué pour supporter une large gamme de débits, de 10 Mbps (Ethernet d'origine) à 100 Gbps et plus (Fast Ethernet, Gigabit Ethernet, 10 Gigabit Ethernet, etc.).
-*   **Couches OSI**: Le [[EthernetProtocol|protocole Ethernet]] opère principalement au niveau des [[PhysicalLayer|couches physique]] (Couche 1) et [[DataLinkLayer|liaison de données]] (Couche 2) du [[OpenSystemsInterconnectionModel|modèle OSI]].
+*   **Couches OSI**: Le protocole Ethernet opère principalement au niveau des couches physique (Couche 1) et liaison de données (Couche 2) du modèle OSI.
 
 ## 📈 Bénéfices de la Conformité
 
@@ -45,9 +45,9 @@ cssclasses:
 *   Il n'existe pas de "certification" Ethernet pour une organisation comme pour les normes de management de la sécurité de l'information (ex: ISO 27001). Cependant, les produits et les équipements réseau sont conçus pour être **conformes** aux spécifications de l'IEEE 802.3, garantissant ainsi leur bon fonctionnement au sein d'un environnement Ethernet.
 
 ## 🔗 Notes Connexes
-*   **Organisme de normalisation**: [[InstituteOfElectricalAndElectronicsEngineers|IEEE]]
-*   **Couche d'opération principale**: [[DataLinkLayer|Couche Liaison de Données]]
-*   **Unité de données**: [[EthernetFrame|Trame Ethernet]]
-*   **Support physique courant**: [[TwistedPairCable|Câble à paires torsadées]]
-*   **Domaine d'application**: [[LocalAreaNetwork|Réseau Local (LAN)]]
+*   **Organisme de normalisation**: IEEE
+*   **Couche d'opération principale**: Couche Liaison de Données
+*   **Unité de données**: Trame Ethernet
+*   **Support physique courant**: Câble à paires torsadées
+*   **Domaine d'application**: Réseau Local (LAN)
 

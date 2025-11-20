@@ -32,4 +32,4 @@ Bash
 ## 🔗 Alternatives et Notes Connexes
 
 - Alternatives: [[Zmap]], [[Masscan]]
-- Contexte: [[Reconnaissance (Pentest)]]
+- Contexte: [[Reconnaissance]]

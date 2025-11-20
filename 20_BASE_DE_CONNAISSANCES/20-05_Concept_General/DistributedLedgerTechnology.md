@@ -14,37 +14,37 @@ cssclasses:
 # Technologie de Registre Distribué (DLT)
 
 ## 📥 Définition en une phrase
-> Une [[Decentralization|technologie décentralisée]] et [[DataDistribution|distribuée]] qui enregistre des [[Data|données]] ou des [[Message|transactions]] de manière [[DataImmutability|immuable]] et [[Transparency|transparente]] sur un [[Network|réseau]] de participants, sans dépendre d'une autorité centrale.
+> Une technologie décentralisée et distribuée qui enregistre des données ou des transactions de manière immuable et transparente sur un réseau de participants, sans dépendre d'une autorité centrale.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[Decentralization|Décentralisation]]**: Caractérisée par l'absence d'un point de contrôle unique, où les [[Data|données]] sont gérées collectivement par tous les [[Host|nœuds]] du [[Network|réseau]].
-*   **[[DataDistribution|Distribution des données]]**: Chaque participant détient une copie complète et synchronisée du [[Log|registre]], ce qui assure la [[Redundancy|résilience]] et la [[Redundancy|redondance]] de l'information.
-*   **[[DataImmutability|Immuabilité des données]]**: Une fois qu'une [[Message|transaction]] est validée et ajoutée au [[Log|registre]], elle ne peut être ni modifiée ni supprimée, grâce à l'application de principes de [[Cryptography|cryptographie]].
-*   **[[ConsensusMechanism|Mécanisme de Consensus]]**: Des [[Protocol|protocoles]] spécifiques, tels que le [[ProofOfWork|Proof of Work]] ou le [[ProofOfStake|Proof of Stake]], garantissent que tous les participants s'accordent sur l'état valide et l'ordre des [[Message|transactions]].
-*   **[[Cryptography|Cryptographie]]**: L'utilisation de [[Hashing|fonctions de hachage]] et de [[DigitalSignature|signatures numériques]] est fondamentale pour sécuriser les [[Message|transactions]] et garantir l'[[Integrity|intégrité]] du [[Log|registre]].
-*   **[[Transparency|Transparence]]**: Le niveau de visibilité des [[Message|transactions]] peut varier selon la conception de la [[DistributedLedgerTechnology|DLT]] (publique ou privée), permettant une exposition partielle ou complète des [[Data|données]].
+*   **Décentralisation**: Caractérisée par l'absence d'un point de contrôle unique, où les données sont gérées collectivement par tous les nœuds du réseau.
+*   **Distribution des données**: Chaque participant détient une copie complète et synchronisée du registre, ce qui assure la résilience et la redondance de l'information.
+*   **Immuabilité des données**: Une fois qu'une transaction est validée et ajoutée au registre, elle ne peut être ni modifiée ni supprimée, grâce à l'application de principes de cryptographie.
+*   **Mécanisme de Consensus**: Des protocoles spécifiques, tels que le Proof of Work ou le Proof of Stake, garantissent que tous les participants s'accordent sur l'état valide et l'ordre des transactions.
+*   **Cryptographie**: L'utilisation de fonctions de hachage et de signatures numériques est fondamentale pour sécuriser les transactions et garantir l'intégrité du registre.
+*   **Transparence**: Le niveau de visibilité des transactions peut varier selon la conception de la DLT (publique ou privée), permettant une exposition partielle ou complète des données.
 
 ## 💡 Importance en Cybersécurité
-> La [[DistributedLedgerTechnology|DLT]] est d'une importance capitale en [[Cybersecurity|cybersécurité]] grâce à ses propriétés intrinsèques de [[Decentralization|décentralisation]], d'[[DataImmutability|immuabilité]] et d'utilisation intensive de la [[Cryptography|cryptographie]]. Ces caractéristiques renforcent considérablement l'[[Integrity|intégrité des données]] et la [[NonRepudiation|non-répudiation]], offrant une robustesse accrue contre la [[DataCorruption|corruption]] et le [[DataTheft|vol de données]]. Cependant, elle introduit également de nouvelles [[SecurityVulnerabilities|vulnérabilités]], comme les [[FiftyOnePercentAttack|attaques des 51%]] ou les [[SmartContractVulnerability|failles dans les contrats intelligents]], rendant l'application de [[SecurityControl|contrôles de sécurité]] rigoureux et des [[SecurityAudit|audits de sécurité]] réguliers absolument essentiels pour sa mise en œuvre sécurisée.
+> La DLT est d'une importance capitale en cybersécurité grâce à ses propriétés intrinsèques de décentralisation, d'immuabilité et d'utilisation intensive de la cryptographie. Ces caractéristiques renforcent considérablement l'intégrité des données et la non-répudiation, offrant une robustesse accrue contre la corruption et le vol de données. Cependant, elle introduit également de nouvelles vulnérabilités, comme les attaques des 51% ou les failles dans les contrats intelligents, rendant l'application de contrôles de sécurité rigoureux et des audits de sécurité réguliers absolument essentiels pour sa mise en œuvre sécurisée.
 
 ## 🔗 Notes Connexes
-*   [[Blockchain|Blockchain]]
-*   [[Cryptocurrency|Cryptomonnaie]]
-*   [[SmartContract|Contrat Intelligent]]
-*   [[DecentralizedFinance|Finance Décentralisée (DeFi)]]
-*   [[Cybersecurity|Cybersécurité]]
-*   [[Scalability|Scalabilité]]
-*   [[FiftyOnePercentAttack|Attaque des 51%]]
-*   [[SmartContractVulnerability|Vulnérabilités des contrats intelligents]]
-*   [[DataPrivacy|Confidentialité des données]]
-*   [[SensitiveData|Données Sensibles]]
-*   [[ConsensusMechanism|Mécanisme de Consensus]]
-*   [[SecureDevelopmentLifecycle|Cycle de développement sécurisé]]
-*   [[AccessControl|Contrôle d'Accès]]
-*   [[SecurityAudit|Audit de Sécurité]]
-*   [[ZeroTrust|Zero Trust]]
-*   [[DataDistribution|Distribution des données]]
-*   [[DataImmutability|Immuabilité des données]]
-*   [[Transparency|Transparence]]
-*   [[Hashing|Hachage]]
-*   [[DigitalSignature|Signature numérique]]
+*   Blockchain
+*   Cryptomonnaie
+*   Contrat Intelligent
+*   Finance Décentralisée (DeFi)
+*   Cybersécurité
+*   Scalabilité
+*   Attaque des 51%
+*   Vulnérabilités des contrats intelligents
+*   Confidentialité des données
+*   Données Sensibles
+*   Mécanisme de Consensus
+*   Cycle de développement sécurisé
+*   Contrôle d'Accès
+*   Audit de Sécurité
+*   Zero Trust
+*   Distribution des données
+*   Immuabilité des données
+*   Transparence
+*   Hachage
+*   Signature numérique

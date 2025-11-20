@@ -15,23 +15,23 @@ cssclasses:
 # Modèle de Référence
 
 ## 📥 Définition en une phrase
-> Un [[ReferenceModel|modèle de référence]] est un [[Cadre Conceptuel|cadre conceptuel]] abstrait qui définit les composants majeurs d'un [[System|système]] ou d'un [[Process|processus]], et les relations entre eux, servant de base pour la compréhension, la [[NetworkDesign|conception]] et l'[[Interoperability|interopérabilité]].
+> Un modèle de référence est un cadre conceptuel abstrait qui définit les composants majeurs d'un système ou d'un processus, et les relations entre eux, servant de base pour la compréhension, la conception et l'interopérabilité.
 
 ## 🧠 Concepts Clés / Piliers
-*   **Cadre Conceptuel**: Fournit une [[ReferenceModel|structure générale]] et une vue d'ensemble sans dicter les détails d'implémentation spécifiques, permettant une approche abstraite des [[System|systèmes]] complexes.
-*   **Composants et Interactions**: Identifie les [[Resource|ressources]], les [[Process|processus]] ou les [[NetworkDevice|périphériques]] clés et leurs interactions logiques, souvent organisés en [[Layer|couches]] ou en domaines fonctionnels (ex: [[OpenSystemsInterconnectionModel|couches de l'OSI]]).
-*   **Normalisation et Interopérabilité**: Sert de base pour l'établissement de [[NetworkStandard|normes réseau]] et de [[NetworkProtocol|protocoles de communication]], essentiels pour garantir l'[[Interoperability|interopérabilité]] entre divers [[System|systèmes]] et [[Network|réseaux]].
-*   **Facilitation de la Compréhension**: Simplifie la [[Network|complexité des réseaux]] et des [[System|systèmes]] en les décomposant en parties plus gérables, facilitant l'[[Testing|analyse]], la [[Programming|programmation]] et l'[[20_BASE_DE_CONNAISSANCES/20-05_Concept_General/UserAwarenessTraining|apprentissage]].
+*   **Cadre Conceptuel**: Fournit une structure générale et une vue d'ensemble sans dicter les détails d'implémentation spécifiques, permettant une approche abstraite des systèmes complexes.
+*   **Composants et Interactions**: Identifie les ressources, les processus ou les périphériques clés et leurs interactions logiques, souvent organisés en couches ou en domaines fonctionnels (ex: couches de l'OSI).
+*   **Normalisation et Interopérabilité**: Sert de base pour l'établissement de normes réseau et de protocoles de communication, essentiels pour garantir l'interopérabilité entre divers systèmes et réseaux.
+*   **Facilitation de la Compréhension**: Simplifie la complexité des réseaux et des systèmes en les décomposant en parties plus gérables, facilitant l'analyse, la programmation et l'apprentissage.
 
 ## 💡 Importance en Cybersécurité
-> En [[Cybersecurity|cybersécurité]], les [[ReferenceModel|modèles de référence]] sont cruciaux car ils fournissent un plan architectural pour la [[NetworkDesign|conception de réseaux]] et de [[System|systèmes]] sécurisés. En décomposant la [[System|complexité des systèmes]] en [[Layer|couches]] ou en composants logiques, ils permettent d'identifier les points d'intégration des [[SecurityControl|contrôles de sécurité]] et de s'assurer que la [[Security|sécurité]] est pensée dès la [[SecurityByDesign|conception]]. Ils garantissent également l'[[Interoperability|interopérabilité]] et la [[Standardization|normalisation]], des facteurs essentiels pour le déploiement cohérent de [[Cybersecurity|solutions de cybersécurité]] à travers différentes plateformes et [[Network|réseaux]]. Une bonne compréhension de ces modèles aide à prévenir les [[SoftwareVulnerability|vulnérabilités]] dues à une mauvaise [[NetworkConfiguration|configuration réseau]] ou à des lacunes dans l'[[InformationSecurity|architecture de sécurité]].
+> En cybersécurité, les modèles de référence sont cruciaux car ils fournissent un plan architectural pour la conception de réseaux et de systèmes sécurisés. En décomposant la complexité des systèmes en couches ou en composants logiques, ils permettent d'identifier les points d'intégration des contrôles de sécurité et de s'assurer que la sécurité est pensée dès la conception. Ils garantissent également l'interopérabilité et la normalisation, des facteurs essentiels pour le déploiement cohérent de solutions de cybersécurité à travers différentes plateformes et réseaux. Une bonne compréhension de ces modèles aide à prévenir les vulnérabilités dues à une mauvaise configuration réseau ou à des lacunes dans l'architecture de sécurité.
 
 ## 🔗 Notes Connexes
-*   [[OpenSystemsInterconnectionModel|Modèle OSI]]
-*   [[InternetProtocolSuite|Modèle TCP/IP]]
-*   [[NetworkProtocol|Protocole Réseau]]
-*   [[ProtocolStack|Pile de Protocoles]]
-*   [[NetworkLayer|Couche Réseau]]
-*   [[NetworkStandard|Norme Réseau]]
-*   [[Interoperability|Interopérabilité]]
-*   [[NetworkDesign|Conception Réseau]]
+*   Modèle OSI
+*   Modèle TCP/IP
+*   Protocole Réseau
+*   Pile de Protocoles
+*   Couche Réseau
+*   Norme Réseau
+*   Interopérabilité
+*   Conception Réseau

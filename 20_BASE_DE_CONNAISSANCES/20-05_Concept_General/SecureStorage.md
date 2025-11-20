@@ -16,29 +16,29 @@ cssclasses:
 # Stockage Sécurisé
 
 ## 📥 Définition en une phrase
-> Le stockage sécurisé est l'ensemble des mesures techniques et organisationnelles visant à protéger les [[Data|données]] au repos et en transit contre l'[[UnauthorizedAccess|accès non autorisé]], la [[Tampering|modification]], la [[DataCorruption|corruption]] ou la [[ServiceDisruption|destruction]].
+> Le stockage sécurisé est l'ensemble des mesures techniques et organisationnelles visant à protéger les données au repos et en transit contre l'accès non autorisé, la modification, la corruption ou la destruction.
 
 ## 🧠 Concepts Clés / Piliers
-*   **[[DataEncryption|Chiffrement des Données]]**: Les [[Data|données]] sont [[Encryption|chiffrées]] avant d'être stockées (au repos) ou transmises (en transit), rendant leur lecture impossible sans la [[PrivateKey|clé de déchiffrement]] appropriée.
-*   **[[AccessControl|Contrôle d'Accès]] Robuste**: Mise en œuvre de [[SecurityPolicy|politiques de sécurité]] basées sur le [[PrincipleOfLeastPrivilege|principe du moindre privilège]] et de [[AccessControlModel|modèles de contrôle d'accès]] (comme le [[RoleBasedAccessControl|RBAC]]) pour s'assurer que seuls les [[User|utilisateurs]] et [[System|systèmes]] autorisés peuvent accéder aux [[Data|données]].
-*   **[[Integrity|Intégrité des Données]]**: Utilisation de mécanismes tels que le [[Hashing|hachage]] et les [[DigitalSignature|signatures numériques]] pour détecter toute [[Tampering|modification non autorisée]] ou [[DataCorruption|corruption]] des [[Data|données]].
-*   **[[KeyManagement|Gestion des Clés]] Cryptographiques**: Processus sécurisé de génération, de [[SecureStorage|stockage sécurisé]], de distribution, de rotation et de destruction des [[Cryptography|clés de chiffrement]].
-*   **[[Backup|Sauvegardes]] et [[DisasterRecovery|Récupération d'Urgence]]**: [[BusinessContinuity|Stratégies]] pour garantir la [[Availability|disponibilité des données]] même en cas de [[HardwareFailure|panne]], de [[DataLoss|perte]] ou de [[DigitalAttack|cyberattaque]], incluant la réplication et la conservation des copies de sécurité.
-*   **[[PhysicalSecurity|Sécurité Physique]]**: Pour les supports de stockage locaux, cela inclut la [[PhysicalSecurity|protection physique]] des [[Server|serveurs]] et des périphériques de stockage contre le vol ou l'[[UnauthorizedAccess|accès non autorisé]].
+*   **Chiffrement des Données**: Les données sont chiffrées avant d'être stockées (au repos) ou transmises (en transit), rendant leur lecture impossible sans la clé de déchiffrement appropriée.
+*   **Contrôle d'Accès Robuste**: Mise en œuvre de politiques de sécurité basées sur le principe du moindre privilège et de modèles de contrôle d'accès (comme le RBAC) pour s'assurer que seuls les utilisateurs et systèmes autorisés peuvent accéder aux données.
+*   **Intégrité des Données**: Utilisation de mécanismes tels que le hachage et les signatures numériques pour détecter toute modification non autorisée ou corruption des données.
+*   **Gestion des Clés Cryptographiques**: Processus sécurisé de génération, de stockage sécurisé, de distribution, de rotation et de destruction des clés de chiffrement.
+*   **Sauvegardes et Récupération d'Urgence**: Stratégies pour garantir la disponibilité des données même en cas de panne, de perte ou de cyberattaque, incluant la réplication et la conservation des copies de sécurité.
+*   **Sécurité Physique**: Pour les supports de stockage locaux, cela inclut la protection physique des serveurs et des périphériques de stockage contre le vol ou l'accès non autorisé.
 
 ## 💡 Importance en Cybersécurité
-> Le [[SecureStorage|stockage sécurisé]] est une composante essentielle de la [[InformationSecurity|sécurité de l'information]], contribuant directement aux piliers de la [[Confidentiality|Confidentialité]], de l'[[Integrity|Intégrité]] et de l'[[Availability|Disponibilité]] (la [[CIATriad|Triade CIA]]). Il est crucial pour la [[DataProtection|protection des données sensibles]], la [[LegalCompliance|conformité réglementaire]] (comme le [[GeneralDataProtectionRegulation|RGPD]]) et la [[BusinessContinuity|continuité des activités]] face aux [[Threat|menaces]] et aux [[Vulnerability|vulnérabilités]]. Un stockage non sécurisé peut entraîner des [[DataBreach|fuites de données]], des [[DataLoss|pertes financières]] et une atteinte à la [[Reputation|réputation]].
+> Le stockage sécurisé est une composante essentielle de la sécurité de l'information, contribuant directement aux piliers de la Confidentialité, de l'Intégrité et de l'Disponibilité (la Triade CIA). Il est crucial pour la protection des données sensibles, la conformité réglementaire (comme le RGPD) et la continuité des activités face aux menaces et aux vulnérabilités. Un stockage non sécurisé peut entraîner des fuites de données, des pertes financières et une atteinte à la réputation.
 
 ## 🔗 Notes Connexes
-*   [[DataProtection|Protection des Données]]
-*   [[Confidentiality|Confidentialité]]
-*   [[Integrity|Intégrité]]
-*   [[Availability|Disponibilité]]
-*   [[CIATriad|Triade CIA]]
-*   [[Encryption|Chiffrement]]
-*   [[AccessControl|Contrôle d'Accès]]
-*   [[BackupAndRecovery|Sauvegarde et Récupération]]
-*   [[DisasterRecoveryPlanning|Planification de la Reprise d'Activité]]
-*   [[CloudSecurity|Sécurité du Cloud]]
-*   [[RiskManagement|Gestion des Risques]]
-*   [[Cybersecurity|Cybersécurité]]
+*   Protection des Données
+*   Confidentialité
+*   Intégrité
+*   Disponibilité
+*   Triade CIA
+*   Chiffrement
+*   Contrôle d'Accès
+*   Sauvegarde et Récupération
+*   Planification de la Reprise d'Activité
+*   Sécurité du Cloud
+*   Gestion des Risques
+*   Cybersécurité

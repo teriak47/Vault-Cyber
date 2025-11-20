@@ -1,55 +1,53 @@
 ---
 tags:
   - acteur-de-menace
-  - script-kiddie
-  - attaque
-  - vulnerabilite
-  - outil/securite
+  - acteur-menace/script-kiddie
+  - sophistication/faible
   - motivation/malveillante
-  - cybercriminalite
 aliases:
   - Script Kiddie
   - Script Kiddies
   - Hacker débutant
   - Attaquant opportuniste
 archetype: acteur-de-menace
-origine_suspectee:
+origine: Individu(s) isolé(s), sans affiliation organisée
+motivation:
+  - Reconnaissance (auprès des pairs)
+  - Nuisance
+  - Curiosité
+  - Vandalism
 cssclasses:
   - max
-source:
 ---
 
 # Script Kiddie
 
-## 👤 Profil
-> **Type**: [[ThreatActor|Acteur de menace]] individuel ou petit groupe, souvent motivé par l'apprentissage, la curiosité, la notoriété, ou une intention malveillante de causer des perturbations.
-> **Niveau de sophistication**: Faible à modéré. Manque généralement de compétences techniques approfondies pour développer ses propres [[Exploit|exploits]] ou [[Malware|logiciels malveillants]].
-> **Objectifs principaux**: Notoriété, amusement, curiosité, parfois [[DataTheft|vol de données]] ou [[DenialOfService|déni de service]], sans motivation financière complexe ou [[Espionage|espionnage]] à grande échelle. Contribue souvent à la [[Cybercrime|cybercriminalité]] opportuniste.
+> [!danger] Profil de la Menace
+> * **Alias** : Script Kiddies, Hacker débutant, Attaquant opportuniste
+> * **Origine suspectée** : Individu(s) isolé(s), généralement sans expérience approfondie en [[Programming|programmation]] ou en [[Cybersecurity|cybersécurité]].
+> * **Motivation** : Reconnaissance sociale (auprès d'autres utilisateurs en ligne), nuisance, curiosité, [[Vandalism]] numérique, ou simple facilité d'exécution d'[[Attack|attaques]] préfabriquées.
+> * **Cibles** : [[Vulnerability|Vulnérabilités]] opportunistes, [[System]]s mal configurés ou peu sécurisés, [[PublicNetwork|réseaux publics]], sites web non patchés.
 
-## 🎯 Cibles et Industries Visées
-*   **Secteurs**: Large éventail de cibles, souvent déterminées par l'opportunité et la facilité. Principalement des systèmes avec des [[Vulnerability|vulnérabilités]] connues et non corrigées.
-*   **Régions géographiques**: Monde entier, attaques non spécifiques à une région.
-*   **Motivations**: Principalement l'exploration de systèmes, l'acquisition d'un certain "statut" au sein de communautés en ligne, ou la perturbation.
+Le terme **Script Kiddie** désigne un individu qui utilise des [[Tool|outils]] et des [[Script|scripts]] d'[[Exploit|exploitation]] existants, développés par d'autres, pour lancer des [[DigitalAttack|attaques numériques]]. Ces acteurs manquent généralement de compréhension technique approfondie des mécanismes sous-jacents aux outils qu'ils utilisent. Leur motivation est souvent liée à la [[Reputation|recherche de reconnaissance]] au sein de communautés en ligne ou à la simple curiosité, plutôt qu'à un [[FinancialLoss|gain financier]] ou à un [[Espionage|espionnage]] sophistiqué.
 
-## 🛠️ TTPs (Tactiques, Techniques et Procédures) - [[MITREATTACKFramework|MITRE ATT&CK]]
-*   **Accès Initial**: Utilisation d'outils et de [[Script|scripts]] préexistants et facilement accessibles sur internet. Souvent des [[Tool|outils]] de [[PortScanning|balayage de ports]] (ex: [[Nmap]]), des scanners de [[Vulnerability|vulnérabilités]], et des [[Exploit|exploits]] pour des failles connues.
-*   **Outils utilisés**: [[Tool|Outils]] [[OpenSource|open source]] ou piratés, [[Script|scripts]] automatisés trouvés sur des forums ou des dépôts publics, [[Malware|logiciels malveillants]] génériques.
-*   **Techniques notables**:
-    *   Lancement d'[[DistributedDenialOfService|attaques DDoS]] ou [[DenialOfService|DoS]] à l'aide de [[Botnet|botnets]] loués ou d'[[Tool|outils]] de stress test.
-    *   Exploitation de [[SoftwareVulnerability|vulnérabilités logicielles]] bien documentées à l'aide d'[[Exploit|exploits]] publiquement disponibles.
-    *   [[BruteForceAttack|Attaques par force brute]] ou [[DictionaryAttack|par dictionnaire]] sur des services exposés.
-    *   [[CrossSiteScripting|XSS]] ou [[SQLInjection|injection SQL]] simplifiées via des [[Tool|outils]] automatisés.
+## 🛠️ Arsenal & TTPs (Tactiques, Techniques, Procédures)
 
-## 💥 Activités Typiques
-*   Compromission de sites web ou de [[Server|serveurs]] vulnérables pour le "defacement" (altération de la page d'accueil) à des fins de gloire.
-*   Lancement d'[[Attack|attaques]] de [[DenialOfService|déni de service]] contre des cibles choisies arbitrairement ou suite à des conflits personnels.
-*   Utilisation de [[Tool|logiciels]] automatisés pour trouver et [[Exploitation|exploiter]] des [[Vulnerability|vulnérabilités]] connues sur des réseaux ou des [[Server|serveurs]] exposés.
-*   Utilisation de [[Payload|charges utiles]] existantes pour obtenir un accès à distance, souvent par le biais de [[ReverseShell|reverse shells]].
+Les Script Kiddies se distinguent par leur dépendance à des [[Tool|outils]] préexistants et leur manque de compétences pour développer leurs propres [[Exploit|exploits]] ou [[Malware|logiciels malveillants]].
+
+### Mapping MITRE ATT&CK
+| ID | Tactique | Technique Utilisée |
+|---|---|---|
+| **T1566** | Initial Access | Utilisation de kits de Phishing ou de logiciels malveillants génériques. |
+| **T1003** | Credential Access | Tentatives de cassage de mot de passe via attaques par dictionnaire ou force brute avec des outils automatisés. |
+| **T1059** | Execution | Exécution de scripts ou d'exploits publics trouvés sur internet, sans modification significative. |
+| **T1190** | Exploit Public-Facing Application | Ciblage de vulnérabilités de sécurité connues dans des applications web ou des serveurs via des outils automatisés. |
+
+### Malwares Signatures
+*   **Logiciels malveillants génériques** : Souvent des [[RemoteAccessTrojan|RATs]], [[Backdoor|backdoors]] simples, ou [[Scareware|scarewares]] téléchargés et utilisés sans personnalisation.
+*   **Kits d'[[Phishing]]** : Modèles de pages de [[Login|connexion]] falsifiées ou de courriels d'[[Email|hameçonnage]] prêts à l'emploi.
 
 ## 🔗 Notes Connexes
-*   **Concept parent**: [[ThreatActor|Acteur de menace]]
-*   **Type d'acteur connexe**: [[BlackHat|Black Hat]]
-*   **Méthode exploitée**: [[Exploit|Exploit]]
-*   **Cible des attaques**: [[Vulnerability|Vulnérabilité]]
-*   **Moyens utilisés**: [[Tool|Outil]]
----
+*   [[AttackVector|Vecteur d'attaque]]
+*   [[Vulnerability|Vulnérabilité]]
+*   [[Tool|Outil]]
+*   [[DistributedDenialOfService|DDoS]] (souvent perpétrées par des script kiddies via des [[Botnet|bot]]
