@@ -1,0 +1,11 @@
+filters:
+  and:
+    - and:
+        - '!file.folder.startsWith("90_SYSTEME")'
+    - and:
+        - file.name != "README"
+        - file.name != "LICENSE"
+views:
+  - type: list
+    name: Table
+    rowHeight: medium
