@@ -26,27 +26,27 @@ Avant l’été 2026, je dois maîtriser tout ce qui me permettra de comprendre 
 
 ### Réseau
 - [[OsiModel|Modèle OSI]]  
-- Modèle TCP/IP  
-- Ports et protocoles courants  
-- DNS, DHCP, NAT  
-- Notions de routage  
+- [[TcpIpModel|Modèle TCP/IP]]  
+- [[CommonPortsAndProtocols|Ports et protocoles courants]]  
+- [[DomainNameSystem|DNS]], [[DHCP]], [[NetworkAddressTranslation|NAT]]  
+- [[RoutingConcepts|Notions de routage]]  
 
 ### Systèmes
 
 **Windows :**
-- Event Viewer  
-- Sysmon  
-- PowerShell (bases)
+-  [[EventViewer|Event Viewer]] 
+- [[Sysmon]]  
+- [[PowerShell]] (bases)
 
 **Linux :**
-- journalctl  
+- [[Journalctl]]  
 - Commandes essentielles (ps, top, grep, netstat…)
 
 ### Cybersécurité générale
-- Triade CIA  
-- Vulnérabilités courantes  
+- [[CIATriad|Triade CIA]]  
+- [[Vulnerabilities|Vulnérabilités]] courantes  
 - Types d’attaques (phishing, brute-force, malware…)  
-- Référentiel MITRE ATT&CK (5–10 techniques)
+- Référentiel [[MitreAttackFramework|MITRE ATT&CK]] (5–10 techniques)
 
 ---
 
@@ -54,8 +54,8 @@ Avant l’été 2026, je dois maîtriser tout ce qui me permettra de comprendre 
 
 Durant cette période, j’apprends à manipuler un SIEM et à comprendre le fonctionnement pratique d’un SOC.
 
-### SIEM
-- Installation ou test : Wazuh (prioritaire) ou Splunk Free  
+### [[SIEM]]
+- Installation ou test : [[Wazuh]] (prioritaire) ou [[SplunkFree|Splunk Gratuit]]  
 - Comprendre la structure d’une alerte  
 - Faire la différence entre **vrai positif** et **faux positif**
 
@@ -79,7 +79,7 @@ Durant cette période, j’apprends à manipuler un SIEM et à comprendre le fon
 ### Compétences à renforcer
 - Corrélations simples  
 - Utilisation concrète de MITRE pour analyser une alerte  
-- Regex (niveau débutant)  
+- [[RegularExpressions|Regex]] (niveau débutant)  
 - PowerShell (niveau débutant)  
 - Threat Intelligence : IOC, TTP
 
