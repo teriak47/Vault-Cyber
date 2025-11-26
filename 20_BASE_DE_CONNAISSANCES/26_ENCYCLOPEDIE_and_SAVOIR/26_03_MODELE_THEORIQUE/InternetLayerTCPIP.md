@@ -53,7 +53,7 @@ graph TD
     *   **Internet Protocol (IP)** : Le protocole principal de cette couche, responsable de l'adressage et du routage des paquets de données. Il existe en deux versions principales :
         *   ***IPv4*** : Utilise des adresses de 32 bits, offrant environ 4 milliards d'adresses uniques. Il est toujours largement utilisé mais souffre d'un épuisement des adresses.
         *   ***IPv6*** : Utilise des adresses de 128 bits, fournissant un nombre considérablement plus grand d'adresses et incluant des améliorations pour l'efficacité du routage et la sécurité.
-    *   **Internet Control Message Protocol (ICMP)** : Utilisé pour la gestion des erreurs et les messages d'information, comme les messages "destination inaccessible" ou les requêtes d'écho (utilisées par la commande `ping`).
+    *   **[[ICMPProtocol|Internet Control Message Protocol]] (ICMP)** : Utilisé pour la gestion des erreurs et les messages d'information, comme les messages "destination inaccessible" ou les requêtes d'écho (utilisées par la commande `ping`).
     *   **Internet Group Management Protocol (IGMP)** : Gère l'appartenance des hôtes à des groupes de multidiffusion IP, permettant à un groupe d'hôtes de recevoir des flux de données identiques.
 
 ## ✅ Avantages vs Inconvénients

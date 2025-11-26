@@ -182,7 +182,7 @@ Wireshark offre un support complet pour l'analyse des protocoles IP, permettant 
 > # Filtrer les paquets fragmentés IPv4
 > ip.flags.mf == 1 or ip.frag_offset != 0
 >
-> # Filtrer le trafic ICMP (pour IPv4 et IPv6)
+> # Filtrer le trafic [[ICMPProtocol|ICMP]] (pour IPv4 et IPv6)
 > icmp or icmpv6
 > ```
 

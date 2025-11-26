@@ -31,7 +31,7 @@ tags:
 # Modèle : Transport Layer (OSI Layer 4)
 
 > [!abstract] Principe Fondamental
-> La **couche de transport** (Couche 4) du modèle OSI est responsable de la communication de bout en bout entre les applications sur différents hôtes, garantissant un transfert de données fiable et ordonné, ou un transfert rapide mais non garanti, selon le protocole utilisé.
+> La **couche de transport** (Couche 4) du modèle OSI est responsable de la communication de bout en bout entre les applications sur différents hôtes, garantissant un [[ReliableDataTransfer|transfert de données fiable]] et ordonné, ou un transfert rapide mais non garanti, selon le protocole utilisé.
 
 ## 📐 Structure du Modèle
 ```mermaid

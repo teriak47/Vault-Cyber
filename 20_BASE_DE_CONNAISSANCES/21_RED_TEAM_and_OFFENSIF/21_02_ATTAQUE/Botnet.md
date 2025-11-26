@@ -61,7 +61,7 @@ Un botnet se compose de trois éléments principaux : l'attaquant (botmaster), l
 
 L'architecture des botnets a évolué pour éviter la détection et la perturbation :
 
-*   **Modèle Client-Serveur (Centralisé)** : Il s'agit de la structure traditionnelle où tous les bots se connectent à un ou plusieurs serveurs C2 centraux pour recevoir des instructions. Simple à mettre en œuvre, ce modèle présente un point de défaillance unique : si le serveur C2 est identifié et neutralisé, l'ensemble du botnet peut être désactivé.
+*   **[[ClientServerModel|Modèle Client-Serveur]] (Centralisé)** : Il s'agit de la structure traditionnelle où tous les bots se connectent à un ou plusieurs serveurs C2 centraux pour recevoir des instructions. Simple à mettre en œuvre, ce modèle présente un point de défaillance unique : si le serveur C2 est identifié et neutralisé, l'ensemble du botnet peut être désactivé.
     *   Les canaux de communication C2 courants incluent historiquement l'IRC (Internet Relay Chat) et le protocole HTTP.
 *   **Modèle Pair-à-Pair (P2P / Décentralisé)** : Pour pallier la vulnérabilité du modèle centralisé, les botnets P2P distribuent les fonctions de commande et de contrôle parmi les machines infectées elles-mêmes. Chaque bot agit à la fois comme client et comme serveur, formant un réseau maillé. Ils sont plus résilients car la suppression d'un nœud ne suffit pas à arrêter les communications.
 *   **Modèles Hybrides** : Combinent les structures centralisées et P2P pour maximiser la résilience et la flexibilité.

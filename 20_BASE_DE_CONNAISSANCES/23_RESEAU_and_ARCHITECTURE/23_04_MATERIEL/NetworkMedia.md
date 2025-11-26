@@ -79,7 +79,7 @@ Les câbles en cuivre transmettent les données sous forme de signaux électriqu
 | **Fréquence** | Jusqu'à 2 GHz (Cat8) |
 
 #### Avantages et Inconvénients
-*   **Avantages** : Faible coût, facile à installer et à terminer, supporte l'alimentation via Ethernet (PoE).
+*   **Avantages** : Faible coût, facile à installer et à terminer, supporte l'alimentation via Ethernet ([[PowerOverEthernet|PoE]]).
 *   **Inconvénients** : Sensible aux interférences électromagnétiques (surtout UTP), distance limitée, moins sécurisé (interception facile), poids et encombrement.
 
 #### Applications Typiques

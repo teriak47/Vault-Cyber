@@ -54,7 +54,7 @@ tags:
 ## 🌐 Mécanismes de Fonctionnement (HTTP/HTTPS)
 
 ### HTTP (Hypertext Transfer Protocol)
-HTTP est le protocole fondamental utilisé pour transférer des informations sur le World Wide Web. Il fonctionne sur un modèle client-serveur, où le navigateur web (client) envoie des requêtes au serveur web, qui répond en renvoyant les ressources demandées (pages web, images, vidéos, etc.). HTTP est un protocole sans état, ce qui signifie que chaque requête est traitée indépendamment des précédentes. Par défaut, HTTP utilise le port 80.
+HTTP est le protocole fondamental utilisé pour transférer des informations sur le World Wide Web. Il fonctionne sur un [[ClientServerModel|modèle client-serveur]], où le navigateur web (client) envoie des requêtes au serveur web, qui répond en renvoyant les ressources demandées (pages web, images, vidéos, etc.). HTTP est un protocole sans état, ce qui signifie que chaque requête est traitée indépendamment des précédentes. Par défaut, HTTP utilise le port 80.
 
 ### HTTPS (Hypertext Transfer Protocol Secure)
 HTTPS est l'extension sécurisée de HTTP. Il utilise le protocole *Transport Layer Security* (TLS) (ou son prédécesseur SSL) pour chiffrer la communication entre le client et le serveur. Cela garantit la **confidentialité**, l'**intégrité** et l'**authenticité** des données échangées. Pour établir une connexion HTTPS, le serveur web doit posséder un certificat SSL/TLS valide, émis par une autorité de certification de confiance. HTTPS utilise le port 443 par défaut.

@@ -74,6 +74,6 @@ Les MAN sont couramment utilisés dans plusieurs scénarios d'entreprise et de s
 > *   **Coût d'implémentation** : La mise en place d'un MAN, notamment avec une infrastructure en fibre optique, peut être coûteuse en raison de l'achat d'équipements spécialisés et du déploiement de l'infrastructure physique sur de longues distances.
 > *   **Complexité de gestion** : Un MAN est plus complexe à gérer qu'un LAN en raison de son étendue, du nombre d'équipements et de la diversité des technologies impliquées.
 > *   **Dépendance à un FAI/Opérateur** : Souvent, les entreprises louent des services MAN à des opérateurs télécoms, ce qui peut entraîner une dépendance et des coûts opérationnels récurrents.
-> *   **Performance** : Bien que plus performant qu'un WAN pour des distances comparables, un MAN peut rencontrer des problèmes de latence ou de gigue si l'infrastructure n'est pas correctement conçue ou si le trafic est mal géré.
+> *   **Performance** : Bien que plus performant qu'un WAN pour des distances comparables, un MAN peut rencontrer des problèmes de latence ou de [[Jitter|gigue]] si l'infrastructure n'est pas correctement conçue ou si le trafic est mal géré.
 > *   **Sécurité** : Comme tout réseau étendu, un MAN est vulnérable aux menaces de sécurité. La protection des données transitant entre les différents sites nécessite des mesures robustes telles que le chiffrement et la segmentation réseau.
 

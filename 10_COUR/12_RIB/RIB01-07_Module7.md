@@ -48,49 +48,50 @@ tags:
 
 ### 1. Fondement des Réseaux Locaux et Rôle des Adresses MAC
 
-**Ethernet** est la technologie standard universellement adoptée pour les [[LocalAreaNetwork|réseaux locaux]] (*LAN*). Chaque appareil accède au réseau via une [[NetworkInterfaceCard|carte réseau]] munie d'une [[MacAddress|adresse MAC]] unique.
+**[[Ethernet]]** est la technologie standard universellement adoptée pour les [[LocalAreaNetwork|réseaux locaux]] (*LAN*). Chaque appareil accède au réseau via une [[NetworkInterfaceCard|carte réseau]] munie d'une [[MacAddress|adresse MAC]] unique.
 
 > [!note] Définition Clé
-> **Adresse MAC (Media Access Control)** : Un identifiant unique de 48 [[BinaryDigit|bits]] (6 [[Byte|octets]]), gravé de manière permanente dans la carte réseau par le fabricant. Elle garantit l'unicité de chaque interface réseau sur le [[Internet|réseau mondial]].
+> **Adresse MAC ([[MediaAccessControlMechanism|Media Access Control]])** : Un identifiant unique de 48 [[BinaryDigit|bits]] (6 [[Byte|octets]]), gravé de manière permanente dans la carte réseau par le fabricant. Elle garantit l'unicité de chaque interface réseau sur le [[Internet|réseau mondial]].
 
 Les adresses MAC de source et de destination sont des champs essentiels dans chaque trame Ethernet. Elles permettent l'identification précise de l'émetteur et du destinataire au niveau de la couche liaison de données, formant le fondement de la communication au sein d'un réseau local.
 
 ### 2. Anatomie Complète d'une Trame Ethernet
 
-Une trame Ethernet est composée de plusieurs champs structurés, chacun ayant un rôle spécifique dans la transmission des données. Les valeurs indiquées représentent le nombre d'octets (pour obtenir la taille en bits, multipliez par 8).
+Une [[EthernetFrame|Trame Ethernet]] est composée de plusieurs champs structurés, chacun ayant un rôle spécifique dans la transmission des données. Les valeurs indiquées représentent le nombre d'octets (pour obtenir la taille en bits, multipliez par 8).
 
 *   **Champs de Synchronisation (8 octets)**
     *   **Préambule (7 octets)** : Séquence alternée de 0 et 1 (10101010...) permettant à la carte réseau réceptrice de se synchroniser avec le flux de bits et d'établir le timing pour la réception des données.
     *   **[[StartFrameDelimiter|Délimiteur de Trame de Début]] (SFD) (1 octet)** : Séquence 10101011 qui signale la fin du préambule et le début de l'information réelle de la trame.
 
 *   **Adresses de Communication (12 octets)**
-    *   **Adresse MAC de Destination (6 octets)** : Identifie le destinataire final de la trame sur le réseau local. Elle peut être :
+    *   **[[DestinationMACAddress|Adresse MAC de Destination]] (6 octets)** : Identifie le destinataire final de la trame sur le réseau local. Elle peut être :
         *   *Unicast* : Pour un destinataire unique.
         *   *Multicast* : Pour un groupe de hôtes.
         *   *Broadcast* : Pour tous les hôtes du réseau (FF:FF:FF:FF:FF:FF).
-    *   **Adresse MAC Source (6 octets)** : Identifie l'appareil émetteur de la trame. Essentiel pour la construction des tables d'adresses MAC des commutateurs.
+    *   **[[SourceMacAddress|Adresse MAC Source]] (6 octets)** : Identifie l'appareil émetteur de la trame. Essentiel pour la construction des tables d'adresses MAC des commutateurs.
 
 *   **Longueur/Type et Données Encapsulées (48-1502 octets)**
     *   **Champ Longueur/Type (2 octets)** : Polyvalent, indique soit la taille du *payload* (Longueur) en octets, soit le protocole de couche supérieure encapsulé (Type). Ex: 0x0800 pour [[InternetProtocol|IPv4]], 0x86DD pour IPv6, 0x0806 pour [[AddressResolutionProtocol|ARP]].
     *   **Données Encapsulées (46-1500 octets)** : Contient les informations transportées, comme un paquet IPv4 ou IPv6 avec des protocoles de couches supérieures (*[[HttpProtocol|HTTP]]*, *[[FileTransferProtocol|FTP]]*, etc.). Le rôle d'Ethernet est simplement de transporter ces données de manière fiable.
 
 *   **Contrôle d'Intégrité (4 octets)**
-    *   **FCS (Frame Check Sequence) (4 octets)** : Le dernier champ de la trame. Il contient une valeur de *contrôle de redondance cyclique* (*CRC-32*) calculée sur l'ensemble des champs de la trame. Le dispositif récepteur recalcule le CRC et le compare au FCS reçu. Si les valeurs ne correspondent pas, la trame est considérée comme corrompue et rejetée, garantissant l'intégrité des données.
+    *   **FCS (Frame Check Sequence) (4 octets)** : Le dernier champ de la trame. Il contient une valeur de *[[CyclicRedundancyCheck|contrôle de redondance cyclique]]* (*CRC-32*) calculée sur l'ensemble des champs de la trame. Le dispositif récepteur recalcule le CRC et le compare au FCS reçu. Si les valeurs ne correspondent pas, la trame est considérée comme corrompue et rejetée, garantissant l'intégrité des données.
 
 ### 3. Le Concept d'Encapsulation Réseau
 
-L'**encapsulation** est le processus de placement d'un format de message dans un autre, comme une lettre dans une enveloppe. Chaque message informatique est encapsulé dans une trame spécifique avant d'être transmis sur le réseau.
+L'**[[ApplicationDataEncapsulation|Encapsulation]]** est le processus de placement d'un format de message dans un autre, comme une lettre dans une enveloppe. Chaque message informatique est encapsulé dans une trame spécifique avant d'être transmis sur le réseau.
 
 1.  **Données d'[[Application|Application]]** : Le message original créé par l'application (*HTTP*, *FTP*, etc.).
 2.  **[[TransportLayer|Segment Transport]]** : Ajout de l'en-tête [[TransmissionControlProtocol|TCP]] ou [[UserDatagramProtocol|UDP]] avec les ports.
 3.  **Paquet Réseau** : Encapsulation dans un paquet IP avec les adresses IP source et destination.
-4.  **Trame Liaison** : Encapsulation finale dans la trame Ethernet avec les adresses MAC source et destination.
+4.  **[[DataLinkFrame|Trame de Liaison]]** : Encapsulation finale dans la trame Ethernet avec les adresses MAC source et destination.
 
 La trame agit comme une enveloppe, fournissant l'adresse de destination et celle de la source. Les messages mal formatés sont rejetés.
 
 ### 4. Le Paquet IPv6 : Vue Détaillée
 
-Le protocole Internet (**IP**) agit comme une enveloppe postale. Les champs du paquet IPv6 identifient la source et la destination, et IP est responsable de l'acheminement du message à travers plusieurs réseaux intermédiaires.
+Le protocole Internet (**[[InternetProtocol|IP]]**) agit comme une enveloppe postale. 
+Les champs du [[IPv6PacketStructure|paquet IPv6]] identifient la source et la destination, et IP est responsable de l'acheminement du message à travers plusieurs réseaux intermédiaires.
 
 1.  **En-tête Fixe (40 octets)** : Contient la version, la classe de trafic, l'étiquette de flux, la longueur des données utiles, l'en-tête suivant, et la limite du nombre de tronçons.
 2.  **Adresse IP Source (16 octets)** : Identifie l'appareil émetteur du paquet au niveau réseau.
@@ -120,10 +121,10 @@ Ce processus de commutation évite les collisions et optimise l'utilisation de l
 *   **Capacité de la Table** : Les commutateurs modernes peuvent stocker de milliers à des dizaines de milliers d'adresses MAC simultanément, selon leur modèle. Lorsque la table est pleine, certains commutateurs peuvent basculer vers un comportement de *flooding* pour les nouvelles adresses jusqu'à ce que de l'espace soit libéré.
 
 *   **Comportements de Transfert (`Unicast`, `Multicast`, `Broadcast` )** :
-    *   **Unicast connu** : Transfert ciblé vers un seul port.
+    *   **[[UnicastCommunication|Unicast]] connu** : Transfert ciblé vers un seul port.
     *   **Unicast inconnu** : *Flooding* sur tous les ports sauf le port d'entrée.
-    *   **Broadcast** ((FF:FF:FF:FF:FF:FF)) : Toujours envoyé sur tous les ports.
-    *   **Multicast** : Selon la configuration (par exemple, IGMP *snooping* pour diriger le multidiffusion uniquement vers les hôtes membres, ou *flooding* par défaut).
+    *   **[[BroadcastCommunication|Broadcast]]** ((FF:FF:FF:FF:FF:FF)) : Toujours envoyé sur tous les ports.
+    *   **[[MulticastCommunication|Multicast]]** : Selon la configuration (par exemple, IGMP *snooping* pour diriger le multidiffusion uniquement vers les hôtes membres, ou *flooding* par défaut).
 
 ## 🧠 Carte Mentale / Schéma
 ```mermaid

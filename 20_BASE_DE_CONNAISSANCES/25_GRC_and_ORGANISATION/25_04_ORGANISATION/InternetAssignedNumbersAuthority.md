@@ -34,7 +34,7 @@ tags:
 1.  **Gestion des adresses IP** : L'IANA est responsable de la coordination et de la distribution mondiale des blocs d'adresses IPv4 et IPv6 aux registres régionaux d'Internet (RIR).
 2.  **Gestion des noms de domaine de premier niveau (TLD)** : Elle supervise la base de données racine du système de noms de domaine (DNS), y compris la gestion des noms de domaine de premier niveau (gTLD et ccTLD) et les processus associés.
 3.  **Attribution des paramètres de protocole** : L'IANA gère l'attribution et l'enregistrement de nombreux paramètres de protocole Internet, tels que les numéros de port, les types de médias (MIME types) et les codes d'état des protocoles.
-4.  **Coordination des numéros de système autonome (ASN)** : Elle alloue les blocs de numéros de système autonome (ASN) aux RIR, qui sont utilisés pour le routage BGP sur Internet.
+4.  **Coordination des numéros de système autonome (ASN)** : Elle alloue les blocs de numéros de système autonome (ASN) aux RIR, qui sont utilisés pour le routage [[BGPProtocol|BGP]] sur Internet.
 
 ## 📚 Publications & Standards
 Cette organisation est connue pour :

@@ -64,7 +64,7 @@ Les protocoles réseau sont composés de plusieurs éléments fondamentaux qui d
 Notre perception d'un réseau, via des diagrammes de topologie et des informations comme les [[MacAddress|adresses MAC]] ou [[InternetProtocol|IP]], diffère de celle des appareils. Chaque appareil opère dans sa "propre bulle", connaissant uniquement ses propres informations d'adressage. C'est le **protocole** qui fournit les règles permettant à un appareil de savoir à quel réseau il appartient et où envoyer les informations.
 
 Les communications réseau sont décomposées en petites unités appelées **paquets**. De nombreux protocoles interagissent pour acheminer ces paquets :
-*   *Ethernet* / *[[IEEE80211Standard|Sans fil]]* : Connectent physiquement l'appareil au réseau.
+*   *[[Ethernet]]* / *[[IEEE80211Standard|Sans fil]]* : Connectent physiquement l'appareil au réseau.
 *   *[[DHCP]]* / *ICMPv6* : Fournissent les informations d'adressage IP.
 *   *[[DomainNameSystem|DNS]]* : Convertit les noms de domaine en adresses IP.
 *   *[[InternetProtocol|IP]]* : Délivre le paquet de la source à la destination finale.
@@ -101,7 +101,7 @@ Le modèle **[[TcpIpModel|TCP/IP]]** (Transmission Control Protocol/Internet Pro
 
 ### 7. Le Modèle OSI : Une Référence Universelle
 
-Le modèle de référence **OSI** (Open Systems Interconnection), développé par l'ISO (International Organization for Standardization), est la référence la plus connue pour la conception, les opérations et la résolution de problèmes des réseaux de données. Il comprend sept couches distinctes.
+Le modèle de référence **OSI** (Open Systems Interconnection), développé par l'ISO ([[InternationalOrganizationForStandardization|International Organization for Standardization]]), est la référence la plus connue pour la conception, les opérations et la résolution de problèmes des réseaux de données. Il comprend sept couches distinctes.
 
 > [!note] Les Sept Couches du Modèle OSI (de la couche supérieure à la couche inférieure)
 > 1.  **Application ([[ApplicationLayer|Couche 7]])** : Protocoles pour les communications de processus à processus. Interface directe avec les applications utilisateur.

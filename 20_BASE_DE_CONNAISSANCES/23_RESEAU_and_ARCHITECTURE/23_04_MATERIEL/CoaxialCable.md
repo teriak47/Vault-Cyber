@@ -56,7 +56,7 @@ Le câble coaxial fonctionne en transmettant des signaux électriques via son co
 
 Il existe plusieurs types de câbles coaxiaux, chacun adapté à des applications spécifiques :
 *   **RG-6** : Utilisé principalement pour la télévision par câble et le haut débit internet. Il est plus épais et a un meilleur blindage que le RG-59, ce qui le rend idéal pour les transmissions à plus haute fréquence sur de plus longues distances.
-*   **RG-11** : Un câble plus épais et plus rigide que le RG-6 et le RG-59, offrant une atténuation du signal encore plus faible sur de très longues distances. Il est souvent utilisé pour les dorsales de distribution de signaux vidéo.
+*   **RG-11** : Un câble plus épais et plus rigide que le RG-6 et le RG-59, offrant une [[SignalAttenuation|atténuation du signal]] encore plus faible sur de très longues distances. Il est souvent utilisé pour les dorsales de distribution de signaux vidéo.
 *   **RG-58** : Historiquement utilisé pour les réseaux Ethernet (ThinNet) et les applications radio. Il a une impédance de 50 Ohms.
 *   **RG-59** : Principalement utilisé pour les installations de vidéosurveillance (CCTV) et les signaux vidéo à courte distance. Il est plus fin et plus flexible que le RG-6, mais avec une atténuation plus élevée sur de longues distances.
 *   **RG-8/RG-213** : Câbles coaxiaux à faible perte, souvent utilisés dans les applications radioamateurs et les communications militaires pour leur capacité à gérer des puissances élevées et leur faible atténuation sur des fréquences plus élevées.

@@ -85,7 +85,7 @@ Le Packet Switching est le fondement des réseaux modernes et d'Internet.
 ## ⚠️ Limitations & Problèmes
 > [!warning] Points d'attention
 > *   **Performance** :
-> 	* **Latence et Jitter** : Étant donné que les paquets peuvent emprunter des chemins différents et que leur transmission dépend de la charge réseau, il peut y avoir des délais variables (*latence*) et des variations dans ces délais (*jitter*), ce qui peut affecter les applications en temps réel.
+> 	* **Latence et [[Jitter]]** : Étant donné que les paquets peuvent emprunter des chemins différents et que leur transmission dépend de la charge réseau, il peut y avoir des délais variables (*latence*) et des variations dans ces délais (*jitter*), ce qui peut affecter les applications en temps réel.
 > 	* **Perte de paquets** : En cas de congestion réseau ou de problèmes matériels, des paquets peuvent être perdus. Les protocoles comme TCP gèrent la retransmission, mais cela introduit des délais supplémentaires.
 > 	* **Charge de traitement** : Les routeurs et commutateurs doivent traiter chaque paquet individuellement, ce qui nécessite une puissance de traitement significative et de la mémoire RAM, surtout dans les réseaux à fort trafic.
 > *   **Sécurité** :

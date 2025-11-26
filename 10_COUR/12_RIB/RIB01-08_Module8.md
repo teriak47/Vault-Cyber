@@ -24,15 +24,15 @@ tags:
 > [!goal] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
 > 1. Expliquer l'importance fondamentale de l'**Adressage IPv4** dans la communication réseau.
-> 2. Décrire la structure hiérarchique d'une **Adresse IPv4**, distinguant la partie réseau de la partie hôte.
-> 3. Comprendre le rôle du [[SubnetMask|SubnetMask]] dans la détermination de ces parties.
-> 4. Expliquer pourquoi l'adressage hiérarchique est essentiel pour l'efficacité du [[RoutingConcepts|Routage]] et la [[Scalability|scalabilité]] des réseaux.
+> 2. Décrire la structure hiérarchique d'une **[[IPv4|Adresse IPv4]]**, distinguant la partie réseau de la partie hôte.
+> 3. Comprendre le rôle du *SubnetMask* dans la détermination de ces parties.
+> 4. Expliquer pourquoi l'adressage hiérarchique est essentiel pour l'efficacité du *[[RoutingConcepts|Routage]]* et la *scalabilité* des réseaux.
 > 5. Différencier les *réseaux logiques* des *réseaux physiques* et leurs implications.
 
 ## 📝 Synthèse du Cours
 
 ### 1. L'Adresse IPv4 : Une Identité Numérique Essentielle
-Dans un monde hyperconnecté, chaque appareil a besoin d'une identité numérique unique pour communiquer. L'**Adresse IPv4** est cette identité fondamentale qui permet aux ordinateurs, smartphones ou serveurs d'interagir sur [[Internet]] et les réseaux locaux.
+Dans un monde hyperconnecté, chaque appareil a besoin d'une identité numérique unique pour communiquer. L'**Adresse IPv4** est cette identité fondamentale qui permet aux ordinateurs, smartphones ou [[Server|serveurs]] d'interagir sur [[Internet]] et les [[LocalAreaNetwork|réseaux locaux]].
 
 *   Elle agit comme une *adresse postale* pour les données, assurant leur livraison de la source à la destination correcte.
 *   Sans une adresse IPv4 unique et configurée correctement, un appareil reste isolé.
@@ -42,29 +42,29 @@ Dans un monde hyperconnecté, chaque appareil a besoin d'une identité numériqu
 
 ### 2. IPv4 en Action
 
-*   **Sur le [[LocalAreaNetwork|Réseau Local]] (LAN)** : L'adresse IPv4 doit être *unique* parmi tous les appareils connectés au même LAN pour éviter les collisions et assurer des communications locales claires.
-*   **Sur Internet** : L'adresse IPv4 doit être *unique au niveau mondial* pour permettre les communications à distance (ex. : un [[Server|serveur]] en France et un utilisateur au Japon).
+*   **Sur le Réseau Local ([[LocalAreaNetwork|LAN]])** : L'adresse IPv4 doit être *unique* parmi tous les appareils connectés au même LAN pour éviter les collisions et assurer des communications locales claires.
+*   **Sur Internet** : L'adresse IPv4 doit être *unique au niveau mondial* pour permettre les communications à distance (ex. : un serveur en France et un utilisateur au Japon).
 
 ### 3. Où Trouve-t-on les Adresses IPv4 ?
 Les adresses IPv4 sont attribuées à de nombreux types de périphériques réseau :
 
-*   **Stations de Travail** : Chaque ordinateur possède une carte réseau (*NIC*) avec une adresse IPv4, servant de point de connexion au réseau.
-*   **Serveurs** : Les serveurs peuvent avoir plusieurs cartes réseau, chacune avec sa propre adresse IPv4 pour des connexions multiples et la [[Redundancy|redondance]].
+*   **Stations de Travail** : Chaque ordinateur possède une carte réseau (*[[NetworkInterfaceCard|NIC]]*) avec une adresse IPv4, servant de point de connexion au réseau.
+*   **Serveurs** : Les serveurs peuvent avoir plusieurs cartes réseau, chacune avec sa propre adresse IPv4 pour des connexions multiples et la redondance.
 *   **Périphériques Réseau** : Imprimantes réseau, téléphones IP et autres équipements connectés utilisent des adresses IPv4 pour communiquer.
-*   **[[Router|Routeurs]]** : Chaque interface d'un routeur connectant différents réseaux IP possède sa propre adresse IPv4, agissant comme *passerelle* entre les réseaux.
+*   **Routeurs** : Chaque interface d'un [[Router|routeur]] connectant différents réseaux IP possède sa propre adresse IPv4, agissant comme *passerelle* entre les réseaux.
 
 ### 4. Anatomie d'un Paquet IPv4
 Chaque paquet circulant sur Internet contient des informations critiques :
 
-*   **[[SourceMacAddress|Adresse Source]]** : Identifie l'appareil qui envoie les données.
+*   **Adresse Source** : Identifie l'appareil qui envoie les données.
 *   **Données du Paquet** : Le contenu réel transporté à travers le réseau.
-*   **[[DestinationMACAddress|Adresse de Destination]]** : Indique où les données doivent arriver.
+*   **Adresse de Destination** : Indique où les données doivent arriver.
 
 Ces adresses permettent aux équipements réseau d'acheminer les données et de garantir que les réponses reviennent à l'expéditeur.
 
-### 5. Du [[BinaryCode|Binaire]] au Décimal : La Structure IPv4
+### 5. Du Binaire au Décimal : La Structure IPv4
 
-*   Les adresses IPv4 sont composées de **32 bits**.
+*   Les adresses IPv4 sont composées de **32 [[BinaryDigit|bits]]**.
 *   Une séquence de 32 bits est difficile à mémoriser et sujette aux erreurs pour les humains (ex: `11010001101001011100100000000001`).
 *   Pour faciliter la lecture et la manipulation, la *notation décimale pointée* a été créée.
 
@@ -95,7 +95,7 @@ Des départements (Management, Comptabilité, Ventes) peuvent être configurés 
 *   Comptabilité : `192.168.2.X`
 *   Ventes : `192.168.3.X`
 
-Si un appareil du département Ventes (`192.168.3.X`) veut communiquer avec un appareil de la Comptabilité (`192.168.2.X`), la communication doit passer par un routeur, car ils sont sur des parties réseau différentes.
+Si un appareil du département Ventes (`192.168.3.X`) veut communiquer avec un appareil de la Comptabilité (`192.168.2.X`), la communication doit passer par un *routeur*, car ils sont sur des parties réseau différentes.
 
 ### 9. Le Rôle du Subnet Mask
 Le **masque de sous-réseau** (*Subnet Mask*) est l'outil qui permet à un appareil de déterminer quelle partie d'une adresse IPv4 représente le réseau et quelle partie représente l'hôte.
@@ -188,6 +188,8 @@ graph TD
 > > 1.  L'**efficacité du routage** : Les routeurs n'ont qu'à connaître les chemins vers les réseaux, pas vers chaque hôte individuel, ce qui réduit la taille des tables de routage.
 > > 2.  La **scalabilité** : Il permet d'organiser des millions d'appareils en réseaux logiques gérables, facilitant ainsi la croissance d'Internet et des grands réseaux d'entreprise.
 
-## 🔗 Liens du Module
-*   **Précédent** :  [[RIB01-07_Module7|01-07 | Module 7]]
-*   **Suivant** :  [[RIB01-09_Module9|01-09 | Module 9]]
+## 🔗 Notes Connexes
+* **Lien** : [[RIB01-07_Module7|01-07 | Module 7]]
+* **Lien** : [[RIB01-09_Module9|01-09 | Module 9]]
+* **Lien** : [[IpSubnetting|Sous-Réseautage IP]]
+* **Lien** : [[IpSubnettingFundamentals|IP Subnetting]]

@@ -25,7 +25,7 @@ tags:
 # Modèle : Couche Liaison de Données (Couche 2 du modèle OSI)
 
 > [!abstract] Principe Fondamental
-> La Couche Liaison de Données (Couche 2) du modèle OSI est responsable du transfert de données fiable et sans erreur entre deux nœuds directement connectés sur un segment de réseau local, en organisant les données en *trames* et en gérant l'accès au support physique.
+> La Couche Liaison de Données (Couche 2) du modèle OSI est responsable du [[ReliableDataTransfer|transfert de données fiable]] et sans erreur entre deux nœuds directement connectés sur un segment de réseau local, en organisant les données en *trames* et en gérant l'accès au support physique.
 
 ## 📐 Structure du Modèle
 ```mermaid

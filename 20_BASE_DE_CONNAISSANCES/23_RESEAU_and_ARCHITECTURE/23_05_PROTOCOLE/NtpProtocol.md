@@ -33,7 +33,7 @@ Le **Network Time Protocol (NTP)** est un protocole réseau fondamental utilisé
 
 ## ⚙️ Fonctionnement (Handshake)
 
-Le protocole NTP opère principalement selon un modèle client-serveur, mais prend également en charge les modes *peer* (pair-à-pair), *broadcast* et *multicast*. En mode client-serveur, la synchronisation horaire repose sur l'échange de paquets contenant des horodatages pour calculer le décalage (offset) et le délai (delay) du réseau.
+Le protocole NTP opère principalement selon un [[ClientServerModel|modèle client-serveur]], mais prend également en charge les modes *peer* (pair-à-pair), *broadcast* et *multicast*. En mode client-serveur, la synchronisation horaire repose sur l'échange de paquets contenant des horodatages pour calculer le décalage (offset) et le délai (delay) du réseau.
 
 Le processus de synchronisation implique quatre horodatages clés :
 

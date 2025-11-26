@@ -43,7 +43,7 @@ tags:
 ## ⚙️ Fonctionnement Interne
 Le hub opère au niveau de la **couche physique (Couche 1)** du modèle OSI. Lorsqu'il reçoit un paquet de données sur l'un de ses ports, il ne l'analyse pas. Au lieu de cela, il régénère le signal électrique et le diffuse à *tous* les autres ports connectés, sans distinction de destination.
 
-Ce mode de fonctionnement, appelé **semi-duplex**, implique que tous les périphériques connectés à un hub partagent la même bande passante et se trouvent dans un unique **domaine de collision**. Si deux appareils tentent de transmettre des données simultanément, une collision se produit, ce qui nécessite une retransmission des trames après une attente aléatoire. Cela limite considérablement l'efficacité du réseau, surtout avec un trafic élevé.
+Ce mode de fonctionnement, appelé **semi-duplex**, implique que tous les périphériques connectés à un hub partagent la même bande passante et se trouvent dans un unique **[[CollisionDomain|domaine de collision]]**. Si deux appareils tentent de transmettre des données simultanément, une collision se produit, ce qui nécessite une retransmission des trames après une attente aléatoire. Cela limite considérablement l'efficacité du réseau, surtout avec un trafic élevé.
 
 ```mermaid
 graph LR

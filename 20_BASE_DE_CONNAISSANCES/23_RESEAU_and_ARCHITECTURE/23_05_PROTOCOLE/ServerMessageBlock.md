@@ -46,7 +46,7 @@ Le protocole **Server Message Block (SMB)** est un protocole de partage de resso
 
 ## ⚙️ Fonctionnement et Versions
 
-Le fonctionnement de SMB repose sur un modèle client-serveur, où un client envoie des requêtes et un serveur répond. Le processus général de connexion et de négociation est le suivant :
+Le fonctionnement de SMB repose sur un [[ClientServerModel|modèle client-serveur]], où un client envoie des requêtes et un serveur répond. Le processus général de connexion et de négociation est le suivant :
 
 1.  **Négociation de Dialecte** : Le client et le serveur échangent des messages pour déterminer la version de SMB (le "dialecte") à utiliser pour la communication.
 2.  **Authentification** : Le client s'authentifie auprès du serveur en fournissant des informations d'identification (nom d'utilisateur, mot de passe).

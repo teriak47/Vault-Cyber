@@ -61,7 +61,7 @@ Un pare-feu est un outil de cybersécurité qui agit comme un point de contrôle
 Les pare-feu opèrent en analysant le trafic réseau en fonction de divers critères :
 *   **Adresses IP source et destination** : Qui envoie et qui reçoit le trafic.
 *   **Numéros de port** : Quels services ou applications sont ciblés.
-*   **Protocoles réseau** : Le type de protocole utilisé (TCP, UDP, ICMP, HTTP, etc.).
+*   **Protocoles réseau** : Le type de protocole utilisé (TCP, UDP, [[ICMPProtocol|ICMP]], HTTP, etc.).
 *   **Contenu des paquets** : Pour les pare-feu plus avancés, une inspection du contenu réel des données.
 
 Sur la base de ces informations, le pare-feu applique des règles configurées pour **autoriser** ou **bloquer** le trafic.
@@ -159,7 +159,7 @@ ALERT
 > *   **Mauvaises configurations** : Des règles mal définies ou une gestion incorrecte peuvent laisser des failles de sécurité ouvertes.
 > *   **Exploitation de vulnérabilités Zero-Day** : Les attaquants peuvent exploiter des vulnérabilités inconnues dans le logiciel ou le matériel du pare-feu avant qu'un patch ne soit disponible.
 > *   **Manipulation de paquets** :
-    *   **Fragmentation de paquets** : Diviser les paquets de données en fragments plus petits pour échapper à l'inspection des pare-feu qui pourraient ne pas réassembler correctement ou ignorer les petits fragments.
+    *   **[[PacketFragmentation|Fragmentation de paquets]]** : Diviser les paquets de données en fragments plus petits pour échapper à l'inspection des pare-feu qui pourraient ne pas réassembler correctement ou ignorer les petits fragments.
     *   **Usurpation d'IP (IP Spoofing)** : Manipuler l'adresse IP source des paquets pour tromper les pare-feu de filtrage et masquer l'origine réelle du trafic.
 > *   **Tunneling et chiffrement** : Utiliser des protocoles chiffrés (comme un VPN ou le trafic HTTPS) pour masquer des activités malveillantes au sein du trafic légitime, rendant difficile l'inspection par les pare-feu traditionnels. Les pare-feu peuvent manquer de capacités robustes de déchiffrement SSL/TLS.
 > *   **Attaques au niveau de l'application** : Cible des vulnérabilités spécifiques aux applications qui ne sont pas toujours inspectées en profondeur par les pare-feu réseau.

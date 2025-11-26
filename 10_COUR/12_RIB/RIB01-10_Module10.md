@@ -29,8 +29,8 @@ tags:
 
 > [!goal] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
-> 1. Expliquer pourquoi la transition vers **IPv6** est une nécessité incontournable.
-> 2. Décrire l'ampleur de la crise d'épuisement des adresses **IPv4**.
+> 1. Expliquer pourquoi la transition vers **[[IPv6]]** est une nécessité incontournable.
+> 2. Décrire l'ampleur de la crise d'épuisement des adresses **[[IPv4]]**.
 > 3. Identifier les fonctionnalités clés d'**IPv6** au-delà de l'extension de l'espace d'adressage.
 > 4. Comprendre les différentes stratégies de coexistence et de migration entre **IPv4** et **IPv6**.
 > 5. Expliquer le format d'adressage **IPv6** et ses règles de compression.
@@ -43,24 +43,24 @@ L'épuisement des adresses **IPv4** n'est plus une menace lointaine, mais une r�
 ### 2. L'Épuisement des Adresses IPv4 : Une Crise Mondiale
 Le protocole **IPv4** est théoriquement limité à environ 4,3 milliards d'adresses, un nombre largement insuffisant pour la croissance actuelle d'Internet, en particulier dans les régions émergentes.
 *   **Limite IPv4** : Environ 4,3 milliards d'adresses uniques.
-*   **Solutions temporaires** : L'utilisation d'adresses privées combinées à la *[[NetworkAddressTranslation|Traduction d'Adresses Réseau]]* (**NAT**) a ralenti la pénurie. Cependant, cette approche présente des limitations majeures, notamment pour les communications [[PeerToPeer|peer-to-peer]] et de nombreuses applications critiques nécessitant une connectivité de bout en bout.
+*   **Solutions temporaires** : L'utilisation d'[[PrivateIPAddressRanges|adresses privées]] combinées à la *[[NetworkAddressTranslation|Traduction d'Adresses Réseau]]* (**NAT**) a ralenti la pénurie. Cependant, cette approche présente des limitations majeures, notamment pour les communications [[PeerToPeer|peer-to-peer]] et de nombreuses applications critiques nécessitant une connectivité de bout en bout.
 *   **Contraste avec IPv6** : **IPv6** offre un espace d'adressage de 340 undécillions (340 suivi de 36 zéros), garantissant une expansion quasi illimitée pour les décennies à venir.
 
 > [!note] Définition Clé
-> **NAT (Network Address Translation)** : Mécanisme permettant à plusieurs appareils d'un réseau privé de partager une seule adresse IP publique pour accéder à Internet, retardant l'épuisement d'IPv4 mais introduisant des complexités.
+> **NAT (Network Address Translation)** : Mécanisme permettant à plusieurs appareils d'un réseau privé de partager une seule [[PublicIPAddress|adresse IP publique]] pour accéder à Internet, retardant l'épuisement d'IPv4 mais introduisant des complexités.
 
 #### Dates d'Épuisement par Région (RIR)
-Quatre des cinq registres Internet régionaux (**RIR**) ont déjà épuisé leurs réserves d'adresses **IPv4**, soulignant l'urgence de la transition :
+Quatre des cinq registres Internet régionaux (**[[RegionalInternetRegistries|RIR]]**) ont déjà épuisé leurs réserves d'adresses **IPv4**, soulignant l'urgence de la transition :
 1.  **APNIC (Asie-Pacifique)** : Le premier **RIR** à épuiser ses adresses face à une demande massive.
 2.  **RIPE NCC (Europe)** : Réserves épuisées, un système de liste d'attente est en place.
 3.  **ARIN (Amérique du Nord)** : Stock épuisé, la redistribution est désormais limitée.
 4.  **LACNIC (Amérique Latine)** : Le dernier bloc a été alloué, la région est en phase finale de distribution.
 
 ### 3. IPv6 : Bien Plus Que des Adresses Supplémentaires
-Lors de son développement par l'**[[InternetEngineeringTaskForce|IETF]]**, **IPv6** n'a pas seulement étendu l'espace d'adressage, mais a aussi corrigé les limitations fondamentales d'**IPv4** et amélioré le protocole pour les besoins futurs de l'Internet.
-*   **Espace d'Adressage Massif** : 128 bits permettent 340 undécillions d'adresses, assurant une expansion future illimitée et une allocation granulaire.
-*   **Configuration Automatique** : **ICMPv6** intègre des fonctionnalités d'auto-configuration d'adresse (comme le SLAAC) et de résolution d'adresse, des fonctions qui étaient absentes dans **IPv4** et gérées par d'autres protocoles (comme [[DHCP]] et [[AddressResolutionProtocol|ARP]]).
-*   **Sécurité Intégrée** : *IPsec* est incorporé nativement dans la pile de protocoles **IPv6** pour des communications sécurisées de bout en bout, contrairement à **IPv4** où il est un ajout optionnel.
+Lors de son développement par l'**[[InternetEngineeringTaskForce|IETF]]**, **[[IPv6]]** n'a pas seulement étendu l'espace d'adressage, mais a aussi corrigé les limitations fondamentales d'**IPv4** et amélioré le protocole pour les besoins futurs de l'Internet.
+*   **Espace d'Adressage Massif** : 128 [[BinaryDigit|bits]] permettent 340 undécillions d'adresses, assurant une expansion future illimitée et une allocation granulaire.
+*   **Configuration Automatique** : **[[ICMPv6]]** intègre des fonctionnalités d'auto-configuration d'adresse (comme le [[SLAAC]]) et de résolution d'adresse, des fonctions qui étaient absentes dans **IPv4** et gérées par d'autres protocoles (comme [[DHCP]] et [[AddressResolutionProtocol|ARP]]).
+*   **Sécurité Intégrée** : *[[IpsecProtocol|IPsec]]* est incorporé nativement dans la pile de protocoles **IPv6** pour des communications sécurisées de bout en bout, contrairement à **IPv4** où il est un ajout optionnel.
 
 ### 4. L'Internet des Objets Accélère la Transition
 L'Internet s'étend bien au-delà des ordinateurs et des smartphones pour inclure l'*[[InternetOfThings|Internet des Objets]]* (**IoT**), où chaque appareil du quotidien devient connecté et équipé de capteurs.
@@ -76,16 +76,16 @@ Cette prolifération de dispositifs exige un espace d'adressage beaucoup plus gr
 La transition vers **IPv6** est progressive et les deux protocoles coexisteront pendant des années. L'**IETF** a développé trois approches principales pour faciliter cette migration :
 1.  **Double Pile (Dual Stack)** : Les périphériques exécutent simultanément les piles de protocoles **IPv4** et **IPv6** sur le même segment réseau. C'est la méthode privilégiée pour une **IPv6** native, permettant un accès direct au contenu Internet via **IPv6** ou **IPv4** selon la ressource.
 2.  **Tunneling** : Cette méthode transporte les paquets **IPv6** sur un réseau **IPv4**. Les paquets **IPv6** sont encapsulés dans des paquets **IPv4** pour traverser des infrastructures qui ne supportent pas encore **IPv6**.
-3.  **Traduction (NAT64)** : Permet aux périphériques **IPv6** de communiquer avec des périphériques **IPv4** via une technique analogue à la **NAT**. Un paquet **IPv6** est traduit en paquet **IPv4**, et inversement, par un dispositif de traduction.
+3.  **Traduction ([[NAT64Mechanism|NAT64]])** : Permet aux périphériques **IPv6** de communiquer avec des périphériques **IPv4** via une technique analogue à la **NAT**. Un paquet **IPv6** est traduit en paquet **IPv4**, et inversement, par un dispositif de traduction.
 
 > [!IMPORTANT]
-> Les techniques de *tunneling* et de *traduction* sont des solutions temporaires pour faciliter la transition. L'objectif ultime est d'atteindre une communication native **IPv6** de bout en bout, de la source à la destination, pour exploiter pleinement les avantages du protocole.
+> Les techniques de *[[IPv6TunnelingTechniques|tunneling]]* et de *[[NAT64Mechanism|traduction]]* sont des solutions temporaires pour faciliter la transition. L'objectif ultime est d'atteindre une communication native **[[IPv6DualStackMigration|Double Pile]]** de bout en bout, de la source à la destination, pour exploiter pleinement les avantages du protocole.
 
 ### 6. Comprendre le Format d'Adressage IPv6
 Les adresses **IPv6** utilisent un système hexadécimal (base 16, chiffres 0-9 et lettres A-F) pour représenter efficacement leurs 128 bits.
 *   **Structure des Adresses IPv6** :
     *   **128 bits** de longueur totale.
-    *   Composée de **8 hextets**, chacun de 16 bits.
+    *   Composée de **8 [[Hextet|Hextets]]**, chacun de 16 bits.
     *   Représentée par **32 valeurs hexadécimales** au total.
     *   La notation est **non sensible à la casse**.
 *   **Format privilégié** : `x:x:x:x:x:x:x:x`, où chaque `x` représente un hextet de 16 bits (quatre caractères hexadécimaux).
@@ -135,7 +135,7 @@ graph TD
 > > **IPv6** apporte :
 > > 1.  Une **configuration automatique** des adresses grâce à **ICMPv6** (SLAAC), réduisant la dépendance à DHCP.
 > > 2.  La **sécurité intégrée** avec *IPsec* faisant partie intégrante du protocole.
-> > 3.  Une gestion plus efficace du trafic grâce à des champs simplifiés dans l'en-tête et un meilleur support du *multicast*.
+> > 3.  Une gestion plus efficace du trafic grâce à des champs simplifiés dans l'[[IPv6PacketStructure|en-tête]] et un meilleur support du *[[MulticastCommunication|multicast]]*.
 
 > [!question] Question 3
 > Expliquez la différence entre les règles de compression "Omission des Zéros de Tête" et "Double Deux-Points" pour les adresses **IPv6**.
@@ -143,7 +143,7 @@ graph TD
 > > 1.  **Omission des Zéros de Tête** : Permet de supprimer les zéros qui apparaissent au début de chaque hextet (ex: `0DB8` devient `DB8`).
 > > 2.  **Double Deux-Points (::)** : Permet de remplacer une seule chaîne contiguë de plusieurs hextets composés uniquement de zéros (ex: `0000:0000:0000` devient `::`). Cette règle ne peut être appliquée qu'une seule fois par adresse.
 
-
-## 🔗 Liens du Module
-*   **Précédent** :  [[RIB01-09_Module9|01-09 | Module 9]]
-*   **Suivant** :  [[RIB01-11_Module11|01-11 | Module 11]]
+## 🔗 Notes Connexes
+* **Lien** : [[RIB01-09_Module9|01-09 | Module 9]]
+* **Lien** : [[RIB01-11_Module11|01-11 | Module 11]]
+* **Lien** : [[IPv4Exhaustion]]

@@ -48,7 +48,7 @@ Le fonctionnement de la DSL repose sur l'utilisation du *multiplexage par répar
 
 *   **Modulation du Signal** : Les modems DSL convertissent les données numériques en signaux analogiques de haute fréquence qui peuvent voyager sur les lignes en cuivre. À l'autre extrémité (au central téléphonique de l'opérateur), un *DSLAM* (Digital Subscriber Line Access Multiplexer) démodule ces signaux pour récupérer les données numériques.
 *   **Séparation des Fréquences** : Un filtre appelé *splitter* ou *micro-filtre* est utilisé chez l'abonné pour séparer le signal vocal du signal de données, dirigeant le premier vers le téléphone et le second vers le modem DSL. Au central, le DSLAM assure une fonction similaire.
-*   **Distance et Débit** : La performance de la DSL, en particulier le débit, est fortement influencée par la distance entre le modem de l'abonné et le DSLAM, ainsi que par la qualité de la ligne en cuivre. Plus la distance est grande, plus l'atténuation du signal est importante, entraînant une diminution du débit.
+*   **Distance et Débit** : La performance de la DSL, en particulier le débit, est fortement influencée par la distance entre le modem de l'abonné et le DSLAM, ainsi que par la qualité de la ligne en cuivre. Plus la distance est grande, plus l'[[SignalAttenuation|atténuation du signal]] est importante, entraînant une diminution du débit.
 
 ### Variantes de DSL
 

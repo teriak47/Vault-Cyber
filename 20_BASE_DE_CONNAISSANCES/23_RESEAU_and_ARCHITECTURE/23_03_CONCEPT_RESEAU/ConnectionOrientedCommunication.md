@@ -2,20 +2,20 @@
 cssclasses:
   - max
 aliases:
-  - "Communication Orientée Connexion"
-  - "Connection Oriented Communication"
-  - "COC"
-  - "Communication à Circuit Virtuel"
+  - Communication Orientée Connexion
+  - Connection Oriented Communication
+  - COC
+  - Communication à Circuit Virtuel
 archetype: concept-reseau
 couche_osi:
-  - "Couche 4 - Transport"
+  - Couche 4 - Transport
 technologie:
-  - "TCP"
-  - "X.25"
-  - "ATM"
-  - "Frame Relay"
-  - "MPLS"
-  - "SCTP"
+  - TCP
+  - X.25
+  - ATM
+  - Frame Relay
+  - MPLS
+  - SCTP
 tags:
   - protocole/orientee-connexion
   - protocole/tcp
@@ -33,7 +33,7 @@ tags:
   - protocole/ip
 ---
 
-# ConnectionOrientedCommunication
+# Communication Orientée Connexion
 
 > [!abstract] Définition
 > La communication orientée connexion est un mode de communication réseau où une **session** ou une **connexion logique (virtuelle)** est préalablement établie entre deux entités communicantes avant tout transfert de données utiles. Cette connexion garantit que les données seront livrées dans le bon ordre et de manière fiable, à l'instar d'un appel téléphonique où une ligne est dédiée pour la durée de la conversation.

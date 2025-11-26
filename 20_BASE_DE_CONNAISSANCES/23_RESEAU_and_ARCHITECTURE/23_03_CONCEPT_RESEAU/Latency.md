@@ -63,7 +63,7 @@ L'**encapsulation** et la **décapsulation** sont des processus fondamentaux dan
 
 *   **Entrée** : Un bloc de données (Service Data Unit - SDU) arrive d'une couche supérieure. Par exemple, au niveau de la couche transport, des segments TCP ou des datagrammes UDP arrivent de la couche session.
 *   **Action** :
-    1.  **Encapsulation** (Sens descendant) : Chaque couche ajoute ses propres informations de contrôle (en-têtes et parfois pieds de page) au SDU pour créer une Unité de Données de Protocole (PDU). Par exemple, la couche Réseau ajoute l'en-tête IP (adresses IP source/destination, TTL) à un segment TCP pour former un paquet IP. Ce processus de "conditionnement" prend du temps.
+    1.  **Encapsulation** (Sens descendant) : Chaque couche ajoute ses propres informations de contrôle (en-têtes et parfois pieds de page) au SDU pour créer une [[ProtocolDataUnit|Unité de Données de Protocole]] (PDU). Par exemple, la couche Réseau ajoute l'en-tête IP (adresses IP source/destination, TTL) à un segment TCP pour former un paquet IP. Ce processus de "conditionnement" prend du temps.
     2.  **Décapsulation** (Sens ascendant) : À la réception, chaque couche supprime l'en-tête et le pied de page correspondant, puis transmet les données restantes à la couche supérieure. Ce retrait et l'inspection des informations de contrôle introduisent également un délai.
 *   **Sortie** : Le PDU est transmis à la couche inférieure pour un traitement supplémentaire (encapsulation) ou le SDU est transmis à la couche supérieure (décapsulation).
 
@@ -102,7 +102,7 @@ Une faible latence est cruciale pour garantir la performance et la réactivité 
 > [!warning] Points d'attention
 > *   **Performance des applications** : Une latence élevée ralentit considérablement les temps de réponse des applications, entraînant une expérience utilisateur frustrante et une baisse de la productivité.
 > *   **Débit réduit** : Bien que distincte de la bande passante, une latence élevée peut réduire le débit effectif des données transférées, car le temps d'attente entre les envois et les accusés de réception augmente.
-> *   **Gigue (Jitter)** : La variation de la latence entre les paquets (gigue) est particulièrement problématique pour les applications en temps réel, entraînant des coupures audio ou vidéo et des performances incohérentes.
+> *   **Gigue ([[Jitter]])** : La variation de la latence entre les paquets (gigue) est particulièrement problématique pour les applications en temps réel, entraînant des coupures audio ou vidéo et des performances incohérentes.
 > *   **Fiabilité** : Des niveaux de latence très élevés peuvent entraîner des abandons de connexion et des échecs de système, en particulier pour les protocoles sensibles au temps.
 
 ## 🔗 Notes Connexes

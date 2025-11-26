@@ -42,7 +42,7 @@ Lorsqu'un routeur reçoit un **datagramme IP** dont la taille dépasse la **Maxi
 *   **MTU (Maximum Transmission Unit)** : La taille maximale d'un paquet, y compris les en-têtes, que peut transporter un lien de couche 2 sans fragmentation.
 *   **Champ Identification (ID)** : Un identifiant unique attribué à chaque paquet IP original. Tous les fragments d'un même paquet partagent le même ID, permettant au récepteur de les regrouper.
 *   **Champ Flags (DF/MF)** :
-    *   **DF (Don't Fragment)** : Si ce bit est à 1, le paquet ne doit pas être fragmenté. Si un routeur rencontre un paquet avec DF=1 et qu'il dépasse la MTU, il doit le supprimer et envoyer un message ICMP "Fragmentation Needed" (Type 3, Code 4) à la source.
+    *   **DF (Don't Fragment)** : Si ce bit est à 1, le paquet ne doit pas être fragmenté. Si un routeur rencontre un paquet avec DF=1 et qu'il dépasse la MTU, il doit le supprimer et envoyer un message [[ICMPProtocol|ICMP]] "Fragmentation Needed" (Type 3, Code 4) à la source.
     *   **MF (More Fragments)** : Ce bit est à 1 pour tous les fragments sauf le dernier, indiquant au destinataire qu'il doit s'attendre à d'autres fragments pour le même paquet.
 *   **Champ Fragment Offset** : Indique la position du fragment dans le paquet original, mesurée en unités de 8 octets. Le premier fragment a un offset de 0.
 

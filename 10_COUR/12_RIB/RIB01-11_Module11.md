@@ -35,14 +35,14 @@ tags:
 > À la fin de cette fiche, je dois être capable de :
 > 1. Comprendre la nécessité et les avantages de la [[NetworkSegment|segmentation réseau]] pour optimiser les performances, la [[Cybersecurity|sécurité]] et la gestion.
 > 2. Identifier le rôle du [[Router|routeur]] en tant qu'outil principal de segmentation et de [[RoutingConcepts|routage]] au niveau de la [[NetworkLayerOSI|couche 3]].
-> 3. Décrire le processus de routage détaillé, l'importance des tables de routage et la fonction de la passerelle par défaut.
+> 3. Décrire le processus de routage détaillé, l'importance des tables de routage et la fonction de la [[DefaultGateway|passerelle par défaut]].
 
 ## 📝 Synthèse du Cours
 
 ### 1. Introduction à la Segmentation des Réseaux
 
-Lorsque les [[IIC02-07_LesReseauxInformatiquesComprendreLesConnexionsNumériques|réseaux]] s'étendent, il devient crucial de les diviser en segments plus petits. Cette *segmentation* répond à des besoins essentiels pour l'infrastructure réseau moderne :
-*   **Optimisation des performances** : En réduisant le volume de trafic de diffusion.
+Lorsque les réseaux s'étendent, il devient crucial de les diviser en segments plus petits. Cette *segmentation* répond à des besoins essentiels pour l'infrastructure réseau moderne :
+*   **Optimisation des performances** : En réduisant le volume de [[BroadcastCommunication|trafic de diffusion]].
 *   **Renforcement de la sécurité** : En isolant les différentes parties du réseau.
 *   **Facilitation de la gestion administrative** : En créant des zones logiques distinctes.
 
@@ -53,11 +53,11 @@ Lorsque les [[IIC02-07_LesReseauxInformatiquesComprendreLesConnexionsNumériques
 *   **Séparation Géographique** : Permet de connecter et d'isoler des équipements situés dans différents bâtiments ou étages.
 
 > [!note] Définition Clé
-> **Domaine de Diffusion** : Désigne la zone du réseau dans laquelle un message de diffusion peut être entendu. Dans un réseau non segmenté (utilisant uniquement des [[Switch|commutateurs]]), le domaine de diffusion englobe l'ensemble du réseau.
+> **[[BroadcastDomain|Domaine de Diffusion]]** : Désigne la zone du réseau dans laquelle un message de diffusion peut être entendu. Dans un réseau non segmenté (utilisant uniquement des [[Switch|commutateurs]]), le domaine de diffusion englobe l'ensemble du réseau.
 
 ### 2. Le Routeur : Outil Principal de Segmentation
 
-Le routeur est l'équipement clé pour diviser un réseau en segments plus petits. Il agit comme une frontière entre différents [[InternetProtocol|réseaux IP]] et est indispensable pour contrôler le flux de données.
+Le [[Router|Routeur]] est l'équipement clé pour diviser un réseau en segments plus petits. Il agit comme une frontière entre différents [[InternetProtocol|réseaux IP]] et est indispensable pour contrôler le flux de données.
 
 #### Architecture de Segmentation avec des Routeurs :
 *   Lorsqu'un routeur est inséré dans l'architecture réseau, chaque interface du routeur définit un réseau séparé. Un routeur avec trois interfaces crée ainsi trois réseaux distincts.
@@ -71,7 +71,7 @@ Le routage est le processus de détermination du meilleur chemin pour acheminer 
 
 #### Processus de Routage Détaillé :
 1.  **Réception du Paquet** : Le routeur reçoit une [[EthernetFrame|trame Ethernet]] contenant un paquet IP destiné à un réseau distant.
-2.  **Désencapsulation** : Le routeur retire l'en-tête Ethernet et extrait le paquet IP pour examiner son adresse IP de destination.
+2.  **[[ApplicationDataEncapsulation|Désencapsulation]]** : Le routeur retire l'en-tête Ethernet et extrait le paquet IP pour examiner son adresse IP de destination.
 3.  **Consultation de la Table** : Il consulte sa *table de routage* pour déterminer quelle interface mène au réseau de destination.
 4.  **Réencapsulation** : Le routeur encapsule le paquet dans une nouvelle trame Ethernet avec de nouvelles adresses MAC (celles de l'interface de sortie du routeur et de l'appareil suivant sur le chemin).
 5.  **Transmission** : La nouvelle trame est transmise via l'interface appropriée vers le réseau de destination.
@@ -79,14 +79,14 @@ Le routage est le processus de détermination du meilleur chemin pour acheminer 
 #### Les Tables de Routage : Le GPS du Réseau
 Les *tables de routage* sont des bases de données essentielles qui permettent aux routeurs de diriger le trafic. Elles stockent les adresses des réseaux entiers et les meilleurs chemins pour les atteindre, et non les adresses individuelles des hôtes.
 *   **Méthodes de Remplissage** :
-    *   **Dynamique** : Mise à jour automatique des tables de routage via des protocoles de routage (ex: OSPF, EIGRP).
-    *   **Statique** : Configuration manuelle des entrées par l'administrateur réseau.
+    *   **Dynamique** : Mise à jour automatique des tables de routage via des protocoles de routage (ex: [[OspfProtocol|OSPF]], [[EIGRPProtocol|EIGRP]]).
+    *   **[[StaticRouting|Statique]]** : Configuration manuelle des entrées par l'administrateur réseau.
 *   Si un routeur ne trouve pas de correspondance pour une destination dans sa table de routage, il supprime le paquet. Pour éviter cela, une *route par défaut* est configurée.
 
 #### La Passerelle Par Défaut
 La *passerelle par défaut* est l'adresse IP du routeur local qu'un hôte utilise pour envoyer des paquets vers des réseaux distants. Elle doit être configurée dans les paramètres TCP/IP de chaque appareil du réseau.
 *   **Communication Locale** : Pour envoyer un message à un hôte sur le même réseau, l'appareil utilise le [[AddressResolutionProtocol|protocole ARP]] pour obtenir l'[[DestinationMACAddress|adresse MAC de destination]] et transmet directement la trame.
-*   **Communication Distante** : Pour atteindre un réseau distant, l'hôte encapsule le paquet avec l'adresse MAC du routeur (sa passerelle par défaut) plutôt que celle de la destination finale.
+*   **Communication Distante** : Pour atteindre un réseau distant, l'hôte encapsule le paquet avec l'[[MacAddress|Adresse MAC]] du [[Router|Routeur]] (sa passerelle par défaut) plutôt que celle de la destination finale.
 *   **Rôle du Routeur** : Le routeur reçoit la trame, extrait le paquet IP, détermine le chemin approprié via sa table de routage et le réencapsule pour la transmission vers le réseau de destination.
 
 ### 4. Avantages et Inconvénients des Architectures Réseau
@@ -101,7 +101,7 @@ La *passerelle par défaut* est l'adresse IP du routeur local qu'un hôte utilis
 *   **Inconvénients** :
     *   Tous les hôtes partagent un seul domaine de diffusion.
     *   Ralentissement des performances avec l'augmentation du nombre d'hôtes.
-    *   Difficile de mettre en œuvre la qualité de service (QoS).
+    *   Difficile de mettre en œuvre la [[QualityOfService|qualité de service (QoS)]].
     *   Implémentation de la sécurité plus complexe.
     *   Pas de séparation fonctionnelle ou organisationnelle.
 
@@ -198,6 +198,5 @@ graph TD
 > > [!success]- Réponse
 > > La *passerelle par défaut* est l'adresse IP du routeur local configurée sur chaque hôte. Elle est cruciale pour la communication avec des réseaux distants. Lorsqu'un hôte doit envoyer un paquet à une destination qui ne se trouve pas sur son réseau local, il encapsule le paquet avec l'adresse MAC de sa passerelle par défaut (le routeur) et envoie la trame au routeur. Le routeur prend ensuite le relais pour acheminer le paquet IP vers le réseau de destination. Sans une passerelle par défaut correctement configurée, un appareil ne peut communiquer qu'avec des hôtes sur son propre réseau local.
 
-## 🔗 Liens du Module
-*   **Précédent** :  [[RIB01-10_Module10|01-10 | Module 10]]
-*   **Suivant** : 
+## 🔗 Notes Connexes
+* **Lien** : 

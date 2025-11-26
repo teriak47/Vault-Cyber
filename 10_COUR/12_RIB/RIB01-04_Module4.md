@@ -59,7 +59,7 @@ Les routeurs domestiques standard comportent deux types de ports principaux qui 
     *   Tous les périphériques connectés à ces ports appartiennent au **même réseau local** et peuvent communiquer entre eux directement.
 *   **Port Internet ([[WideAreaNetwork|WAN]])** :
     *   Port unique qui connecte le routeur à un **réseau externe**, généralement [[Internet]] via un [[Modem|modem]] câble ou [[DigitalSubscriberLine|DSL]].
-    *   Ce port se trouve sur un **réseau différent** des ports Ethernet.
+    *   Ce port se trouve sur un **réseau différent** des ports [[Ethernet]].
 
 > [!note] Définition Clé
 > **LAN (Local Area Network)** : Réseau local qui interconnecte des périphériques au sein d'une zone géographique limitée (maison, bureau). Les appareils sur le même LAN peuvent communiquer directement.

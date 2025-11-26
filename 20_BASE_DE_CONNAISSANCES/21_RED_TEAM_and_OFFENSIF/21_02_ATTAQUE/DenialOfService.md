@@ -48,9 +48,9 @@ tags:
 Une attaque DoS consiste pour un attaquant unique (ou un petit nombre d'ordinateurs) à envoyer un flux constant de requêtes malveillantes ou un volume écrasant de trafic vers une cible, saturant ainsi sa bande passante ou ses ressources système. Ce processus empêche le système ciblé de traiter les requêtes légitimes, le rendant inaccessible ou fortement ralenti.
 
 Différents mécanismes peuvent être exploités :
-*   **Saturation de bande passante** : Inonder le réseau de la victime avec un volume massif de trafic, comme des requêtes ICMP ou UDP Flood, pour épuiser la capacité de la connexion.
+*   **Saturation de bande passante** : Inonder le réseau de la victime avec un volume massif de trafic, comme des requêtes [[ICMPProtocol|ICMP]] ou UDP Flood, pour épuiser la capacité de la connexion.
 *   **Épuisement des ressources système** : Cibler les limites du serveur, telles que le nombre de connexions concurrentes qu'un serveur web peut gérer (ex: SYN Flood), ou exploiter des failles logicielles pour provoquer un crash ou une instabilité.
-*   **Fragmentation de paquets** : Envoyer des paquets IP fragmentés de manière anormale, déstabilisant le système cible lors de la tentative de réassemblage (ex: Teardrop, Ping of Death).
+*   **[[PacketFragmentation|Fragmentation de paquets]]** : Envoyer des paquets IP fragmentés de manière anormale, déstabilisant le système cible lors de la tentative de réassemblage (ex: Teardrop, Ping of Death).
 
 > [!example] Scénario Concret
 > 1.  **Préparation** : L'attaquant identifie une cible (ex: un serveur web) et le type de DoS à lancer (ex: SYN Flood).

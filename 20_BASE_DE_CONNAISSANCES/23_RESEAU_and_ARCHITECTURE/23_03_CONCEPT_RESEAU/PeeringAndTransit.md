@@ -34,7 +34,7 @@ tags:
 # Peering et Transit
 
 > [!abstract] Définition
-> Le *peering* et le *transit* sont les deux principaux types d'interconnexions entre **Systèmes Autonomes (AS)** sur l'Internet, gérés par le **Border Gateway Protocol (BGP)**. Le **peering** est une connexion directe entre deux réseaux IP pour échanger du trafic mutuellement bénéfique, souvent sans frais, qui provient ou est destiné à leurs propres réseaux ou ceux de leurs clients. Le **transit**, quant à lui, est un service commercial où un réseau (généralement un FAI de rang supérieur) vend à un autre réseau la capacité de se connecter à l'ensemble d'Internet via son infrastructure.
+> Le *peering* et le *transit* sont les deux principaux types d'interconnexions entre **Systèmes Autonomes (AS)** sur l'Internet, gérés par le **[[BGPProtocol|Border Gateway Protocol]] (BGP)**. Le **peering** est une connexion directe entre deux réseaux IP pour échanger du trafic mutuellement bénéfique, souvent sans frais, qui provient ou est destiné à leurs propres réseaux ou ceux de leurs clients. Le **transit**, quant à lui, est un service commercial où un réseau (généralement un FAI de rang supérieur) vend à un autre réseau la capacité de se connecter à l'ensemble d'Internet via son infrastructure.
 
 ## ⚙️ Mécanisme & Fonctionnement
 Le **Border Gateway Protocol (BGP)** est le protocole de routage externe qui établit et contrôle les chemins de données entre les différents Systèmes Autonomes (AS) sur Internet. Chaque AS est un réseau ou un ensemble de préfixes de routage IP sous le contrôle d'une seule entité administrative. BGP permet l'échange d'informations de routage, appelées Network Layer Reachability Information (NLRI), et d'attributs de chemin (comme la latence, le nombre de sauts et le coût) entre des routeurs appelés "pairs BGP" ou "speakers BGP".
@@ -103,7 +103,8 @@ graph LR
         R2 -- Paquets IP --> AS_Destination
         R3 -- Paquets IP --> R4
         R4 -- Paquets IP --> AS_Destination
-    end```
+    end
+```
 
 ## ↔️ Différences Clés
 

@@ -115,7 +115,7 @@ L'Internet Backbone est une architecture complexe mêlant infrastructure physiqu
 
 #### Composants Logiques
 *   **Protocoles de Routage** :
-    *   **Border Gateway Protocol (BGP)** : Le protocole de routage externe standard de l'Internet, utilisé par les réseaux autonomes (AS) pour échanger des informations de routage et déterminer les meilleurs chemins pour acheminer le trafic. C'est le cœur logique du routage du backbone.
+    *   **Border Gateway Protocol ([[BGPProtocol|BGP]])** : Le protocole de routage externe standard de l'Internet, utilisé par les réseaux autonomes (AS) pour échanger des informations de routage et déterminer les meilleurs chemins pour acheminer le trafic. C'est le cœur logique du routage du backbone.
     *   **Protocoles de Routage Internes (IGP)** : Tels que OSPF (Open Shortest Path First) ou IS-IS (Intermediate System to Intermediate System), utilisés au sein des réseaux autonomes des opérateurs du backbone pour gérer le routage interne et la distribution des informations de routage locales.
 *   **Adresses IP (IPv4 et IPv6)** : Les systèmes d'adressage qui permettent d'identifier de manière unique chaque appareil connecté à Internet et d'acheminer les paquets de données vers leur destination.
 *   **Système de Noms de Domaine (DNS)** : Le service qui traduit les noms de domaine lisibles par l'homme (ex: google.com) en adresses IP numériques, essentiel pour la navigation sur le web et l'accès aux ressources en ligne.

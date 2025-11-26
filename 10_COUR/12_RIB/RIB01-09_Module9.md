@@ -29,11 +29,11 @@ tags:
 
 > [!goal] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
-> 1. Expliquer les mécanismes fondamentaux de la transmission [[InternetProtocol|IP]] unicast, [[BroadcastDomain|broadcast]] et multicast.
-> 2. Identifier et décrire les différents types d'adressage IPv4, y compris les adresses publiques, privées et à usage spécial.
+> 1. Expliquer les mécanismes fondamentaux de la transmission [[InternetProtocol|IP]] [[UnicastCommunication|unicast]], [[BroadcastDomain|broadcast]] et [[MulticastCommunication|multicast]].
+> 2. Identifier et décrire les différents types d'adressage [[IPv4]], y compris les adresses [[PublicIPAddress|publiques]], [[PrivateIPAddressRanges|privées]] et à usage spécial.
 > 3. Comprendre la structure hiérarchique de l'attribution mondiale des adresses IP par l'[[InternetAssignedNumbersAuthority|IANA]] et les RIR.
 > 4. Expliquer le rôle des [[Router|routeurs]] dans la [[NetworkSegment|segmentation réseau]] et la gestion des domaines de diffusion.
-> 5. Expliquer la problématique des grands domaines de diffusion et les avantages du sous-réseautage (subnetting).
+> 5. Expliquer la problématique des grands domaines de diffusion et les avantages du [[Subnetting|sous-réseautage (subnetting)]].
 
 ## 📝 Synthèse du Cours
 
@@ -50,26 +50,26 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
 > [!note] Définition Clé
 > **Transmission Unicast** : Mode de communication IP où un périphérique envoie un message à un seul autre périphérique spécifique, identifié par une adresse IP de destination unique.
 
-#### B. Diffusion IPv4 (Broadcast)
+#### B. [[BroadcastCommunication|Diffusion IPv4 (Broadcast)]]
 - C'est une communication **un-à-tous**, où un périphérique envoie un message simultanément à **tous** les autres appareils au sein du même *domaine de diffusion* (segment réseau local).
 - Elle utilise l'adresse de diffusion spéciale **255.255.255.255** (tous les bits à 1).
-- Les [[Switch|commutateurs]] [[EthernetFrame|Ethernet]] propagent le paquet sur tous les ports (sauf celui d'entrée), inondant le [[LocalAreaNetwork|réseau local]].
+- Les [[Switch|commutateurs]] [[Ethernet]] propagent le paquet sur tous les ports (sauf celui d'entrée), inondant le [[LocalAreaNetwork|réseau local]].
 - Les routeurs ne transmettent pas les paquets de diffusion au-delà du domaine local, ce qui limite leur portée.
 - **Types de Diffusion** :
     - **Diffusion dirigée** : Envoyée à tous les hôtes d'un réseau spécifique (ex: 172.16.4.255 pour le réseau 172.16.4.0/24).
     - **Diffusion limitée** : Envoyée à 255.255.255.255, elle est confinée au réseau local immédiat et ne traverse pas les routeurs.
-- *Important* : IPv4 utilise la diffusion, mais IPv6 n'a pas de paquets de diffusion traditionnels (il utilise la *multidiffusion* à la place).
+- *Important* : IPv4 utilise la diffusion, mais [[IPv6]] n'a pas de paquets de diffusion traditionnels (il utilise la *multidiffusion* à la place).
 
 > [!note] Définition Clé
-> **Diffusion IPv4 (Broadcast)** : Mode de communication IP un-à-tous, où un message est envoyé simultanément à tous les appareils d'un même *domaine de diffusion* en utilisant une adresse de diffusion spécifique.
+> **[[BroadcastCommunication|Diffusion IPv4 (Broadcast)]]** : Mode de communication IP un-à-tous, où un message est envoyé simultanément à tous les appareils d'un même *domaine de diffusion* en utilisant une adresse de diffusion spécifique.
 
-#### C. Multidiffusion IPv4 (Multicast)
+#### C. Multidiffusion IPv4 ([[MulticastCommunication|Multicast]])
 - C'est une approche optimisée **un-à-groupe**, où un hôte envoie un seul paquet à un groupe spécifique d'hôtes qui se sont abonnés à ce groupe.
 - IPv4 réserve la plage d'adresses de **224.0.0.0 à 239.255.255.255** pour la multidiffusion.
 - Chaque groupe de multidiffusion est représenté par une adresse de destination multicast unique.
 - Les hôtes deviennent *clients de multidiffusion* en s'abonnant à un groupe spécifique.
 - Seuls les membres du groupe traitent les paquets, les autres périphériques les ignorent, optimisant l'utilisation des ressources réseau.
-- *Applications* : Essentielle pour les protocoles de routage comme OSPF (ex: 224.0.0.5) pour communiquer efficacement entre routeurs, ou pour le streaming vidéo.
+- *Applications* : Essentielle pour les protocoles de routage comme [[OspfProtocol|OSPF]] (ex: 224.0.0.5) pour communiquer efficacement entre routeurs, ou pour le streaming vidéo.
 
 > [!note] Définition Clé
 > **Multidiffusion IPv4 (Multicast)** : Mode de communication IP optimisé un-à-groupe, où un hôte envoie un seul paquet à un ensemble d'hôtes ayant spécifiquement rejoint un groupe de multidiffusion.
@@ -82,23 +82,23 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
     - Acheminées par les [[InternetServiceProvider|fournisseurs d'accès à Internet (FAI)]] entre les routeurs.
     - Permettent la communication mondiale directe.
 - **Adresses Privées** :
-    - Définies dans la *RFC 1918*.
+    - Définies dans la [[RFC1918|RFC 1918]].
     - Non routables sur l'Internet, utilisées pour les réseaux internes des entreprises ou domestiques.
     - Peuvent être réutilisées par différentes organisations car elles ne sont pas vues de l'extérieur.
     - **Plages d'adresses privées (RFC 1918)** :
         - **Classe A** : 10.0.0.0/8 (de 10.0.0.0 à 10.255.255.255) - Plus de 16 millions d'adresses.
         - **Classe B** : 172.16.0.0/12 (de 172.16.0.0 à 172.31.255.255) - Environ 1 million d'adresses.
         - **Classe C** : 192.168.0.0/16 (de 192.168.0.0 à 192.168.255.255) - Environ 65 000 adresses.
-- [[NetworkAddressTranslation|**Traduction d'Adresses Réseau (NAT)**]] :
+- **[[NetworkAddressTranslation|Traduction d'Adresses Réseau (NAT)]]** :
     - Permet aux appareils avec des adresses privées de communiquer avec l'extérieur (Internet).
     - Le routeur NAT traduit l'adresse source privée en une adresse publique routable avant la transmission du paquet.
 
 #### B. Adresses IPv4 à Usage Spécial
-- **Adresses de Bouclage (Loopback)** :
+- **[[LoopbackAddress|Adresses de Bouclage (Loopback)]]** :
     - Plage : **127.0.0.0/8** (de 127.0.0.1 à 127.255.255.254).
     - L'adresse **127.0.0.1** est utilisée par un hôte pour diriger le trafic vers lui-même.
     - Sert à tester la configuration IP locale d'une machine sans envoyer de paquets sur le réseau physique.
-- **Adresses Link-Local (APIPA - Automatic Private IP Addressing)** :
+- **[[AutomaticPrivateIPAddressing|Adresses Link-Local (APIPA - Automatic Private IP Addressing)]]** :
     - Plage : **169.254.0.0/16** (de 169.254.0.1 à 169.254.255.254).
     - Permettent l'auto-configuration d'un client Windows lorsqu'aucun serveur [[DHCP]] n'est disponible.
     - Utilisables pour des connexions [[PeerToPeer|peer-to-peer]] simples au sein du même segment local.
@@ -108,10 +108,10 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
     - Ces adresses ne peuvent **jamais** être attribuées à des hôtes individuels.
 
 #### C. Évolution de l'Adressage : Du Classful au Classless
-- **Adressage Traditionnel par Classe (Classful)** :
+- **[[ClassfulAddressing|Adressage Traditionnel par Classe (Classful)]]** :
     - Défini par la RFC 790 (années 1981-1990s), divisait les adresses en classes A, B et C avec des préfixes fixes (/8, /16, /24).
     - A conduit à un gaspillage massif d'adresses IPv4, notamment avec la classe A.
-- **Adressage Sans Classe (CIDR - Classless Inter-Domain Routing)** :
+- **[[ClasslessInterDomainRouting|Adressage Sans Classe (CIDR - Classless Inter-Domain Routing)]]** :
     - Introduit au milieu des années 1990 pour remplacer l'adressage *classful*.
     - Ignore les règles de classes et alloue les adresses selon les besoins réels grâce à des *masques de sous-réseau de longueur variable* (VLSM).
     - A permis une utilisation beaucoup plus efficace de l'espace d'adressage IPv4 limité.
@@ -119,14 +119,14 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
 
 ### 3. Architecture Mondiale de Distribution des Adresses IP
 
-- L'IANA (Internet Assigned Numbers Authority) est l'autorité suprême en matière d'attribution d'adresses IP.
-- L'IANA attribue de grands blocs d'adresses IP aux cinq **Registres Internet Régionaux (RIR)** :
+- L'[[InternetAssignedNumbersAuthority|IANA]] (Internet Assigned Numbers Authority) est l'autorité suprême en matière d'attribution d'adresses IP.
+- L'IANA attribue de grands blocs d'adresses IP aux cinq **[[RegionalInternetRegistries|Registres Internet Régionaux (RIR)]]** :
     - **ARIN** (Amérique du Nord)
     - **RIPE NCC** (Europe, Moyen-Orient, Asie centrale)
     - **APNIC** (Asie-Pacifique)
     - **LACNIC** (Amérique Latine et Caraïbes)
     - **AFRINIC** (Afrique)
-- Les RIR redistribuent ensuite ces blocs aux fournisseurs d'accès Internet (FAI) et aux organisations de leur région géographique respective.
+- Les RIR redistribuent ensuite ces blocs aux fournisseurs d'accès Internet ([[InternetServiceProvider|FAI]]) et aux organisations de leur région géographique respective.
 
 ### 4. Segmentation du Réseau et Domaines de Diffusion
 
@@ -146,7 +146,7 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
 - **Dégradation de l'Expérience Utilisateur** : Congestion du réseau entraînant des lenteurs, des délais de réponse accrus et une perte de productivité.
 
 #### B. Solution : La Création de Sous-Réseaux
-- **Sous-réseautage (Subnetting)** : Technique consistant à diviser un grand réseau logique en plusieurs sous-réseaux plus petits et gérables.
+- **Sous-réseautage ([[IpSubnetting|Subnetting]])** : Technique consistant à diviser un grand réseau logique en plusieurs sous-réseaux plus petits et gérables.
 
 > [!note] Définition Clé
 > **Sous-réseautage (Subnetting)** : Processus de division d'un grand réseau IP en plusieurs sous-réseaux logiques plus petits, afin d'améliorer la gestion, la [[Cybersecurity|sécurité]] et l'efficacité du trafic.
@@ -163,7 +163,7 @@ Les paquets IP peuvent être transmis selon trois modes principaux.
     - Par niveau de sécurité (réseau invité, zone DMZ).
 
 > [!note] Définition Clé
-> **NAT (Network Address Translation)** : Processus par lequel une passerelle (généralement un routeur) modifie l'information d'adressage IP dans l'en-tête d'un paquet pendant qu'il transite un trafic d'un segment réseau à un autre, généralement pour permettre à plusieurs appareils sur un réseau privé de partager une seule adresse IP publique pour accéder à l'Internet.
+> **[[NetworkAddressTranslation|NAT]] (Network Address Translation)** : Processus par lequel une passerelle (généralement un routeur) modifie l'information d'adressage IP dans l'en-tête d'un paquet pendant qu'il transite un trafic d'un segment réseau à un autre, généralement pour permettre à plusieurs appareils sur un réseau privé de partager une seule adresse IP publique pour accéder à l'Internet.
 
 ## 🧠 Carte Mentale / Schéma
 ```mermaid
@@ -241,7 +241,6 @@ graph TD
 > > [!success]- Réponse
 > > L'autorité mondiale suprême est l'**IANA** (Internet Assigned Numbers Authority). Les RIR incluent : **ARIN**, **RIPE NCC**, **APNIC**, **LACNIC**, **AFRINIC**.
 
-
-## 🔗 Liens du Module
-*   **Précédent** :  [[RIB01-08_Module8|01-08 | Module 8]]
-*   **Suivant** :  [[RIB01-10_Module10|01-10 | Module 10]]
+## 🔗 Notes Connexes
+* **Lien** : [[RIB01-08_Module8|01-08 | Module 8]]
+* **Lien** : [[RIB01-10_Module10|01-10 | Module 10]]

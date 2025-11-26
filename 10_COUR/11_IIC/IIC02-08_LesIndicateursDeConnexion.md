@@ -21,7 +21,7 @@ tags:
 > [!goal] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
 > 1. Identifier les principaux types d'indicateurs de connexion réseau.
-> 2. Interpréter la signification des indicateurs visuels (barres de signal, voyants LED) pour différents types de connexions (Wi-Fi, Ethernet, mobile).
+> 2. Interpréter la signification des indicateurs visuels (barres de signal, voyants LED) pour différents types de connexions (Wi-Fi, [[Ethernet]], mobile).
 > 3. Comprendre l'importance des indicateurs pour évaluer l'état et la qualité d'une connexion.
 
 ## 📝 Synthèse du Cours

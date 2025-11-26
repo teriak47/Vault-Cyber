@@ -66,10 +66,10 @@ graph TD
 *   **Interconnexion des Réseaux (Internetworking)** : Cette couche rend possible la communication entre des réseaux hétérogènes, créant des chemins logiques à travers de multiples segments de réseau pour une connectivité globale.
 *   **Protocoles Clés** :
     *   **IP (Internet Protocol)** : Le protocole fondamental pour l'adressage logique et le routage des paquets (versions IPv4 et IPv6).
-    *   **ICMP (Internet Control Message Protocol)** : Utilisé pour les messages de diagnostic et de rapport d'erreurs (par exemple, la commande `ping`).
+    *   **[[ICMPProtocol|ICMP]] (Internet Control Message Protocol)** : Utilisé pour les messages de diagnostic et de rapport d'erreurs (par exemple, la commande `ping`).
     *   **IGMP (Internet Group Management Protocol)** : Gère l'appartenance aux groupes de multidiffusion IP.
     *   **ARP (Address Resolution Protocol)** : Bien qu'il opère conceptuellement entre la couche 2 et 3, il est crucial pour mapper les adresses IP logiques aux adresses MAC physiques.
-    *   **Protocoles de Routage** : RIP (Routing Information Protocol), OSPF (Open Shortest Path First), BGP (Border Gateway Protocol), EIGRP (Enhanced Interior Gateway Routing Protocol).
+    *   **Protocoles de Routage** : RIP (Routing Information Protocol), OSPF (Open Shortest Path First), BGP ([[BGPProtocol|Border Gateway Protocol]]), EIGRP (Enhanced Interior Gateway Routing Protocol).
 *   **Équipements** : Les principaux équipements fonctionnant à cette couche sont les **routeurs** et les **commutateurs de couche 3**.
 
 ## ✅ Avantages vs Inconvénients

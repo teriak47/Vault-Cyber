@@ -1,18 +1,19 @@
 ---
 aliases:
-  - "Protocole ICMP"
-  - "Internet Control Message Protocol"
-  - "Ping"
-  - "Traceroute"
+  - Protocole ICMP
+  - Internet Control Message Protocol
+  - Ping
+  - Traceroute
+  - ICMP
 cssclasses:
   - max
 archetype: protocole
 port_defaut: N/A (utilise le protocole IP)
 couche_osi:
-  - "Couche 3 - Réseau"
+  - Couche 3 - Réseau
 rfc:
-  - "RFC 792"
-  - "RFC 777"
+  - RFC 792
+  - RFC 777
 tags:
   - protocole/icmp
   - modele-osi/couche-3

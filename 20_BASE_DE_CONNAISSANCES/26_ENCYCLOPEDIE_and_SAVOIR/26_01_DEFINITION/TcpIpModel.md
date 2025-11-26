@@ -63,7 +63,7 @@ Le modèle TCP/IP est généralement décrit avec quatre couches, chacune ayant 
     *   **DNS** : Pour la résolution de noms de domaine en adresses IP.
 
 ### 2. Couche Transport (Transport Layer)
-*   **Fonction principale** : Elle est responsable de la communication de bout en bout entre les applications, en assurant un transfert de données fiable et ordonné, ou un transfert plus rapide mais sans garantie de livraison.
+*   **Fonction principale** : Elle est responsable de la communication de bout en bout entre les applications, en assurant un [[ReliableDataTransfer|transfert de données fiable]] et ordonné, ou un transfert plus rapide mais sans garantie de livraison.
 *   **Exemples de protocoles** :
     *   **TCP (Transmission Control Protocol)** : Fournit une connexion fiable, orientée connexion, avec contrôle de flux et de congestion. Il garantit que les paquets arrivent dans l'ordre et sans perte.
     *   **UDP (User Datagram Protocol)** : Fournit un service sans connexion, plus rapide mais sans garantie de livraison, d'ordre ou de contrôle de flux. Souvent utilisé pour le streaming vidéo ou les jeux en ligne où la rapidité prime sur la fiabilité absolue.
@@ -72,7 +72,7 @@ Le modèle TCP/IP est généralement décrit avec quatre couches, chacune ayant 
 *   **Fonction principale** : Cette couche est responsable de l'adressage logique et du routage des paquets de données à travers différents réseaux interconnectés (internetwork). Elle détermine le meilleur chemin pour les paquets.
 *   **Exemples de protocoles** :
     *   **IP (Internet Protocol)** : Gère l'adressage (adresses IP) et le routage des paquets. C'est le protocole central pour l'interconnexion des réseaux.
-    *   **ICMP (Internet Control Message Protocol)** : Utilisé pour envoyer des messages d'erreur et des informations opérationnelles (ex: commandes *ping* et *traceroute*).
+    *   **ICMP ([[ICMPProtocol|Internet Control Message Protocol]])** : Utilisé pour envoyer des messages d'erreur et des informations opérationnelles (ex: commandes *ping* et *traceroute*).
     *   **ARP (Address Resolution Protocol)** : Permet de mapper une adresse IP à une adresse MAC (physique) sur un réseau local.
 
 ### 4. Couche Accès Réseau (Network Access Layer ou Link Layer)

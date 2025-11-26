@@ -41,7 +41,7 @@ Le **Post Office Protocol version 3** (POP3) est un protocole standard de la cou
 
 ## ⚙️ Fonctionnement (Handshake)
 
-Le fonctionnement de POP3 est basé sur un modèle client-serveur et progresse à travers plusieurs états : **AUTHORIZATION**, **TRANSACTION** et **UPDATE**.
+Le fonctionnement de POP3 est basé sur un [[ClientServerModel|modèle client-serveur]] et progresse à travers plusieurs états : **AUTHORIZATION**, **TRANSACTION** et **UPDATE**.
 
 1.  **Établissement de la connexion** : Le client de messagerie initie une connexion TCP avec le serveur POP3, généralement sur le port 110 (non sécurisé) ou 995 (SSL/TLS).
 2.  **Autorisation** : Après la salutation initiale du serveur, le client s'authentifie en envoyant les commandes `USER` (nom d'utilisateur) et `PASS` (mot de passe).

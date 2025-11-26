@@ -30,7 +30,7 @@ tags:
 # Quality of Service (QoS)
 
 > [!abstract] Définition
-> La **Quality of Service (QoS)** est un ensemble de technologies qui permettent de gérer le trafic réseau pour minimiser la perte de données, réduire la latence et la gigue, et garantir une bande passante spécifique pour certains types d'applications. Son objectif est d'assurer une expérience utilisateur optimale pour les applications critiques et sensibles aux délais, en priorisant leur traitement par rapport au trafic moins urgent.
+> La **Quality of Service (QoS)** est un ensemble de technologies qui permettent de gérer le trafic réseau pour minimiser la perte de données, réduire la latence et la [[Jitter|gigue]], et garantir une bande passante spécifique pour certains types d'applications. Son objectif est d'assurer une expérience utilisateur optimale pour les applications critiques et sensibles aux délais, en priorisant leur traitement par rapport au trafic moins urgent.
 
 ## ⚙️ Mécanisme & Fonctionnement
 La QoS fonctionne en identifiant, classifiant et marquant les paquets de données, puis en appliquant des politiques de gestion du trafic basées sur ces marques. Ces politiques dictent comment le trafic est mis en file d'attente, planifié et, si nécessaire, éliminé pour maintenir les niveaux de service souhaités.

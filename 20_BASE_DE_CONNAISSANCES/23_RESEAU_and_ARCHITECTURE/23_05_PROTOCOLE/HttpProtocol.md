@@ -32,7 +32,7 @@ Le **Hypertext Transfer Protocol (HTTP)** est un protocole de la couche applicat
 > * **Transport** : TCP
 
 ## ⚙️ Fonctionnement (Requête-Réponse)
-HTTP fonctionne selon un modèle client-serveur, où une transaction commence par un client soumettant une requête à un serveur. Le serveur tente de satisfaire la requête et renvoie une réponse au client. Contrairement à des protocoles comme TCP, HTTP n'a pas de "handshake" d'établissement de connexion au niveau applicatif. L'établissement de la connexion TCP sous-jacente est géré séparément.
+HTTP fonctionne selon un [[ClientServerModel|modèle client-serveur]], où une transaction commence par un client soumettant une requête à un serveur. Le serveur tente de satisfaire la requête et renvoie une réponse au client. Contrairement à des protocoles comme TCP, HTTP n'a pas de "handshake" d'établissement de connexion au niveau applicatif. L'établissement de la connexion TCP sous-jacente est géré séparément.
 
 Le cycle typique de requête-réponse HTTP est le suivant :
 

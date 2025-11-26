@@ -107,7 +107,7 @@ Wireshark est un outil essentiel pour analyser le trafic SNMP.
 > # Filtrer par version de SNMP (exemple pour v3)
 > snmp.version == 3
 >
-> # Filtrer par type de PDU (exemple pour GET request)
+> # Filtrer par type de [[ProtocolDataUnit|PDU]] (exemple pour GET request)
 > snmp.pdu.type == 0  # GET Request
 > snmp.pdu.type == 3  # SET Request
 > snmp.pdu.type == 4  # TRAP

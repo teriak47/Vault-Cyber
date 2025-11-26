@@ -31,7 +31,7 @@ cssclasses:
 | **Couche OSI** | Couche 3 (Réseau) |
 
 ## ⚙️ Fonctionnement Interne
-Un routeur opère au niveau de la couche 3 (réseau) du modèle OSI. Il maintient une *table de routage* interne qui contient des informations sur les chemins disponibles vers différents réseaux. Lorsqu'un paquet de données arrive sur une interface du routeur, ce dernier examine l'*adresse IP de destination* du paquet. Il consulte ensuite sa table de routage pour déterminer l'interface de sortie appropriée et la prochaine "saut" (next hop) vers laquelle le paquet doit être envoyé pour atteindre sa destination finale. Ce processus, appelé *routage*, est fondamental pour la connectivité inter-réseaux et le fonctionnement d'Internet. Les routeurs utilisent des protocoles de routage (comme OSPF, EIGRP, BGP) pour échanger dynamiquement des informations sur les routes et maintenir leurs tables à jour.
+Un routeur opère au niveau de la couche 3 (réseau) du modèle OSI. Il maintient une *table de routage* interne qui contient des informations sur les chemins disponibles vers différents réseaux. Lorsqu'un paquet de données arrive sur une interface du routeur, ce dernier examine l'*adresse IP de destination* du paquet. Il consulte ensuite sa table de routage pour déterminer l'interface de sortie appropriée et la prochaine "saut" (next hop) vers laquelle le paquet doit être envoyé pour atteindre sa destination finale. Ce processus, appelé *routage*, est fondamental pour la connectivité inter-réseaux et le fonctionnement d'Internet. Les routeurs utilisent des protocoles de routage (comme OSPF, EIGRP, [[BGPProtocol|BGP]]) pour échanger dynamiquement des informations sur les routes et maintenir leurs tables à jour.
 
 ```mermaid
 graph LR

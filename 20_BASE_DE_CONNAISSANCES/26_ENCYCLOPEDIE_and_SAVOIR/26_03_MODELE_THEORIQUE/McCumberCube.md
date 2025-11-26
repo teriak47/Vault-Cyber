@@ -56,7 +56,7 @@ graph TD
 
 ## 🧠 Concepts Clés
 
-Le Cube de McCumber est un cadre à trois dimensions qui élargit le concept traditionnel de la Triade CIA (Confidentiality, Intégrité, Disponibilité) en y ajoutant les **états de l'information** et les **types de contre-mesures**. Cette approche intégrée vise à garantir que la sécurité est abordée de manière exhaustive, couvrant les aspects techniques, procéduraux et comportementaux.
+Le Cube de McCumber est un cadre à trois dimensions qui élargit le concept traditionnel de la Triade CIA (Confidentiality, Intégrité, Disponibilité) en y ajoutant les **états de l'information** et les **types de contre-mesures**. Cette [[HolisticApproach|approche intégrée]] vise à garantir que la sécurité est abordée de manière exhaustive, couvrant les aspects techniques, procéduraux et comportementaux.
 
 Les trois dimensions sont :
 

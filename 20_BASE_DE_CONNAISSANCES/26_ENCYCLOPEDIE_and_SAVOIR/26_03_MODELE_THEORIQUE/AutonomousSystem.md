@@ -89,7 +89,7 @@ Ce cycle se répète constamment, permettant au système de s'adapter dynamiquem
 Les systèmes autonomes trouvent des applications dans de nombreux domaines et peuvent prendre diverses formes :
 *   **Véhicules Autonomes** : Voitures, drones, navires et robots capables de se déplacer et d'opérer sans conducteur humain. Ils utilisent une combinaison de capteurs, d'IA pour la perception, la prise de décision et le contrôle.
 *   **Robotique** : Robots industriels effectuant des tâches complexes, robots de service à domicile (ex: aspirateurs autonomes), ou robots d'exploration dans des environnements dangereux.
-*   **Systèmes de Gestion de Réseau (Networking AS)** : Dans le domaine d'Internet, un Système Autonome (AS) est un groupe de réseaux IP sous une administration unique, utilisant des protocoles de routage internes (IGP) et externes (BGP) pour échanger des informations de routage.
+*   **Systèmes de Gestion de Réseau (Networking AS)** : Dans le domaine d'Internet, un Système Autonome (AS) est un groupe de réseaux IP sous une administration unique, utilisant des protocoles de routage internes (IGP) et externes ([[BGPProtocol|BGP]]) pour échanger des informations de routage.
 *   **Informatique Autonome (Autonomic Computing)** : Des systèmes informatiques qui s'auto-gèrent, s'auto-optimisent, s'auto-protègent et s'auto-réparent pour réduire la complexité de gestion et améliorer la résilience.
 *   **Systèmes de Contrôle Industriels** : Automatisation de processus de fabrication, de chaînes logistiques, où les machines peuvent s'adapter aux conditions de production.
 *   **Applications en Santé** : Dispositifs médicaux autonomes pour la surveillance des patients ou l'assistance chirurgicale.

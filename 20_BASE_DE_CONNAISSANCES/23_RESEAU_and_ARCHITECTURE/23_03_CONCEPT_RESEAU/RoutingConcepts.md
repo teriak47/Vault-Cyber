@@ -52,7 +52,7 @@ Lorsqu'un routeur reçoit un paquet IP, il effectue les étapes suivantes :
 *   **Entrée** : Une trame de couche 2 contenant un paquet IP est reçue sur une interface.
 *   **Action** :
     1.  Le routeur décapsule la trame de couche 2 pour accéder au paquet IP.
-    2.  Il décrémente le champ *Time To Live (TTL)* du paquet IP. Si le TTL atteint zéro, le paquet est abandonné et un message ICMP est potentiellement envoyé à la source.
+    2.  Il décrémente le champ *Time To Live (TTL)* du paquet IP. Si le TTL atteint zéro, le paquet est abandonné et un message [[ICMPProtocol|ICMP]] est potentiellement envoyé à la source.
     3.  Le routeur recalcule le *checksum* de l'en-tête IP.
     4.  Il consulte sa table de routage en utilisant l'adresse IP de destination pour déterminer l'interface de sortie et l'adresse IP du prochain saut.
     5.  Il résout l'adresse IP du prochain saut en adresse MAC (via ARP par exemple) si le prochain saut est directement connecté.
@@ -105,7 +105,7 @@ Utilisés au sein d'un *système autonome (AS)*, c'est-à-dire un groupe de rés
 
 #### Protocoles de Passerelle Externe (EGP - Exterior Gateway Protocols)
 Utilisés pour échanger des informations de routage entre différents *systèmes autonomes (AS)*.
-1.  **BGP (Border Gateway Protocol)** :
+1.  **BGP ([[BGPProtocol|Border Gateway Protocol]])** :
     *   Le protocole de routage de l'Internet. C'est un protocole à *vecteur de chemin (Path-Vector)*.
     *   Il échange des informations de chemin complètes, incluant l'AS d'origine et les AS traversés.
     *   Les décisions de routage sont basées sur des politiques (policies) plutôt que sur des métriques simples, permettant aux administrateurs de contrôler le trafic entrant et sortant de leur AS.
