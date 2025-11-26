@@ -5,6 +5,7 @@ aliases:
   - Network Layer
   - OSI Layer 3
   - Internet Layer
+  - Couche 3
 archetype: modele
 cssclasses:
   - max
@@ -78,3 +79,5 @@ graph TD
 | **Modularité** : Permet aux développeurs de se concentrer sur l'amélioration d'une couche sans affecter les autres, favorisant l'innovation. | **Duplication de Services** : Certaines fonctions (comme le contrôle de flux et la gestion des erreurs) peuvent être implémentées dans plusieurs couches, entraînant des redondances. |
 | **Facilite le Dépannage** : Permet d'isoler rapidement les problèmes réseau à une couche spécifique, simplifiant le diagnostic. | **Modèle Théorique** : Plus un modèle de référence conceptuel qu'une implémentation directe, ce qui peut rendre son application pratique moins évidente que TCP/IP. |
 | **Support Flexible** : Prend en charge les services orientés connexion et sans connexion. | **Couches Peu Utilisées** : Les couches Session et Présentation ont des fonctionnalités parfois limitées ou fusionnées avec d'autres couches dans les implémentations réelles. |
+## 🔗 Notes Connexes
+- [[InternetLayerTCPIP|Couche Internet TCP/IP]]

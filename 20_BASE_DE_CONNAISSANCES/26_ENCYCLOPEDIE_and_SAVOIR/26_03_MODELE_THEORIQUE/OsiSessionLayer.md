@@ -5,6 +5,7 @@ aliases:
   - Layer 5
   - OSI Layer 5
   - OSI Session Layer
+  - Couche 5
 archetype: modele
 cssclasses:
   - max
@@ -64,3 +65,5 @@ graph TD
 | Permet la **reprise des sessions** via des points de synchronisation, améliorant la résilience. | Peu implémentée comme une couche distincte dans les protocoles Internet modernes. |
 | Gère les **modes de communication** (full/half-duplex) au niveau applicatif. | Peut entraîner un surdébit (overhead) si les applications ne nécessitent pas une gestion de session explicite. |
 | Facilite la **conception modulaire** des réseaux en séparant les responsabilités. | La fusion des couches supérieures de l'OSI dans la couche application de TCP/IP montre une approche plus pragmatique pour le web. |
+## 🔗 Notes Connexes
+* [[TcpIpApplicationLayer|TCP/IP Application Layer]]

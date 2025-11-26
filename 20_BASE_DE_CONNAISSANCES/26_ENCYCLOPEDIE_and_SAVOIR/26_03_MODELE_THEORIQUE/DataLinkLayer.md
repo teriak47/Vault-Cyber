@@ -4,6 +4,7 @@ aliases:
   - Couche 2 OSI
   - OSI Layer 2
   - Data Link Layer
+  - Couche 2
 archetype: modele
 cssclasses:
   - max
@@ -56,3 +57,5 @@ graph TD
 | Détecte et peut corriger les erreurs de transmission provenant de la couche physique. | Certains protocoles de couche supérieure peuvent réimplémenter des fonctions similaires au LLC, ce qui peut entraîner une redondance. |
 | Gère l'accès au support partagé (par exemple, Ethernet, Wi-Fi) via les adresses MAC. | La fiabilité dépend de l'implémentation : de nombreux protocoles de liaison de données n'ont pas d'accusés de réception pour les trames et ne vérifient pas les erreurs de transmission, laissant cela aux protocoles de couche supérieure. |
 | Permet l'interopérabilité entre différents équipements et technologies physiques. | |
+## 🔗 Notes Connexes
+* [[NetworkAccessLayerTCPIP|couche Accès Réseau TCP/IP]]

@@ -80,3 +80,5 @@ graph TD
 | **Abstraction** : Permet aux développeurs de se concentrer sur les fonctionnalités de l'application sans se soucier des détails de la transmission réseau physique. | **Performances** : Peut souffrir de latence si les applications ne sont pas optimisées pour les interactions réseau. |
 | **Interoperabilité** : Facilite la communication entre différentes applications et systèmes. | **Standardisation variable** : Bien que le modèle OSI soit une référence, la mise en œuvre des protocoles peut varier, entraînant parfois des problèmes d'interopérabilité si non strictement respectés. |
 | **Compréhension et dépannage simplifiés** : Le modèle en couches facilite la compréhension et le dépannage des problèmes en les isolant à des couches spécifiques. | |
+## 🔗 Notes Connexes
+* [[TcpIpApplicationLayer|TCP/IP Application Layer]]

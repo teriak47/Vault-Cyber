@@ -64,3 +64,5 @@ La couche Présentation, ou *Presentation Layer*, est la sixième couche du mod�
 | Permet la compression des données, réduisant ainsi la bande passante nécessaire et améliorant les performances du réseau. | Les fonctions de chiffrement/déchiffrement et compression/décompression sont souvent gérées par des applications de la couche supérieure ou directement par le système d'exploitation, rendant cette couche parfois redondante dans les implémentations modernes. |
 | Gère le chiffrement/déchiffrement des données, améliorant la sécurité des communications. | Le modèle OSI est un modèle théorique ; la couche Présentation n'est pas toujours clairement distincte ou implémentée comme une couche séparée dans les piles de protocoles réelles (comme TCP/IP). |
 | Fournit une abstraction aux couches supérieures en masquant les détails de représentation des données. | La complexité de la gestion de tous les formats de données possibles peut être élevée. |
+## 🔗 Notes Connexes
+* [[TcpIpApplicationLayer|TCP/IP Application Layer]]

@@ -5,6 +5,7 @@ aliases:
   - OSI Layer 4
   - TCP/UDP Layer
   - Couche 4 OSI
+  - Couche 4
 archetype: modele
 cssclasses:
   - max
@@ -55,3 +56,5 @@ graph TD
 | **Indépendance de l'application** : Fournit une interface de service standardisée aux couches supérieures, indépendamment des spécificités du réseau sous-jacent. | **Complexité** (avec TCP) : La mise en œuvre des mécanismes de fiabilité, de contrôle de flux et de congestion peut être complexe. |
 | **Efficacité** (avec UDP) : Permet une communication rapide avec un faible délai grâce à l'absence de mécanismes de fiabilité ou de contrôle de flux. | **Manque de fiabilité** (avec UDP) : Les paquets peuvent être perdus, dupliqués ou reçus dans le désordre sans mécanisme de correction intégré. |
 | **Multiplexage/Démultiplexage** : Permet à plusieurs applications de partager la même connexion réseau, maximisant l'utilisation des ressources. | **Sensibilité aux erreurs réseau** (avec UDP) : Les applications doivent gérer elles-mêmes la fiabilité ou tolérer la perte de données. |
+## 🔗 Notes Connexes
+* [[TransportLayerTCPIP|Couche Transport TCP/IP]]

@@ -25,51 +25,51 @@ tags:
 
 > [!goal] Objectifs Pédagogiques
 > À la fin de cette fiche, je dois être capable de :
-> 1. Expliquer ce qu'est un [[Switch|Switch réseau]], son rôle et ses fonctions principales.
-> 2. Décrire les trois principes fondamentaux du fonctionnement d'un Switch (écoute, apprentissage, aiguillage).
-> 3. Comprendre la différence entre une [[MacAddressTable|table d'adresses MAC]] et une [[AddressResolutionProtocol|table ARP]].
-> 4. Expliquer le processus par lequel un Switch remplit sa table d'adresses MAC et gère le flooding.
-> 5. Différencier un Switch d'un [[Router|routeur]] et connaître les types de Switches (non managé, managé).
+> 1. Expliquer ce qu'est un **[[Switch|Switch réseau]]**, son rôle et ses fonctions principales.
+> 2. Décrire les trois principes fondamentaux du fonctionnement d'un [[Switch]] (écoute, apprentissage, aiguillage).
+> 3. Comprendre la différence entre une **[[MacAddressTable|table d'adresses MAC]]** et une **[[AddressResolutionProtocol|table ARP]]**.
+> 4. Expliquer le processus par lequel un Switch remplit sa table d'adresses [[AccessControl|MAC]] et gère le [[MACAddressFloodingAttack|MAC Flooding]].
+> 5. Différencier un Switch d'un **[[Router|routeur]]** et connaître les types de Switches (non managé, managé).
 
 ## 📝 Synthèse du Cours
 
 ### 1. Le Switch Réseau : Le Standardiste Intelligent de Votre LAN
 
-Le Switch réseau est un équipement réseau essentiel pour les [[LocalAreaNetwork|réseaux locaux]] (*LAN*). Il agit comme un "standardiste intelligent" qui organise et optimise la communication entre les appareils connectés.
+Le Switch réseau est un équipement réseau essentiel pour les **[[LocalAreaNetwork|réseaux locaux]]** (*LAN*). Il agit comme un "standardiste intelligent" qui organise et optimise la communication entre les appareils connectés.
 
-*   **Description** : C'est un boîtier muni de plusieurs prises, appelées *ports*, où se connectent les [[EthernetCable|câbles Ethernet]] de vos ordinateurs, imprimantes, serveurs et autres périphériques réseau.
+*   **Description** : C'est un boîtier muni de plusieurs prises, appelées *ports*, où se connectent les **[[EthernetCable|câbles Ethernet]]** de vos ordinateurs, imprimantes, **[[Server|serveurs]]** et autres périphériques réseau.
 *   **Rôle essentiel** :
-    *   Recevoir les messages numériques, nommés **trames**, d'un appareil.
+    *   Recevoir les messages numériques, nommés **[[EthernetFrame|trames]]**, d'un appareil.
     *   Les rediriger intelligemment et *uniquement* vers le périphérique destinataire.
     *   Assurer une communication efficace et sécurisée au sein de votre infrastructure.
 
 > [!note] Définition Clé
-> **Trame** : Unité de données de la [[DataLinkLayer|couche de liaison de données]] (couche 2 OSI du [[OsiModel|modèle OSI]]) qui transporte l'information entre deux nœuds d'un même [[NetworkSegment|segment réseau]], incluant les [[MacAddress|adresses MAC]] source et destination.
+> **Trame** : Unité de données de la **[[DataLinkLayer|couche de liaison de données]]** (couche 2 OSI du **[[OsiModel|modèle OSI]]**) qui transporte l'information entre deux nœuds d'un même **[[NetworkSegment|segment réseau]]**, incluant les **[[MacAddress|adresses MAC]]** source et destination.
 
 ### 2. Comment Fonctionne un Switch ? Les Trois Principes Fondamentaux
 
-Un Switch réseau opère selon trois principes fondamentaux, ce qui le rend bien plus intelligent qu'un simple [[NetworkHub|hub]] traditionnel :
+Un [[Switch]] réseau opère selon trois principes fondamentaux, ce qui le rend bien plus intelligent qu'un simple **[[NetworkHub|hub]]** traditionnel :
 
 1.  **Il écoute en permanence (*Learning*)** :
     *   Dès qu'un appareil est branché et allumé, le switch "écoute" activement les messages qui transitent sur chaque port.
     *   Cela lui permet d'apprendre la topologie du réseau et de savoir quels appareils sont connectés à quels ports.
-2.  **Il apprend par cœur (*Building MAC Table*)** :
-    *   Le switch construit et maintient automatiquement une **table d'adresses MAC** (parfois appelée table de commutation).
-    *   Cette table est un annuaire qui cartographie chaque adresse MAC d'un appareil avec le [[PhysicalLayer|port physique]] du switch auquel il est connecté.
+2.  **Il apprend par cœur (*Building [[MacAddressTable|MAC Table]]*)** :
+    *   Le switch construit et maintient automatiquement une **[[MacAddressTable|Table d'Adresses MAC]]** (parfois appelée table de commutation).
+    *   Cette table est un annuaire qui cartographie chaque adresse MAC d'un appareil avec le **[[PhysicalLayer|port physique]]** du switch auquel il est connecté.
 3.  **Il aiguille intelligemment (*Forwarding*)** :
     *   Lorsqu'il reçoit une trame, le switch consulte sa table d'adresses MAC.
-    *   Il identifie le destinataire et envoie la trame *uniquement* par le port où se trouve le périphérique destinataire, optimisant ainsi la [[Bandwidth|bande passante]].
+    *   Il identifie le destinataire et envoie la trame *uniquement* par le port où se trouve le périphérique destinataire, optimisant ainsi la **[[Bandwidth|bande passante]]**.
 
 > [!note] Switch vs Hub
 > Un *hub* transmet toutes les données à tous les ports, générant du trafic inutile et des collisions. Un *switch*, grâce à son intelligence, permet une communication un à un, optimisant la bande passante et la performance du réseau.
 
 ### 3. Le Cœur de l'Intelligence : La Table d'Adresses MAC et son Remplissage
 
-Une confusion courante est de confondre la **table d'adresses MAC** du switch avec la **table ARP** (Address Resolution Protocol). Elles sont différentes :
+Une confusion courante est de confondre la **[[MacAddressTable|Table d'Adresses MAC]]** du switch avec la **table ARP** ([[AddressResolutionProtocol|Address Resolution Protocol]]). Elles sont différentes :
 
 *   **Table ARP** :
     *   Gérée par les *ordinateurs* eux-mêmes.
-    *   Fait le lien entre une **[[InternetProtocol|adresse IP]]** (logique, [[NetworkLayerOSI|couche 3 du modèle OSI]]) et une **adresse MAC** (physique, couche 2 OSI).
+    *   Fait le lien entre une **[[InternetProtocol|adresse IP]]** (logique, **[[NetworkLayerOSI|couche 3]]** du modèle OSI) et une **adresse MAC** (physique, [[DataLinkLayer|Couche 2]] OSI).
 *   **Table d'adresses MAC du Switch** :
     *   Sa propre carte interne gérée par le *switch*.
     *   Fait le lien entre une **adresse MAC** (physique) et un **port physique** du switch. C'est son annuaire personnel.
@@ -107,14 +107,14 @@ Le switch apprend dynamiquement les adresses MAC et leurs ports associés via tr
 
 #### Différence Fondamentale : Switch vs Routeur
 
-*   **Le Switch** :
-    *   Travaille au **niveau 2** (couche de liaison de données) du modèle OSI.
+*   **Le [[Switch]]** :
+    *   Travaille au **niveau 2** ([[DataLinkLayer|couche de liaison de données]]) du modèle OSI.
     *   Gère les communications *à l'intérieur* d'un même réseau local (ex: entre les ordinateurs de votre bureau).
     *   Utilise les adresses MAC pour l'aiguillage.
-*   **Le Routeur** :
-    *   Travaille au **niveau 3** (couche réseau) du modèle OSI.
-    *   Sert de passerelle entre différents réseaux (ex: entre votre réseau domestique et l'[[Internet|Internet]]).
-    *   Utilise les adresses IP pour le [[RoutingConcepts|routage]].
+*   **Le [[Router|Routeur]]** :
+    *   Travaille au **niveau 3** ([[NetworkLayerOSI|Couche Réseau]]) du modèle OSI.
+    *   Sert de passerelle entre différents réseaux (ex: entre votre réseau domestique et l'**[[Internet|Internet]]**).
+    *   Utilise les adresses IP pour le **[[RoutingConcepts|routage]]**.
 
 #### Les Types de Switches
 
@@ -126,7 +126,7 @@ Le switch apprend dynamiquement les adresses MAC et leurs ports associés via tr
 2.  **Managé (*Managed*)** :
     *   Offre un contrôle avancé sur le réseau via une interface de gestion (CLI, Web).
     *   Permet de créer des *VLANs* (réseaux virtuels séparés), de configurer la *Qualité de Service* (QoS) pour prioriser certains trafics.
-    *   Permet de [[Surveillance|surveiller]] les performances en temps réel et d'appliquer des politiques de sécurité sophistiquées (ex: *Port Security*).
+    *   Permet de **surveiller** les performances en temps réel et d'appliquer des politiques de sécurité sophistiquées (ex: *Port Security*).
     *   Utilisé principalement en environnement professionnel et d'entreprise.
 
 #### Avantages Clés d'un Switch
@@ -191,3 +191,5 @@ graph TD
 ## 🔗 Liens du Module
 *   **Précédent** :  [[RIB01-05_Module5|01-05 | Module 5]]
 *   **Suivant** : [[RIB01-07_Module7|01-07 | Module 7]]
+* **Lien** : [[DestinationMACAddress|Adresse MAC de Destination]]
+* **Lien** : [[SourceMacAddress|Adresse MAC Source]]

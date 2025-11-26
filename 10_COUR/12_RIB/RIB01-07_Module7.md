@@ -48,7 +48,7 @@ tags:
 
 ### 1. Fondement des Réseaux Locaux et Rôle des Adresses MAC
 
-**Ethernet** est la technologie standard universellement adoptée pour les [[LocalAreaNetwork|réseaux locaux]] (*LAN*). Chaque appareil accède au réseau via une carte réseau munie d'une [[MacAddress|adresse MAC]] unique.
+**Ethernet** est la technologie standard universellement adoptée pour les [[LocalAreaNetwork|réseaux locaux]] (*LAN*). Chaque appareil accède au réseau via une [[NetworkInterfaceCard|carte réseau]] munie d'une [[MacAddress|adresse MAC]] unique.
 
 > [!note] Définition Clé
 > **Adresse MAC (Media Access Control)** : Un identifiant unique de 48 [[BinaryDigit|bits]] (6 [[Byte|octets]]), gravé de manière permanente dans la carte réseau par le fabricant. Elle garantit l'unicité de chaque interface réseau sur le [[Internet|réseau mondial]].
@@ -67,7 +67,7 @@ Une trame Ethernet est composée de plusieurs champs structurés, chacun ayant u
     *   **Adresse MAC de Destination (6 octets)** : Identifie le destinataire final de la trame sur le réseau local. Elle peut être :
         *   *Unicast* : Pour un destinataire unique.
         *   *Multicast* : Pour un groupe de hôtes.
-        *   *[[BroadcastDomain|Broadcast]]* : Pour tous les hôtes du réseau (FF:FF:FF:FF:FF:FF).
+        *   *Broadcast* : Pour tous les hôtes du réseau (FF:FF:FF:FF:FF:FF).
     *   **Adresse MAC Source (6 octets)** : Identifie l'appareil émetteur de la trame. Essentiel pour la construction des tables d'adresses MAC des commutateurs.
 
 *   **Longueur/Type et Données Encapsulées (48-1502 octets)**

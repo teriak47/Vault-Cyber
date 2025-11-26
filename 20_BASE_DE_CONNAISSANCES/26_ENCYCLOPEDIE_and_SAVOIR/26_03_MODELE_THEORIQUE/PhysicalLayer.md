@@ -4,6 +4,7 @@ aliases:
   - Physical Layer
   - OSI Layer 1
   - Layer 1
+  - Couche 1
 cssclasses:
   - max
 archetype: modele
@@ -98,3 +99,5 @@ Les équipements typiques qui opèrent à la couche Physique incluent :
 *   **Modems** : Modulent et démodulent les signaux pour la transmission sur des lignes analogiques (ex: lignes téléphoniques).
 *   **Antennes** : Pour les transmissions sans fil.
 *   **Transceivers** : Dispositifs qui transmettent et reçoivent des signaux.
+## 🔗 Notes Connexes
+* [[NetworkAccessLayerTCPIP|couche Accès Réseau TCP/IP]]

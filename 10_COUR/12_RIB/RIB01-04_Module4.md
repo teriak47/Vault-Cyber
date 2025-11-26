@@ -36,7 +36,7 @@ tags:
 > 2. Distinguer les fonctions des **ports [[LocalAreaNetwork|LAN]] et [[WideAreaNetwork|WAN]]** d'un [[Router|routeur]].
 > 3. Décrire le fonctionnement et les caractéristiques d'un **[[WirelessLocalAreaNetwork|réseau local sans fil (WLAN)]]**.
 > 4. Identifier les **technologies réseau filaires** et leurs applications.
-> 5. Expliquer les **normes [[WiFi|Wi-Fi]] ([[IEEE]] 802.11)** et la **certification Wi-Fi**.
+> 5. Expliquer les **normes [[WiFi|Wi-Fi]] ([[IEEE]] [[IEEE80211Standard|802.11]])** et la **certification Wi-Fi**.
 > 6. Configurer les **paramètres essentiels d'un réseau sans fil** (SSID, mode réseau, canal).
 > 7. Comprendre le rôle et les implications du **[[ServiceSetIdentifier|SSID]]** pour l'identification et la sécurité.
 
@@ -75,18 +75,18 @@ La plupart des routeurs domestiques intègrent une antenne sans fil et un point 
 > **WLAN (Wireless Local Area Network)** : Réseau local utilisant des ondes radio pour connecter les périphériques sans fil à un point d'accès, lui-même généralement connecté au réseau filaire.
 
 ### 4. Fréquences du LAN Sans Fil
-Les technologies sans fil domestiques utilisent principalement les bandes de fréquence non licenciées de **2,4 GHz** et **5 GHz**, chacune avec ses caractéristiques spécifiques.
+Les technologies sans fil domestiques utilisent principalement les [[WiFiFrequencyBands|bandes de fréquence]] non licenciées de **2,4 GHz** et **5 GHz**, chacune avec ses caractéristiques spécifiques.
 *   **[[Bluetooth]] - 2,4 GHz** :
     *   Communications *courte distance* et *basse vitesse*.
     *   Idéal pour souris, claviers, imprimantes et audio.
     *   Permet la connexion simultanée de nombreux périphériques.
-*   **IEEE 802.11 - 2,4 et 5 GHz** :
+*   **[[IEEE80211Standard|IEEE 802.11]] - 2,4 et 5 GHz** :
     *   Technologies **Wi-Fi haute puissance** offrant *grande portée* et *débit élevé*.
     *   Normes modernes pour réseaux locaux sans fil performants.
 
 ### 5. Technologies Réseau Filaires
 Malgré l'essor du sans-fil, les connexions filaires restent essentielles pour certaines applications nécessitant une **[[Bandwidth|bande passante]] dédiée non partagée**.
-*   **Câblage Catégorie 5e** :
+*   **[[Category5eCable|Câblage Catégorie 5e]]** :
     *   Câblage le plus courant composé de 4 paires de **[[TwistedPairCable|fils torsadés]]** pour réduire les interférences électriques.
 *   **[[CoaxialCable|Câble Coaxial]]** :
     *   Fil intérieur entouré d'isolant tubulaire et d'écran conducteur, recouvert d'une gaine externe.
@@ -94,12 +94,12 @@ Malgré l'essor du sans-fil, les connexions filaires restent essentielles pour c
     *   Câbles en verre ou plastique, diamètre d'un cheveu, transmission très haute vitesse sur **longues distances** via des impulsions lumineuses.
 
 > [!note] Définition Clé
-> **Câble Catégorie 5e (Cat 5e)** : Câble Ethernet en paires torsadées, couramment utilisé pour les réseaux locaux, supportant jusqu'à 1 Gbit/s.
+> **Câble Catégorie 5e (Cat 5e)** : [[Category5eCable|Câble Ethernet]] en paires torsadées, couramment utilisé pour les réseaux locaux, supportant jusqu'à 1 Gbit/s.
 > **Câble Coaxial** : Type de câble électrique avec un conducteur interne entouré d'un isolant, d'un écran métallique et d'une gaine externe, utilisé historiquement pour les réseaux et encore pour la télévision ou l'accès internet.
 > **Fibre Optique** : Technologie de transmission de données utilisant la lumière à travers des fils de verre ou de plastique, offrant des débits très élevés sur de longues distances.
 
 ### 6. Normes Wi-Fi et Certification
-L'IEEE (Institute of Electrical and Electronic Engineers) développe les normes techniques sans fil, tandis que la Wi-Fi Alliance certifie la compatibilité des périphériques.
+L'[[IEEE]] (Institute of Electrical and Electronic Engineers) développe les normes techniques sans fil, tandis que la Wi-Fi Alliance certifie la compatibilité des périphériques.
 *   **IEEE 802.11** :
     *   Norme principale régissant les **réseaux locaux sans fil**.
     *   Quatre amendements définissent les caractéristiques des différentes technologies de communication sans fil utilisant les bandes 2,4 GHz et 5 GHz.
@@ -109,45 +109,45 @@ L'IEEE (Institute of Electrical and Electronic Engineers) développe les normes 
 
 > [!note] Définition Clé
 > **IEEE 802.11** : Ensemble de normes techniques pour l'implémentation des réseaux locaux sans fil (WLAN) en bandes de fréquences de 2,4, 5 et 6 GHz. C'est la base du Wi-Fi.
-> **Wi-Fi Alliance** : Organisation qui promeut la technologie Wi-Fi et certifie l'interopérabilité des produits WLAN basés sur les normes IEEE 802.11.
+> **Wi-Fi Alliance** : [[WiFiAlliance|Organisation]] qui promeut la technologie Wi-Fi et certifie l'interopérabilité des produits WLAN basés sur les normes IEEE 802.11.
 
 ### 7. Paramètres Sans Fil Essentiels
 Ces paramètres sont cruciaux pour la configuration et le bon fonctionnement d'un réseau sans fil.
 *   **Mode Réseau** :
     *   Détermine la technologie supportée : 802.11b, 802.11g, 802.11n ou mode mixte pour la compatibilité avec différents périphériques.
-*   **Nom du Réseau (SSID)** :
+*   **Nom du Réseau ([[ServiceSetIdentifier|SSID]])** :
     *   Identifie le réseau local sans fil.
     *   Tous les périphériques doivent avoir le **même SSID** pour appartenir au réseau.
 *   **Canal Standard** :
-    *   Spécifie le canal de communication.
+    *   Spécifie le [[WiFiChannel|canal de communication]].
     *   Configuration automatique par défaut pour optimiser les performances.
-*   **Diffusion SSID** :
+*   **[[SSIDBroadcast|Diffusion SSID]]** :
     *   Détermine si le nom du réseau est **visible par tous les périphériques à portée**.
     *   Activé par défaut.
 
 > [!note] Définition Clé
-> **SSID (Service Set Identifier)** : Nom unique d'un réseau Wi-Fi, utilisé par les clients pour se connecter au réseau correct.
-> **Mode Réseau** : Paramètre définissant les normes Wi-Fi (ex: 802.11b/g/n/ac/ax) que le point d'accès prend en charge, influençant la vitesse et la compatibilité.
-> **Canal Wi-Fi** : Fréquence spécifique dans une bande (2.4 GHz ou 5 GHz) utilisée pour la communication sans fil. Le choix d'un canal non encombré améliore les performances.
+> **[[ServiceSetIdentifier|SSID]] (Service Set Identifier)** : Nom unique d'un réseau Wi-Fi, utilisé par les clients pour se connecter au réseau correct.
+> **Mode Réseau** : [[WiFiNetworkModes|Paramètre]] définissant les normes Wi-Fi (ex: 802.11b/g/n/ac/ax) que le point d'accès prend en charge, influençant la vitesse et la compatibilité.
+> **[[WiFiChannel|Canal Wi-Fi]]** : Fréquence spécifique dans une bande (2.4 GHz ou 5 GHz) utilisée pour la communication sans fil. Le choix d'un canal non encombré améliore les performances.
 
 ### 8. Mode Réseau et Compatibilité
 Le choix du mode réseau influence directement les performances et la compatibilité du réseau sans fil.
 *   **Mode Standard Unique** :
-    *   Vitesses maximales si tous les périphériques utilisent la **même norme IEEE 802.11**.
+    *   Vitesses maximales si tous les périphériques utilisent la **même norme [[IEEE80211Standard|IEEE 802.11]]**.
     *   Les appareils incompatibles ne peuvent pas se connecter.
 *   **Mode Mixte** :
     *   Environnement inclusif acceptant **toutes les normes Wi-Fi existantes**.
     *   Facilite l'accès aux périphériques anciens nécessitant une connexion sans fil.
 
 ### 9. SSID: Identification et Sécurité
-Le Service Set Identifier (SSID) est crucial pour l'identification du réseau et la sécurité de base.
+Le Service Set Identifier ([[ServiceSetIdentifier|SSID]]) est crucial pour l'identification du réseau et la sécurité de base.
 *   **Caractéristiques Techniques** :
     *   Chaîne alphanumérique sensible à la casse, jusqu'à 32 caractères.
     *   Transmis dans l'en-tête de toutes les trames du réseau local sans fil.
 *   **Fonction d'Identification** :
     *   Indique aux stations sans fil (STA) leur appartenance réseau et définit les périphériques avec lesquels elles peuvent communiquer.
 *   **Diffusion et Sécurité** :
-    *   La diffusion SSID facilite la découverte automatique.
+    *   La [[SSIDBroadcast|diffusion SSID]] facilite la découverte automatique.
     *   Sa désactivation complique l'accès légitime sans empêcher les intrusions.
     *   Le **chiffrement fort** reste indispensable.
 
@@ -192,5 +192,6 @@ graph TD
 > > 3.  **Fibre Optique** : Transmet des données via des impulsions lumineuses sur des brins de verre ou de plastique, offrant des débits très élevés sur de longues distances.
 
 ## 🔗 Liens du Module
-*   **Précédent** : [[RIB01-03_Module3|01-03 | Module 3]]
-*   **Suivant** : [[RIB01-05_Module5|01-05 | Module 5]]
+*  **Précédent** : [[RIB01-03_Module3|01-03 | Module 3]]
+*  **Suivant** : [[RIB01-05_Module5|01-05 | Module 5]]
+*  **Lien** : [[NetworkMedia]]

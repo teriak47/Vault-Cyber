@@ -82,14 +82,15 @@ La compréhension et la gestion de la perte de paquets sont critiques dans plusi
 
 > [!warning] Méthodes de Résolution et Points d'attention
 > *   **Détection** :
-    *   **ICMP (Ping, Traceroute)** : Des outils comme `ping` mesurent le pourcentage de paquets perdus entre une source et une destination, tandis que `traceroute` peut aider à identifier le tronçon du réseau où la perte se produit.
-    *   **Tests de Jitter/Perte Spécifiques** : Des outils spécialisés comme *iperf* ou des sondes réseau effectuent des tests actifs en envoyant du trafic synthétique pour mesurer précisément la perte de paquets, la latence et la gigue.
-    *   **SNMP (Simple Network Management Protocol)** : Les systèmes de supervision réseau interrogent les périphériques pour collecter des statistiques sur les compteurs d'erreurs d'interface, les drops de paquets dans les files d'attente (buffers).
-    *   **NetFlow/IPFIX** : Ces protocoles fournissent des données détaillées sur le flux de trafic, permettant d'identifier des schémas de perte liés à des applications ou des utilisateurs spécifiques.
-*   **Mitigation** :
-    *   **Augmentation de la Bande Passante** : La solution la plus directe pour la congestion est d'augmenter la capacité des liaisons réseau ou des périphériques.
-    *   **Qualité de Service (QoS)** : Implémenter des politiques QoS permet de prioriser le trafic critique (VoIP, vidéo) par rapport au trafic moins sensible (transfert de fichiers), garantissant que les paquets importants soient moins susceptibles d'être abandonnés en cas de congestion.
-    *   **Gestion des Buffers** : Optimiser la taille des files d'attente (buffers) sur les routeurs et les commutateurs peut aider à absorber les pics de trafic temporaires sans abandonner les paquets.
-    *   **Redondance et Équilibrage de Charge** : Mettre en place des chemins réseau redondants et des mécanismes d'équilibrage de charge peut distribuer le trafic, réduire la congestion sur un seul lien et fournir une tolérance aux pannes en cas de défaillance d'un chemin.
-    *   **Maintenance Matérielle et Logicielle** : Remplacer les équipements défectueux, maintenir les logiciels et firmwares à jour, et revoir régulièrement les configurations réseau sont essentiels pour prévenir les pertes liées aux erreurs.
-    *   **Sécurité Réseau** : Déployer et configurer correctement les pare-feu, les systèmes de détection/prévention d'intrusion (IDS/IPS) et les solutions anti-DDoS pour protéger le réseau contre les attaques qui pourraient causer une perte de paquets intentionnelle.
+> 	* **ICMP (Ping, Traceroute)** : Des outils comme `ping` mesurent le pourcentage de paquets perdus entre une source et une destination, tandis que `traceroute` peut aider à identifier le tronçon du réseau où la perte se produit.
+> 	* **Tests de Jitter/Perte Spécifiques** : Des outils spécialisés comme *iperf* ou des sondes réseau effectuent des tests actifs en envoyant du trafic synthétique pour mesurer précisément la perte de paquets, la latence et la gigue.
+> 	* **SNMP (Simple Network Management Protocol)** : Les systèmes de supervision réseau interrogent les périphériques pour collecter des statistiques sur les compteurs d'erreurs d'interface, les drops de paquets dans les files d'attente (buffers).
+> 	* **NetFlow/IPFIX** : Ces protocoles fournissent des données détaillées sur le flux de trafic, permettant d'identifier des schémas de perte liés à des applications ou des utilisateurs spécifiques.  
+> * **Mitigation** :
+> 	*   **Augmentation de la Bande Passante** : La solution la plus directe pour la congestion est d'augmenter la capacité des liaisons réseau ou des périphériques.
+> 	* **Qualité de Service (QoS)** : Implémenter des politiques QoS permet de prioriser le trafic critique (VoIP, vidéo) par rapport au trafic moins sensible (transfert de fichiers), garantissant que les paquets importants soient moins susceptibles d'être abandonnés en cas de congestion.
+> 	* **Gestion des Buffers** : Optimiser la taille des files d'attente (buffers) sur les routeurs et les commutateurs peut aider à absorber les pics de trafic temporaires sans abandonner les paquets.
+> 	* **Redondance et Équilibrage de Charge** : Mettre en place des chemins réseau redondants et des mécanismes d'équilibrage de charge peut distribuer le trafic, réduire la congestion sur un seul lien et fournir une tolérance aux pannes en cas de défaillance d'un chemin.
+> 	* **Maintenance Matérielle et Logicielle** : Remplacer les équipements défectueux, maintenir les logiciels et firmwares à jour, et revoir régulièrement les configurations réseau sont essentiels pour prévenir les pertes liées aux erreurs.
+> 	* **Sécurité Réseau** : Déployer et configurer correctement les pare-feu, les systèmes de détection/prévention d'intrusion (IDS/IPS) et les solutions anti-DDoS pour protéger le réseau contre les attaques qui pourraient causer une perte de paquets intentionnelle.
+
