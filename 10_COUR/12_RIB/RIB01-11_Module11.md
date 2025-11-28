@@ -199,4 +199,5 @@ graph TD
 > > La *passerelle par défaut* est l'adresse IP du routeur local configurée sur chaque hôte. Elle est cruciale pour la communication avec des réseaux distants. Lorsqu'un hôte doit envoyer un paquet à une destination qui ne se trouve pas sur son réseau local, il encapsule le paquet avec l'adresse MAC de sa passerelle par défaut (le routeur) et envoie la trame au routeur. Le routeur prend ensuite le relais pour acheminer le paquet IP vers le réseau de destination. Sans une passerelle par défaut correctement configurée, un appareil ne peut communiquer qu'avec des hôtes sur son propre réseau local.
 
 ## 🔗 Notes Connexes
-* **Lien** : 
+* **Lien** : [[RIB01-10_Module10]]
+* **Lien** : [[RIB01-12_Module12]]
