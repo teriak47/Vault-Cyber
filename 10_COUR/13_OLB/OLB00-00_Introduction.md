@@ -43,6 +43,8 @@ tags:
 
 ## 📋 Index des Leçons
 -  [[OLB01-01_IntroductionWindows10|01-01 | Introduction Windows 10]]
+- [[OLB01-02_Cours2WindowsServer2022|01-02 | Cours 2 - Windows Server 2022]]
+- [[OLB01-03_Vsphere|01-03 | vSphere]]
 - 
 
 ## 📚 Prérequis & Outils

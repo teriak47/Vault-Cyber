@@ -262,4 +262,19 @@ graph TD
 > [!question] Question 5
 > Qu'est-ce qu'un pilote dans le contexte de la gestion des périphériques Windows ?
 > > [!success]- Réponse
-> > Un pilote est un composant logiciel qui permet au système d'exploitation (Windows) de communiquer et d'interagir correctement avec un périphérique matériel spécifique (comme une imprimante, une carte graphique ou un contrôleur réseau).
+> > Un pilote est un composant logiciel qui permet au système d'exploitation (Windows) de communiquer et d'interagir correctement avec un périphérique matériel spécifique (comme une imprimante, une carte graphique ou un contrôleur réseau)
+> > 
+> > 
+> > 
+> > 
+> > 
+> > 
+> > 
+> > 
+> > 
+> > .
+
+
+## 🔗 Notes Connexes
+*   **Module parent**: [[OLB00-00_Introduction|OLB : Introduction Logiciel et OS]]
+*   **Cours suivant**: [[OLB01-02_Cours2WindowsServer2022|01-02 | Cours 2 - Windows Server 2022]]
